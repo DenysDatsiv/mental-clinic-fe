@@ -1,0 +1,22 @@
+<div class="flex flex-column">
+  <div class="flex justify-content-end">
+    <p-button [rounded]="true" [routerLink]="TEST_ROUTES.LIST" [text]="true" class="justify-content-end"
+              icon="pi pi-angle-right"
+              iconPos="right"
+              label="Всі тестування"/>
+  </div>
+  <div class="card-container">
+    <div *ngFor="let card of mentalCards" [routerLink]="[TEST_ROUTES.LIST, card.link]" class="custom-card">
+      <div class="card-header">
+        <img [ngSrc]="card.imageUrl" alt="{{ card.title }}" class="card-image" height="500" priority width="500"/>
+      </div>
+      <div class="card-content">
+        <h2>{{ card.title }}</h2>
+        <p>{{ card.description }}</p>
+        <div class="ceo-container">
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+

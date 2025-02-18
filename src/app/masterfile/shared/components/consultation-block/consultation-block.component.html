@@ -1,0 +1,27 @@
+<div class="flex flex-column pt-4 px-4 lg:px-8 overflow-hidden" id="hero"
+     style="background: linear-gradient(0deg, rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.2)),
+            radial-gradient(77.36% 256.97% at 77.36% 57.52%, #3DA1DA 0%, #DAF2FF 100%);
+clip-path: ellipse(150% 87% at 90% 30%);">
+  <p-carousel [circular]="false" [numScroll]="1" [numVisible]="1" [responsiveOptions]="responsiveOptions"
+              [value]="consultationSlides">
+    <ng-template let-slide pTemplate="item">
+      <div class="border border-surface rounded-border m-2 p-4 text-center">
+        <div class="mb-4 font-medium text-lg">{{ slide.title }}</div>
+        <div class="mb-4 text-secondary">{{ slide.description }}</div>
+        <div>
+
+
+          <img alt="{{ slide.title }}"
+               class="consultation-img rounded-border"
+               decoding="async"
+
+               height="150" loading="lazy"
+               src="{{ slide.image }}" style="aspect-ratio: 3 / 2;" width="300"/>
+        </div>
+
+      </div>
+    </ng-template>
+  </p-carousel>
+
+</div>
+

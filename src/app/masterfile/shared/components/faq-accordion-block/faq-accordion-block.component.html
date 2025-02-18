@@ -1,0 +1,7 @@
+<p-accordion [activeIndex]="0">
+  <p-accordionTab *ngFor="let tab of tabs" [header]="tab.title">
+    <p class="m-0">
+      {{ tab.content }}
+    </p>
+  </p-accordionTab>
+</p-accordion>

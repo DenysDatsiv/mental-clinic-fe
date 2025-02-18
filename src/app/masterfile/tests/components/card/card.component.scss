@@ -1,0 +1,77 @@
+/* Grid Container for the Cards */
+.cards-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(360px, 1fr));
+  gap: 20px; /* Space between cards */
+  padding: 20px; /* Space around the grid */
+}
+
+/* General Card Styling with Static Height */
+.custom-card {
+  background-color: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  width: 100%; /* Fill the grid cell */
+  max-width: 25rem;
+  padding: 30px;
+  height: 24rem; /* Static height for uniformity */
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+
+  /* Flex properties to evenly distribute space */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+/* Hover Effect */
+.custom-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+}
+
+/* Header Styling - Name Section */
+.card-header {
+  margin-bottom: 1rem; /* Space below the header */
+}
+
+.card-header h3 {
+  margin: 0;
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #333;
+}
+
+/* Body Styling */
+.card-body {
+  flex-grow: 1; /* Allow the body to expand and maintain consistent spacing */
+}
+
+.card-body .description {
+  margin-top: 10px;
+  font-size: 1rem;
+  color: #666;
+  line-height: 1.5;
+}
+
+/* Footer Styling - Button Container */
+.card-footer {
+  margin-top: 20px;
+}
+
+/* Button Styling */
+.p-button {
+  background-color: #222; /* Black button */
+  border: none;
+  color: #ffffff;
+  font-size: 0.95rem;
+  font-weight: 500;
+  padding: 10px 20px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.p-button:hover {
+  background-color: #444; /* Lighter black on hover */
+}

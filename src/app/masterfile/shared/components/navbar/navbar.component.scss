@@ -1,0 +1,145 @@
+/* 1. Global Reset */
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Helvetica Neue', Arial, sans-serif;
+  line-height: 1.5;
+  background-color: #f8f9fa; /* subtle background */
+  color: #212529;
+}
+
+/* 2. Navbar Container */
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #fff; /* Priority color: white */
+  padding: 0.05rem 1rem;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08); /* minimal modern shadow */
+  position: sticky; /* for a modern sticky nav */
+  top: 0;
+  z-index: 999;
+}
+
+/* 3. Branding (Logo or Text) */
+.navbar__brand {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.navbar__logo {
+  max-height: 65px; /* adjust as needed */
+  width: auto;
+}
+
+.navbar__text-logo {
+  font-size: 1.25rem;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+}
+
+/* 4. Navigation Menu */
+.navbar__menu ul {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.navbar__menu a {
+  text-decoration: none;
+  color: #212529;
+  font-weight: 500;
+  transition: color 0.2s ease-in-out;
+}
+
+.navbar__menu a:hover {
+  color: #007bff; /* accent color */
+}
+
+/* Optional button style for a call-to-action link */
+.btn-primary {
+  display: inline-block;
+  background-color: #007bff;
+  color: #fff !important;
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  transition: background-color 0.2s;
+}
+
+.btn-primary:hover {
+  background-color: #005dc1;
+}
+
+/* 5. Hamburger Toggle (Mobile) */
+.navbar__toggle {
+  display: none; /* hidden by default on desktops */
+  flex-direction: column;
+  gap: 5px;
+  border: none;
+  background: transparent;
+  cursor: pointer;
+}
+
+.navbar__toggle span {
+  display: block;
+  width: 25px;
+  height: 3px;
+  background-color: #212529;
+  border-radius: 2px;
+  transition: all 0.3s ease;
+}
+
+/* 6. Responsive Styling */
+@media screen and (max-width: 768px) {
+  /* Show hamburger toggle on mobile */
+  .navbar__toggle {
+    display: flex;
+  }
+
+  /* Hide the menu by default */
+  .navbar__menu ul {
+    position: absolute;
+    top: 60px; /* just below the navbar */
+    right: 0;
+    width: 100%;
+    flex-direction: column;
+    background-color: #fff;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+    padding: 1rem;
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(-20px);
+    transition: opacity 0.3s ease, transform 0.3s ease, visibility 0s linear 0.3s;
+  }
+
+  /* When active, reveal the menu */
+  .navbar__menu.active ul {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+    transition-delay: 0s;
+  }
+
+  /* Animate the hamburger into an 'X' when active */
+  .navbar__toggle.active span:nth-child(1) {
+    transform: translateY(8px) rotate(45deg);
+  }
+  .navbar__toggle.active span:nth-child(2) {
+    opacity: 0;
+  }
+  .navbar__toggle.active span:nth-child(3) {
+    transform: translateY(-8px) rotate(-45deg);
+  }
+}

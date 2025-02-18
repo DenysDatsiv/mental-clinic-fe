@@ -1,0 +1,90 @@
+.medicine-toolkit-section {
+  padding: 40px;
+  border-radius: 12px;
+  font-family: Arial, sans-serif;
+
+  .section-header {
+    text-align: center;
+    margin-bottom: 30px;
+
+    .main-title {
+      font-size: 2rem;
+      color: #333; /* Neutral gray for title */
+      margin-bottom: 15px;
+    }
+
+    .main-description {
+      font-size: 1.2rem;
+      color: #555; /* Medium gray for text */
+      line-height: 1.6;
+    }
+  }
+
+  .data-sources {
+    margin-bottom: 30px;
+
+    h2 {
+      font-size: 1.6rem;
+      color: #333; /* Neutral gray for headings */
+      margin-bottom: 15px;
+    }
+
+    .btn-container {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 15px;
+      margin-top: 15px;
+
+      button {
+        padding: 10px 20px;
+        font-size: 1rem;
+        color: #333; /* Neutral text color */
+        background: #eaeaea; /* Soft gray button background */
+        border: none;
+        border-radius: 8px;
+        cursor: pointer;
+        transition: background-color 0.3s ease, transform 0.2s ease;
+
+        &:hover {
+          background: #d6d6d6; /* Slightly darker gray on hover */
+          transform: translateY(-2px);
+        }
+
+        &:active {
+          background: #c9c9c9; /* Even darker gray when active */
+          transform: translateY(0);
+        }
+      }
+    }
+  }
+
+  .interaction-check {
+    margin-bottom: 30px;
+
+    h2 {
+      font-size: 1.6rem;
+      color: #333;
+      margin-bottom: 15px;
+    }
+
+    ul {
+      padding-left: 20px;
+      list-style-type: disc;
+
+      li {
+        font-size: 1rem;
+        color: #444;
+        margin-bottom: 10px;
+      }
+    }
+  }
+
+  .disclaimer {
+    font-size: 0.9rem;
+    text-align: center;
+    color: #666; /* Lighter gray for disclaimers */
+    font-style: italic;
+    margin-top: 20px;
+    line-height: 1.4;
+  }
+}

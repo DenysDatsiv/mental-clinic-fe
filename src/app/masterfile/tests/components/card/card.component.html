@@ -1,0 +1,13 @@
+<div class="custom-card">
+  <div class="card-header">
+    <h3>{{ testData?.name }}</h3>
+  </div>
+  <div class="card-body">
+    <p class="description">{{ testData?.description }}</p>
+    <p class="duration"><i class="pi pi-clock"></i> Тривалість: {{ testData?.duration }}</p>
+  </div>
+  <div class="card-footer">
+    <p-button (click)="redirectToTest(testData?._id)" icon="pi pi-arrow-right" label="Перейти до тесту"
+              size="small"></p-button>
+  </div>
+</div>

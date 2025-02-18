@@ -1,0 +1,51 @@
+<section>
+  <div>
+    <form [formGroup]="searchForm" class="flex flex-column gap-4 md:flex-row md:gap-3 lg:justify-content-end">
+      <div class="w-full md:w-6 lg:max-w-15rem md:order-2 lg:order-2">
+        <p-dropdown [options]="categories" formControlName="category" optionLabel="name"
+                    placeholder="Категорія"></p-dropdown>
+      </div>
+
+      <div class="w-full md:w-6 lg:max-w-15rem md:order-1 lg:order-1">
+        <div class="flex w-full">
+          <input class="w-full" formControlName="text" pInputText placeholder="Пошук тестування" type="text"/>
+          <p-button [disabled]="!showButton" icon="pi pi-search" id="search-btn" severity="info"/>
+        </div>
+      </div>
+    </form>
+
+    <p-divider class="md:hidden"></p-divider>
+
+
+    <ng-container *ngIf="(tests$ | async) && !(loading$ | async); else loading">
+      <div *ngIf="paginatedTests$ | async as paginatedTests; else noTests" class="mt-5">
+        <div class="cards-grid-container">
+          <div *ngFor="let test of paginatedTests" class="card-grid">
+            <app-card [testData]="test"></app-card>
+          </div>
+        </div>
+      </div>
+
+
+      <p-paginator
+        (onPageChange)="onPageChange($event)"
+        *ngIf="searchForm.get('category')?.value.value === '' || initLoad"
+        [first]="first"
+        [rowsPerPageOptions]="[5, 10 ]"
+        [rows]="rows"
+        [totalRecords]="totalRecords"
+        class="lg:flex lg:justify-content-end"
+      ></p-paginator>
+    </ng-container>
+
+    <ng-template #loading>
+      <div class="flex justify-content-center align-content-center">
+        <p-progressSpinner ariaLabel="loading"></p-progressSpinner>
+      </div>
+    </ng-template>
+
+    <ng-template #noTests>
+      <p>No tests found.</p>
+    </ng-template>
+  </div>
+</section>

@@ -1,0 +1,84 @@
+@import "../assets/css/coloristics";
+
+body {
+  padding: 0;
+  margin: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+/* Загальний контейнер сторінки */
+.page-wrapper {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh; /* Мінімальна висота – вся висота вікна */
+}
+
+
+/* Футер */
+.footer {
+  background-color: #222;
+  color: #fff;
+  padding: 40px 20px;
+  width: 100%;
+}
+
+::ng-deep {
+  .p-button {
+    color: #ffffff;
+    background: $main_color;
+    border: 1px solid $main_color;
+  }
+
+  .p-paginator .p-paginator-pages .p-paginator-page.p-highlight {
+    color: $main_color
+  }
+
+  .p-dropdown-panel .p-dropdown-items .p-dropdown-item.p-highlight {
+    color: $main_color
+
+  }
+
+  .p-tag {
+    background: $main_color;
+  }
+
+  .p-carousel .p-carousel-prev,
+  .p-carousel .p-carousel-next {
+    display: none !important;
+  }
+}
+
+h1, h2, h3, h4, h5 {
+  color: $main_color
+}
+
+.content-wrapper {
+  max-width: 1200px; /* Adjust max width based on your requirement */
+  margin: 0 auto; /* Centers the content horizontally */
+  padding: 0 16px; /* Adds padding to left and right */
+}
+
+.content {
+  padding: 20px;
+}
+
+@media (max-width: 768px) {
+  .content-wrapper {
+    padding: 0 8px;
+  }
+}
+
+.page-container {
+  max-width: 1500px; /* Keeps content centered and readable */
+  margin: 0 auto; /* Centers the content */
+  display: flex;
+  flex-direction: column;
+  gap: 0.1rem; /* Space between elements */
+}
+
+.main-content {
+  flex-grow: 1;
+}

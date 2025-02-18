@@ -1,0 +1,14 @@
+<p-dialog [(visible)]="visible" [modal]="true" [style]="{ width: '25rem' }" header="Контакти клініки">
+  <ng-container *ngIf="contacts$ | async as contacts">
+    <ng-container *ngFor="let contact of contacts | keyvalue">
+      <div class="flex flex-column mb-3">
+        <p>Запис до {{ contact.value.name }}</p>
+        <div class="flex gap-3">
+          <p-button (click)="openTelegram(contact.value.phone)" icon="pi pi-telegram" label="Telegram"></p-button>
+          <p-button (click)="openViber(contact.value.phone)" icon="pi pi-whatsapp" label="Viber"
+                    severity="help"></p-button>
+        </div>
+      </div>
+    </ng-container>
+  </ng-container>
+</p-dialog>

@@ -1,0 +1,69 @@
+.cards-grid-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem; /* Відступ між елементами */
+  margin: 0 auto; /* Центруємо контейнер */
+  padding: 1rem;
+}
+
+/* Кожен елемент (картка) в грід-контейнері */
+.cards-grid-container > .card {
+  flex: 1 1 calc(25% - 1rem); /* 4 колонки (мінус відступ) */
+  box-sizing: border-box; /* Для коректних розрахунків ширини */
+}
+
+/* При ширині менше 1200px переходимо на 3 колонки */
+@media (max-width: 1200px) {
+  .cards-grid-container > .card {
+    flex: 1 1 calc(33.333% - 1rem);
+  }
+}
+
+/* При ширині менше 800px – 2 колонки */
+@media (max-width: 800px) {
+  .cards-grid-container > .card {
+    flex: 1 1 calc(50% - 1rem);
+  }
+}
+
+/* При ширині менше 500px – 1 колонка */
+@media (max-width: 500px) {
+  .cards-grid-container > .card {
+    flex: 1 1 100%;
+  }
+}
+
+/* Existing styles for other components */
+::ng-deep .p-dropdown {
+  width: 100%;
+}
+
+::ng-deep .p-inputtext {
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+}
+
+::ng-deep #search-btn {
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+}
+
+@media screen and (max-width: 370px) {
+  ::ng-deep .p-inputtext {
+    width: 84%;
+  }
+}
+
+@media screen and (min-width: 371px) and (max-width: 444px) {
+  ::ng-deep .p-inputtext {
+    width: 86%;
+  }
+}
+
+:host::ng-deep {
+  .p-button {
+    border-bottom-left-radius: 0;
+    border-top-left-radius: 0;
+  }
+}
