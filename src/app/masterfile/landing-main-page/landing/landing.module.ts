@@ -4,8 +4,6 @@ import {RouterModule} from '@angular/router';
 import {LandingComponent} from './landing.component';
 import {ButtonModule} from 'primeng/button';
 import {TestsGridModule} from '../../tests/components/tests-grid/tests-grid.module';
-import {HeroBannerComponent} from '../../shared/components/hero-banner/hero-banner.component';
-import {TestingBlockComponent} from '../../shared/components/testing-block/testing-block.component';
 import {ImportsModule} from '../../../ shared/imports';
 import {TelegramBannerModule} from '../../shared/components/telegram-banner/telegram-banner.module';
 import {FaqBlockModule} from '../../shared/components/faq-block/faq-block.module';

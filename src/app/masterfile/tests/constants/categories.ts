@@ -1,11 +1,11 @@
 export const TEST_CATEGORIES_CONST = {
-  ALL: '', // Всі
-  ANXIETY: 'anxiety', // Тривога
-  DEPRESSION: 'depression', // Депресія
-  PERSONALITY_DISORDERS: 'personality-disorders', // Особистісні розлади
-  BEHAVIORAL_DISORDERS: 'behavioral-disorders', // Поведінкові розлади
-  ADDICTIONS: 'addictions', // Залежності
-  SPECIALIZED: 'specialized' // Спеціалізовані тести
+  ALL: '',
+  ANXIETY: 'anxiety',
+  DEPRESSION: 'depression',
+  PERSONALITY_DISORDERS: 'personality-disorders',
+  BEHAVIORAL_DISORDERS: 'behavioral-disorders',
+  ADDICTIONS: 'addictions',
+  SPECIALIZED: 'specialized'
 };
 
 export const testsCategories = [

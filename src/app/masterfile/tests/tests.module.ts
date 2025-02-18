@@ -6,7 +6,6 @@ import {TestsRoutingModule} from './tests-routing.module';
 import {ImportsModule} from '../../ shared/imports';
 import {DetailPageModule} from './detail-page/detail-page.module';
 import {ListModule} from './list/list.module';
-import {FaqAccordionBlockModule} from '../shared/components/faq-accordion-block/faq-accordion-block.module';
 
 
 
@@ -21,7 +20,6 @@ import {FaqAccordionBlockModule} from '../shared/components/faq-accordion-block/
     DetailPageModule,
     TestsRoutingModule,
     ImportsModule,
-FaqAccordionBlockModule
   ]
 })
 export class TestsModule { }

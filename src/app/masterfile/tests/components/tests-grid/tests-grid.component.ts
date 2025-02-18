@@ -16,7 +16,6 @@ import {Location} from '@angular/common';
 })
 export class TestsGridComponent implements OnInit {
   categories = testsCategories;
-  // Default to 'Всі' (all)
   searchForm = new FormGroup({
     text: new FormControl(''),
     category: new FormControl({name: 'Всі', value: ''})
@@ -41,14 +40,10 @@ export class TestsGridComponent implements OnInit {
   }
 
   ngOnInit() {
-    // Get the type from the URL or default to an empty string.
     const typeFromUrl = this.route.snapshot.paramMap.get('type') || '';
-    // Look for the matching category. If none is found, use the default "Всі" option.
     const categoryObj = this.categories.find(cat => cat.value === typeFromUrl) || {name: 'Всі', value: ''};
-    // Update the search form so that the dropdown reflects the proper category.
     this.searchForm.patchValue({category: categoryObj});
 
-    // Update URL when category changes without redirecting
     this.searchForm.get('category')?.valueChanges.subscribe(selected => {
       const categoryValue = typeof selected === 'string' ? selected : selected?.value;
       const newUrl = categoryValue ? `/tests/${categoryValue}` : `/tests/list`;

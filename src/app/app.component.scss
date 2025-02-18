@@ -13,11 +13,10 @@ html {
 .page-wrapper {
   display: flex;
   flex-direction: column;
-  min-height: 100vh; /* Мінімальна висота – вся висота вікна */
+  min-height: 100vh;
 }
 
 
-/* Футер */
 .footer {
   background-color: #222;
   color: #fff;
@@ -56,9 +55,9 @@ h1, h2, h3, h4, h5 {
 }
 
 .content-wrapper {
-  max-width: 1200px; /* Adjust max width based on your requirement */
-  margin: 0 auto; /* Centers the content horizontally */
-  padding: 0 16px; /* Adds padding to left and right */
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 16px;
 }
 
 .content {
@@ -72,11 +71,11 @@ h1, h2, h3, h4, h5 {
 }
 
 .page-container {
-  max-width: 1500px; /* Keeps content centered and readable */
-  margin: 0 auto; /* Centers the content */
+  max-width: 1500px;
+  margin: 0 auto;
   display: flex;
   flex-direction: column;
-  gap: 0.1rem; /* Space between elements */
+  gap: 0.1rem;
 }
 
 .main-content {

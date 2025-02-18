@@ -27,6 +27,7 @@
             "outputPath": "dist/mental-clinic-fe",
             "index": "src/index.html",
             "browser": "src/main.ts",
+            "baseHref": "/",
             "allowedCommonJsDependencies": ["quill"],
             "polyfills": [
               "zone.js"
@@ -82,7 +83,7 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "buildTarget": "mental-front-fe:build:production"
+              "buildTarget": "mental-clinic-fe:build:production"
             },
             "development": {
               "buildTarget": "mental-clinic-fe:build:development"

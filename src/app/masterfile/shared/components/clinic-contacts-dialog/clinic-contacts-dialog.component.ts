@@ -18,7 +18,6 @@ export class ClinicContactsDialogComponent extends ClearObservable implements On
   }
 
   ngOnInit() {
-    // Subscribe to visibility state with `takeUntil` to avoid memory leaks
     this.contactsService.isVisible$
       .pipe(takeUntil(this.destroy$))
       .subscribe((isVisible) => {

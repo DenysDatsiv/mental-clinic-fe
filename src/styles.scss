@@ -1,8 +1,5 @@
 @import "assets/css/coloristics";
 
-/* You can add global styles to this file, and also import other style files */
-
-
 body {
   margin: 0;
   height: 100vh;
@@ -14,9 +11,9 @@ h1, h2, h3, h4, h5 {
 }
 
 .content-wrapper {
-  max-width: 1200px; /* Adjust max width based on your requirement */
-  margin: 0 auto; /* Centers the content horizontally */
-  padding: 0 16px; /* Adds padding to left and right */
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 16px;
 }
 
 .content {
@@ -30,9 +27,9 @@ h1, h2, h3, h4, h5 {
 }
 
 .page-container {
-  max-width: 1500px; /* Keeps content centered and readable */
-  margin: 0 auto; /* Centers the content */
+  max-width: 1500px;
+  margin: 0 auto;
   display: flex;
   flex-direction: column;
-  gap: 0.1rem; /* Space between elements */
+  gap: 0.1rem;
 }

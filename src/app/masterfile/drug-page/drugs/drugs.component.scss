@@ -9,13 +9,13 @@
 
     .main-title {
       font-size: 2rem;
-      color: #333; /* Neutral gray for title */
+      color: #333;
       margin-bottom: 15px;
     }
 
     .main-description {
       font-size: 1.2rem;
-      color: #555; /* Medium gray for text */
+      color: #555;
       line-height: 1.6;
     }
   }
@@ -25,7 +25,7 @@
 
     h2 {
       font-size: 1.6rem;
-      color: #333; /* Neutral gray for headings */
+      color: #333;
       margin-bottom: 15px;
     }
 
@@ -38,20 +38,20 @@
       button {
         padding: 10px 20px;
         font-size: 1rem;
-        color: #333; /* Neutral text color */
-        background: #eaeaea; /* Soft gray button background */
+        color: #333;
+        background: #eaeaea;
         border: none;
         border-radius: 8px;
         cursor: pointer;
         transition: background-color 0.3s ease, transform 0.2s ease;
 
         &:hover {
-          background: #d6d6d6; /* Slightly darker gray on hover */
+          background: #d6d6d6;
           transform: translateY(-2px);
         }
 
         &:active {
-          background: #c9c9c9; /* Even darker gray when active */
+          background: #c9c9c9;
           transform: translateY(0);
         }
       }
@@ -82,7 +82,7 @@
   .disclaimer {
     font-size: 0.9rem;
     text-align: center;
-    color: #666; /* Lighter gray for disclaimers */
+    color: #666;
     font-style: italic;
     margin-top: 20px;
     line-height: 1.4;

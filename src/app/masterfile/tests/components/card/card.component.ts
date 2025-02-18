@@ -16,7 +16,6 @@ export class CardComponent implements OnInit {
   }
 
   ngOnInit(): void {
-    // console.log('Test data in child:', this.testData);
   }
 
   redirectToTest(testId: string): void {

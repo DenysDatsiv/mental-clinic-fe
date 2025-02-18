@@ -3,7 +3,7 @@ import { RouterModule, Routes } from '@angular/router';
 import {DrugsComponent} from './drugs.component';
 
 const routes: Routes = [
-  { path: '', component: DrugsComponent } // Default route for this module
+  { path: '', component: DrugsComponent }
 ];
 
 @NgModule({

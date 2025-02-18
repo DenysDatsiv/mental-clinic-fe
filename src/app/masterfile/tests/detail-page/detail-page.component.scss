@@ -1,17 +1,13 @@
-// **Color Scheme**
-$primary-color: #3DA1DA; // Deep Blue
-$secondary-color: #0F172A; // Dark Blue-Black
-$background-color: #F8FAFC; // Soft White
-$error-color: #DC2626; // Red
+$primary-color: #3DA1DA;
+$secondary-color: #0F172A;
+$background-color: #F8FAFC;
+$error-color: #DC2626;
 $border-radius: 12px;
-
-// **Global Styles**
 body {
   background: linear-gradient(135deg, $primary-color, #A5B4FC);
   font-family: 'Arial', sans-serif;
 }
 
-// **Divider Styling**
 ::ng-deep {
   .divider-max-width {
     display: flex;
@@ -23,7 +19,6 @@ body {
   }
 }
 
-// **Titles & Text**
 .section-title {
   font-size: 1.75rem;
   font-weight: bold;
@@ -48,7 +43,6 @@ body {
   text-align: justify;
 }
 
-// **Quiz Container**
 .quiz-container {
   background: $background-color;
   padding: 2rem;
@@ -58,7 +52,6 @@ body {
   transition: transform 0.3s ease-in-out;
 }
 
-// **Question Text**
 .quiz-question {
   font-size: 1.3rem;
   color: $secondary-color;
@@ -66,7 +59,6 @@ body {
   margin-bottom: 1.5rem;
 }
 
-// **Radio Button Group**
 .quiz-options {
   padding: 1rem;
   border-radius: $border-radius;
@@ -78,7 +70,6 @@ body {
   }
 }
 
-// **Individual Option**
 .quiz-option {
   display: flex;
   align-items: center;
@@ -111,7 +102,6 @@ body {
   }
 }
 
-// **Error Message Styling**
 .quiz-error {
   color: $error-color;
   font-weight: bold;
@@ -119,7 +109,6 @@ body {
   text-align: center;
 }
 
-// **Navigation Button**
 .quiz-button {
   width: 100%;
   padding: 14px;
@@ -143,7 +132,6 @@ body {
   }
 }
 
-// **Loading Spinner**
 .loading-container {
   display: flex;
   flex-direction: column;
@@ -156,16 +144,14 @@ body {
   }
 }
 
-// **Result Screen**
 .result-container {
+  margin:2rem 0;
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 90vh;
   animation: fadeIn 0.6s ease-in-out;
 }
 
-// **Result Card**
 .result-card {
   background: $background-color;
   padding: 2.5rem;
@@ -176,7 +162,6 @@ body {
   animation: slideUp 0.5s ease-in-out;
 }
 
-// **Result Title**
 .result-title {
   font-size: 1.8rem;
   font-weight: bold;
@@ -184,7 +169,6 @@ body {
   margin-bottom: 1rem;
 }
 
-// **Score Box**
 .score-box {
   background: $primary-color;
   color: white;
@@ -194,13 +178,11 @@ body {
   box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
 }
 
-// **Score Value**
 .score-value {
   font-size: 2.5rem;
   font-weight: bold;
 }
 
-// **Result Message**
 .result-message {
   font-size: 1.4rem;
   font-weight: bold;
@@ -208,7 +190,6 @@ body {
   margin-top: 1rem;
 }
 
-// **Common Message**
 .common-message {
   font-size: 1rem;
   color: darken($secondary-color, 20%);
@@ -216,7 +197,6 @@ body {
   line-height: 1.5;
 }
 
-// **Retry Button**
 .retry-btn, next-btn {
   margin-top: 1.5rem;
   padding: 12px 20px;
@@ -254,7 +234,6 @@ body {
   }
 }
 
-// **Responsive Design**
 @media (max-width: 768px) {
   .quiz-container {
     padding: 1.5rem;
@@ -348,7 +327,6 @@ body {
   font-size: 22px;
 }
 
-/* Responsive Design */
 @media (max-width: 1024px) {
   .schema-results {
     flex-direction: column;

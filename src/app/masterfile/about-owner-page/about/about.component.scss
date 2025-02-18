@@ -1,12 +1,12 @@
 .bio-section {
   display: flex;
-  flex-direction: column; /* Default for mobile */
+  flex-direction: column;
   gap: 20px;
   padding: 20px;
 
-  @media (min-width: 1024px) { /* Large screens */
-    flex-direction: row; /* Side-by-side layout */
-    padding: 40px 50px; /* Padding for left and right sides */
+  @media (min-width: 1024px) {
+    flex-direction: row;
+    padding: 40px 50px;
     margin: 0 8rem;
   }
 
@@ -18,29 +18,30 @@
     h2 {
       font-size: 1.8rem;
       margin-bottom: 10px;
-      color: #333; /* Dark gray for headers */
+      color: #333;
     }
 
     h4 {
       font-size: 1.4rem;
       margin-top: 20px;
-      color: #555; /* Medium gray for sub-headers */
+      color: #555;
     }
 
     p, li {
       font-size: 1rem;
       line-height: 1.6;
-      color: #666; /* Lighter gray for text */
+      color: #666;
       margin-bottom: 10px;
     }
 
     ul {
-      padding-left: 20px; /* Indent bullet points */
-      list-style-type: disc; /* Bulleted list */
+      padding-left: 20px;
+      list-style-type: disc;
 
     }
   }
 }
+
 .video-section {
   padding: 30px;
   border-radius: 10px;
