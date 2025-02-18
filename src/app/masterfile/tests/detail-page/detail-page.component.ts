@@ -37,6 +37,7 @@ export class DetailPageComponent extends ClearObservable implements OnInit {
   }
 
   ngOnInit(): void {
+    window.scrollTo(0, 0);
     this.route.params.pipe(
       switchMap(params => this.testService.getTestById(params['id'])),
       takeUntil(this.destroy$)

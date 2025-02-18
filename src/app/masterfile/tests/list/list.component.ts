@@ -1,4 +1,4 @@
-import {Component} from '@angular/core';
+import {Component, OnInit} from '@angular/core';
 import {SECTION} from '../../../ shared/constants/section-name-id';
 
 @Component({
@@ -6,10 +6,7 @@ import {SECTION} from '../../../ shared/constants/section-name-id';
   templateUrl: './list.component.html',
   styleUrl: './list.component.scss'
 })
-export class ListComponent {
-  filterVisible = false;
-  searchText = '';
-  selectedCategory: any = null;
+export class ListComponent implements OnInit{
 
 
   items = [
@@ -21,16 +18,9 @@ export class ListComponent {
   filteredItems = [...this.items];
   protected readonly SECTION = SECTION;
 
-  openFilterMenu() {
-    this.filterVisible = true;
+  ngOnInit(): void {
+    window.scrollTo(0, 0);
   }
 
-  filterItems() {
-    this.filteredItems = this.items.filter(item => {
-      return (
-        (this.selectedCategory ? item.category === this.selectedCategory : true) &&
-        (this.searchText ? item.name.toLowerCase().includes(this.searchText.toLowerCase()) : true)
-      );
-    });
-  }
+
 }
