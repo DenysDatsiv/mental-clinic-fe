@@ -4,8 +4,8 @@
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
-    "build": "NODE_OPTIONS=--max-old-space-size=512 ng build --configuration=production",
-    "postinstall": "ng build --configuration=production",
+    "build": "NODE_OPTIONS='--max-old-space-size=256' ng build --configuration=production",
+    "postinstall": "NODE_OPTIONS='--max-old-space-size=256' ng build --configuration=production",
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
     "serve:ssr:mentalClinicFe": "node dist/mental-clinic-fe/server/server.mjs"
