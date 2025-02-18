@@ -24,7 +24,8 @@
         "build": {
           "builder": "@angular-devkit/build-angular:application",
           "options": {
-            "outputPath": "dist/mental-front-end",
+            "outputPath": "dist/mental-front-fe",
+            ""
             "index": "src/index.html",
             "browser": "src/main.ts",
             "allowedCommonJsDependencies": ["quill"],
