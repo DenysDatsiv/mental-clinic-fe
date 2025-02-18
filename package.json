@@ -4,12 +4,10 @@
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
-    "build": "ng build --configuration=production && cp src/_redirects dist/mental-clinic-fe/",
-    "postinstall": "ng build --configuration=production && cp src/_redirects dist/mental-clinic-fe/",
+    "build": "ng build",
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
     "serve:ssr:mentalClinicFe": "node dist/mental-clinic-fe/server/server.mjs"
-
   },
   "private": true,
   "dependencies": {
