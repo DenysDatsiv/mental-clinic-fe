@@ -1,0 +1,9 @@
+services:
+  - type: web
+    name: mental-clinic-fe
+    env: static
+    staticPublishPath: dist/mental-clinic-fe
+    buildCommand: npm install && npm run build
+    routes:
+      - src: /.*
+        dest: /index.html
