@@ -22,9 +22,6 @@ export class TestService {
       params = params.set('type', type);
     }
 
-    console.log(this.http.get<Test[]>(API_TESTS, {params}).pipe(
-      map(tests => sliceCount ? tests.slice(0, sliceCount) : tests)
-    ))
     return this.http.get<Test[]>(API_TESTS, {params}).pipe(
       map(tests => sliceCount ? tests.slice(0, sliceCount) : tests)
     );
@@ -41,30 +38,4 @@ export class TestService {
     );
   }
 
-  createTest(test: Test): Observable<Test> {
-    return this.http.post<Test>(API_TESTS, test).pipe(
-      catchError((error) => {
-        console.error('Error creating test:', error);
-        return throwError(() => error);
-      })
-    );
-  }
-
-  updateTest(id: string, test: Test): Observable<Test> {
-    return this.http.put<Test>(`${API_TESTS}/${id}`, test).pipe(
-      catchError((error) => {
-        console.error(`Error updating test with ID ${id}:`, error);
-        return throwError(() => error);
-      })
-    );
-  }
-
-  deleteTest(id: string): Observable<any> {
-    return this.http.delete<any>(`${API_TESTS}/${id}`).pipe(
-      catchError((error) => {
-        console.error(`Error deleting test with ID ${id}:`, error);
-        return throwError(() => error);
-      })
-    );
-  }
 }

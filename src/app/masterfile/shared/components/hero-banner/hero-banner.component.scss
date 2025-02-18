@@ -1,11 +1,11 @@
 .lcp-content {
-  max-width: 900px; /* Prevents excessive width */
+  max-width: 900px;
   text-align: start;
 
   padding: 20px;
 
   h1 {
-    font-size: clamp(2.5rem, 5vw, 4rem); /* Responsive LCP optimization */
+    font-size: clamp(2.5rem, 5vw, 4rem);
     font-weight: bold;
     color: #333;
   }
@@ -17,9 +17,10 @@
 }
 
 .owner-img-max-width {
-  max-width: 100%;
-  height: auto;
-  display: block;
-  margin: 0 auto;
-  aspect-ratio: 1 / 1; /* Prevents CLS */
+  width: 100%;
+  max-width: 400px;
+  aspect-ratio: 1 / 1;
+  object-fit: none;
+  padding-top:4rem;
 }
+

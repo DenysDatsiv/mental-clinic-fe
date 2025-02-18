@@ -7,6 +7,8 @@ import {Test} from '../models/test.model';
 import {specializedTests} from '../constants/specialized-tests';
 import {ClearObservable} from '../../../ shared/unsubscribtion/ClearObservable';
 import {TEST_ROUTES} from '../../../ shared/constants/routes';
+import {clinicContacts} from "../../shared/constants/contacts.constant";
+import {ClinicContactsService} from "../../shared/components/clinic-contacts-dialog/clinic-contacts.service";
 
 @Component({
   selector: 'app-detail-page',
@@ -31,7 +33,8 @@ export class DetailPageComponent extends ClearObservable implements OnInit {
     private testService: TestService,
     private router: Router,
     private titleService: Title,
-    private metaService: Meta
+    private metaService: Meta,
+    private  contactsService: ClinicContactsService
   ) {
     super();
   }
@@ -147,5 +150,8 @@ export class DetailPageComponent extends ClearObservable implements OnInit {
     this.titleService.setTitle(`${title} | Клініка ментального здоров'я`);
     this.metaService.updateTag({name: 'description', content: description});
     this.metaService.updateTag({name: 'keywords', content: `ментальне здоров'я, ${title}, тест на психічний стан`});
+  }
+  openContacts() {
+    this.contactsService.openDialog(clinicContacts);
   }
 }

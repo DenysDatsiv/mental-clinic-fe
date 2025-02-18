@@ -1,9 +1,8 @@
 <section>
-  <div id="hero" class="flex flex-column pt-4 px-4 lg:px-8 overflow-hidden"
-       style="background:
-  linear-gradient(0deg, rgba(200, 200, 200, 0.2), rgba(200, 200, 200, 0.2)),
-  radial-gradient(77.36% 256.97% at 77.36% 57.52%, #D3D3D3 0%, #A9A9A9 100%);
-  clip-path: ellipse(150% 87% at 89% 30%);">
+    <div class="flex flex-column pt-4 px-4 lg:px-8 overflow-hidden" id="hero-banner"
+         style="background: linear-gradient(0deg, rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.2)),
+            radial-gradient(77.36% 256.97% at 77.36% 57.52%, #3DA1DA 0%, #DAF2FF 100%);
+clip-path: ellipse(150% 87% at 93% 13%);">
     <div class="mx-4 md:mx-8 mt-0 md:mt-4">
       <div class="flex flex-column lg:flex-row justify-content-between">
 
@@ -14,7 +13,20 @@
             отримати якісну медичну допомогу та підтримку!
           </p>
         </div>
-        <img src="../../../../assets/owner.png" alt="Лікар-невролог і нарколог" class="md:w-auto owner-img-max-width">
+          <picture>
+              <source srcset="assets/owner.webp" type="image/webp">
+              <img
+                      alt="Hero Image"
+                      class="md:w-auto owner-img-max-width"
+                      decoding="sync"
+                      fetchpriority="high"
+                      height="400"
+                      loading="eager"
+                      src="assets/owner.webp"
+                      style="display: block; visibility: visible; opacity: 1;"
+                      width="400"
+              />
+          </picture>
       </div>
 
     </div>
@@ -23,7 +35,7 @@
   <div class="bio-section flex flex-column lg:flex-row justify-content-between align-items-start px-4 py-4">
     <div class="bio-text-left">
       <div>
-        <h2>Про мене – Лікар із багаторічним досвідом</h2>
+        <h2>Про мене – лікар із багаторічним досвідом</h2>
         <p>
           Лікар-психіатр, психотерапевт, нарколог та невролог з понад 20-річним досвідом. Я народився у селі Велика
           Чернеччина, Сумського району Сумської області, у сім'ї педагогів. Мій батько був директором школи, а мама —
@@ -45,11 +57,6 @@
           "Будищанський психоневрологічний інтернат". Ця робота дає мені змогу брати участь у покращенні умов
           психіатричної допомоги, сприяти дотриманню прав пацієнтів та впроваджувати сучасні стандарти в медичній
           практиці.
-        </p>
-        <p>
-          Окрім професійної діяльності, я також модерую популярну спільноту "Доказові батьки" у соціальній мережі
-          Facebook. Ця платформа допомагає розвивати культуру відповідального батьківства, базованого на доказовій
-          медицині, та об’єднує батьків, які прагнуть виховувати здорових та щасливих дітей.
         </p>
         <p>
           Моя мета — не лише лікувати, а й покращувати якість життя людей, працюючи на стику медицини, громадського

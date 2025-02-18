@@ -136,12 +136,17 @@
         <p class="result-message text-center text-lg">{{ resultMessage }}</p>
         <p class="common-message text-gray-500 text-center">{{ data?.commonMessage }}</p>
 
-        <div class="button-group flex justify-content-center mt-5 gap-3">
-          <p-button (click)="restartTest()" label="Пройти знову">
-          </p-button>
+        <div class="button-group flex flex-column justify-content-center mt-5 gap-3">
+            <div class="flex justify-content-center mt-5 gap-3">
+                <p-button (click)="restartTest()" label="Пройти знову">
+                </p-button>
 
-          <p-button (click)="goToAllTests()" label="До всіх тестів">
-          </p-button>
+                <p-button (click)="goToAllTests()" label="До всіх тестів">
+                </p-button>
+            </div>
+
+            <p-button (click)="openContacts()" label="Записатись на консультацію">
+            </p-button>
 
         </div>
       </div>

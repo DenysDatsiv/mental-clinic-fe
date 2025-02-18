@@ -73,12 +73,10 @@ export class TestsGridComponent implements OnInit {
     this.tests$.subscribe(() => this.applyPagination());
     this.searchForm.valueChanges.subscribe(() => this.toggleButtonVisibility());
     this.toggleButtonVisibility();
-    console.log(this.allTests);
   }
 
   applyPagination() {
     this.paginatedTests$.next(this.allTests.slice(this.first, this.first + this.rows));
-    console.log(this.paginatedTests$);
   }
 
   onPageChange({first = 0, rows = 10}) {

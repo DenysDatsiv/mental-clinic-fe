@@ -27,7 +27,6 @@ export class ClinicContactsDialogComponent extends ClearObservable implements On
 
 
   openTelegram(phone: string) {
-    console.log(`https://t.me/${phone}`)
     window.open(`https://t.me/${phone}`, '_blank');
   }
 

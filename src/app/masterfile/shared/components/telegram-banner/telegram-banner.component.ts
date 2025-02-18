@@ -6,5 +6,8 @@ import { Component } from '@angular/core';
   styleUrl: './telegram-banner.component.scss'
 })
 export class TelegramBannerComponent {
+  openTelegram(link: string) {
+    window.open(link, '_blank');
+  }
 
 }
