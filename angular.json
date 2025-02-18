@@ -27,6 +27,7 @@
             "outputPath": "dist/mental-front-end",
             "index": "src/index.html",
             "browser": "src/main.ts",
+            "allowedCommonJsDependencies": ["quill"],
             "polyfills": [
               "zone.js"
             ],
