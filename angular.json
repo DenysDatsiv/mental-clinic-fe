@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "mental-front-end": {
+    "mental-clinic-fe": {
       "projectType": "application",
       "schematics": {
         "@schematics/angular:component": {
@@ -82,10 +82,10 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "buildTarget": "mental-front-end:build:production"
+              "buildTarget": "mental-front-fe:build:production"
             },
             "development": {
-              "buildTarget": "mental-front-end:build:development"
+              "buildTarget": "mental-clinic-fe:build:development"
             }
           },
           "defaultConfiguration": "development"
