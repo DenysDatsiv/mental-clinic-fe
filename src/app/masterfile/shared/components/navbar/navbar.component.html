@@ -11,7 +11,7 @@
     <nav [class.active]="isMenuOpen" aria-label="Main Navigation" class="navbar__menu">
         <ul>
             <li>
-                <a
+                <a [href]="TEST_ROUTES.LIST"
                         (click)="navigateTo(TEST_ROUTES.LIST, 'Тести')"
                         title="Дізнайтеся про перевірку ліків">
                     Тести
@@ -19,13 +19,14 @@
             </li>
             <li>
                 <a
+                        [href]="ROUTES.DRUGS"
                         (click)="navigateTo(ROUTES.DRUGS, 'Перевірка ліків')"
                         title="Дізнайтеся про перевірку ліків">
                     Перевірка ліків
                 </a>
             </li>
             <li>
-                <a
+                <a [href]="ROUTES.ABOUT"
                         (click)="navigateTo(ROUTES.ABOUT, 'Про лікаря')"
                         title="Про лікаря та клініку">
                     Про лікаря
