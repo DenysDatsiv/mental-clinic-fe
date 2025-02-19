@@ -1,51 +1,58 @@
 <!doctype html>
 <html lang="uk">
 <head>
-  <meta charset="utf-8">
-  <title>Клініка ментального здоров'я Євгена Клініка</title>
-  <base href="/">
-  <meta content="width=device-width, initial-scale=1" name="viewport">
-  <meta charset="UTF-8">
-  <meta
-    content="Клініка ментального здоров'я Євгена Клініка — найкращий вибір для психічного здоров'я, психологічної допомоги та професійного лікування тривожних розладів, депресії та особистісних розладів."
-    name="description">
-  <meta
-    content="ментальне здоров'я, психологічна допомога, психотерапія, лікування депресії, тривога, Євген клініка, консультація психіатра, психолог Київ, психотерапевт, когнітивно-поведінкова терапія, лікування стресу"
-    name="keywords">
-  <meta content="Клініка ментального здоров'я Євгена Клініка" name="author">
-  <meta content="index, follow" name="robots">
+    <meta charset="utf-8">
+    <title>Клініка ментального здоров'я Євгена Скрипніка</title>
+    <base href="/">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <link as="image" href="assets/owner.webp" rel="preload" type="image/png">
-  <meta content="Клініка ментального здоров'я Євгена Клініка" property="og:title">
-  <meta content="Професійна допомога для вашого психічного здоров'я. Запишіться на консультацію вже сьогодні!"
-        property="og:description">
-  <meta content="https://example.com/your-clinic-image.jpg" property="og:image">
-  <meta content="https://your-website.com" property="og:url">
-  <meta content="website" property="og:type">
+    <!-- SEO Meta Tags -->
+    <meta name="description" content="Клініка ментального здоров'я Євгена Скрипніка — найкращий вибір для психологічної допомоги та лікування тривоги, депресії та особистісних розладів.">
+    <meta name="keywords" content="ментальне здоров'я, психологічна допомога, психотерапія, лікування депресії, тривога, Євген Скрипнік, консультація психіатра, психолог Київ, когнітивно-поведінкова терапія, лікування стресу">
+    <meta name="author" content="Клініка ментального здоров'я Євгена Скрипніка">
+    <meta name="robots" content="index, follow">
 
-  <meta content="summary_large_image" name="twitter:card">
-  <meta content="Клініка ментального здоров'я Євгена Клініка" name="twitter:title">
-  <meta content="Професійна допомога для вашого психічного здоров'я. Запишіться на консультацію вже сьогодні!"
-        name="twitter:description">
-  <meta content="https://example.com/your-clinic-image.jpg" name="twitter:image">
+    <!-- Open Graph (Facebook) Meta Tags -->
+    <meta property="og:title" content="Клініка ментального здоров'я Євгена Скрипніка">
+    <meta property="og:description" content="Професійна допомога для вашого психічного здоров'я. Запишіться на консультацію вже сьогодні!">
+    <meta property="og:image" content="https://doctor-skripnik.com.ua/assets/clinic-image.jpg">
+    <meta property="og:url" content="https://doctor-skripnik.com.ua/">
+    <meta property="og:type" content="website">
 
-  <link href="https://fonts.googleapis.com" rel="preconnect">
-  <link crossorigin href="https://fonts.gstatic.com" rel="preconnect">
-  <link
-    href="https://fonts.googleapis.com/css2?family=Sofia+Sans+Semi+Condensed:ital,wght@0,1..1000;1,1..1000&display=swap"
-    rel="stylesheet">
-    <link href="assets/favicon.ico" rel="icon" type="image/x-icon">
+    <!-- Twitter Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Клініка ментального здоров'я Євгена Скрипніка">
+    <meta name="twitter:description" content="Професійна допомога для вашого психічного здоров'я. Запишіться на консультацію вже сьогодні!">
+    <meta name="twitter:image" content="https://doctor-skripnik.com.ua/assets/clinic-image.jpg">
 
+    <!-- Preload Important Images -->
+    <link rel="preload" href="assets/owner.webp" as="image" type="image/webp">
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Sofia+Sans+Semi+Condensed:wght@400;600&display=swap" rel="stylesheet">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="assets/favicon.ico">
+
+    <!-- Google Analytics (GA4) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-QL51QSPEPK"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'G-QL51QSPEPK', {
+            page_path: window.location.pathname
+        });
+
+        // Example: Track page views dynamically
+        document.addEventListener('DOMContentLoaded', function() {
+            gtag('event', 'page_view', { page_path: window.location.pathname });
+        });
+    </script>
 </head>
-
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-QL51QSPEPK"></script>
-<script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-
-    gtag('config', 'G-QL51QSPEPK');
-</script>
 <body>
 <app-root></app-root>
 </body>
