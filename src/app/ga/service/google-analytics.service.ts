@@ -59,30 +59,58 @@ export class GoogleAnalyticsService {
    * @param eventLabel - A descriptive label for the event (e.g., 'Finish Test', 'Contact Us Form').
    * @param additionalParams - Optional additional parameters (e.g., test name, button ID).
    */
-  trackEvent(
-      eventName: string,
-      eventCategory: string,
-      eventLabel: string,
-      additionalParams: Record<string, any> = {}
-  ) {
+  /**
+   * Tracks a custom event in Google Analytics.
+   * @param eventName - The event action (e.g., 'page_view', 'button_click').
+   * @param eventCategory - The category of the event.
+   * @param eventLabel - A descriptive label for the event.
+   * @param additionalParams - Optional parameters.
+   */
+  trackEvent(eventName: string, eventCategory: string, eventLabel: string, additionalParams: Record<string, any> = {}) {
     if (typeof gtag !== 'function') {
       console.warn('Google Analytics is not initialized.');
       return;
     }
 
+    const deviceInfo = this.getDeviceInfo();
+
     const eventData = {
       event_category: eventCategory,
       event_label: eventLabel,
-      previous_page: this.previousUrl || 'direct',
-      timestamp: new Date().toISOString(),
+      browser: deviceInfo.browser,
+      os: deviceInfo.os,
+      device_type: deviceInfo.deviceType,
       ...additionalParams
     };
 
-    try {
-      gtag('event', eventName, eventData);
-    } catch (error) {
-      console.error('[GA Error] Failed to send event:', error);
-    }
+    gtag('event', eventName, eventData);
+  }
+
+  /**
+   * Gets the user's browser, OS, and device type.
+   */
+  getDeviceInfo(): { browser: string; os: string; deviceType: string } {
+    const userAgent = navigator.userAgent;
+    let browser = 'Unknown';
+    let os = 'Unknown';
+    let deviceType = 'Desktop';
+
+    if (/mobile/i.test(userAgent)) deviceType = 'Mobile';
+    if (/tablet/i.test(userAgent)) deviceType = 'Tablet';
+
+    if (userAgent.includes('Firefox')) browser = 'Firefox';
+    else if (userAgent.includes('Edg')) browser = 'Edge';
+    else if (userAgent.includes('Chrome')) browser = 'Chrome';
+    else if (userAgent.includes('Safari')) browser = 'Safari';
+    else if (userAgent.includes('Opera') || userAgent.includes('OPR')) browser = 'Opera';
+
+    if (/Win/i.test(userAgent)) os = 'Windows';
+    else if (/Mac/i.test(userAgent)) os = 'MacOS';
+    else if (/Linux/i.test(userAgent)) os = 'Linux';
+    else if (/Android/i.test(userAgent)) os = 'Android';
+    else if (/iOS|iPad|iPhone/i.test(userAgent)) os = 'iOS';
+
+    return { browser, os, deviceType };
   }
 
 }
