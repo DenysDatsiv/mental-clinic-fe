@@ -75,12 +75,12 @@ export class GoogleAnalyticsService {
     const deviceInfo = this.getDeviceInfo();
 
     const eventData = {
-      event_category: eventCategory,
-      event_label: eventLabel,
-      browser: deviceInfo.browser,
-      os: deviceInfo.os,
-      device_type: deviceInfo.deviceType,
-      ...additionalParams
+      event_category: eventCategory || null,
+      event_label: eventLabel || null ,
+      browser: deviceInfo.browser || null,
+      os: deviceInfo.os || null ,
+      device_type: deviceInfo.deviceType || null ,
+      ...additionalParams || null
     };
 
     gtag('event', eventName, eventData);
