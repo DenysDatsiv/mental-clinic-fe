@@ -88,7 +88,9 @@ export class DetailPageComponent extends ClearObservable implements OnInit {
     if (!this.data || !this.data.resultInterpretation) return;
 
     if (this.data.specialTest !== specializedTests.SMI) {
-      this.totalScore = Object.values(this.answers).reduce((sum, value) => sum + Number(value), 0);
+      this.totalScore = Object.keys(this.answers)
+          .map(key => this.answers[key])
+          .reduce((sum, value) => sum + Number(value), 0);
 
       const interpretation = this.data.resultInterpretation.find(({ range: [min, max] }) =>
           this.totalScore >= min && (max === null || this.totalScore <= max)
