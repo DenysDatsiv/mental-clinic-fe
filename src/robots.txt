@@ -1,0 +1,12 @@
+User-agent: *
+Disallow: /assets/
+Disallow: /node_modules/
+Disallow: /admin/
+Disallow: /*.json$
+Disallow: /*.map$
+
+# Allow search engines to crawl everything else
+Allow: /
+
+# Sitemap for better indexing
+Sitemap: https://doctor-skripnik.com.ua/sitemap.xml
