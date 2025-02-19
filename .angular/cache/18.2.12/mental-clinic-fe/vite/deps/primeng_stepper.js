@@ -1,17 +1,17 @@
 import {
-  animate,
-  state,
-  style,
-  transition,
-  trigger
-} from "./chunk-OGB62SLM.js";
-import {
   PrimeTemplate,
   SharedModule
 } from "./chunk-TQSVMJ6K.js";
 import {
   UniqueComponentId
 } from "./chunk-3OF44R55.js";
+import {
+  animate,
+  state,
+  style,
+  transition,
+  trigger
+} from "./chunk-OGB62SLM.js";
 import {
   CommonModule,
   NgClass,

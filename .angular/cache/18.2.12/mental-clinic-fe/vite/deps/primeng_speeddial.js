@@ -6,18 +6,19 @@ import {
   TooltipModule
 } from "./chunk-STBFZVQ2.js";
 import {
-  RouterLink,
-  RouterModule
-} from "./chunk-AQMTG6B6.js";
-import {
   ButtonDirective,
   ButtonModule
-} from "./chunk-UVJQKLU3.js";
+} from "./chunk-7TN6NS6B.js";
 import "./chunk-PCVGMHYY.js";
 import {
   Ripple,
   RippleModule
 } from "./chunk-QN24C4B3.js";
+import "./chunk-32JR77BM.js";
+import {
+  RouterLink,
+  RouterModule
+} from "./chunk-AQMTG6B6.js";
 import "./chunk-3E3YFUVD.js";
 import "./chunk-DO2TVYAE.js";
 import "./chunk-PXWZN6FU.js";
@@ -28,7 +29,6 @@ import {
 import {
   UniqueComponentId
 } from "./chunk-3OF44R55.js";
-import "./chunk-32JR77BM.js";
 import {
   DomHandler
 } from "./chunk-BUGEQH7Q.js";

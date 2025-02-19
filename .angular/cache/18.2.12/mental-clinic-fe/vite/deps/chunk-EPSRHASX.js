@@ -16,17 +16,17 @@ import {
   RippleModule
 } from "./chunk-QN24C4B3.js";
 import {
-  animate,
-  style,
-  transition,
-  trigger
-} from "./chunk-OGB62SLM.js";
-import {
   MessageService,
   PrimeNGConfig,
   PrimeTemplate,
   SharedModule
 } from "./chunk-TQSVMJ6K.js";
+import {
+  animate,
+  style,
+  transition,
+  trigger
+} from "./chunk-OGB62SLM.js";
 import {
   CommonModule,
   NgClass,
@@ -706,4 +706,4 @@ export {
   Messages,
   MessagesModule
 };
-//# sourceMappingURL=chunk-FONJJNHD.js.map
+//# sourceMappingURL=chunk-EPSRHASX.js.map

@@ -6,6 +6,10 @@ import {
   TimesIcon
 } from "./chunk-MDBJZ6LU.js";
 import {
+  AutoFocus,
+  AutoFocusModule
+} from "./chunk-32JR77BM.js";
+import {
   NG_VALUE_ACCESSOR
 } from "./chunk-B7GQUK3J.js";
 import "./chunk-PXWZN6FU.js";
@@ -15,10 +19,6 @@ import {
   SharedModule
 } from "./chunk-TQSVMJ6K.js";
 import "./chunk-3OF44R55.js";
-import {
-  AutoFocus,
-  AutoFocusModule
-} from "./chunk-32JR77BM.js";
 import {
   DomHandler
 } from "./chunk-BUGEQH7Q.js";

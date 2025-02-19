@@ -1,4 +1,5 @@
 export const ROUTES = {
+  MAIN_PAGE: 'main-page',
   TEST: 'test',
   DRUGS: 'drugs',
   ABOUT: 'about',

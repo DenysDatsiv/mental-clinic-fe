@@ -1,14 +1,15 @@
-import {Component, OnInit} from '@angular/core';
-import {ActivatedRoute, Router} from '@angular/router';
-import {Meta, Title} from '@angular/platform-browser';
-import {switchMap, takeUntil} from 'rxjs/operators';
-import {TestService} from '../services/test.service';
-import {Test} from '../models/test.model';
-import {specializedTests} from '../constants/specialized-tests';
-import {ClearObservable} from '../../../ shared/unsubscribtion/ClearObservable';
-import {TEST_ROUTES} from '../../../ shared/constants/routes';
-import {clinicContacts} from "../../shared/constants/contacts.constant";
-import {ClinicContactsService} from "../../shared/components/clinic-contacts-dialog/clinic-contacts.service";
+import { Component, OnInit } from '@angular/core';
+import { ActivatedRoute, Router } from '@angular/router';
+import { Meta, Title } from '@angular/platform-browser';
+import { switchMap, takeUntil } from 'rxjs/operators';
+import { TestService } from '../services/test.service';
+import { Test } from '../models/test.model';
+import { specializedTests } from '../constants/specialized-tests';
+import { clinicContacts } from "../../shared/constants/contacts.constant";
+import { ClinicContactsService } from "../../shared/components/clinic-contacts-dialog/clinic-contacts.service";
+import { GoogleAnalyticsService } from "../../../ga/service/google-analytics.service";
+import {ClearObservable} from "../../../ shared/unsubscribtion/ClearObservable";
+import {TEST_ROUTES} from "../../../ shared/constants/routes";
 
 @Component({
   selector: 'app-detail-page',
@@ -29,12 +30,13 @@ export class DetailPageComponent extends ClearObservable implements OnInit {
   protected readonly specializedTests = specializedTests;
 
   constructor(
-    private route: ActivatedRoute,
-    private testService: TestService,
-    private router: Router,
-    private titleService: Title,
-    private metaService: Meta,
-    private  contactsService: ClinicContactsService
+      private route: ActivatedRoute,
+      private testService: TestService,
+      private router: Router,
+      private titleService: Title,
+      private metaService: Meta,
+      private contactsService: ClinicContactsService,
+      private googleAnalyticsService: GoogleAnalyticsService
   ) {
     super();
   }
@@ -42,13 +44,12 @@ export class DetailPageComponent extends ClearObservable implements OnInit {
   ngOnInit(): void {
     window.scrollTo(0, 0);
     this.route.params.pipe(
-      switchMap(params => this.testService.getTestById(params['id'])),
-      takeUntil(this.destroy$)
+        switchMap(params => this.testService.getTestById(params['id'])),
+        takeUntil(this.destroy$)
     ).subscribe(response => {
       this.data = response;
       this.updatePageTitle(response.name);
       this.updateSEO(response.name, response.description);
-
     });
   }
 
@@ -65,9 +66,22 @@ export class DetailPageComponent extends ClearObservable implements OnInit {
     }
 
     this.showError = false;
-    this.currentQuestionIndex < this.data.questions.length - 1
-      ? this.currentQuestionIndex++
-      : this.submitAnswers();
+
+    // If last question, track "Finish Test" event
+    if (this.currentQuestionIndex === this.data.questions.length - 1) {
+      this.googleAnalyticsService.trackEvent(
+          'click',
+          'Test Completion',
+          'Finish Test',
+          {
+            test_name: this.data.name,
+            total_score: this.totalScore
+          }
+      );
+      this.submitAnswers();
+    } else {
+      this.currentQuestionIndex++;
+    }
   }
 
   submitAnswers(): void {
@@ -76,15 +90,15 @@ export class DetailPageComponent extends ClearObservable implements OnInit {
     if (this.data.specialTest !== specializedTests.SMI) {
       this.totalScore = Object.values(this.answers).reduce((sum, value) => sum + Number(value), 0);
 
-      const interpretation = this.data.resultInterpretation.find(({range: [min, max]}) =>
-        this.totalScore >= min && (max === null || this.totalScore <= max)
+      const interpretation = this.data.resultInterpretation.find(({ range: [min, max] }) =>
+          this.totalScore >= min && (max === null || this.totalScore <= max)
       );
 
       this.resultMessage = interpretation ? interpretation.result : 'Не вдалося визначити рівень.';
     } else {
       this.schemaScores = {};
 
-      this.data.resultInterpretation.forEach(({name, questionIndex}) => {
+      this.data.resultInterpretation.forEach(({ name, questionIndex }) => {
         let schemaTotal = 0;
         let schemaCount = 0;
 
@@ -102,13 +116,25 @@ export class DetailPageComponent extends ClearObservable implements OnInit {
       });
 
       this.highestSchema = Object.keys(this.schemaScores).reduce((a, b) =>
-        this.schemaScores[a] > this.schemaScores[b] ? a : b
+          this.schemaScores[a] > this.schemaScores[b] ? a : b
       );
 
       this.resultMessage = `Ваш домінуючий психологічний шаблон: ${this.highestSchema}`;
     }
 
     this.isTestCompleted = true;
+  }
+
+  openPdf(pdfUrl?: string): void {
+    if (pdfUrl) {
+      this.googleAnalyticsService.trackEvent(
+          'click',
+          'External Resource',
+          'Open PDF',
+          { pdf_url: pdfUrl }
+      );
+      window.open(pdfUrl, '_blank');
+    }
   }
 
   previousQuestion(): void {
@@ -125,6 +151,13 @@ export class DetailPageComponent extends ClearObservable implements OnInit {
   }
 
   restartTest(): void {
+    this.googleAnalyticsService.trackEvent(
+        'click',
+        'Test Interaction',
+        'Restart Test',
+        { test_name: this.data.name }
+    );
+
     this.currentQuestionIndex = 0;
     this.answers = {};
     this.isTestCompleted = false;
@@ -134,24 +167,31 @@ export class DetailPageComponent extends ClearObservable implements OnInit {
     this.resultMessage = '';
   }
 
-  openPdf(pdfUrl?: string): void {
-    if (pdfUrl) {
-      window.open(pdfUrl, '_blank');
-    } else {
-      console.warn('PDF посилання відсутнє');
-    }
+  goToAllTests(): void {
+    this.googleAnalyticsService.trackEvent(
+        'click',
+        'Navigation',
+        'Go to All Tests',
+        { destination: TEST_ROUTES.LIST }
+    );
+
+    this.router.navigate([TEST_ROUTES.LIST]);
   }
 
-  goToAllTests(): void {
-    this.router.navigate([TEST_ROUTES.LIST]);
+  openContacts() {
+    this.googleAnalyticsService.trackEvent(
+        'click',
+        'Contact Button',
+        'Open Contact Dialog',
+        { label: 'Test Result Page' }
+    );
+
+    this.contactsService.openDialog(clinicContacts);
   }
 
   updateSEO(title: string, description: string): void {
     this.titleService.setTitle(`${title} | Клініка ментального здоров'я`);
-    this.metaService.updateTag({name: 'description', content: description});
-    this.metaService.updateTag({name: 'keywords', content: `ментальне здоров'я, ${title}, тест на психічний стан`});
-  }
-  openContacts() {
-    this.contactsService.openDialog(clinicContacts);
+    this.metaService.updateTag({ name: 'description', content: description });
+    this.metaService.updateTag({ name: 'keywords', content: `ментальне здоров'я, ${title}, тест на психічний стан` });
   }
 }

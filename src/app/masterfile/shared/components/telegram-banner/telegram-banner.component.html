@@ -6,9 +6,9 @@
       частиною чогось великого.
     </div>
     <div class="flex flex-column md:flex-row gap-3 justify-content-center ">
-      <button (click)="openTelegram('https://t.me/+arTvl6C3HeQ2ZjVi')" class="font-bold px-5 py-3 p-button-raised p-button-rounded white-space-nowrap" icon="pi pi-telegram" label="Спільнота психологів" pButton
+      <button (click)="openTelegram(TELEGRAM_BANNER.PSYCHOLOGISTS_COMMUNITY_LABEL.name ,TELEGRAM_BANNER.PSYCHOLOGISTS_COMMUNITY_LABEL.link)" class="font-bold px-5 py-3 p-button-raised p-button-rounded white-space-nowrap" icon="pi pi-telegram" [label]='TELEGRAM_BANNER.PSYCHOLOGISTS_COMMUNITY_LABEL.name' pButton
               pRipple></button>
-      <button (click)="openTelegram('https://t.me/+EzLZPYezLm03NTNi')" class="font-bold px-5 py-3 p-button-raised p-button-rounded white-space-nowrap" icon="pi pi-telegram" label="Спільнота лікарів" pButton
+      <button (click)="openTelegram(TELEGRAM_BANNER.DOCTORS_COMMUNITY_LABEL.name,TELEGRAM_BANNER.DOCTORS_COMMUNITY_LABEL.link)" class="font-bold px-5 py-3 p-button-raised p-button-rounded white-space-nowrap" icon="pi pi-telegram" [label]='TELEGRAM_BANNER.DOCTORS_COMMUNITY_LABEL.name' pButton
               pRipple></button>
     </div>
   </div>

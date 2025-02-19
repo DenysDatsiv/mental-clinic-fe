@@ -6,20 +6,14 @@ import {
   AngleRightIcon
 } from "./chunk-KFVC45AI.js";
 import {
-  RouterLink,
-  RouterLinkActive,
-  RouterModule
-} from "./chunk-AQMTG6B6.js";
-import {
   Ripple,
   RippleModule
 } from "./chunk-QN24C4B3.js";
 import {
-  animate,
-  style,
-  transition,
-  trigger
-} from "./chunk-OGB62SLM.js";
+  RouterLink,
+  RouterLinkActive,
+  RouterModule
+} from "./chunk-AQMTG6B6.js";
 import {
   OverlayService,
   PrimeNGConfig,
@@ -31,6 +25,12 @@ import {
   UniqueComponentId,
   zindexutils
 } from "./chunk-3OF44R55.js";
+import {
+  animate,
+  style,
+  transition,
+  trigger
+} from "./chunk-OGB62SLM.js";
 import {
   ConnectedOverlayScrollHandler,
   DomHandler
@@ -1954,4 +1954,4 @@ export {
   TieredMenu,
   TieredMenuModule
 };
-//# sourceMappingURL=chunk-2PZW7YGF.js.map
+//# sourceMappingURL=chunk-WXZFNBDR.js.map

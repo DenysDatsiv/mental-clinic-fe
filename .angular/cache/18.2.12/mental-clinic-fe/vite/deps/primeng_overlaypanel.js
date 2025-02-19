@@ -7,13 +7,6 @@ import {
 } from "./chunk-QN24C4B3.js";
 import "./chunk-PXWZN6FU.js";
 import {
-  animate,
-  state,
-  style,
-  transition,
-  trigger
-} from "./chunk-OGB62SLM.js";
-import {
   OverlayService,
   PrimeNGConfig,
   PrimeTemplate,
@@ -22,6 +15,13 @@ import {
 import {
   zindexutils
 } from "./chunk-3OF44R55.js";
+import {
+  animate,
+  state,
+  style,
+  transition,
+  trigger
+} from "./chunk-OGB62SLM.js";
 import {
   ConnectedOverlayScrollHandler,
   DomHandler

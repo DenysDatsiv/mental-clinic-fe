@@ -3,6 +3,10 @@ import {
   InputTextModule
 } from "./chunk-QU6QLMWV.js";
 import {
+  AutoFocus,
+  AutoFocusModule
+} from "./chunk-32JR77BM.js";
+import {
   NG_VALUE_ACCESSOR
 } from "./chunk-B7GQUK3J.js";
 import {
@@ -10,10 +14,6 @@ import {
   SharedModule
 } from "./chunk-TQSVMJ6K.js";
 import "./chunk-3OF44R55.js";
-import {
-  AutoFocus,
-  AutoFocusModule
-} from "./chunk-32JR77BM.js";
 import "./chunk-BUGEQH7Q.js";
 import {
   CommonModule,

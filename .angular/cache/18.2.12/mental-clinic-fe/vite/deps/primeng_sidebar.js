@@ -7,14 +7,6 @@ import {
 } from "./chunk-QN24C4B3.js";
 import "./chunk-PXWZN6FU.js";
 import {
-  animate,
-  animation,
-  style,
-  transition,
-  trigger,
-  useAnimation
-} from "./chunk-OGB62SLM.js";
-import {
   PrimeNGConfig,
   PrimeTemplate,
   SharedModule
@@ -22,6 +14,14 @@ import {
 import {
   zindexutils
 } from "./chunk-3OF44R55.js";
+import {
+  animate,
+  animation,
+  style,
+  transition,
+  trigger,
+  useAnimation
+} from "./chunk-OGB62SLM.js";
 import {
   DomHandler
 } from "./chunk-BUGEQH7Q.js";

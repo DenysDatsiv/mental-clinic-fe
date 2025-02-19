@@ -1,56 +1,66 @@
 <div class="page-wrapper">
-  <footer class="footer">
-    <div class="footer-container">
-      <div class="footer-logo">
-        <div class="logo">
-          <img alt="Mental Clinic Logo" src="assets/logo.png"/>
-        </div>
-        <p class="copyright">
-          «Про ліцензування медичної практики» № 1285 <br/>
-          від 17.07.2023
-        </p>
-        <div class="social-icons">
-          <a
-            href="https://www.facebook.com/p/%D0%84%D0%B2%D0%B3%D0%B5%D0%BD-%D0%A1%D0%BA%D1%80%D0%B8%D0%BF%D0%BD%D0%B8%D0%BA-100005860367602"
-            target="_blank"><i
-            class="pi pi-facebook"></i></a>
-          <a href="https://www.instagram.com/dr_skripnik_evgen_/" target="_blank"><i class="pi pi-instagram"></i></a>
-          <a href="https://t.me/skripnik_evgen" target="_blank"><i class="pi pi-telegram"></i></a>
-          <a (click)="openContacts()" class="phone-link" href="#">
-            <i class="pi pi-phone"></i>
-          </a>
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-logo">
+                <div class="logo">
+                    <img alt="Mental Clinic Logo" src="assets/logo.png"/>
+                </div>
+                <p class="copyright">
+                    «Про ліцензування медичної практики» № 1285 <br/>
+                    від 17.07.2023
+                </p>
 
-        </div>
-      </div>
+                <div class="social-icons">
+                    <a href="https://www.facebook.com/p/%D0%84%D0%B2%D0%B3%D0%B5%D0%BD-%D0%A1%D0%BA%D1%80%D0%B8%D0%BF%D0%BD%D0%B8%D0%BA-100005860367602"
+                       target="_blank"
+                       (click)="trackSocialClick('Facebook', 'https://www.facebook.com/...')">
+                        <i class="pi pi-facebook"></i>
+                    </a>
 
-      <div class="footer-links">
-        <div class="link-column">
-          <h4>Для клієнтів</h4>
-          <ul>
-            <li><a href="#">Послуги</a></li>
-            <li><a href="#">Блог</a></li>
-          </ul>
+                    <a href="https://www.instagram.com/dr_skripnik_evgen_/"
+                       target="_blank"
+                       (click)="trackSocialClick('Instagram', 'https://www.instagram.com/...')">
+                        <i class="pi pi-instagram"></i>
+                    </a>
+
+                    <a href="https://t.me/skripnik_evgen"
+                       target="_blank"
+                       (click)="trackSocialClick('Telegram', 'https://t.me/skripnik_evgen')">
+                        <i class="pi pi-telegram"></i>
+                    </a>
+
+                    <a (click)="openContacts()" class="phone-link" href="#">
+                        <i class="pi pi-phone"></i>
+                    </a>
+                </div>
+            </div>
+
+            <div class="footer-links">
+                <div class="link-column">
+                    <h4>Для клієнтів</h4>
+                    <ul>
+                        <li><a href="#">Послуги</a></li>
+                        <li><a href="#">Блог</a></li>
+                    </ul>
+                </div>
+                <div class="link-column">
+                    <h4>Для клієнтів</h4>
+                    <ul>
+                        <li><a href="/contract" (click)="trackLinkClick('Публічний договір', '/contract')">Публічний договір</a></li>
+                        <li><a href="/visit" (click)="trackLinkClick('Правила відвідування', '/visit')">Правила відвідування</a></li>
+                        <li><a href="" (click)="trackLinkClick('Часті питання', '/faq')">Часті питання</a></li>
+                    </ul>
+                </div>
+                <div class="link-column">
+                    <h4>Для спеціалістів</h4>
+                    <ul>
+                        <li class="jobs-wrapper">
+                            <p>Вакансії</p>
+                            <p-tag value="Cкоро буде"/>
+                        </li>
+                    </ul>
+                </div>
+            </div>
         </div>
-        <div class="link-column">
-          <h4>Для клієнтів</h4>
-          <ul>
-            <li><a href="/contract">Публічний договір</a></li>
-            <li><a href="/visit">Правила відвідування</a></li>
-            <li><a href="">Часті питання</a></li>
-          </ul>
-        </div>
-        <div class="link-column">
-          <h4>Для спеціалістів</h4>
-          <ul>
-            <li class="jobs-wrapper">
-              <p>Вакансії</p>
-              <p-tag value="Cкоро буде"/>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </div>
-  </footer>
+    </footer>
 </div>
-
-

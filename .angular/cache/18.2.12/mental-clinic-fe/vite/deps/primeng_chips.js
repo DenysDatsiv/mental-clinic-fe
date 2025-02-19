@@ -8,6 +8,10 @@ import {
   TimesIcon
 } from "./chunk-MDBJZ6LU.js";
 import {
+  AutoFocus,
+  AutoFocusModule
+} from "./chunk-32JR77BM.js";
+import {
   NG_VALUE_ACCESSOR
 } from "./chunk-B7GQUK3J.js";
 import "./chunk-PXWZN6FU.js";
@@ -19,10 +23,6 @@ import {
 import {
   UniqueComponentId
 } from "./chunk-3OF44R55.js";
-import {
-  AutoFocus,
-  AutoFocusModule
-} from "./chunk-32JR77BM.js";
 import "./chunk-BUGEQH7Q.js";
 import {
   CommonModule,

@@ -11,14 +11,6 @@ import {
 } from "./chunk-MDBJZ6LU.js";
 import "./chunk-PXWZN6FU.js";
 import {
-  animate,
-  animation,
-  style,
-  transition,
-  trigger,
-  useAnimation
-} from "./chunk-OGB62SLM.js";
-import {
   PrimeNGConfig,
   SharedModule,
   TranslationKeys
@@ -27,6 +19,14 @@ import {
   UniqueComponentId,
   zindexutils
 } from "./chunk-3OF44R55.js";
+import {
+  animate,
+  animation,
+  style,
+  transition,
+  trigger,
+  useAnimation
+} from "./chunk-OGB62SLM.js";
 import {
   DomHandler
 } from "./chunk-BUGEQH7Q.js";

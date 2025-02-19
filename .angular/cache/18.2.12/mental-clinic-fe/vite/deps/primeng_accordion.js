@@ -6,13 +6,6 @@ import {
 } from "./chunk-WH2DAWOG.js";
 import "./chunk-PXWZN6FU.js";
 import {
-  animate,
-  state,
-  style,
-  transition,
-  trigger
-} from "./chunk-OGB62SLM.js";
-import {
   Header,
   PrimeTemplate,
   SharedModule
@@ -20,6 +13,13 @@ import {
 import {
   UniqueComponentId
 } from "./chunk-3OF44R55.js";
+import {
+  animate,
+  state,
+  style,
+  transition,
+  trigger
+} from "./chunk-OGB62SLM.js";
 import {
   DomHandler
 } from "./chunk-BUGEQH7Q.js";

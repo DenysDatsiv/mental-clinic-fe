@@ -8,14 +8,14 @@ import {
   Scroller,
   ScrollerModule
 } from "./chunk-TB2LYZAF.js";
-import {
-  NG_VALUE_ACCESSOR
-} from "./chunk-B7GQUK3J.js";
 import "./chunk-PCVGMHYY.js";
 import {
   Ripple,
   RippleModule
 } from "./chunk-QN24C4B3.js";
+import {
+  NG_VALUE_ACCESSOR
+} from "./chunk-B7GQUK3J.js";
 import "./chunk-PXWZN6FU.js";
 import {
   FilterService,

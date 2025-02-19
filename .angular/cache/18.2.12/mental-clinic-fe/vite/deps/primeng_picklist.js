@@ -32,12 +32,13 @@ import {
 import {
   ButtonDirective,
   ButtonModule
-} from "./chunk-UVJQKLU3.js";
+} from "./chunk-7TN6NS6B.js";
 import "./chunk-PCVGMHYY.js";
 import {
   Ripple,
   RippleModule
 } from "./chunk-QN24C4B3.js";
+import "./chunk-32JR77BM.js";
 import "./chunk-PXWZN6FU.js";
 import {
   FilterService,
@@ -49,7 +50,6 @@ import {
   ObjectUtils,
   UniqueComponentId
 } from "./chunk-3OF44R55.js";
-import "./chunk-32JR77BM.js";
 import {
   DomHandler
 } from "./chunk-BUGEQH7Q.js";

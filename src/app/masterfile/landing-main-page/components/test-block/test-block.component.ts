@@ -1,6 +1,8 @@
 import {Component} from '@angular/core';
-import {TEST_ROUTES} from '../../../../ shared/constants/routes';
+import {ROUTES, TEST_ROUTES} from '../../../../ shared/constants/routes';
 import {TEST_CATEGORIES_CONST} from '../../../tests/constants/categories';
+import {GoogleAnalyticsService} from "../../../../ga/service/google-analytics.service";
+import {EVENT_TRACK} from "../../../../ga/constants/ga.constants";
 
 interface MentalCard {
   title: string;
@@ -15,6 +17,8 @@ interface MentalCard {
   styleUrls: ['./test-block.component.scss']
 })
 export class TestBlockComponent {
+  constructor(private googleAnalyticsService: GoogleAnalyticsService) {}
+
   mentalCards: MentalCard[] = [
     {
       title: 'Депресія',
@@ -53,5 +57,11 @@ export class TestBlockComponent {
     }
 
   ];
+  googleAnalyticsTracker(eventName:string, itemText:string, previousPage:string)
+  {
+    this.googleAnalyticsService.trackEvent(eventName,itemText,previousPage)
+  }
   protected readonly TEST_ROUTES = TEST_ROUTES;
+  protected readonly EVENT_TRACK = EVENT_TRACK;
+  protected readonly ROUTES = ROUTES;
 }

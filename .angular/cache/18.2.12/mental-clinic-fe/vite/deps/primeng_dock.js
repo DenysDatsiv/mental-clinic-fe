@@ -3,13 +3,13 @@ import {
   TooltipModule
 } from "./chunk-STBFZVQ2.js";
 import {
-  RouterLink,
-  RouterModule
-} from "./chunk-AQMTG6B6.js";
-import {
   Ripple,
   RippleModule
 } from "./chunk-QN24C4B3.js";
+import {
+  RouterLink,
+  RouterModule
+} from "./chunk-AQMTG6B6.js";
 import "./chunk-3E3YFUVD.js";
 import "./chunk-DO2TVYAE.js";
 import {

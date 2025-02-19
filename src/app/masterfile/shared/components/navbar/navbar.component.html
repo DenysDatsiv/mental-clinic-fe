@@ -1,68 +1,66 @@
 <header class="navbar">
-  <div class="navbar__brand">
-    <img
-      (click)="redirectToMainPage(); toggleMenu()"
-      alt="Brand Logo"
-      class="navbar__logo"
-      src="assets/logo.png"
-    />
-  </div>
+    <div class="navbar__brand">
+        <img
+                (click)="redirectToMainPage()"
+                alt="Brand Logo"
+                class="navbar__logo"
+                src="assets/logo.png"
+        />
+    </div>
 
-  <nav [class.active]="isMenuOpen" aria-label="Main Navigation" class="navbar__menu">
-    <ul>
-      <li>
-        <a
-          (click)="toggleMenu()"
-          [routerLink]='TEST_ROUTES.LIST'
-          title="Дізнайтеся про перевірку ліків">
-          Тести
-        </a>
-      </li>
-      <li>
-        <a
-          (click)="toggleMenu()"
-          [routerLink]='ROUTES.DRUGS'
-          title="Дізнайтеся про перевірку ліків">
-          Перевірка ліків
-        </a>
-      </li>
-      <li>
-        <a
-          (click)="toggleMenu()"
-          [routerLink]='ROUTES.ABOUT'
-          title="Про лікаря та клініку">
-          Про лікаря
-        </a>
-      </li>
-      <li>
-        <p-button
-          (click)="openContacts(); toggleMenu()"
-          routerLink="/contact"
-          size="small"
-          title="Зв’язатися з клінікою"
-        >
-          Онлайн запис
-        </p-button>
-      </li>
-    </ul>
-  </nav>
+    <nav [class.active]="isMenuOpen" aria-label="Main Navigation" class="navbar__menu">
+        <ul>
+            <li>
+                <a
+                        (click)="navigateTo(TEST_ROUTES.LIST, 'Тести')"
+                        title="Дізнайтеся про перевірку ліків">
+                    Тести
+                </a>
+            </li>
+            <li>
+                <a
+                        (click)="navigateTo(ROUTES.DRUGS, 'Перевірка ліків')"
+                        title="Дізнайтеся про перевірку ліків">
+                    Перевірка ліків
+                </a>
+            </li>
+            <li>
+                <a
+                        (click)="navigateTo(ROUTES.ABOUT, 'Про лікаря')"
+                        title="Про лікаря та клініку">
+                    Про лікаря
+                </a>
+            </li>
+            <li>
+                <p-button
+                        (click)="openContacts()"
+                        routerLink="/contact"
+                        size="small"
+                        title="Зв’язатися з клінікою"
+                >
+                    Онлайн запис
+                </p-button>
+            </li>
+        </ul>
+    </nav>
 
-  <button
-    (click)="toggleMenu()"
-    [class.active]="isMenuOpen"
-    aria-label="Toggle Navigation"
-    class="navbar__toggle"
-  >
-    <span></span>
-    <span></span>
-    <span></span>
-  </button>
+    <button
+            (click)="toggleMenu()"
+            [class.active]="isMenuOpen"
+            aria-label="Toggle Navigation"
+            class="navbar__toggle"
+    >
+        <span></span>
+        <span></span>
+        <span></span>
+    </button>
 </header>
 
 <div
-  (click)="toggleMenu()"
-  [class.active]="isMenuOpen"
-  class="navbar-overlay"
+        (click)="toggleMenu()"
+        [class.active]="isMenuOpen"
+        class="navbar-overlay"
 ></div>
+
 
 <router-outlet></router-outlet>

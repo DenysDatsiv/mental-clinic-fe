@@ -17,15 +17,6 @@ import {
 } from "./chunk-QN24C4B3.js";
 import "./chunk-PXWZN6FU.js";
 import {
-  animate,
-  animateChild,
-  query,
-  state,
-  style,
-  transition,
-  trigger
-} from "./chunk-OGB62SLM.js";
-import {
   MessageService,
   PrimeNGConfig,
   PrimeTemplate,
@@ -36,6 +27,15 @@ import {
   UniqueComponentId,
   zindexutils
 } from "./chunk-3OF44R55.js";
+import {
+  animate,
+  animateChild,
+  query,
+  state,
+  style,
+  transition,
+  trigger
+} from "./chunk-OGB62SLM.js";
 import {
   DomHandler
 } from "./chunk-BUGEQH7Q.js";

@@ -2,14 +2,6 @@ import {
   NG_VALUE_ACCESSOR
 } from "./chunk-B7GQUK3J.js";
 import {
-  animate,
-  animation,
-  style,
-  transition,
-  trigger,
-  useAnimation
-} from "./chunk-OGB62SLM.js";
-import {
   OverlayService,
   PrimeNGConfig,
   PrimeTemplate,
@@ -19,6 +11,14 @@ import {
   ObjectUtils,
   zindexutils
 } from "./chunk-3OF44R55.js";
+import {
+  animate,
+  animation,
+  style,
+  transition,
+  trigger,
+  useAnimation
+} from "./chunk-OGB62SLM.js";
 import {
   ConnectedOverlayScrollHandler,
   DomHandler
@@ -968,4 +968,4 @@ export {
   Overlay,
   OverlayModule
 };
-//# sourceMappingURL=chunk-JZNKOSTP.js.map
+//# sourceMappingURL=chunk-ZMXZNLNN.js.map

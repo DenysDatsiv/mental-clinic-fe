@@ -6,23 +6,17 @@ import {
   AngleRightIcon
 } from "./chunk-KFVC45AI.js";
 import {
+  Ripple,
+  RippleModule
+} from "./chunk-QN24C4B3.js";
+import {
   RouterLink,
   RouterLinkActive,
   RouterModule
 } from "./chunk-AQMTG6B6.js";
-import {
-  Ripple,
-  RippleModule
-} from "./chunk-QN24C4B3.js";
 import "./chunk-3E3YFUVD.js";
 import "./chunk-DO2TVYAE.js";
 import "./chunk-PXWZN6FU.js";
-import {
-  animate,
-  style,
-  transition,
-  trigger
-} from "./chunk-OGB62SLM.js";
 import {
   OverlayService,
   PrimeNGConfig,
@@ -34,6 +28,12 @@ import {
   UniqueComponentId,
   zindexutils
 } from "./chunk-3OF44R55.js";
+import {
+  animate,
+  style,
+  transition,
+  trigger
+} from "./chunk-OGB62SLM.js";
 import {
   DomHandler
 } from "./chunk-BUGEQH7Q.js";

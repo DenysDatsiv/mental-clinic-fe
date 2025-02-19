@@ -6,6 +6,10 @@ import {
   ChevronLeftIcon
 } from "./chunk-CA4J3LLG.js";
 import {
+  Ripple,
+  RippleModule
+} from "./chunk-QN24C4B3.js";
+import {
   ActivatedRoute,
   NavigationEnd,
   Router,
@@ -13,10 +17,6 @@ import {
   RouterLinkActive,
   RouterModule
 } from "./chunk-AQMTG6B6.js";
-import {
-  Ripple,
-  RippleModule
-} from "./chunk-QN24C4B3.js";
 import "./chunk-3E3YFUVD.js";
 import "./chunk-DO2TVYAE.js";
 import {

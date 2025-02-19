@@ -12,12 +12,6 @@ import {
   BaseIcon
 } from "./chunk-PXWZN6FU.js";
 import {
-  animate,
-  style,
-  transition,
-  trigger
-} from "./chunk-OGB62SLM.js";
-import {
   PrimeNGConfig,
   PrimeTemplate,
   SharedModule
@@ -26,6 +20,12 @@ import {
   UniqueComponentId,
   zindexutils
 } from "./chunk-3OF44R55.js";
+import {
+  animate,
+  style,
+  transition,
+  trigger
+} from "./chunk-OGB62SLM.js";
 import {
   DomHandler
 } from "./chunk-BUGEQH7Q.js";

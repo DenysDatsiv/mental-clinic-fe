@@ -5,6 +5,10 @@ import {
   TimesIcon
 } from "./chunk-MDBJZ6LU.js";
 import {
+  AutoFocus,
+  AutoFocusModule
+} from "./chunk-32JR77BM.js";
+import {
   NG_VALUE_ACCESSOR
 } from "./chunk-B7GQUK3J.js";
 import {
@@ -12,10 +16,6 @@ import {
   PrimeTemplate,
   SharedModule
 } from "./chunk-TQSVMJ6K.js";
-import {
-  AutoFocus,
-  AutoFocusModule
-} from "./chunk-32JR77BM.js";
 import {
   CommonModule,
   NgClass,
@@ -642,4 +642,4 @@ export {
   TriStateCheckbox,
   TriStateCheckboxModule
 };
-//# sourceMappingURL=chunk-UA7TTIUY.js.map
+//# sourceMappingURL=chunk-O3CD3K7Y.js.map
