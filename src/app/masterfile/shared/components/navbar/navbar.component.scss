@@ -71,7 +71,7 @@ body {
 /* Optional button style for a call-to-action link */
 .btn-primary {
   display: inline-block;
-  background-color: #007bff;
+  background-color: #3DA1DA;
   color: #fff !important;
   padding: 0.5rem 1rem;
   border-radius: 4px;
@@ -79,9 +79,12 @@ body {
 }
 
 .btn-primary:hover {
-  background-color: #005dc1;
+  background-color: #3DA1DA;
 }
-
+.navbar__menu a:hover
+{
+  color:#3DA1DA;
+}
 /* 5. Hamburger Toggle (Mobile) */
 .navbar__toggle {
   display: none; /* hidden by default on desktops */

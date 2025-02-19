@@ -51,23 +51,27 @@ export class TestsGridComponent implements OnInit {
     });
 
     this.tests$ = this.searchForm.valueChanges.pipe(
-      debounceTime(1000),
-      startWith(this.searchForm.value),
-      tap(() => !this.initLoad && this.loading$.next(true)),
-      switchMap(({text, category}) => {
-        const categoryValue = typeof category === 'string' ? category : category?.value;
-        this.first = 0;
-        return this.testService.getTests(text, categoryValue);
-      }),
-      tap(data => {
-        this.allTests = data;
-        this.totalRecords = data.length;
-        this.applyPagination();
-        this.loading$.next(false);
-        if (this.initLoad) {
-          this.initLoad = false;
-        }
-      })
+        debounceTime(1000),
+        startWith(this.searchForm.value),
+        tap(() => !this.initLoad && this.loading$.next(true)),
+        switchMap(({ text, category }) => {
+          const searchQuery = text?.trim() || '';
+          const categoryValue = typeof category === 'string' ? category : category?.value;
+
+          const categoryFilter = searchQuery ? '' : categoryValue;
+
+          this.first = 0;
+          return this.testService.getTests(searchQuery, categoryFilter);
+        }),
+        tap(data => {
+          this.allTests = data;
+          this.totalRecords = data.length;
+          this.applyPagination();
+          this.loading$.next(false);
+          if (this.initLoad) {
+            this.initLoad = false;
+          }
+        })
     );
 
     this.tests$.subscribe(() => this.applyPagination());

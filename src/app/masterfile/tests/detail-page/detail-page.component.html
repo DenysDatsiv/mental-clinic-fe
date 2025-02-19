@@ -37,11 +37,10 @@
         </div>
       </div>
       <div>
-        <div class="flex flex-column mt-1 lg:mt-0 text-center">
-          <p>
-            Оптимальний час для проходження:
-            <p-chip [label]="data?.duration" icon="pi pi-clock"></p-chip>
-          </p>
+        <div class="flex flex-column lg:flex-row lg:align-items-center mt-1 lg:mt-0 text-center">
+          <p>Оптимальний час для проходження:</p>
+            <p-chip class="lg:ml-2 " [label]="data?.duration" icon="pi pi-clock"></p-chip>
+
         </div>
       </div>
     </div>

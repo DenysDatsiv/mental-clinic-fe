@@ -16,36 +16,38 @@
 
     <p-divider class="md:hidden"></p-divider>
 
+      <ng-container *ngIf="(tests$ | async) && !(loading$ | async); else loading">
+          <div *ngIf="(paginatedTests$ | async)?.length > 0; else noTests" class="mt-5">
+              <div class="cards-grid-container">
+                  <div *ngFor="let test of paginatedTests$ | async" class="card-grid">
+                      <app-card [testData]="test"></app-card>
+                  </div>
+              </div>
 
-    <ng-container *ngIf="(tests$ | async) && !(loading$ | async); else loading">
-      <div *ngIf="paginatedTests$ | async as paginatedTests; else noTests" class="mt-5">
-        <div class="cards-grid-container">
-          <div *ngFor="let test of paginatedTests" class="card-grid">
-            <app-card [testData]="test"></app-card>
+              <p-paginator
+                      (onPageChange)="onPageChange($event)"
+                      *ngIf="searchForm.get('category')?.value.value === '' || initLoad"
+                      [first]="first"
+                      [rowsPerPageOptions]="[5, 10]"
+                      [rows]="rows"
+                      [totalRecords]="totalRecords"
+                      class="lg:flex lg:justify-content-end"
+              ></p-paginator>
           </div>
-        </div>
-      </div>
 
+      </ng-container>
 
-      <p-paginator
-        (onPageChange)="onPageChange($event)"
-        *ngIf="searchForm.get('category')?.value.value === '' || initLoad"
-        [first]="first"
-        [rowsPerPageOptions]="[5, 10 ]"
-        [rows]="rows"
-        [totalRecords]="totalRecords"
-        class="lg:flex lg:justify-content-end"
-      ></p-paginator>
-    </ng-container>
+      <ng-template #loading>
+          <div class="flex justify-content-center align-content-center">
+              <p-progressSpinner ariaLabel="loading"></p-progressSpinner>
+          </div>
+      </ng-template>
 
-    <ng-template #loading>
-      <div class="flex justify-content-center align-content-center">
-        <p-progressSpinner ariaLabel="loading"></p-progressSpinner>
-      </div>
-    </ng-template>
+      <ng-template #noTests>
+          <div class="flex justify-content-center align-items-center mt-5">
+              <p>За вашим запитом жодного тестування не знайдено.</p>
+          </div>
+      </ng-template>
 
-    <ng-template #noTests>
-      <p>No tests found.</p>
-    </ng-template>
   </div>
 </section>
