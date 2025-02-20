@@ -1,5 +1,5 @@
 .footer {
-  background-color: #222; // Dark background
+  background-color: #212121; // Dark background
   color: #fff;
   padding: 40px 20px;
 
@@ -19,12 +19,12 @@
         display: flex;
         flex-direction: column;
         align-items: flex-start;
-        gap: 5px;
+
 
         img {
           position: relative;
           right: 20px;
-          max-width: 105px;
+          max-width: 120px;
         }
 
         .tagline {
@@ -135,7 +135,7 @@
 
       .footer-logo {
         .logo img {
-          max-width: 240px;
+          max-width: 140px;
         }
 
         .social-icons a {
@@ -176,3 +176,8 @@
 }
 
 
+.logo-color
+{
+  text-align:start;
+  color:#bbb;
+}
