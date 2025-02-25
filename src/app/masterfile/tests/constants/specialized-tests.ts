@@ -1,3 +1,4 @@
 export const specializedTests = {
-  SMI: "SMI"
+  SMI: "SMI",
+  HADS:"HADS"
 };

@@ -1,154 +1,175 @@
 <div *ngIf="!data" class="spinner-wrapper">
-  <p-progressSpinner aria-label="Loading" class="loading-spinner align-content-center"></p-progressSpinner>
+    <p-progressSpinner aria-label="Loading" class="loading-spinner align-content-center"></p-progressSpinner>
 </div>
 
 <div *ngIf="data" class="mx-4 md:mx-1">
 
-  <div *ngIf="!isTestCompleted">
-    <h2 class="text-center mb-0">{{ data?.name }}</h2>
-    <p-divider class="divider-max-width justify-content-center mx-auto"></p-divider>
-  </div>
-
-  <div *ngIf="!isTestCompleted" class="page-container">
-    <div class="instruction-container">
-      <div class="pb-2">
-        <h2 class="section-title">📌 Інструкція</h2>
-        <p class="section-text">{{ data?.instructions }}</p>
-      </div>
-      <div class="mb-0">
-        <h3 class="section-subtitle">🔍 Для чого це тестування?</h3>
-        <p class="section-text mb-0">{{ data?.whyTest }}</p>
-      </div>
-      <p-divider class="mx-1"></p-divider>
-    </div>
-
-    <div class="sm:w-full ld:mt-1 flex lg:align-items-center lg:justify-content-between flex-column lg:flex-row">
-      <div class="d-flex">
-        <div class="w-full flex align-items-center sm:justify-content-center">
-          <button
-            (click)="openPdf(data?.pdfLink)"
-            *ngIf="data?.pdfLink !=='null'"
-            class="p-button-danger p-button w-full lg:w-auto"
-            icon="pi pi-file-pdf"
-            label="Переглянути офіційний PDF файл"
-            pButton
-            type="button">
-          </button>
-        </div>
-      </div>
-      <div>
-        <div class="flex flex-column lg:flex-row lg:align-items-center mt-1 lg:mt-0 text-center">
-          <p>Оптимальний час для проходження:</p>
-            <p-chip class="lg:ml-2 " [label]="data?.duration" icon="pi pi-clock"></p-chip>
-
-        </div>
-      </div>
-    </div>
-
-    <div class="quiz-container pt-3">
-      <form>
-        <div>
-          <p *ngIf="data.questions[currentQuestionIndex]?.question" class="quiz-question">
-            {{ currentQuestionIndex + 1 }}. {{ data.questions[currentQuestionIndex]?.question }}
-          </p>
-
-          <div *ngIf="data.questions[currentQuestionIndex]?.example" class="pb-2">
-            <span>{{ data.questions[currentQuestionIndex]?.example }}</span>
-          </div>
-
-          <div [ngClass]="{'quiz-options': true, 'error-border': showError}">
-            <div
-              (click)="selectAnswer(data.questions[currentQuestionIndex]?._id, data.questions[currentQuestionIndex]?.value[i])"
-              *ngFor="let label of data.questions[currentQuestionIndex]?.labelText; let i = index"
-              class="quiz-option">
-
-              <p-radioButton
-                (onChange)="clearError()"
-                [(ngModel)]="answers[data.questions[currentQuestionIndex]?._id]"
-                [name]="'question_' + data.questions[currentQuestionIndex]?._id"
-                [ngModelOptions]="{ standalone: true }"
-                [value]="data.questions[currentQuestionIndex]?.value[i]"
-                class="mr-3">
-              </p-radioButton>
-
-              <span>{{ label }}</span>
-            </div>
-          </div>
-          <div class="mt-2">
-            <p-message *ngIf="showError" severity="error"
-                       text="Будь ласка, оберіть варіант відповіді перед тим, як перейти далі."></p-message>
-          </div>
-        </div>
-      </form>
-    </div>
-
-    <div
-      [ngClass]="{'justify-content-end': currentQuestionIndex === 0, 'justify-content-between': currentQuestionIndex > 0}"
-      class="flex my-5  ">
-      <button
-        (click)="previousQuestion()"
-        *ngIf="currentQuestionIndex > 0"
-        class="p-button-secondary"
-        pButton
-        type="button">
-        Назад
-      </button>
-
-      <button
-        (click)="nextQuestion()"
-        class="p-button-primary "
-        pButton
-        type="button">
-        {{ currentQuestionIndex < data.questions.length - 1 ? 'Далі' : 'Завершити' }}
-      </button>
-    </div>
-  </div>
-
-
-  <div *ngIf="isTestCompleted" class="result-container">
-    <ng-container *ngIf="data?.specialTest === specializedTests.SMI; else generalResult">
-      <div class="ysq-container">
-        <h2 class="text-center text-blue-600 font-bold text-3xl">📊 Результати тесту YSQ-S3</h2>
+    <div *ngIf="!isTestCompleted">
+        <h2 class="text-center mb-0">{{ data?.name }}</h2>
         <p-divider class="divider-max-width justify-content-center mx-auto"></p-divider>
+    </div>
 
-        <div class="schema-results grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 p-4">
-          <div *ngFor="let testName of Object.keys(schemaScores)" class="schema-container">
-            <div class="schema-name">{{ testName }}</div>
-            <div class="schema-info">
-              <span class="schema-sum">Середнє значення:</span>
-              {{ schemaScores[testName] | number: '1.2-2' }}
+    <div *ngIf="!isTestCompleted" class="page-container">
+        <div class="instruction-container">
+            <div class="pb-2">
+                <h2 class="section-title">📌 Інструкція</h2>
+                <p class="section-text">{{ data?.instructions }}</p>
             </div>
-          </div>
-        </div>
-      </div>
-    </ng-container>
-
-    <ng-template #generalResult>
-      <div class="result-card">
-        <h2 class="result-title  text-2xl font-bold text-center">🎉 Ви завершили тест 🎉</h2>
-
-        <div class="score-box text-center my-4">
-          <p class="score-text text-white text-lg">Ваша сума балів:</p>
-          <p class="score-value text-white text-4xl font-bold">{{ totalScore }}</p>
-        </div>
-
-        <p class="result-message text-center text-lg">{{ resultMessage }}</p>
-        <p class="common-message text-gray-500 text-center">{{ data?.commonMessage }}</p>
-
-        <div class="button-group flex flex-column justify-content-center mt-5 gap-3">
-            <div class="flex justify-content-center mt-5 gap-3">
-                <p-button (click)="restartTest()" label="Пройти знову">
-                </p-button>
-
-                <p-button (click)="goToAllTests()" label="До всіх тестів">
-                </p-button>
+            <div class="mb-0">
+                <h3 class="section-subtitle">🔍 Для чого це тестування?</h3>
+                <p class="section-text mb-0">{{ data?.whyTest }}</p>
             </div>
-
-            <p-button (click)="openContacts()" label="Записатись на консультацію">
-            </p-button>
-
+            <p-divider class="mx-1"></p-divider>
         </div>
-      </div>
-    </ng-template>
-  </div>
+
+        <div class="sm:w-full ld:mt-1 flex lg:align-items-center lg:justify-content-between flex-column lg:flex-row">
+            <div class="d-flex">
+                <div class="w-full flex align-items-center sm:justify-content-center">
+                    <button
+                            (click)="openPdf(data?.pdfLink)"
+                            *ngIf="data?.pdfLink !== 'null'"
+                            class="p-button-danger p-button w-full lg:w-auto"
+                            icon="pi pi-file-pdf"
+                            label="Переглянути офіційний PDF файл"
+                            pButton
+                            type="button">
+                    </button>
+                </div>
+            </div>
+            <div>
+                <div class="flex flex-column lg:flex-row lg:align-items-center mt-1 lg:mt-0 text-center">
+                    <p>Оптимальний час для проходження:</p>
+                    <p-chip class="lg:ml-2" [label]="data?.duration" icon="pi pi-clock"></p-chip>
+                </div>
+            </div>
+        </div>
+
+        <div class="quiz-container pt-3">
+            <form>
+                <div>
+                    <p *ngIf="data.questions[currentQuestionIndex]?.question" class="quiz-question">
+                        {{ currentQuestionIndex + 1 }}. {{ data.questions[currentQuestionIndex]?.question }}
+                    </p>
+
+                    <div *ngIf="data.questions[currentQuestionIndex]?.example" class="pb-2">
+                        <span>{{ data.questions[currentQuestionIndex]?.example }}</span>
+                    </div>
+
+                    <div [ngClass]="{'quiz-options': true, 'error-border': showError}">
+                        <div
+                                (click)="selectAnswer(data.questions[currentQuestionIndex]?._id, data.questions[currentQuestionIndex]?.value[i])"
+                                *ngFor="let label of data.questions[currentQuestionIndex]?.labelText; let i = index"
+                                class="quiz-option">
+
+                            <p-radioButton
+                                    (onChange)="clearError()"
+                                    [(ngModel)]="answers[data.questions[currentQuestionIndex]?._id]"
+                                    [name]="'question_' + data.questions[currentQuestionIndex]?._id"
+                                    [ngModelOptions]="{ standalone: true }"
+                                    [value]="data.questions[currentQuestionIndex]?.value[i]"
+                                    class="mr-3">
+                            </p-radioButton>
+
+                            <span>{{ label }}</span>
+                        </div>
+                    </div>
+                    <div class="mt-2">
+                        <p-message *ngIf="showError" severity="error"
+                                   text="Будь ласка, оберіть варіант відповіді перед тим, як перейти далі."></p-message>
+                    </div>
+                </div>
+            </form>
+        </div>
+
+        <div
+                [ngClass]="{'justify-content-end': currentQuestionIndex === 0, 'justify-content-between': currentQuestionIndex > 0}"
+                class="flex my-5">
+            <button
+                    (click)="previousQuestion()"
+                    *ngIf="currentQuestionIndex > 0"
+                    class="p-button-secondary"
+                    pButton
+                    type="button">
+                Назад
+            </button>
+
+            <button
+                    (click)="nextQuestion()"
+                    class="p-button-primary"
+                    pButton
+                    type="button">
+                {{ currentQuestionIndex < data.questions.length - 1 ? 'Далі' : 'Завершити' }}
+            </button>
+        </div>
+    </div>
+
+    <!-- Result container -->
+    <div *ngIf="isTestCompleted" class="result-container">
+        <!-- SMI specialized test branch -->
+        <ng-container *ngIf="data?.specialTest === specializedTests.SMI; else generalResult">
+            <div class="ysq-container">
+                <h2 class="text-center text-blue-600 font-bold text-3xl">📊 Результати тесту YSQ-S3</h2>
+                <p-divider class="divider-max-width justify-content-center mx-auto"></p-divider>
+                <div class="schema-results grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 p-4">
+                    <div *ngFor="let testName of Object.keys(schemaScores)" class="schema-container">
+                        <div class="schema-name">{{ testName }}</div>
+                        <div class="schema-info">
+                            <span class="schema-sum">Середнє значення:</span>
+                            {{ schemaScores[testName] | number: '1.2-2' }}
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </ng-container>
+
+        <!-- General test branch -->
+        <ng-template #generalResult>
+            <!-- HADS test branch: display anxiety and depression separately -->
+            <ng-container *ngIf="data?.specialTest === specializedTests.HADS; else normalResult">
+                <div class="result-card">
+                    <h2 class="result-title text-2xl font-bold text-center">Ви завершили тест!</h2>
+
+                    <div class="score-box text-center my-4">
+                        <p class="score-text text-white text-lg">Тривожність:</p>
+                        <p class="score-value text-white text-4xl font-bold">{{ hadsAnxietyScore }}</p>
+                    </div>
+                    <p class="result-message text-center text-lg">Інтерпретація: {{ hadsAnxietyResult }}</p>
+
+                    <div class="score-box text-center my-4">
+                        <p class="score-text text-white text-lg">Депресія (залишок):</p>
+                        <p class="score-value text-white text-4xl font-bold">{{ hadsDepressionScore }}</p>
+                    </div>
+                    <p class="result-message text-center text-lg">Інтерпретація: {{ hadsDepressionResult }}</p>
+                    <p class="common-message text-gray-500 text-center">{{ data?.commonMessage }}</p>
+
+                    <div class="button-group flex flex-column justify-content-center mt-5 gap-3">
+                        <div class="flex justify-content-center mt-5 gap-3">
+                            <p-button (click)="restartTest()" label="Пройти знову"></p-button>
+                            <p-button (click)="goToAllTests()" label="До всіх тестів"></p-button>
+                        </div>
+                        <p-button (click)="openContacts()" label="Записатись на консультацію"></p-button>
+                    </div>
+                </div>
+            </ng-container>
+
+            <ng-template #normalResult>
+                <div class="result-card">
+                    <h2 class="result-title text-2xl font-bold text-center">Ви завершили тест!</h2>
+                    <div class="score-box text-center my-4">
+                        <p class="score-text text-white text-lg">Ваша сума балів:</p>
+                        <p class="score-value text-white text-4xl font-bold">{{ totalScore }}</p>
+                    </div>
+                    <p class="result-message text-center text-lg">{{ resultMessage }}</p>
+                    <p class="common-message text-gray-500 text-center">{{ data?.commonMessage }}</p>
+                    <div class="button-group flex flex-column justify-content-center mt-5 gap-3">
+                        <div class="flex justify-content-center mt-5 gap-3">
+                            <p-button (click)="restartTest()" label="Пройти знову"></p-button>
+                            <p-button (click)="goToAllTests()" label="До всіх тестів"></p-button>
+                        </div>
+                        <p-button (click)="openContacts()" label="Записатись на консультацію"></p-button>
+                    </div>
+                </div>
+            </ng-template>
+        </ng-template>
+    </div>
 </div>

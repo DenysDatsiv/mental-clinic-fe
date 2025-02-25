@@ -10,6 +10,7 @@ export interface Question {
 export interface ResultInterpretation {
   range: [number, number | null];
   result: string;
+  type?:string;
   name: string;
   questionIndex: [number, number | null],
   _id: string;
