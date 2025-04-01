@@ -13,7 +13,7 @@
         <div class="instruction-container">
             <div class="pb-2">
                 <h2 class="section-title">📌 Інструкція</h2>
-                <p class="section-text">{{ data?.instructions }}</p>
+                <p [innerHTML]="data?.instructions" class="section-text"></p>
             </div>
             <div class="mb-0">
                 <h3 class="section-subtitle">🔍 Для чого це тестування?</h3>
