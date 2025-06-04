@@ -1,9 +1,9 @@
 import {
   DomHandler
-} from "./chunk-BUGEQH7Q.js";
+} from "./chunk-LB42WWNC.js";
 import {
   CommonModule
-} from "./chunk-UBZYO7FG.js";
+} from "./chunk-KUZ63KOD.js";
 import {
   Directive,
   ElementRef,
@@ -22,52 +22,54 @@ import {
   ɵɵdefineNgModule,
   ɵɵdirectiveInject,
   ɵɵlistener
-} from "./chunk-ZI2Q76R4.js";
-import "./chunk-5OPE3T2R.js";
+} from "./chunk-R75KKECJ.js";
 import "./chunk-4N4GOYJH.js";
+import "./chunk-5OPE3T2R.js";
 import "./chunk-FHTVLBLO.js";
-import "./chunk-3OV72XIM.js";
+import {
+  __publicField
+} from "./chunk-IJZFAMY6.js";
 
 // node_modules/primeng/fesm2022/primeng-dragdrop.mjs
-var Draggable = class _Draggable {
-  el;
-  zone;
-  renderer;
-  scope;
-  /**
-   * Defines the cursor style.
-   * @group Props
-   */
-  dragEffect;
-  /**
-   * Selector to define the drag handle, by default anywhere on the target element is a drag handle to start dragging.
-   * @group Props
-   */
-  dragHandle;
-  /**
-   * Callback to invoke when drag begins.
-   * @param {DragEvent} event - Drag event.
-   * @group Emits
-   */
-  onDragStart = new EventEmitter();
-  /**
-   * Callback to invoke when drag ends.
-   * @param {DragEvent} event - Drag event.
-   * @group Emits
-   */
-  onDragEnd = new EventEmitter();
-  /**
-   * Callback to invoke on dragging.
-   * @param {DragEvent} event - Drag event.
-   * @group Emits
-   */
-  onDrag = new EventEmitter();
-  handle;
-  dragListener;
-  mouseDownListener;
-  mouseUpListener;
-  _pDraggableDisabled = false;
+var _Draggable = class _Draggable {
   constructor(el, zone, renderer) {
+    __publicField(this, "el");
+    __publicField(this, "zone");
+    __publicField(this, "renderer");
+    __publicField(this, "scope");
+    /**
+     * Defines the cursor style.
+     * @group Props
+     */
+    __publicField(this, "dragEffect");
+    /**
+     * Selector to define the drag handle, by default anywhere on the target element is a drag handle to start dragging.
+     * @group Props
+     */
+    __publicField(this, "dragHandle");
+    /**
+     * Callback to invoke when drag begins.
+     * @param {DragEvent} event - Drag event.
+     * @group Emits
+     */
+    __publicField(this, "onDragStart", new EventEmitter());
+    /**
+     * Callback to invoke when drag ends.
+     * @param {DragEvent} event - Drag event.
+     * @group Emits
+     */
+    __publicField(this, "onDragEnd", new EventEmitter());
+    /**
+     * Callback to invoke on dragging.
+     * @param {DragEvent} event - Drag event.
+     * @group Emits
+     */
+    __publicField(this, "onDrag", new EventEmitter());
+    __publicField(this, "handle");
+    __publicField(this, "dragListener");
+    __publicField(this, "mouseDownListener");
+    __publicField(this, "mouseUpListener");
+    __publicField(this, "_pDraggableDisabled", false);
     this.el = el;
     this.zone = zone;
     this.renderer = renderer;
@@ -156,35 +158,36 @@ var Draggable = class _Draggable {
     this.unbindDragListener();
     this.unbindMouseListeners();
   }
-  static ɵfac = function Draggable_Factory(__ngFactoryType__) {
-    return new (__ngFactoryType__ || _Draggable)(ɵɵdirectiveInject(ElementRef), ɵɵdirectiveInject(NgZone), ɵɵdirectiveInject(Renderer2));
-  };
-  static ɵdir = ɵɵdefineDirective({
-    type: _Draggable,
-    selectors: [["", "pDraggable", ""]],
-    hostAttrs: [1, "p-element"],
-    hostBindings: function Draggable_HostBindings(rf, ctx) {
-      if (rf & 1) {
-        ɵɵlistener("dragstart", function Draggable_dragstart_HostBindingHandler($event) {
-          return ctx.dragStart($event);
-        })("dragend", function Draggable_dragend_HostBindingHandler($event) {
-          return ctx.dragEnd($event);
-        });
-      }
-    },
-    inputs: {
-      scope: [0, "pDraggable", "scope"],
-      dragEffect: "dragEffect",
-      dragHandle: "dragHandle",
-      pDraggableDisabled: "pDraggableDisabled"
-    },
-    outputs: {
-      onDragStart: "onDragStart",
-      onDragEnd: "onDragEnd",
-      onDrag: "onDrag"
-    }
-  });
 };
+__publicField(_Draggable, "ɵfac", function Draggable_Factory(__ngFactoryType__) {
+  return new (__ngFactoryType__ || _Draggable)(ɵɵdirectiveInject(ElementRef), ɵɵdirectiveInject(NgZone), ɵɵdirectiveInject(Renderer2));
+});
+__publicField(_Draggable, "ɵdir", ɵɵdefineDirective({
+  type: _Draggable,
+  selectors: [["", "pDraggable", ""]],
+  hostAttrs: [1, "p-element"],
+  hostBindings: function Draggable_HostBindings(rf, ctx) {
+    if (rf & 1) {
+      ɵɵlistener("dragstart", function Draggable_dragstart_HostBindingHandler($event) {
+        return ctx.dragStart($event);
+      })("dragend", function Draggable_dragend_HostBindingHandler($event) {
+        return ctx.dragEnd($event);
+      });
+    }
+  },
+  inputs: {
+    scope: [0, "pDraggable", "scope"],
+    dragEffect: "dragEffect",
+    dragHandle: "dragHandle",
+    pDraggableDisabled: "pDraggableDisabled"
+  },
+  outputs: {
+    onDragStart: "onDragStart",
+    onDragEnd: "onDragEnd",
+    onDrag: "onDrag"
+  }
+}));
+var Draggable = _Draggable;
 (() => {
   (typeof ngDevMode === "undefined" || ngDevMode) && setClassMetadata(Draggable, [{
     type: Directive,
@@ -233,42 +236,42 @@ var Draggable = class _Draggable {
     }]
   });
 })();
-var Droppable = class _Droppable {
-  el;
-  zone;
-  renderer;
-  scope;
-  /**
-   * Whether the element is droppable, useful for conditional cases.
-   * @group Props
-   */
-  pDroppableDisabled = false;
-  /**
-   * Defines the cursor style, valid values are none, copy, move, link, copyMove, copyLink, linkMove and all.
-   * @group Props
-   */
-  dropEffect;
-  /**
-   * Callback to invoke when a draggable enters drop area.
-   * @group Emits
-   */
-  onDragEnter = new EventEmitter();
-  /**
-   * Callback to invoke when a draggable leave drop area.
-   * @group Emits
-   */
-  onDragLeave = new EventEmitter();
-  /**
-   * Callback to invoke when a draggable is dropped onto drop area.
-   * @group Emits
-   */
-  onDrop = new EventEmitter();
+var _Droppable = class _Droppable {
   constructor(el, zone, renderer) {
+    __publicField(this, "el");
+    __publicField(this, "zone");
+    __publicField(this, "renderer");
+    __publicField(this, "scope");
+    /**
+     * Whether the element is droppable, useful for conditional cases.
+     * @group Props
+     */
+    __publicField(this, "pDroppableDisabled", false);
+    /**
+     * Defines the cursor style, valid values are none, copy, move, link, copyMove, copyLink, linkMove and all.
+     * @group Props
+     */
+    __publicField(this, "dropEffect");
+    /**
+     * Callback to invoke when a draggable enters drop area.
+     * @group Emits
+     */
+    __publicField(this, "onDragEnter", new EventEmitter());
+    /**
+     * Callback to invoke when a draggable leave drop area.
+     * @group Emits
+     */
+    __publicField(this, "onDragLeave", new EventEmitter());
+    /**
+     * Callback to invoke when a draggable is dropped onto drop area.
+     * @group Emits
+     */
+    __publicField(this, "onDrop", new EventEmitter());
+    __publicField(this, "dragOverListener");
     this.el = el;
     this.zone = zone;
     this.renderer = renderer;
   }
-  dragOverListener;
   ngAfterViewInit() {
     if (!this.pDroppableDisabled) {
       this.bindDragOverListener();
@@ -330,37 +333,38 @@ var Droppable = class _Droppable {
   ngOnDestroy() {
     this.unbindDragOverListener();
   }
-  static ɵfac = function Droppable_Factory(__ngFactoryType__) {
-    return new (__ngFactoryType__ || _Droppable)(ɵɵdirectiveInject(ElementRef), ɵɵdirectiveInject(NgZone), ɵɵdirectiveInject(Renderer2));
-  };
-  static ɵdir = ɵɵdefineDirective({
-    type: _Droppable,
-    selectors: [["", "pDroppable", ""]],
-    hostAttrs: [1, "p-element"],
-    hostBindings: function Droppable_HostBindings(rf, ctx) {
-      if (rf & 1) {
-        ɵɵlistener("drop", function Droppable_drop_HostBindingHandler($event) {
-          return ctx.drop($event);
-        })("dragenter", function Droppable_dragenter_HostBindingHandler($event) {
-          return ctx.dragEnter($event);
-        })("dragleave", function Droppable_dragleave_HostBindingHandler($event) {
-          return ctx.dragLeave($event);
-        });
-      }
-    },
-    inputs: {
-      scope: [0, "pDroppable", "scope"],
-      pDroppableDisabled: [2, "pDroppableDisabled", "pDroppableDisabled", booleanAttribute],
-      dropEffect: "dropEffect"
-    },
-    outputs: {
-      onDragEnter: "onDragEnter",
-      onDragLeave: "onDragLeave",
-      onDrop: "onDrop"
-    },
-    features: [ɵɵInputTransformsFeature]
-  });
 };
+__publicField(_Droppable, "ɵfac", function Droppable_Factory(__ngFactoryType__) {
+  return new (__ngFactoryType__ || _Droppable)(ɵɵdirectiveInject(ElementRef), ɵɵdirectiveInject(NgZone), ɵɵdirectiveInject(Renderer2));
+});
+__publicField(_Droppable, "ɵdir", ɵɵdefineDirective({
+  type: _Droppable,
+  selectors: [["", "pDroppable", ""]],
+  hostAttrs: [1, "p-element"],
+  hostBindings: function Droppable_HostBindings(rf, ctx) {
+    if (rf & 1) {
+      ɵɵlistener("drop", function Droppable_drop_HostBindingHandler($event) {
+        return ctx.drop($event);
+      })("dragenter", function Droppable_dragenter_HostBindingHandler($event) {
+        return ctx.dragEnter($event);
+      })("dragleave", function Droppable_dragleave_HostBindingHandler($event) {
+        return ctx.dragLeave($event);
+      });
+    }
+  },
+  inputs: {
+    scope: [0, "pDroppable", "scope"],
+    pDroppableDisabled: [2, "pDroppableDisabled", "pDroppableDisabled", booleanAttribute],
+    dropEffect: "dropEffect"
+  },
+  outputs: {
+    onDragEnter: "onDragEnter",
+    onDragLeave: "onDragLeave",
+    onDrop: "onDrop"
+  },
+  features: [ɵɵInputTransformsFeature]
+}));
+var Droppable = _Droppable;
 (() => {
   (typeof ngDevMode === "undefined" || ngDevMode) && setClassMetadata(Droppable, [{
     type: Directive,
@@ -413,20 +417,21 @@ var Droppable = class _Droppable {
     }]
   });
 })();
-var DragDropModule = class _DragDropModule {
-  static ɵfac = function DragDropModule_Factory(__ngFactoryType__) {
-    return new (__ngFactoryType__ || _DragDropModule)();
-  };
-  static ɵmod = ɵɵdefineNgModule({
-    type: _DragDropModule,
-    declarations: [Draggable, Droppable],
-    imports: [CommonModule],
-    exports: [Draggable, Droppable]
-  });
-  static ɵinj = ɵɵdefineInjector({
-    imports: [CommonModule]
-  });
+var _DragDropModule = class _DragDropModule {
 };
+__publicField(_DragDropModule, "ɵfac", function DragDropModule_Factory(__ngFactoryType__) {
+  return new (__ngFactoryType__ || _DragDropModule)();
+});
+__publicField(_DragDropModule, "ɵmod", ɵɵdefineNgModule({
+  type: _DragDropModule,
+  declarations: [Draggable, Droppable],
+  imports: [CommonModule],
+  exports: [Draggable, Droppable]
+}));
+__publicField(_DragDropModule, "ɵinj", ɵɵdefineInjector({
+  imports: [CommonModule]
+}));
+var DragDropModule = _DragDropModule;
 (() => {
   (typeof ngDevMode === "undefined" || ngDevMode) && setClassMetadata(DragDropModule, [{
     type: NgModule,

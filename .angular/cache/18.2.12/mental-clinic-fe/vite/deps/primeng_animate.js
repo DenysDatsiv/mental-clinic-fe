@@ -1,9 +1,9 @@
 import {
   DomHandler
-} from "./chunk-BUGEQH7Q.js";
+} from "./chunk-LB42WWNC.js";
 import {
   CommonModule
-} from "./chunk-UBZYO7FG.js";
+} from "./chunk-KUZ63KOD.js";
 import {
   Directive,
   ElementRef,
@@ -16,30 +16,32 @@ import {
   ɵɵdefineInjector,
   ɵɵdefineNgModule,
   ɵɵdirectiveInject
-} from "./chunk-ZI2Q76R4.js";
-import "./chunk-5OPE3T2R.js";
+} from "./chunk-R75KKECJ.js";
 import "./chunk-4N4GOYJH.js";
+import "./chunk-5OPE3T2R.js";
 import "./chunk-FHTVLBLO.js";
-import "./chunk-3OV72XIM.js";
+import {
+  __publicField
+} from "./chunk-IJZFAMY6.js";
 
 // node_modules/primeng/fesm2022/primeng-animate.mjs
-var Animate = class _Animate {
-  host;
-  el;
-  renderer;
-  /**
-   * Selector to define the CSS class for enter animation.
-   * @group Props
-   */
-  enterClass;
-  /**
-   * Selector to define the CSS class for leave animation.
-   * @group Props
-   */
-  leaveClass;
-  observer;
-  timeout;
+var _Animate = class _Animate {
   constructor(host, el, renderer) {
+    __publicField(this, "host");
+    __publicField(this, "el");
+    __publicField(this, "renderer");
+    /**
+     * Selector to define the CSS class for enter animation.
+     * @group Props
+     */
+    __publicField(this, "enterClass");
+    /**
+     * Selector to define the CSS class for leave animation.
+     * @group Props
+     */
+    __publicField(this, "leaveClass");
+    __publicField(this, "observer");
+    __publicField(this, "timeout");
     this.host = host;
     this.el = el;
     this.renderer = renderer;
@@ -86,24 +88,25 @@ var Animate = class _Animate {
     this.unbindIntersectionObserver();
     clearTimeout(this.timeout);
   }
-  static ɵfac = function Animate_Factory(__ngFactoryType__) {
-    return new (__ngFactoryType__ || _Animate)(ɵɵdirectiveInject(ElementRef), ɵɵdirectiveInject(ElementRef), ɵɵdirectiveInject(Renderer2));
-  };
-  static ɵdir = ɵɵdefineDirective({
-    type: _Animate,
-    selectors: [["", "pAnimate", ""]],
-    hostVars: 2,
-    hostBindings: function Animate_HostBindings(rf, ctx) {
-      if (rf & 2) {
-        ɵɵclassProp("p-animate", true);
-      }
-    },
-    inputs: {
-      enterClass: "enterClass",
-      leaveClass: "leaveClass"
-    }
-  });
 };
+__publicField(_Animate, "ɵfac", function Animate_Factory(__ngFactoryType__) {
+  return new (__ngFactoryType__ || _Animate)(ɵɵdirectiveInject(ElementRef), ɵɵdirectiveInject(ElementRef), ɵɵdirectiveInject(Renderer2));
+});
+__publicField(_Animate, "ɵdir", ɵɵdefineDirective({
+  type: _Animate,
+  selectors: [["", "pAnimate", ""]],
+  hostVars: 2,
+  hostBindings: function Animate_HostBindings(rf, ctx) {
+    if (rf & 2) {
+      ɵɵclassProp("p-animate", true);
+    }
+  },
+  inputs: {
+    enterClass: "enterClass",
+    leaveClass: "leaveClass"
+  }
+}));
+var Animate = _Animate;
 (() => {
   (typeof ngDevMode === "undefined" || ngDevMode) && setClassMetadata(Animate, [{
     type: Directive,
@@ -128,20 +131,21 @@ var Animate = class _Animate {
     }]
   });
 })();
-var AnimateModule = class _AnimateModule {
-  static ɵfac = function AnimateModule_Factory(__ngFactoryType__) {
-    return new (__ngFactoryType__ || _AnimateModule)();
-  };
-  static ɵmod = ɵɵdefineNgModule({
-    type: _AnimateModule,
-    declarations: [Animate],
-    imports: [CommonModule],
-    exports: [Animate]
-  });
-  static ɵinj = ɵɵdefineInjector({
-    imports: [CommonModule]
-  });
+var _AnimateModule = class _AnimateModule {
 };
+__publicField(_AnimateModule, "ɵfac", function AnimateModule_Factory(__ngFactoryType__) {
+  return new (__ngFactoryType__ || _AnimateModule)();
+});
+__publicField(_AnimateModule, "ɵmod", ɵɵdefineNgModule({
+  type: _AnimateModule,
+  declarations: [Animate],
+  imports: [CommonModule],
+  exports: [Animate]
+}));
+__publicField(_AnimateModule, "ɵinj", ɵɵdefineInjector({
+  imports: [CommonModule]
+}));
+var AnimateModule = _AnimateModule;
 (() => {
   (typeof ngDevMode === "undefined" || ngDevMode) && setClassMetadata(AnimateModule, [{
     type: NgModule,

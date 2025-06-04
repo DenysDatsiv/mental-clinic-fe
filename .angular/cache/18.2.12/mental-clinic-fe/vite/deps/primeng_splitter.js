@@ -1,11 +1,11 @@
 import {
   PrimeTemplate,
   SharedModule
-} from "./chunk-TQSVMJ6K.js";
-import "./chunk-3OF44R55.js";
+} from "./chunk-ZROJCIWL.js";
+import "./chunk-U3NLM53U.js";
 import {
   DomHandler
-} from "./chunk-BUGEQH7Q.js";
+} from "./chunk-LB42WWNC.js";
 import {
   CommonModule,
   DOCUMENT,
@@ -15,7 +15,7 @@ import {
   NgStyle,
   NgTemplateOutlet,
   isPlatformBrowser
-} from "./chunk-UBZYO7FG.js";
+} from "./chunk-KUZ63KOD.js";
 import {
   ChangeDetectionStrategy,
   ChangeDetectorRef,
@@ -56,11 +56,13 @@ import {
   ɵɵrestoreView,
   ɵɵtemplate,
   ɵɵviewQuery
-} from "./chunk-ZI2Q76R4.js";
-import "./chunk-5OPE3T2R.js";
+} from "./chunk-R75KKECJ.js";
 import "./chunk-4N4GOYJH.js";
+import "./chunk-5OPE3T2R.js";
 import "./chunk-FHTVLBLO.js";
-import "./chunk-3OV72XIM.js";
+import {
+  __publicField
+} from "./chunk-IJZFAMY6.js";
 
 // node_modules/primeng/fesm2022/primeng-splitter.mjs
 var _c0 = ["container"];
@@ -134,62 +136,103 @@ function Splitter_ng_template_2_Template(rf, ctx) {
     ɵɵproperty("ngIf", i_r2 !== ctx_r2.panels.length - 1);
   }
 }
-var Splitter = class _Splitter {
-  document;
-  platformId;
-  renderer;
-  cd;
-  el;
-  /**
-   * Style class of the component.
-   * @group Props
-   */
-  styleClass;
-  /**
-   * Style class of the panel.
-   * @group Props
-   */
-  panelStyleClass;
-  /**
-   * Inline style of the component.
-   * @group Props
-   */
-  style;
-  /**
-   * Inline style of the panel.
-   * @group Props
-   */
-  panelStyle;
-  /**
-   * Defines where a stateful splitter keeps its state, valid values are 'session' for sessionStorage and 'local' for localStorage.
-   * @group Props
-   */
-  stateStorage = "session";
-  /**
-   * Storage identifier of a stateful Splitter.
-   * @group Props
-   */
-  stateKey = null;
-  /**
-   * Orientation of the panels. Valid values are 'horizontal' and 'vertical'.
-   * @group Props
-   */
-  layout = "horizontal";
-  /**
-   * Size of the divider in pixels.
-   * @group Props
-   */
-  gutterSize = 4;
-  /**
-   * Step factor to increment/decrement the size of the panels while pressing the arrow keys.
-   * @group Props
-   */
-  step = 5;
-  /**
-   * Minimum size of the elements relative to 100%.
-   * @group Props
-   */
-  minSizes = [];
+var _Splitter = class _Splitter {
+  constructor(document, platformId, renderer, cd, el) {
+    __publicField(this, "document");
+    __publicField(this, "platformId");
+    __publicField(this, "renderer");
+    __publicField(this, "cd");
+    __publicField(this, "el");
+    /**
+     * Style class of the component.
+     * @group Props
+     */
+    __publicField(this, "styleClass");
+    /**
+     * Style class of the panel.
+     * @group Props
+     */
+    __publicField(this, "panelStyleClass");
+    /**
+     * Inline style of the component.
+     * @group Props
+     */
+    __publicField(this, "style");
+    /**
+     * Inline style of the panel.
+     * @group Props
+     */
+    __publicField(this, "panelStyle");
+    /**
+     * Defines where a stateful splitter keeps its state, valid values are 'session' for sessionStorage and 'local' for localStorage.
+     * @group Props
+     */
+    __publicField(this, "stateStorage", "session");
+    /**
+     * Storage identifier of a stateful Splitter.
+     * @group Props
+     */
+    __publicField(this, "stateKey", null);
+    /**
+     * Orientation of the panels. Valid values are 'horizontal' and 'vertical'.
+     * @group Props
+     */
+    __publicField(this, "layout", "horizontal");
+    /**
+     * Size of the divider in pixels.
+     * @group Props
+     */
+    __publicField(this, "gutterSize", 4);
+    /**
+     * Step factor to increment/decrement the size of the panels while pressing the arrow keys.
+     * @group Props
+     */
+    __publicField(this, "step", 5);
+    /**
+     * Minimum size of the elements relative to 100%.
+     * @group Props
+     */
+    __publicField(this, "minSizes", []);
+    /**
+     * Callback to invoke when resize ends.
+     * @param {SplitterResizeEndEvent} event - Custom panel resize end event
+     * @group Emits
+     */
+    __publicField(this, "onResizeEnd", new EventEmitter());
+    /**
+     * Callback to invoke when resize starts.
+     * @param {SplitterResizeStartEvent} event - Custom panel resize start event
+     * @group Emits
+     */
+    __publicField(this, "onResizeStart", new EventEmitter());
+    __publicField(this, "templates");
+    __publicField(this, "containerViewChild");
+    __publicField(this, "nested", false);
+    __publicField(this, "panels", []);
+    __publicField(this, "dragging", false);
+    __publicField(this, "mouseMoveListener");
+    __publicField(this, "mouseUpListener");
+    __publicField(this, "touchMoveListener");
+    __publicField(this, "touchEndListener");
+    __publicField(this, "size");
+    __publicField(this, "gutterElement");
+    __publicField(this, "startPos");
+    __publicField(this, "prevPanelElement");
+    __publicField(this, "nextPanelElement");
+    __publicField(this, "nextPanelSize");
+    __publicField(this, "prevPanelSize");
+    __publicField(this, "_panelSizes", []);
+    __publicField(this, "prevPanelIndex");
+    __publicField(this, "timer");
+    __publicField(this, "prevSize");
+    __publicField(this, "window");
+    this.document = document;
+    this.platformId = platformId;
+    this.renderer = renderer;
+    this.cd = cd;
+    this.el = el;
+    this.window = this.document.defaultView;
+  }
   /**
    * Size of the elements relative to 100%.
    * @group Props
@@ -204,52 +247,11 @@ var Splitter = class _Splitter {
       let _panelSizes = [];
       this.panels.map((panel, i) => {
         let panelInitialSize = this.panelSizes.length - 1 >= i ? this.panelSizes[i] : null;
-        let panelSize = panelInitialSize ?? 100 / this.panels.length;
+        let panelSize = panelInitialSize != null ? panelInitialSize : 100 / this.panels.length;
         _panelSizes[i] = panelSize;
         children[i].style.flexBasis = "calc(" + panelSize + "% - " + (this.panels.length - 1) * this.gutterSize + "px)";
       });
     }
-  }
-  /**
-   * Callback to invoke when resize ends.
-   * @param {SplitterResizeEndEvent} event - Custom panel resize end event
-   * @group Emits
-   */
-  onResizeEnd = new EventEmitter();
-  /**
-   * Callback to invoke when resize starts.
-   * @param {SplitterResizeStartEvent} event - Custom panel resize start event
-   * @group Emits
-   */
-  onResizeStart = new EventEmitter();
-  templates;
-  containerViewChild;
-  nested = false;
-  panels = [];
-  dragging = false;
-  mouseMoveListener;
-  mouseUpListener;
-  touchMoveListener;
-  touchEndListener;
-  size;
-  gutterElement;
-  startPos;
-  prevPanelElement;
-  nextPanelElement;
-  nextPanelSize;
-  prevPanelSize;
-  _panelSizes = [];
-  prevPanelIndex;
-  timer;
-  prevSize;
-  window;
-  constructor(document, platformId, renderer, cd, el) {
-    this.document = document;
-    this.platformId = platformId;
-    this.renderer = renderer;
-    this.cd = cd;
-    this.el = el;
-    this.window = this.document.defaultView;
   }
   ngOnInit() {
     this.nested = this.isNested();
@@ -559,115 +561,85 @@ var Splitter = class _Splitter {
   horizontal() {
     return this.layout === "horizontal";
   }
-  static ɵfac = function Splitter_Factory(__ngFactoryType__) {
-    return new (__ngFactoryType__ || _Splitter)(ɵɵdirectiveInject(DOCUMENT), ɵɵdirectiveInject(PLATFORM_ID), ɵɵdirectiveInject(Renderer2), ɵɵdirectiveInject(ChangeDetectorRef), ɵɵdirectiveInject(ElementRef));
-  };
-  static ɵcmp = ɵɵdefineComponent({
-    type: _Splitter,
-    selectors: [["p-splitter"]],
-    contentQueries: function Splitter_ContentQueries(rf, ctx, dirIndex) {
-      if (rf & 1) {
-        ɵɵcontentQuery(dirIndex, PrimeTemplate, 4);
-      }
-      if (rf & 2) {
-        let _t;
-        ɵɵqueryRefresh(_t = ɵɵloadQuery()) && (ctx.templates = _t);
-      }
-    },
-    viewQuery: function Splitter_Query(rf, ctx) {
-      if (rf & 1) {
-        ɵɵviewQuery(_c0, 5);
-      }
-      if (rf & 2) {
-        let _t;
-        ɵɵqueryRefresh(_t = ɵɵloadQuery()) && (ctx.containerViewChild = _t.first);
-      }
-    },
-    hostAttrs: [1, "p-element"],
-    hostVars: 2,
-    hostBindings: function Splitter_HostBindings(rf, ctx) {
-      if (rf & 2) {
-        ɵɵclassProp("p-splitter-panel-nested", ctx.nested);
-      }
-    },
-    inputs: {
-      styleClass: "styleClass",
-      panelStyleClass: "panelStyleClass",
-      style: "style",
-      panelStyle: "panelStyle",
-      stateStorage: "stateStorage",
-      stateKey: "stateKey",
-      layout: "layout",
-      gutterSize: [2, "gutterSize", "gutterSize", numberAttribute],
-      step: [2, "step", "step", numberAttribute],
-      minSizes: "minSizes",
-      panelSizes: "panelSizes"
-    },
-    outputs: {
-      onResizeEnd: "onResizeEnd",
-      onResizeStart: "onResizeStart"
-    },
-    features: [ɵɵInputTransformsFeature],
-    decls: 3,
-    vars: 8,
-    consts: [["container", ""], [3, "ngClass", "ngStyle"], ["ngFor", "", 3, "ngForOf"], ["tabindex", "-1", 3, "ngClass", "ngStyle"], [4, "ngTemplateOutlet"], ["class", "p-splitter-gutter", "role", "separator", "tabindex", "-1", 3, "mousedown", "touchstart", "touchmove", "touchend", 4, "ngIf"], ["role", "separator", "tabindex", "-1", 1, "p-splitter-gutter", 3, "mousedown", "touchstart", "touchmove", "touchend"], ["tabindex", "0", 1, "p-splitter-gutter-handle", 3, "keyup", "keydown", "ngStyle"]],
-    template: function Splitter_Template(rf, ctx) {
-      if (rf & 1) {
-        ɵɵelementStart(0, "div", 1, 0);
-        ɵɵtemplate(2, Splitter_ng_template_2_Template, 3, 8, "ng-template", 2);
-        ɵɵelementEnd();
-      }
-      if (rf & 2) {
-        ɵɵclassMap(ctx.styleClass);
-        ɵɵproperty("ngClass", ctx.containerClass())("ngStyle", ctx.style);
-        ɵɵattribute("data-pc-name", "splitter")("data-p-gutter-resizing", false)("data-pc-section", "root");
-        ɵɵadvance(2);
-        ɵɵproperty("ngForOf", ctx.panels);
-      }
-    },
-    dependencies: [NgClass, NgForOf, NgIf, NgTemplateOutlet, NgStyle],
-    styles: ["@layer primeng{.p-splitter{display:flex;flex-wrap:nowrap}.p-splitter-vertical{flex-direction:column}.p-splitter-panel{overflow:hidden;flex-grow:1}.p-splitter-panel-nested{display:flex;min-width:0}.p-splitter-panel p-splitter{flex-grow:1}.p-splitter-panel .p-splitter{flex-grow:1;border:0 none}.p-splitter-gutter{flex-grow:0;flex-shrink:0;display:flex;align-items:center;justify-content:center;cursor:col-resize}.p-splitter-horizontal.p-splitter-resizing{cursor:col-resize;-webkit-user-select:none;user-select:none}.p-splitter-horizontal>.p-splitter-gutter>.p-splitter-gutter-handle{height:24px;width:100%}.p-splitter-horizontal>.p-splitter-gutter{cursor:col-resize}.p-splitter-vertical.p-splitter-resizing{cursor:row-resize;-webkit-user-select:none;user-select:none}.p-splitter-vertical>.p-splitter-gutter{cursor:row-resize}.p-splitter-vertical>.p-splitter-gutter>.p-splitter-gutter-handle{width:24px;height:100%}.p-splitter-resizing .p-splitter-panel{pointer-events:none}}\n"],
-    encapsulation: 2,
-    changeDetection: 0
-  });
 };
+__publicField(_Splitter, "ɵfac", function Splitter_Factory(__ngFactoryType__) {
+  return new (__ngFactoryType__ || _Splitter)(ɵɵdirectiveInject(DOCUMENT), ɵɵdirectiveInject(PLATFORM_ID), ɵɵdirectiveInject(Renderer2), ɵɵdirectiveInject(ChangeDetectorRef), ɵɵdirectiveInject(ElementRef));
+});
+__publicField(_Splitter, "ɵcmp", ɵɵdefineComponent({
+  type: _Splitter,
+  selectors: [["p-splitter"]],
+  contentQueries: function Splitter_ContentQueries(rf, ctx, dirIndex) {
+    if (rf & 1) {
+      ɵɵcontentQuery(dirIndex, PrimeTemplate, 4);
+    }
+    if (rf & 2) {
+      let _t;
+      ɵɵqueryRefresh(_t = ɵɵloadQuery()) && (ctx.templates = _t);
+    }
+  },
+  viewQuery: function Splitter_Query(rf, ctx) {
+    if (rf & 1) {
+      ɵɵviewQuery(_c0, 5);
+    }
+    if (rf & 2) {
+      let _t;
+      ɵɵqueryRefresh(_t = ɵɵloadQuery()) && (ctx.containerViewChild = _t.first);
+    }
+  },
+  hostAttrs: [1, "p-element"],
+  hostVars: 2,
+  hostBindings: function Splitter_HostBindings(rf, ctx) {
+    if (rf & 2) {
+      ɵɵclassProp("p-splitter-panel-nested", ctx.nested);
+    }
+  },
+  inputs: {
+    styleClass: "styleClass",
+    panelStyleClass: "panelStyleClass",
+    style: "style",
+    panelStyle: "panelStyle",
+    stateStorage: "stateStorage",
+    stateKey: "stateKey",
+    layout: "layout",
+    gutterSize: [2, "gutterSize", "gutterSize", numberAttribute],
+    step: [2, "step", "step", numberAttribute],
+    minSizes: "minSizes",
+    panelSizes: "panelSizes"
+  },
+  outputs: {
+    onResizeEnd: "onResizeEnd",
+    onResizeStart: "onResizeStart"
+  },
+  features: [ɵɵInputTransformsFeature],
+  decls: 3,
+  vars: 8,
+  consts: [["container", ""], [3, "ngClass", "ngStyle"], ["ngFor", "", 3, "ngForOf"], ["tabindex", "-1", 3, "ngClass", "ngStyle"], [4, "ngTemplateOutlet"], ["class", "p-splitter-gutter", "role", "separator", "tabindex", "-1", 3, "mousedown", "touchstart", "touchmove", "touchend", 4, "ngIf"], ["role", "separator", "tabindex", "-1", 1, "p-splitter-gutter", 3, "mousedown", "touchstart", "touchmove", "touchend"], ["tabindex", "0", 1, "p-splitter-gutter-handle", 3, "keyup", "keydown", "ngStyle"]],
+  template: function Splitter_Template(rf, ctx) {
+    if (rf & 1) {
+      ɵɵelementStart(0, "div", 1, 0);
+      ɵɵtemplate(2, Splitter_ng_template_2_Template, 3, 8, "ng-template", 2);
+      ɵɵelementEnd();
+    }
+    if (rf & 2) {
+      ɵɵclassMap(ctx.styleClass);
+      ɵɵproperty("ngClass", ctx.containerClass())("ngStyle", ctx.style);
+      ɵɵattribute("data-pc-name", "splitter")("data-p-gutter-resizing", false)("data-pc-section", "root");
+      ɵɵadvance(2);
+      ɵɵproperty("ngForOf", ctx.panels);
+    }
+  },
+  dependencies: [NgClass, NgForOf, NgIf, NgTemplateOutlet, NgStyle],
+  styles: ["@layer primeng{.p-splitter{display:flex;flex-wrap:nowrap}.p-splitter-vertical{flex-direction:column}.p-splitter-panel{overflow:hidden;flex-grow:1}.p-splitter-panel-nested{display:flex;min-width:0}.p-splitter-panel p-splitter{flex-grow:1}.p-splitter-panel .p-splitter{flex-grow:1;border:0 none}.p-splitter-gutter{flex-grow:0;flex-shrink:0;display:flex;align-items:center;justify-content:center;cursor:col-resize}.p-splitter-horizontal.p-splitter-resizing{cursor:col-resize;-webkit-user-select:none;user-select:none}.p-splitter-horizontal>.p-splitter-gutter>.p-splitter-gutter-handle{height:24px;width:100%}.p-splitter-horizontal>.p-splitter-gutter{cursor:col-resize}.p-splitter-vertical.p-splitter-resizing{cursor:row-resize;-webkit-user-select:none;user-select:none}.p-splitter-vertical>.p-splitter-gutter{cursor:row-resize}.p-splitter-vertical>.p-splitter-gutter>.p-splitter-gutter-handle{width:24px;height:100%}.p-splitter-resizing .p-splitter-panel{pointer-events:none}}\n"],
+  encapsulation: 2,
+  changeDetection: 0
+}));
+var Splitter = _Splitter;
 (() => {
   (typeof ngDevMode === "undefined" || ngDevMode) && setClassMetadata(Splitter, [{
     type: Component,
     args: [{
       selector: "p-splitter",
-      template: `
-        <div #container [ngClass]="containerClass()" [class]="styleClass" [ngStyle]="style" [attr.data-pc-name]="'splitter'" [attr.data-p-gutter-resizing]="false" [attr.data-pc-section]="'root'">
-            <ng-template ngFor let-panel [ngForOf]="panels" let-i="index">
-                <div [ngClass]="panelContainerClass()" [class]="panelStyleClass" [ngStyle]="panelStyle" tabindex="-1" [attr.data-pc-name]="'splitter'" [attr.data-pc-section]="'root'">
-                    <ng-container *ngTemplateOutlet="panel"></ng-container>
-                </div>
-                <div
-                    *ngIf="i !== panels.length - 1"
-                    class="p-splitter-gutter"
-                    role="separator"
-                    tabindex="-1"
-                    (mousedown)="onGutterMouseDown($event, i)"
-                    (touchstart)="onGutterTouchStart($event, i)"
-                    (touchmove)="onGutterTouchMove($event)"
-                    (touchend)="onGutterTouchEnd($event, i)"
-                    [attr.data-p-gutter-resizing]="false"
-                    [attr.data-pc-section]="'gutter'"
-                >
-                    <div
-                        class="p-splitter-gutter-handle"
-                        tabindex="0"
-                        [ngStyle]="gutterStyle()"
-                        [attr.aria-orientation]="layout"
-                        [attr.aria-valuenow]="prevSize"
-                        [attr.data-pc-section]="'gutterhandle'"
-                        (keyup)="onGutterKeyUp($event)"
-                        (keydown)="onGutterKeyDown($event, i)"
-                    ></div>
-                </div>
-            </ng-template>
-        </div>
-    `,
+      template: '\n        <div #container [ngClass]="containerClass()" [class]="styleClass" [ngStyle]="style" [attr.data-pc-name]="\'splitter\'" [attr.data-p-gutter-resizing]="false" [attr.data-pc-section]="\'root\'">\n            <ng-template ngFor let-panel [ngForOf]="panels" let-i="index">\n                <div [ngClass]="panelContainerClass()" [class]="panelStyleClass" [ngStyle]="panelStyle" tabindex="-1" [attr.data-pc-name]="\'splitter\'" [attr.data-pc-section]="\'root\'">\n                    <ng-container *ngTemplateOutlet="panel"></ng-container>\n                </div>\n                <div\n                    *ngIf="i !== panels.length - 1"\n                    class="p-splitter-gutter"\n                    role="separator"\n                    tabindex="-1"\n                    (mousedown)="onGutterMouseDown($event, i)"\n                    (touchstart)="onGutterTouchStart($event, i)"\n                    (touchmove)="onGutterTouchMove($event)"\n                    (touchend)="onGutterTouchEnd($event, i)"\n                    [attr.data-p-gutter-resizing]="false"\n                    [attr.data-pc-section]="\'gutter\'"\n                >\n                    <div\n                        class="p-splitter-gutter-handle"\n                        tabindex="0"\n                        [ngStyle]="gutterStyle()"\n                        [attr.aria-orientation]="layout"\n                        [attr.aria-valuenow]="prevSize"\n                        [attr.data-pc-section]="\'gutterhandle\'"\n                        (keyup)="onGutterKeyUp($event)"\n                        (keydown)="onGutterKeyDown($event, i)"\n                    ></div>\n                </div>\n            </ng-template>\n        </div>\n    ',
       encapsulation: ViewEncapsulation$1.None,
       changeDetection: ChangeDetectionStrategy.OnPush,
       host: {
@@ -752,20 +724,21 @@ var Splitter = class _Splitter {
     }]
   });
 })();
-var SplitterModule = class _SplitterModule {
-  static ɵfac = function SplitterModule_Factory(__ngFactoryType__) {
-    return new (__ngFactoryType__ || _SplitterModule)();
-  };
-  static ɵmod = ɵɵdefineNgModule({
-    type: _SplitterModule,
-    declarations: [Splitter],
-    imports: [CommonModule],
-    exports: [Splitter, SharedModule]
-  });
-  static ɵinj = ɵɵdefineInjector({
-    imports: [CommonModule, SharedModule]
-  });
+var _SplitterModule = class _SplitterModule {
 };
+__publicField(_SplitterModule, "ɵfac", function SplitterModule_Factory(__ngFactoryType__) {
+  return new (__ngFactoryType__ || _SplitterModule)();
+});
+__publicField(_SplitterModule, "ɵmod", ɵɵdefineNgModule({
+  type: _SplitterModule,
+  declarations: [Splitter],
+  imports: [CommonModule],
+  exports: [Splitter, SharedModule]
+}));
+__publicField(_SplitterModule, "ɵinj", ɵɵdefineInjector({
+  imports: [CommonModule, SharedModule]
+}));
+var SplitterModule = _SplitterModule;
 (() => {
   (typeof ngDevMode === "undefined" || ngDevMode) && setClassMetadata(SplitterModule, [{
     type: NgModule,

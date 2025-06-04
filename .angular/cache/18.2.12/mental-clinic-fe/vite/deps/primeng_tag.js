@@ -1,15 +1,15 @@
 import {
   PrimeTemplate,
   SharedModule
-} from "./chunk-TQSVMJ6K.js";
-import "./chunk-3OF44R55.js";
+} from "./chunk-ZROJCIWL.js";
+import "./chunk-U3NLM53U.js";
 import {
   CommonModule,
   NgClass,
   NgIf,
   NgStyle,
   NgTemplateOutlet
-} from "./chunk-UBZYO7FG.js";
+} from "./chunk-KUZ63KOD.js";
 import {
   ChangeDetectionStrategy,
   ChangeDetectorRef,
@@ -42,11 +42,13 @@ import {
   ɵɵtemplate,
   ɵɵtext,
   ɵɵtextInterpolate
-} from "./chunk-ZI2Q76R4.js";
-import "./chunk-5OPE3T2R.js";
+} from "./chunk-R75KKECJ.js";
 import "./chunk-4N4GOYJH.js";
+import "./chunk-5OPE3T2R.js";
 import "./chunk-FHTVLBLO.js";
-import "./chunk-3OV72XIM.js";
+import {
+  __publicField
+} from "./chunk-IJZFAMY6.js";
 
 // node_modules/primeng/fesm2022/primeng-tag.mjs
 var _c0 = ["*"];
@@ -90,8 +92,39 @@ function Tag_span_3_Template(rf, ctx) {
     ɵɵproperty("ngTemplateOutlet", ctx_r0.iconTemplate);
   }
 }
-var Tag = class _Tag {
-  cd;
+var _Tag = class _Tag {
+  constructor(cd) {
+    __publicField(this, "cd");
+    /**
+     * Style class of the component.
+     * @group Props
+     */
+    __publicField(this, "styleClass");
+    /**
+     * Severity type of the tag.
+     * @group Props
+     */
+    __publicField(this, "severity");
+    /**
+     * Value to display inside the tag.
+     * @group Props
+     */
+    __publicField(this, "value");
+    /**
+     * Icon of the tag to display next to the value.
+     * @group Props
+     */
+    __publicField(this, "icon");
+    /**
+     * Whether the corners of the tag are rounded.
+     * @group Props
+     */
+    __publicField(this, "rounded");
+    __publicField(this, "templates");
+    __publicField(this, "iconTemplate");
+    __publicField(this, "_style");
+    this.cd = cd;
+  }
   /**
    * Inline style of the component.
    * @group Props
@@ -103,36 +136,9 @@ var Tag = class _Tag {
     this._style = value;
     this.cd.markForCheck();
   }
-  /**
-   * Style class of the component.
-   * @group Props
-   */
-  styleClass;
-  /**
-   * Severity type of the tag.
-   * @group Props
-   */
-  severity;
-  /**
-   * Value to display inside the tag.
-   * @group Props
-   */
-  value;
-  /**
-   * Icon of the tag to display next to the value.
-   * @group Props
-   */
-  icon;
-  /**
-   * Whether the corners of the tag are rounded.
-   * @group Props
-   */
-  rounded;
-  templates;
-  iconTemplate;
-  _style;
   ngAfterContentInit() {
-    this.templates?.forEach((item) => {
+    var _a;
+    (_a = this.templates) == null ? void 0 : _a.forEach((item) => {
       switch (item.getType()) {
         case "icon":
           this.iconTemplate = item.template;
@@ -140,89 +146,76 @@ var Tag = class _Tag {
       }
     });
   }
-  constructor(cd) {
-    this.cd = cd;
-  }
   containerClass() {
     return {
       "p-tag p-component": true,
-      [`p-tag-${this.severity}`]: this.severity,
+      ["p-tag-".concat(this.severity)]: this.severity,
       "p-tag-rounded": this.rounded
     };
   }
-  static ɵfac = function Tag_Factory(__ngFactoryType__) {
-    return new (__ngFactoryType__ || _Tag)(ɵɵdirectiveInject(ChangeDetectorRef));
-  };
-  static ɵcmp = ɵɵdefineComponent({
-    type: _Tag,
-    selectors: [["p-tag"]],
-    contentQueries: function Tag_ContentQueries(rf, ctx, dirIndex) {
-      if (rf & 1) {
-        ɵɵcontentQuery(dirIndex, PrimeTemplate, 4);
-      }
-      if (rf & 2) {
-        let _t;
-        ɵɵqueryRefresh(_t = ɵɵloadQuery()) && (ctx.templates = _t);
-      }
-    },
-    hostAttrs: [1, "p-element"],
-    inputs: {
-      style: "style",
-      styleClass: "styleClass",
-      severity: "severity",
-      value: "value",
-      icon: "icon",
-      rounded: [2, "rounded", "rounded", booleanAttribute]
-    },
-    features: [ɵɵInputTransformsFeature],
-    ngContentSelectors: _c0,
-    decls: 6,
-    vars: 7,
-    consts: [[3, "ngClass", "ngStyle"], [4, "ngIf"], ["class", "p-tag-icon", 4, "ngIf"], [1, "p-tag-value"], ["class", "p-tag-icon", 3, "ngClass", 4, "ngIf"], [1, "p-tag-icon", 3, "ngClass"], [1, "p-tag-icon"], [4, "ngTemplateOutlet"]],
-    template: function Tag_Template(rf, ctx) {
-      if (rf & 1) {
-        ɵɵprojectionDef();
-        ɵɵelementStart(0, "span", 0);
-        ɵɵprojection(1);
-        ɵɵtemplate(2, Tag_ng_container_2_Template, 2, 1, "ng-container", 1)(3, Tag_span_3_Template, 2, 1, "span", 2);
-        ɵɵelementStart(4, "span", 3);
-        ɵɵtext(5);
-        ɵɵelementEnd()();
-      }
-      if (rf & 2) {
-        ɵɵclassMap(ctx.styleClass);
-        ɵɵproperty("ngClass", ctx.containerClass())("ngStyle", ctx.style);
-        ɵɵadvance(2);
-        ɵɵproperty("ngIf", !ctx.iconTemplate);
-        ɵɵadvance();
-        ɵɵproperty("ngIf", ctx.iconTemplate);
-        ɵɵadvance(2);
-        ɵɵtextInterpolate(ctx.value);
-      }
-    },
-    dependencies: [NgClass, NgIf, NgTemplateOutlet, NgStyle],
-    styles: ["@layer primeng{.p-tag{display:inline-flex;align-items:center;justify-content:center}.p-tag-icon,.p-tag-value,.p-tag-icon.pi{line-height:1.5}.p-tag.p-tag-rounded{border-radius:10rem}}\n"],
-    encapsulation: 2,
-    changeDetection: 0
-  });
 };
+__publicField(_Tag, "ɵfac", function Tag_Factory(__ngFactoryType__) {
+  return new (__ngFactoryType__ || _Tag)(ɵɵdirectiveInject(ChangeDetectorRef));
+});
+__publicField(_Tag, "ɵcmp", ɵɵdefineComponent({
+  type: _Tag,
+  selectors: [["p-tag"]],
+  contentQueries: function Tag_ContentQueries(rf, ctx, dirIndex) {
+    if (rf & 1) {
+      ɵɵcontentQuery(dirIndex, PrimeTemplate, 4);
+    }
+    if (rf & 2) {
+      let _t;
+      ɵɵqueryRefresh(_t = ɵɵloadQuery()) && (ctx.templates = _t);
+    }
+  },
+  hostAttrs: [1, "p-element"],
+  inputs: {
+    style: "style",
+    styleClass: "styleClass",
+    severity: "severity",
+    value: "value",
+    icon: "icon",
+    rounded: [2, "rounded", "rounded", booleanAttribute]
+  },
+  features: [ɵɵInputTransformsFeature],
+  ngContentSelectors: _c0,
+  decls: 6,
+  vars: 7,
+  consts: [[3, "ngClass", "ngStyle"], [4, "ngIf"], ["class", "p-tag-icon", 4, "ngIf"], [1, "p-tag-value"], ["class", "p-tag-icon", 3, "ngClass", 4, "ngIf"], [1, "p-tag-icon", 3, "ngClass"], [1, "p-tag-icon"], [4, "ngTemplateOutlet"]],
+  template: function Tag_Template(rf, ctx) {
+    if (rf & 1) {
+      ɵɵprojectionDef();
+      ɵɵelementStart(0, "span", 0);
+      ɵɵprojection(1);
+      ɵɵtemplate(2, Tag_ng_container_2_Template, 2, 1, "ng-container", 1)(3, Tag_span_3_Template, 2, 1, "span", 2);
+      ɵɵelementStart(4, "span", 3);
+      ɵɵtext(5);
+      ɵɵelementEnd()();
+    }
+    if (rf & 2) {
+      ɵɵclassMap(ctx.styleClass);
+      ɵɵproperty("ngClass", ctx.containerClass())("ngStyle", ctx.style);
+      ɵɵadvance(2);
+      ɵɵproperty("ngIf", !ctx.iconTemplate);
+      ɵɵadvance();
+      ɵɵproperty("ngIf", ctx.iconTemplate);
+      ɵɵadvance(2);
+      ɵɵtextInterpolate(ctx.value);
+    }
+  },
+  dependencies: [NgClass, NgIf, NgTemplateOutlet, NgStyle],
+  styles: ["@layer primeng{.p-tag{display:inline-flex;align-items:center;justify-content:center}.p-tag-icon,.p-tag-value,.p-tag-icon.pi{line-height:1.5}.p-tag.p-tag-rounded{border-radius:10rem}}\n"],
+  encapsulation: 2,
+  changeDetection: 0
+}));
+var Tag = _Tag;
 (() => {
   (typeof ngDevMode === "undefined" || ngDevMode) && setClassMetadata(Tag, [{
     type: Component,
     args: [{
       selector: "p-tag",
-      template: `
-        <span [ngClass]="containerClass()" [class]="styleClass" [ngStyle]="style">
-            <ng-content></ng-content>
-            <ng-container *ngIf="!iconTemplate">
-                <span class="p-tag-icon" [ngClass]="icon" *ngIf="icon"></span>
-            </ng-container>
-            <span class="p-tag-icon" *ngIf="iconTemplate">
-                <ng-template *ngTemplateOutlet="iconTemplate"></ng-template>
-            </span>
-            <span class="p-tag-value">{{ value }}</span>
-        </span>
-    `,
+      template: '\n        <span [ngClass]="containerClass()" [class]="styleClass" [ngStyle]="style">\n            <ng-content></ng-content>\n            <ng-container *ngIf="!iconTemplate">\n                <span class="p-tag-icon" [ngClass]="icon" *ngIf="icon"></span>\n            </ng-container>\n            <span class="p-tag-icon" *ngIf="iconTemplate">\n                <ng-template *ngTemplateOutlet="iconTemplate"></ng-template>\n            </span>\n            <span class="p-tag-value">{{ value }}</span>\n        </span>\n    ',
       changeDetection: ChangeDetectionStrategy.OnPush,
       encapsulation: ViewEncapsulation$1.None,
       host: {
@@ -260,20 +253,21 @@ var Tag = class _Tag {
     }]
   });
 })();
-var TagModule = class _TagModule {
-  static ɵfac = function TagModule_Factory(__ngFactoryType__) {
-    return new (__ngFactoryType__ || _TagModule)();
-  };
-  static ɵmod = ɵɵdefineNgModule({
-    type: _TagModule,
-    declarations: [Tag],
-    imports: [CommonModule, SharedModule],
-    exports: [Tag, SharedModule]
-  });
-  static ɵinj = ɵɵdefineInjector({
-    imports: [CommonModule, SharedModule, SharedModule]
-  });
+var _TagModule = class _TagModule {
 };
+__publicField(_TagModule, "ɵfac", function TagModule_Factory(__ngFactoryType__) {
+  return new (__ngFactoryType__ || _TagModule)();
+});
+__publicField(_TagModule, "ɵmod", ɵɵdefineNgModule({
+  type: _TagModule,
+  declarations: [Tag],
+  imports: [CommonModule, SharedModule],
+  exports: [Tag, SharedModule]
+}));
+__publicField(_TagModule, "ɵinj", ɵɵdefineInjector({
+  imports: [CommonModule, SharedModule, SharedModule]
+}));
+var TagModule = _TagModule;
 (() => {
   (typeof ngDevMode === "undefined" || ngDevMode) && setClassMetadata(TagModule, [{
     type: NgModule,

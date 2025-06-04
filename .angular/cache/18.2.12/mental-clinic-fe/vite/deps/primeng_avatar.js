@@ -3,7 +3,7 @@ import {
   NgClass,
   NgIf,
   NgStyle
-} from "./chunk-UBZYO7FG.js";
+} from "./chunk-KUZ63KOD.js";
 import {
   ChangeDetectionStrategy,
   Component,
@@ -37,13 +37,14 @@ import {
   ɵɵtemplateRefExtractor,
   ɵɵtext,
   ɵɵtextInterpolate
-} from "./chunk-ZI2Q76R4.js";
-import "./chunk-5OPE3T2R.js";
+} from "./chunk-R75KKECJ.js";
 import "./chunk-4N4GOYJH.js";
+import "./chunk-5OPE3T2R.js";
 import "./chunk-FHTVLBLO.js";
 import {
+  __publicField,
   __spreadValues
-} from "./chunk-3OV72XIM.js";
+} from "./chunk-IJZFAMY6.js";
 
 // node_modules/primeng/fesm2022/primeng-avatar.mjs
 var _c0 = ["*"];
@@ -105,62 +106,64 @@ function Avatar_ng_template_5_Template(rf, ctx) {
     ɵɵproperty("ngIf", ctx_r0.image);
   }
 }
-var Avatar = class _Avatar {
-  /**
-   * Defines the text to display.
-   * @group Props
-   */
-  label;
-  /**
-   * Defines the icon to display.
-   * @group Props
-   */
-  icon;
-  /**
-   * Defines the image to display.
-   * @group Props
-   */
-  image;
-  /**
-   * Size of the element.
-   * @group Props
-   */
-  size = "normal";
-  /**
-   * Shape of the element.
-   * @group Props
-   */
-  shape = "square";
-  /**
-   * Inline style of the element.
-   * @group Props
-   */
-  style;
-  /**
-   * Class of the element.
-   * @group Props
-   */
-  styleClass;
-  /**
-   * Establishes a string value that labels the component.
-   * @group Props
-   */
-  ariaLabel;
-  /**
-   * Establishes relationships between the component and label(s) where its value should be one or more element IDs.
-   * @group Props
-   */
-  ariaLabelledBy;
-  /**
-   * This event is triggered if an error occurs while loading an image file.
-   * @param {Event} event - Browser event.
-   * @group Emits
-   */
-  onImageError = new EventEmitter();
-  /**
-   * Holds the current style of the component to allow dynamic updates.
-   */
-  currentStyle = {};
+var _Avatar = class _Avatar {
+  constructor() {
+    /**
+     * Defines the text to display.
+     * @group Props
+     */
+    __publicField(this, "label");
+    /**
+     * Defines the icon to display.
+     * @group Props
+     */
+    __publicField(this, "icon");
+    /**
+     * Defines the image to display.
+     * @group Props
+     */
+    __publicField(this, "image");
+    /**
+     * Size of the element.
+     * @group Props
+     */
+    __publicField(this, "size", "normal");
+    /**
+     * Shape of the element.
+     * @group Props
+     */
+    __publicField(this, "shape", "square");
+    /**
+     * Inline style of the element.
+     * @group Props
+     */
+    __publicField(this, "style");
+    /**
+     * Class of the element.
+     * @group Props
+     */
+    __publicField(this, "styleClass");
+    /**
+     * Establishes a string value that labels the component.
+     * @group Props
+     */
+    __publicField(this, "ariaLabel");
+    /**
+     * Establishes relationships between the component and label(s) where its value should be one or more element IDs.
+     * @group Props
+     */
+    __publicField(this, "ariaLabelledBy");
+    /**
+     * This event is triggered if an error occurs while loading an image file.
+     * @param {Event} event - Browser event.
+     * @group Emits
+     */
+    __publicField(this, "onImageError", new EventEmitter());
+    /**
+     * Holds the current style of the component to allow dynamic updates.
+     */
+    __publicField(this, "currentStyle", {});
+  }
   containerClass() {
     return {
       "p-avatar p-component": true,
@@ -181,68 +184,62 @@ var Avatar = class _Avatar {
   imageError(event) {
     this.onImageError.emit(event);
   }
-  static ɵfac = function Avatar_Factory(__ngFactoryType__) {
-    return new (__ngFactoryType__ || _Avatar)();
-  };
-  static ɵcmp = ɵɵdefineComponent({
-    type: _Avatar,
-    selectors: [["p-avatar"]],
-    hostAttrs: [1, "p-element"],
-    inputs: {
-      label: "label",
-      icon: "icon",
-      image: "image",
-      size: "size",
-      shape: "shape",
-      style: "style",
-      styleClass: "styleClass",
-      ariaLabel: "ariaLabel",
-      ariaLabelledBy: "ariaLabelledBy"
-    },
-    outputs: {
-      onImageError: "onImageError"
-    },
-    features: [ɵɵNgOnChangesFeature],
-    ngContentSelectors: _c0,
-    decls: 7,
-    vars: 9,
-    consts: [["iconTemplate", ""], ["imageTemplate", ""], [3, "ngClass", "ngStyle"], ["class", "p-avatar-text", 4, "ngIf", "ngIfElse"], [1, "p-avatar-text"], [3, "class", "ngClass", 4, "ngIf", "ngIfElse"], [3, "ngClass"], [3, "src", "error", 4, "ngIf"], [3, "error", "src"]],
-    template: function Avatar_Template(rf, ctx) {
-      if (rf & 1) {
-        ɵɵprojectionDef();
-        ɵɵelementStart(0, "div", 2);
-        ɵɵprojection(1);
-        ɵɵtemplate(2, Avatar_span_2_Template, 2, 1, "span", 3)(3, Avatar_ng_template_3_Template, 1, 2, "ng-template", null, 0, ɵɵtemplateRefExtractor)(5, Avatar_ng_template_5_Template, 1, 1, "ng-template", null, 1, ɵɵtemplateRefExtractor);
-        ɵɵelementEnd();
-      }
-      if (rf & 2) {
-        const iconTemplate_r4 = ɵɵreference(4);
-        ɵɵclassMap(ctx.styleClass);
-        ɵɵproperty("ngClass", ctx.containerClass())("ngStyle", ctx.currentStyle);
-        ɵɵattribute("aria-labelledby", ctx.ariaLabelledBy)("aria-label", ctx.ariaLabel)("data-pc-name", "avatar");
-        ɵɵadvance(2);
-        ɵɵproperty("ngIf", ctx.label)("ngIfElse", iconTemplate_r4);
-      }
-    },
-    dependencies: [NgClass, NgIf, NgStyle],
-    styles: ["@layer primeng{.p-avatar{display:inline-flex;align-items:center;justify-content:center;width:2rem;height:2rem;font-size:1rem}.p-avatar.p-avatar-image{background-color:transparent}.p-avatar.p-avatar-circle{border-radius:50%;overflow:hidden}.p-avatar .p-avatar-icon{font-size:1rem}.p-avatar img{width:100%;height:100%}}\n"],
-    encapsulation: 2,
-    changeDetection: 0
-  });
 };
+__publicField(_Avatar, "ɵfac", function Avatar_Factory(__ngFactoryType__) {
+  return new (__ngFactoryType__ || _Avatar)();
+});
+__publicField(_Avatar, "ɵcmp", ɵɵdefineComponent({
+  type: _Avatar,
+  selectors: [["p-avatar"]],
+  hostAttrs: [1, "p-element"],
+  inputs: {
+    label: "label",
+    icon: "icon",
+    image: "image",
+    size: "size",
+    shape: "shape",
+    style: "style",
+    styleClass: "styleClass",
+    ariaLabel: "ariaLabel",
+    ariaLabelledBy: "ariaLabelledBy"
+  },
+  outputs: {
+    onImageError: "onImageError"
+  },
+  features: [ɵɵNgOnChangesFeature],
+  ngContentSelectors: _c0,
+  decls: 7,
+  vars: 9,
+  consts: [["iconTemplate", ""], ["imageTemplate", ""], [3, "ngClass", "ngStyle"], ["class", "p-avatar-text", 4, "ngIf", "ngIfElse"], [1, "p-avatar-text"], [3, "class", "ngClass", 4, "ngIf", "ngIfElse"], [3, "ngClass"], [3, "src", "error", 4, "ngIf"], [3, "error", "src"]],
+  template: function Avatar_Template(rf, ctx) {
+    if (rf & 1) {
+      ɵɵprojectionDef();
+      ɵɵelementStart(0, "div", 2);
+      ɵɵprojection(1);
+      ɵɵtemplate(2, Avatar_span_2_Template, 2, 1, "span", 3)(3, Avatar_ng_template_3_Template, 1, 2, "ng-template", null, 0, ɵɵtemplateRefExtractor)(5, Avatar_ng_template_5_Template, 1, 1, "ng-template", null, 1, ɵɵtemplateRefExtractor);
+      ɵɵelementEnd();
+    }
+    if (rf & 2) {
+      const iconTemplate_r4 = ɵɵreference(4);
+      ɵɵclassMap(ctx.styleClass);
+      ɵɵproperty("ngClass", ctx.containerClass())("ngStyle", ctx.currentStyle);
+      ɵɵattribute("aria-labelledby", ctx.ariaLabelledBy)("aria-label", ctx.ariaLabel)("data-pc-name", "avatar");
+      ɵɵadvance(2);
+      ɵɵproperty("ngIf", ctx.label)("ngIfElse", iconTemplate_r4);
+    }
+  },
+  dependencies: [NgClass, NgIf, NgStyle],
+  styles: ["@layer primeng{.p-avatar{display:inline-flex;align-items:center;justify-content:center;width:2rem;height:2rem;font-size:1rem}.p-avatar.p-avatar-image{background-color:transparent}.p-avatar.p-avatar-circle{border-radius:50%;overflow:hidden}.p-avatar .p-avatar-icon{font-size:1rem}.p-avatar img{width:100%;height:100%}}\n"],
+  encapsulation: 2,
+  changeDetection: 0
+}));
+var Avatar = _Avatar;
 (() => {
   (typeof ngDevMode === "undefined" || ngDevMode) && setClassMetadata(Avatar, [{
     type: Component,
     args: [{
       selector: "p-avatar",
-      template: `
-        <div [ngClass]="containerClass()" [class]="styleClass" [ngStyle]="currentStyle" [attr.aria-labelledby]="ariaLabelledBy" [attr.aria-label]="ariaLabel" [attr.data-pc-name]="'avatar'">
-            <ng-content></ng-content>
-            <span class="p-avatar-text" *ngIf="label; else iconTemplate">{{ label }}</span>
-            <ng-template #iconTemplate><span [class]="icon" [ngClass]="'p-avatar-icon'" *ngIf="icon; else imageTemplate"></span></ng-template>
-            <ng-template #imageTemplate><img [src]="image" *ngIf="image" (error)="imageError($event)" [attr.aria-label]="ariaLabel" /></ng-template>
-        </div>
-    `,
+      template: '\n        <div [ngClass]="containerClass()" [class]="styleClass" [ngStyle]="currentStyle" [attr.aria-labelledby]="ariaLabelledBy" [attr.aria-label]="ariaLabel" [attr.data-pc-name]="\'avatar\'">\n            <ng-content></ng-content>\n            <span class="p-avatar-text" *ngIf="label; else iconTemplate">{{ label }}</span>\n            <ng-template #iconTemplate><span [class]="icon" [ngClass]="\'p-avatar-icon\'" *ngIf="icon; else imageTemplate"></span></ng-template>\n            <ng-template #imageTemplate><img [src]="image" *ngIf="image" (error)="imageError($event)" [attr.aria-label]="ariaLabel" /></ng-template>\n        </div>\n    ',
       changeDetection: ChangeDetectionStrategy.OnPush,
       encapsulation: ViewEncapsulation$1.None,
       host: {
@@ -283,20 +280,21 @@ var Avatar = class _Avatar {
     }]
   });
 })();
-var AvatarModule = class _AvatarModule {
-  static ɵfac = function AvatarModule_Factory(__ngFactoryType__) {
-    return new (__ngFactoryType__ || _AvatarModule)();
-  };
-  static ɵmod = ɵɵdefineNgModule({
-    type: _AvatarModule,
-    declarations: [Avatar],
-    imports: [CommonModule],
-    exports: [Avatar]
-  });
-  static ɵinj = ɵɵdefineInjector({
-    imports: [CommonModule]
-  });
+var _AvatarModule = class _AvatarModule {
 };
+__publicField(_AvatarModule, "ɵfac", function AvatarModule_Factory(__ngFactoryType__) {
+  return new (__ngFactoryType__ || _AvatarModule)();
+});
+__publicField(_AvatarModule, "ɵmod", ɵɵdefineNgModule({
+  type: _AvatarModule,
+  declarations: [Avatar],
+  imports: [CommonModule],
+  exports: [Avatar]
+}));
+__publicField(_AvatarModule, "ɵinj", ɵɵdefineInjector({
+  imports: [CommonModule]
+}));
+var AvatarModule = _AvatarModule;
 (() => {
   (typeof ngDevMode === "undefined" || ngDevMode) && setClassMetadata(AvatarModule, [{
     type: NgModule,

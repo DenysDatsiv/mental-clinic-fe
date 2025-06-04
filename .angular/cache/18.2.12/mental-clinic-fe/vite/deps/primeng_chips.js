@@ -1,29 +1,29 @@
 import {
-  TimesCircleIcon
-} from "./chunk-E4M3NR5Z.js";
-import {
   InputTextModule
-} from "./chunk-QU6QLMWV.js";
+} from "./chunk-SJTFEDMT.js";
+import {
+  TimesCircleIcon
+} from "./chunk-OLOIW27Q.js";
 import {
   TimesIcon
-} from "./chunk-MDBJZ6LU.js";
+} from "./chunk-AP6UZX4B.js";
 import {
   AutoFocus,
   AutoFocusModule
-} from "./chunk-32JR77BM.js";
+} from "./chunk-LND2F6FW.js";
 import {
   NG_VALUE_ACCESSOR
-} from "./chunk-B7GQUK3J.js";
-import "./chunk-PXWZN6FU.js";
+} from "./chunk-ZOG4HQFG.js";
+import "./chunk-BJLZ3T2F.js";
 import {
   PrimeNGConfig,
   PrimeTemplate,
   SharedModule
-} from "./chunk-TQSVMJ6K.js";
+} from "./chunk-ZROJCIWL.js";
 import {
   UniqueComponentId
-} from "./chunk-3OF44R55.js";
-import "./chunk-BUGEQH7Q.js";
+} from "./chunk-U3NLM53U.js";
+import "./chunk-LB42WWNC.js";
 import {
   CommonModule,
   DOCUMENT,
@@ -32,7 +32,7 @@ import {
   NgIf,
   NgStyle,
   NgTemplateOutlet
-} from "./chunk-UBZYO7FG.js";
+} from "./chunk-KUZ63KOD.js";
 import {
   ChangeDetectionStrategy,
   ChangeDetectorRef,
@@ -80,11 +80,13 @@ import {
   ɵɵtext,
   ɵɵtextInterpolate,
   ɵɵviewQuery
-} from "./chunk-ZI2Q76R4.js";
-import "./chunk-5OPE3T2R.js";
+} from "./chunk-R75KKECJ.js";
 import "./chunk-4N4GOYJH.js";
+import "./chunk-5OPE3T2R.js";
 import "./chunk-FHTVLBLO.js";
-import "./chunk-3OV72XIM.js";
+import {
+  __publicField
+} from "./chunk-IJZFAMY6.js";
 
 // node_modules/primeng/fesm2022/primeng-chips.mjs
 var _c0 = ["inputtext"];
@@ -276,184 +278,184 @@ var CHIPS_VALUE_ACCESSOR = {
   useExisting: forwardRef(() => Chips),
   multi: true
 };
-var Chips = class _Chips {
-  document;
-  el;
-  cd;
-  config;
-  /**
-   * Inline style of the element.
-   * @group Props
-   */
-  style;
-  /**
-   * Style class of the element.
-   * @group Props
-   */
-  styleClass;
-  /**
-   * When present, it specifies that the element should be disabled.
-   * @group Props
-   */
-  disabled;
-  /**
-   * Name of the property to display on a chip.
-   * @group Props
-   */
-  field;
-  /**
-   * Advisory information to display on input.
-   * @group Props
-   */
-  placeholder;
-  /**
-   * Maximum number of entries allowed.
-   * @group Props
-   */
-  max;
-  /**
-   * Maximum length of a chip.
-   * @group Props
-   */
-  maxLength;
-  /**
-   * Defines a string that labels the input for accessibility.
-   * @group Props
-   */
-  ariaLabel;
-  /**
-   * Establishes relationships between the component and label(s) where its value should be one or more element IDs.
-   * @group Props
-   */
-  ariaLabelledBy;
-  /**
-   * Index of the element in tabbing order.
-   * @group Props
-   */
-  tabindex;
-  /**
-   * Identifier of the focus input to match a label defined for the component.
-   * @group Props
-   */
-  inputId;
-  /**
-   * Whether to allow duplicate values or not.
-   * @group Props
-   */
-  allowDuplicate = true;
-  /**
-   * Defines whether duplication check should be case-sensitive
-   * @group Props
-   */
-  caseSensitiveDuplication = true;
-  /**
-   * Inline style of the input field.
-   * @group Props
-   */
-  inputStyle;
-  /**
-   * Style class of the input field.
-   * @group Props
-   */
-  inputStyleClass;
-  /**
-   * Whether to add an item on tab key press.
-   * @group Props
-   */
-  addOnTab;
-  /**
-   * Whether to add an item when the input loses focus.
-   * @group Props
-   */
-  addOnBlur;
-  /**
-   * Separator char to add an item when pressed in addition to the enter key.
-   * @group Props
-   */
-  separator;
-  /**
-   * When enabled, a clear icon is displayed to clear the value.
-   * @group Props
-   */
-  showClear = false;
-  /**
-   * When present, it specifies that the component should automatically get focus on load.
-   * @group Props
-   */
-  autofocus;
-  /**
-   * Specifies the input variant of the component.
-   * @group Props
-   */
-  variant = "outlined";
-  /**
-   * Callback to invoke on chip add.
-   * @param {ChipsAddEvent} event - Custom chip add event.
-   * @group Emits
-   */
-  onAdd = new EventEmitter();
-  /**
-   * Callback to invoke on chip remove.
-   * @param {ChipsRemoveEvent} event - Custom chip remove event.
-   * @group Emits
-   */
-  onRemove = new EventEmitter();
-  /**
-   * Callback to invoke on focus of input field.
-   * @param {Event} event - Browser event.
-   * @group Emits
-   */
-  onFocus = new EventEmitter();
-  /**
-   * Callback to invoke on blur of input field.
-   * @param {Event} event - Browser event.
-   * @group Emits
-   */
-  onBlur = new EventEmitter();
-  /**
-   * Callback to invoke on chip clicked.
-   * @param {ChipsClickEvent} event - Custom chip click event.
-   * @group Emits
-   */
-  onChipClick = new EventEmitter();
-  /**
-   * Callback to invoke on chip contextmenu.
-   * @param {ChipsClickEvent} event - Custom chip contextmenu event.
-   * @group Emits
-   */
-  onChipContextMenu = new EventEmitter();
-  /**
-   * Callback to invoke on clear token clicked.
-   * @group Emits
-   */
-  onClear = new EventEmitter();
-  inputViewChild;
-  containerViewChild;
-  templates;
-  itemTemplate;
-  removeTokenIconTemplate;
-  clearIconTemplate;
-  value;
-  onModelChange = () => {
-  };
-  onModelTouched = () => {
-  };
-  valueChanged;
-  id = UniqueComponentId();
-  focused;
-  focusedIndex;
-  filled;
-  get focusedOptionId() {
-    return this.focusedIndex !== null ? `${this.id}_chips_item_${this.focusedIndex}` : null;
-  }
-  get isMaxedOut() {
-    return this.max && this.value && this.max === this.value.length;
-  }
+var _Chips = class _Chips {
   constructor(document, el, cd, config) {
+    __publicField(this, "document");
+    __publicField(this, "el");
+    __publicField(this, "cd");
+    __publicField(this, "config");
+    /**
+     * Inline style of the element.
+     * @group Props
+     */
+    __publicField(this, "style");
+    /**
+     * Style class of the element.
+     * @group Props
+     */
+    __publicField(this, "styleClass");
+    /**
+     * When present, it specifies that the element should be disabled.
+     * @group Props
+     */
+    __publicField(this, "disabled");
+    /**
+     * Name of the property to display on a chip.
+     * @group Props
+     */
+    __publicField(this, "field");
+    /**
+     * Advisory information to display on input.
+     * @group Props
+     */
+    __publicField(this, "placeholder");
+    /**
+     * Maximum number of entries allowed.
+     * @group Props
+     */
+    __publicField(this, "max");
+    /**
+     * Maximum length of a chip.
+     * @group Props
+     */
+    __publicField(this, "maxLength");
+    /**
+     * Defines a string that labels the input for accessibility.
+     * @group Props
+     */
+    __publicField(this, "ariaLabel");
+    /**
+     * Establishes relationships between the component and label(s) where its value should be one or more element IDs.
+     * @group Props
+     */
+    __publicField(this, "ariaLabelledBy");
+    /**
+     * Index of the element in tabbing order.
+     * @group Props
+     */
+    __publicField(this, "tabindex");
+    /**
+     * Identifier of the focus input to match a label defined for the component.
+     * @group Props
+     */
+    __publicField(this, "inputId");
+    /**
+     * Whether to allow duplicate values or not.
+     * @group Props
+     */
+    __publicField(this, "allowDuplicate", true);
+    /**
+     * Defines whether duplication check should be case-sensitive
+     * @group Props
+     */
+    __publicField(this, "caseSensitiveDuplication", true);
+    /**
+     * Inline style of the input field.
+     * @group Props
+     */
+    __publicField(this, "inputStyle");
+    /**
+     * Style class of the input field.
+     * @group Props
+     */
+    __publicField(this, "inputStyleClass");
+    /**
+     * Whether to add an item on tab key press.
+     * @group Props
+     */
+    __publicField(this, "addOnTab");
+    /**
+     * Whether to add an item when the input loses focus.
+     * @group Props
+     */
+    __publicField(this, "addOnBlur");
+    /**
+     * Separator char to add an item when pressed in addition to the enter key.
+     * @group Props
+     */
+    __publicField(this, "separator");
+    /**
+     * When enabled, a clear icon is displayed to clear the value.
+     * @group Props
+     */
+    __publicField(this, "showClear", false);
+    /**
+     * When present, it specifies that the component should automatically get focus on load.
+     * @group Props
+     */
+    __publicField(this, "autofocus");
+    /**
+     * Specifies the input variant of the component.
+     * @group Props
+     */
+    __publicField(this, "variant", "outlined");
+    /**
+     * Callback to invoke on chip add.
+     * @param {ChipsAddEvent} event - Custom chip add event.
+     * @group Emits
+     */
+    __publicField(this, "onAdd", new EventEmitter());
+    /**
+     * Callback to invoke on chip remove.
+     * @param {ChipsRemoveEvent} event - Custom chip remove event.
+     * @group Emits
+     */
+    __publicField(this, "onRemove", new EventEmitter());
+    /**
+     * Callback to invoke on focus of input field.
+     * @param {Event} event - Browser event.
+     * @group Emits
+     */
+    __publicField(this, "onFocus", new EventEmitter());
+    /**
+     * Callback to invoke on blur of input field.
+     * @param {Event} event - Browser event.
+     * @group Emits
+     */
+    __publicField(this, "onBlur", new EventEmitter());
+    /**
+     * Callback to invoke on chip clicked.
+     * @param {ChipsClickEvent} event - Custom chip click event.
+     * @group Emits
+     */
+    __publicField(this, "onChipClick", new EventEmitter());
+    /**
+     * Callback to invoke on chip contextmenu.
+     * @param {ChipsClickEvent} event - Custom chip contextmenu event.
+     * @group Emits
+     */
+    __publicField(this, "onChipContextMenu", new EventEmitter());
+    /**
+     * Callback to invoke on clear token clicked.
+     * @group Emits
+     */
+    __publicField(this, "onClear", new EventEmitter());
+    __publicField(this, "inputViewChild");
+    __publicField(this, "containerViewChild");
+    __publicField(this, "templates");
+    __publicField(this, "itemTemplate");
+    __publicField(this, "removeTokenIconTemplate");
+    __publicField(this, "clearIconTemplate");
+    __publicField(this, "value");
+    __publicField(this, "onModelChange", () => {
+    });
+    __publicField(this, "onModelTouched", () => {
+    });
+    __publicField(this, "valueChanged");
+    __publicField(this, "id", UniqueComponentId());
+    __publicField(this, "focused");
+    __publicField(this, "focusedIndex");
+    __publicField(this, "filled");
     this.document = document;
     this.el = el;
     this.cd = cd;
     this.config = config;
+  }
+  get focusedOptionId() {
+    return this.focusedIndex !== null ? "".concat(this.id, "_chips_item_").concat(this.focusedIndex) : null;
+  }
+  get isMaxedOut() {
+    return this.max && this.value && this.max === this.value.length;
   }
   ngAfterContentInit() {
     this.templates.forEach((item) => {
@@ -475,7 +477,8 @@ var Chips = class _Chips {
     this.updateFilledState();
   }
   onWrapperClick() {
-    this.inputViewChild?.nativeElement.focus();
+    var _a;
+    (_a = this.inputViewChild) == null ? void 0 : _a.nativeElement.focus();
   }
   onContainerFocus() {
     this.focused = true;
@@ -511,10 +514,11 @@ var Chips = class _Chips {
     }
   }
   onArrowRightKeyOn() {
+    var _a;
     if (this.inputViewChild.nativeElement.value.length === 0 && this.value && this.value.length > 0) {
       if (this.focusedIndex === this.value.length - 1) {
         this.focusedIndex = null;
-        this.inputViewChild?.nativeElement.focus();
+        (_a = this.inputViewChild) == null ? void 0 : _a.nativeElement.focus();
       } else {
         this.focusedIndex++;
       }
@@ -654,6 +658,7 @@ var Chips = class _Chips {
     this.onClear.emit();
   }
   onKeyDown(event) {
+    var _a;
     const inputValue = event.target.value;
     switch (event.code) {
       case "Backspace":
@@ -677,7 +682,7 @@ var Chips = class _Chips {
         break;
       case "ArrowLeft":
         if (inputValue.length === 0 && this.value && this.value.length > 0) {
-          this.containerViewChild?.nativeElement.focus();
+          (_a = this.containerViewChild) == null ? void 0 : _a.nativeElement.focus();
         }
         break;
       case "ArrowRight":
@@ -705,227 +710,147 @@ var Chips = class _Chips {
       }
     }
   }
-  static ɵfac = function Chips_Factory(__ngFactoryType__) {
-    return new (__ngFactoryType__ || _Chips)(ɵɵdirectiveInject(DOCUMENT), ɵɵdirectiveInject(ElementRef), ɵɵdirectiveInject(ChangeDetectorRef), ɵɵdirectiveInject(PrimeNGConfig));
-  };
-  static ɵcmp = ɵɵdefineComponent({
-    type: _Chips,
-    selectors: [["p-chips"]],
-    contentQueries: function Chips_ContentQueries(rf, ctx, dirIndex) {
-      if (rf & 1) {
-        ɵɵcontentQuery(dirIndex, PrimeTemplate, 4);
-      }
-      if (rf & 2) {
-        let _t;
-        ɵɵqueryRefresh(_t = ɵɵloadQuery()) && (ctx.templates = _t);
-      }
-    },
-    viewQuery: function Chips_Query(rf, ctx) {
-      if (rf & 1) {
-        ɵɵviewQuery(_c0, 5);
-        ɵɵviewQuery(_c1, 5);
-      }
-      if (rf & 2) {
-        let _t;
-        ɵɵqueryRefresh(_t = ɵɵloadQuery()) && (ctx.inputViewChild = _t.first);
-        ɵɵqueryRefresh(_t = ɵɵloadQuery()) && (ctx.containerViewChild = _t.first);
-      }
-    },
-    hostAttrs: [1, "p-element", "p-inputwrapper"],
-    hostVars: 6,
-    hostBindings: function Chips_HostBindings(rf, ctx) {
-      if (rf & 2) {
-        ɵɵclassProp("p-inputwrapper-filled", ctx.filled)("p-inputwrapper-focus", ctx.focused)("p-chips-clearable", ctx.showClear);
-      }
-    },
-    inputs: {
-      style: "style",
-      styleClass: "styleClass",
-      disabled: [2, "disabled", "disabled", booleanAttribute],
-      field: "field",
-      placeholder: "placeholder",
-      max: [2, "max", "max", numberAttribute],
-      maxLength: "maxLength",
-      ariaLabel: "ariaLabel",
-      ariaLabelledBy: "ariaLabelledBy",
-      tabindex: [2, "tabindex", "tabindex", numberAttribute],
-      inputId: "inputId",
-      allowDuplicate: [2, "allowDuplicate", "allowDuplicate", booleanAttribute],
-      caseSensitiveDuplication: [2, "caseSensitiveDuplication", "caseSensitiveDuplication", booleanAttribute],
-      inputStyle: "inputStyle",
-      inputStyleClass: "inputStyleClass",
-      addOnTab: [2, "addOnTab", "addOnTab", booleanAttribute],
-      addOnBlur: [2, "addOnBlur", "addOnBlur", booleanAttribute],
-      separator: "separator",
-      showClear: [2, "showClear", "showClear", booleanAttribute],
-      autofocus: [2, "autofocus", "autofocus", booleanAttribute],
-      variant: "variant"
-    },
-    outputs: {
-      onAdd: "onAdd",
-      onRemove: "onRemove",
-      onFocus: "onFocus",
-      onBlur: "onBlur",
-      onChipClick: "onChipClick",
-      onChipContextMenu: "onChipContextMenu",
-      onClear: "onClear"
-    },
-    features: [ɵɵProvidersFeature([CHIPS_VALUE_ACCESSOR]), ɵɵInputTransformsFeature],
-    decls: 8,
-    vars: 34,
-    consts: [["container", ""], ["inputtext", ""], ["token", ""], [3, "ngClass", "ngStyle"], ["tabindex", "-1", "role", "listbox", 3, "click", "focus", "blur", "keydown", "ngClass"], ["role", "option", 3, "ngClass", "click", "contextmenu", 4, "ngFor", "ngForOf"], ["role", "option", 1, "p-chips-input-token", 3, "ngClass"], ["type", "text", "pAutoFocus", "", 3, "keydown", "input", "paste", "focus", "blur", "disabled", "ngStyle", "autofocus"], [4, "ngIf"], ["role", "option", 3, "click", "contextmenu", "ngClass"], [4, "ngTemplateOutlet", "ngTemplateOutletContext"], ["class", "p-chips-token-label", 4, "ngIf"], [1, "p-chips-token-label"], [3, "styleClass", "click", 4, "ngIf"], ["class", "p-chips-token-icon", 3, "click", 4, "ngIf"], [3, "click", "styleClass"], [1, "p-chips-token-icon", 3, "click"], [4, "ngTemplateOutlet"], ["class", "p-chips-clear-icon", 3, "click", 4, "ngIf"], [1, "p-chips-clear-icon", 3, "click"]],
-    template: function Chips_Template(rf, ctx) {
-      if (rf & 1) {
-        const _r1 = ɵɵgetCurrentView();
-        ɵɵelementStart(0, "div", 3)(1, "ul", 4, 0);
-        ɵɵlistener("click", function Chips_Template_ul_click_1_listener() {
-          ɵɵrestoreView(_r1);
-          return ɵɵresetView(ctx.onWrapperClick());
-        })("focus", function Chips_Template_ul_focus_1_listener() {
-          ɵɵrestoreView(_r1);
-          return ɵɵresetView(ctx.onContainerFocus());
-        })("blur", function Chips_Template_ul_blur_1_listener() {
-          ɵɵrestoreView(_r1);
-          return ɵɵresetView(ctx.onContainerBlur());
-        })("keydown", function Chips_Template_ul_keydown_1_listener($event) {
-          ɵɵrestoreView(_r1);
-          return ɵɵresetView(ctx.onContainerKeyDown($event));
-        });
-        ɵɵtemplate(3, Chips_li_3_Template, 5, 16, "li", 5);
-        ɵɵelementStart(4, "li", 6)(5, "input", 7, 1);
-        ɵɵlistener("keydown", function Chips_Template_input_keydown_5_listener($event) {
-          ɵɵrestoreView(_r1);
-          return ɵɵresetView(ctx.onKeyDown($event));
-        })("input", function Chips_Template_input_input_5_listener() {
-          ɵɵrestoreView(_r1);
-          return ɵɵresetView(ctx.onInput());
-        })("paste", function Chips_Template_input_paste_5_listener($event) {
-          ɵɵrestoreView(_r1);
-          return ɵɵresetView(ctx.onPaste($event));
-        })("focus", function Chips_Template_input_focus_5_listener($event) {
-          ɵɵrestoreView(_r1);
-          return ɵɵresetView(ctx.onInputFocus($event));
-        })("blur", function Chips_Template_input_blur_5_listener($event) {
-          ɵɵrestoreView(_r1);
-          return ɵɵresetView(ctx.onInputBlur($event));
-        });
-        ɵɵelementEnd()();
-        ɵɵtemplate(7, Chips_li_7_Template, 3, 2, "li", 8);
-        ɵɵelementEnd()();
-      }
-      if (rf & 2) {
-        ɵɵclassMap(ctx.styleClass);
-        ɵɵproperty("ngClass", ɵɵpureFunction4(25, _c2, ctx.disabled, ctx.focused, ctx.value && ctx.value.length || (ctx.inputViewChild == null ? null : ctx.inputViewChild.nativeElement.value) && (ctx.inputViewChild == null ? null : ctx.inputViewChild.nativeElement.value.length), ctx.focused))("ngStyle", ctx.style);
-        ɵɵattribute("data-pc-name", "chips")("data-pc-section", "root");
-        ɵɵadvance();
-        ɵɵproperty("ngClass", ɵɵpureFunction1(30, _c3, ctx.variant === "filled" || ctx.config.inputStyle() === "filled"));
-        ɵɵattribute("aria-labelledby", ctx.ariaLabelledBy)("aria-label", ctx.ariaLabel)("aria-activedescendant", ctx.focused ? ctx.focusedOptionId : void 0)("aria-orientation", "horizontal")("data-pc-section", "container");
-        ɵɵadvance(2);
-        ɵɵproperty("ngForOf", ctx.value);
-        ɵɵadvance();
-        ɵɵproperty("ngClass", ɵɵpureFunction1(32, _c4, ctx.showClear && !ctx.disabled));
-        ɵɵattribute("data-pc-section", "inputToken");
-        ɵɵadvance();
-        ɵɵclassMap(ctx.inputStyleClass);
-        ɵɵproperty("disabled", ctx.disabled || ctx.isMaxedOut)("ngStyle", ctx.inputStyle)("autofocus", ctx.autofocus);
-        ɵɵattribute("id", ctx.inputId)("maxlength", ctx.maxLength)("placeholder", ctx.value && ctx.value.length ? null : ctx.placeholder)("tabindex", ctx.tabindex);
-        ɵɵadvance(2);
-        ɵɵproperty("ngIf", ctx.value != null && ctx.filled && !ctx.disabled && ctx.showClear);
-      }
-    },
-    dependencies: () => [NgClass, NgForOf, NgIf, NgTemplateOutlet, NgStyle, AutoFocus, TimesCircleIcon, TimesIcon],
-    styles: ["@layer primeng{.p-chips{display:inline-flex}.p-chips-multiple-container{margin:0;padding:0;list-style-type:none;cursor:text;overflow:hidden;display:flex;align-items:center;flex-wrap:wrap}.p-chips-token{cursor:default;display:inline-flex;align-items:center;flex:0 0 auto;max-width:100%}.p-chips-token-label{min-width:0%;overflow:auto}.p-chips-token-label::-webkit-scrollbar{display:none}.p-chips-input-token{flex:1 1 auto;display:inline-flex}.p-chips-token-icon{cursor:pointer}.p-chips-input-token input{border:0 none;outline:0 none;background-color:transparent;margin:0;padding:0;box-shadow:none;border-radius:0;width:100%}.p-fluid .p-chips{display:flex}.p-chips-clear-icon{position:absolute;top:50%;margin-top:-.5rem;cursor:pointer}.p-chips-clearable .p-inputtext{position:relative}}\n"],
-    encapsulation: 2,
-    changeDetection: 0
-  });
 };
+__publicField(_Chips, "ɵfac", function Chips_Factory(__ngFactoryType__) {
+  return new (__ngFactoryType__ || _Chips)(ɵɵdirectiveInject(DOCUMENT), ɵɵdirectiveInject(ElementRef), ɵɵdirectiveInject(ChangeDetectorRef), ɵɵdirectiveInject(PrimeNGConfig));
+});
+__publicField(_Chips, "ɵcmp", ɵɵdefineComponent({
+  type: _Chips,
+  selectors: [["p-chips"]],
+  contentQueries: function Chips_ContentQueries(rf, ctx, dirIndex) {
+    if (rf & 1) {
+      ɵɵcontentQuery(dirIndex, PrimeTemplate, 4);
+    }
+    if (rf & 2) {
+      let _t;
+      ɵɵqueryRefresh(_t = ɵɵloadQuery()) && (ctx.templates = _t);
+    }
+  },
+  viewQuery: function Chips_Query(rf, ctx) {
+    if (rf & 1) {
+      ɵɵviewQuery(_c0, 5);
+      ɵɵviewQuery(_c1, 5);
+    }
+    if (rf & 2) {
+      let _t;
+      ɵɵqueryRefresh(_t = ɵɵloadQuery()) && (ctx.inputViewChild = _t.first);
+      ɵɵqueryRefresh(_t = ɵɵloadQuery()) && (ctx.containerViewChild = _t.first);
+    }
+  },
+  hostAttrs: [1, "p-element", "p-inputwrapper"],
+  hostVars: 6,
+  hostBindings: function Chips_HostBindings(rf, ctx) {
+    if (rf & 2) {
+      ɵɵclassProp("p-inputwrapper-filled", ctx.filled)("p-inputwrapper-focus", ctx.focused)("p-chips-clearable", ctx.showClear);
+    }
+  },
+  inputs: {
+    style: "style",
+    styleClass: "styleClass",
+    disabled: [2, "disabled", "disabled", booleanAttribute],
+    field: "field",
+    placeholder: "placeholder",
+    max: [2, "max", "max", numberAttribute],
+    maxLength: "maxLength",
+    ariaLabel: "ariaLabel",
+    ariaLabelledBy: "ariaLabelledBy",
+    tabindex: [2, "tabindex", "tabindex", numberAttribute],
+    inputId: "inputId",
+    allowDuplicate: [2, "allowDuplicate", "allowDuplicate", booleanAttribute],
+    caseSensitiveDuplication: [2, "caseSensitiveDuplication", "caseSensitiveDuplication", booleanAttribute],
+    inputStyle: "inputStyle",
+    inputStyleClass: "inputStyleClass",
+    addOnTab: [2, "addOnTab", "addOnTab", booleanAttribute],
+    addOnBlur: [2, "addOnBlur", "addOnBlur", booleanAttribute],
+    separator: "separator",
+    showClear: [2, "showClear", "showClear", booleanAttribute],
+    autofocus: [2, "autofocus", "autofocus", booleanAttribute],
+    variant: "variant"
+  },
+  outputs: {
+    onAdd: "onAdd",
+    onRemove: "onRemove",
+    onFocus: "onFocus",
+    onBlur: "onBlur",
+    onChipClick: "onChipClick",
+    onChipContextMenu: "onChipContextMenu",
+    onClear: "onClear"
+  },
+  features: [ɵɵProvidersFeature([CHIPS_VALUE_ACCESSOR]), ɵɵInputTransformsFeature],
+  decls: 8,
+  vars: 34,
+  consts: [["container", ""], ["inputtext", ""], ["token", ""], [3, "ngClass", "ngStyle"], ["tabindex", "-1", "role", "listbox", 3, "click", "focus", "blur", "keydown", "ngClass"], ["role", "option", 3, "ngClass", "click", "contextmenu", 4, "ngFor", "ngForOf"], ["role", "option", 1, "p-chips-input-token", 3, "ngClass"], ["type", "text", "pAutoFocus", "", 3, "keydown", "input", "paste", "focus", "blur", "disabled", "ngStyle", "autofocus"], [4, "ngIf"], ["role", "option", 3, "click", "contextmenu", "ngClass"], [4, "ngTemplateOutlet", "ngTemplateOutletContext"], ["class", "p-chips-token-label", 4, "ngIf"], [1, "p-chips-token-label"], [3, "styleClass", "click", 4, "ngIf"], ["class", "p-chips-token-icon", 3, "click", 4, "ngIf"], [3, "click", "styleClass"], [1, "p-chips-token-icon", 3, "click"], [4, "ngTemplateOutlet"], ["class", "p-chips-clear-icon", 3, "click", 4, "ngIf"], [1, "p-chips-clear-icon", 3, "click"]],
+  template: function Chips_Template(rf, ctx) {
+    if (rf & 1) {
+      const _r1 = ɵɵgetCurrentView();
+      ɵɵelementStart(0, "div", 3)(1, "ul", 4, 0);
+      ɵɵlistener("click", function Chips_Template_ul_click_1_listener() {
+        ɵɵrestoreView(_r1);
+        return ɵɵresetView(ctx.onWrapperClick());
+      })("focus", function Chips_Template_ul_focus_1_listener() {
+        ɵɵrestoreView(_r1);
+        return ɵɵresetView(ctx.onContainerFocus());
+      })("blur", function Chips_Template_ul_blur_1_listener() {
+        ɵɵrestoreView(_r1);
+        return ɵɵresetView(ctx.onContainerBlur());
+      })("keydown", function Chips_Template_ul_keydown_1_listener($event) {
+        ɵɵrestoreView(_r1);
+        return ɵɵresetView(ctx.onContainerKeyDown($event));
+      });
+      ɵɵtemplate(3, Chips_li_3_Template, 5, 16, "li", 5);
+      ɵɵelementStart(4, "li", 6)(5, "input", 7, 1);
+      ɵɵlistener("keydown", function Chips_Template_input_keydown_5_listener($event) {
+        ɵɵrestoreView(_r1);
+        return ɵɵresetView(ctx.onKeyDown($event));
+      })("input", function Chips_Template_input_input_5_listener() {
+        ɵɵrestoreView(_r1);
+        return ɵɵresetView(ctx.onInput());
+      })("paste", function Chips_Template_input_paste_5_listener($event) {
+        ɵɵrestoreView(_r1);
+        return ɵɵresetView(ctx.onPaste($event));
+      })("focus", function Chips_Template_input_focus_5_listener($event) {
+        ɵɵrestoreView(_r1);
+        return ɵɵresetView(ctx.onInputFocus($event));
+      })("blur", function Chips_Template_input_blur_5_listener($event) {
+        ɵɵrestoreView(_r1);
+        return ɵɵresetView(ctx.onInputBlur($event));
+      });
+      ɵɵelementEnd()();
+      ɵɵtemplate(7, Chips_li_7_Template, 3, 2, "li", 8);
+      ɵɵelementEnd()();
+    }
+    if (rf & 2) {
+      ɵɵclassMap(ctx.styleClass);
+      ɵɵproperty("ngClass", ɵɵpureFunction4(25, _c2, ctx.disabled, ctx.focused, ctx.value && ctx.value.length || (ctx.inputViewChild == null ? null : ctx.inputViewChild.nativeElement.value) && (ctx.inputViewChild == null ? null : ctx.inputViewChild.nativeElement.value.length), ctx.focused))("ngStyle", ctx.style);
+      ɵɵattribute("data-pc-name", "chips")("data-pc-section", "root");
+      ɵɵadvance();
+      ɵɵproperty("ngClass", ɵɵpureFunction1(30, _c3, ctx.variant === "filled" || ctx.config.inputStyle() === "filled"));
+      ɵɵattribute("aria-labelledby", ctx.ariaLabelledBy)("aria-label", ctx.ariaLabel)("aria-activedescendant", ctx.focused ? ctx.focusedOptionId : void 0)("aria-orientation", "horizontal")("data-pc-section", "container");
+      ɵɵadvance(2);
+      ɵɵproperty("ngForOf", ctx.value);
+      ɵɵadvance();
+      ɵɵproperty("ngClass", ɵɵpureFunction1(32, _c4, ctx.showClear && !ctx.disabled));
+      ɵɵattribute("data-pc-section", "inputToken");
+      ɵɵadvance();
+      ɵɵclassMap(ctx.inputStyleClass);
+      ɵɵproperty("disabled", ctx.disabled || ctx.isMaxedOut)("ngStyle", ctx.inputStyle)("autofocus", ctx.autofocus);
+      ɵɵattribute("id", ctx.inputId)("maxlength", ctx.maxLength)("placeholder", ctx.value && ctx.value.length ? null : ctx.placeholder)("tabindex", ctx.tabindex);
+      ɵɵadvance(2);
+      ɵɵproperty("ngIf", ctx.value != null && ctx.filled && !ctx.disabled && ctx.showClear);
+    }
+  },
+  dependencies: () => [NgClass, NgForOf, NgIf, NgTemplateOutlet, NgStyle, AutoFocus, TimesCircleIcon, TimesIcon],
+  styles: ["@layer primeng{.p-chips{display:inline-flex}.p-chips-multiple-container{margin:0;padding:0;list-style-type:none;cursor:text;overflow:hidden;display:flex;align-items:center;flex-wrap:wrap}.p-chips-token{cursor:default;display:inline-flex;align-items:center;flex:0 0 auto;max-width:100%}.p-chips-token-label{min-width:0%;overflow:auto}.p-chips-token-label::-webkit-scrollbar{display:none}.p-chips-input-token{flex:1 1 auto;display:inline-flex}.p-chips-token-icon{cursor:pointer}.p-chips-input-token input{border:0 none;outline:0 none;background-color:transparent;margin:0;padding:0;box-shadow:none;border-radius:0;width:100%}.p-fluid .p-chips{display:flex}.p-chips-clear-icon{position:absolute;top:50%;margin-top:-.5rem;cursor:pointer}.p-chips-clearable .p-inputtext{position:relative}}\n"],
+  encapsulation: 2,
+  changeDetection: 0
+}));
+var Chips = _Chips;
 (() => {
   (typeof ngDevMode === "undefined" || ngDevMode) && setClassMetadata(Chips, [{
     type: Component,
     args: [{
       selector: "p-chips",
-      template: `
-        <div
-            [ngClass]="{
-                'p-chips p-component p-input-wrapper': true,
-                'p-disabled': disabled,
-                'p-focus': focused,
-                'p-inputwrapper-filled': (value && value.length) || (this.inputViewChild?.nativeElement.value && this.inputViewChild?.nativeElement.value.length),
-                'p-inputwrapper-focus': focused
-            }"
-            [ngStyle]="style"
-            [class]="styleClass"
-            [attr.data-pc-name]="'chips'"
-            [attr.data-pc-section]="'root'"
-        >
-            <ul
-                #container
-                [ngClass]="{ 'p-inputtext p-chips-multiple-container': true, 'p-variant-filled': variant === 'filled' || config.inputStyle() === 'filled' }"
-                tabindex="-1"
-                role="listbox"
-                [attr.aria-labelledby]="ariaLabelledBy"
-                [attr.aria-label]="ariaLabel"
-                [attr.aria-activedescendant]="focused ? focusedOptionId : undefined"
-                [attr.aria-orientation]="'horizontal'"
-                (click)="onWrapperClick()"
-                (focus)="onContainerFocus()"
-                (blur)="onContainerBlur()"
-                (keydown)="onContainerKeyDown($event)"
-                [attr.data-pc-section]="'container'"
-            >
-                <li
-                    #token
-                    *ngFor="let item of value; let i = index"
-                    [attr.id]="id + '_chips_item_' + i"
-                    role="option"
-                    [attr.ariaLabel]="item"
-                    [attr.aria-selected]="true"
-                    [attr.aria-setsize]="value.length"
-                    [attr.aria-posinset]="i + 1"
-                    [attr.data-p-focused]="focusedIndex === i"
-                    [ngClass]="{ 'p-chips-token': true, 'p-focus': focusedIndex === i }"
-                    (click)="onItemClick($event, item)"
-                    (contextmenu)="onItemContextMenu($event, item)"
-                    [attr.data-pc-section]="'token'"
-                >
-                    <ng-container *ngTemplateOutlet="itemTemplate; context: { $implicit: item }"></ng-container>
-                    <span *ngIf="!itemTemplate" class="p-chips-token-label" [attr.data-pc-section]="'label'">{{ field ? resolveFieldData(item, field) : item }}</span>
-                    <ng-container *ngIf="!disabled">
-                        <TimesCircleIcon [styleClass]="'p-chips-token-icon'" *ngIf="!removeTokenIconTemplate" (click)="removeItem($event, i)" [attr.data-pc-section]="'removeTokenIcon'" [attr.aria-hidden]="true" />
-                        <span *ngIf="removeTokenIconTemplate" class="p-chips-token-icon" (click)="removeItem($event, i)" [attr.data-pc-section]="'removeTokenIcon'" [attr.aria-hidden]="true">
-                            <ng-template *ngTemplateOutlet="removeTokenIconTemplate"></ng-template>
-                        </span>
-                    </ng-container>
-                </li>
-                <li class="p-chips-input-token" [ngClass]="{ 'p-chips-clearable': showClear && !disabled }" [attr.data-pc-section]="'inputToken'" role="option">
-                    <input
-                        #inputtext
-                        type="text"
-                        [attr.id]="inputId"
-                        [attr.maxlength]="maxLength"
-                        [attr.placeholder]="value && value.length ? null : placeholder"
-                        [attr.tabindex]="tabindex"
-                        (keydown)="onKeyDown($event)"
-                        (input)="onInput()"
-                        (paste)="onPaste($event)"
-                        (focus)="onInputFocus($event)"
-                        (blur)="onInputBlur($event)"
-                        [disabled]="disabled || isMaxedOut"
-                        [ngStyle]="inputStyle"
-                        [class]="inputStyleClass"
-                        pAutoFocus
-                        [autofocus]="autofocus"
-                    />
-                </li>
-                <li *ngIf="value != null && filled && !disabled && showClear">
-                    <TimesIcon *ngIf="!clearIconTemplate" [styleClass]="'p-chips-clear-icon'" (click)="clear()" />
-                    <span *ngIf="clearIconTemplate" class="p-chips-clear-icon" (click)="clear()">
-                        <ng-template *ngTemplateOutlet="clearIconTemplate"></ng-template>
-                    </span>
-                </li>
-            </ul>
-        </div>
-    `,
+      template: '\n        <div\n            [ngClass]="{\n                \'p-chips p-component p-input-wrapper\': true,\n                \'p-disabled\': disabled,\n                \'p-focus\': focused,\n                \'p-inputwrapper-filled\': (value && value.length) || (this.inputViewChild?.nativeElement.value && this.inputViewChild?.nativeElement.value.length),\n                \'p-inputwrapper-focus\': focused\n            }"\n            [ngStyle]="style"\n            [class]="styleClass"\n            [attr.data-pc-name]="\'chips\'"\n            [attr.data-pc-section]="\'root\'"\n        >\n            <ul\n                #container\n                [ngClass]="{ \'p-inputtext p-chips-multiple-container\': true, \'p-variant-filled\': variant === \'filled\' || config.inputStyle() === \'filled\' }"\n                tabindex="-1"\n                role="listbox"\n                [attr.aria-labelledby]="ariaLabelledBy"\n                [attr.aria-label]="ariaLabel"\n                [attr.aria-activedescendant]="focused ? focusedOptionId : undefined"\n                [attr.aria-orientation]="\'horizontal\'"\n                (click)="onWrapperClick()"\n                (focus)="onContainerFocus()"\n                (blur)="onContainerBlur()"\n                (keydown)="onContainerKeyDown($event)"\n                [attr.data-pc-section]="\'container\'"\n            >\n                <li\n                    #token\n                    *ngFor="let item of value; let i = index"\n                    [attr.id]="id + \'_chips_item_\' + i"\n                    role="option"\n                    [attr.ariaLabel]="item"\n                    [attr.aria-selected]="true"\n                    [attr.aria-setsize]="value.length"\n                    [attr.aria-posinset]="i + 1"\n                    [attr.data-p-focused]="focusedIndex === i"\n                    [ngClass]="{ \'p-chips-token\': true, \'p-focus\': focusedIndex === i }"\n                    (click)="onItemClick($event, item)"\n                    (contextmenu)="onItemContextMenu($event, item)"\n                    [attr.data-pc-section]="\'token\'"\n                >\n                    <ng-container *ngTemplateOutlet="itemTemplate; context: { $implicit: item }"></ng-container>\n                    <span *ngIf="!itemTemplate" class="p-chips-token-label" [attr.data-pc-section]="\'label\'">{{ field ? resolveFieldData(item, field) : item }}</span>\n                    <ng-container *ngIf="!disabled">\n                        <TimesCircleIcon [styleClass]="\'p-chips-token-icon\'" *ngIf="!removeTokenIconTemplate" (click)="removeItem($event, i)" [attr.data-pc-section]="\'removeTokenIcon\'" [attr.aria-hidden]="true" />\n                        <span *ngIf="removeTokenIconTemplate" class="p-chips-token-icon" (click)="removeItem($event, i)" [attr.data-pc-section]="\'removeTokenIcon\'" [attr.aria-hidden]="true">\n                            <ng-template *ngTemplateOutlet="removeTokenIconTemplate"></ng-template>\n                        </span>\n                    </ng-container>\n                </li>\n                <li class="p-chips-input-token" [ngClass]="{ \'p-chips-clearable\': showClear && !disabled }" [attr.data-pc-section]="\'inputToken\'" role="option">\n                    <input\n                        #inputtext\n                        type="text"\n                        [attr.id]="inputId"\n                        [attr.maxlength]="maxLength"\n                        [attr.placeholder]="value && value.length ? null : placeholder"\n                        [attr.tabindex]="tabindex"\n                        (keydown)="onKeyDown($event)"\n                        (input)="onInput()"\n                        (paste)="onPaste($event)"\n                        (focus)="onInputFocus($event)"\n                        (blur)="onInputBlur($event)"\n                        [disabled]="disabled || isMaxedOut"\n                        [ngStyle]="inputStyle"\n                        [class]="inputStyleClass"\n                        pAutoFocus\n                        [autofocus]="autofocus"\n                    />\n                </li>\n                <li *ngIf="value != null && filled && !disabled && showClear">\n                    <TimesIcon *ngIf="!clearIconTemplate" [styleClass]="\'p-chips-clear-icon\'" (click)="clear()" />\n                    <span *ngIf="clearIconTemplate" class="p-chips-clear-icon" (click)="clear()">\n                        <ng-template *ngTemplateOutlet="clearIconTemplate"></ng-template>\n                    </span>\n                </li>\n            </ul>\n        </div>\n    ',
       host: {
         class: "p-element p-inputwrapper",
         "[class.p-inputwrapper-filled]": "filled",
@@ -1075,20 +1000,21 @@ var Chips = class _Chips {
     }]
   });
 })();
-var ChipsModule = class _ChipsModule {
-  static ɵfac = function ChipsModule_Factory(__ngFactoryType__) {
-    return new (__ngFactoryType__ || _ChipsModule)();
-  };
-  static ɵmod = ɵɵdefineNgModule({
-    type: _ChipsModule,
-    declarations: [Chips],
-    imports: [CommonModule, InputTextModule, SharedModule, AutoFocusModule, TimesCircleIcon, TimesIcon],
-    exports: [Chips, InputTextModule, SharedModule]
-  });
-  static ɵinj = ɵɵdefineInjector({
-    imports: [CommonModule, InputTextModule, SharedModule, AutoFocusModule, TimesCircleIcon, TimesIcon, InputTextModule, SharedModule]
-  });
+var _ChipsModule = class _ChipsModule {
 };
+__publicField(_ChipsModule, "ɵfac", function ChipsModule_Factory(__ngFactoryType__) {
+  return new (__ngFactoryType__ || _ChipsModule)();
+});
+__publicField(_ChipsModule, "ɵmod", ɵɵdefineNgModule({
+  type: _ChipsModule,
+  declarations: [Chips],
+  imports: [CommonModule, InputTextModule, SharedModule, AutoFocusModule, TimesCircleIcon, TimesIcon],
+  exports: [Chips, InputTextModule, SharedModule]
+}));
+__publicField(_ChipsModule, "ɵinj", ɵɵdefineInjector({
+  imports: [CommonModule, InputTextModule, SharedModule, AutoFocusModule, TimesCircleIcon, TimesIcon, InputTextModule, SharedModule]
+}));
+var ChipsModule = _ChipsModule;
 (() => {
   (typeof ngDevMode === "undefined" || ngDevMode) && setClassMetadata(ChipsModule, [{
     type: NgModule,

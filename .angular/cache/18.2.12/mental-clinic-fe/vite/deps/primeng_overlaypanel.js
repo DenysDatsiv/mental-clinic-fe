@@ -1,31 +1,31 @@
 import {
   TimesIcon
-} from "./chunk-MDBJZ6LU.js";
+} from "./chunk-AP6UZX4B.js";
 import {
   Ripple,
   RippleModule
-} from "./chunk-QN24C4B3.js";
-import "./chunk-PXWZN6FU.js";
+} from "./chunk-MUJBADSC.js";
+import "./chunk-BJLZ3T2F.js";
 import {
   OverlayService,
   PrimeNGConfig,
   PrimeTemplate,
   SharedModule
-} from "./chunk-TQSVMJ6K.js";
+} from "./chunk-ZROJCIWL.js";
 import {
   zindexutils
-} from "./chunk-3OF44R55.js";
+} from "./chunk-U3NLM53U.js";
 import {
   animate,
   state,
   style,
   transition,
   trigger
-} from "./chunk-OGB62SLM.js";
+} from "./chunk-5S7AEMUZ.js";
 import {
   ConnectedOverlayScrollHandler,
   DomHandler
-} from "./chunk-BUGEQH7Q.js";
+} from "./chunk-LB42WWNC.js";
 import {
   CommonModule,
   DOCUMENT,
@@ -34,7 +34,7 @@ import {
   NgStyle,
   NgTemplateOutlet,
   isPlatformBrowser
-} from "./chunk-UBZYO7FG.js";
+} from "./chunk-KUZ63KOD.js";
 import {
   ChangeDetectionStrategy,
   ChangeDetectorRef,
@@ -80,11 +80,13 @@ import {
   ɵɵresolveDocument,
   ɵɵrestoreView,
   ɵɵtemplate
-} from "./chunk-ZI2Q76R4.js";
-import "./chunk-5OPE3T2R.js";
+} from "./chunk-R75KKECJ.js";
 import "./chunk-4N4GOYJH.js";
+import "./chunk-5OPE3T2R.js";
 import "./chunk-FHTVLBLO.js";
-import "./chunk-3OV72XIM.js";
+import {
+  __publicField
+} from "./chunk-IJZFAMY6.js";
 
 // node_modules/primeng/fesm2022/primeng-overlaypanel.mjs
 var _c0 = ["*"];
@@ -197,107 +199,107 @@ function OverlayPanel_div_0_Template(rf, ctx) {
     ɵɵproperty("ngIf", ctx_r1.showCloseIcon);
   }
 }
-var OverlayPanel = class _OverlayPanel {
-  document;
-  platformId;
-  el;
-  renderer;
-  cd;
-  zone;
-  config;
-  overlayService;
-  /**
-   * Defines a string that labels the input for accessibility.
-   * @group Props
-   */
-  ariaLabel;
-  /**
-   * Establishes relationships between the component and label(s) where its value should be one or more element IDs.
-   * @group Props
-   */
-  ariaLabelledBy;
-  /**
-   * Enables to hide the overlay when outside is clicked.
-   * @group Props
-   */
-  dismissable = true;
-  /**
-   * When enabled, displays a close icon at top right corner.
-   * @group Props
-   */
-  showCloseIcon;
-  /**
-   * Inline style of the component.
-   * @group Props
-   */
-  style;
-  /**
-   * Style class of the component.
-   * @group Props
-   */
-  styleClass;
-  /**
-   *  Target element to attach the panel, valid values are "body" or a local ng-template variable of another element (note: use binding with brackets for template variables, e.g. [appendTo]="mydiv" for a div element having #mydiv as variable name).
-   * @group Props
-   */
-  appendTo = "body";
-  /**
-   * Whether to automatically manage layering.
-   * @group Props
-   */
-  autoZIndex = true;
-  /**
-   * Aria label of the close icon.
-   * @group Props
-   */
-  ariaCloseLabel;
-  /**
-   * Base zIndex value to use in layering.
-   * @group Props
-   */
-  baseZIndex = 0;
-  /**
-   * When enabled, first button receives focus on show.
-   * @group Props
-   */
-  focusOnShow = true;
-  /**
-   * Transition options of the show animation.
-   * @group Props
-   */
-  showTransitionOptions = ".12s cubic-bezier(0, 0, 0.2, 1)";
-  /**
-   * Transition options of the hide animation.
-   * @group Props
-   */
-  hideTransitionOptions = ".1s linear";
-  /**
-   * Callback to invoke when an overlay becomes visible.
-   * @group Emits
-   */
-  onShow = new EventEmitter();
-  /**
-   * Callback to invoke when an overlay gets hidden.
-   * @group Emits
-   */
-  onHide = new EventEmitter();
-  templates;
-  container;
-  overlayVisible = false;
-  render = false;
-  isOverlayAnimationInProgress = false;
-  selfClick = false;
-  documentClickListener;
-  target;
-  willHide;
-  scrollHandler;
-  documentResizeListener;
-  contentTemplate;
-  closeIconTemplate;
-  destroyCallback;
-  overlayEventListener;
-  overlaySubscription;
+var _OverlayPanel = class _OverlayPanel {
   constructor(document, platformId, el, renderer, cd, zone, config, overlayService) {
+    __publicField(this, "document");
+    __publicField(this, "platformId");
+    __publicField(this, "el");
+    __publicField(this, "renderer");
+    __publicField(this, "cd");
+    __publicField(this, "zone");
+    __publicField(this, "config");
+    __publicField(this, "overlayService");
+    /**
+     * Defines a string that labels the input for accessibility.
+     * @group Props
+     */
+    __publicField(this, "ariaLabel");
+    /**
+     * Establishes relationships between the component and label(s) where its value should be one or more element IDs.
+     * @group Props
+     */
+    __publicField(this, "ariaLabelledBy");
+    /**
+     * Enables to hide the overlay when outside is clicked.
+     * @group Props
+     */
+    __publicField(this, "dismissable", true);
+    /**
+     * When enabled, displays a close icon at top right corner.
+     * @group Props
+     */
+    __publicField(this, "showCloseIcon");
+    /**
+     * Inline style of the component.
+     * @group Props
+     */
+    __publicField(this, "style");
+    /**
+     * Style class of the component.
+     * @group Props
+     */
+    __publicField(this, "styleClass");
+    /**
+     *  Target element to attach the panel, valid values are "body" or a local ng-template variable of another element (note: use binding with brackets for template variables, e.g. [appendTo]="mydiv" for a div element having #mydiv as variable name).
+     * @group Props
+     */
+    __publicField(this, "appendTo", "body");
+    /**
+     * Whether to automatically manage layering.
+     * @group Props
+     */
+    __publicField(this, "autoZIndex", true);
+    /**
+     * Aria label of the close icon.
+     * @group Props
+     */
+    __publicField(this, "ariaCloseLabel");
+    /**
+     * Base zIndex value to use in layering.
+     * @group Props
+     */
+    __publicField(this, "baseZIndex", 0);
+    /**
+     * When enabled, first button receives focus on show.
+     * @group Props
+     */
+    __publicField(this, "focusOnShow", true);
+    /**
+     * Transition options of the show animation.
+     * @group Props
+     */
+    __publicField(this, "showTransitionOptions", ".12s cubic-bezier(0, 0, 0.2, 1)");
+    /**
+     * Transition options of the hide animation.
+     * @group Props
+     */
+    __publicField(this, "hideTransitionOptions", ".1s linear");
+    /**
+     * Callback to invoke when an overlay becomes visible.
+     * @group Emits
+     */
+    __publicField(this, "onShow", new EventEmitter());
+    /**
+     * Callback to invoke when an overlay gets hidden.
+     * @group Emits
+     */
+    __publicField(this, "onHide", new EventEmitter());
+    __publicField(this, "templates");
+    __publicField(this, "container");
+    __publicField(this, "overlayVisible", false);
+    __publicField(this, "render", false);
+    __publicField(this, "isOverlayAnimationInProgress", false);
+    __publicField(this, "selfClick", false);
+    __publicField(this, "documentClickListener");
+    __publicField(this, "target");
+    __publicField(this, "willHide");
+    __publicField(this, "scrollHandler");
+    __publicField(this, "documentResizeListener");
+    __publicField(this, "contentTemplate");
+    __publicField(this, "closeIconTemplate");
+    __publicField(this, "destroyCallback");
+    __publicField(this, "overlayEventListener");
+    __publicField(this, "overlaySubscription");
     this.document = document;
     this.platformId = platformId;
     this.el = el;
@@ -308,7 +310,8 @@ var OverlayPanel = class _OverlayPanel {
     this.overlayService = overlayService;
   }
   ngAfterContentInit() {
-    this.templates?.forEach((item) => {
+    var _a;
+    (_a = this.templates) == null ? void 0 : _a.forEach((item) => {
       switch (item.getType()) {
         case "content":
           this.contentTemplate = item.template;
@@ -329,7 +332,8 @@ var OverlayPanel = class _OverlayPanel {
         let documentEvent = DomHandler.isIOS() ? "touchstart" : "click";
         const documentTarget = this.el ? this.el.nativeElement.ownerDocument : this.document;
         this.documentClickListener = this.renderer.listen(documentTarget, documentEvent, (event) => {
-          if (!this.container?.contains(event.target) && this.target !== event.target && !this.target.contains(event.target) && !this.selfClick) {
+          var _a;
+          if (!((_a = this.container) == null ? void 0 : _a.contains(event.target)) && this.target !== event.target && !this.target.contains(event.target) && !this.selfClick) {
             this.hide();
           }
           this.selfClick = false;
@@ -408,18 +412,19 @@ var OverlayPanel = class _OverlayPanel {
     }
   }
   align() {
+    var _a, _b;
     if (this.autoZIndex) {
       zindexutils.set("overlay", this.container, this.baseZIndex + this.config.zIndex.overlay);
     }
     DomHandler.absolutePosition(this.container, this.target, false);
     const containerOffset = DomHandler.getOffset(this.container);
     const targetOffset = DomHandler.getOffset(this.target);
-    const borderRadius = this.document.defaultView?.getComputedStyle(this.container).getPropertyValue("border-radius");
+    const borderRadius = (_a = this.document.defaultView) == null ? void 0 : _a.getComputedStyle(this.container).getPropertyValue("border-radius");
     let arrowLeft = 0;
     if (containerOffset.left < targetOffset.left) {
       arrowLeft = targetOffset.left - containerOffset.left - parseFloat(borderRadius) * 2;
     }
-    this.container?.style.setProperty("--overlayArrowLeft", `${arrowLeft}px`);
+    (_b = this.container) == null ? void 0 : _b.style.setProperty("--overlayArrowLeft", "".concat(arrowLeft, "px"));
     if (containerOffset.top < targetOffset.top) {
       DomHandler.addClass(this.container, "p-overlaypanel-flipped");
       if (this.showCloseIcon) {
@@ -560,111 +565,86 @@ var OverlayPanel = class _OverlayPanel {
       this.overlaySubscription.unsubscribe();
     }
   }
-  static ɵfac = function OverlayPanel_Factory(__ngFactoryType__) {
-    return new (__ngFactoryType__ || _OverlayPanel)(ɵɵdirectiveInject(DOCUMENT), ɵɵdirectiveInject(PLATFORM_ID), ɵɵdirectiveInject(ElementRef), ɵɵdirectiveInject(Renderer2), ɵɵdirectiveInject(ChangeDetectorRef), ɵɵdirectiveInject(NgZone), ɵɵdirectiveInject(PrimeNGConfig), ɵɵdirectiveInject(OverlayService));
-  };
-  static ɵcmp = ɵɵdefineComponent({
-    type: _OverlayPanel,
-    selectors: [["p-overlayPanel"]],
-    contentQueries: function OverlayPanel_ContentQueries(rf, ctx, dirIndex) {
-      if (rf & 1) {
-        ɵɵcontentQuery(dirIndex, PrimeTemplate, 4);
-      }
-      if (rf & 2) {
-        let _t;
-        ɵɵqueryRefresh(_t = ɵɵloadQuery()) && (ctx.templates = _t);
-      }
-    },
-    hostAttrs: [1, "p-element"],
-    hostBindings: function OverlayPanel_HostBindings(rf, ctx) {
-      if (rf & 1) {
-        ɵɵlistener("keydown.escape", function OverlayPanel_keydown_escape_HostBindingHandler($event) {
-          return ctx.onEscapeKeydown($event);
-        }, false, ɵɵresolveDocument);
-      }
-    },
-    inputs: {
-      ariaLabel: "ariaLabel",
-      ariaLabelledBy: "ariaLabelledBy",
-      dismissable: [2, "dismissable", "dismissable", booleanAttribute],
-      showCloseIcon: [2, "showCloseIcon", "showCloseIcon", booleanAttribute],
-      style: "style",
-      styleClass: "styleClass",
-      appendTo: "appendTo",
-      autoZIndex: [2, "autoZIndex", "autoZIndex", booleanAttribute],
-      ariaCloseLabel: "ariaCloseLabel",
-      baseZIndex: [2, "baseZIndex", "baseZIndex", numberAttribute],
-      focusOnShow: [2, "focusOnShow", "focusOnShow", booleanAttribute],
-      showTransitionOptions: "showTransitionOptions",
-      hideTransitionOptions: "hideTransitionOptions"
-    },
-    outputs: {
-      onShow: "onShow",
-      onHide: "onHide"
-    },
-    features: [ɵɵInputTransformsFeature],
-    ngContentSelectors: _c0,
-    decls: 1,
-    vars: 1,
-    consts: [["role", "dialog", 3, "ngClass", "ngStyle", "class", "click", 4, "ngIf"], ["role", "dialog", 3, "click", "ngClass", "ngStyle"], [1, "p-overlaypanel-content", 3, "click", "mousedown"], [4, "ngTemplateOutlet"], ["type", "button", "class", "p-overlaypanel-close p-link", "pRipple", "", 3, "click", "keydown.enter", 4, "ngIf"], ["type", "button", "pRipple", "", 1, "p-overlaypanel-close", "p-link", 3, "click", "keydown.enter"], [3, "styleClass", 4, "ngIf"], ["class", "p-overlaypanel-close-icon", 4, "ngIf"], [3, "styleClass"], [1, "p-overlaypanel-close-icon"]],
-    template: function OverlayPanel_Template(rf, ctx) {
-      if (rf & 1) {
-        ɵɵprojectionDef();
-        ɵɵtemplate(0, OverlayPanel_div_0_Template, 5, 16, "div", 0);
-      }
-      if (rf & 2) {
-        ɵɵproperty("ngIf", ctx.render);
-      }
-    },
-    dependencies: () => [NgClass, NgIf, NgTemplateOutlet, NgStyle, Ripple, TimesIcon],
-    styles: ['@layer primeng{.p-overlaypanel{position:absolute;margin-top:10px;top:0;left:0}.p-overlaypanel-flipped{margin-top:0;margin-bottom:10px}.p-overlaypanel-close{display:flex;justify-content:center;align-items:center;overflow:hidden;position:relative}.p-overlaypanel:after,.p-overlaypanel:before{bottom:100%;left:calc(var(--overlayArrowLeft, 0) + 1.25rem);content:" ";height:0;width:0;position:absolute;pointer-events:none}.p-overlaypanel:after{border-width:8px;margin-left:-8px}.p-overlaypanel:before{border-width:10px;margin-left:-10px}.p-overlaypanel-shifted:after,.p-overlaypanel-shifted:before{left:auto;right:1.25em;margin-left:auto}.p-overlaypanel-flipped:after,.p-overlaypanel-flipped:before{bottom:auto;top:100%}.p-overlaypanel.p-overlaypanel-flipped:after{border-bottom-color:transparent}.p-overlaypanel.p-overlaypanel-flipped:before{border-bottom-color:transparent}}\n'],
-    encapsulation: 2,
-    data: {
-      animation: [trigger("animation", [state("void", style({
-        transform: "scaleY(0.8)",
-        opacity: 0
-      })), state("close", style({
-        opacity: 0
-      })), state("open", style({
-        transform: "translateY(0)",
-        opacity: 1
-      })), transition("void => open", animate("{{showTransitionParams}}")), transition("open => close", animate("{{hideTransitionParams}}"))])]
-    },
-    changeDetection: 0
-  });
 };
+__publicField(_OverlayPanel, "ɵfac", function OverlayPanel_Factory(__ngFactoryType__) {
+  return new (__ngFactoryType__ || _OverlayPanel)(ɵɵdirectiveInject(DOCUMENT), ɵɵdirectiveInject(PLATFORM_ID), ɵɵdirectiveInject(ElementRef), ɵɵdirectiveInject(Renderer2), ɵɵdirectiveInject(ChangeDetectorRef), ɵɵdirectiveInject(NgZone), ɵɵdirectiveInject(PrimeNGConfig), ɵɵdirectiveInject(OverlayService));
+});
+__publicField(_OverlayPanel, "ɵcmp", ɵɵdefineComponent({
+  type: _OverlayPanel,
+  selectors: [["p-overlayPanel"]],
+  contentQueries: function OverlayPanel_ContentQueries(rf, ctx, dirIndex) {
+    if (rf & 1) {
+      ɵɵcontentQuery(dirIndex, PrimeTemplate, 4);
+    }
+    if (rf & 2) {
+      let _t;
+      ɵɵqueryRefresh(_t = ɵɵloadQuery()) && (ctx.templates = _t);
+    }
+  },
+  hostAttrs: [1, "p-element"],
+  hostBindings: function OverlayPanel_HostBindings(rf, ctx) {
+    if (rf & 1) {
+      ɵɵlistener("keydown.escape", function OverlayPanel_keydown_escape_HostBindingHandler($event) {
+        return ctx.onEscapeKeydown($event);
+      }, false, ɵɵresolveDocument);
+    }
+  },
+  inputs: {
+    ariaLabel: "ariaLabel",
+    ariaLabelledBy: "ariaLabelledBy",
+    dismissable: [2, "dismissable", "dismissable", booleanAttribute],
+    showCloseIcon: [2, "showCloseIcon", "showCloseIcon", booleanAttribute],
+    style: "style",
+    styleClass: "styleClass",
+    appendTo: "appendTo",
+    autoZIndex: [2, "autoZIndex", "autoZIndex", booleanAttribute],
+    ariaCloseLabel: "ariaCloseLabel",
+    baseZIndex: [2, "baseZIndex", "baseZIndex", numberAttribute],
+    focusOnShow: [2, "focusOnShow", "focusOnShow", booleanAttribute],
+    showTransitionOptions: "showTransitionOptions",
+    hideTransitionOptions: "hideTransitionOptions"
+  },
+  outputs: {
+    onShow: "onShow",
+    onHide: "onHide"
+  },
+  features: [ɵɵInputTransformsFeature],
+  ngContentSelectors: _c0,
+  decls: 1,
+  vars: 1,
+  consts: [["role", "dialog", 3, "ngClass", "ngStyle", "class", "click", 4, "ngIf"], ["role", "dialog", 3, "click", "ngClass", "ngStyle"], [1, "p-overlaypanel-content", 3, "click", "mousedown"], [4, "ngTemplateOutlet"], ["type", "button", "class", "p-overlaypanel-close p-link", "pRipple", "", 3, "click", "keydown.enter", 4, "ngIf"], ["type", "button", "pRipple", "", 1, "p-overlaypanel-close", "p-link", 3, "click", "keydown.enter"], [3, "styleClass", 4, "ngIf"], ["class", "p-overlaypanel-close-icon", 4, "ngIf"], [3, "styleClass"], [1, "p-overlaypanel-close-icon"]],
+  template: function OverlayPanel_Template(rf, ctx) {
+    if (rf & 1) {
+      ɵɵprojectionDef();
+      ɵɵtemplate(0, OverlayPanel_div_0_Template, 5, 16, "div", 0);
+    }
+    if (rf & 2) {
+      ɵɵproperty("ngIf", ctx.render);
+    }
+  },
+  dependencies: () => [NgClass, NgIf, NgTemplateOutlet, NgStyle, Ripple, TimesIcon],
+  styles: ['@layer primeng{.p-overlaypanel{position:absolute;margin-top:10px;top:0;left:0}.p-overlaypanel-flipped{margin-top:0;margin-bottom:10px}.p-overlaypanel-close{display:flex;justify-content:center;align-items:center;overflow:hidden;position:relative}.p-overlaypanel:after,.p-overlaypanel:before{bottom:100%;left:calc(var(--overlayArrowLeft, 0) + 1.25rem);content:" ";height:0;width:0;position:absolute;pointer-events:none}.p-overlaypanel:after{border-width:8px;margin-left:-8px}.p-overlaypanel:before{border-width:10px;margin-left:-10px}.p-overlaypanel-shifted:after,.p-overlaypanel-shifted:before{left:auto;right:1.25em;margin-left:auto}.p-overlaypanel-flipped:after,.p-overlaypanel-flipped:before{bottom:auto;top:100%}.p-overlaypanel.p-overlaypanel-flipped:after{border-bottom-color:transparent}.p-overlaypanel.p-overlaypanel-flipped:before{border-bottom-color:transparent}}\n'],
+  encapsulation: 2,
+  data: {
+    animation: [trigger("animation", [state("void", style({
+      transform: "scaleY(0.8)",
+      opacity: 0
+    })), state("close", style({
+      opacity: 0
+    })), state("open", style({
+      transform: "translateY(0)",
+      opacity: 1
+    })), transition("void => open", animate("{{showTransitionParams}}")), transition("open => close", animate("{{hideTransitionParams}}"))])]
+  },
+  changeDetection: 0
+}));
+var OverlayPanel = _OverlayPanel;
 (() => {
   (typeof ngDevMode === "undefined" || ngDevMode) && setClassMetadata(OverlayPanel, [{
     type: Component,
     args: [{
       selector: "p-overlayPanel",
-      template: `
-        <div
-            *ngIf="render"
-            [ngClass]="'p-overlaypanel p-component'"
-            [ngStyle]="style"
-            [class]="styleClass"
-            (click)="onOverlayClick($event)"
-            [@animation]="{ value: overlayVisible ? 'open' : 'close', params: { showTransitionParams: showTransitionOptions, hideTransitionParams: hideTransitionOptions } }"
-            (@animation.start)="onAnimationStart($event)"
-            (@animation.done)="onAnimationEnd($event)"
-            role="dialog"
-            [attr.aria-modal]="overlayVisible"
-            [attr.aria-label]="ariaLabel"
-            [attr.aria-labelledBy]="ariaLabelledBy"
-        >
-            <div class="p-overlaypanel-content" (click)="onContentClick($event)" (mousedown)="onContentClick($event)">
-                <ng-content></ng-content>
-                <ng-container *ngTemplateOutlet="contentTemplate"></ng-container>
-            </div>
-            <button *ngIf="showCloseIcon" type="button" class="p-overlaypanel-close p-link" (click)="onCloseClick($event)" (keydown.enter)="hide()" [attr.aria-label]="ariaCloseLabel" pRipple>
-                <TimesIcon *ngIf="!closeIconTemplate" [styleClass]="'p-overlaypanel-close-icon'" />
-                <span class="p-overlaypanel-close-icon" *ngIf="closeIconTemplate">
-                    <ng-template *ngTemplateOutlet="closeIconTemplate"></ng-template>
-                </span>
-            </button>
-        </div>
-    `,
+      template: '\n        <div\n            *ngIf="render"\n            [ngClass]="\'p-overlaypanel p-component\'"\n            [ngStyle]="style"\n            [class]="styleClass"\n            (click)="onOverlayClick($event)"\n            [@animation]="{ value: overlayVisible ? \'open\' : \'close\', params: { showTransitionParams: showTransitionOptions, hideTransitionParams: hideTransitionOptions } }"\n            (@animation.start)="onAnimationStart($event)"\n            (@animation.done)="onAnimationEnd($event)"\n            role="dialog"\n            [attr.aria-modal]="overlayVisible"\n            [attr.aria-label]="ariaLabel"\n            [attr.aria-labelledBy]="ariaLabelledBy"\n        >\n            <div class="p-overlaypanel-content" (click)="onContentClick($event)" (mousedown)="onContentClick($event)">\n                <ng-content></ng-content>\n                <ng-container *ngTemplateOutlet="contentTemplate"></ng-container>\n            </div>\n            <button *ngIf="showCloseIcon" type="button" class="p-overlaypanel-close p-link" (click)="onCloseClick($event)" (keydown.enter)="hide()" [attr.aria-label]="ariaCloseLabel" pRipple>\n                <TimesIcon *ngIf="!closeIconTemplate" [styleClass]="\'p-overlaypanel-close-icon\'" />\n                <span class="p-overlaypanel-close-icon" *ngIf="closeIconTemplate">\n                    <ng-template *ngTemplateOutlet="closeIconTemplate"></ng-template>\n                </span>\n            </button>\n        </div>\n    ',
       animations: [trigger("animation", [state("void", style({
         transform: "scaleY(0.8)",
         opacity: 0
@@ -776,20 +756,21 @@ var OverlayPanel = class _OverlayPanel {
     }]
   });
 })();
-var OverlayPanelModule = class _OverlayPanelModule {
-  static ɵfac = function OverlayPanelModule_Factory(__ngFactoryType__) {
-    return new (__ngFactoryType__ || _OverlayPanelModule)();
-  };
-  static ɵmod = ɵɵdefineNgModule({
-    type: _OverlayPanelModule,
-    declarations: [OverlayPanel],
-    imports: [CommonModule, RippleModule, SharedModule, TimesIcon],
-    exports: [OverlayPanel, SharedModule]
-  });
-  static ɵinj = ɵɵdefineInjector({
-    imports: [CommonModule, RippleModule, SharedModule, TimesIcon, SharedModule]
-  });
+var _OverlayPanelModule = class _OverlayPanelModule {
 };
+__publicField(_OverlayPanelModule, "ɵfac", function OverlayPanelModule_Factory(__ngFactoryType__) {
+  return new (__ngFactoryType__ || _OverlayPanelModule)();
+});
+__publicField(_OverlayPanelModule, "ɵmod", ɵɵdefineNgModule({
+  type: _OverlayPanelModule,
+  declarations: [OverlayPanel],
+  imports: [CommonModule, RippleModule, SharedModule, TimesIcon],
+  exports: [OverlayPanel, SharedModule]
+}));
+__publicField(_OverlayPanelModule, "ɵinj", ɵɵdefineInjector({
+  imports: [CommonModule, RippleModule, SharedModule, TimesIcon, SharedModule]
+}));
+var OverlayPanelModule = _OverlayPanelModule;
 (() => {
   (typeof ngDevMode === "undefined" || ngDevMode) && setClassMetadata(OverlayPanelModule, [{
     type: NgModule,

@@ -1,27 +1,27 @@
 import {
   Ripple,
   RippleModule
-} from "./chunk-QN24C4B3.js";
+} from "./chunk-MUJBADSC.js";
 import {
   AutoFocus,
   AutoFocusModule
-} from "./chunk-32JR77BM.js";
+} from "./chunk-LND2F6FW.js";
 import {
   NG_VALUE_ACCESSOR
-} from "./chunk-B7GQUK3J.js";
+} from "./chunk-ZOG4HQFG.js";
 import {
   PrimeTemplate,
   SharedModule
-} from "./chunk-TQSVMJ6K.js";
-import "./chunk-3OF44R55.js";
-import "./chunk-BUGEQH7Q.js";
+} from "./chunk-ZROJCIWL.js";
+import "./chunk-U3NLM53U.js";
+import "./chunk-LB42WWNC.js";
 import {
   CommonModule,
   NgClass,
   NgIf,
   NgStyle,
   NgTemplateOutlet
-} from "./chunk-UBZYO7FG.js";
+} from "./chunk-KUZ63KOD.js";
 import {
   ChangeDetectionStrategy,
   ChangeDetectorRef,
@@ -61,11 +61,13 @@ import {
   ɵɵtemplate,
   ɵɵtext,
   ɵɵtextInterpolate
-} from "./chunk-ZI2Q76R4.js";
-import "./chunk-5OPE3T2R.js";
+} from "./chunk-R75KKECJ.js";
 import "./chunk-4N4GOYJH.js";
+import "./chunk-5OPE3T2R.js";
 import "./chunk-FHTVLBLO.js";
-import "./chunk-3OV72XIM.js";
+import {
+  __publicField
+} from "./chunk-IJZFAMY6.js";
 
 // node_modules/primeng/fesm2022/primeng-togglebutton.mjs
 var _c0 = (a0, a1, a2) => ({
@@ -134,87 +136,87 @@ var TOGGLEBUTTON_VALUE_ACCESSOR = {
   useExisting: forwardRef(() => ToggleButton),
   multi: true
 };
-var ToggleButton = class _ToggleButton {
-  cd;
-  /**
-   * Label for the on state.
-   * @group Props
-   */
-  onLabel;
-  /**
-   * Label for the off state.
-   * @group Props
-   */
-  offLabel;
-  /**
-   * Icon for the on state.
-   * @group Props
-   */
-  onIcon;
-  /**
-   * Icon for the off state.
-   * @group Props
-   */
-  offIcon;
-  /**
-   * Defines a string that labels the input for accessibility.
-   * @group Props
-   */
-  ariaLabel;
-  /**
-   * Establishes relationships between the component and label(s) where its value should be one or more element IDs.
-   * @group Props
-   */
-  ariaLabelledBy;
-  /**
-   * When present, it specifies that the element should be disabled.
-   * @group Props
-   */
-  disabled;
-  /**
-   * Inline style of the element.
-   * @group Props
-   */
-  style;
-  /**
-   * Style class of the element.
-   * @group Props
-   */
-  styleClass;
-  /**
-   * Identifier of the focus input to match a label defined for the component.
-   * @group Props
-   */
-  inputId;
-  /**
-   * Index of the element in tabbing order.
-   * @group Props
-   */
-  tabindex = 0;
-  /**
-   * Position of the icon.
-   * @group Props
-   */
-  iconPos = "left";
-  /**
-   * When present, it specifies that the component should automatically get focus on load.
-   * @group Props
-   */
-  autofocus;
-  /**
-   * Callback to invoke on value change.
-   * @param {ToggleButtonChangeEvent} event - Custom change event.
-   * @group Emits
-   */
-  onChange = new EventEmitter();
-  templates;
-  iconTemplate;
-  checked = false;
-  onModelChange = () => {
-  };
-  onModelTouched = () => {
-  };
+var _ToggleButton = class _ToggleButton {
   constructor(cd) {
+    __publicField(this, "cd");
+    /**
+     * Label for the on state.
+     * @group Props
+     */
+    __publicField(this, "onLabel");
+    /**
+     * Label for the off state.
+     * @group Props
+     */
+    __publicField(this, "offLabel");
+    /**
+     * Icon for the on state.
+     * @group Props
+     */
+    __publicField(this, "onIcon");
+    /**
+     * Icon for the off state.
+     * @group Props
+     */
+    __publicField(this, "offIcon");
+    /**
+     * Defines a string that labels the input for accessibility.
+     * @group Props
+     */
+    __publicField(this, "ariaLabel");
+    /**
+     * Establishes relationships between the component and label(s) where its value should be one or more element IDs.
+     * @group Props
+     */
+    __publicField(this, "ariaLabelledBy");
+    /**
+     * When present, it specifies that the element should be disabled.
+     * @group Props
+     */
+    __publicField(this, "disabled");
+    /**
+     * Inline style of the element.
+     * @group Props
+     */
+    __publicField(this, "style");
+    /**
+     * Style class of the element.
+     * @group Props
+     */
+    __publicField(this, "styleClass");
+    /**
+     * Identifier of the focus input to match a label defined for the component.
+     * @group Props
+     */
+    __publicField(this, "inputId");
+    /**
+     * Index of the element in tabbing order.
+     * @group Props
+     */
+    __publicField(this, "tabindex", 0);
+    /**
+     * Position of the icon.
+     * @group Props
+     */
+    __publicField(this, "iconPos", "left");
+    /**
+     * When present, it specifies that the component should automatically get focus on load.
+     * @group Props
+     */
+    __publicField(this, "autofocus");
+    /**
+     * Callback to invoke on value change.
+     * @param {ToggleButtonChangeEvent} event - Custom change event.
+     * @group Emits
+     */
+    __publicField(this, "onChange", new EventEmitter());
+    __publicField(this, "templates");
+    __publicField(this, "iconTemplate");
+    __publicField(this, "checked", false);
+    __publicField(this, "onModelChange", () => {
+    });
+    __publicField(this, "onModelTouched", () => {
+    });
     this.cd = cd;
   }
   ngAfterContentInit() {
@@ -279,106 +281,77 @@ var ToggleButton = class _ToggleButton {
   get hasOffLabel() {
     return this.offLabel && this.offLabel.length > 0;
   }
-  static ɵfac = function ToggleButton_Factory(__ngFactoryType__) {
-    return new (__ngFactoryType__ || _ToggleButton)(ɵɵdirectiveInject(ChangeDetectorRef));
-  };
-  static ɵcmp = ɵɵdefineComponent({
-    type: _ToggleButton,
-    selectors: [["p-toggleButton"]],
-    contentQueries: function ToggleButton_ContentQueries(rf, ctx, dirIndex) {
-      if (rf & 1) {
-        ɵɵcontentQuery(dirIndex, PrimeTemplate, 4);
-      }
-      if (rf & 2) {
-        let _t;
-        ɵɵqueryRefresh(_t = ɵɵloadQuery()) && (ctx.templates = _t);
-      }
-    },
-    hostAttrs: [1, "p-element"],
-    inputs: {
-      onLabel: "onLabel",
-      offLabel: "offLabel",
-      onIcon: "onIcon",
-      offIcon: "offIcon",
-      ariaLabel: "ariaLabel",
-      ariaLabelledBy: "ariaLabelledBy",
-      disabled: [2, "disabled", "disabled", booleanAttribute],
-      style: "style",
-      styleClass: "styleClass",
-      inputId: "inputId",
-      tabindex: [2, "tabindex", "tabindex", numberAttribute],
-      iconPos: "iconPos",
-      autofocus: [2, "autofocus", "autofocus", booleanAttribute]
-    },
-    outputs: {
-      onChange: "onChange"
-    },
-    features: [ɵɵProvidersFeature([TOGGLEBUTTON_VALUE_ACCESSOR]), ɵɵInputTransformsFeature],
-    decls: 4,
-    vars: 17,
-    consts: [["role", "switch", "pRipple", "", "pAutoFocus", "", 3, "click", "keydown", "ngClass", "ngStyle", "autofocus"], [3, "class", "ngClass"], ["class", "p-button-label", 4, "ngIf"], [3, "class", "ngClass", 4, "ngIf"], [3, "ngClass"], [4, "ngTemplateOutlet", "ngTemplateOutletContext"], [1, "p-button-label"]],
-    template: function ToggleButton_Template(rf, ctx) {
-      if (rf & 1) {
-        ɵɵelementStart(0, "div", 0);
-        ɵɵlistener("click", function ToggleButton_Template_div_click_0_listener($event) {
-          return ctx.toggle($event);
-        })("keydown", function ToggleButton_Template_div_keydown_0_listener($event) {
-          return ctx.onKeyDown($event);
-        });
-        ɵɵtemplate(1, ToggleButton_Conditional_1_Template, 1, 1, "span", 1)(2, ToggleButton_Conditional_2_Template, 1, 4, "ng-container")(3, ToggleButton_span_3_Template, 2, 2, "span", 2);
-        ɵɵelementEnd();
-      }
-      if (rf & 2) {
-        ɵɵclassMap(ctx.styleClass);
-        ɵɵproperty("ngClass", ɵɵpureFunction3(13, _c0, ctx.onIcon && ctx.offIcon && !ctx.hasOnLabel && !ctx.hasOffLabel, ctx.checked, ctx.disabled))("ngStyle", ctx.style)("autofocus", ctx.autofocus);
-        ɵɵattribute("tabindex", ctx.disabled ? null : ctx.tabindex)("aria-checked", ctx.checked)("aria-labelledby", ctx.ariaLabelledBy)("aria-label", ctx.ariaLabel)("data-pc-name", "togglebutton")("data-pc-section", "root");
-        ɵɵadvance();
-        ɵɵconditional(!ctx.iconTemplate ? 1 : 2);
-        ɵɵadvance(2);
-        ɵɵproperty("ngIf", ctx.onLabel || ctx.offLabel);
-      }
-    },
-    dependencies: [NgClass, NgIf, NgTemplateOutlet, NgStyle, Ripple, AutoFocus],
-    styles: ['@layer primeng{.p-button[_ngcontent-%COMP%]{margin:0;display:inline-flex;cursor:pointer;-webkit-user-select:none;user-select:none;align-items:center;vertical-align:bottom;text-align:center;overflow:hidden;position:relative}.p-button-label[_ngcontent-%COMP%]{flex:1 1 auto}.p-button-icon-right[_ngcontent-%COMP%]{order:1}.p-button[_ngcontent-%COMP%]:disabled{cursor:default;pointer-events:none}.p-button-icon-only[_ngcontent-%COMP%]{justify-content:center}.p-button-icon-only[_ngcontent-%COMP%]:after{content:"p";visibility:hidden;clip:rect(0 0 0 0);width:0}.p-button-vertical[_ngcontent-%COMP%]{flex-direction:column}.p-button-icon-bottom[_ngcontent-%COMP%]{order:2}.p-button-group[_ngcontent-%COMP%]   .p-button[_ngcontent-%COMP%]{margin:0}.p-button-group[_ngcontent-%COMP%]   .p-button[_ngcontent-%COMP%]:focus, .p-button-group[_ngcontent-%COMP%]   p-button[_ngcontent-%COMP%]:focus   .p-button[_ngcontent-%COMP%], .p-buttonset[_ngcontent-%COMP%]   .p-button[_ngcontent-%COMP%]:focus, .p-buttonset[_ngcontent-%COMP%]   p-button[_ngcontent-%COMP%]:focus   .p-button[_ngcontent-%COMP%]{position:relative;z-index:1}.p-button-group[_ngcontent-%COMP%]   .p-button[_ngcontent-%COMP%]:not(:last-child), .p-button-group[_ngcontent-%COMP%]   .p-button[_ngcontent-%COMP%]:not(:last-child):hover, .p-button-group[_ngcontent-%COMP%]   p-button[_ngcontent-%COMP%]:not(:last-child)   .p-button[_ngcontent-%COMP%], .p-button-group[_ngcontent-%COMP%]   p-button[_ngcontent-%COMP%]:not(:last-child)   .p-button[_ngcontent-%COMP%]:hover, .p-buttonset[_ngcontent-%COMP%]   .p-button[_ngcontent-%COMP%]:not(:last-child), .p-buttonset[_ngcontent-%COMP%]   .p-button[_ngcontent-%COMP%]:not(:last-child):hover, .p-buttonset[_ngcontent-%COMP%]   p-button[_ngcontent-%COMP%]:not(:last-child)   .p-button[_ngcontent-%COMP%], .p-buttonset[_ngcontent-%COMP%]   p-button[_ngcontent-%COMP%]:not(:last-child)   .p-button[_ngcontent-%COMP%]:hover{border-right:0 none}.p-button-group[_ngcontent-%COMP%]   .p-button[_ngcontent-%COMP%]:not(:first-of-type):not(:last-of-type), .p-button-group[_ngcontent-%COMP%]   p-button[_ngcontent-%COMP%]:not(:first-of-type):not(:last-of-type)   .p-button[_ngcontent-%COMP%], .p-buttonset[_ngcontent-%COMP%]   .p-button[_ngcontent-%COMP%]:not(:first-of-type):not(:last-of-type), .p-buttonset[_ngcontent-%COMP%]   p-button[_ngcontent-%COMP%]:not(:first-of-type):not(:last-of-type)   .p-button[_ngcontent-%COMP%]{border-radius:0}.p-button-group[_ngcontent-%COMP%]   .p-button[_ngcontent-%COMP%]:first-of-type:not(:only-of-type), .p-button-group[_ngcontent-%COMP%]   p-button[_ngcontent-%COMP%]:first-of-type:not(:only-of-type)   .p-button[_ngcontent-%COMP%], .p-buttonset[_ngcontent-%COMP%]   .p-button[_ngcontent-%COMP%]:first-of-type:not(:only-of-type), .p-buttonset[_ngcontent-%COMP%]   p-button[_ngcontent-%COMP%]:first-of-type:not(:only-of-type)   .p-button[_ngcontent-%COMP%]{border-top-right-radius:0;border-bottom-right-radius:0}.p-button-group[_ngcontent-%COMP%]   .p-button[_ngcontent-%COMP%]:last-of-type:not(:only-of-type), .p-button-group[_ngcontent-%COMP%]   p-button[_ngcontent-%COMP%]:last-of-type:not(:only-of-type)   .p-button[_ngcontent-%COMP%], .p-buttonset[_ngcontent-%COMP%]   .p-button[_ngcontent-%COMP%]:last-of-type:not(:only-of-type), .p-buttonset[_ngcontent-%COMP%]   p-button[_ngcontent-%COMP%]:last-of-type:not(:only-of-type)   .p-button[_ngcontent-%COMP%]{border-top-left-radius:0;border-bottom-left-radius:0}p-button[iconpos=right][_ngcontent-%COMP%]   spinnericon[_ngcontent-%COMP%]{order:1}}'],
-    changeDetection: 0
-  });
 };
+__publicField(_ToggleButton, "ɵfac", function ToggleButton_Factory(__ngFactoryType__) {
+  return new (__ngFactoryType__ || _ToggleButton)(ɵɵdirectiveInject(ChangeDetectorRef));
+});
+__publicField(_ToggleButton, "ɵcmp", ɵɵdefineComponent({
+  type: _ToggleButton,
+  selectors: [["p-toggleButton"]],
+  contentQueries: function ToggleButton_ContentQueries(rf, ctx, dirIndex) {
+    if (rf & 1) {
+      ɵɵcontentQuery(dirIndex, PrimeTemplate, 4);
+    }
+    if (rf & 2) {
+      let _t;
+      ɵɵqueryRefresh(_t = ɵɵloadQuery()) && (ctx.templates = _t);
+    }
+  },
+  hostAttrs: [1, "p-element"],
+  inputs: {
+    onLabel: "onLabel",
+    offLabel: "offLabel",
+    onIcon: "onIcon",
+    offIcon: "offIcon",
+    ariaLabel: "ariaLabel",
+    ariaLabelledBy: "ariaLabelledBy",
+    disabled: [2, "disabled", "disabled", booleanAttribute],
+    style: "style",
+    styleClass: "styleClass",
+    inputId: "inputId",
+    tabindex: [2, "tabindex", "tabindex", numberAttribute],
+    iconPos: "iconPos",
+    autofocus: [2, "autofocus", "autofocus", booleanAttribute]
+  },
+  outputs: {
+    onChange: "onChange"
+  },
+  features: [ɵɵProvidersFeature([TOGGLEBUTTON_VALUE_ACCESSOR]), ɵɵInputTransformsFeature],
+  decls: 4,
+  vars: 17,
+  consts: [["role", "switch", "pRipple", "", "pAutoFocus", "", 3, "click", "keydown", "ngClass", "ngStyle", "autofocus"], [3, "class", "ngClass"], ["class", "p-button-label", 4, "ngIf"], [3, "class", "ngClass", 4, "ngIf"], [3, "ngClass"], [4, "ngTemplateOutlet", "ngTemplateOutletContext"], [1, "p-button-label"]],
+  template: function ToggleButton_Template(rf, ctx) {
+    if (rf & 1) {
+      ɵɵelementStart(0, "div", 0);
+      ɵɵlistener("click", function ToggleButton_Template_div_click_0_listener($event) {
+        return ctx.toggle($event);
+      })("keydown", function ToggleButton_Template_div_keydown_0_listener($event) {
+        return ctx.onKeyDown($event);
+      });
+      ɵɵtemplate(1, ToggleButton_Conditional_1_Template, 1, 1, "span", 1)(2, ToggleButton_Conditional_2_Template, 1, 4, "ng-container")(3, ToggleButton_span_3_Template, 2, 2, "span", 2);
+      ɵɵelementEnd();
+    }
+    if (rf & 2) {
+      ɵɵclassMap(ctx.styleClass);
+      ɵɵproperty("ngClass", ɵɵpureFunction3(13, _c0, ctx.onIcon && ctx.offIcon && !ctx.hasOnLabel && !ctx.hasOffLabel, ctx.checked, ctx.disabled))("ngStyle", ctx.style)("autofocus", ctx.autofocus);
+      ɵɵattribute("tabindex", ctx.disabled ? null : ctx.tabindex)("aria-checked", ctx.checked)("aria-labelledby", ctx.ariaLabelledBy)("aria-label", ctx.ariaLabel)("data-pc-name", "togglebutton")("data-pc-section", "root");
+      ɵɵadvance();
+      ɵɵconditional(!ctx.iconTemplate ? 1 : 2);
+      ɵɵadvance(2);
+      ɵɵproperty("ngIf", ctx.onLabel || ctx.offLabel);
+    }
+  },
+  dependencies: [NgClass, NgIf, NgTemplateOutlet, NgStyle, Ripple, AutoFocus],
+  styles: ['@layer primeng{.p-button[_ngcontent-%COMP%]{margin:0;display:inline-flex;cursor:pointer;-webkit-user-select:none;user-select:none;align-items:center;vertical-align:bottom;text-align:center;overflow:hidden;position:relative}.p-button-label[_ngcontent-%COMP%]{flex:1 1 auto}.p-button-icon-right[_ngcontent-%COMP%]{order:1}.p-button[_ngcontent-%COMP%]:disabled{cursor:default;pointer-events:none}.p-button-icon-only[_ngcontent-%COMP%]{justify-content:center}.p-button-icon-only[_ngcontent-%COMP%]:after{content:"p";visibility:hidden;clip:rect(0 0 0 0);width:0}.p-button-vertical[_ngcontent-%COMP%]{flex-direction:column}.p-button-icon-bottom[_ngcontent-%COMP%]{order:2}.p-button-group[_ngcontent-%COMP%]   .p-button[_ngcontent-%COMP%]{margin:0}.p-button-group[_ngcontent-%COMP%]   .p-button[_ngcontent-%COMP%]:focus, .p-button-group[_ngcontent-%COMP%]   p-button[_ngcontent-%COMP%]:focus   .p-button[_ngcontent-%COMP%], .p-buttonset[_ngcontent-%COMP%]   .p-button[_ngcontent-%COMP%]:focus, .p-buttonset[_ngcontent-%COMP%]   p-button[_ngcontent-%COMP%]:focus   .p-button[_ngcontent-%COMP%]{position:relative;z-index:1}.p-button-group[_ngcontent-%COMP%]   .p-button[_ngcontent-%COMP%]:not(:last-child), .p-button-group[_ngcontent-%COMP%]   .p-button[_ngcontent-%COMP%]:not(:last-child):hover, .p-button-group[_ngcontent-%COMP%]   p-button[_ngcontent-%COMP%]:not(:last-child)   .p-button[_ngcontent-%COMP%], .p-button-group[_ngcontent-%COMP%]   p-button[_ngcontent-%COMP%]:not(:last-child)   .p-button[_ngcontent-%COMP%]:hover, .p-buttonset[_ngcontent-%COMP%]   .p-button[_ngcontent-%COMP%]:not(:last-child), .p-buttonset[_ngcontent-%COMP%]   .p-button[_ngcontent-%COMP%]:not(:last-child):hover, .p-buttonset[_ngcontent-%COMP%]   p-button[_ngcontent-%COMP%]:not(:last-child)   .p-button[_ngcontent-%COMP%], .p-buttonset[_ngcontent-%COMP%]   p-button[_ngcontent-%COMP%]:not(:last-child)   .p-button[_ngcontent-%COMP%]:hover{border-right:0 none}.p-button-group[_ngcontent-%COMP%]   .p-button[_ngcontent-%COMP%]:not(:first-of-type):not(:last-of-type), .p-button-group[_ngcontent-%COMP%]   p-button[_ngcontent-%COMP%]:not(:first-of-type):not(:last-of-type)   .p-button[_ngcontent-%COMP%], .p-buttonset[_ngcontent-%COMP%]   .p-button[_ngcontent-%COMP%]:not(:first-of-type):not(:last-of-type), .p-buttonset[_ngcontent-%COMP%]   p-button[_ngcontent-%COMP%]:not(:first-of-type):not(:last-of-type)   .p-button[_ngcontent-%COMP%]{border-radius:0}.p-button-group[_ngcontent-%COMP%]   .p-button[_ngcontent-%COMP%]:first-of-type:not(:only-of-type), .p-button-group[_ngcontent-%COMP%]   p-button[_ngcontent-%COMP%]:first-of-type:not(:only-of-type)   .p-button[_ngcontent-%COMP%], .p-buttonset[_ngcontent-%COMP%]   .p-button[_ngcontent-%COMP%]:first-of-type:not(:only-of-type), .p-buttonset[_ngcontent-%COMP%]   p-button[_ngcontent-%COMP%]:first-of-type:not(:only-of-type)   .p-button[_ngcontent-%COMP%]{border-top-right-radius:0;border-bottom-right-radius:0}.p-button-group[_ngcontent-%COMP%]   .p-button[_ngcontent-%COMP%]:last-of-type:not(:only-of-type), .p-button-group[_ngcontent-%COMP%]   p-button[_ngcontent-%COMP%]:last-of-type:not(:only-of-type)   .p-button[_ngcontent-%COMP%], .p-buttonset[_ngcontent-%COMP%]   .p-button[_ngcontent-%COMP%]:last-of-type:not(:only-of-type), .p-buttonset[_ngcontent-%COMP%]   p-button[_ngcontent-%COMP%]:last-of-type:not(:only-of-type)   .p-button[_ngcontent-%COMP%]{border-top-left-radius:0;border-bottom-left-radius:0}p-button[iconpos=right][_ngcontent-%COMP%]   spinnericon[_ngcontent-%COMP%]{order:1}}'],
+  changeDetection: 0
+}));
+var ToggleButton = _ToggleButton;
 (() => {
   (typeof ngDevMode === "undefined" || ngDevMode) && setClassMetadata(ToggleButton, [{
     type: Component,
     args: [{
       selector: "p-toggleButton",
-      template: `
-        <div
-            [ngClass]="{ 'p-togglebutton p-button p-component': true, 'p-button-icon-only': onIcon && offIcon && !hasOnLabel && !hasOffLabel, 'p-highlight': checked, 'p-disabled': disabled }"
-            [ngStyle]="style"
-            [class]="styleClass"
-            (click)="toggle($event)"
-            (keydown)="onKeyDown($event)"
-            [attr.tabindex]="disabled ? null : tabindex"
-            role="switch"
-            [attr.aria-checked]="checked"
-            [attr.aria-labelledby]="ariaLabelledBy"
-            [attr.aria-label]="ariaLabel"
-            pRipple
-            [attr.data-pc-name]="'togglebutton'"
-            [attr.data-pc-section]="'root'"
-            pAutoFocus
-            [autofocus]="autofocus"
-        >
-            @if (!iconTemplate) {
-                <span
-                    *ngIf="onIcon || offIcon"
-                    [class]="checked ? this.onIcon : this.offIcon"
-                    [ngClass]="{ 'p-button-icon': true, 'p-button-icon-left': iconPos === 'left', 'p-button-icon-right': iconPos === 'right' }"
-                    [attr.data-pc-section]="'icon'"
-                ></span>
-            } @else {
-                <ng-container *ngTemplateOutlet="iconTemplate; context: { $implicit: checked }"></ng-container>
-            }
-            <span class="p-button-label" *ngIf="onLabel || offLabel" [attr.data-pc-section]="'label'">{{ checked ? (hasOnLabel ? onLabel : '') : hasOffLabel ? offLabel : '' }}</span>
-        </div>
-    `,
+      template: '\n        <div\n            [ngClass]="{ \'p-togglebutton p-button p-component\': true, \'p-button-icon-only\': onIcon && offIcon && !hasOnLabel && !hasOffLabel, \'p-highlight\': checked, \'p-disabled\': disabled }"\n            [ngStyle]="style"\n            [class]="styleClass"\n            (click)="toggle($event)"\n            (keydown)="onKeyDown($event)"\n            [attr.tabindex]="disabled ? null : tabindex"\n            role="switch"\n            [attr.aria-checked]="checked"\n            [attr.aria-labelledby]="ariaLabelledBy"\n            [attr.aria-label]="ariaLabel"\n            pRipple\n            [attr.data-pc-name]="\'togglebutton\'"\n            [attr.data-pc-section]="\'root\'"\n            pAutoFocus\n            [autofocus]="autofocus"\n        >\n            @if (!iconTemplate) {\n                <span\n                    *ngIf="onIcon || offIcon"\n                    [class]="checked ? this.onIcon : this.offIcon"\n                    [ngClass]="{ \'p-button-icon\': true, \'p-button-icon-left\': iconPos === \'left\', \'p-button-icon-right\': iconPos === \'right\' }"\n                    [attr.data-pc-section]="\'icon\'"\n                ></span>\n            } @else {\n                <ng-container *ngTemplateOutlet="iconTemplate; context: { $implicit: checked }"></ng-container>\n            }\n            <span class="p-button-label" *ngIf="onLabel || offLabel" [attr.data-pc-section]="\'label\'">{{ checked ? (hasOnLabel ? onLabel : \'\') : hasOffLabel ? offLabel : \'\' }}</span>\n        </div>\n    ',
       providers: [TOGGLEBUTTON_VALUE_ACCESSOR],
       changeDetection: ChangeDetectionStrategy.OnPush,
       host: {
@@ -446,20 +419,21 @@ var ToggleButton = class _ToggleButton {
     }]
   });
 })();
-var ToggleButtonModule = class _ToggleButtonModule {
-  static ɵfac = function ToggleButtonModule_Factory(__ngFactoryType__) {
-    return new (__ngFactoryType__ || _ToggleButtonModule)();
-  };
-  static ɵmod = ɵɵdefineNgModule({
-    type: _ToggleButtonModule,
-    declarations: [ToggleButton],
-    imports: [CommonModule, RippleModule, SharedModule, AutoFocusModule],
-    exports: [ToggleButton, SharedModule]
-  });
-  static ɵinj = ɵɵdefineInjector({
-    imports: [CommonModule, RippleModule, SharedModule, AutoFocusModule, SharedModule]
-  });
+var _ToggleButtonModule = class _ToggleButtonModule {
 };
+__publicField(_ToggleButtonModule, "ɵfac", function ToggleButtonModule_Factory(__ngFactoryType__) {
+  return new (__ngFactoryType__ || _ToggleButtonModule)();
+});
+__publicField(_ToggleButtonModule, "ɵmod", ɵɵdefineNgModule({
+  type: _ToggleButtonModule,
+  declarations: [ToggleButton],
+  imports: [CommonModule, RippleModule, SharedModule, AutoFocusModule],
+  exports: [ToggleButton, SharedModule]
+}));
+__publicField(_ToggleButtonModule, "ɵinj", ɵɵdefineInjector({
+  imports: [CommonModule, RippleModule, SharedModule, AutoFocusModule, SharedModule]
+}));
+var ToggleButtonModule = _ToggleButtonModule;
 (() => {
   (typeof ngDevMode === "undefined" || ngDevMode) && setClassMetadata(ToggleButtonModule, [{
     type: NgModule,

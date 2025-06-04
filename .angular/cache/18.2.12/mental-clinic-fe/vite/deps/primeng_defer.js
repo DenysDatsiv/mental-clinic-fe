@@ -2,7 +2,7 @@ import {
   CommonModule,
   DOCUMENT,
   isPlatformBrowser
-} from "./chunk-UBZYO7FG.js";
+} from "./chunk-KUZ63KOD.js";
 import {
   ChangeDetectorRef,
   ContentChild,
@@ -24,31 +24,33 @@ import {
   ɵɵdirectiveInject,
   ɵɵloadQuery,
   ɵɵqueryRefresh
-} from "./chunk-ZI2Q76R4.js";
-import "./chunk-5OPE3T2R.js";
+} from "./chunk-R75KKECJ.js";
 import "./chunk-4N4GOYJH.js";
+import "./chunk-5OPE3T2R.js";
 import "./chunk-FHTVLBLO.js";
-import "./chunk-3OV72XIM.js";
+import {
+  __publicField
+} from "./chunk-IJZFAMY6.js";
 
 // node_modules/primeng/fesm2022/primeng-defer.mjs
-var DeferredLoader = class _DeferredLoader {
-  document;
-  platformId;
-  el;
-  renderer;
-  viewContainer;
-  cd;
-  /**
-   * Callback to invoke when deferred content is loaded.
-   * @param {Event} event - Browser event.
-   * @group Emits
-   */
-  onLoad = new EventEmitter();
-  template;
-  documentScrollListener;
-  view;
-  window;
+var _DeferredLoader = class _DeferredLoader {
   constructor(document, platformId, el, renderer, viewContainer, cd) {
+    __publicField(this, "document");
+    __publicField(this, "platformId");
+    __publicField(this, "el");
+    __publicField(this, "renderer");
+    __publicField(this, "viewContainer");
+    __publicField(this, "cd");
+    /**
+     * Callback to invoke when deferred content is loaded.
+     * @param {Event} event - Browser event.
+     * @group Emits
+     */
+    __publicField(this, "onLoad", new EventEmitter());
+    __publicField(this, "template");
+    __publicField(this, "documentScrollListener");
+    __publicField(this, "view");
+    __publicField(this, "window");
     this.document = document;
     this.platformId = platformId;
     this.el = el;
@@ -97,27 +99,28 @@ var DeferredLoader = class _DeferredLoader {
       this.documentScrollListener();
     }
   }
-  static ɵfac = function DeferredLoader_Factory(__ngFactoryType__) {
-    return new (__ngFactoryType__ || _DeferredLoader)(ɵɵdirectiveInject(DOCUMENT), ɵɵdirectiveInject(PLATFORM_ID), ɵɵdirectiveInject(ElementRef), ɵɵdirectiveInject(Renderer2), ɵɵdirectiveInject(ViewContainerRef), ɵɵdirectiveInject(ChangeDetectorRef));
-  };
-  static ɵdir = ɵɵdefineDirective({
-    type: _DeferredLoader,
-    selectors: [["", "pDefer", ""]],
-    contentQueries: function DeferredLoader_ContentQueries(rf, ctx, dirIndex) {
-      if (rf & 1) {
-        ɵɵcontentQuery(dirIndex, TemplateRef, 5);
-      }
-      if (rf & 2) {
-        let _t;
-        ɵɵqueryRefresh(_t = ɵɵloadQuery()) && (ctx.template = _t.first);
-      }
-    },
-    hostAttrs: [1, "p-element"],
-    outputs: {
-      onLoad: "onLoad"
-    }
-  });
 };
+__publicField(_DeferredLoader, "ɵfac", function DeferredLoader_Factory(__ngFactoryType__) {
+  return new (__ngFactoryType__ || _DeferredLoader)(ɵɵdirectiveInject(DOCUMENT), ɵɵdirectiveInject(PLATFORM_ID), ɵɵdirectiveInject(ElementRef), ɵɵdirectiveInject(Renderer2), ɵɵdirectiveInject(ViewContainerRef), ɵɵdirectiveInject(ChangeDetectorRef));
+});
+__publicField(_DeferredLoader, "ɵdir", ɵɵdefineDirective({
+  type: _DeferredLoader,
+  selectors: [["", "pDefer", ""]],
+  contentQueries: function DeferredLoader_ContentQueries(rf, ctx, dirIndex) {
+    if (rf & 1) {
+      ɵɵcontentQuery(dirIndex, TemplateRef, 5);
+    }
+    if (rf & 2) {
+      let _t;
+      ɵɵqueryRefresh(_t = ɵɵloadQuery()) && (ctx.template = _t.first);
+    }
+  },
+  hostAttrs: [1, "p-element"],
+  outputs: {
+    onLoad: "onLoad"
+  }
+}));
+var DeferredLoader = _DeferredLoader;
 (() => {
   (typeof ngDevMode === "undefined" || ngDevMode) && setClassMetadata(DeferredLoader, [{
     type: Directive,
@@ -157,20 +160,21 @@ var DeferredLoader = class _DeferredLoader {
     }]
   });
 })();
-var DeferModule = class _DeferModule {
-  static ɵfac = function DeferModule_Factory(__ngFactoryType__) {
-    return new (__ngFactoryType__ || _DeferModule)();
-  };
-  static ɵmod = ɵɵdefineNgModule({
-    type: _DeferModule,
-    declarations: [DeferredLoader],
-    imports: [CommonModule],
-    exports: [DeferredLoader]
-  });
-  static ɵinj = ɵɵdefineInjector({
-    imports: [CommonModule]
-  });
+var _DeferModule = class _DeferModule {
 };
+__publicField(_DeferModule, "ɵfac", function DeferModule_Factory(__ngFactoryType__) {
+  return new (__ngFactoryType__ || _DeferModule)();
+});
+__publicField(_DeferModule, "ɵmod", ɵɵdefineNgModule({
+  type: _DeferModule,
+  declarations: [DeferredLoader],
+  imports: [CommonModule],
+  exports: [DeferredLoader]
+}));
+__publicField(_DeferModule, "ɵinj", ɵɵdefineInjector({
+  imports: [CommonModule]
+}));
+var DeferModule = _DeferModule;
 (() => {
   (typeof ngDevMode === "undefined" || ngDevMode) && setClassMetadata(DeferModule, [{
     type: NgModule,

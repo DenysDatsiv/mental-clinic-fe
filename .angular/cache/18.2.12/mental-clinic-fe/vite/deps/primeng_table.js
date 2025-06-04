@@ -1,80 +1,76 @@
 import {
-  TriStateCheckbox,
-  TriStateCheckboxModule
-} from "./chunk-O3CD3K7Y.js";
-import {
   ArrowDownIcon,
   ArrowUpIcon,
   SortAltIcon,
   SortAmountDownIcon,
   SortAmountUpAltIcon
-} from "./chunk-W3WDKC2C.js";
+} from "./chunk-R7JGIOCF.js";
+import {
+  TriStateCheckbox,
+  TriStateCheckboxModule
+} from "./chunk-OTXM3FJP.js";
 import {
   SelectButtonModule
-} from "./chunk-EWDOHKU5.js";
-import {
-  PlusIcon
-} from "./chunk-OPPBAY66.js";
+} from "./chunk-5HJ4S3KO.js";
 import {
   Paginator,
   PaginatorModule
-} from "./chunk-VQ7OT4XG.js";
-import "./chunk-CHTNHP53.js";
+} from "./chunk-IYTQALVI.js";
+import "./chunk-S6JNWQPB.js";
 import {
   InputNumber,
   InputNumberModule
-} from "./chunk-H5RH3JYU.js";
-import "./chunk-F7LFBQGX.js";
-import "./chunk-S2DODU67.js";
+} from "./chunk-PC6JCGGY.js";
+import "./chunk-74FYITZT.js";
+import "./chunk-GE47GKJX.js";
 import {
   Dropdown,
   DropdownModule
-} from "./chunk-VWHSWSMW.js";
-import "./chunk-26A77ZYK.js";
+} from "./chunk-CK6PE4VJ.js";
+import "./chunk-ZVYGKXDY.js";
+import {
+  PlusIcon
+} from "./chunk-6RCVZF7W.js";
 import {
   CheckIcon
-} from "./chunk-T5D2NQ3S.js";
-import "./chunk-STBFZVQ2.js";
-import "./chunk-KFVC45AI.js";
+} from "./chunk-A2QFKI6F.js";
+import "./chunk-IC7NSP6U.js";
+import "./chunk-BGJ2FQDY.js";
 import {
   Calendar,
   CalendarModule
-} from "./chunk-SEWHNGBV.js";
-import "./chunk-4WX4YYVC.js";
-import "./chunk-CA4J3LLG.js";
+} from "./chunk-HEHEMIHO.js";
+import "./chunk-GXJTW63O.js";
+import "./chunk-63U6WJYF.js";
 import {
   Scroller,
   ScrollerModule
-} from "./chunk-TB2LYZAF.js";
+} from "./chunk-VW3MRXK5.js";
 import {
   InputText,
   InputTextModule
-} from "./chunk-QU6QLMWV.js";
-import "./chunk-ZMXZNLNN.js";
+} from "./chunk-SJTFEDMT.js";
+import "./chunk-RGZM7SWW.js";
 import {
   ButtonDirective,
   ButtonModule
-} from "./chunk-7TN6NS6B.js";
+} from "./chunk-ZLJ4QAH5.js";
 import {
   SpinnerIcon
-} from "./chunk-PCVGMHYY.js";
-import "./chunk-MDBJZ6LU.js";
-import "./chunk-QN24C4B3.js";
-import "./chunk-32JR77BM.js";
+} from "./chunk-VYCWYYRS.js";
+import "./chunk-AP6UZX4B.js";
+import "./chunk-MUJBADSC.js";
+import "./chunk-LND2F6FW.js";
 import {
   FormsModule,
   NgControlStatus,
   NgModel
-} from "./chunk-B7GQUK3J.js";
-import {
-  DomSanitizer
-} from "./chunk-3E3YFUVD.js";
-import "./chunk-DO2TVYAE.js";
-import "./chunk-EYQJO2JR.js";
-import "./chunk-WH2DAWOG.js";
+} from "./chunk-ZOG4HQFG.js";
+import "./chunk-CDDPLBF3.js";
+import "./chunk-HCVMWVY4.js";
 import {
   BaseIcon
-} from "./chunk-PXWZN6FU.js";
+} from "./chunk-BJLZ3T2F.js";
 import {
   FilterMatchMode,
   FilterOperator,
@@ -84,22 +80,26 @@ import {
   PrimeTemplate,
   SharedModule,
   TranslationKeys
-} from "./chunk-TQSVMJ6K.js";
+} from "./chunk-ZROJCIWL.js";
 import {
   ObjectUtils,
   UniqueComponentId,
   zindexutils
-} from "./chunk-3OF44R55.js";
+} from "./chunk-U3NLM53U.js";
 import {
   animate,
   style,
   transition,
   trigger
-} from "./chunk-OGB62SLM.js";
+} from "./chunk-5S7AEMUZ.js";
+import {
+  DomSanitizer
+} from "./chunk-MWP4G2UW.js";
+import "./chunk-RWZD3TDV.js";
 import {
   ConnectedOverlayScrollHandler,
   DomHandler
-} from "./chunk-BUGEQH7Q.js";
+} from "./chunk-LB42WWNC.js";
 import {
   CommonModule,
   DOCUMENT,
@@ -111,7 +111,7 @@ import {
   NgSwitchCase,
   NgTemplateOutlet,
   isPlatformBrowser
-} from "./chunk-UBZYO7FG.js";
+} from "./chunk-KUZ63KOD.js";
 import {
   ChangeDetectionStrategy,
   ChangeDetectorRef,
@@ -186,59 +186,64 @@ import {
   ɵɵtextInterpolate,
   ɵɵtextInterpolate1,
   ɵɵviewQuery
-} from "./chunk-ZI2Q76R4.js";
-import "./chunk-5OPE3T2R.js";
+} from "./chunk-R75KKECJ.js";
 import "./chunk-4N4GOYJH.js";
+import "./chunk-5OPE3T2R.js";
 import {
   Subject
 } from "./chunk-FHTVLBLO.js";
 import {
+  __publicField,
   __spreadProps,
   __spreadValues
-} from "./chunk-3OV72XIM.js";
+} from "./chunk-IJZFAMY6.js";
 
 // node_modules/primeng/fesm2022/primeng-icons-filter.mjs
-var FilterIcon = class _FilterIcon extends BaseIcon {
-  pathId;
+var _FilterIcon = class _FilterIcon extends BaseIcon {
+  constructor() {
+    super(...arguments);
+    __publicField(this, "pathId");
+  }
   ngOnInit() {
     this.pathId = "url(#" + UniqueComponentId() + ")";
   }
-  static ɵfac = /* @__PURE__ */ (() => {
-    let ɵFilterIcon_BaseFactory;
-    return function FilterIcon_Factory(__ngFactoryType__) {
-      return (ɵFilterIcon_BaseFactory || (ɵFilterIcon_BaseFactory = ɵɵgetInheritedFactory(_FilterIcon)))(__ngFactoryType__ || _FilterIcon);
-    };
-  })();
-  static ɵcmp = ɵɵdefineComponent({
-    type: _FilterIcon,
-    selectors: [["FilterIcon"]],
-    standalone: true,
-    features: [ɵɵInheritDefinitionFeature, ɵɵStandaloneFeature],
-    decls: 6,
-    vars: 7,
-    consts: [["width", "14", "height", "14", "viewBox", "0 0 14 14", "fill", "none", "xmlns", "http://www.w3.org/2000/svg"], ["d", "M8.64708 14H5.35296C5.18981 13.9979 5.03395 13.9321 4.91858 13.8167C4.8032 13.7014 4.73745 13.5455 4.73531 13.3824V7L0.329431 0.98C0.259794 0.889466 0.217389 0.780968 0.20718 0.667208C0.19697 0.553448 0.219379 0.439133 0.271783 0.337647C0.324282 0.236453 0.403423 0.151519 0.500663 0.0920138C0.597903 0.0325088 0.709548 0.000692754 0.823548 0H13.1765C13.2905 0.000692754 13.4021 0.0325088 13.4994 0.0920138C13.5966 0.151519 13.6758 0.236453 13.7283 0.337647C13.7807 0.439133 13.8031 0.553448 13.7929 0.667208C13.7826 0.780968 13.7402 0.889466 13.6706 0.98L9.26472 7V13.3824C9.26259 13.5455 9.19683 13.7014 9.08146 13.8167C8.96609 13.9321 8.81022 13.9979 8.64708 14ZM5.97061 12.7647H8.02943V6.79412C8.02878 6.66289 8.07229 6.53527 8.15296 6.43177L11.9412 1.23529H2.05884L5.86355 6.43177C5.94422 6.53527 5.98773 6.66289 5.98708 6.79412L5.97061 12.7647Z", "fill", "currentColor"], [3, "id"], ["width", "14", "height", "14", "fill", "white"]],
-    template: function FilterIcon_Template(rf, ctx) {
-      if (rf & 1) {
-        ɵɵnamespaceSVG();
-        ɵɵelementStart(0, "svg", 0)(1, "g");
-        ɵɵelement(2, "path", 1);
-        ɵɵelementEnd();
-        ɵɵelementStart(3, "defs")(4, "clipPath", 2);
-        ɵɵelement(5, "rect", 3);
-        ɵɵelementEnd()()();
-      }
-      if (rf & 2) {
-        ɵɵclassMap(ctx.getClassNames());
-        ɵɵattribute("aria-label", ctx.ariaLabel)("aria-hidden", ctx.ariaHidden)("role", ctx.role);
-        ɵɵadvance();
-        ɵɵattribute("clip-path", ctx.pathId);
-        ɵɵadvance(3);
-        ɵɵproperty("id", ctx.pathId);
-      }
-    },
-    encapsulation: 2
-  });
 };
+__publicField(_FilterIcon, "ɵfac", /* @__PURE__ */ (() => {
+  let ɵFilterIcon_BaseFactory;
+  return function FilterIcon_Factory(__ngFactoryType__) {
+    return (ɵFilterIcon_BaseFactory || (ɵFilterIcon_BaseFactory = ɵɵgetInheritedFactory(_FilterIcon)))(__ngFactoryType__ || _FilterIcon);
+  };
+})());
+__publicField(_FilterIcon, "ɵcmp", ɵɵdefineComponent({
+  type: _FilterIcon,
+  selectors: [["FilterIcon"]],
+  standalone: true,
+  features: [ɵɵInheritDefinitionFeature, ɵɵStandaloneFeature],
+  decls: 6,
+  vars: 7,
+  consts: [["width", "14", "height", "14", "viewBox", "0 0 14 14", "fill", "none", "xmlns", "http://www.w3.org/2000/svg"], ["d", "M8.64708 14H5.35296C5.18981 13.9979 5.03395 13.9321 4.91858 13.8167C4.8032 13.7014 4.73745 13.5455 4.73531 13.3824V7L0.329431 0.98C0.259794 0.889466 0.217389 0.780968 0.20718 0.667208C0.19697 0.553448 0.219379 0.439133 0.271783 0.337647C0.324282 0.236453 0.403423 0.151519 0.500663 0.0920138C0.597903 0.0325088 0.709548 0.000692754 0.823548 0H13.1765C13.2905 0.000692754 13.4021 0.0325088 13.4994 0.0920138C13.5966 0.151519 13.6758 0.236453 13.7283 0.337647C13.7807 0.439133 13.8031 0.553448 13.7929 0.667208C13.7826 0.780968 13.7402 0.889466 13.6706 0.98L9.26472 7V13.3824C9.26259 13.5455 9.19683 13.7014 9.08146 13.8167C8.96609 13.9321 8.81022 13.9979 8.64708 14ZM5.97061 12.7647H8.02943V6.79412C8.02878 6.66289 8.07229 6.53527 8.15296 6.43177L11.9412 1.23529H2.05884L5.86355 6.43177C5.94422 6.53527 5.98773 6.66289 5.98708 6.79412L5.97061 12.7647Z", "fill", "currentColor"], [3, "id"], ["width", "14", "height", "14", "fill", "white"]],
+  template: function FilterIcon_Template(rf, ctx) {
+    if (rf & 1) {
+      ɵɵnamespaceSVG();
+      ɵɵelementStart(0, "svg", 0)(1, "g");
+      ɵɵelement(2, "path", 1);
+      ɵɵelementEnd();
+      ɵɵelementStart(3, "defs")(4, "clipPath", 2);
+      ɵɵelement(5, "rect", 3);
+      ɵɵelementEnd()()();
+    }
+    if (rf & 2) {
+      ɵɵclassMap(ctx.getClassNames());
+      ɵɵattribute("aria-label", ctx.ariaLabel)("aria-hidden", ctx.ariaHidden)("role", ctx.role);
+      ɵɵadvance();
+      ɵɵattribute("clip-path", ctx.pathId);
+      ɵɵadvance(3);
+      ɵɵproperty("id", ctx.pathId);
+    }
+  },
+  encapsulation: 2
+}));
+var FilterIcon = _FilterIcon;
 (() => {
   (typeof ngDevMode === "undefined" || ngDevMode) && setClassMetadata(FilterIcon, [{
     type: Component,
@@ -246,67 +251,57 @@ var FilterIcon = class _FilterIcon extends BaseIcon {
       selector: "FilterIcon",
       standalone: true,
       imports: [BaseIcon],
-      template: `
-        <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg" [attr.aria-label]="ariaLabel" [attr.aria-hidden]="ariaHidden" [attr.role]="role" [class]="getClassNames()">
-            <g [attr.clip-path]="pathId">
-                <path
-                    d="M8.64708 14H5.35296C5.18981 13.9979 5.03395 13.9321 4.91858 13.8167C4.8032 13.7014 4.73745 13.5455 4.73531 13.3824V7L0.329431 0.98C0.259794 0.889466 0.217389 0.780968 0.20718 0.667208C0.19697 0.553448 0.219379 0.439133 0.271783 0.337647C0.324282 0.236453 0.403423 0.151519 0.500663 0.0920138C0.597903 0.0325088 0.709548 0.000692754 0.823548 0H13.1765C13.2905 0.000692754 13.4021 0.0325088 13.4994 0.0920138C13.5966 0.151519 13.6758 0.236453 13.7283 0.337647C13.7807 0.439133 13.8031 0.553448 13.7929 0.667208C13.7826 0.780968 13.7402 0.889466 13.6706 0.98L9.26472 7V13.3824C9.26259 13.5455 9.19683 13.7014 9.08146 13.8167C8.96609 13.9321 8.81022 13.9979 8.64708 14ZM5.97061 12.7647H8.02943V6.79412C8.02878 6.66289 8.07229 6.53527 8.15296 6.43177L11.9412 1.23529H2.05884L5.86355 6.43177C5.94422 6.53527 5.98773 6.66289 5.98708 6.79412L5.97061 12.7647Z"
-                    fill="currentColor"
-                />
-            </g>
-            <defs>
-                <clipPath [id]="pathId">
-                    <rect width="14" height="14" fill="white" />
-                </clipPath>
-            </defs>
-        </svg>
-    `
+      template: '\n        <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg" [attr.aria-label]="ariaLabel" [attr.aria-hidden]="ariaHidden" [attr.role]="role" [class]="getClassNames()">\n            <g [attr.clip-path]="pathId">\n                <path\n                    d="M8.64708 14H5.35296C5.18981 13.9979 5.03395 13.9321 4.91858 13.8167C4.8032 13.7014 4.73745 13.5455 4.73531 13.3824V7L0.329431 0.98C0.259794 0.889466 0.217389 0.780968 0.20718 0.667208C0.19697 0.553448 0.219379 0.439133 0.271783 0.337647C0.324282 0.236453 0.403423 0.151519 0.500663 0.0920138C0.597903 0.0325088 0.709548 0.000692754 0.823548 0H13.1765C13.2905 0.000692754 13.4021 0.0325088 13.4994 0.0920138C13.5966 0.151519 13.6758 0.236453 13.7283 0.337647C13.7807 0.439133 13.8031 0.553448 13.7929 0.667208C13.7826 0.780968 13.7402 0.889466 13.6706 0.98L9.26472 7V13.3824C9.26259 13.5455 9.19683 13.7014 9.08146 13.8167C8.96609 13.9321 8.81022 13.9979 8.64708 14ZM5.97061 12.7647H8.02943V6.79412C8.02878 6.66289 8.07229 6.53527 8.15296 6.43177L11.9412 1.23529H2.05884L5.86355 6.43177C5.94422 6.53527 5.98773 6.66289 5.98708 6.79412L5.97061 12.7647Z"\n                    fill="currentColor"\n                />\n            </g>\n            <defs>\n                <clipPath [id]="pathId">\n                    <rect width="14" height="14" fill="white" />\n                </clipPath>\n            </defs>\n        </svg>\n    '
     }]
   }], null, null);
 })();
 
 // node_modules/primeng/fesm2022/primeng-icons-filterslash.mjs
-var FilterSlashIcon = class _FilterSlashIcon extends BaseIcon {
-  pathId;
+var _FilterSlashIcon = class _FilterSlashIcon extends BaseIcon {
+  constructor() {
+    super(...arguments);
+    __publicField(this, "pathId");
+  }
   ngOnInit() {
     this.pathId = "url(#" + UniqueComponentId() + ")";
   }
-  static ɵfac = /* @__PURE__ */ (() => {
-    let ɵFilterSlashIcon_BaseFactory;
-    return function FilterSlashIcon_Factory(__ngFactoryType__) {
-      return (ɵFilterSlashIcon_BaseFactory || (ɵFilterSlashIcon_BaseFactory = ɵɵgetInheritedFactory(_FilterSlashIcon)))(__ngFactoryType__ || _FilterSlashIcon);
-    };
-  })();
-  static ɵcmp = ɵɵdefineComponent({
-    type: _FilterSlashIcon,
-    selectors: [["FilterSlashIcon"]],
-    standalone: true,
-    features: [ɵɵInheritDefinitionFeature, ɵɵStandaloneFeature],
-    decls: 6,
-    vars: 7,
-    consts: [["width", "14", "height", "14", "viewBox", "0 0 14 14", "fill", "none", "xmlns", "http://www.w3.org/2000/svg"], ["fill-rule", "evenodd", "clip-rule", "evenodd", "d", "M13.4994 0.0920138C13.5967 0.151519 13.6758 0.236453 13.7283 0.337647C13.7807 0.439133 13.8031 0.553448 13.7929 0.667208C13.7827 0.780968 13.7403 0.889466 13.6707 0.98L11.406 4.06823C11.3099 4.19928 11.1656 4.28679 11.005 4.3115C10.8444 4.33621 10.6805 4.2961 10.5495 4.2C10.4184 4.1039 10.3309 3.95967 10.3062 3.79905C10.2815 3.63843 10.3216 3.47458 10.4177 3.34353L11.9412 1.23529H7.41184C7.24803 1.23529 7.09093 1.17022 6.97509 1.05439C6.85926 0.938558 6.79419 0.781457 6.79419 0.617647C6.79419 0.453837 6.85926 0.296736 6.97509 0.180905C7.09093 0.0650733 7.24803 0 7.41184 0H13.1765C13.2905 0.000692754 13.4022 0.0325088 13.4994 0.0920138ZM4.20008 0.181168H4.24126L13.2013 9.03411C13.3169 9.14992 13.3819 9.3069 13.3819 9.47058C13.3819 9.63426 13.3169 9.79124 13.2013 9.90705C13.1445 9.96517 13.0766 10.0112 13.0016 10.0423C12.9266 10.0735 12.846 10.0891 12.7648 10.0882C12.6836 10.0886 12.6032 10.0728 12.5283 10.0417C12.4533 10.0106 12.3853 9.96479 12.3283 9.90705L9.3142 6.92587L9.26479 6.99999V13.3823C9.26265 13.5455 9.19689 13.7014 9.08152 13.8167C8.96615 13.9321 8.81029 13.9979 8.64714 14H5.35302C5.18987 13.9979 5.03401 13.9321 4.91864 13.8167C4.80327 13.7014 4.73751 13.5455 4.73537 13.3823V6.99999L0.329492 1.02117C0.259855 0.930634 0.21745 0.822137 0.207241 0.708376C0.197031 0.594616 0.21944 0.480301 0.271844 0.378815C0.324343 0.277621 0.403484 0.192687 0.500724 0.133182C0.597964 0.073677 0.709609 0.041861 0.823609 0.0411682H3.86243C3.92448 0.0461551 3.9855 0.060022 4.04361 0.0823446C4.10037 0.10735 4.15311 0.140655 4.20008 0.181168ZM8.02949 6.79411C8.02884 6.66289 8.07235 6.53526 8.15302 6.43176L8.42478 6.05293L3.55773 1.23529H2.0589L5.84714 6.43176C5.92781 6.53526 5.97132 6.66289 5.97067 6.79411V12.7647H8.02949V6.79411Z", "fill", "currentColor"], [3, "id"], ["width", "14", "height", "14", "fill", "white"]],
-    template: function FilterSlashIcon_Template(rf, ctx) {
-      if (rf & 1) {
-        ɵɵnamespaceSVG();
-        ɵɵelementStart(0, "svg", 0)(1, "g");
-        ɵɵelement(2, "path", 1);
-        ɵɵelementEnd();
-        ɵɵelementStart(3, "defs")(4, "clipPath", 2);
-        ɵɵelement(5, "rect", 3);
-        ɵɵelementEnd()()();
-      }
-      if (rf & 2) {
-        ɵɵclassMap(ctx.getClassNames());
-        ɵɵattribute("aria-label", ctx.ariaLabel)("aria-hidden", ctx.ariaHidden)("role", ctx.role);
-        ɵɵadvance();
-        ɵɵattribute("clip-path", ctx.pathId);
-        ɵɵadvance(3);
-        ɵɵproperty("id", ctx.pathId);
-      }
-    },
-    encapsulation: 2
-  });
 };
+__publicField(_FilterSlashIcon, "ɵfac", /* @__PURE__ */ (() => {
+  let ɵFilterSlashIcon_BaseFactory;
+  return function FilterSlashIcon_Factory(__ngFactoryType__) {
+    return (ɵFilterSlashIcon_BaseFactory || (ɵFilterSlashIcon_BaseFactory = ɵɵgetInheritedFactory(_FilterSlashIcon)))(__ngFactoryType__ || _FilterSlashIcon);
+  };
+})());
+__publicField(_FilterSlashIcon, "ɵcmp", ɵɵdefineComponent({
+  type: _FilterSlashIcon,
+  selectors: [["FilterSlashIcon"]],
+  standalone: true,
+  features: [ɵɵInheritDefinitionFeature, ɵɵStandaloneFeature],
+  decls: 6,
+  vars: 7,
+  consts: [["width", "14", "height", "14", "viewBox", "0 0 14 14", "fill", "none", "xmlns", "http://www.w3.org/2000/svg"], ["fill-rule", "evenodd", "clip-rule", "evenodd", "d", "M13.4994 0.0920138C13.5967 0.151519 13.6758 0.236453 13.7283 0.337647C13.7807 0.439133 13.8031 0.553448 13.7929 0.667208C13.7827 0.780968 13.7403 0.889466 13.6707 0.98L11.406 4.06823C11.3099 4.19928 11.1656 4.28679 11.005 4.3115C10.8444 4.33621 10.6805 4.2961 10.5495 4.2C10.4184 4.1039 10.3309 3.95967 10.3062 3.79905C10.2815 3.63843 10.3216 3.47458 10.4177 3.34353L11.9412 1.23529H7.41184C7.24803 1.23529 7.09093 1.17022 6.97509 1.05439C6.85926 0.938558 6.79419 0.781457 6.79419 0.617647C6.79419 0.453837 6.85926 0.296736 6.97509 0.180905C7.09093 0.0650733 7.24803 0 7.41184 0H13.1765C13.2905 0.000692754 13.4022 0.0325088 13.4994 0.0920138ZM4.20008 0.181168H4.24126L13.2013 9.03411C13.3169 9.14992 13.3819 9.3069 13.3819 9.47058C13.3819 9.63426 13.3169 9.79124 13.2013 9.90705C13.1445 9.96517 13.0766 10.0112 13.0016 10.0423C12.9266 10.0735 12.846 10.0891 12.7648 10.0882C12.6836 10.0886 12.6032 10.0728 12.5283 10.0417C12.4533 10.0106 12.3853 9.96479 12.3283 9.90705L9.3142 6.92587L9.26479 6.99999V13.3823C9.26265 13.5455 9.19689 13.7014 9.08152 13.8167C8.96615 13.9321 8.81029 13.9979 8.64714 14H5.35302C5.18987 13.9979 5.03401 13.9321 4.91864 13.8167C4.80327 13.7014 4.73751 13.5455 4.73537 13.3823V6.99999L0.329492 1.02117C0.259855 0.930634 0.21745 0.822137 0.207241 0.708376C0.197031 0.594616 0.21944 0.480301 0.271844 0.378815C0.324343 0.277621 0.403484 0.192687 0.500724 0.133182C0.597964 0.073677 0.709609 0.041861 0.823609 0.0411682H3.86243C3.92448 0.0461551 3.9855 0.060022 4.04361 0.0823446C4.10037 0.10735 4.15311 0.140655 4.20008 0.181168ZM8.02949 6.79411C8.02884 6.66289 8.07235 6.53526 8.15302 6.43176L8.42478 6.05293L3.55773 1.23529H2.0589L5.84714 6.43176C5.92781 6.53526 5.97132 6.66289 5.97067 6.79411V12.7647H8.02949V6.79411Z", "fill", "currentColor"], [3, "id"], ["width", "14", "height", "14", "fill", "white"]],
+  template: function FilterSlashIcon_Template(rf, ctx) {
+    if (rf & 1) {
+      ɵɵnamespaceSVG();
+      ɵɵelementStart(0, "svg", 0)(1, "g");
+      ɵɵelement(2, "path", 1);
+      ɵɵelementEnd();
+      ɵɵelementStart(3, "defs")(4, "clipPath", 2);
+      ɵɵelement(5, "rect", 3);
+      ɵɵelementEnd()()();
+    }
+    if (rf & 2) {
+      ɵɵclassMap(ctx.getClassNames());
+      ɵɵattribute("aria-label", ctx.ariaLabel)("aria-hidden", ctx.ariaHidden)("role", ctx.role);
+      ɵɵadvance();
+      ɵɵattribute("clip-path", ctx.pathId);
+      ɵɵadvance(3);
+      ɵɵproperty("id", ctx.pathId);
+    }
+  },
+  encapsulation: 2
+}));
+var FilterSlashIcon = _FilterSlashIcon;
 (() => {
   (typeof ngDevMode === "undefined" || ngDevMode) && setClassMetadata(FilterSlashIcon, [{
     type: Component,
@@ -314,69 +309,57 @@ var FilterSlashIcon = class _FilterSlashIcon extends BaseIcon {
       selector: "FilterSlashIcon",
       standalone: true,
       imports: [BaseIcon],
-      template: `
-        <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg" [attr.aria-label]="ariaLabel" [attr.aria-hidden]="ariaHidden" [attr.role]="role" [class]="getClassNames()">
-            <g [attr.clip-path]="pathId">
-                <path
-                    fill-rule="evenodd"
-                    clip-rule="evenodd"
-                    d="M13.4994 0.0920138C13.5967 0.151519 13.6758 0.236453 13.7283 0.337647C13.7807 0.439133 13.8031 0.553448 13.7929 0.667208C13.7827 0.780968 13.7403 0.889466 13.6707 0.98L11.406 4.06823C11.3099 4.19928 11.1656 4.28679 11.005 4.3115C10.8444 4.33621 10.6805 4.2961 10.5495 4.2C10.4184 4.1039 10.3309 3.95967 10.3062 3.79905C10.2815 3.63843 10.3216 3.47458 10.4177 3.34353L11.9412 1.23529H7.41184C7.24803 1.23529 7.09093 1.17022 6.97509 1.05439C6.85926 0.938558 6.79419 0.781457 6.79419 0.617647C6.79419 0.453837 6.85926 0.296736 6.97509 0.180905C7.09093 0.0650733 7.24803 0 7.41184 0H13.1765C13.2905 0.000692754 13.4022 0.0325088 13.4994 0.0920138ZM4.20008 0.181168H4.24126L13.2013 9.03411C13.3169 9.14992 13.3819 9.3069 13.3819 9.47058C13.3819 9.63426 13.3169 9.79124 13.2013 9.90705C13.1445 9.96517 13.0766 10.0112 13.0016 10.0423C12.9266 10.0735 12.846 10.0891 12.7648 10.0882C12.6836 10.0886 12.6032 10.0728 12.5283 10.0417C12.4533 10.0106 12.3853 9.96479 12.3283 9.90705L9.3142 6.92587L9.26479 6.99999V13.3823C9.26265 13.5455 9.19689 13.7014 9.08152 13.8167C8.96615 13.9321 8.81029 13.9979 8.64714 14H5.35302C5.18987 13.9979 5.03401 13.9321 4.91864 13.8167C4.80327 13.7014 4.73751 13.5455 4.73537 13.3823V6.99999L0.329492 1.02117C0.259855 0.930634 0.21745 0.822137 0.207241 0.708376C0.197031 0.594616 0.21944 0.480301 0.271844 0.378815C0.324343 0.277621 0.403484 0.192687 0.500724 0.133182C0.597964 0.073677 0.709609 0.041861 0.823609 0.0411682H3.86243C3.92448 0.0461551 3.9855 0.060022 4.04361 0.0823446C4.10037 0.10735 4.15311 0.140655 4.20008 0.181168ZM8.02949 6.79411C8.02884 6.66289 8.07235 6.53526 8.15302 6.43176L8.42478 6.05293L3.55773 1.23529H2.0589L5.84714 6.43176C5.92781 6.53526 5.97132 6.66289 5.97067 6.79411V12.7647H8.02949V6.79411Z"
-                    fill="currentColor"
-                />
-            </g>
-            <defs>
-                <clipPath [id]="pathId">
-                    <rect width="14" height="14" fill="white" />
-                </clipPath>
-            </defs>
-        </svg>
-    `
+      template: '\n        <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg" [attr.aria-label]="ariaLabel" [attr.aria-hidden]="ariaHidden" [attr.role]="role" [class]="getClassNames()">\n            <g [attr.clip-path]="pathId">\n                <path\n                    fill-rule="evenodd"\n                    clip-rule="evenodd"\n                    d="M13.4994 0.0920138C13.5967 0.151519 13.6758 0.236453 13.7283 0.337647C13.7807 0.439133 13.8031 0.553448 13.7929 0.667208C13.7827 0.780968 13.7403 0.889466 13.6707 0.98L11.406 4.06823C11.3099 4.19928 11.1656 4.28679 11.005 4.3115C10.8444 4.33621 10.6805 4.2961 10.5495 4.2C10.4184 4.1039 10.3309 3.95967 10.3062 3.79905C10.2815 3.63843 10.3216 3.47458 10.4177 3.34353L11.9412 1.23529H7.41184C7.24803 1.23529 7.09093 1.17022 6.97509 1.05439C6.85926 0.938558 6.79419 0.781457 6.79419 0.617647C6.79419 0.453837 6.85926 0.296736 6.97509 0.180905C7.09093 0.0650733 7.24803 0 7.41184 0H13.1765C13.2905 0.000692754 13.4022 0.0325088 13.4994 0.0920138ZM4.20008 0.181168H4.24126L13.2013 9.03411C13.3169 9.14992 13.3819 9.3069 13.3819 9.47058C13.3819 9.63426 13.3169 9.79124 13.2013 9.90705C13.1445 9.96517 13.0766 10.0112 13.0016 10.0423C12.9266 10.0735 12.846 10.0891 12.7648 10.0882C12.6836 10.0886 12.6032 10.0728 12.5283 10.0417C12.4533 10.0106 12.3853 9.96479 12.3283 9.90705L9.3142 6.92587L9.26479 6.99999V13.3823C9.26265 13.5455 9.19689 13.7014 9.08152 13.8167C8.96615 13.9321 8.81029 13.9979 8.64714 14H5.35302C5.18987 13.9979 5.03401 13.9321 4.91864 13.8167C4.80327 13.7014 4.73751 13.5455 4.73537 13.3823V6.99999L0.329492 1.02117C0.259855 0.930634 0.21745 0.822137 0.207241 0.708376C0.197031 0.594616 0.21944 0.480301 0.271844 0.378815C0.324343 0.277621 0.403484 0.192687 0.500724 0.133182C0.597964 0.073677 0.709609 0.041861 0.823609 0.0411682H3.86243C3.92448 0.0461551 3.9855 0.060022 4.04361 0.0823446C4.10037 0.10735 4.15311 0.140655 4.20008 0.181168ZM8.02949 6.79411C8.02884 6.66289 8.07235 6.53526 8.15302 6.43176L8.42478 6.05293L3.55773 1.23529H2.0589L5.84714 6.43176C5.92781 6.53526 5.97132 6.66289 5.97067 6.79411V12.7647H8.02949V6.79411Z"\n                    fill="currentColor"\n                />\n            </g>\n            <defs>\n                <clipPath [id]="pathId">\n                    <rect width="14" height="14" fill="white" />\n                </clipPath>\n            </defs>\n        </svg>\n    '
     }]
   }], null, null);
 })();
 
 // node_modules/primeng/fesm2022/primeng-icons-trash.mjs
-var TrashIcon = class _TrashIcon extends BaseIcon {
-  pathId;
+var _TrashIcon = class _TrashIcon extends BaseIcon {
+  constructor() {
+    super(...arguments);
+    __publicField(this, "pathId");
+  }
   ngOnInit() {
     this.pathId = "url(#" + UniqueComponentId() + ")";
   }
-  static ɵfac = /* @__PURE__ */ (() => {
-    let ɵTrashIcon_BaseFactory;
-    return function TrashIcon_Factory(__ngFactoryType__) {
-      return (ɵTrashIcon_BaseFactory || (ɵTrashIcon_BaseFactory = ɵɵgetInheritedFactory(_TrashIcon)))(__ngFactoryType__ || _TrashIcon);
-    };
-  })();
-  static ɵcmp = ɵɵdefineComponent({
-    type: _TrashIcon,
-    selectors: [["TrashIcon"]],
-    standalone: true,
-    features: [ɵɵInheritDefinitionFeature, ɵɵStandaloneFeature],
-    decls: 6,
-    vars: 7,
-    consts: [["width", "14", "height", "14", "viewBox", "0 0 14 14", "fill", "none", "xmlns", "http://www.w3.org/2000/svg"], ["fill-rule", "evenodd", "clip-rule", "evenodd", "d", "M3.44802 13.9955H10.552C10.8056 14.0129 11.06 13.9797 11.3006 13.898C11.5412 13.8163 11.7632 13.6877 11.9537 13.5196C12.1442 13.3515 12.2995 13.1473 12.4104 12.9188C12.5213 12.6903 12.5858 12.442 12.6 12.1884V4.36041H13.4C13.5591 4.36041 13.7117 4.29722 13.8243 4.18476C13.9368 4.07229 14 3.91976 14 3.76071C14 3.60166 13.9368 3.44912 13.8243 3.33666C13.7117 3.22419 13.5591 3.16101 13.4 3.16101H12.0537C12.0203 3.1557 11.9863 3.15299 11.952 3.15299C11.9178 3.15299 11.8838 3.1557 11.8503 3.16101H11.2285C11.2421 3.10893 11.2487 3.05513 11.248 3.00106V1.80966C11.2171 1.30262 10.9871 0.828306 10.608 0.48989C10.229 0.151475 9.73159 -0.0236625 9.22402 0.00257442H4.77602C4.27251 -0.0171866 3.78126 0.160868 3.40746 0.498617C3.03365 0.836366 2.807 1.30697 2.77602 1.80966V3.00106C2.77602 3.0556 2.78346 3.10936 2.79776 3.16101H0.6C0.521207 3.16101 0.443185 3.17652 0.37039 3.20666C0.297595 3.2368 0.231451 3.28097 0.175736 3.33666C0.120021 3.39235 0.0758251 3.45846 0.0456722 3.53121C0.0155194 3.60397 0 3.68196 0 3.76071C0 3.83946 0.0155194 3.91744 0.0456722 3.9902C0.0758251 4.06296 0.120021 4.12907 0.175736 4.18476C0.231451 4.24045 0.297595 4.28462 0.37039 4.31476C0.443185 4.3449 0.521207 4.36041 0.6 4.36041H1.40002V12.1884C1.41426 12.442 1.47871 12.6903 1.58965 12.9188C1.7006 13.1473 1.85582 13.3515 2.04633 13.5196C2.23683 13.6877 2.45882 13.8163 2.69944 13.898C2.94005 13.9797 3.1945 14.0129 3.44802 13.9955ZM2.60002 4.36041H11.304V12.1884C11.304 12.5163 10.952 12.7961 10.504 12.7961H3.40002C2.97602 12.7961 2.60002 12.5163 2.60002 12.1884V4.36041ZM3.95429 3.16101C3.96859 3.10936 3.97602 3.0556 3.97602 3.00106V1.80966C3.97602 1.48183 4.33602 1.20197 4.77602 1.20197H9.24802C9.66403 1.20197 10.048 1.48183 10.048 1.80966V3.00106C10.0473 3.05515 10.054 3.10896 10.0678 3.16101H3.95429ZM5.57571 10.997C5.41731 10.995 5.26597 10.9311 5.15395 10.8191C5.04193 10.7071 4.97808 10.5558 4.97601 10.3973V6.77517C4.97601 6.61612 5.0392 6.46359 5.15166 6.35112C5.26413 6.23866 5.41666 6.17548 5.57571 6.17548C5.73476 6.17548 5.8873 6.23866 5.99976 6.35112C6.11223 6.46359 6.17541 6.61612 6.17541 6.77517V10.3894C6.17647 10.4688 6.16174 10.5476 6.13208 10.6213C6.10241 10.695 6.05841 10.762 6.00261 10.8186C5.94682 10.8751 5.88035 10.92 5.80707 10.9506C5.73378 10.9813 5.65514 10.9971 5.57571 10.997ZM7.99968 10.8214C8.11215 10.9339 8.26468 10.997 8.42373 10.997C8.58351 10.9949 8.73604 10.93 8.84828 10.8163C8.96052 10.7025 9.02345 10.5491 9.02343 10.3894V6.77517C9.02343 6.61612 8.96025 6.46359 8.84778 6.35112C8.73532 6.23866 8.58278 6.17548 8.42373 6.17548C8.26468 6.17548 8.11215 6.23866 7.99968 6.35112C7.88722 6.46359 7.82404 6.61612 7.82404 6.77517V10.3973C7.82404 10.5564 7.88722 10.7089 7.99968 10.8214Z", "fill", "currentColor"], [3, "id"], ["width", "14", "height", "14", "fill", "white"]],
-    template: function TrashIcon_Template(rf, ctx) {
-      if (rf & 1) {
-        ɵɵnamespaceSVG();
-        ɵɵelementStart(0, "svg", 0)(1, "g");
-        ɵɵelement(2, "path", 1);
-        ɵɵelementEnd();
-        ɵɵelementStart(3, "defs")(4, "clipPath", 2);
-        ɵɵelement(5, "rect", 3);
-        ɵɵelementEnd()()();
-      }
-      if (rf & 2) {
-        ɵɵclassMap(ctx.getClassNames());
-        ɵɵattribute("aria-label", ctx.ariaLabel)("aria-hidden", ctx.ariaHidden)("role", ctx.role);
-        ɵɵadvance();
-        ɵɵattribute("clip-path", ctx.pathId);
-        ɵɵadvance(3);
-        ɵɵproperty("id", ctx.pathId);
-      }
-    },
-    encapsulation: 2
-  });
 };
+__publicField(_TrashIcon, "ɵfac", /* @__PURE__ */ (() => {
+  let ɵTrashIcon_BaseFactory;
+  return function TrashIcon_Factory(__ngFactoryType__) {
+    return (ɵTrashIcon_BaseFactory || (ɵTrashIcon_BaseFactory = ɵɵgetInheritedFactory(_TrashIcon)))(__ngFactoryType__ || _TrashIcon);
+  };
+})());
+__publicField(_TrashIcon, "ɵcmp", ɵɵdefineComponent({
+  type: _TrashIcon,
+  selectors: [["TrashIcon"]],
+  standalone: true,
+  features: [ɵɵInheritDefinitionFeature, ɵɵStandaloneFeature],
+  decls: 6,
+  vars: 7,
+  consts: [["width", "14", "height", "14", "viewBox", "0 0 14 14", "fill", "none", "xmlns", "http://www.w3.org/2000/svg"], ["fill-rule", "evenodd", "clip-rule", "evenodd", "d", "M3.44802 13.9955H10.552C10.8056 14.0129 11.06 13.9797 11.3006 13.898C11.5412 13.8163 11.7632 13.6877 11.9537 13.5196C12.1442 13.3515 12.2995 13.1473 12.4104 12.9188C12.5213 12.6903 12.5858 12.442 12.6 12.1884V4.36041H13.4C13.5591 4.36041 13.7117 4.29722 13.8243 4.18476C13.9368 4.07229 14 3.91976 14 3.76071C14 3.60166 13.9368 3.44912 13.8243 3.33666C13.7117 3.22419 13.5591 3.16101 13.4 3.16101H12.0537C12.0203 3.1557 11.9863 3.15299 11.952 3.15299C11.9178 3.15299 11.8838 3.1557 11.8503 3.16101H11.2285C11.2421 3.10893 11.2487 3.05513 11.248 3.00106V1.80966C11.2171 1.30262 10.9871 0.828306 10.608 0.48989C10.229 0.151475 9.73159 -0.0236625 9.22402 0.00257442H4.77602C4.27251 -0.0171866 3.78126 0.160868 3.40746 0.498617C3.03365 0.836366 2.807 1.30697 2.77602 1.80966V3.00106C2.77602 3.0556 2.78346 3.10936 2.79776 3.16101H0.6C0.521207 3.16101 0.443185 3.17652 0.37039 3.20666C0.297595 3.2368 0.231451 3.28097 0.175736 3.33666C0.120021 3.39235 0.0758251 3.45846 0.0456722 3.53121C0.0155194 3.60397 0 3.68196 0 3.76071C0 3.83946 0.0155194 3.91744 0.0456722 3.9902C0.0758251 4.06296 0.120021 4.12907 0.175736 4.18476C0.231451 4.24045 0.297595 4.28462 0.37039 4.31476C0.443185 4.3449 0.521207 4.36041 0.6 4.36041H1.40002V12.1884C1.41426 12.442 1.47871 12.6903 1.58965 12.9188C1.7006 13.1473 1.85582 13.3515 2.04633 13.5196C2.23683 13.6877 2.45882 13.8163 2.69944 13.898C2.94005 13.9797 3.1945 14.0129 3.44802 13.9955ZM2.60002 4.36041H11.304V12.1884C11.304 12.5163 10.952 12.7961 10.504 12.7961H3.40002C2.97602 12.7961 2.60002 12.5163 2.60002 12.1884V4.36041ZM3.95429 3.16101C3.96859 3.10936 3.97602 3.0556 3.97602 3.00106V1.80966C3.97602 1.48183 4.33602 1.20197 4.77602 1.20197H9.24802C9.66403 1.20197 10.048 1.48183 10.048 1.80966V3.00106C10.0473 3.05515 10.054 3.10896 10.0678 3.16101H3.95429ZM5.57571 10.997C5.41731 10.995 5.26597 10.9311 5.15395 10.8191C5.04193 10.7071 4.97808 10.5558 4.97601 10.3973V6.77517C4.97601 6.61612 5.0392 6.46359 5.15166 6.35112C5.26413 6.23866 5.41666 6.17548 5.57571 6.17548C5.73476 6.17548 5.8873 6.23866 5.99976 6.35112C6.11223 6.46359 6.17541 6.61612 6.17541 6.77517V10.3894C6.17647 10.4688 6.16174 10.5476 6.13208 10.6213C6.10241 10.695 6.05841 10.762 6.00261 10.8186C5.94682 10.8751 5.88035 10.92 5.80707 10.9506C5.73378 10.9813 5.65514 10.9971 5.57571 10.997ZM7.99968 10.8214C8.11215 10.9339 8.26468 10.997 8.42373 10.997C8.58351 10.9949 8.73604 10.93 8.84828 10.8163C8.96052 10.7025 9.02345 10.5491 9.02343 10.3894V6.77517C9.02343 6.61612 8.96025 6.46359 8.84778 6.35112C8.73532 6.23866 8.58278 6.17548 8.42373 6.17548C8.26468 6.17548 8.11215 6.23866 7.99968 6.35112C7.88722 6.46359 7.82404 6.61612 7.82404 6.77517V10.3973C7.82404 10.5564 7.88722 10.7089 7.99968 10.8214Z", "fill", "currentColor"], [3, "id"], ["width", "14", "height", "14", "fill", "white"]],
+  template: function TrashIcon_Template(rf, ctx) {
+    if (rf & 1) {
+      ɵɵnamespaceSVG();
+      ɵɵelementStart(0, "svg", 0)(1, "g");
+      ɵɵelement(2, "path", 1);
+      ɵɵelementEnd();
+      ɵɵelementStart(3, "defs")(4, "clipPath", 2);
+      ɵɵelement(5, "rect", 3);
+      ɵɵelementEnd()()();
+    }
+    if (rf & 2) {
+      ɵɵclassMap(ctx.getClassNames());
+      ɵɵattribute("aria-label", ctx.ariaLabel)("aria-hidden", ctx.ariaHidden)("role", ctx.role);
+      ɵɵadvance();
+      ɵɵattribute("clip-path", ctx.pathId);
+      ɵɵadvance(3);
+      ɵɵproperty("id", ctx.pathId);
+    }
+  },
+  encapsulation: 2
+}));
+var TrashIcon = _TrashIcon;
 (() => {
   (typeof ngDevMode === "undefined" || ngDevMode) && setClassMetadata(TrashIcon, [{
     type: Component,
@@ -384,23 +367,7 @@ var TrashIcon = class _TrashIcon extends BaseIcon {
       selector: "TrashIcon",
       standalone: true,
       imports: [BaseIcon],
-      template: `
-        <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg" [attr.aria-label]="ariaLabel" [attr.aria-hidden]="ariaHidden" [attr.role]="role" [class]="getClassNames()">
-            <g [attr.clip-path]="pathId">
-                <path
-                    fill-rule="evenodd"
-                    clip-rule="evenodd"
-                    d="M3.44802 13.9955H10.552C10.8056 14.0129 11.06 13.9797 11.3006 13.898C11.5412 13.8163 11.7632 13.6877 11.9537 13.5196C12.1442 13.3515 12.2995 13.1473 12.4104 12.9188C12.5213 12.6903 12.5858 12.442 12.6 12.1884V4.36041H13.4C13.5591 4.36041 13.7117 4.29722 13.8243 4.18476C13.9368 4.07229 14 3.91976 14 3.76071C14 3.60166 13.9368 3.44912 13.8243 3.33666C13.7117 3.22419 13.5591 3.16101 13.4 3.16101H12.0537C12.0203 3.1557 11.9863 3.15299 11.952 3.15299C11.9178 3.15299 11.8838 3.1557 11.8503 3.16101H11.2285C11.2421 3.10893 11.2487 3.05513 11.248 3.00106V1.80966C11.2171 1.30262 10.9871 0.828306 10.608 0.48989C10.229 0.151475 9.73159 -0.0236625 9.22402 0.00257442H4.77602C4.27251 -0.0171866 3.78126 0.160868 3.40746 0.498617C3.03365 0.836366 2.807 1.30697 2.77602 1.80966V3.00106C2.77602 3.0556 2.78346 3.10936 2.79776 3.16101H0.6C0.521207 3.16101 0.443185 3.17652 0.37039 3.20666C0.297595 3.2368 0.231451 3.28097 0.175736 3.33666C0.120021 3.39235 0.0758251 3.45846 0.0456722 3.53121C0.0155194 3.60397 0 3.68196 0 3.76071C0 3.83946 0.0155194 3.91744 0.0456722 3.9902C0.0758251 4.06296 0.120021 4.12907 0.175736 4.18476C0.231451 4.24045 0.297595 4.28462 0.37039 4.31476C0.443185 4.3449 0.521207 4.36041 0.6 4.36041H1.40002V12.1884C1.41426 12.442 1.47871 12.6903 1.58965 12.9188C1.7006 13.1473 1.85582 13.3515 2.04633 13.5196C2.23683 13.6877 2.45882 13.8163 2.69944 13.898C2.94005 13.9797 3.1945 14.0129 3.44802 13.9955ZM2.60002 4.36041H11.304V12.1884C11.304 12.5163 10.952 12.7961 10.504 12.7961H3.40002C2.97602 12.7961 2.60002 12.5163 2.60002 12.1884V4.36041ZM3.95429 3.16101C3.96859 3.10936 3.97602 3.0556 3.97602 3.00106V1.80966C3.97602 1.48183 4.33602 1.20197 4.77602 1.20197H9.24802C9.66403 1.20197 10.048 1.48183 10.048 1.80966V3.00106C10.0473 3.05515 10.054 3.10896 10.0678 3.16101H3.95429ZM5.57571 10.997C5.41731 10.995 5.26597 10.9311 5.15395 10.8191C5.04193 10.7071 4.97808 10.5558 4.97601 10.3973V6.77517C4.97601 6.61612 5.0392 6.46359 5.15166 6.35112C5.26413 6.23866 5.41666 6.17548 5.57571 6.17548C5.73476 6.17548 5.8873 6.23866 5.99976 6.35112C6.11223 6.46359 6.17541 6.61612 6.17541 6.77517V10.3894C6.17647 10.4688 6.16174 10.5476 6.13208 10.6213C6.10241 10.695 6.05841 10.762 6.00261 10.8186C5.94682 10.8751 5.88035 10.92 5.80707 10.9506C5.73378 10.9813 5.65514 10.9971 5.57571 10.997ZM7.99968 10.8214C8.11215 10.9339 8.26468 10.997 8.42373 10.997C8.58351 10.9949 8.73604 10.93 8.84828 10.8163C8.96052 10.7025 9.02345 10.5491 9.02343 10.3894V6.77517C9.02343 6.61612 8.96025 6.46359 8.84778 6.35112C8.73532 6.23866 8.58278 6.17548 8.42373 6.17548C8.26468 6.17548 8.11215 6.23866 7.99968 6.35112C7.88722 6.46359 7.82404 6.61612 7.82404 6.77517V10.3973C7.82404 10.5564 7.88722 10.7089 7.99968 10.8214Z"
-                    fill="currentColor"
-                />
-            </g>
-            <defs>
-                <clipPath [id]="pathId">
-                    <rect width="14" height="14" fill="white" />
-                </clipPath>
-            </defs>
-        </svg>
-    `
+      template: '\n        <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg" [attr.aria-label]="ariaLabel" [attr.aria-hidden]="ariaHidden" [attr.role]="role" [class]="getClassNames()">\n            <g [attr.clip-path]="pathId">\n                <path\n                    fill-rule="evenodd"\n                    clip-rule="evenodd"\n                    d="M3.44802 13.9955H10.552C10.8056 14.0129 11.06 13.9797 11.3006 13.898C11.5412 13.8163 11.7632 13.6877 11.9537 13.5196C12.1442 13.3515 12.2995 13.1473 12.4104 12.9188C12.5213 12.6903 12.5858 12.442 12.6 12.1884V4.36041H13.4C13.5591 4.36041 13.7117 4.29722 13.8243 4.18476C13.9368 4.07229 14 3.91976 14 3.76071C14 3.60166 13.9368 3.44912 13.8243 3.33666C13.7117 3.22419 13.5591 3.16101 13.4 3.16101H12.0537C12.0203 3.1557 11.9863 3.15299 11.952 3.15299C11.9178 3.15299 11.8838 3.1557 11.8503 3.16101H11.2285C11.2421 3.10893 11.2487 3.05513 11.248 3.00106V1.80966C11.2171 1.30262 10.9871 0.828306 10.608 0.48989C10.229 0.151475 9.73159 -0.0236625 9.22402 0.00257442H4.77602C4.27251 -0.0171866 3.78126 0.160868 3.40746 0.498617C3.03365 0.836366 2.807 1.30697 2.77602 1.80966V3.00106C2.77602 3.0556 2.78346 3.10936 2.79776 3.16101H0.6C0.521207 3.16101 0.443185 3.17652 0.37039 3.20666C0.297595 3.2368 0.231451 3.28097 0.175736 3.33666C0.120021 3.39235 0.0758251 3.45846 0.0456722 3.53121C0.0155194 3.60397 0 3.68196 0 3.76071C0 3.83946 0.0155194 3.91744 0.0456722 3.9902C0.0758251 4.06296 0.120021 4.12907 0.175736 4.18476C0.231451 4.24045 0.297595 4.28462 0.37039 4.31476C0.443185 4.3449 0.521207 4.36041 0.6 4.36041H1.40002V12.1884C1.41426 12.442 1.47871 12.6903 1.58965 12.9188C1.7006 13.1473 1.85582 13.3515 2.04633 13.5196C2.23683 13.6877 2.45882 13.8163 2.69944 13.898C2.94005 13.9797 3.1945 14.0129 3.44802 13.9955ZM2.60002 4.36041H11.304V12.1884C11.304 12.5163 10.952 12.7961 10.504 12.7961H3.40002C2.97602 12.7961 2.60002 12.5163 2.60002 12.1884V4.36041ZM3.95429 3.16101C3.96859 3.10936 3.97602 3.0556 3.97602 3.00106V1.80966C3.97602 1.48183 4.33602 1.20197 4.77602 1.20197H9.24802C9.66403 1.20197 10.048 1.48183 10.048 1.80966V3.00106C10.0473 3.05515 10.054 3.10896 10.0678 3.16101H3.95429ZM5.57571 10.997C5.41731 10.995 5.26597 10.9311 5.15395 10.8191C5.04193 10.7071 4.97808 10.5558 4.97601 10.3973V6.77517C4.97601 6.61612 5.0392 6.46359 5.15166 6.35112C5.26413 6.23866 5.41666 6.17548 5.57571 6.17548C5.73476 6.17548 5.8873 6.23866 5.99976 6.35112C6.11223 6.46359 6.17541 6.61612 6.17541 6.77517V10.3894C6.17647 10.4688 6.16174 10.5476 6.13208 10.6213C6.10241 10.695 6.05841 10.762 6.00261 10.8186C5.94682 10.8751 5.88035 10.92 5.80707 10.9506C5.73378 10.9813 5.65514 10.9971 5.57571 10.997ZM7.99968 10.8214C8.11215 10.9339 8.26468 10.997 8.42373 10.997C8.58351 10.9949 8.73604 10.93 8.84828 10.8163C8.96052 10.7025 9.02345 10.5491 9.02343 10.3894V6.77517C9.02343 6.61612 8.96025 6.46359 8.84778 6.35112C8.73532 6.23866 8.58278 6.17548 8.42373 6.17548C8.26468 6.17548 8.11215 6.23866 7.99968 6.35112C7.88722 6.46359 7.82404 6.61612 7.82404 6.77517V10.3973C7.82404 10.5564 7.88722 10.7089 7.99968 10.8214Z"\n                    fill="currentColor"\n                />\n            </g>\n            <defs>\n                <clipPath [id]="pathId">\n                    <rect width="14" height="14" fill="white" />\n                </clipPath>\n            </defs>\n        </svg>\n    '
     }]
   }], null, null);
 })();
@@ -2080,21 +2047,23 @@ function ColumnFilterFormElement_ng_template_1_Template(rf, ctx) {
     ɵɵproperty("ngSwitchCase", "date");
   }
 }
-var TableService = class _TableService {
-  sortSource = new Subject();
-  selectionSource = new Subject();
-  contextMenuSource = new Subject();
-  valueSource = new Subject();
-  totalRecordsSource = new Subject();
-  columnsSource = new Subject();
-  isHeaderCheckboxSelection = new Subject();
-  sortSource$ = this.sortSource.asObservable();
-  isHeaderCheckboxSelection$ = this.isHeaderCheckboxSelection.asObservable();
-  selectionSource$ = this.selectionSource.asObservable();
-  contextMenuSource$ = this.contextMenuSource.asObservable();
-  valueSource$ = this.valueSource.asObservable();
-  totalRecordsSource$ = this.totalRecordsSource.asObservable();
-  columnsSource$ = this.columnsSource.asObservable();
+var _TableService = class _TableService {
+  constructor() {
+    __publicField(this, "sortSource", new Subject());
+    __publicField(this, "selectionSource", new Subject());
+    __publicField(this, "contextMenuSource", new Subject());
+    __publicField(this, "valueSource", new Subject());
+    __publicField(this, "totalRecordsSource", new Subject());
+    __publicField(this, "columnsSource", new Subject());
+    __publicField(this, "isHeaderCheckboxSelection", new Subject());
+    __publicField(this, "sortSource$", this.sortSource.asObservable());
+    __publicField(this, "isHeaderCheckboxSelection$", this.isHeaderCheckboxSelection.asObservable());
+    __publicField(this, "selectionSource$", this.selectionSource.asObservable());
+    __publicField(this, "contextMenuSource$", this.contextMenuSource.asObservable());
+    __publicField(this, "valueSource$", this.valueSource.asObservable());
+    __publicField(this, "totalRecordsSource$", this.totalRecordsSource.asObservable());
+    __publicField(this, "columnsSource$", this.columnsSource.asObservable());
+  }
   onSort(sortMeta) {
     this.sortSource.next(sortMeta);
   }
@@ -2116,298 +2085,647 @@ var TableService = class _TableService {
   onHeaderCheckboxSelection(value) {
     this.isHeaderCheckboxSelection.next(value);
   }
-  static ɵfac = function TableService_Factory(__ngFactoryType__) {
-    return new (__ngFactoryType__ || _TableService)();
-  };
-  static ɵprov = ɵɵdefineInjectable({
-    token: _TableService,
-    factory: _TableService.ɵfac
-  });
 };
+__publicField(_TableService, "ɵfac", function TableService_Factory(__ngFactoryType__) {
+  return new (__ngFactoryType__ || _TableService)();
+});
+__publicField(_TableService, "ɵprov", ɵɵdefineInjectable({
+  token: _TableService,
+  factory: _TableService.ɵfac
+}));
+var TableService = _TableService;
 (() => {
   (typeof ngDevMode === "undefined" || ngDevMode) && setClassMetadata(TableService, [{
     type: Injectable
   }], null, null);
 })();
-var Table = class _Table {
-  document;
-  platformId;
-  renderer;
-  el;
-  zone;
-  tableService;
-  cd;
-  filterService;
-  overlayService;
-  config;
-  domSanitizer;
-  /**
-   * An array of objects to represent dynamic columns that are frozen.
-   * @group Props
-   */
-  frozenColumns;
-  /**
-   * An array of objects to display as frozen.
-   * @group Props
-   */
-  frozenValue;
-  /**
-   * Inline style of the component.
-   * @group Props
-   */
-  style;
-  /**
-   * Style class of the component.
-   * @group Props
-   */
-  styleClass;
-  /**
-   * Inline style of the table.
-   * @group Props
-   */
-  tableStyle;
-  /**
-   * Style class of the table.
-   * @group Props
-   */
-  tableStyleClass;
-  /**
-   * When specified as true, enables the pagination.
-   * @group Props
-   */
-  paginator;
-  /**
-   * Number of page links to display in paginator.
-   * @group Props
-   */
-  pageLinks = 5;
-  /**
-   * Array of integer/object values to display inside rows per page dropdown of paginator
-   * @group Props
-   */
-  rowsPerPageOptions;
-  /**
-   * Whether to show it even there is only one page.
-   * @group Props
-   */
-  alwaysShowPaginator = true;
-  /**
-   * Position of the paginator, options are "top", "bottom" or "both".
-   * @group Props
-   */
-  paginatorPosition = "bottom";
-  /**
-   * Custom style class for paginator
-   * @group Props
-   */
-  paginatorStyleClass;
-  /**
-   * Target element to attach the paginator dropdown overlay, valid values are "body" or a local ng-template variable of another element (note: use binding with brackets for template variables, e.g. [appendTo]="mydiv" for a div element having #mydiv as variable name).
-   * @group Props
-   */
-  paginatorDropdownAppendTo;
-  /**
-   * Paginator dropdown height of the viewport in pixels, a scrollbar is defined if height of list exceeds this value.
-   * @group Props
-   */
-  paginatorDropdownScrollHeight = "200px";
-  /**
-   * Template of the current page report element. Available placeholders are {currentPage},{totalPages},{rows},{first},{last} and {totalRecords}
-   * @group Props
-   */
-  currentPageReportTemplate = "{currentPage} of {totalPages}";
-  /**
-   * Whether to display current page report.
-   * @group Props
-   */
-  showCurrentPageReport;
-  /**
-   * Whether to display a dropdown to navigate to any page.
-   * @group Props
-   */
-  showJumpToPageDropdown;
-  /**
-   * Whether to display a input to navigate to any page.
-   * @group Props
-   */
-  showJumpToPageInput;
-  /**
-   * When enabled, icons are displayed on paginator to go first and last page.
-   * @group Props
-   */
-  showFirstLastIcon = true;
-  /**
-   * Whether to show page links.
-   * @group Props
-   */
-  showPageLinks = true;
-  /**
-   * Sort order to use when an unsorted column gets sorted by user interaction.
-   * @group Props
-   */
-  defaultSortOrder = 1;
-  /**
-   * Defines whether sorting works on single column or on multiple columns.
-   * @group Props
-   */
-  sortMode = "single";
-  /**
-   * When true, resets paginator to first page after sorting. Available only when sortMode is set to single.
-   * @group Props
-   */
-  resetPageOnSort = true;
-  /**
-   * Specifies the selection mode, valid values are "single" and "multiple".
-   * @group Props
-   */
-  selectionMode;
-  /**
-   * When enabled with paginator and checkbox selection mode, the select all checkbox in the header will select all rows on the current page.
-   * @group Props
-   */
-  selectionPageOnly;
-  /**
-   * Selected row with a context menu.
-   * @group Props
-   */
-  contextMenuSelection;
-  /**
-   * Callback to invoke on context menu selection change.
-   * @param {*} object - row data.
-   * @group Emits
-   */
-  contextMenuSelectionChange = new EventEmitter();
-  /**
-   *  Defines the behavior of context menu selection, in "separate" mode context menu updates contextMenuSelection property whereas in joint mode selection property is used instead so that when row selection is enabled, both row selection and context menu selection use the same property.
-   * @group Props
-   */
-  contextMenuSelectionMode = "separate";
-  /**
-   * A property to uniquely identify a record in data.
-   * @group Props
-   */
-  dataKey;
-  /**
-   * Defines whether metaKey should be considered for the selection. On touch enabled devices, metaKeySelection is turned off automatically.
-   * @group Props
-   */
-  metaKeySelection = false;
-  /**
-   * Defines if the row is selectable.
-   * @group Props
-   */
-  rowSelectable;
-  /**
-   * Function to optimize the dom operations by delegating to ngForTrackBy, default algorithm checks for object identity.
-   * @group Props
-   */
-  rowTrackBy = (index, item) => item;
-  /**
-   * Defines if data is loaded and interacted with in lazy manner.
-   * @group Props
-   */
-  lazy = false;
-  /**
-   * Whether to call lazy loading on initialization.
-   * @group Props
-   */
-  lazyLoadOnInit = true;
-  /**
-   * Algorithm to define if a row is selected, valid values are "equals" that compares by reference and "deepEquals" that compares all fields.
-   * @group Props
-   */
-  compareSelectionBy = "deepEquals";
-  /**
-   * Character to use as the csv separator.
-   * @group Props
-   */
-  csvSeparator = ",";
-  /**
-   * Name of the exported file.
-   * @group Props
-   */
-  exportFilename = "download";
-  /**
-   * An array of FilterMetadata objects to provide external filters.
-   * @group Props
-   */
-  filters = {};
-  /**
-   * An array of fields as string to use in global filtering.
-   * @group Props
-   */
-  globalFilterFields;
-  /**
-   * Delay in milliseconds before filtering the data.
-   * @group Props
-   */
-  filterDelay = 300;
-  /**
-   * Locale to use in filtering. The default locale is the host environment's current locale.
-   * @group Props
-   */
-  filterLocale;
-  /**
-   * Map instance to keep the expanded rows where key of the map is the data key of the row.
-   * @group Props
-   */
-  expandedRowKeys = {};
-  /**
-   * Map instance to keep the rows being edited where key of the map is the data key of the row.
-   * @group Props
-   */
-  editingRowKeys = {};
-  /**
-   * Whether multiple rows can be expanded at any time. Valid values are "multiple" and "single".
-   * @group Props
-   */
-  rowExpandMode = "multiple";
-  /**
-   * Enables scrollable tables.
-   * @group Props
-   */
-  scrollable;
-  /**
-   * Orientation of the scrolling, options are "vertical", "horizontal" and "both".
-   * @group Props
-   * @deprecated Property is obselete since v14.2.0.
-   */
-  scrollDirection = "vertical";
-  /**
-   * Type of the row grouping, valid values are "subheader" and "rowspan".
-   * @group Props
-   */
-  rowGroupMode;
-  /**
-   * Height of the scroll viewport in fixed pixels or the "flex" keyword for a dynamic size.
-   * @group Props
-   */
-  scrollHeight;
-  /**
-   * Whether the data should be loaded on demand during scroll.
-   * @group Props
-   */
-  virtualScroll;
-  /**
-   * Height of a row to use in calculations of virtual scrolling.
-   * @group Props
-   */
-  virtualScrollItemSize;
-  /**
-   * Whether to use the scroller feature. The properties of scroller component can be used like an object in it.
-   * @group Props
-   */
-  virtualScrollOptions;
-  /**
-   * Threshold in milliseconds to delay lazy loading during scrolling.
-   * @group Props
-   */
-  virtualScrollDelay = 250;
-  /**
-   * Width of the frozen columns container.
-   * @group Props
-   */
-  frozenWidth;
+var _Table = class _Table {
+  constructor(document2, platformId, renderer, el, zone, tableService, cd, filterService, overlayService, config, domSanitizer) {
+    __publicField(this, "document");
+    __publicField(this, "platformId");
+    __publicField(this, "renderer");
+    __publicField(this, "el");
+    __publicField(this, "zone");
+    __publicField(this, "tableService");
+    __publicField(this, "cd");
+    __publicField(this, "filterService");
+    __publicField(this, "overlayService");
+    __publicField(this, "config");
+    __publicField(this, "domSanitizer");
+    /**
+     * An array of objects to represent dynamic columns that are frozen.
+     * @group Props
+     */
+    __publicField(this, "frozenColumns");
+    /**
+     * An array of objects to display as frozen.
+     * @group Props
+     */
+    __publicField(this, "frozenValue");
+    /**
+     * Inline style of the component.
+     * @group Props
+     */
+    __publicField(this, "style");
+    /**
+     * Style class of the component.
+     * @group Props
+     */
+    __publicField(this, "styleClass");
+    /**
+     * Inline style of the table.
+     * @group Props
+     */
+    __publicField(this, "tableStyle");
+    /**
+     * Style class of the table.
+     * @group Props
+     */
+    __publicField(this, "tableStyleClass");
+    /**
+     * When specified as true, enables the pagination.
+     * @group Props
+     */
+    __publicField(this, "paginator");
+    /**
+     * Number of page links to display in paginator.
+     * @group Props
+     */
+    __publicField(this, "pageLinks", 5);
+    /**
+     * Array of integer/object values to display inside rows per page dropdown of paginator
+     * @group Props
+     */
+    __publicField(this, "rowsPerPageOptions");
+    /**
+     * Whether to show it even there is only one page.
+     * @group Props
+     */
+    __publicField(this, "alwaysShowPaginator", true);
+    /**
+     * Position of the paginator, options are "top", "bottom" or "both".
+     * @group Props
+     */
+    __publicField(this, "paginatorPosition", "bottom");
+    /**
+     * Custom style class for paginator
+     * @group Props
+     */
+    __publicField(this, "paginatorStyleClass");
+    /**
+     * Target element to attach the paginator dropdown overlay, valid values are "body" or a local ng-template variable of another element (note: use binding with brackets for template variables, e.g. [appendTo]="mydiv" for a div element having #mydiv as variable name).
+     * @group Props
+     */
+    __publicField(this, "paginatorDropdownAppendTo");
+    /**
+     * Paginator dropdown height of the viewport in pixels, a scrollbar is defined if height of list exceeds this value.
+     * @group Props
+     */
+    __publicField(this, "paginatorDropdownScrollHeight", "200px");
+    /**
+     * Template of the current page report element. Available placeholders are {currentPage},{totalPages},{rows},{first},{last} and {totalRecords}
+     * @group Props
+     */
+    __publicField(this, "currentPageReportTemplate", "{currentPage} of {totalPages}");
+    /**
+     * Whether to display current page report.
+     * @group Props
+     */
+    __publicField(this, "showCurrentPageReport");
+    /**
+     * Whether to display a dropdown to navigate to any page.
+     * @group Props
+     */
+    __publicField(this, "showJumpToPageDropdown");
+    /**
+     * Whether to display a input to navigate to any page.
+     * @group Props
+     */
+    __publicField(this, "showJumpToPageInput");
+    /**
+     * When enabled, icons are displayed on paginator to go first and last page.
+     * @group Props
+     */
+    __publicField(this, "showFirstLastIcon", true);
+    /**
+     * Whether to show page links.
+     * @group Props
+     */
+    __publicField(this, "showPageLinks", true);
+    /**
+     * Sort order to use when an unsorted column gets sorted by user interaction.
+     * @group Props
+     */
+    __publicField(this, "defaultSortOrder", 1);
+    /**
+     * Defines whether sorting works on single column or on multiple columns.
+     * @group Props
+     */
+    __publicField(this, "sortMode", "single");
+    /**
+     * When true, resets paginator to first page after sorting. Available only when sortMode is set to single.
+     * @group Props
+     */
+    __publicField(this, "resetPageOnSort", true);
+    /**
+     * Specifies the selection mode, valid values are "single" and "multiple".
+     * @group Props
+     */
+    __publicField(this, "selectionMode");
+    /**
+     * When enabled with paginator and checkbox selection mode, the select all checkbox in the header will select all rows on the current page.
+     * @group Props
+     */
+    __publicField(this, "selectionPageOnly");
+    /**
+     * Selected row with a context menu.
+     * @group Props
+     */
+    __publicField(this, "contextMenuSelection");
+    /**
+     * Callback to invoke on context menu selection change.
+     * @param {*} object - row data.
+     * @group Emits
+     */
+    __publicField(this, "contextMenuSelectionChange", new EventEmitter());
+    /**
+     *  Defines the behavior of context menu selection, in "separate" mode context menu updates contextMenuSelection property whereas in joint mode selection property is used instead so that when row selection is enabled, both row selection and context menu selection use the same property.
+     * @group Props
+     */
+    __publicField(this, "contextMenuSelectionMode", "separate");
+    /**
+     * A property to uniquely identify a record in data.
+     * @group Props
+     */
+    __publicField(this, "dataKey");
+    /**
+     * Defines whether metaKey should be considered for the selection. On touch enabled devices, metaKeySelection is turned off automatically.
+     * @group Props
+     */
+    __publicField(this, "metaKeySelection", false);
+    /**
+     * Defines if the row is selectable.
+     * @group Props
+     */
+    __publicField(this, "rowSelectable");
+    /**
+     * Function to optimize the dom operations by delegating to ngForTrackBy, default algorithm checks for object identity.
+     * @group Props
+     */
+    __publicField(this, "rowTrackBy", (index, item) => item);
+    /**
+     * Defines if data is loaded and interacted with in lazy manner.
+     * @group Props
+     */
+    __publicField(this, "lazy", false);
+    /**
+     * Whether to call lazy loading on initialization.
+     * @group Props
+     */
+    __publicField(this, "lazyLoadOnInit", true);
+    /**
+     * Algorithm to define if a row is selected, valid values are "equals" that compares by reference and "deepEquals" that compares all fields.
+     * @group Props
+     */
+    __publicField(this, "compareSelectionBy", "deepEquals");
+    /**
+     * Character to use as the csv separator.
+     * @group Props
+     */
+    __publicField(this, "csvSeparator", ",");
+    /**
+     * Name of the exported file.
+     * @group Props
+     */
+    __publicField(this, "exportFilename", "download");
+    /**
+     * An array of FilterMetadata objects to provide external filters.
+     * @group Props
+     */
+    __publicField(this, "filters", {});
+    /**
+     * An array of fields as string to use in global filtering.
+     * @group Props
+     */
+    __publicField(this, "globalFilterFields");
+    /**
+     * Delay in milliseconds before filtering the data.
+     * @group Props
+     */
+    __publicField(this, "filterDelay", 300);
+    /**
+     * Locale to use in filtering. The default locale is the host environment's current locale.
+     * @group Props
+     */
+    __publicField(this, "filterLocale");
+    /**
+     * Map instance to keep the expanded rows where key of the map is the data key of the row.
+     * @group Props
+     */
+    __publicField(this, "expandedRowKeys", {});
+    /**
+     * Map instance to keep the rows being edited where key of the map is the data key of the row.
+     * @group Props
+     */
+    __publicField(this, "editingRowKeys", {});
+    /**
+     * Whether multiple rows can be expanded at any time. Valid values are "multiple" and "single".
+     * @group Props
+     */
+    __publicField(this, "rowExpandMode", "multiple");
+    /**
+     * Enables scrollable tables.
+     * @group Props
+     */
+    __publicField(this, "scrollable");
+    /**
+     * Orientation of the scrolling, options are "vertical", "horizontal" and "both".
+     * @group Props
+     * @deprecated Property is obselete since v14.2.0.
+     */
+    __publicField(this, "scrollDirection", "vertical");
+    /**
+     * Type of the row grouping, valid values are "subheader" and "rowspan".
+     * @group Props
+     */
+    __publicField(this, "rowGroupMode");
+    /**
+     * Height of the scroll viewport in fixed pixels or the "flex" keyword for a dynamic size.
+     * @group Props
+     */
+    __publicField(this, "scrollHeight");
+    /**
+     * Whether the data should be loaded on demand during scroll.
+     * @group Props
+     */
+    __publicField(this, "virtualScroll");
+    /**
+     * Height of a row to use in calculations of virtual scrolling.
+     * @group Props
+     */
+    __publicField(this, "virtualScrollItemSize");
+    /**
+     * Whether to use the scroller feature. The properties of scroller component can be used like an object in it.
+     * @group Props
+     */
+    __publicField(this, "virtualScrollOptions");
+    /**
+     * Threshold in milliseconds to delay lazy loading during scrolling.
+     * @group Props
+     */
+    __publicField(this, "virtualScrollDelay", 250);
+    /**
+     * Width of the frozen columns container.
+     * @group Props
+     */
+    __publicField(this, "frozenWidth");
+    __publicField(this, "_responsive");
+    /**
+     * Local ng-template varilable of a ContextMenu.
+     * @group Props
+     */
+    __publicField(this, "contextMenu");
+    /**
+     * When enabled, columns can be resized using drag and drop.
+     * @group Props
+     */
+    __publicField(this, "resizableColumns");
+    /**
+     * Defines whether the overall table width should change on column resize, valid values are "fit" and "expand".
+     * @group Props
+     */
+    __publicField(this, "columnResizeMode", "fit");
+    /**
+     * When enabled, columns can be reordered using drag and drop.
+     * @group Props
+     */
+    __publicField(this, "reorderableColumns");
+    /**
+     * Displays a loader to indicate data load is in progress.
+     * @group Props
+     */
+    __publicField(this, "loading");
+    /**
+     * The icon to show while indicating data load is in progress.
+     * @group Props
+     */
+    __publicField(this, "loadingIcon");
+    /**
+     * Whether to show the loading mask when loading property is true.
+     * @group Props
+     */
+    __publicField(this, "showLoader", true);
+    /**
+     * Adds hover effect to rows without the need for selectionMode. Note that tr elements that can be hovered need to have "p-selectable-row" class for rowHover to work.
+     * @group Props
+     */
+    __publicField(this, "rowHover");
+    /**
+     * Whether to use the default sorting or a custom one using sortFunction.
+     * @group Props
+     */
+    __publicField(this, "customSort");
+    /**
+     * Whether to use the initial sort badge or not.
+     * @group Props
+     */
+    __publicField(this, "showInitialSortBadge", true);
+    /**
+     * Whether the cell widths scale according to their content or not.  Deprecated:  Table layout is always "auto".
+     * @group Props
+     */
+    __publicField(this, "autoLayout");
+    /**
+     * Export function.
+     * @group Props
+     */
+    __publicField(this, "exportFunction");
+    /**
+     * Custom export header of the column to be exported as CSV.
+     * @group Props
+     */
+    __publicField(this, "exportHeader");
+    /**
+     * Unique identifier of a stateful table to use in state storage.
+     * @group Props
+     */
+    __publicField(this, "stateKey");
+    /**
+     * Defines where a stateful table keeps its state, valid values are "session" for sessionStorage and "local" for localStorage.
+     * @group Props
+     */
+    __publicField(this, "stateStorage", "session");
+    /**
+     * Defines the editing mode, valid values are "cell" and "row".
+     * @group Props
+     */
+    __publicField(this, "editMode", "cell");
+    /**
+     * Field name to use in row grouping.
+     * @group Props
+     */
+    __publicField(this, "groupRowsBy");
+    /**
+     * Order to sort when default row grouping is enabled.
+     * @group Props
+     */
+    __publicField(this, "groupRowsByOrder", 1);
+    /**
+     * Defines the responsive mode, valid options are "stack" and "scroll".
+     * @group Props
+     */
+    __publicField(this, "responsiveLayout", "scroll");
+    /**
+     * The breakpoint to define the maximum width boundary when using stack responsive layout.
+     * @group Props
+     */
+    __publicField(this, "breakpoint", "960px");
+    /**
+     * Locale to be used in paginator formatting.
+     * @group Props
+     */
+    __publicField(this, "paginatorLocale");
+    /**
+     * Emits when the all of the items selected or unselected.
+     * @param {TableSelectAllChangeEvent} event - custom  all selection change event.
+     * @group Emits
+     */
+    __publicField(this, "selectAllChange", new EventEmitter());
+    /**
+     * Callback to invoke on selection changed.
+     * @param {any | null} value - selected data.
+     * @group Emits
+     */
+    __publicField(this, "selectionChange", new EventEmitter());
+    /**
+     * Callback to invoke when a row is selected.
+     * @param {TableRowSelectEvent} event - custom select event.
+     * @group Emits
+     */
+    __publicField(this, "onRowSelect", new EventEmitter());
+    /**
+     * Callback to invoke when a row is unselected.
+     * @param {TableRowUnSelectEvent} event - custom unselect event.
+     * @group Emits
+     */
+    __publicField(this, "onRowUnselect", new EventEmitter());
+    /**
+     * Callback to invoke when pagination occurs.
+     * @param {TablePageEvent} event - custom pagination event.
+     * @group Emits
+     */
+    __publicField(this, "onPage", new EventEmitter());
+    /**
+     * Callback to invoke when a column gets sorted.
+     * @param {Object} object - sort meta.
+     * @group Emits
+     */
+    __publicField(this, "onSort", new EventEmitter());
+    /**
+     * Callback to invoke when data is filtered.
+     * @param {TableFilterEvent} event - custom filtering event.
+     * @group Emits
+     */
+    __publicField(this, "onFilter", new EventEmitter());
+    /**
+     * Callback to invoke when paging, sorting or filtering happens in lazy mode.
+     * @param {TableLazyLoadEvent} event - custom lazy loading event.
+     * @group Emits
+     */
+    __publicField(this, "onLazyLoad", new EventEmitter());
+    /**
+     * Callback to invoke when a row is expanded.
+     * @param {TableRowExpandEvent} event - custom row expand event.
+     * @group Emits
+     */
+    __publicField(this, "onRowExpand", new EventEmitter());
+    /**
+     * Callback to invoke when a row is collapsed.
+     * @param {TableRowCollapseEvent} event - custom row collapse event.
+     * @group Emits
+     */
+    __publicField(this, "onRowCollapse", new EventEmitter());
+    /**
+     * Callback to invoke when a row is selected with right click.
+     * @param {TableContextMenuSelectEvent} event - custom context menu select event.
+     * @group Emits
+     */
+    __publicField(this, "onContextMenuSelect", new EventEmitter());
+    /**
+     * Callback to invoke when a column is resized.
+     * @param {TableColResizeEvent} event - custom column resize event.
+     * @group Emits
+     */
+    __publicField(this, "onColResize", new EventEmitter());
+    /**
+     * Callback to invoke when a column is reordered.
+     * @param {TableColumnReorderEvent} event - custom column reorder event.
+     * @group Emits
+     */
+    __publicField(this, "onColReorder", new EventEmitter());
+    /**
+     * Callback to invoke when a row is reordered.
+     * @param {TableRowReorderEvent} event - custom row reorder event.
+     * @group Emits
+     */
+    __publicField(this, "onRowReorder", new EventEmitter());
+    /**
+     * Callback to invoke when a cell switches to edit mode.
+     * @param {TableEditInitEvent} event - custom edit init event.
+     * @group Emits
+     */
+    __publicField(this, "onEditInit", new EventEmitter());
+    /**
+     * Callback to invoke when cell edit is completed.
+     * @param {TableEditCompleteEvent} event - custom edit complete event.
+     * @group Emits
+     */
+    __publicField(this, "onEditComplete", new EventEmitter());
+    /**
+     * Callback to invoke when cell edit is cancelled with escape key.
+     * @param {TableEditCancelEvent} event - custom edit cancel event.
+     * @group Emits
+     */
+    __publicField(this, "onEditCancel", new EventEmitter());
+    /**
+     * Callback to invoke when state of header checkbox changes.
+     * @param {TableHeaderCheckboxToggleEvent} event - custom header checkbox event.
+     * @group Emits
+     */
+    __publicField(this, "onHeaderCheckboxToggle", new EventEmitter());
+    /**
+     * A function to implement custom sorting, refer to sorting section for details.
+     * @param {any} any - sort meta.
+     * @group Emits
+     */
+    __publicField(this, "sortFunction", new EventEmitter());
+    /**
+     * Callback to invoke on pagination.
+     * @param {number} number - first element.
+     * @group Emits
+     */
+    __publicField(this, "firstChange", new EventEmitter());
+    /**
+     * Callback to invoke on rows change.
+     * @param {number} number - Row count.
+     * @group Emits
+     */
+    __publicField(this, "rowsChange", new EventEmitter());
+    /**
+     * Callback to invoke table state is saved.
+     * @param {TableState} object - table state.
+     * @group Emits
+     */
+    __publicField(this, "onStateSave", new EventEmitter());
+    /**
+     * Callback to invoke table state is restored.
+     * @param {TableState} object - table state.
+     * @group Emits
+     */
+    __publicField(this, "onStateRestore", new EventEmitter());
+    __publicField(this, "containerViewChild");
+    __publicField(this, "resizeHelperViewChild");
+    __publicField(this, "reorderIndicatorUpViewChild");
+    __publicField(this, "reorderIndicatorDownViewChild");
+    __publicField(this, "wrapperViewChild");
+    __publicField(this, "tableViewChild");
+    __publicField(this, "tableHeaderViewChild");
+    __publicField(this, "tableFooterViewChild");
+    __publicField(this, "scroller");
+    __publicField(this, "templates");
+    __publicField(this, "_virtualRowHeight", 28);
+    __publicField(this, "_value", []);
+    __publicField(this, "_columns");
+    __publicField(this, "_totalRecords", 0);
+    __publicField(this, "_first", 0);
+    __publicField(this, "_rows");
+    __publicField(this, "filteredValue");
+    __publicField(this, "headerTemplate");
+    __publicField(this, "headerGroupedTemplate");
+    __publicField(this, "bodyTemplate");
+    __publicField(this, "loadingBodyTemplate");
+    __publicField(this, "captionTemplate");
+    __publicField(this, "footerTemplate");
+    __publicField(this, "footerGroupedTemplate");
+    __publicField(this, "summaryTemplate");
+    __publicField(this, "colGroupTemplate");
+    __publicField(this, "expandedRowTemplate");
+    __publicField(this, "groupHeaderTemplate");
+    __publicField(this, "groupFooterTemplate");
+    __publicField(this, "frozenExpandedRowTemplate");
+    __publicField(this, "frozenHeaderTemplate");
+    __publicField(this, "frozenBodyTemplate");
+    __publicField(this, "frozenFooterTemplate");
+    __publicField(this, "frozenColGroupTemplate");
+    __publicField(this, "emptyMessageTemplate");
+    __publicField(this, "paginatorLeftTemplate");
+    __publicField(this, "paginatorRightTemplate");
+    __publicField(this, "paginatorDropdownItemTemplate");
+    __publicField(this, "loadingIconTemplate");
+    __publicField(this, "reorderIndicatorUpIconTemplate");
+    __publicField(this, "reorderIndicatorDownIconTemplate");
+    __publicField(this, "sortIconTemplate");
+    __publicField(this, "checkboxIconTemplate");
+    __publicField(this, "headerCheckboxIconTemplate");
+    __publicField(this, "paginatorDropdownIconTemplate");
+    __publicField(this, "paginatorFirstPageLinkIconTemplate");
+    __publicField(this, "paginatorLastPageLinkIconTemplate");
+    __publicField(this, "paginatorPreviousPageLinkIconTemplate");
+    __publicField(this, "paginatorNextPageLinkIconTemplate");
+    __publicField(this, "selectionKeys", {});
+    __publicField(this, "lastResizerHelperX");
+    __publicField(this, "reorderIconWidth");
+    __publicField(this, "reorderIconHeight");
+    __publicField(this, "draggedColumn");
+    __publicField(this, "draggedRowIndex");
+    __publicField(this, "droppedRowIndex");
+    __publicField(this, "rowDragging");
+    __publicField(this, "dropPosition");
+    __publicField(this, "editingCell");
+    __publicField(this, "editingCellData");
+    __publicField(this, "editingCellField");
+    __publicField(this, "editingCellRowIndex");
+    __publicField(this, "selfClick");
+    __publicField(this, "documentEditListener");
+    __publicField(this, "_multiSortMeta");
+    __publicField(this, "_sortField");
+    __publicField(this, "_sortOrder", 1);
+    __publicField(this, "preventSelectionSetterPropagation");
+    __publicField(this, "_selection");
+    __publicField(this, "_selectAll", null);
+    __publicField(this, "anchorRowIndex");
+    __publicField(this, "rangeRowIndex");
+    __publicField(this, "filterTimeout");
+    __publicField(this, "initialized");
+    __publicField(this, "rowTouched");
+    __publicField(this, "restoringSort");
+    __publicField(this, "restoringFilter");
+    __publicField(this, "stateRestored");
+    __publicField(this, "columnOrderStateRestored");
+    __publicField(this, "columnWidthsState");
+    __publicField(this, "tableWidthState");
+    __publicField(this, "overlaySubscription");
+    __publicField(this, "resizeColumnElement");
+    __publicField(this, "columnResizing", false);
+    __publicField(this, "rowGroupHeaderStyleObject", {});
+    __publicField(this, "id", UniqueComponentId());
+    __publicField(this, "styleElement");
+    __publicField(this, "responsiveStyleElement");
+    __publicField(this, "window");
+    __publicField(this, "_initialColWidths");
+    this.document = document2;
+    this.platformId = platformId;
+    this.renderer = renderer;
+    this.el = el;
+    this.zone = zone;
+    this.tableService = tableService;
+    this.cd = cd;
+    this.filterService = filterService;
+    this.overlayService = overlayService;
+    this.config = config;
+    this.domSanitizer = domSanitizer;
+    this.window = this.document.defaultView;
+  }
   /**
    * Defines if the table is responsive.
    * @group Props
@@ -2420,112 +2738,6 @@ var Table = class _Table {
     this._responsive = val;
     console.warn("responsive property is deprecated as table is always responsive with scrollable behavior.");
   }
-  _responsive;
-  /**
-   * Local ng-template varilable of a ContextMenu.
-   * @group Props
-   */
-  contextMenu;
-  /**
-   * When enabled, columns can be resized using drag and drop.
-   * @group Props
-   */
-  resizableColumns;
-  /**
-   * Defines whether the overall table width should change on column resize, valid values are "fit" and "expand".
-   * @group Props
-   */
-  columnResizeMode = "fit";
-  /**
-   * When enabled, columns can be reordered using drag and drop.
-   * @group Props
-   */
-  reorderableColumns;
-  /**
-   * Displays a loader to indicate data load is in progress.
-   * @group Props
-   */
-  loading;
-  /**
-   * The icon to show while indicating data load is in progress.
-   * @group Props
-   */
-  loadingIcon;
-  /**
-   * Whether to show the loading mask when loading property is true.
-   * @group Props
-   */
-  showLoader = true;
-  /**
-   * Adds hover effect to rows without the need for selectionMode. Note that tr elements that can be hovered need to have "p-selectable-row" class for rowHover to work.
-   * @group Props
-   */
-  rowHover;
-  /**
-   * Whether to use the default sorting or a custom one using sortFunction.
-   * @group Props
-   */
-  customSort;
-  /**
-   * Whether to use the initial sort badge or not.
-   * @group Props
-   */
-  showInitialSortBadge = true;
-  /**
-   * Whether the cell widths scale according to their content or not.  Deprecated:  Table layout is always "auto".
-   * @group Props
-   */
-  autoLayout;
-  /**
-   * Export function.
-   * @group Props
-   */
-  exportFunction;
-  /**
-   * Custom export header of the column to be exported as CSV.
-   * @group Props
-   */
-  exportHeader;
-  /**
-   * Unique identifier of a stateful table to use in state storage.
-   * @group Props
-   */
-  stateKey;
-  /**
-   * Defines where a stateful table keeps its state, valid values are "session" for sessionStorage and "local" for localStorage.
-   * @group Props
-   */
-  stateStorage = "session";
-  /**
-   * Defines the editing mode, valid values are "cell" and "row".
-   * @group Props
-   */
-  editMode = "cell";
-  /**
-   * Field name to use in row grouping.
-   * @group Props
-   */
-  groupRowsBy;
-  /**
-   * Order to sort when default row grouping is enabled.
-   * @group Props
-   */
-  groupRowsByOrder = 1;
-  /**
-   * Defines the responsive mode, valid options are "stack" and "scroll".
-   * @group Props
-   */
-  responsiveLayout = "scroll";
-  /**
-   * The breakpoint to define the maximum width boundary when using stack responsive layout.
-   * @group Props
-   */
-  breakpoint = "960px";
-  /**
-   * Locale to be used in paginator formatting.
-   * @group Props
-   */
-  paginatorLocale;
   /**
    * An array of objects to display.
    * @group Props
@@ -2628,154 +2840,6 @@ var Table = class _Table {
     this._selection = val;
   }
   /**
-   * Emits when the all of the items selected or unselected.
-   * @param {TableSelectAllChangeEvent} event - custom  all selection change event.
-   * @group Emits
-   */
-  selectAllChange = new EventEmitter();
-  /**
-   * Callback to invoke on selection changed.
-   * @param {any | null} value - selected data.
-   * @group Emits
-   */
-  selectionChange = new EventEmitter();
-  /**
-   * Callback to invoke when a row is selected.
-   * @param {TableRowSelectEvent} event - custom select event.
-   * @group Emits
-   */
-  onRowSelect = new EventEmitter();
-  /**
-   * Callback to invoke when a row is unselected.
-   * @param {TableRowUnSelectEvent} event - custom unselect event.
-   * @group Emits
-   */
-  onRowUnselect = new EventEmitter();
-  /**
-   * Callback to invoke when pagination occurs.
-   * @param {TablePageEvent} event - custom pagination event.
-   * @group Emits
-   */
-  onPage = new EventEmitter();
-  /**
-   * Callback to invoke when a column gets sorted.
-   * @param {Object} object - sort meta.
-   * @group Emits
-   */
-  onSort = new EventEmitter();
-  /**
-   * Callback to invoke when data is filtered.
-   * @param {TableFilterEvent} event - custom filtering event.
-   * @group Emits
-   */
-  onFilter = new EventEmitter();
-  /**
-   * Callback to invoke when paging, sorting or filtering happens in lazy mode.
-   * @param {TableLazyLoadEvent} event - custom lazy loading event.
-   * @group Emits
-   */
-  onLazyLoad = new EventEmitter();
-  /**
-   * Callback to invoke when a row is expanded.
-   * @param {TableRowExpandEvent} event - custom row expand event.
-   * @group Emits
-   */
-  onRowExpand = new EventEmitter();
-  /**
-   * Callback to invoke when a row is collapsed.
-   * @param {TableRowCollapseEvent} event - custom row collapse event.
-   * @group Emits
-   */
-  onRowCollapse = new EventEmitter();
-  /**
-   * Callback to invoke when a row is selected with right click.
-   * @param {TableContextMenuSelectEvent} event - custom context menu select event.
-   * @group Emits
-   */
-  onContextMenuSelect = new EventEmitter();
-  /**
-   * Callback to invoke when a column is resized.
-   * @param {TableColResizeEvent} event - custom column resize event.
-   * @group Emits
-   */
-  onColResize = new EventEmitter();
-  /**
-   * Callback to invoke when a column is reordered.
-   * @param {TableColumnReorderEvent} event - custom column reorder event.
-   * @group Emits
-   */
-  onColReorder = new EventEmitter();
-  /**
-   * Callback to invoke when a row is reordered.
-   * @param {TableRowReorderEvent} event - custom row reorder event.
-   * @group Emits
-   */
-  onRowReorder = new EventEmitter();
-  /**
-   * Callback to invoke when a cell switches to edit mode.
-   * @param {TableEditInitEvent} event - custom edit init event.
-   * @group Emits
-   */
-  onEditInit = new EventEmitter();
-  /**
-   * Callback to invoke when cell edit is completed.
-   * @param {TableEditCompleteEvent} event - custom edit complete event.
-   * @group Emits
-   */
-  onEditComplete = new EventEmitter();
-  /**
-   * Callback to invoke when cell edit is cancelled with escape key.
-   * @param {TableEditCancelEvent} event - custom edit cancel event.
-   * @group Emits
-   */
-  onEditCancel = new EventEmitter();
-  /**
-   * Callback to invoke when state of header checkbox changes.
-   * @param {TableHeaderCheckboxToggleEvent} event - custom header checkbox event.
-   * @group Emits
-   */
-  onHeaderCheckboxToggle = new EventEmitter();
-  /**
-   * A function to implement custom sorting, refer to sorting section for details.
-   * @param {any} any - sort meta.
-   * @group Emits
-   */
-  sortFunction = new EventEmitter();
-  /**
-   * Callback to invoke on pagination.
-   * @param {number} number - first element.
-   * @group Emits
-   */
-  firstChange = new EventEmitter();
-  /**
-   * Callback to invoke on rows change.
-   * @param {number} number - Row count.
-   * @group Emits
-   */
-  rowsChange = new EventEmitter();
-  /**
-   * Callback to invoke table state is saved.
-   * @param {TableState} object - table state.
-   * @group Emits
-   */
-  onStateSave = new EventEmitter();
-  /**
-   * Callback to invoke table state is restored.
-   * @param {TableState} object - table state.
-   * @group Emits
-   */
-  onStateRestore = new EventEmitter();
-  containerViewChild;
-  resizeHelperViewChild;
-  reorderIndicatorUpViewChild;
-  reorderIndicatorDownViewChild;
-  wrapperViewChild;
-  tableViewChild;
-  tableHeaderViewChild;
-  tableFooterViewChild;
-  scroller;
-  templates;
-  /**
    * Indicates the height of rows to be scrolled.
    * @group Props
    * @deprecated use virtualScrollItemSize property instead.
@@ -2786,99 +2850,6 @@ var Table = class _Table {
   set virtualRowHeight(val) {
     this._virtualRowHeight = val;
     console.warn("The virtualRowHeight property is deprecated.");
-  }
-  _virtualRowHeight = 28;
-  _value = [];
-  _columns;
-  _totalRecords = 0;
-  _first = 0;
-  _rows;
-  filteredValue;
-  headerTemplate;
-  headerGroupedTemplate;
-  bodyTemplate;
-  loadingBodyTemplate;
-  captionTemplate;
-  footerTemplate;
-  footerGroupedTemplate;
-  summaryTemplate;
-  colGroupTemplate;
-  expandedRowTemplate;
-  groupHeaderTemplate;
-  groupFooterTemplate;
-  frozenExpandedRowTemplate;
-  frozenHeaderTemplate;
-  frozenBodyTemplate;
-  frozenFooterTemplate;
-  frozenColGroupTemplate;
-  emptyMessageTemplate;
-  paginatorLeftTemplate;
-  paginatorRightTemplate;
-  paginatorDropdownItemTemplate;
-  loadingIconTemplate;
-  reorderIndicatorUpIconTemplate;
-  reorderIndicatorDownIconTemplate;
-  sortIconTemplate;
-  checkboxIconTemplate;
-  headerCheckboxIconTemplate;
-  paginatorDropdownIconTemplate;
-  paginatorFirstPageLinkIconTemplate;
-  paginatorLastPageLinkIconTemplate;
-  paginatorPreviousPageLinkIconTemplate;
-  paginatorNextPageLinkIconTemplate;
-  selectionKeys = {};
-  lastResizerHelperX;
-  reorderIconWidth;
-  reorderIconHeight;
-  draggedColumn;
-  draggedRowIndex;
-  droppedRowIndex;
-  rowDragging;
-  dropPosition;
-  editingCell;
-  editingCellData;
-  editingCellField;
-  editingCellRowIndex;
-  selfClick;
-  documentEditListener;
-  _multiSortMeta;
-  _sortField;
-  _sortOrder = 1;
-  preventSelectionSetterPropagation;
-  _selection;
-  _selectAll = null;
-  anchorRowIndex;
-  rangeRowIndex;
-  filterTimeout;
-  initialized;
-  rowTouched;
-  restoringSort;
-  restoringFilter;
-  stateRestored;
-  columnOrderStateRestored;
-  columnWidthsState;
-  tableWidthState;
-  overlaySubscription;
-  resizeColumnElement;
-  columnResizing = false;
-  rowGroupHeaderStyleObject = {};
-  id = UniqueComponentId();
-  styleElement;
-  responsiveStyleElement;
-  window;
-  constructor(document2, platformId, renderer, el, zone, tableService, cd, filterService, overlayService, config, domSanitizer) {
-    this.document = document2;
-    this.platformId = platformId;
-    this.renderer = renderer;
-    this.el = el;
-    this.zone = zone;
-    this.tableService = tableService;
-    this.cd = cd;
-    this.filterService = filterService;
-    this.overlayService = overlayService;
-    this.config = config;
-    this.domSanitizer = domSanitizer;
-    this.window = this.document.defaultView;
   }
   ngOnInit() {
     if (this.lazy && this.lazyLoadOnInit) {
@@ -3087,7 +3058,6 @@ var Table = class _Table {
   get processedData() {
     return this.filteredValue || this.value || [];
   }
-  _initialColWidths;
   dataToRender(data) {
     const _data = data || this.processedData;
     if (_data && this.paginator) {
@@ -3954,8 +3924,9 @@ var Table = class _Table {
    * @group Method
    */
   scrollTo(options) {
+    var _a;
     if (this.virtualScroll) {
-      this.scroller?.scrollTo(options);
+      (_a = this.scroller) == null ? void 0 : _a.scrollTo(options);
     } else if (this.wrapperViewChild && this.wrapperViewChild.nativeElement) {
       if (this.wrapperViewChild.nativeElement.scrollTo) {
         this.wrapperViewChild.nativeElement.scrollTo(options);
@@ -4061,31 +4032,34 @@ var Table = class _Table {
     return this.selectionMode === "multiple";
   }
   onColumnResizeBegin(event) {
-    let containerLeft = DomHandler.getOffset(this.containerViewChild?.nativeElement).left;
+    var _a, _b, _c;
+    let containerLeft = DomHandler.getOffset((_a = this.containerViewChild) == null ? void 0 : _a.nativeElement).left;
     this.resizeColumnElement = event.target.closest("th");
     this.columnResizing = true;
     if (event.type == "touchstart") {
-      this.lastResizerHelperX = event.changedTouches[0].clientX - containerLeft + this.containerViewChild?.nativeElement.scrollLeft;
+      this.lastResizerHelperX = event.changedTouches[0].clientX - containerLeft + ((_b = this.containerViewChild) == null ? void 0 : _b.nativeElement.scrollLeft);
     } else {
-      this.lastResizerHelperX = event.pageX - containerLeft + this.containerViewChild?.nativeElement.scrollLeft;
+      this.lastResizerHelperX = event.pageX - containerLeft + ((_c = this.containerViewChild) == null ? void 0 : _c.nativeElement.scrollLeft);
     }
     this.onColumnResize(event);
     event.preventDefault();
   }
   onColumnResize(event) {
-    let containerLeft = DomHandler.getOffset(this.containerViewChild?.nativeElement).left;
-    DomHandler.addClass(this.containerViewChild?.nativeElement, "p-unselectable-text");
-    this.resizeHelperViewChild.nativeElement.style.height = this.containerViewChild?.nativeElement.offsetHeight + "px";
+    var _a, _b, _c, _d, _e;
+    let containerLeft = DomHandler.getOffset((_a = this.containerViewChild) == null ? void 0 : _a.nativeElement).left;
+    DomHandler.addClass((_b = this.containerViewChild) == null ? void 0 : _b.nativeElement, "p-unselectable-text");
+    this.resizeHelperViewChild.nativeElement.style.height = ((_c = this.containerViewChild) == null ? void 0 : _c.nativeElement.offsetHeight) + "px";
     this.resizeHelperViewChild.nativeElement.style.top = "0px";
     if (event.type == "touchmove") {
-      this.resizeHelperViewChild.nativeElement.style.left = event.changedTouches[0].clientX - containerLeft + this.containerViewChild?.nativeElement.scrollLeft + "px";
+      this.resizeHelperViewChild.nativeElement.style.left = event.changedTouches[0].clientX - containerLeft + ((_d = this.containerViewChild) == null ? void 0 : _d.nativeElement.scrollLeft) + "px";
     } else {
-      this.resizeHelperViewChild.nativeElement.style.left = event.pageX - containerLeft + this.containerViewChild?.nativeElement.scrollLeft + "px";
+      this.resizeHelperViewChild.nativeElement.style.left = event.pageX - containerLeft + ((_e = this.containerViewChild) == null ? void 0 : _e.nativeElement.scrollLeft) + "px";
     }
     this.resizeHelperViewChild.nativeElement.style.display = "block";
   }
   onColumnResizeEnd() {
-    const delta = this.resizeHelperViewChild?.nativeElement.offsetLeft - this.lastResizerHelperX;
+    var _a, _b, _c;
+    const delta = ((_a = this.resizeHelperViewChild) == null ? void 0 : _a.nativeElement.offsetLeft) - this.lastResizerHelperX;
     const columnWidth = this.resizeColumnElement.offsetWidth;
     const newColumnWidth = columnWidth + delta;
     const elementMinWidth = this.resizeColumnElement.style.minWidth.replace(/[^\d.]/g, "");
@@ -4099,7 +4073,7 @@ var Table = class _Table {
         }
       } else if (this.columnResizeMode === "expand") {
         this._initialColWidths = this._totalTableWidth();
-        const tableWidth = this.tableViewChild?.nativeElement.offsetWidth + delta;
+        const tableWidth = ((_b = this.tableViewChild) == null ? void 0 : _b.nativeElement.offsetWidth) + delta;
         this.setResizeTableWidth(tableWidth + "px");
         this.resizeTableCells(newColumnWidth, null);
       }
@@ -4112,7 +4086,7 @@ var Table = class _Table {
       }
     }
     this.resizeHelperViewChild.nativeElement.style.display = "none";
-    DomHandler.removeClass(this.containerViewChild?.nativeElement, "p-unselectable-text");
+    DomHandler.removeClass((_c = this.containerViewChild) == null ? void 0 : _c.nativeElement, "p-unselectable-text");
   }
   _totalTableWidth() {
     let widths = [];
@@ -4122,15 +4096,17 @@ var Table = class _Table {
     return widths;
   }
   onColumnDragStart(event, columnElement) {
-    this.reorderIconWidth = DomHandler.getHiddenElementOuterWidth(this.reorderIndicatorUpViewChild?.nativeElement);
-    this.reorderIconHeight = DomHandler.getHiddenElementOuterHeight(this.reorderIndicatorDownViewChild?.nativeElement);
+    var _a, _b;
+    this.reorderIconWidth = DomHandler.getHiddenElementOuterWidth((_a = this.reorderIndicatorUpViewChild) == null ? void 0 : _a.nativeElement);
+    this.reorderIconHeight = DomHandler.getHiddenElementOuterHeight((_b = this.reorderIndicatorDownViewChild) == null ? void 0 : _b.nativeElement);
     this.draggedColumn = columnElement;
     event.dataTransfer.setData("text", "b");
   }
   onColumnDragEnter(event, dropHeader) {
+    var _a;
     if (this.reorderableColumns && this.draggedColumn && dropHeader) {
       event.preventDefault();
-      let containerOffset = DomHandler.getOffset(this.containerViewChild?.nativeElement);
+      let containerOffset = DomHandler.getOffset((_a = this.containerViewChild) == null ? void 0 : _a.nativeElement);
       let dropHeaderOffset = DomHandler.getOffset(dropHeader);
       if (this.draggedColumn != dropHeader) {
         let dragIndex = DomHandler.indexWithinGroup(this.draggedColumn, "preorderablecolumn");
@@ -4214,14 +4190,8 @@ var Table = class _Table {
     let innerHTML = "";
     width.forEach((width2, index) => {
       let colWidth = index === colIndex ? newColumnWidth : nextColumnWidth && index === colIndex + 1 ? nextColumnWidth : width2;
-      let style2 = `width: ${colWidth}px !important; max-width: ${colWidth}px !important;`;
-      innerHTML += `
-                #${this.id}-table > .p-datatable-thead > tr > th:nth-child(${index + 1}),
-                #${this.id}-table > .p-datatable-tbody > tr > td:nth-child(${index + 1}),
-                #${this.id}-table > .p-datatable-tfoot > tr > td:nth-child(${index + 1}) {
-                    ${style2}
-                }
-            `;
+      let style2 = "width: ".concat(colWidth, "px !important; max-width: ").concat(colWidth, "px !important;");
+      innerHTML += "\n                #".concat(this.id, "-table > .p-datatable-thead > tr > th:nth-child(").concat(index + 1, "),\n                #").concat(this.id, "-table > .p-datatable-tbody > tr > td:nth-child(").concat(index + 1, "),\n                #").concat(this.id, "-table > .p-datatable-tfoot > tr > td:nth-child(").concat(index + 1, ") {\n                    ").concat(style2, "\n                }\n            ");
     });
     this.renderer.setProperty(this.styleElement, "innerHTML", this.domSanitizer.bypassSecurityTrustStyle(innerHTML));
   }
@@ -4389,16 +4359,17 @@ var Table = class _Table {
     }
   }
   saveColumnWidths(state) {
+    var _a, _b;
     let widths = [];
     let headers = [];
-    const container = this.containerViewChild?.nativeElement;
+    const container = (_a = this.containerViewChild) == null ? void 0 : _a.nativeElement;
     if (container) {
       headers = DomHandler.find(container, ".p-datatable-thead > tr > th");
     }
     headers.forEach((header) => widths.push(DomHandler.getOuterWidth(header)));
     state.columnWidths = widths.join(",");
     if (this.columnResizeMode === "expand") {
-      state.tableWidth = DomHandler.getOuterWidth(this.tableViewChild?.nativeElement);
+      state.tableWidth = DomHandler.getOuterWidth((_b = this.tableViewChild) == null ? void 0 : _b.nativeElement);
     }
   }
   setResizeTableWidth(width) {
@@ -4415,14 +4386,8 @@ var Table = class _Table {
         this.createStyleElement();
         let innerHTML = "";
         widths.forEach((width, index) => {
-          let style2 = `width: ${width}px !important; max-width: ${width}px !important`;
-          innerHTML += `
-                        #${this.id}-table > .p-datatable-thead > tr > th:nth-child(${index + 1}),
-                        #${this.id}-table > .p-datatable-tbody > tr > td:nth-child(${index + 1}),
-                        #${this.id}-table > .p-datatable-tfoot > tr > td:nth-child(${index + 1}) {
-                            ${style2}
-                        }
-                    `;
+          let style2 = "width: ".concat(width, "px !important; max-width: ").concat(width, "px !important");
+          innerHTML += "\n                        #".concat(this.id, "-table > .p-datatable-thead > tr > th:nth-child(").concat(index + 1, "),\n                        #").concat(this.id, "-table > .p-datatable-tbody > tr > td:nth-child(").concat(index + 1, "),\n                        #").concat(this.id, "-table > .p-datatable-tfoot > tr > td:nth-child(").concat(index + 1, ") {\n                            ").concat(style2, "\n                        }\n                    ");
         });
         this.styleElement.textContent = innerHTML;
       }
@@ -4467,9 +4432,10 @@ var Table = class _Table {
     }
   }
   createStyleElement() {
+    var _a, _b;
     this.styleElement = this.renderer.createElement("style");
     this.styleElement.type = "text/css";
-    DomHandler.setAttribute(this.styleElement, "nonce", this.config?.csp()?.nonce);
+    DomHandler.setAttribute(this.styleElement, "nonce", (_b = (_a = this.config) == null ? void 0 : _a.csp()) == null ? void 0 : _b.nonce);
     this.renderer.appendChild(this.document.head, this.styleElement);
   }
   getGroupRowsMeta() {
@@ -4479,41 +4445,14 @@ var Table = class _Table {
     };
   }
   createResponsiveStyle() {
+    var _a, _b;
     if (isPlatformBrowser(this.platformId)) {
       if (!this.responsiveStyleElement) {
         this.responsiveStyleElement = this.renderer.createElement("style");
         this.responsiveStyleElement.type = "text/css";
-        DomHandler.setAttribute(this.responsiveStyleElement, "nonce", this.config?.csp()?.nonce);
+        DomHandler.setAttribute(this.responsiveStyleElement, "nonce", (_b = (_a = this.config) == null ? void 0 : _a.csp()) == null ? void 0 : _b.nonce);
         this.renderer.appendChild(this.document.head, this.responsiveStyleElement);
-        let innerHTML = `
-    @media screen and (max-width: ${this.breakpoint}) {
-        #${this.id}-table > .p-datatable-thead > tr > th,
-        #${this.id}-table > .p-datatable-tfoot > tr > td {
-            display: none !important;
-        }
-
-        #${this.id}-table > .p-datatable-tbody > tr > td {
-            display: flex;
-            width: 100% !important;
-            align-items: center;
-            justify-content: space-between;
-        }
-
-        #${this.id}-table > .p-datatable-tbody > tr > td:not(:last-child) {
-            border: 0 none;
-        }
-
-        #${this.id}.p-datatable-gridlines > .p-datatable-wrapper > .p-datatable-table > .p-datatable-tbody > tr > td:last-child {
-            border-top: 0;
-            border-right: 0;
-            border-left: 0;
-        }
-
-        #${this.id}-table > .p-datatable-tbody > tr > td > .p-column-title {
-            display: block;
-        }
-    }
-    `;
+        let innerHTML = "\n    @media screen and (max-width: ".concat(this.breakpoint, ") {\n        #").concat(this.id, "-table > .p-datatable-thead > tr > th,\n        #").concat(this.id, "-table > .p-datatable-tfoot > tr > td {\n            display: none !important;\n        }\n\n        #").concat(this.id, "-table > .p-datatable-tbody > tr > td {\n            display: flex;\n            width: 100% !important;\n            align-items: center;\n            justify-content: space-between;\n        }\n\n        #").concat(this.id, "-table > .p-datatable-tbody > tr > td:not(:last-child) {\n            border: 0 none;\n        }\n\n        #").concat(this.id, ".p-datatable-gridlines > .p-datatable-wrapper > .p-datatable-table > .p-datatable-tbody > tr > td:last-child {\n            border-top: 0;\n            border-right: 0;\n            border-left: 0;\n        }\n\n        #").concat(this.id, "-table > .p-datatable-tbody > tr > td > .p-column-title {\n            display: block;\n        }\n    }\n    ");
         this.renderer.setProperty(this.responsiveStyleElement, "innerHTML", this.domSanitizer.bypassSecurityTrustStyle(innerHTML));
       }
     }
@@ -4540,430 +4479,214 @@ var Table = class _Table {
   getPaginatorStyleClasses(className) {
     return [this.paginatorStyleClass, className].filter((c) => !!c).join(" ").trim();
   }
-  static ɵfac = function Table_Factory(__ngFactoryType__) {
-    return new (__ngFactoryType__ || _Table)(ɵɵdirectiveInject(DOCUMENT), ɵɵdirectiveInject(PLATFORM_ID), ɵɵdirectiveInject(Renderer2), ɵɵdirectiveInject(ElementRef), ɵɵdirectiveInject(NgZone), ɵɵdirectiveInject(TableService), ɵɵdirectiveInject(ChangeDetectorRef), ɵɵdirectiveInject(FilterService), ɵɵdirectiveInject(OverlayService), ɵɵdirectiveInject(PrimeNGConfig), ɵɵdirectiveInject(DomSanitizer));
-  };
-  static ɵcmp = ɵɵdefineComponent({
-    type: _Table,
-    selectors: [["p-table"]],
-    contentQueries: function Table_ContentQueries(rf, ctx, dirIndex) {
-      if (rf & 1) {
-        ɵɵcontentQuery(dirIndex, PrimeTemplate, 4);
-      }
-      if (rf & 2) {
-        let _t;
-        ɵɵqueryRefresh(_t = ɵɵloadQuery()) && (ctx.templates = _t);
-      }
-    },
-    viewQuery: function Table_Query(rf, ctx) {
-      if (rf & 1) {
-        ɵɵviewQuery(_c0, 5);
-        ɵɵviewQuery(_c1, 5);
-        ɵɵviewQuery(_c2, 5);
-        ɵɵviewQuery(_c3, 5);
-        ɵɵviewQuery(_c4, 5);
-        ɵɵviewQuery(_c5, 5);
-        ɵɵviewQuery(_c6, 5);
-        ɵɵviewQuery(_c7, 5);
-        ɵɵviewQuery(_c8, 5);
-      }
-      if (rf & 2) {
-        let _t;
-        ɵɵqueryRefresh(_t = ɵɵloadQuery()) && (ctx.containerViewChild = _t.first);
-        ɵɵqueryRefresh(_t = ɵɵloadQuery()) && (ctx.resizeHelperViewChild = _t.first);
-        ɵɵqueryRefresh(_t = ɵɵloadQuery()) && (ctx.reorderIndicatorUpViewChild = _t.first);
-        ɵɵqueryRefresh(_t = ɵɵloadQuery()) && (ctx.reorderIndicatorDownViewChild = _t.first);
-        ɵɵqueryRefresh(_t = ɵɵloadQuery()) && (ctx.wrapperViewChild = _t.first);
-        ɵɵqueryRefresh(_t = ɵɵloadQuery()) && (ctx.tableViewChild = _t.first);
-        ɵɵqueryRefresh(_t = ɵɵloadQuery()) && (ctx.tableHeaderViewChild = _t.first);
-        ɵɵqueryRefresh(_t = ɵɵloadQuery()) && (ctx.tableFooterViewChild = _t.first);
-        ɵɵqueryRefresh(_t = ɵɵloadQuery()) && (ctx.scroller = _t.first);
-      }
-    },
-    hostAttrs: [1, "p-element"],
-    inputs: {
-      frozenColumns: "frozenColumns",
-      frozenValue: "frozenValue",
-      style: "style",
-      styleClass: "styleClass",
-      tableStyle: "tableStyle",
-      tableStyleClass: "tableStyleClass",
-      paginator: [2, "paginator", "paginator", booleanAttribute],
-      pageLinks: [2, "pageLinks", "pageLinks", numberAttribute],
-      rowsPerPageOptions: "rowsPerPageOptions",
-      alwaysShowPaginator: [2, "alwaysShowPaginator", "alwaysShowPaginator", booleanAttribute],
-      paginatorPosition: "paginatorPosition",
-      paginatorStyleClass: "paginatorStyleClass",
-      paginatorDropdownAppendTo: "paginatorDropdownAppendTo",
-      paginatorDropdownScrollHeight: "paginatorDropdownScrollHeight",
-      currentPageReportTemplate: "currentPageReportTemplate",
-      showCurrentPageReport: [2, "showCurrentPageReport", "showCurrentPageReport", booleanAttribute],
-      showJumpToPageDropdown: [2, "showJumpToPageDropdown", "showJumpToPageDropdown", booleanAttribute],
-      showJumpToPageInput: [2, "showJumpToPageInput", "showJumpToPageInput", booleanAttribute],
-      showFirstLastIcon: [2, "showFirstLastIcon", "showFirstLastIcon", booleanAttribute],
-      showPageLinks: [2, "showPageLinks", "showPageLinks", booleanAttribute],
-      defaultSortOrder: [2, "defaultSortOrder", "defaultSortOrder", numberAttribute],
-      sortMode: "sortMode",
-      resetPageOnSort: [2, "resetPageOnSort", "resetPageOnSort", booleanAttribute],
-      selectionMode: "selectionMode",
-      selectionPageOnly: [2, "selectionPageOnly", "selectionPageOnly", booleanAttribute],
-      contextMenuSelection: "contextMenuSelection",
-      contextMenuSelectionMode: "contextMenuSelectionMode",
-      dataKey: "dataKey",
-      metaKeySelection: [2, "metaKeySelection", "metaKeySelection", booleanAttribute],
-      rowSelectable: "rowSelectable",
-      rowTrackBy: "rowTrackBy",
-      lazy: [2, "lazy", "lazy", booleanAttribute],
-      lazyLoadOnInit: [2, "lazyLoadOnInit", "lazyLoadOnInit", booleanAttribute],
-      compareSelectionBy: "compareSelectionBy",
-      csvSeparator: "csvSeparator",
-      exportFilename: "exportFilename",
-      filters: "filters",
-      globalFilterFields: "globalFilterFields",
-      filterDelay: [2, "filterDelay", "filterDelay", numberAttribute],
-      filterLocale: "filterLocale",
-      expandedRowKeys: "expandedRowKeys",
-      editingRowKeys: "editingRowKeys",
-      rowExpandMode: "rowExpandMode",
-      scrollable: [2, "scrollable", "scrollable", booleanAttribute],
-      scrollDirection: "scrollDirection",
-      rowGroupMode: "rowGroupMode",
-      scrollHeight: "scrollHeight",
-      virtualScroll: [2, "virtualScroll", "virtualScroll", booleanAttribute],
-      virtualScrollItemSize: [2, "virtualScrollItemSize", "virtualScrollItemSize", numberAttribute],
-      virtualScrollOptions: "virtualScrollOptions",
-      virtualScrollDelay: [2, "virtualScrollDelay", "virtualScrollDelay", numberAttribute],
-      frozenWidth: "frozenWidth",
-      responsive: "responsive",
-      contextMenu: "contextMenu",
-      resizableColumns: [2, "resizableColumns", "resizableColumns", booleanAttribute],
-      columnResizeMode: "columnResizeMode",
-      reorderableColumns: [2, "reorderableColumns", "reorderableColumns", booleanAttribute],
-      loading: [2, "loading", "loading", booleanAttribute],
-      loadingIcon: "loadingIcon",
-      showLoader: [2, "showLoader", "showLoader", booleanAttribute],
-      rowHover: [2, "rowHover", "rowHover", booleanAttribute],
-      customSort: [2, "customSort", "customSort", booleanAttribute],
-      showInitialSortBadge: [2, "showInitialSortBadge", "showInitialSortBadge", booleanAttribute],
-      autoLayout: [2, "autoLayout", "autoLayout", booleanAttribute],
-      exportFunction: "exportFunction",
-      exportHeader: "exportHeader",
-      stateKey: "stateKey",
-      stateStorage: "stateStorage",
-      editMode: "editMode",
-      groupRowsBy: "groupRowsBy",
-      groupRowsByOrder: [2, "groupRowsByOrder", "groupRowsByOrder", numberAttribute],
-      responsiveLayout: "responsiveLayout",
-      breakpoint: "breakpoint",
-      paginatorLocale: "paginatorLocale",
-      value: "value",
-      columns: "columns",
-      first: "first",
-      rows: "rows",
-      totalRecords: "totalRecords",
-      sortField: "sortField",
-      sortOrder: "sortOrder",
-      multiSortMeta: "multiSortMeta",
-      selection: "selection",
-      selectAll: "selectAll",
-      virtualRowHeight: "virtualRowHeight"
-    },
-    outputs: {
-      contextMenuSelectionChange: "contextMenuSelectionChange",
-      selectAllChange: "selectAllChange",
-      selectionChange: "selectionChange",
-      onRowSelect: "onRowSelect",
-      onRowUnselect: "onRowUnselect",
-      onPage: "onPage",
-      onSort: "onSort",
-      onFilter: "onFilter",
-      onLazyLoad: "onLazyLoad",
-      onRowExpand: "onRowExpand",
-      onRowCollapse: "onRowCollapse",
-      onContextMenuSelect: "onContextMenuSelect",
-      onColResize: "onColResize",
-      onColReorder: "onColReorder",
-      onRowReorder: "onRowReorder",
-      onEditInit: "onEditInit",
-      onEditComplete: "onEditComplete",
-      onEditCancel: "onEditCancel",
-      onHeaderCheckboxToggle: "onHeaderCheckboxToggle",
-      sortFunction: "sortFunction",
-      firstChange: "firstChange",
-      rowsChange: "rowsChange",
-      onStateSave: "onStateSave",
-      onStateRestore: "onStateRestore"
-    },
-    features: [ɵɵProvidersFeature([TableService]), ɵɵInputTransformsFeature, ɵɵNgOnChangesFeature],
-    decls: 16,
-    vars: 22,
-    consts: [["container", ""], ["wrapper", ""], ["buildInTable", ""], ["scroller", ""], ["table", ""], ["thead", ""], ["tfoot", ""], ["resizeHelper", ""], ["reorderIndicatorUp", ""], ["reorderIndicatorDown", ""], [3, "ngStyle", "ngClass"], ["class", "p-datatable-loading-overlay p-component-overlay", 4, "ngIf"], ["class", "p-datatable-header", 4, "ngIf"], [3, "rows", "first", "totalRecords", "pageLinkSize", "alwaysShow", "rowsPerPageOptions", "templateLeft", "templateRight", "dropdownAppendTo", "dropdownScrollHeight", "currentPageReportTemplate", "showFirstLastIcon", "dropdownItemTemplate", "showCurrentPageReport", "showJumpToPageDropdown", "showJumpToPageInput", "showPageLinks", "styleClass", "locale", "onPageChange", 4, "ngIf"], [1, "p-datatable-wrapper", 3, "ngStyle"], [3, "items", "columns", "style", "scrollHeight", "itemSize", "step", "delay", "inline", "autoSize", "lazy", "loaderDisabled", "showSpacer", "showLoader", "options", "onLazyLoad", 4, "ngIf"], [4, "ngIf"], ["class", "p-datatable-footer", 4, "ngIf"], ["class", "p-column-resizer-helper", 3, "ngStyle", 4, "ngIf"], ["class", "p-datatable-reorder-indicator-up", 3, "ngStyle", 4, "ngIf"], ["class", "p-datatable-reorder-indicator-down", 3, "ngStyle", 4, "ngIf"], [1, "p-datatable-loading-overlay", "p-component-overlay"], [3, "class", 4, "ngIf"], [3, "spin", "styleClass", 4, "ngIf"], ["class", "p-datatable-loading-icon", 4, "ngIf"], [3, "spin", "styleClass"], [1, "p-datatable-loading-icon"], [4, "ngTemplateOutlet"], [1, "p-datatable-header"], [3, "onPageChange", "rows", "first", "totalRecords", "pageLinkSize", "alwaysShow", "rowsPerPageOptions", "templateLeft", "templateRight", "dropdownAppendTo", "dropdownScrollHeight", "currentPageReportTemplate", "showFirstLastIcon", "dropdownItemTemplate", "showCurrentPageReport", "showJumpToPageDropdown", "showJumpToPageInput", "showPageLinks", "styleClass", "locale"], ["pTemplate", "dropdownicon"], ["pTemplate", "firstpagelinkicon"], ["pTemplate", "previouspagelinkicon"], ["pTemplate", "lastpagelinkicon"], ["pTemplate", "nextpagelinkicon"], [3, "onLazyLoad", "items", "columns", "scrollHeight", "itemSize", "step", "delay", "inline", "autoSize", "lazy", "loaderDisabled", "showSpacer", "showLoader", "options"], ["pTemplate", "content"], [4, "ngTemplateOutlet", "ngTemplateOutletContext"], ["role", "table", 3, "ngClass", "ngStyle"], ["role", "rowgroup", 1, "p-datatable-thead"], ["role", "rowgroup", "class", "p-datatable-tbody p-datatable-frozen-tbody", 3, "value", "frozenRows", "pTableBody", "pTableBodyTemplate", "frozen", 4, "ngIf"], ["role", "rowgroup", 1, "p-datatable-tbody", 3, "ngClass", "ngStyle", "value", "pTableBody", "pTableBodyTemplate", "scrollerOptions"], ["role", "rowgroup", "class", "p-datatable-scroller-spacer", 3, "ngStyle", 4, "ngIf"], ["role", "rowgroup", "class", "p-datatable-tfoot", 4, "ngIf"], ["role", "rowgroup", 1, "p-datatable-tbody", "p-datatable-frozen-tbody", 3, "value", "frozenRows", "pTableBody", "pTableBodyTemplate", "frozen"], ["role", "rowgroup", 1, "p-datatable-scroller-spacer", 3, "ngStyle"], ["role", "rowgroup", 1, "p-datatable-tfoot"], [1, "p-datatable-footer"], [1, "p-column-resizer-helper", 3, "ngStyle"], [1, "p-datatable-reorder-indicator-up", 3, "ngStyle"], [1, "p-datatable-reorder-indicator-down", 3, "ngStyle"]],
-    template: function Table_Template(rf, ctx) {
-      if (rf & 1) {
-        ɵɵelementStart(0, "div", 10, 0);
-        ɵɵtemplate(2, Table_div_2_Template, 3, 2, "div", 11)(3, Table_div_3_Template, 2, 1, "div", 12)(4, Table_p_paginator_4_Template, 6, 24, "p-paginator", 13);
-        ɵɵelementStart(5, "div", 14, 1);
-        ɵɵtemplate(7, Table_p_scroller_7_Template, 3, 17, "p-scroller", 15)(8, Table_ng_container_8_Template, 2, 7, "ng-container", 16)(9, Table_ng_template_9_Template, 10, 26, "ng-template", null, 2, ɵɵtemplateRefExtractor);
-        ɵɵelementEnd();
-        ɵɵtemplate(11, Table_p_paginator_11_Template, 6, 24, "p-paginator", 13)(12, Table_div_12_Template, 2, 1, "div", 17)(13, Table_div_13_Template, 2, 2, "div", 18)(14, Table_span_14_Template, 4, 4, "span", 19)(15, Table_span_15_Template, 4, 4, "span", 20);
-        ɵɵelementEnd();
-      }
-      if (rf & 2) {
-        ɵɵclassMap(ctx.styleClass);
-        ɵɵproperty("ngStyle", ctx.style)("ngClass", ɵɵpureFunction3(16, _c9, ctx.rowHover || ctx.selectionMode, ctx.scrollable, ctx.scrollable && ctx.scrollHeight === "flex"));
-        ɵɵattribute("id", ctx.id);
-        ɵɵadvance(2);
-        ɵɵproperty("ngIf", ctx.loading && ctx.showLoader);
-        ɵɵadvance();
-        ɵɵproperty("ngIf", ctx.captionTemplate);
-        ɵɵadvance();
-        ɵɵproperty("ngIf", ctx.paginator && (ctx.paginatorPosition === "top" || ctx.paginatorPosition == "both"));
-        ɵɵadvance();
-        ɵɵproperty("ngStyle", ɵɵpureFunction1(20, _c10, ctx.virtualScroll ? "" : ctx.scrollHeight));
-        ɵɵadvance(2);
-        ɵɵproperty("ngIf", ctx.virtualScroll);
-        ɵɵadvance();
-        ɵɵproperty("ngIf", !ctx.virtualScroll);
-        ɵɵadvance(3);
-        ɵɵproperty("ngIf", ctx.paginator && (ctx.paginatorPosition === "bottom" || ctx.paginatorPosition == "both"));
-        ɵɵadvance();
-        ɵɵproperty("ngIf", ctx.summaryTemplate);
-        ɵɵadvance();
-        ɵɵproperty("ngIf", ctx.resizableColumns);
-        ɵɵadvance();
-        ɵɵproperty("ngIf", ctx.reorderableColumns);
-        ɵɵadvance();
-        ɵɵproperty("ngIf", ctx.reorderableColumns);
-      }
-    },
-    dependencies: () => [NgClass, NgIf, NgTemplateOutlet, NgStyle, Paginator, PrimeTemplate, Scroller, ArrowDownIcon, ArrowUpIcon, SpinnerIcon, TableBody],
-    styles: ["@layer primeng{.p-datatable{position:relative}.p-datatable>.p-datatable-wrapper{overflow:auto}.p-datatable-table{border-spacing:0px;width:100%}.p-datatable .p-sortable-column{cursor:pointer;-webkit-user-select:none;user-select:none}.p-datatable .p-sortable-column .p-column-title,.p-datatable .p-sortable-column .p-sortable-column-icon,.p-datatable .p-sortable-column .p-sortable-column-badge{vertical-align:middle}.p-datatable .p-sortable-column .p-icon-wrapper{display:inline}.p-datatable .p-sortable-column .p-sortable-column-badge{display:inline-flex;align-items:center;justify-content:center}.p-datatable-hoverable-rows .p-selectable-row{cursor:pointer}.p-datatable-scrollable>.p-datatable-wrapper{position:relative}.p-datatable-scrollable-table>.p-datatable-thead{position:sticky;top:0;z-index:2}.p-datatable-scrollable-table>.p-datatable-frozen-tbody{position:sticky;z-index:1}.p-datatable-scrollable-table>.p-datatable-tfoot{position:sticky;bottom:0;z-index:1}.p-datatable-scrollable .p-frozen-column{position:sticky;background:inherit;z-index:1}.p-datatable-scrollable th.p-frozen-column{z-index:1}.p-datatable-flex-scrollable{display:flex;flex-direction:column;height:100%}.p-datatable-flex-scrollable>.p-datatable-wrapper{display:flex;flex-direction:column;flex:1;height:100%}.p-datatable-scrollable-table>.p-datatable-tbody>.p-rowgroup-header{position:sticky;z-index:2}.p-datatable-resizable-table>.p-datatable-thead>tr>th,.p-datatable-resizable-table>.p-datatable-tfoot>tr>td,.p-datatable-resizable-table>.p-datatable-tbody>tr>td{overflow:hidden;white-space:nowrap}.p-datatable-resizable-table>.p-datatable-thead>tr>th.p-resizable-column:not(.p-frozen-column){background-clip:padding-box;position:relative}.p-datatable-resizable-table-fit>.p-datatable-thead>tr>th.p-resizable-column:last-child .p-column-resizer{display:none}.p-datatable .p-column-resizer{display:block;position:absolute!important;top:0;right:0;margin:0;width:.5rem;height:100%;padding:0;cursor:col-resize;border:1px solid transparent}.p-datatable .p-column-resizer-helper{width:1px;position:absolute;z-index:10;display:none}.p-datatable .p-row-editor-init,.p-datatable .p-row-editor-save,.p-datatable .p-row-editor-cancel,.p-datatable .p-row-toggler{display:inline-flex;align-items:center;justify-content:center;overflow:hidden;position:relative}.p-datatable-reorder-indicator-up,.p-datatable-reorder-indicator-down{position:absolute}.p-datatable-reorderablerow-handle,[pReorderableColumn]{cursor:move}.p-datatable .p-datatable-loading-overlay{position:absolute;display:flex;align-items:center;justify-content:center;z-index:3}.p-column-filter-row{display:flex;align-items:center;width:100%}.p-column-filter-menu{display:inline-flex}.p-column-filter-row p-columnfilterformelement{flex:1 1 auto;width:1%}.p-column-filter-menu-button,.p-column-filter-clear-button{display:inline-flex;justify-content:center;align-items:center;cursor:pointer;text-decoration:none;overflow:hidden;position:relative}.p-column-filter-overlay{position:absolute;top:0;left:0}.p-column-filter-row-items{margin:0;padding:0;list-style:none}.p-column-filter-row-item{cursor:pointer}.p-column-filter-add-button,.p-column-filter-remove-button{justify-content:center}.p-column-filter-add-button .p-button-label,.p-column-filter-remove-button .p-button-label{flex-grow:0}.p-column-filter-buttonbar{display:flex;align-items:center;justify-content:space-between}.p-column-filter-buttonbar .p-button{width:auto}.p-datatable-tbody>tr>td>.p-column-title{display:none}.p-datatable-scroller-spacer{display:flex}.p-datatable .p-scroller .p-scroller-loading{transform:none!important;min-height:0;position:sticky;top:0;left:0}}\n"],
-    encapsulation: 2
-  });
 };
+__publicField(_Table, "ɵfac", function Table_Factory(__ngFactoryType__) {
+  return new (__ngFactoryType__ || _Table)(ɵɵdirectiveInject(DOCUMENT), ɵɵdirectiveInject(PLATFORM_ID), ɵɵdirectiveInject(Renderer2), ɵɵdirectiveInject(ElementRef), ɵɵdirectiveInject(NgZone), ɵɵdirectiveInject(TableService), ɵɵdirectiveInject(ChangeDetectorRef), ɵɵdirectiveInject(FilterService), ɵɵdirectiveInject(OverlayService), ɵɵdirectiveInject(PrimeNGConfig), ɵɵdirectiveInject(DomSanitizer));
+});
+__publicField(_Table, "ɵcmp", ɵɵdefineComponent({
+  type: _Table,
+  selectors: [["p-table"]],
+  contentQueries: function Table_ContentQueries(rf, ctx, dirIndex) {
+    if (rf & 1) {
+      ɵɵcontentQuery(dirIndex, PrimeTemplate, 4);
+    }
+    if (rf & 2) {
+      let _t;
+      ɵɵqueryRefresh(_t = ɵɵloadQuery()) && (ctx.templates = _t);
+    }
+  },
+  viewQuery: function Table_Query(rf, ctx) {
+    if (rf & 1) {
+      ɵɵviewQuery(_c0, 5);
+      ɵɵviewQuery(_c1, 5);
+      ɵɵviewQuery(_c2, 5);
+      ɵɵviewQuery(_c3, 5);
+      ɵɵviewQuery(_c4, 5);
+      ɵɵviewQuery(_c5, 5);
+      ɵɵviewQuery(_c6, 5);
+      ɵɵviewQuery(_c7, 5);
+      ɵɵviewQuery(_c8, 5);
+    }
+    if (rf & 2) {
+      let _t;
+      ɵɵqueryRefresh(_t = ɵɵloadQuery()) && (ctx.containerViewChild = _t.first);
+      ɵɵqueryRefresh(_t = ɵɵloadQuery()) && (ctx.resizeHelperViewChild = _t.first);
+      ɵɵqueryRefresh(_t = ɵɵloadQuery()) && (ctx.reorderIndicatorUpViewChild = _t.first);
+      ɵɵqueryRefresh(_t = ɵɵloadQuery()) && (ctx.reorderIndicatorDownViewChild = _t.first);
+      ɵɵqueryRefresh(_t = ɵɵloadQuery()) && (ctx.wrapperViewChild = _t.first);
+      ɵɵqueryRefresh(_t = ɵɵloadQuery()) && (ctx.tableViewChild = _t.first);
+      ɵɵqueryRefresh(_t = ɵɵloadQuery()) && (ctx.tableHeaderViewChild = _t.first);
+      ɵɵqueryRefresh(_t = ɵɵloadQuery()) && (ctx.tableFooterViewChild = _t.first);
+      ɵɵqueryRefresh(_t = ɵɵloadQuery()) && (ctx.scroller = _t.first);
+    }
+  },
+  hostAttrs: [1, "p-element"],
+  inputs: {
+    frozenColumns: "frozenColumns",
+    frozenValue: "frozenValue",
+    style: "style",
+    styleClass: "styleClass",
+    tableStyle: "tableStyle",
+    tableStyleClass: "tableStyleClass",
+    paginator: [2, "paginator", "paginator", booleanAttribute],
+    pageLinks: [2, "pageLinks", "pageLinks", numberAttribute],
+    rowsPerPageOptions: "rowsPerPageOptions",
+    alwaysShowPaginator: [2, "alwaysShowPaginator", "alwaysShowPaginator", booleanAttribute],
+    paginatorPosition: "paginatorPosition",
+    paginatorStyleClass: "paginatorStyleClass",
+    paginatorDropdownAppendTo: "paginatorDropdownAppendTo",
+    paginatorDropdownScrollHeight: "paginatorDropdownScrollHeight",
+    currentPageReportTemplate: "currentPageReportTemplate",
+    showCurrentPageReport: [2, "showCurrentPageReport", "showCurrentPageReport", booleanAttribute],
+    showJumpToPageDropdown: [2, "showJumpToPageDropdown", "showJumpToPageDropdown", booleanAttribute],
+    showJumpToPageInput: [2, "showJumpToPageInput", "showJumpToPageInput", booleanAttribute],
+    showFirstLastIcon: [2, "showFirstLastIcon", "showFirstLastIcon", booleanAttribute],
+    showPageLinks: [2, "showPageLinks", "showPageLinks", booleanAttribute],
+    defaultSortOrder: [2, "defaultSortOrder", "defaultSortOrder", numberAttribute],
+    sortMode: "sortMode",
+    resetPageOnSort: [2, "resetPageOnSort", "resetPageOnSort", booleanAttribute],
+    selectionMode: "selectionMode",
+    selectionPageOnly: [2, "selectionPageOnly", "selectionPageOnly", booleanAttribute],
+    contextMenuSelection: "contextMenuSelection",
+    contextMenuSelectionMode: "contextMenuSelectionMode",
+    dataKey: "dataKey",
+    metaKeySelection: [2, "metaKeySelection", "metaKeySelection", booleanAttribute],
+    rowSelectable: "rowSelectable",
+    rowTrackBy: "rowTrackBy",
+    lazy: [2, "lazy", "lazy", booleanAttribute],
+    lazyLoadOnInit: [2, "lazyLoadOnInit", "lazyLoadOnInit", booleanAttribute],
+    compareSelectionBy: "compareSelectionBy",
+    csvSeparator: "csvSeparator",
+    exportFilename: "exportFilename",
+    filters: "filters",
+    globalFilterFields: "globalFilterFields",
+    filterDelay: [2, "filterDelay", "filterDelay", numberAttribute],
+    filterLocale: "filterLocale",
+    expandedRowKeys: "expandedRowKeys",
+    editingRowKeys: "editingRowKeys",
+    rowExpandMode: "rowExpandMode",
+    scrollable: [2, "scrollable", "scrollable", booleanAttribute],
+    scrollDirection: "scrollDirection",
+    rowGroupMode: "rowGroupMode",
+    scrollHeight: "scrollHeight",
+    virtualScroll: [2, "virtualScroll", "virtualScroll", booleanAttribute],
+    virtualScrollItemSize: [2, "virtualScrollItemSize", "virtualScrollItemSize", numberAttribute],
+    virtualScrollOptions: "virtualScrollOptions",
+    virtualScrollDelay: [2, "virtualScrollDelay", "virtualScrollDelay", numberAttribute],
+    frozenWidth: "frozenWidth",
+    responsive: "responsive",
+    contextMenu: "contextMenu",
+    resizableColumns: [2, "resizableColumns", "resizableColumns", booleanAttribute],
+    columnResizeMode: "columnResizeMode",
+    reorderableColumns: [2, "reorderableColumns", "reorderableColumns", booleanAttribute],
+    loading: [2, "loading", "loading", booleanAttribute],
+    loadingIcon: "loadingIcon",
+    showLoader: [2, "showLoader", "showLoader", booleanAttribute],
+    rowHover: [2, "rowHover", "rowHover", booleanAttribute],
+    customSort: [2, "customSort", "customSort", booleanAttribute],
+    showInitialSortBadge: [2, "showInitialSortBadge", "showInitialSortBadge", booleanAttribute],
+    autoLayout: [2, "autoLayout", "autoLayout", booleanAttribute],
+    exportFunction: "exportFunction",
+    exportHeader: "exportHeader",
+    stateKey: "stateKey",
+    stateStorage: "stateStorage",
+    editMode: "editMode",
+    groupRowsBy: "groupRowsBy",
+    groupRowsByOrder: [2, "groupRowsByOrder", "groupRowsByOrder", numberAttribute],
+    responsiveLayout: "responsiveLayout",
+    breakpoint: "breakpoint",
+    paginatorLocale: "paginatorLocale",
+    value: "value",
+    columns: "columns",
+    first: "first",
+    rows: "rows",
+    totalRecords: "totalRecords",
+    sortField: "sortField",
+    sortOrder: "sortOrder",
+    multiSortMeta: "multiSortMeta",
+    selection: "selection",
+    selectAll: "selectAll",
+    virtualRowHeight: "virtualRowHeight"
+  },
+  outputs: {
+    contextMenuSelectionChange: "contextMenuSelectionChange",
+    selectAllChange: "selectAllChange",
+    selectionChange: "selectionChange",
+    onRowSelect: "onRowSelect",
+    onRowUnselect: "onRowUnselect",
+    onPage: "onPage",
+    onSort: "onSort",
+    onFilter: "onFilter",
+    onLazyLoad: "onLazyLoad",
+    onRowExpand: "onRowExpand",
+    onRowCollapse: "onRowCollapse",
+    onContextMenuSelect: "onContextMenuSelect",
+    onColResize: "onColResize",
+    onColReorder: "onColReorder",
+    onRowReorder: "onRowReorder",
+    onEditInit: "onEditInit",
+    onEditComplete: "onEditComplete",
+    onEditCancel: "onEditCancel",
+    onHeaderCheckboxToggle: "onHeaderCheckboxToggle",
+    sortFunction: "sortFunction",
+    firstChange: "firstChange",
+    rowsChange: "rowsChange",
+    onStateSave: "onStateSave",
+    onStateRestore: "onStateRestore"
+  },
+  features: [ɵɵProvidersFeature([TableService]), ɵɵInputTransformsFeature, ɵɵNgOnChangesFeature],
+  decls: 16,
+  vars: 22,
+  consts: [["container", ""], ["wrapper", ""], ["buildInTable", ""], ["scroller", ""], ["table", ""], ["thead", ""], ["tfoot", ""], ["resizeHelper", ""], ["reorderIndicatorUp", ""], ["reorderIndicatorDown", ""], [3, "ngStyle", "ngClass"], ["class", "p-datatable-loading-overlay p-component-overlay", 4, "ngIf"], ["class", "p-datatable-header", 4, "ngIf"], [3, "rows", "first", "totalRecords", "pageLinkSize", "alwaysShow", "rowsPerPageOptions", "templateLeft", "templateRight", "dropdownAppendTo", "dropdownScrollHeight", "currentPageReportTemplate", "showFirstLastIcon", "dropdownItemTemplate", "showCurrentPageReport", "showJumpToPageDropdown", "showJumpToPageInput", "showPageLinks", "styleClass", "locale", "onPageChange", 4, "ngIf"], [1, "p-datatable-wrapper", 3, "ngStyle"], [3, "items", "columns", "style", "scrollHeight", "itemSize", "step", "delay", "inline", "autoSize", "lazy", "loaderDisabled", "showSpacer", "showLoader", "options", "onLazyLoad", 4, "ngIf"], [4, "ngIf"], ["class", "p-datatable-footer", 4, "ngIf"], ["class", "p-column-resizer-helper", 3, "ngStyle", 4, "ngIf"], ["class", "p-datatable-reorder-indicator-up", 3, "ngStyle", 4, "ngIf"], ["class", "p-datatable-reorder-indicator-down", 3, "ngStyle", 4, "ngIf"], [1, "p-datatable-loading-overlay", "p-component-overlay"], [3, "class", 4, "ngIf"], [3, "spin", "styleClass", 4, "ngIf"], ["class", "p-datatable-loading-icon", 4, "ngIf"], [3, "spin", "styleClass"], [1, "p-datatable-loading-icon"], [4, "ngTemplateOutlet"], [1, "p-datatable-header"], [3, "onPageChange", "rows", "first", "totalRecords", "pageLinkSize", "alwaysShow", "rowsPerPageOptions", "templateLeft", "templateRight", "dropdownAppendTo", "dropdownScrollHeight", "currentPageReportTemplate", "showFirstLastIcon", "dropdownItemTemplate", "showCurrentPageReport", "showJumpToPageDropdown", "showJumpToPageInput", "showPageLinks", "styleClass", "locale"], ["pTemplate", "dropdownicon"], ["pTemplate", "firstpagelinkicon"], ["pTemplate", "previouspagelinkicon"], ["pTemplate", "lastpagelinkicon"], ["pTemplate", "nextpagelinkicon"], [3, "onLazyLoad", "items", "columns", "scrollHeight", "itemSize", "step", "delay", "inline", "autoSize", "lazy", "loaderDisabled", "showSpacer", "showLoader", "options"], ["pTemplate", "content"], [4, "ngTemplateOutlet", "ngTemplateOutletContext"], ["role", "table", 3, "ngClass", "ngStyle"], ["role", "rowgroup", 1, "p-datatable-thead"], ["role", "rowgroup", "class", "p-datatable-tbody p-datatable-frozen-tbody", 3, "value", "frozenRows", "pTableBody", "pTableBodyTemplate", "frozen", 4, "ngIf"], ["role", "rowgroup", 1, "p-datatable-tbody", 3, "ngClass", "ngStyle", "value", "pTableBody", "pTableBodyTemplate", "scrollerOptions"], ["role", "rowgroup", "class", "p-datatable-scroller-spacer", 3, "ngStyle", 4, "ngIf"], ["role", "rowgroup", "class", "p-datatable-tfoot", 4, "ngIf"], ["role", "rowgroup", 1, "p-datatable-tbody", "p-datatable-frozen-tbody", 3, "value", "frozenRows", "pTableBody", "pTableBodyTemplate", "frozen"], ["role", "rowgroup", 1, "p-datatable-scroller-spacer", 3, "ngStyle"], ["role", "rowgroup", 1, "p-datatable-tfoot"], [1, "p-datatable-footer"], [1, "p-column-resizer-helper", 3, "ngStyle"], [1, "p-datatable-reorder-indicator-up", 3, "ngStyle"], [1, "p-datatable-reorder-indicator-down", 3, "ngStyle"]],
+  template: function Table_Template(rf, ctx) {
+    if (rf & 1) {
+      ɵɵelementStart(0, "div", 10, 0);
+      ɵɵtemplate(2, Table_div_2_Template, 3, 2, "div", 11)(3, Table_div_3_Template, 2, 1, "div", 12)(4, Table_p_paginator_4_Template, 6, 24, "p-paginator", 13);
+      ɵɵelementStart(5, "div", 14, 1);
+      ɵɵtemplate(7, Table_p_scroller_7_Template, 3, 17, "p-scroller", 15)(8, Table_ng_container_8_Template, 2, 7, "ng-container", 16)(9, Table_ng_template_9_Template, 10, 26, "ng-template", null, 2, ɵɵtemplateRefExtractor);
+      ɵɵelementEnd();
+      ɵɵtemplate(11, Table_p_paginator_11_Template, 6, 24, "p-paginator", 13)(12, Table_div_12_Template, 2, 1, "div", 17)(13, Table_div_13_Template, 2, 2, "div", 18)(14, Table_span_14_Template, 4, 4, "span", 19)(15, Table_span_15_Template, 4, 4, "span", 20);
+      ɵɵelementEnd();
+    }
+    if (rf & 2) {
+      ɵɵclassMap(ctx.styleClass);
+      ɵɵproperty("ngStyle", ctx.style)("ngClass", ɵɵpureFunction3(16, _c9, ctx.rowHover || ctx.selectionMode, ctx.scrollable, ctx.scrollable && ctx.scrollHeight === "flex"));
+      ɵɵattribute("id", ctx.id);
+      ɵɵadvance(2);
+      ɵɵproperty("ngIf", ctx.loading && ctx.showLoader);
+      ɵɵadvance();
+      ɵɵproperty("ngIf", ctx.captionTemplate);
+      ɵɵadvance();
+      ɵɵproperty("ngIf", ctx.paginator && (ctx.paginatorPosition === "top" || ctx.paginatorPosition == "both"));
+      ɵɵadvance();
+      ɵɵproperty("ngStyle", ɵɵpureFunction1(20, _c10, ctx.virtualScroll ? "" : ctx.scrollHeight));
+      ɵɵadvance(2);
+      ɵɵproperty("ngIf", ctx.virtualScroll);
+      ɵɵadvance();
+      ɵɵproperty("ngIf", !ctx.virtualScroll);
+      ɵɵadvance(3);
+      ɵɵproperty("ngIf", ctx.paginator && (ctx.paginatorPosition === "bottom" || ctx.paginatorPosition == "both"));
+      ɵɵadvance();
+      ɵɵproperty("ngIf", ctx.summaryTemplate);
+      ɵɵadvance();
+      ɵɵproperty("ngIf", ctx.resizableColumns);
+      ɵɵadvance();
+      ɵɵproperty("ngIf", ctx.reorderableColumns);
+      ɵɵadvance();
+      ɵɵproperty("ngIf", ctx.reorderableColumns);
+    }
+  },
+  dependencies: () => [NgClass, NgIf, NgTemplateOutlet, NgStyle, Paginator, PrimeTemplate, Scroller, ArrowDownIcon, ArrowUpIcon, SpinnerIcon, TableBody],
+  styles: ["@layer primeng{.p-datatable{position:relative}.p-datatable>.p-datatable-wrapper{overflow:auto}.p-datatable-table{border-spacing:0px;width:100%}.p-datatable .p-sortable-column{cursor:pointer;-webkit-user-select:none;user-select:none}.p-datatable .p-sortable-column .p-column-title,.p-datatable .p-sortable-column .p-sortable-column-icon,.p-datatable .p-sortable-column .p-sortable-column-badge{vertical-align:middle}.p-datatable .p-sortable-column .p-icon-wrapper{display:inline}.p-datatable .p-sortable-column .p-sortable-column-badge{display:inline-flex;align-items:center;justify-content:center}.p-datatable-hoverable-rows .p-selectable-row{cursor:pointer}.p-datatable-scrollable>.p-datatable-wrapper{position:relative}.p-datatable-scrollable-table>.p-datatable-thead{position:sticky;top:0;z-index:2}.p-datatable-scrollable-table>.p-datatable-frozen-tbody{position:sticky;z-index:1}.p-datatable-scrollable-table>.p-datatable-tfoot{position:sticky;bottom:0;z-index:1}.p-datatable-scrollable .p-frozen-column{position:sticky;background:inherit;z-index:1}.p-datatable-scrollable th.p-frozen-column{z-index:1}.p-datatable-flex-scrollable{display:flex;flex-direction:column;height:100%}.p-datatable-flex-scrollable>.p-datatable-wrapper{display:flex;flex-direction:column;flex:1;height:100%}.p-datatable-scrollable-table>.p-datatable-tbody>.p-rowgroup-header{position:sticky;z-index:2}.p-datatable-resizable-table>.p-datatable-thead>tr>th,.p-datatable-resizable-table>.p-datatable-tfoot>tr>td,.p-datatable-resizable-table>.p-datatable-tbody>tr>td{overflow:hidden;white-space:nowrap}.p-datatable-resizable-table>.p-datatable-thead>tr>th.p-resizable-column:not(.p-frozen-column){background-clip:padding-box;position:relative}.p-datatable-resizable-table-fit>.p-datatable-thead>tr>th.p-resizable-column:last-child .p-column-resizer{display:none}.p-datatable .p-column-resizer{display:block;position:absolute!important;top:0;right:0;margin:0;width:.5rem;height:100%;padding:0;cursor:col-resize;border:1px solid transparent}.p-datatable .p-column-resizer-helper{width:1px;position:absolute;z-index:10;display:none}.p-datatable .p-row-editor-init,.p-datatable .p-row-editor-save,.p-datatable .p-row-editor-cancel,.p-datatable .p-row-toggler{display:inline-flex;align-items:center;justify-content:center;overflow:hidden;position:relative}.p-datatable-reorder-indicator-up,.p-datatable-reorder-indicator-down{position:absolute}.p-datatable-reorderablerow-handle,[pReorderableColumn]{cursor:move}.p-datatable .p-datatable-loading-overlay{position:absolute;display:flex;align-items:center;justify-content:center;z-index:3}.p-column-filter-row{display:flex;align-items:center;width:100%}.p-column-filter-menu{display:inline-flex}.p-column-filter-row p-columnfilterformelement{flex:1 1 auto;width:1%}.p-column-filter-menu-button,.p-column-filter-clear-button{display:inline-flex;justify-content:center;align-items:center;cursor:pointer;text-decoration:none;overflow:hidden;position:relative}.p-column-filter-overlay{position:absolute;top:0;left:0}.p-column-filter-row-items{margin:0;padding:0;list-style:none}.p-column-filter-row-item{cursor:pointer}.p-column-filter-add-button,.p-column-filter-remove-button{justify-content:center}.p-column-filter-add-button .p-button-label,.p-column-filter-remove-button .p-button-label{flex-grow:0}.p-column-filter-buttonbar{display:flex;align-items:center;justify-content:space-between}.p-column-filter-buttonbar .p-button{width:auto}.p-datatable-tbody>tr>td>.p-column-title{display:none}.p-datatable-scroller-spacer{display:flex}.p-datatable .p-scroller .p-scroller-loading{transform:none!important;min-height:0;position:sticky;top:0;left:0}}\n"],
+  encapsulation: 2
+}));
+var Table = _Table;
 (() => {
   (typeof ngDevMode === "undefined" || ngDevMode) && setClassMetadata(Table, [{
     type: Component,
     args: [{
       selector: "p-table",
-      template: `
-        <div
-            #container
-            [ngStyle]="style"
-            [class]="styleClass"
-            [ngClass]="{ 'p-datatable p-component': true, 'p-datatable-hoverable-rows': rowHover || selectionMode, 'p-datatable-scrollable': scrollable, 'p-datatable-flex-scrollable': scrollable && scrollHeight === 'flex' }"
-            [attr.id]="id"
-        >
-            <div class="p-datatable-loading-overlay p-component-overlay" *ngIf="loading && showLoader">
-                <i *ngIf="loadingIcon" [class]="'p-datatable-loading-icon ' + loadingIcon"></i>
-                <ng-container *ngIf="!loadingIcon">
-                    <SpinnerIcon *ngIf="!loadingIconTemplate" [spin]="true" [styleClass]="'p-datatable-loading-icon'" />
-                    <span *ngIf="loadingIconTemplate" class="p-datatable-loading-icon">
-                        <ng-template *ngTemplateOutlet="loadingIconTemplate"></ng-template>
-                    </span>
-                </ng-container>
-            </div>
-            <div *ngIf="captionTemplate" class="p-datatable-header">
-                <ng-container *ngTemplateOutlet="captionTemplate"></ng-container>
-            </div>
-            <p-paginator
-                [rows]="rows"
-                [first]="first"
-                [totalRecords]="totalRecords"
-                [pageLinkSize]="pageLinks"
-                [alwaysShow]="alwaysShowPaginator"
-                (onPageChange)="onPageChange($event)"
-                [rowsPerPageOptions]="rowsPerPageOptions"
-                *ngIf="paginator && (paginatorPosition === 'top' || paginatorPosition == 'both')"
-                [templateLeft]="paginatorLeftTemplate"
-                [templateRight]="paginatorRightTemplate"
-                [dropdownAppendTo]="paginatorDropdownAppendTo"
-                [dropdownScrollHeight]="paginatorDropdownScrollHeight"
-                [currentPageReportTemplate]="currentPageReportTemplate"
-                [showFirstLastIcon]="showFirstLastIcon"
-                [dropdownItemTemplate]="paginatorDropdownItemTemplate"
-                [showCurrentPageReport]="showCurrentPageReport"
-                [showJumpToPageDropdown]="showJumpToPageDropdown"
-                [showJumpToPageInput]="showJumpToPageInput"
-                [showPageLinks]="showPageLinks"
-                [styleClass]="getPaginatorStyleClasses('p-paginator-top')"
-                [locale]="paginatorLocale"
-            >
-                <ng-template pTemplate="dropdownicon" *ngIf="paginatorDropdownIconTemplate">
-                    <ng-container *ngTemplateOutlet="paginatorDropdownIconTemplate"></ng-container>
-                </ng-template>
-
-                <ng-template pTemplate="firstpagelinkicon" *ngIf="paginatorFirstPageLinkIconTemplate">
-                    <ng-container *ngTemplateOutlet="paginatorFirstPageLinkIconTemplate"></ng-container>
-                </ng-template>
-
-                <ng-template pTemplate="previouspagelinkicon" *ngIf="paginatorPreviousPageLinkIconTemplate">
-                    <ng-container *ngTemplateOutlet="paginatorPreviousPageLinkIconTemplate"></ng-container>
-                </ng-template>
-
-                <ng-template pTemplate="lastpagelinkicon" *ngIf="paginatorLastPageLinkIconTemplate">
-                    <ng-container *ngTemplateOutlet="paginatorLastPageLinkIconTemplate"></ng-container>
-                </ng-template>
-
-                <ng-template pTemplate="nextpagelinkicon" *ngIf="paginatorNextPageLinkIconTemplate">
-                    <ng-container *ngTemplateOutlet="paginatorNextPageLinkIconTemplate"></ng-container>
-                </ng-template>
-            </p-paginator>
-
-            <div #wrapper class="p-datatable-wrapper" [ngStyle]="{ maxHeight: virtualScroll ? '' : scrollHeight }">
-                <p-scroller
-                    #scroller
-                    *ngIf="virtualScroll"
-                    [items]="processedData"
-                    [columns]="columns"
-                    [style]="{ height: scrollHeight !== 'flex' ? scrollHeight : undefined }"
-                    [scrollHeight]="scrollHeight !== 'flex' ? undefined : '100%'"
-                    [itemSize]="virtualScrollItemSize || _virtualRowHeight"
-                    [step]="rows"
-                    [delay]="lazy ? virtualScrollDelay : 0"
-                    [inline]="true"
-                    [autoSize]="true"
-                    [lazy]="lazy"
-                    (onLazyLoad)="onLazyItemLoad($event)"
-                    [loaderDisabled]="true"
-                    [showSpacer]="false"
-                    [showLoader]="loadingBodyTemplate"
-                    [options]="virtualScrollOptions"
-                >
-                    <ng-template pTemplate="content" let-items let-scrollerOptions="options">
-                        <ng-container *ngTemplateOutlet="buildInTable; context: { $implicit: items, options: scrollerOptions }"></ng-container>
-                    </ng-template>
-                </p-scroller>
-                <ng-container *ngIf="!virtualScroll">
-                    <ng-container *ngTemplateOutlet="buildInTable; context: { $implicit: processedData, options: { columns } }"></ng-container>
-                </ng-container>
-
-                <ng-template #buildInTable let-items let-scrollerOptions="options">
-                    <table
-                        #table
-                        role="table"
-                        [ngClass]="{ 'p-datatable-table': true, 'p-datatable-scrollable-table': scrollable, 'p-datatable-resizable-table': resizableColumns, 'p-datatable-resizable-table-fit': resizableColumns && columnResizeMode === 'fit' }"
-                        [class]="tableStyleClass"
-                        [ngStyle]="tableStyle"
-                        [attr.id]="id + '-table'"
-                    >
-                        <ng-container *ngTemplateOutlet="colGroupTemplate; context: { $implicit: scrollerOptions.columns }"></ng-container>
-                        <thead role="rowgroup" #thead class="p-datatable-thead">
-                            <ng-container *ngTemplateOutlet="headerGroupedTemplate || headerTemplate; context: { $implicit: scrollerOptions.columns }"></ng-container>
-                        </thead>
-                        <tbody
-                            role="rowgroup"
-                            class="p-datatable-tbody p-datatable-frozen-tbody"
-                            *ngIf="frozenValue || frozenBodyTemplate"
-                            [value]="frozenValue"
-                            [frozenRows]="true"
-                            [pTableBody]="scrollerOptions.columns"
-                            [pTableBodyTemplate]="frozenBodyTemplate"
-                            [frozen]="true"
-                        ></tbody>
-                        <tbody
-                            role="rowgroup"
-                            class="p-datatable-tbody"
-                            [ngClass]="scrollerOptions.contentStyleClass"
-                            [ngStyle]="scrollerOptions.contentStyle"
-                            [value]="dataToRender(scrollerOptions.rows)"
-                            [pTableBody]="scrollerOptions.columns"
-                            [pTableBodyTemplate]="bodyTemplate"
-                            [scrollerOptions]="scrollerOptions"
-                        ></tbody>
-                        <tbody
-                            role="rowgroup"
-                            *ngIf="scrollerOptions.spacerStyle"
-                            [ngStyle]="{ height: 'calc(' + scrollerOptions.spacerStyle.height + ' - ' + scrollerOptions.rows.length * scrollerOptions.itemSize + 'px)' }"
-                            class="p-datatable-scroller-spacer"
-                        ></tbody>
-                        <tfoot role="rowgroup" *ngIf="footerGroupedTemplate || footerTemplate" #tfoot class="p-datatable-tfoot">
-                            <ng-container *ngTemplateOutlet="footerGroupedTemplate || footerTemplate; context: { $implicit: scrollerOptions.columns }"></ng-container>
-                        </tfoot>
-                    </table>
-                </ng-template>
-            </div>
-
-            <p-paginator
-                [rows]="rows"
-                [first]="first"
-                [totalRecords]="totalRecords"
-                [pageLinkSize]="pageLinks"
-                [alwaysShow]="alwaysShowPaginator"
-                (onPageChange)="onPageChange($event)"
-                [rowsPerPageOptions]="rowsPerPageOptions"
-                *ngIf="paginator && (paginatorPosition === 'bottom' || paginatorPosition == 'both')"
-                [templateLeft]="paginatorLeftTemplate"
-                [templateRight]="paginatorRightTemplate"
-                [dropdownAppendTo]="paginatorDropdownAppendTo"
-                [dropdownScrollHeight]="paginatorDropdownScrollHeight"
-                [currentPageReportTemplate]="currentPageReportTemplate"
-                [showFirstLastIcon]="showFirstLastIcon"
-                [dropdownItemTemplate]="paginatorDropdownItemTemplate"
-                [showCurrentPageReport]="showCurrentPageReport"
-                [showJumpToPageDropdown]="showJumpToPageDropdown"
-                [showJumpToPageInput]="showJumpToPageInput"
-                [showPageLinks]="showPageLinks"
-                [styleClass]="getPaginatorStyleClasses('p-paginator-bottom')"
-                [locale]="paginatorLocale"
-            >
-                <ng-template pTemplate="dropdownicon" *ngIf="paginatorDropdownIconTemplate">
-                    <ng-container *ngTemplateOutlet="paginatorDropdownIconTemplate"></ng-container>
-                </ng-template>
-
-                <ng-template pTemplate="firstpagelinkicon" *ngIf="paginatorFirstPageLinkIconTemplate">
-                    <ng-container *ngTemplateOutlet="paginatorFirstPageLinkIconTemplate"></ng-container>
-                </ng-template>
-
-                <ng-template pTemplate="previouspagelinkicon" *ngIf="paginatorPreviousPageLinkIconTemplate">
-                    <ng-container *ngTemplateOutlet="paginatorPreviousPageLinkIconTemplate"></ng-container>
-                </ng-template>
-
-                <ng-template pTemplate="lastpagelinkicon" *ngIf="paginatorLastPageLinkIconTemplate">
-                    <ng-container *ngTemplateOutlet="paginatorLastPageLinkIconTemplate"></ng-container>
-                </ng-template>
-
-                <ng-template pTemplate="nextpagelinkicon" *ngIf="paginatorNextPageLinkIconTemplate">
-                    <ng-container *ngTemplateOutlet="paginatorNextPageLinkIconTemplate"></ng-container>
-                </ng-template>
-            </p-paginator>
-
-            <div *ngIf="summaryTemplate" class="p-datatable-footer">
-                <ng-container *ngTemplateOutlet="summaryTemplate"></ng-container>
-            </div>
-
-            <div
-                #resizeHelper
-                class="p-column-resizer-helper"
-                [ngStyle]="{
-                    display: 'none'
-                }"
-                *ngIf="resizableColumns"
-            ></div>
-            <span
-                #reorderIndicatorUp
-                class="p-datatable-reorder-indicator-up"
-                [ngStyle]="{
-                    display: 'none'
-                }"
-                *ngIf="reorderableColumns"
-            >
-                <ArrowDownIcon *ngIf="!reorderIndicatorUpIconTemplate" />
-                <ng-template *ngTemplateOutlet="reorderIndicatorUpIconTemplate"></ng-template>
-            </span>
-            <span
-                #reorderIndicatorDown
-                class="p-datatable-reorder-indicator-down"
-                [ngStyle]="{
-                    display: 'none'
-                }"
-                *ngIf="reorderableColumns"
-            >
-                <ArrowUpIcon *ngIf="!reorderIndicatorDownIconTemplate" />
-                <ng-template *ngTemplateOutlet="reorderIndicatorDownIconTemplate"></ng-template>
-            </span>
-        </div>
-    `,
+      template: '\n        <div\n            #container\n            [ngStyle]="style"\n            [class]="styleClass"\n            [ngClass]="{ \'p-datatable p-component\': true, \'p-datatable-hoverable-rows\': rowHover || selectionMode, \'p-datatable-scrollable\': scrollable, \'p-datatable-flex-scrollable\': scrollable && scrollHeight === \'flex\' }"\n            [attr.id]="id"\n        >\n            <div class="p-datatable-loading-overlay p-component-overlay" *ngIf="loading && showLoader">\n                <i *ngIf="loadingIcon" [class]="\'p-datatable-loading-icon \' + loadingIcon"></i>\n                <ng-container *ngIf="!loadingIcon">\n                    <SpinnerIcon *ngIf="!loadingIconTemplate" [spin]="true" [styleClass]="\'p-datatable-loading-icon\'" />\n                    <span *ngIf="loadingIconTemplate" class="p-datatable-loading-icon">\n                        <ng-template *ngTemplateOutlet="loadingIconTemplate"></ng-template>\n                    </span>\n                </ng-container>\n            </div>\n            <div *ngIf="captionTemplate" class="p-datatable-header">\n                <ng-container *ngTemplateOutlet="captionTemplate"></ng-container>\n            </div>\n            <p-paginator\n                [rows]="rows"\n                [first]="first"\n                [totalRecords]="totalRecords"\n                [pageLinkSize]="pageLinks"\n                [alwaysShow]="alwaysShowPaginator"\n                (onPageChange)="onPageChange($event)"\n                [rowsPerPageOptions]="rowsPerPageOptions"\n                *ngIf="paginator && (paginatorPosition === \'top\' || paginatorPosition == \'both\')"\n                [templateLeft]="paginatorLeftTemplate"\n                [templateRight]="paginatorRightTemplate"\n                [dropdownAppendTo]="paginatorDropdownAppendTo"\n                [dropdownScrollHeight]="paginatorDropdownScrollHeight"\n                [currentPageReportTemplate]="currentPageReportTemplate"\n                [showFirstLastIcon]="showFirstLastIcon"\n                [dropdownItemTemplate]="paginatorDropdownItemTemplate"\n                [showCurrentPageReport]="showCurrentPageReport"\n                [showJumpToPageDropdown]="showJumpToPageDropdown"\n                [showJumpToPageInput]="showJumpToPageInput"\n                [showPageLinks]="showPageLinks"\n                [styleClass]="getPaginatorStyleClasses(\'p-paginator-top\')"\n                [locale]="paginatorLocale"\n            >\n                <ng-template pTemplate="dropdownicon" *ngIf="paginatorDropdownIconTemplate">\n                    <ng-container *ngTemplateOutlet="paginatorDropdownIconTemplate"></ng-container>\n                </ng-template>\n\n                <ng-template pTemplate="firstpagelinkicon" *ngIf="paginatorFirstPageLinkIconTemplate">\n                    <ng-container *ngTemplateOutlet="paginatorFirstPageLinkIconTemplate"></ng-container>\n                </ng-template>\n\n                <ng-template pTemplate="previouspagelinkicon" *ngIf="paginatorPreviousPageLinkIconTemplate">\n                    <ng-container *ngTemplateOutlet="paginatorPreviousPageLinkIconTemplate"></ng-container>\n                </ng-template>\n\n                <ng-template pTemplate="lastpagelinkicon" *ngIf="paginatorLastPageLinkIconTemplate">\n                    <ng-container *ngTemplateOutlet="paginatorLastPageLinkIconTemplate"></ng-container>\n                </ng-template>\n\n                <ng-template pTemplate="nextpagelinkicon" *ngIf="paginatorNextPageLinkIconTemplate">\n                    <ng-container *ngTemplateOutlet="paginatorNextPageLinkIconTemplate"></ng-container>\n                </ng-template>\n            </p-paginator>\n\n            <div #wrapper class="p-datatable-wrapper" [ngStyle]="{ maxHeight: virtualScroll ? \'\' : scrollHeight }">\n                <p-scroller\n                    #scroller\n                    *ngIf="virtualScroll"\n                    [items]="processedData"\n                    [columns]="columns"\n                    [style]="{ height: scrollHeight !== \'flex\' ? scrollHeight : undefined }"\n                    [scrollHeight]="scrollHeight !== \'flex\' ? undefined : \'100%\'"\n                    [itemSize]="virtualScrollItemSize || _virtualRowHeight"\n                    [step]="rows"\n                    [delay]="lazy ? virtualScrollDelay : 0"\n                    [inline]="true"\n                    [autoSize]="true"\n                    [lazy]="lazy"\n                    (onLazyLoad)="onLazyItemLoad($event)"\n                    [loaderDisabled]="true"\n                    [showSpacer]="false"\n                    [showLoader]="loadingBodyTemplate"\n                    [options]="virtualScrollOptions"\n                >\n                    <ng-template pTemplate="content" let-items let-scrollerOptions="options">\n                        <ng-container *ngTemplateOutlet="buildInTable; context: { $implicit: items, options: scrollerOptions }"></ng-container>\n                    </ng-template>\n                </p-scroller>\n                <ng-container *ngIf="!virtualScroll">\n                    <ng-container *ngTemplateOutlet="buildInTable; context: { $implicit: processedData, options: { columns } }"></ng-container>\n                </ng-container>\n\n                <ng-template #buildInTable let-items let-scrollerOptions="options">\n                    <table\n                        #table\n                        role="table"\n                        [ngClass]="{ \'p-datatable-table\': true, \'p-datatable-scrollable-table\': scrollable, \'p-datatable-resizable-table\': resizableColumns, \'p-datatable-resizable-table-fit\': resizableColumns && columnResizeMode === \'fit\' }"\n                        [class]="tableStyleClass"\n                        [ngStyle]="tableStyle"\n                        [attr.id]="id + \'-table\'"\n                    >\n                        <ng-container *ngTemplateOutlet="colGroupTemplate; context: { $implicit: scrollerOptions.columns }"></ng-container>\n                        <thead role="rowgroup" #thead class="p-datatable-thead">\n                            <ng-container *ngTemplateOutlet="headerGroupedTemplate || headerTemplate; context: { $implicit: scrollerOptions.columns }"></ng-container>\n                        </thead>\n                        <tbody\n                            role="rowgroup"\n                            class="p-datatable-tbody p-datatable-frozen-tbody"\n                            *ngIf="frozenValue || frozenBodyTemplate"\n                            [value]="frozenValue"\n                            [frozenRows]="true"\n                            [pTableBody]="scrollerOptions.columns"\n                            [pTableBodyTemplate]="frozenBodyTemplate"\n                            [frozen]="true"\n                        ></tbody>\n                        <tbody\n                            role="rowgroup"\n                            class="p-datatable-tbody"\n                            [ngClass]="scrollerOptions.contentStyleClass"\n                            [ngStyle]="scrollerOptions.contentStyle"\n                            [value]="dataToRender(scrollerOptions.rows)"\n                            [pTableBody]="scrollerOptions.columns"\n                            [pTableBodyTemplate]="bodyTemplate"\n                            [scrollerOptions]="scrollerOptions"\n                        ></tbody>\n                        <tbody\n                            role="rowgroup"\n                            *ngIf="scrollerOptions.spacerStyle"\n                            [ngStyle]="{ height: \'calc(\' + scrollerOptions.spacerStyle.height + \' - \' + scrollerOptions.rows.length * scrollerOptions.itemSize + \'px)\' }"\n                            class="p-datatable-scroller-spacer"\n                        ></tbody>\n                        <tfoot role="rowgroup" *ngIf="footerGroupedTemplate || footerTemplate" #tfoot class="p-datatable-tfoot">\n                            <ng-container *ngTemplateOutlet="footerGroupedTemplate || footerTemplate; context: { $implicit: scrollerOptions.columns }"></ng-container>\n                        </tfoot>\n                    </table>\n                </ng-template>\n            </div>\n\n            <p-paginator\n                [rows]="rows"\n                [first]="first"\n                [totalRecords]="totalRecords"\n                [pageLinkSize]="pageLinks"\n                [alwaysShow]="alwaysShowPaginator"\n                (onPageChange)="onPageChange($event)"\n                [rowsPerPageOptions]="rowsPerPageOptions"\n                *ngIf="paginator && (paginatorPosition === \'bottom\' || paginatorPosition == \'both\')"\n                [templateLeft]="paginatorLeftTemplate"\n                [templateRight]="paginatorRightTemplate"\n                [dropdownAppendTo]="paginatorDropdownAppendTo"\n                [dropdownScrollHeight]="paginatorDropdownScrollHeight"\n                [currentPageReportTemplate]="currentPageReportTemplate"\n                [showFirstLastIcon]="showFirstLastIcon"\n                [dropdownItemTemplate]="paginatorDropdownItemTemplate"\n                [showCurrentPageReport]="showCurrentPageReport"\n                [showJumpToPageDropdown]="showJumpToPageDropdown"\n                [showJumpToPageInput]="showJumpToPageInput"\n                [showPageLinks]="showPageLinks"\n                [styleClass]="getPaginatorStyleClasses(\'p-paginator-bottom\')"\n                [locale]="paginatorLocale"\n            >\n                <ng-template pTemplate="dropdownicon" *ngIf="paginatorDropdownIconTemplate">\n                    <ng-container *ngTemplateOutlet="paginatorDropdownIconTemplate"></ng-container>\n                </ng-template>\n\n                <ng-template pTemplate="firstpagelinkicon" *ngIf="paginatorFirstPageLinkIconTemplate">\n                    <ng-container *ngTemplateOutlet="paginatorFirstPageLinkIconTemplate"></ng-container>\n                </ng-template>\n\n                <ng-template pTemplate="previouspagelinkicon" *ngIf="paginatorPreviousPageLinkIconTemplate">\n                    <ng-container *ngTemplateOutlet="paginatorPreviousPageLinkIconTemplate"></ng-container>\n                </ng-template>\n\n                <ng-template pTemplate="lastpagelinkicon" *ngIf="paginatorLastPageLinkIconTemplate">\n                    <ng-container *ngTemplateOutlet="paginatorLastPageLinkIconTemplate"></ng-container>\n                </ng-template>\n\n                <ng-template pTemplate="nextpagelinkicon" *ngIf="paginatorNextPageLinkIconTemplate">\n                    <ng-container *ngTemplateOutlet="paginatorNextPageLinkIconTemplate"></ng-container>\n                </ng-template>\n            </p-paginator>\n\n            <div *ngIf="summaryTemplate" class="p-datatable-footer">\n                <ng-container *ngTemplateOutlet="summaryTemplate"></ng-container>\n            </div>\n\n            <div\n                #resizeHelper\n                class="p-column-resizer-helper"\n                [ngStyle]="{\n                    display: \'none\'\n                }"\n                *ngIf="resizableColumns"\n            ></div>\n            <span\n                #reorderIndicatorUp\n                class="p-datatable-reorder-indicator-up"\n                [ngStyle]="{\n                    display: \'none\'\n                }"\n                *ngIf="reorderableColumns"\n            >\n                <ArrowDownIcon *ngIf="!reorderIndicatorUpIconTemplate" />\n                <ng-template *ngTemplateOutlet="reorderIndicatorUpIconTemplate"></ng-template>\n            </span>\n            <span\n                #reorderIndicatorDown\n                class="p-datatable-reorder-indicator-down"\n                [ngStyle]="{\n                    display: \'none\'\n                }"\n                *ngIf="reorderableColumns"\n            >\n                <ArrowUpIcon *ngIf="!reorderIndicatorDownIconTemplate" />\n                <ng-template *ngTemplateOutlet="reorderIndicatorDownIconTemplate"></ng-template>\n            </span>\n        </div>\n    ',
       providers: [TableService],
       changeDetection: ChangeDetectionStrategy.Default,
       encapsulation: ViewEncapsulation$1.None,
@@ -5456,13 +5179,29 @@ var Table = class _Table {
     }]
   });
 })();
-var TableBody = class _TableBody {
-  dt;
-  tableService;
-  cd;
-  el;
-  columns;
-  template;
+var _TableBody = class _TableBody {
+  constructor(dt, tableService, cd, el) {
+    __publicField(this, "dt");
+    __publicField(this, "tableService");
+    __publicField(this, "cd");
+    __publicField(this, "el");
+    __publicField(this, "columns");
+    __publicField(this, "template");
+    __publicField(this, "frozen");
+    __publicField(this, "frozenRows");
+    __publicField(this, "scrollerOptions");
+    __publicField(this, "subscription");
+    __publicField(this, "_value");
+    this.dt = dt;
+    this.tableService = tableService;
+    this.cd = cd;
+    this.el = el;
+    this.subscription = this.dt.tableService.valueSource$.subscribe(() => {
+      if (this.dt.virtualScroll) {
+        this.cd.detectChanges();
+      }
+    });
+  }
   get value() {
     return this._value;
   }
@@ -5475,11 +5214,6 @@ var TableBody = class _TableBody {
       this.updateFrozenRowGroupHeaderStickyPosition();
     }
   }
-  frozen;
-  frozenRows;
-  scrollerOptions;
-  subscription;
-  _value;
   ngAfterViewInit() {
     if (this.frozenRows) {
       this.updateFrozenRowStickyPosition();
@@ -5487,17 +5221,6 @@ var TableBody = class _TableBody {
     if (this.dt.scrollable && this.dt.rowGroupMode === "subheader") {
       this.updateFrozenRowGroupHeaderStickyPosition();
     }
-  }
-  constructor(dt, tableService, cd, el) {
-    this.dt = dt;
-    this.tableService = tableService;
-    this.cd = cd;
-    this.el = el;
-    this.subscription = this.dt.tableService.valueSource$.subscribe(() => {
-      if (this.dt.virtualScroll) {
-        this.cd.detectChanges();
-      }
-    });
   }
   shouldRenderRowGroupHeader(value, rowData, i) {
     let currentRowFieldData = ObjectUtils.resolveFieldData(rowData, this.dt.groupRowsBy);
@@ -5570,132 +5293,53 @@ var TableBody = class _TableBody {
     const getItemOptions = this.getScrollerOption("getItemOptions");
     return getItemOptions ? getItemOptions(index).index : index;
   }
-  static ɵfac = function TableBody_Factory(__ngFactoryType__) {
-    return new (__ngFactoryType__ || _TableBody)(ɵɵdirectiveInject(Table), ɵɵdirectiveInject(TableService), ɵɵdirectiveInject(ChangeDetectorRef), ɵɵdirectiveInject(ElementRef));
-  };
-  static ɵcmp = ɵɵdefineComponent({
-    type: _TableBody,
-    selectors: [["", "pTableBody", ""]],
-    hostAttrs: [1, "p-element"],
-    inputs: {
-      columns: [0, "pTableBody", "columns"],
-      template: [0, "pTableBodyTemplate", "template"],
-      value: "value",
-      frozen: [2, "frozen", "frozen", booleanAttribute],
-      frozenRows: [2, "frozenRows", "frozenRows", booleanAttribute],
-      scrollerOptions: "scrollerOptions"
-    },
-    features: [ɵɵInputTransformsFeature],
-    attrs: _c17,
-    decls: 5,
-    vars: 5,
-    consts: [[4, "ngIf"], ["ngFor", "", 3, "ngForOf", "ngForTrackBy"], ["role", "row", 4, "ngIf"], ["role", "row"], [4, "ngTemplateOutlet", "ngTemplateOutletContext"]],
-    template: function TableBody_Template(rf, ctx) {
-      if (rf & 1) {
-        ɵɵtemplate(0, TableBody_ng_container_0_Template, 2, 2, "ng-container", 0)(1, TableBody_ng_container_1_Template, 2, 2, "ng-container", 0)(2, TableBody_ng_container_2_Template, 2, 2, "ng-container", 0)(3, TableBody_ng_container_3_Template, 2, 5, "ng-container", 0)(4, TableBody_ng_container_4_Template, 2, 5, "ng-container", 0);
-      }
-      if (rf & 2) {
-        ɵɵproperty("ngIf", !ctx.dt.expandedRowTemplate);
-        ɵɵadvance();
-        ɵɵproperty("ngIf", ctx.dt.expandedRowTemplate && !(ctx.frozen && ctx.dt.frozenExpandedRowTemplate));
-        ɵɵadvance();
-        ɵɵproperty("ngIf", ctx.dt.frozenExpandedRowTemplate && ctx.frozen);
-        ɵɵadvance();
-        ɵɵproperty("ngIf", ctx.dt.loading);
-        ɵɵadvance();
-        ɵɵproperty("ngIf", ctx.dt.isEmpty() && !ctx.dt.loading);
-      }
-    },
-    dependencies: [NgForOf, NgIf, NgTemplateOutlet],
-    encapsulation: 2
-  });
 };
+__publicField(_TableBody, "ɵfac", function TableBody_Factory(__ngFactoryType__) {
+  return new (__ngFactoryType__ || _TableBody)(ɵɵdirectiveInject(Table), ɵɵdirectiveInject(TableService), ɵɵdirectiveInject(ChangeDetectorRef), ɵɵdirectiveInject(ElementRef));
+});
+__publicField(_TableBody, "ɵcmp", ɵɵdefineComponent({
+  type: _TableBody,
+  selectors: [["", "pTableBody", ""]],
+  hostAttrs: [1, "p-element"],
+  inputs: {
+    columns: [0, "pTableBody", "columns"],
+    template: [0, "pTableBodyTemplate", "template"],
+    value: "value",
+    frozen: [2, "frozen", "frozen", booleanAttribute],
+    frozenRows: [2, "frozenRows", "frozenRows", booleanAttribute],
+    scrollerOptions: "scrollerOptions"
+  },
+  features: [ɵɵInputTransformsFeature],
+  attrs: _c17,
+  decls: 5,
+  vars: 5,
+  consts: [[4, "ngIf"], ["ngFor", "", 3, "ngForOf", "ngForTrackBy"], ["role", "row", 4, "ngIf"], ["role", "row"], [4, "ngTemplateOutlet", "ngTemplateOutletContext"]],
+  template: function TableBody_Template(rf, ctx) {
+    if (rf & 1) {
+      ɵɵtemplate(0, TableBody_ng_container_0_Template, 2, 2, "ng-container", 0)(1, TableBody_ng_container_1_Template, 2, 2, "ng-container", 0)(2, TableBody_ng_container_2_Template, 2, 2, "ng-container", 0)(3, TableBody_ng_container_3_Template, 2, 5, "ng-container", 0)(4, TableBody_ng_container_4_Template, 2, 5, "ng-container", 0);
+    }
+    if (rf & 2) {
+      ɵɵproperty("ngIf", !ctx.dt.expandedRowTemplate);
+      ɵɵadvance();
+      ɵɵproperty("ngIf", ctx.dt.expandedRowTemplate && !(ctx.frozen && ctx.dt.frozenExpandedRowTemplate));
+      ɵɵadvance();
+      ɵɵproperty("ngIf", ctx.dt.frozenExpandedRowTemplate && ctx.frozen);
+      ɵɵadvance();
+      ɵɵproperty("ngIf", ctx.dt.loading);
+      ɵɵadvance();
+      ɵɵproperty("ngIf", ctx.dt.isEmpty() && !ctx.dt.loading);
+    }
+  },
+  dependencies: [NgForOf, NgIf, NgTemplateOutlet],
+  encapsulation: 2
+}));
+var TableBody = _TableBody;
 (() => {
   (typeof ngDevMode === "undefined" || ngDevMode) && setClassMetadata(TableBody, [{
     type: Component,
     args: [{
       selector: "[pTableBody]",
-      template: `
-        <ng-container *ngIf="!dt.expandedRowTemplate">
-            <ng-template ngFor let-rowData let-rowIndex="index" [ngForOf]="value" [ngForTrackBy]="dt.rowTrackBy">
-                <ng-container *ngIf="dt.groupHeaderTemplate && !dt.virtualScroll && dt.rowGroupMode === 'subheader' && shouldRenderRowGroupHeader(value, rowData, getRowIndex(rowIndex))" role="row">
-                    <ng-container
-                        *ngTemplateOutlet="dt.groupHeaderTemplate; context: { $implicit: rowData, rowIndex: getRowIndex(rowIndex), columns: columns, editing: dt.editMode === 'row' && dt.isRowEditing(rowData), frozen: frozen }"
-                    ></ng-container>
-                </ng-container>
-                <ng-container *ngIf="dt.rowGroupMode !== 'rowspan'">
-                    <ng-container
-                        *ngTemplateOutlet="rowData ? template : dt.loadingBodyTemplate; context: { $implicit: rowData, rowIndex: getRowIndex(rowIndex), columns: columns, editing: dt.editMode === 'row' && dt.isRowEditing(rowData), frozen: frozen }"
-                    ></ng-container>
-                </ng-container>
-                <ng-container *ngIf="dt.rowGroupMode === 'rowspan'">
-                    <ng-container
-                        *ngTemplateOutlet="
-                            rowData ? template : dt.loadingBodyTemplate;
-                            context: {
-                                $implicit: rowData,
-                                rowIndex: getRowIndex(rowIndex),
-                                columns: columns,
-                                editing: dt.editMode === 'row' && dt.isRowEditing(rowData),
-                                frozen: frozen,
-                                rowgroup: shouldRenderRowspan(value, rowData, rowIndex),
-                                rowspan: calculateRowGroupSize(value, rowData, rowIndex)
-                            }
-                        "
-                    ></ng-container>
-                </ng-container>
-                <ng-container *ngIf="dt.groupFooterTemplate && !dt.virtualScroll && dt.rowGroupMode === 'subheader' && shouldRenderRowGroupFooter(value, rowData, rowIndex)" role="row">
-                    <ng-container
-                        *ngTemplateOutlet="dt.groupFooterTemplate; context: { $implicit: rowData, rowIndex: getRowIndex(rowIndex), columns: columns, editing: dt.editMode === 'row' && dt.isRowEditing(rowData), frozen: frozen }"
-                    ></ng-container>
-                </ng-container>
-            </ng-template>
-        </ng-container>
-        <ng-container *ngIf="dt.expandedRowTemplate && !(frozen && dt.frozenExpandedRowTemplate)">
-            <ng-template ngFor let-rowData let-rowIndex="index" [ngForOf]="value" [ngForTrackBy]="dt.rowTrackBy">
-                <ng-container *ngIf="!dt.groupHeaderTemplate">
-                    <ng-container
-                        *ngTemplateOutlet="template; context: { $implicit: rowData, rowIndex: getRowIndex(rowIndex), columns: columns, expanded: dt.isRowExpanded(rowData), editing: dt.editMode === 'row' && dt.isRowEditing(rowData), frozen: frozen }"
-                    ></ng-container>
-                </ng-container>
-                <ng-container *ngIf="dt.groupHeaderTemplate && dt.rowGroupMode === 'subheader' && shouldRenderRowGroupHeader(value, rowData, getRowIndex(rowIndex))" role="row">
-                    <ng-container
-                        *ngTemplateOutlet="
-                            dt.groupHeaderTemplate;
-                            context: { $implicit: rowData, rowIndex: getRowIndex(rowIndex), columns: columns, expanded: dt.isRowExpanded(rowData), editing: dt.editMode === 'row' && dt.isRowEditing(rowData), frozen: frozen }
-                        "
-                    ></ng-container>
-                </ng-container>
-                <ng-container *ngIf="dt.isRowExpanded(rowData)">
-                    <ng-container *ngTemplateOutlet="dt.expandedRowTemplate; context: { $implicit: rowData, rowIndex: getRowIndex(rowIndex), columns: columns, frozen: frozen }"></ng-container>
-                    <ng-container *ngIf="dt.groupFooterTemplate && dt.rowGroupMode === 'subheader' && shouldRenderRowGroupFooter(value, rowData, getRowIndex(rowIndex))" role="row">
-                        <ng-container
-                            *ngTemplateOutlet="
-                                dt.groupFooterTemplate;
-                                context: { $implicit: rowData, rowIndex: getRowIndex(rowIndex), columns: columns, expanded: dt.isRowExpanded(rowData), editing: dt.editMode === 'row' && dt.isRowEditing(rowData), frozen: frozen }
-                            "
-                        ></ng-container>
-                    </ng-container>
-                </ng-container>
-            </ng-template>
-        </ng-container>
-        <ng-container *ngIf="dt.frozenExpandedRowTemplate && frozen">
-            <ng-template ngFor let-rowData let-rowIndex="index" [ngForOf]="value" [ngForTrackBy]="dt.rowTrackBy">
-                <ng-container
-                    *ngTemplateOutlet="template; context: { $implicit: rowData, rowIndex: getRowIndex(rowIndex), columns: columns, expanded: dt.isRowExpanded(rowData), editing: dt.editMode === 'row' && dt.isRowEditing(rowData), frozen: frozen }"
-                ></ng-container>
-                <ng-container *ngIf="dt.isRowExpanded(rowData)">
-                    <ng-container *ngTemplateOutlet="dt.frozenExpandedRowTemplate; context: { $implicit: rowData, rowIndex: getRowIndex(rowIndex), columns: columns, frozen: frozen }"></ng-container>
-                </ng-container>
-            </ng-template>
-        </ng-container>
-        <ng-container *ngIf="dt.loading">
-            <ng-container *ngTemplateOutlet="dt.loadingBodyTemplate; context: { $implicit: columns, frozen: frozen }"></ng-container>
-        </ng-container>
-        <ng-container *ngIf="dt.isEmpty() && !dt.loading">
-            <ng-container *ngTemplateOutlet="dt.emptyMessageTemplate; context: { $implicit: columns, frozen: frozen }"></ng-container>
-        </ng-container>
-    `,
+      template: '\n        <ng-container *ngIf="!dt.expandedRowTemplate">\n            <ng-template ngFor let-rowData let-rowIndex="index" [ngForOf]="value" [ngForTrackBy]="dt.rowTrackBy">\n                <ng-container *ngIf="dt.groupHeaderTemplate && !dt.virtualScroll && dt.rowGroupMode === \'subheader\' && shouldRenderRowGroupHeader(value, rowData, getRowIndex(rowIndex))" role="row">\n                    <ng-container\n                        *ngTemplateOutlet="dt.groupHeaderTemplate; context: { $implicit: rowData, rowIndex: getRowIndex(rowIndex), columns: columns, editing: dt.editMode === \'row\' && dt.isRowEditing(rowData), frozen: frozen }"\n                    ></ng-container>\n                </ng-container>\n                <ng-container *ngIf="dt.rowGroupMode !== \'rowspan\'">\n                    <ng-container\n                        *ngTemplateOutlet="rowData ? template : dt.loadingBodyTemplate; context: { $implicit: rowData, rowIndex: getRowIndex(rowIndex), columns: columns, editing: dt.editMode === \'row\' && dt.isRowEditing(rowData), frozen: frozen }"\n                    ></ng-container>\n                </ng-container>\n                <ng-container *ngIf="dt.rowGroupMode === \'rowspan\'">\n                    <ng-container\n                        *ngTemplateOutlet="\n                            rowData ? template : dt.loadingBodyTemplate;\n                            context: {\n                                $implicit: rowData,\n                                rowIndex: getRowIndex(rowIndex),\n                                columns: columns,\n                                editing: dt.editMode === \'row\' && dt.isRowEditing(rowData),\n                                frozen: frozen,\n                                rowgroup: shouldRenderRowspan(value, rowData, rowIndex),\n                                rowspan: calculateRowGroupSize(value, rowData, rowIndex)\n                            }\n                        "\n                    ></ng-container>\n                </ng-container>\n                <ng-container *ngIf="dt.groupFooterTemplate && !dt.virtualScroll && dt.rowGroupMode === \'subheader\' && shouldRenderRowGroupFooter(value, rowData, rowIndex)" role="row">\n                    <ng-container\n                        *ngTemplateOutlet="dt.groupFooterTemplate; context: { $implicit: rowData, rowIndex: getRowIndex(rowIndex), columns: columns, editing: dt.editMode === \'row\' && dt.isRowEditing(rowData), frozen: frozen }"\n                    ></ng-container>\n                </ng-container>\n            </ng-template>\n        </ng-container>\n        <ng-container *ngIf="dt.expandedRowTemplate && !(frozen && dt.frozenExpandedRowTemplate)">\n            <ng-template ngFor let-rowData let-rowIndex="index" [ngForOf]="value" [ngForTrackBy]="dt.rowTrackBy">\n                <ng-container *ngIf="!dt.groupHeaderTemplate">\n                    <ng-container\n                        *ngTemplateOutlet="template; context: { $implicit: rowData, rowIndex: getRowIndex(rowIndex), columns: columns, expanded: dt.isRowExpanded(rowData), editing: dt.editMode === \'row\' && dt.isRowEditing(rowData), frozen: frozen }"\n                    ></ng-container>\n                </ng-container>\n                <ng-container *ngIf="dt.groupHeaderTemplate && dt.rowGroupMode === \'subheader\' && shouldRenderRowGroupHeader(value, rowData, getRowIndex(rowIndex))" role="row">\n                    <ng-container\n                        *ngTemplateOutlet="\n                            dt.groupHeaderTemplate;\n                            context: { $implicit: rowData, rowIndex: getRowIndex(rowIndex), columns: columns, expanded: dt.isRowExpanded(rowData), editing: dt.editMode === \'row\' && dt.isRowEditing(rowData), frozen: frozen }\n                        "\n                    ></ng-container>\n                </ng-container>\n                <ng-container *ngIf="dt.isRowExpanded(rowData)">\n                    <ng-container *ngTemplateOutlet="dt.expandedRowTemplate; context: { $implicit: rowData, rowIndex: getRowIndex(rowIndex), columns: columns, frozen: frozen }"></ng-container>\n                    <ng-container *ngIf="dt.groupFooterTemplate && dt.rowGroupMode === \'subheader\' && shouldRenderRowGroupFooter(value, rowData, getRowIndex(rowIndex))" role="row">\n                        <ng-container\n                            *ngTemplateOutlet="\n                                dt.groupFooterTemplate;\n                                context: { $implicit: rowData, rowIndex: getRowIndex(rowIndex), columns: columns, expanded: dt.isRowExpanded(rowData), editing: dt.editMode === \'row\' && dt.isRowEditing(rowData), frozen: frozen }\n                            "\n                        ></ng-container>\n                    </ng-container>\n                </ng-container>\n            </ng-template>\n        </ng-container>\n        <ng-container *ngIf="dt.frozenExpandedRowTemplate && frozen">\n            <ng-template ngFor let-rowData let-rowIndex="index" [ngForOf]="value" [ngForTrackBy]="dt.rowTrackBy">\n                <ng-container\n                    *ngTemplateOutlet="template; context: { $implicit: rowData, rowIndex: getRowIndex(rowIndex), columns: columns, expanded: dt.isRowExpanded(rowData), editing: dt.editMode === \'row\' && dt.isRowEditing(rowData), frozen: frozen }"\n                ></ng-container>\n                <ng-container *ngIf="dt.isRowExpanded(rowData)">\n                    <ng-container *ngTemplateOutlet="dt.frozenExpandedRowTemplate; context: { $implicit: rowData, rowIndex: getRowIndex(rowIndex), columns: columns, frozen: frozen }"></ng-container>\n                </ng-container>\n            </ng-template>\n        </ng-container>\n        <ng-container *ngIf="dt.loading">\n            <ng-container *ngTemplateOutlet="dt.loadingBodyTemplate; context: { $implicit: columns, frozen: frozen }"></ng-container>\n        </ng-container>\n        <ng-container *ngIf="dt.isEmpty() && !dt.loading">\n            <ng-container *ngTemplateOutlet="dt.emptyMessageTemplate; context: { $implicit: columns, frozen: frozen }"></ng-container>\n        </ng-container>\n    ',
       changeDetection: ChangeDetectionStrategy.Default,
       encapsulation: ViewEncapsulation$1.None,
       host: {
@@ -5739,29 +5383,30 @@ var TableBody = class _TableBody {
     }]
   });
 })();
-var RowGroupHeader = class _RowGroupHeader {
-  dt;
+var _RowGroupHeader = class _RowGroupHeader {
   constructor(dt) {
+    __publicField(this, "dt");
     this.dt = dt;
   }
   get getFrozenRowGroupHeaderStickyPosition() {
     return this.dt.rowGroupHeaderStyleObject ? this.dt.rowGroupHeaderStyleObject.top : "";
   }
-  static ɵfac = function RowGroupHeader_Factory(__ngFactoryType__) {
-    return new (__ngFactoryType__ || _RowGroupHeader)(ɵɵdirectiveInject(Table));
-  };
-  static ɵdir = ɵɵdefineDirective({
-    type: _RowGroupHeader,
-    selectors: [["", "pRowGroupHeader", ""]],
-    hostAttrs: [1, "p-rowgroup-header", "p-element"],
-    hostVars: 2,
-    hostBindings: function RowGroupHeader_HostBindings(rf, ctx) {
-      if (rf & 2) {
-        ɵɵstyleProp("top", ctx.getFrozenRowGroupHeaderStickyPosition);
-      }
-    }
-  });
 };
+__publicField(_RowGroupHeader, "ɵfac", function RowGroupHeader_Factory(__ngFactoryType__) {
+  return new (__ngFactoryType__ || _RowGroupHeader)(ɵɵdirectiveInject(Table));
+});
+__publicField(_RowGroupHeader, "ɵdir", ɵɵdefineDirective({
+  type: _RowGroupHeader,
+  selectors: [["", "pRowGroupHeader", ""]],
+  hostAttrs: [1, "p-rowgroup-header", "p-element"],
+  hostVars: 2,
+  hostBindings: function RowGroupHeader_HostBindings(rf, ctx) {
+    if (rf & 2) {
+      ɵɵstyleProp("top", ctx.getFrozenRowGroupHeaderStickyPosition);
+    }
+  }
+}));
+var RowGroupHeader = _RowGroupHeader;
 (() => {
   (typeof ngDevMode === "undefined" || ngDevMode) && setClassMetadata(RowGroupHeader, [{
     type: Directive,
@@ -5776,20 +5421,21 @@ var RowGroupHeader = class _RowGroupHeader {
     type: Table
   }], null);
 })();
-var FrozenColumn = class _FrozenColumn {
-  el;
-  zone;
+var _FrozenColumn = class _FrozenColumn {
+  constructor(el, zone) {
+    __publicField(this, "el");
+    __publicField(this, "zone");
+    __publicField(this, "alignFrozen", "left");
+    __publicField(this, "_frozen", true);
+    this.el = el;
+    this.zone = zone;
+  }
   get frozen() {
     return this._frozen;
   }
   set frozen(val) {
     this._frozen = val;
     this.updateStickyPosition();
-  }
-  alignFrozen = "left";
-  constructor(el, zone) {
-    this.el = el;
-    this.zone = zone;
   }
   ngAfterViewChecked() {
     this.zone.runOutsideAngular(() => {
@@ -5799,8 +5445,8 @@ var FrozenColumn = class _FrozenColumn {
   recalculateColumns() {
     this.updateStickyPosition();
   }
-  _frozen = true;
   updateStickyPosition() {
+    var _a, _b;
     if (this._frozen) {
       if (this.alignFrozen === "right") {
         let right = 0;
@@ -5817,7 +5463,7 @@ var FrozenColumn = class _FrozenColumn {
         }
         this.el.nativeElement.style.left = left + "px";
       }
-      const filterRow = this.el.nativeElement?.parentElement?.nextElementSibling;
+      const filterRow = (_b = (_a = this.el.nativeElement) == null ? void 0 : _a.parentElement) == null ? void 0 : _b.nextElementSibling;
       if (filterRow) {
         let index = DomHandler.index(this.el.nativeElement);
         if (filterRow.children && filterRow.children[index]) {
@@ -5827,30 +5473,31 @@ var FrozenColumn = class _FrozenColumn {
       }
     }
   }
-  static ɵfac = function FrozenColumn_Factory(__ngFactoryType__) {
-    return new (__ngFactoryType__ || _FrozenColumn)(ɵɵdirectiveInject(ElementRef), ɵɵdirectiveInject(NgZone));
-  };
-  static ɵdir = ɵɵdefineDirective({
-    type: _FrozenColumn,
-    selectors: [["", "pFrozenColumn", ""]],
-    hostAttrs: [1, "p-element"],
-    hostVars: 2,
-    hostBindings: function FrozenColumn_HostBindings(rf, ctx) {
-      if (rf & 1) {
-        ɵɵlistener("resize", function FrozenColumn_resize_HostBindingHandler($event) {
-          return ctx.recalculateColumns($event);
-        }, false, ɵɵresolveWindow);
-      }
-      if (rf & 2) {
-        ɵɵclassProp("p-frozen-column", ctx.frozen);
-      }
-    },
-    inputs: {
-      frozen: "frozen",
-      alignFrozen: "alignFrozen"
-    }
-  });
 };
+__publicField(_FrozenColumn, "ɵfac", function FrozenColumn_Factory(__ngFactoryType__) {
+  return new (__ngFactoryType__ || _FrozenColumn)(ɵɵdirectiveInject(ElementRef), ɵɵdirectiveInject(NgZone));
+});
+__publicField(_FrozenColumn, "ɵdir", ɵɵdefineDirective({
+  type: _FrozenColumn,
+  selectors: [["", "pFrozenColumn", ""]],
+  hostAttrs: [1, "p-element"],
+  hostVars: 2,
+  hostBindings: function FrozenColumn_HostBindings(rf, ctx) {
+    if (rf & 1) {
+      ɵɵlistener("resize", function FrozenColumn_resize_HostBindingHandler($event) {
+        return ctx.recalculateColumns($event);
+      }, false, ɵɵresolveWindow);
+    }
+    if (rf & 2) {
+      ɵɵclassProp("p-frozen-column", ctx.frozen);
+    }
+  },
+  inputs: {
+    frozen: "frozen",
+    alignFrozen: "alignFrozen"
+  }
+}));
+var FrozenColumn = _FrozenColumn;
 (() => {
   (typeof ngDevMode === "undefined" || ngDevMode) && setClassMetadata(FrozenColumn, [{
     type: Directive,
@@ -5878,14 +5525,14 @@ var FrozenColumn = class _FrozenColumn {
     }]
   });
 })();
-var SortableColumn = class _SortableColumn {
-  dt;
-  field;
-  pSortableColumnDisabled;
-  sorted;
-  sortOrder;
-  subscription;
+var _SortableColumn = class _SortableColumn {
   constructor(dt) {
+    __publicField(this, "dt");
+    __publicField(this, "field");
+    __publicField(this, "pSortableColumnDisabled");
+    __publicField(this, "sorted");
+    __publicField(this, "sortOrder");
+    __publicField(this, "subscription");
     this.dt = dt;
     if (this.isEnabled()) {
       this.subscription = this.dt.tableService.sortSource$.subscribe((sortMeta) => {
@@ -5920,7 +5567,8 @@ var SortableColumn = class _SortableColumn {
     return this.pSortableColumnDisabled !== true;
   }
   isFilterElement(element) {
-    return this.isFilterElementIconOrButton(element) || this.isFilterElementIconOrButton(element?.parentElement?.parentElement);
+    var _a;
+    return this.isFilterElementIconOrButton(element) || this.isFilterElementIconOrButton((_a = element == null ? void 0 : element.parentElement) == null ? void 0 : _a.parentElement);
   }
   isFilterElementIconOrButton(element) {
     return DomHandler.hasClass(element, "pi-filter-icon") || DomHandler.hasClass(element, "p-column-filter-menu-button");
@@ -5930,36 +5578,37 @@ var SortableColumn = class _SortableColumn {
       this.subscription.unsubscribe();
     }
   }
-  static ɵfac = function SortableColumn_Factory(__ngFactoryType__) {
-    return new (__ngFactoryType__ || _SortableColumn)(ɵɵdirectiveInject(Table));
-  };
-  static ɵdir = ɵɵdefineDirective({
-    type: _SortableColumn,
-    selectors: [["", "pSortableColumn", ""]],
-    hostAttrs: [1, "p-element"],
-    hostVars: 7,
-    hostBindings: function SortableColumn_HostBindings(rf, ctx) {
-      if (rf & 1) {
-        ɵɵlistener("click", function SortableColumn_click_HostBindingHandler($event) {
-          return ctx.onClick($event);
-        })("keydown.space", function SortableColumn_keydown_space_HostBindingHandler($event) {
-          return ctx.onEnterKey($event);
-        })("keydown.enter", function SortableColumn_keydown_enter_HostBindingHandler($event) {
-          return ctx.onEnterKey($event);
-        });
-      }
-      if (rf & 2) {
-        ɵɵattribute("tabindex", ctx.isEnabled() ? "0" : null)("role", "columnheader")("aria-sort", ctx.sortOrder);
-        ɵɵclassProp("p-sortable-column", ctx.isEnabled())("p-highlight", ctx.sorted);
-      }
-    },
-    inputs: {
-      field: [0, "pSortableColumn", "field"],
-      pSortableColumnDisabled: [2, "pSortableColumnDisabled", "pSortableColumnDisabled", booleanAttribute]
-    },
-    features: [ɵɵInputTransformsFeature]
-  });
 };
+__publicField(_SortableColumn, "ɵfac", function SortableColumn_Factory(__ngFactoryType__) {
+  return new (__ngFactoryType__ || _SortableColumn)(ɵɵdirectiveInject(Table));
+});
+__publicField(_SortableColumn, "ɵdir", ɵɵdefineDirective({
+  type: _SortableColumn,
+  selectors: [["", "pSortableColumn", ""]],
+  hostAttrs: [1, "p-element"],
+  hostVars: 7,
+  hostBindings: function SortableColumn_HostBindings(rf, ctx) {
+    if (rf & 1) {
+      ɵɵlistener("click", function SortableColumn_click_HostBindingHandler($event) {
+        return ctx.onClick($event);
+      })("keydown.space", function SortableColumn_keydown_space_HostBindingHandler($event) {
+        return ctx.onEnterKey($event);
+      })("keydown.enter", function SortableColumn_keydown_enter_HostBindingHandler($event) {
+        return ctx.onEnterKey($event);
+      });
+    }
+    if (rf & 2) {
+      ɵɵattribute("tabindex", ctx.isEnabled() ? "0" : null)("role", "columnheader")("aria-sort", ctx.sortOrder);
+      ɵɵclassProp("p-sortable-column", ctx.isEnabled())("p-highlight", ctx.sorted);
+    }
+  },
+  inputs: {
+    field: [0, "pSortableColumn", "field"],
+    pSortableColumnDisabled: [2, "pSortableColumnDisabled", "pSortableColumnDisabled", booleanAttribute]
+  },
+  features: [ɵɵInputTransformsFeature]
+}));
+var SortableColumn = _SortableColumn;
 (() => {
   (typeof ngDevMode === "undefined" || ngDevMode) && setClassMetadata(SortableColumn, [{
     type: Directive,
@@ -6000,13 +5649,13 @@ var SortableColumn = class _SortableColumn {
     }]
   });
 })();
-var SortIcon = class _SortIcon {
-  dt;
-  cd;
-  field;
-  subscription;
-  sortOrder;
+var _SortIcon = class _SortIcon {
   constructor(dt, cd) {
+    __publicField(this, "dt");
+    __publicField(this, "cd");
+    __publicField(this, "field");
+    __publicField(this, "subscription");
+    __publicField(this, "sortOrder");
     this.dt = dt;
     this.cd = cd;
     this.subscription = this.dt.tableService.sortSource$.subscribe((sortMeta) => {
@@ -6054,52 +5703,43 @@ var SortIcon = class _SortIcon {
       this.subscription.unsubscribe();
     }
   }
-  static ɵfac = function SortIcon_Factory(__ngFactoryType__) {
-    return new (__ngFactoryType__ || _SortIcon)(ɵɵdirectiveInject(Table), ɵɵdirectiveInject(ChangeDetectorRef));
-  };
-  static ɵcmp = ɵɵdefineComponent({
-    type: _SortIcon,
-    selectors: [["p-sortIcon"]],
-    hostAttrs: [1, "p-element"],
-    inputs: {
-      field: "field"
-    },
-    decls: 3,
-    vars: 3,
-    consts: [[4, "ngIf"], ["class", "p-sortable-column-icon", 4, "ngIf"], ["class", "p-sortable-column-badge", 4, "ngIf"], [3, "styleClass", 4, "ngIf"], [3, "styleClass"], [1, "p-sortable-column-icon"], [4, "ngTemplateOutlet", "ngTemplateOutletContext"], [1, "p-sortable-column-badge"]],
-    template: function SortIcon_Template(rf, ctx) {
-      if (rf & 1) {
-        ɵɵtemplate(0, SortIcon_ng_container_0_Template, 4, 3, "ng-container", 0)(1, SortIcon_span_1_Template, 2, 4, "span", 1)(2, SortIcon_span_2_Template, 2, 1, "span", 2);
-      }
-      if (rf & 2) {
-        ɵɵproperty("ngIf", !ctx.dt.sortIconTemplate);
-        ɵɵadvance();
-        ɵɵproperty("ngIf", ctx.dt.sortIconTemplate);
-        ɵɵadvance();
-        ɵɵproperty("ngIf", ctx.isMultiSorted());
-      }
-    },
-    dependencies: () => [NgIf, NgTemplateOutlet, SortAltIcon, SortAmountUpAltIcon, SortAmountDownIcon],
-    encapsulation: 2,
-    changeDetection: 0
-  });
 };
+__publicField(_SortIcon, "ɵfac", function SortIcon_Factory(__ngFactoryType__) {
+  return new (__ngFactoryType__ || _SortIcon)(ɵɵdirectiveInject(Table), ɵɵdirectiveInject(ChangeDetectorRef));
+});
+__publicField(_SortIcon, "ɵcmp", ɵɵdefineComponent({
+  type: _SortIcon,
+  selectors: [["p-sortIcon"]],
+  hostAttrs: [1, "p-element"],
+  inputs: {
+    field: "field"
+  },
+  decls: 3,
+  vars: 3,
+  consts: [[4, "ngIf"], ["class", "p-sortable-column-icon", 4, "ngIf"], ["class", "p-sortable-column-badge", 4, "ngIf"], [3, "styleClass", 4, "ngIf"], [3, "styleClass"], [1, "p-sortable-column-icon"], [4, "ngTemplateOutlet", "ngTemplateOutletContext"], [1, "p-sortable-column-badge"]],
+  template: function SortIcon_Template(rf, ctx) {
+    if (rf & 1) {
+      ɵɵtemplate(0, SortIcon_ng_container_0_Template, 4, 3, "ng-container", 0)(1, SortIcon_span_1_Template, 2, 4, "span", 1)(2, SortIcon_span_2_Template, 2, 1, "span", 2);
+    }
+    if (rf & 2) {
+      ɵɵproperty("ngIf", !ctx.dt.sortIconTemplate);
+      ɵɵadvance();
+      ɵɵproperty("ngIf", ctx.dt.sortIconTemplate);
+      ɵɵadvance();
+      ɵɵproperty("ngIf", ctx.isMultiSorted());
+    }
+  },
+  dependencies: () => [NgIf, NgTemplateOutlet, SortAltIcon, SortAmountUpAltIcon, SortAmountDownIcon],
+  encapsulation: 2,
+  changeDetection: 0
+}));
+var SortIcon = _SortIcon;
 (() => {
   (typeof ngDevMode === "undefined" || ngDevMode) && setClassMetadata(SortIcon, [{
     type: Component,
     args: [{
       selector: "p-sortIcon",
-      template: `
-        <ng-container *ngIf="!dt.sortIconTemplate">
-            <SortAltIcon [styleClass]="'p-sortable-column-icon'" *ngIf="sortOrder === 0" />
-            <SortAmountUpAltIcon [styleClass]="'p-sortable-column-icon'" *ngIf="sortOrder === 1" />
-            <SortAmountDownIcon [styleClass]="'p-sortable-column-icon'" *ngIf="sortOrder === -1" />
-        </ng-container>
-        <span *ngIf="dt.sortIconTemplate" class="p-sortable-column-icon">
-            <ng-template *ngTemplateOutlet="dt.sortIconTemplate; context: { $implicit: sortOrder }"></ng-template>
-        </span>
-        <span *ngIf="isMultiSorted()" class="p-sortable-column-badge">{{ getBadgeValue() }}</span>
-    `,
+      template: '\n        <ng-container *ngIf="!dt.sortIconTemplate">\n            <SortAltIcon [styleClass]="\'p-sortable-column-icon\'" *ngIf="sortOrder === 0" />\n            <SortAmountUpAltIcon [styleClass]="\'p-sortable-column-icon\'" *ngIf="sortOrder === 1" />\n            <SortAmountDownIcon [styleClass]="\'p-sortable-column-icon\'" *ngIf="sortOrder === -1" />\n        </ng-container>\n        <span *ngIf="dt.sortIconTemplate" class="p-sortable-column-icon">\n            <ng-template *ngTemplateOutlet="dt.sortIconTemplate; context: { $implicit: sortOrder }"></ng-template>\n        </span>\n        <span *ngIf="isMultiSorted()" class="p-sortable-column-badge">{{ getBadgeValue() }}</span>\n    ',
       changeDetection: ChangeDetectionStrategy.OnPush,
       encapsulation: ViewEncapsulation$1.None,
       host: {
@@ -6116,16 +5756,16 @@ var SortIcon = class _SortIcon {
     }]
   });
 })();
-var SelectableRow = class _SelectableRow {
-  dt;
-  tableService;
-  el;
-  data;
-  index;
-  pSelectableRowDisabled;
-  selected;
-  subscription;
+var _SelectableRow = class _SelectableRow {
   constructor(dt, tableService, el) {
+    __publicField(this, "dt");
+    __publicField(this, "tableService");
+    __publicField(this, "el");
+    __publicField(this, "data");
+    __publicField(this, "index");
+    __publicField(this, "pSelectableRowDisabled");
+    __publicField(this, "selected");
+    __publicField(this, "subscription");
     this.dt = dt;
     this.tableService = tableService;
     this.el = el;
@@ -6308,37 +5948,38 @@ var SelectableRow = class _SelectableRow {
       this.subscription.unsubscribe();
     }
   }
-  static ɵfac = function SelectableRow_Factory(__ngFactoryType__) {
-    return new (__ngFactoryType__ || _SelectableRow)(ɵɵdirectiveInject(Table), ɵɵdirectiveInject(TableService), ɵɵdirectiveInject(ElementRef));
-  };
-  static ɵdir = ɵɵdefineDirective({
-    type: _SelectableRow,
-    selectors: [["", "pSelectableRow", ""]],
-    hostAttrs: [1, "p-element"],
-    hostVars: 7,
-    hostBindings: function SelectableRow_HostBindings(rf, ctx) {
-      if (rf & 1) {
-        ɵɵlistener("click", function SelectableRow_click_HostBindingHandler($event) {
-          return ctx.onClick($event);
-        })("touchend", function SelectableRow_touchend_HostBindingHandler($event) {
-          return ctx.onTouchEnd($event);
-        })("keydown", function SelectableRow_keydown_HostBindingHandler($event) {
-          return ctx.onKeyDown($event);
-        });
-      }
-      if (rf & 2) {
-        ɵɵattribute("tabindex", ctx.setRowTabIndex())("data-p-highlight", ctx.selected)("data-p-selectable-row", true);
-        ɵɵclassProp("p-selectable-row", ctx.isEnabled())("p-highlight", ctx.selected);
-      }
-    },
-    inputs: {
-      data: [0, "pSelectableRow", "data"],
-      index: [0, "pSelectableRowIndex", "index"],
-      pSelectableRowDisabled: [2, "pSelectableRowDisabled", "pSelectableRowDisabled", booleanAttribute]
-    },
-    features: [ɵɵInputTransformsFeature]
-  });
 };
+__publicField(_SelectableRow, "ɵfac", function SelectableRow_Factory(__ngFactoryType__) {
+  return new (__ngFactoryType__ || _SelectableRow)(ɵɵdirectiveInject(Table), ɵɵdirectiveInject(TableService), ɵɵdirectiveInject(ElementRef));
+});
+__publicField(_SelectableRow, "ɵdir", ɵɵdefineDirective({
+  type: _SelectableRow,
+  selectors: [["", "pSelectableRow", ""]],
+  hostAttrs: [1, "p-element"],
+  hostVars: 7,
+  hostBindings: function SelectableRow_HostBindings(rf, ctx) {
+    if (rf & 1) {
+      ɵɵlistener("click", function SelectableRow_click_HostBindingHandler($event) {
+        return ctx.onClick($event);
+      })("touchend", function SelectableRow_touchend_HostBindingHandler($event) {
+        return ctx.onTouchEnd($event);
+      })("keydown", function SelectableRow_keydown_HostBindingHandler($event) {
+        return ctx.onKeyDown($event);
+      });
+    }
+    if (rf & 2) {
+      ɵɵattribute("tabindex", ctx.setRowTabIndex())("data-p-highlight", ctx.selected)("data-p-selectable-row", true);
+      ɵɵclassProp("p-selectable-row", ctx.isEnabled())("p-highlight", ctx.selected);
+    }
+  },
+  inputs: {
+    data: [0, "pSelectableRow", "data"],
+    index: [0, "pSelectableRowIndex", "index"],
+    pSelectableRowDisabled: [2, "pSelectableRowDisabled", "pSelectableRowDisabled", booleanAttribute]
+  },
+  features: [ɵɵInputTransformsFeature]
+}));
+var SelectableRow = _SelectableRow;
 (() => {
   (typeof ngDevMode === "undefined" || ngDevMode) && setClassMetadata(SelectableRow, [{
     type: Directive,
@@ -6388,15 +6029,15 @@ var SelectableRow = class _SelectableRow {
     }]
   });
 })();
-var SelectableRowDblClick = class _SelectableRowDblClick {
-  dt;
-  tableService;
-  data;
-  index;
-  pSelectableRowDisabled;
-  selected;
-  subscription;
+var _SelectableRowDblClick = class _SelectableRowDblClick {
   constructor(dt, tableService) {
+    __publicField(this, "dt");
+    __publicField(this, "tableService");
+    __publicField(this, "data");
+    __publicField(this, "index");
+    __publicField(this, "pSelectableRowDisabled");
+    __publicField(this, "selected");
+    __publicField(this, "subscription");
     this.dt = dt;
     this.tableService = tableService;
     if (this.isEnabled()) {
@@ -6427,32 +6068,33 @@ var SelectableRowDblClick = class _SelectableRowDblClick {
       this.subscription.unsubscribe();
     }
   }
-  static ɵfac = function SelectableRowDblClick_Factory(__ngFactoryType__) {
-    return new (__ngFactoryType__ || _SelectableRowDblClick)(ɵɵdirectiveInject(Table), ɵɵdirectiveInject(TableService));
-  };
-  static ɵdir = ɵɵdefineDirective({
-    type: _SelectableRowDblClick,
-    selectors: [["", "pSelectableRowDblClick", ""]],
-    hostAttrs: [1, "p-element"],
-    hostVars: 4,
-    hostBindings: function SelectableRowDblClick_HostBindings(rf, ctx) {
-      if (rf & 1) {
-        ɵɵlistener("dblclick", function SelectableRowDblClick_dblclick_HostBindingHandler($event) {
-          return ctx.onClick($event);
-        });
-      }
-      if (rf & 2) {
-        ɵɵclassProp("p-selectable-row", ctx.isEnabled())("p-highlight", ctx.selected);
-      }
-    },
-    inputs: {
-      data: [0, "pSelectableRowDblClick", "data"],
-      index: [0, "pSelectableRowIndex", "index"],
-      pSelectableRowDisabled: [2, "pSelectableRowDisabled", "pSelectableRowDisabled", booleanAttribute]
-    },
-    features: [ɵɵInputTransformsFeature]
-  });
 };
+__publicField(_SelectableRowDblClick, "ɵfac", function SelectableRowDblClick_Factory(__ngFactoryType__) {
+  return new (__ngFactoryType__ || _SelectableRowDblClick)(ɵɵdirectiveInject(Table), ɵɵdirectiveInject(TableService));
+});
+__publicField(_SelectableRowDblClick, "ɵdir", ɵɵdefineDirective({
+  type: _SelectableRowDblClick,
+  selectors: [["", "pSelectableRowDblClick", ""]],
+  hostAttrs: [1, "p-element"],
+  hostVars: 4,
+  hostBindings: function SelectableRowDblClick_HostBindings(rf, ctx) {
+    if (rf & 1) {
+      ɵɵlistener("dblclick", function SelectableRowDblClick_dblclick_HostBindingHandler($event) {
+        return ctx.onClick($event);
+      });
+    }
+    if (rf & 2) {
+      ɵɵclassProp("p-selectable-row", ctx.isEnabled())("p-highlight", ctx.selected);
+    }
+  },
+  inputs: {
+    data: [0, "pSelectableRowDblClick", "data"],
+    index: [0, "pSelectableRowIndex", "index"],
+    pSelectableRowDisabled: [2, "pSelectableRowDisabled", "pSelectableRowDisabled", booleanAttribute]
+  },
+  features: [ɵɵInputTransformsFeature]
+}));
+var SelectableRowDblClick = _SelectableRowDblClick;
 (() => {
   (typeof ngDevMode === "undefined" || ngDevMode) && setClassMetadata(SelectableRowDblClick, [{
     type: Directive,
@@ -6489,16 +6131,16 @@ var SelectableRowDblClick = class _SelectableRowDblClick {
     }]
   });
 })();
-var ContextMenuRow = class _ContextMenuRow {
-  dt;
-  tableService;
-  el;
-  data;
-  index;
-  pContextMenuRowDisabled;
-  selected;
-  subscription;
+var _ContextMenuRow = class _ContextMenuRow {
   constructor(dt, tableService, el) {
+    __publicField(this, "dt");
+    __publicField(this, "tableService");
+    __publicField(this, "el");
+    __publicField(this, "data");
+    __publicField(this, "index");
+    __publicField(this, "pContextMenuRowDisabled");
+    __publicField(this, "selected");
+    __publicField(this, "subscription");
     this.dt = dt;
     this.tableService = tableService;
     this.el = el;
@@ -6527,33 +6169,34 @@ var ContextMenuRow = class _ContextMenuRow {
       this.subscription.unsubscribe();
     }
   }
-  static ɵfac = function ContextMenuRow_Factory(__ngFactoryType__) {
-    return new (__ngFactoryType__ || _ContextMenuRow)(ɵɵdirectiveInject(Table), ɵɵdirectiveInject(TableService), ɵɵdirectiveInject(ElementRef));
-  };
-  static ɵdir = ɵɵdefineDirective({
-    type: _ContextMenuRow,
-    selectors: [["", "pContextMenuRow", ""]],
-    hostAttrs: [1, "p-element"],
-    hostVars: 3,
-    hostBindings: function ContextMenuRow_HostBindings(rf, ctx) {
-      if (rf & 1) {
-        ɵɵlistener("contextmenu", function ContextMenuRow_contextmenu_HostBindingHandler($event) {
-          return ctx.onContextMenu($event);
-        });
-      }
-      if (rf & 2) {
-        ɵɵattribute("tabindex", ctx.isEnabled() ? 0 : void 0);
-        ɵɵclassProp("p-highlight-contextmenu", ctx.selected);
-      }
-    },
-    inputs: {
-      data: [0, "pContextMenuRow", "data"],
-      index: [0, "pContextMenuRowIndex", "index"],
-      pContextMenuRowDisabled: [2, "pContextMenuRowDisabled", "pContextMenuRowDisabled", booleanAttribute]
-    },
-    features: [ɵɵInputTransformsFeature]
-  });
 };
+__publicField(_ContextMenuRow, "ɵfac", function ContextMenuRow_Factory(__ngFactoryType__) {
+  return new (__ngFactoryType__ || _ContextMenuRow)(ɵɵdirectiveInject(Table), ɵɵdirectiveInject(TableService), ɵɵdirectiveInject(ElementRef));
+});
+__publicField(_ContextMenuRow, "ɵdir", ɵɵdefineDirective({
+  type: _ContextMenuRow,
+  selectors: [["", "pContextMenuRow", ""]],
+  hostAttrs: [1, "p-element"],
+  hostVars: 3,
+  hostBindings: function ContextMenuRow_HostBindings(rf, ctx) {
+    if (rf & 1) {
+      ɵɵlistener("contextmenu", function ContextMenuRow_contextmenu_HostBindingHandler($event) {
+        return ctx.onContextMenu($event);
+      });
+    }
+    if (rf & 2) {
+      ɵɵattribute("tabindex", ctx.isEnabled() ? 0 : void 0);
+      ɵɵclassProp("p-highlight-contextmenu", ctx.selected);
+    }
+  },
+  inputs: {
+    data: [0, "pContextMenuRow", "data"],
+    index: [0, "pContextMenuRowIndex", "index"],
+    pContextMenuRowDisabled: [2, "pContextMenuRowDisabled", "pContextMenuRowDisabled", booleanAttribute]
+  },
+  features: [ɵɵInputTransformsFeature]
+}));
+var ContextMenuRow = _ContextMenuRow;
 (() => {
   (typeof ngDevMode === "undefined" || ngDevMode) && setClassMetadata(ContextMenuRow, [{
     type: Directive,
@@ -6592,11 +6235,11 @@ var ContextMenuRow = class _ContextMenuRow {
     }]
   });
 })();
-var RowToggler = class _RowToggler {
-  dt;
-  data;
-  pRowTogglerDisabled;
+var _RowToggler = class _RowToggler {
   constructor(dt) {
+    __publicField(this, "dt");
+    __publicField(this, "data");
+    __publicField(this, "pRowTogglerDisabled");
     this.dt = dt;
   }
   onClick(event) {
@@ -6608,27 +6251,28 @@ var RowToggler = class _RowToggler {
   isEnabled() {
     return this.pRowTogglerDisabled !== true;
   }
-  static ɵfac = function RowToggler_Factory(__ngFactoryType__) {
-    return new (__ngFactoryType__ || _RowToggler)(ɵɵdirectiveInject(Table));
-  };
-  static ɵdir = ɵɵdefineDirective({
-    type: _RowToggler,
-    selectors: [["", "pRowToggler", ""]],
-    hostAttrs: [1, "p-element"],
-    hostBindings: function RowToggler_HostBindings(rf, ctx) {
-      if (rf & 1) {
-        ɵɵlistener("click", function RowToggler_click_HostBindingHandler($event) {
-          return ctx.onClick($event);
-        });
-      }
-    },
-    inputs: {
-      data: [0, "pRowToggler", "data"],
-      pRowTogglerDisabled: [2, "pRowTogglerDisabled", "pRowTogglerDisabled", booleanAttribute]
-    },
-    features: [ɵɵInputTransformsFeature]
-  });
 };
+__publicField(_RowToggler, "ɵfac", function RowToggler_Factory(__ngFactoryType__) {
+  return new (__ngFactoryType__ || _RowToggler)(ɵɵdirectiveInject(Table));
+});
+__publicField(_RowToggler, "ɵdir", ɵɵdefineDirective({
+  type: _RowToggler,
+  selectors: [["", "pRowToggler", ""]],
+  hostAttrs: [1, "p-element"],
+  hostBindings: function RowToggler_HostBindings(rf, ctx) {
+    if (rf & 1) {
+      ɵɵlistener("click", function RowToggler_click_HostBindingHandler($event) {
+        return ctx.onClick($event);
+      });
+    }
+  },
+  inputs: {
+    data: [0, "pRowToggler", "data"],
+    pRowTogglerDisabled: [2, "pRowTogglerDisabled", "pRowTogglerDisabled", booleanAttribute]
+  },
+  features: [ɵɵInputTransformsFeature]
+}));
+var RowToggler = _RowToggler;
 (() => {
   (typeof ngDevMode === "undefined" || ngDevMode) && setClassMetadata(RowToggler, [{
     type: Directive,
@@ -6657,22 +6301,22 @@ var RowToggler = class _RowToggler {
     }]
   });
 })();
-var ResizableColumn = class _ResizableColumn {
-  document;
-  platformId;
-  renderer;
-  dt;
-  el;
-  zone;
-  pResizableColumnDisabled;
-  resizer;
-  resizerMouseDownListener;
-  resizerTouchStartListener;
-  resizerTouchMoveListener;
-  resizerTouchEndListener;
-  documentMouseMoveListener;
-  documentMouseUpListener;
+var _ResizableColumn = class _ResizableColumn {
   constructor(document2, platformId, renderer, dt, el, zone) {
+    __publicField(this, "document");
+    __publicField(this, "platformId");
+    __publicField(this, "renderer");
+    __publicField(this, "dt");
+    __publicField(this, "el");
+    __publicField(this, "zone");
+    __publicField(this, "pResizableColumnDisabled");
+    __publicField(this, "resizer");
+    __publicField(this, "resizerMouseDownListener");
+    __publicField(this, "resizerTouchStartListener");
+    __publicField(this, "resizerTouchMoveListener");
+    __publicField(this, "resizerTouchEndListener");
+    __publicField(this, "documentMouseMoveListener");
+    __publicField(this, "documentMouseUpListener");
     this.document = document2;
     this.platformId = platformId;
     this.renderer = renderer;
@@ -6752,19 +6396,20 @@ var ResizableColumn = class _ResizableColumn {
     }
     this.unbindDocumentEvents();
   }
-  static ɵfac = function ResizableColumn_Factory(__ngFactoryType__) {
-    return new (__ngFactoryType__ || _ResizableColumn)(ɵɵdirectiveInject(DOCUMENT), ɵɵdirectiveInject(PLATFORM_ID), ɵɵdirectiveInject(Renderer2), ɵɵdirectiveInject(Table), ɵɵdirectiveInject(ElementRef), ɵɵdirectiveInject(NgZone));
-  };
-  static ɵdir = ɵɵdefineDirective({
-    type: _ResizableColumn,
-    selectors: [["", "pResizableColumn", ""]],
-    hostAttrs: [1, "p-element"],
-    inputs: {
-      pResizableColumnDisabled: [2, "pResizableColumnDisabled", "pResizableColumnDisabled", booleanAttribute]
-    },
-    features: [ɵɵInputTransformsFeature]
-  });
 };
+__publicField(_ResizableColumn, "ɵfac", function ResizableColumn_Factory(__ngFactoryType__) {
+  return new (__ngFactoryType__ || _ResizableColumn)(ɵɵdirectiveInject(DOCUMENT), ɵɵdirectiveInject(PLATFORM_ID), ɵɵdirectiveInject(Renderer2), ɵɵdirectiveInject(Table), ɵɵdirectiveInject(ElementRef), ɵɵdirectiveInject(NgZone));
+});
+__publicField(_ResizableColumn, "ɵdir", ɵɵdefineDirective({
+  type: _ResizableColumn,
+  selectors: [["", "pResizableColumn", ""]],
+  hostAttrs: [1, "p-element"],
+  inputs: {
+    pResizableColumnDisabled: [2, "pResizableColumnDisabled", "pResizableColumnDisabled", booleanAttribute]
+  },
+  features: [ɵɵInputTransformsFeature]
+}));
+var ResizableColumn = _ResizableColumn;
 (() => {
   (typeof ngDevMode === "undefined" || ngDevMode) && setClassMetadata(ResizableColumn, [{
     type: Directive,
@@ -6803,19 +6448,19 @@ var ResizableColumn = class _ResizableColumn {
     }]
   });
 })();
-var ReorderableColumn = class _ReorderableColumn {
-  platformId;
-  renderer;
-  dt;
-  el;
-  zone;
-  pReorderableColumnDisabled;
-  dragStartListener;
-  dragOverListener;
-  dragEnterListener;
-  dragLeaveListener;
-  mouseDownListener;
+var _ReorderableColumn = class _ReorderableColumn {
   constructor(platformId, renderer, dt, el, zone) {
+    __publicField(this, "platformId");
+    __publicField(this, "renderer");
+    __publicField(this, "dt");
+    __publicField(this, "el");
+    __publicField(this, "zone");
+    __publicField(this, "pReorderableColumnDisabled");
+    __publicField(this, "dragStartListener");
+    __publicField(this, "dragOverListener");
+    __publicField(this, "dragEnterListener");
+    __publicField(this, "dragLeaveListener");
+    __publicField(this, "mouseDownListener");
     this.platformId = platformId;
     this.renderer = renderer;
     this.dt = dt;
@@ -6887,30 +6532,31 @@ var ReorderableColumn = class _ReorderableColumn {
   ngOnDestroy() {
     this.unbindEvents();
   }
-  static ɵfac = function ReorderableColumn_Factory(__ngFactoryType__) {
-    return new (__ngFactoryType__ || _ReorderableColumn)(ɵɵdirectiveInject(PLATFORM_ID), ɵɵdirectiveInject(Renderer2), ɵɵdirectiveInject(Table), ɵɵdirectiveInject(ElementRef), ɵɵdirectiveInject(NgZone));
-  };
-  static ɵdir = ɵɵdefineDirective({
-    type: _ReorderableColumn,
-    selectors: [["", "pReorderableColumn", ""]],
-    hostAttrs: [1, "p-element"],
-    hostVars: 2,
-    hostBindings: function ReorderableColumn_HostBindings(rf, ctx) {
-      if (rf & 1) {
-        ɵɵlistener("drop", function ReorderableColumn_drop_HostBindingHandler($event) {
-          return ctx.onDrop($event);
-        });
-      }
-      if (rf & 2) {
-        ɵɵstyleProp("cursor", ctx.isEnabled() ? "move" : "default");
-      }
-    },
-    inputs: {
-      pReorderableColumnDisabled: [2, "pReorderableColumnDisabled", "pReorderableColumnDisabled", booleanAttribute]
-    },
-    features: [ɵɵInputTransformsFeature]
-  });
 };
+__publicField(_ReorderableColumn, "ɵfac", function ReorderableColumn_Factory(__ngFactoryType__) {
+  return new (__ngFactoryType__ || _ReorderableColumn)(ɵɵdirectiveInject(PLATFORM_ID), ɵɵdirectiveInject(Renderer2), ɵɵdirectiveInject(Table), ɵɵdirectiveInject(ElementRef), ɵɵdirectiveInject(NgZone));
+});
+__publicField(_ReorderableColumn, "ɵdir", ɵɵdefineDirective({
+  type: _ReorderableColumn,
+  selectors: [["", "pReorderableColumn", ""]],
+  hostAttrs: [1, "p-element"],
+  hostVars: 2,
+  hostBindings: function ReorderableColumn_HostBindings(rf, ctx) {
+    if (rf & 1) {
+      ɵɵlistener("drop", function ReorderableColumn_drop_HostBindingHandler($event) {
+        return ctx.onDrop($event);
+      });
+    }
+    if (rf & 2) {
+      ɵɵstyleProp("cursor", ctx.isEnabled() ? "move" : "default");
+    }
+  },
+  inputs: {
+    pReorderableColumnDisabled: [2, "pReorderableColumnDisabled", "pReorderableColumnDisabled", booleanAttribute]
+  },
+  features: [ɵɵInputTransformsFeature]
+}));
+var ReorderableColumn = _ReorderableColumn;
 (() => {
   (typeof ngDevMode === "undefined" || ngDevMode) && setClassMetadata(ReorderableColumn, [{
     type: Directive,
@@ -6948,25 +6594,26 @@ var ReorderableColumn = class _ReorderableColumn {
     }]
   });
 })();
-var EditableColumn = class _EditableColumn {
-  dt;
-  el;
-  zone;
-  data;
-  field;
-  rowIndex;
-  pEditableColumnDisabled;
-  pFocusCellSelector;
-  overlayEventListener;
+var _EditableColumn = class _EditableColumn {
   constructor(dt, el, zone) {
+    __publicField(this, "dt");
+    __publicField(this, "el");
+    __publicField(this, "zone");
+    __publicField(this, "data");
+    __publicField(this, "field");
+    __publicField(this, "rowIndex");
+    __publicField(this, "pEditableColumnDisabled");
+    __publicField(this, "pFocusCellSelector");
+    __publicField(this, "overlayEventListener");
     this.dt = dt;
     this.el = el;
     this.zone = zone;
   }
   ngOnChanges(changes) {
-    if (changes.pEditableColumnDisabled?.currentValue === true && DomHandler.hasClass(this.el.nativeElement, "p-cell-editing")) {
+    var _a, _b;
+    if (((_a = changes.pEditableColumnDisabled) == null ? void 0 : _a.currentValue) === true && DomHandler.hasClass(this.el.nativeElement, "p-cell-editing")) {
       this.closeEditingCell(false, new Event("cancel"));
-    } else if (changes.data?.firstChange === false && this.el.nativeElement) {
+    } else if (((_b = changes.data) == null ? void 0 : _b.firstChange) === false && this.el.nativeElement) {
       this.dt.updateEditingCell(this.el.nativeElement, this.data, this.field, this.rowIndex);
     }
   }
@@ -7161,9 +6808,10 @@ var EditableColumn = class _EditableColumn {
     }
   }
   findPreviousEditableColumn(cell) {
+    var _a;
     let prevCell = cell.previousElementSibling;
     if (!prevCell) {
-      let previousRow = cell.parentElement?.previousElementSibling;
+      let previousRow = (_a = cell.parentElement) == null ? void 0 : _a.previousElementSibling;
       if (previousRow) {
         prevCell = previousRow.lastElementChild;
       }
@@ -7176,9 +6824,10 @@ var EditableColumn = class _EditableColumn {
     }
   }
   findNextEditableColumn(cell) {
+    var _a;
     let nextCell = cell.nextElementSibling;
     if (!nextCell) {
-      let nextRow = cell.parentElement?.nextElementSibling;
+      let nextRow = (_a = cell.parentElement) == null ? void 0 : _a.nextElementSibling;
       if (nextRow) {
         nextCell = nextRow.firstElementChild;
       }
@@ -7191,7 +6840,8 @@ var EditableColumn = class _EditableColumn {
     }
   }
   findNextEditableColumnByIndex(cell, index) {
-    let nextRow = cell.parentElement?.nextElementSibling;
+    var _a;
+    let nextRow = (_a = cell.parentElement) == null ? void 0 : _a.nextElementSibling;
     if (nextRow) {
       let nextCell = nextRow.children[index];
       if (nextCell && DomHandler.hasClass(nextCell, "p-editable-column")) {
@@ -7203,7 +6853,8 @@ var EditableColumn = class _EditableColumn {
     }
   }
   findPrevEditableColumnByIndex(cell, index) {
-    let prevRow = cell.parentElement?.previousElementSibling;
+    var _a;
+    let prevRow = (_a = cell.parentElement) == null ? void 0 : _a.previousElementSibling;
     if (prevRow) {
       let prevCell = prevRow.children[index];
       if (prevCell && DomHandler.hasClass(prevCell, "p-editable-column")) {
@@ -7222,48 +6873,49 @@ var EditableColumn = class _EditableColumn {
       this.dt.overlaySubscription.unsubscribe();
     }
   }
-  static ɵfac = function EditableColumn_Factory(__ngFactoryType__) {
-    return new (__ngFactoryType__ || _EditableColumn)(ɵɵdirectiveInject(Table), ɵɵdirectiveInject(ElementRef), ɵɵdirectiveInject(NgZone));
-  };
-  static ɵdir = ɵɵdefineDirective({
-    type: _EditableColumn,
-    selectors: [["", "pEditableColumn", ""]],
-    hostAttrs: [1, "p-element"],
-    hostBindings: function EditableColumn_HostBindings(rf, ctx) {
-      if (rf & 1) {
-        ɵɵlistener("click", function EditableColumn_click_HostBindingHandler($event) {
-          return ctx.onClick($event);
-        })("keydown.enter", function EditableColumn_keydown_enter_HostBindingHandler($event) {
-          return ctx.onEnterKeyDown($event);
-        })("keydown.tab", function EditableColumn_keydown_tab_HostBindingHandler($event) {
-          return ctx.onShiftKeyDown($event);
-        })("keydown.escape", function EditableColumn_keydown_escape_HostBindingHandler($event) {
-          return ctx.onEscapeKeyDown($event);
-        })("keydown.shift.tab", function EditableColumn_keydown_shift_tab_HostBindingHandler($event) {
-          return ctx.onShiftKeyDown($event);
-        })("keydown.meta.tab", function EditableColumn_keydown_meta_tab_HostBindingHandler($event) {
-          return ctx.onShiftKeyDown($event);
-        })("keydown.arrowdown", function EditableColumn_keydown_arrowdown_HostBindingHandler($event) {
-          return ctx.onArrowDown($event);
-        })("keydown.arrowup", function EditableColumn_keydown_arrowup_HostBindingHandler($event) {
-          return ctx.onArrowUp($event);
-        })("keydown.arrowleft", function EditableColumn_keydown_arrowleft_HostBindingHandler($event) {
-          return ctx.onArrowLeft($event);
-        })("keydown.arrowright", function EditableColumn_keydown_arrowright_HostBindingHandler($event) {
-          return ctx.onArrowRight($event);
-        });
-      }
-    },
-    inputs: {
-      data: [0, "pEditableColumn", "data"],
-      field: [0, "pEditableColumnField", "field"],
-      rowIndex: [0, "pEditableColumnRowIndex", "rowIndex"],
-      pEditableColumnDisabled: [2, "pEditableColumnDisabled", "pEditableColumnDisabled", booleanAttribute],
-      pFocusCellSelector: "pFocusCellSelector"
-    },
-    features: [ɵɵInputTransformsFeature, ɵɵNgOnChangesFeature]
-  });
 };
+__publicField(_EditableColumn, "ɵfac", function EditableColumn_Factory(__ngFactoryType__) {
+  return new (__ngFactoryType__ || _EditableColumn)(ɵɵdirectiveInject(Table), ɵɵdirectiveInject(ElementRef), ɵɵdirectiveInject(NgZone));
+});
+__publicField(_EditableColumn, "ɵdir", ɵɵdefineDirective({
+  type: _EditableColumn,
+  selectors: [["", "pEditableColumn", ""]],
+  hostAttrs: [1, "p-element"],
+  hostBindings: function EditableColumn_HostBindings(rf, ctx) {
+    if (rf & 1) {
+      ɵɵlistener("click", function EditableColumn_click_HostBindingHandler($event) {
+        return ctx.onClick($event);
+      })("keydown.enter", function EditableColumn_keydown_enter_HostBindingHandler($event) {
+        return ctx.onEnterKeyDown($event);
+      })("keydown.tab", function EditableColumn_keydown_tab_HostBindingHandler($event) {
+        return ctx.onShiftKeyDown($event);
+      })("keydown.escape", function EditableColumn_keydown_escape_HostBindingHandler($event) {
+        return ctx.onEscapeKeyDown($event);
+      })("keydown.shift.tab", function EditableColumn_keydown_shift_tab_HostBindingHandler($event) {
+        return ctx.onShiftKeyDown($event);
+      })("keydown.meta.tab", function EditableColumn_keydown_meta_tab_HostBindingHandler($event) {
+        return ctx.onShiftKeyDown($event);
+      })("keydown.arrowdown", function EditableColumn_keydown_arrowdown_HostBindingHandler($event) {
+        return ctx.onArrowDown($event);
+      })("keydown.arrowup", function EditableColumn_keydown_arrowup_HostBindingHandler($event) {
+        return ctx.onArrowUp($event);
+      })("keydown.arrowleft", function EditableColumn_keydown_arrowleft_HostBindingHandler($event) {
+        return ctx.onArrowLeft($event);
+      })("keydown.arrowright", function EditableColumn_keydown_arrowright_HostBindingHandler($event) {
+        return ctx.onArrowRight($event);
+      });
+    }
+  },
+  inputs: {
+    data: [0, "pEditableColumn", "data"],
+    field: [0, "pEditableColumnField", "field"],
+    rowIndex: [0, "pEditableColumnRowIndex", "rowIndex"],
+    pEditableColumnDisabled: [2, "pEditableColumnDisabled", "pEditableColumnDisabled", booleanAttribute],
+    pFocusCellSelector: "pFocusCellSelector"
+  },
+  features: [ɵɵInputTransformsFeature, ɵɵNgOnChangesFeature]
+}));
+var EditableColumn = _EditableColumn;
 (() => {
   (typeof ngDevMode === "undefined" || ngDevMode) && setClassMetadata(EditableColumn, [{
     type: Directive,
@@ -7345,30 +6997,31 @@ var EditableColumn = class _EditableColumn {
     }]
   });
 })();
-var EditableRow = class _EditableRow {
-  el;
-  data;
-  pEditableRowDisabled;
+var _EditableRow = class _EditableRow {
   constructor(el) {
+    __publicField(this, "el");
+    __publicField(this, "data");
+    __publicField(this, "pEditableRowDisabled");
     this.el = el;
   }
   isEnabled() {
     return this.pEditableRowDisabled !== true;
   }
-  static ɵfac = function EditableRow_Factory(__ngFactoryType__) {
-    return new (__ngFactoryType__ || _EditableRow)(ɵɵdirectiveInject(ElementRef));
-  };
-  static ɵdir = ɵɵdefineDirective({
-    type: _EditableRow,
-    selectors: [["", "pEditableRow", ""]],
-    hostAttrs: [1, "p-element"],
-    inputs: {
-      data: [0, "pEditableRow", "data"],
-      pEditableRowDisabled: [2, "pEditableRowDisabled", "pEditableRowDisabled", booleanAttribute]
-    },
-    features: [ɵɵInputTransformsFeature]
-  });
 };
+__publicField(_EditableRow, "ɵfac", function EditableRow_Factory(__ngFactoryType__) {
+  return new (__ngFactoryType__ || _EditableRow)(ɵɵdirectiveInject(ElementRef));
+});
+__publicField(_EditableRow, "ɵdir", ɵɵdefineDirective({
+  type: _EditableRow,
+  selectors: [["", "pEditableRow", ""]],
+  hostAttrs: [1, "p-element"],
+  inputs: {
+    data: [0, "pEditableRow", "data"],
+    pEditableRowDisabled: [2, "pEditableRowDisabled", "pEditableRowDisabled", booleanAttribute]
+  },
+  features: [ɵɵInputTransformsFeature]
+}));
+var EditableRow = _EditableRow;
 (() => {
   (typeof ngDevMode === "undefined" || ngDevMode) && setClassMetadata(EditableRow, [{
     type: Directive,
@@ -7393,10 +7046,10 @@ var EditableRow = class _EditableRow {
     }]
   });
 })();
-var InitEditableRow = class _InitEditableRow {
-  dt;
-  editableRow;
+var _InitEditableRow = class _InitEditableRow {
   constructor(dt, editableRow) {
+    __publicField(this, "dt");
+    __publicField(this, "editableRow");
     this.dt = dt;
     this.editableRow = editableRow;
   }
@@ -7404,22 +7057,23 @@ var InitEditableRow = class _InitEditableRow {
     this.dt.initRowEdit(this.editableRow.data);
     event.preventDefault();
   }
-  static ɵfac = function InitEditableRow_Factory(__ngFactoryType__) {
-    return new (__ngFactoryType__ || _InitEditableRow)(ɵɵdirectiveInject(Table), ɵɵdirectiveInject(EditableRow));
-  };
-  static ɵdir = ɵɵdefineDirective({
-    type: _InitEditableRow,
-    selectors: [["", "pInitEditableRow", ""]],
-    hostAttrs: [1, "p-element"],
-    hostBindings: function InitEditableRow_HostBindings(rf, ctx) {
-      if (rf & 1) {
-        ɵɵlistener("click", function InitEditableRow_click_HostBindingHandler($event) {
-          return ctx.onClick($event);
-        });
-      }
-    }
-  });
 };
+__publicField(_InitEditableRow, "ɵfac", function InitEditableRow_Factory(__ngFactoryType__) {
+  return new (__ngFactoryType__ || _InitEditableRow)(ɵɵdirectiveInject(Table), ɵɵdirectiveInject(EditableRow));
+});
+__publicField(_InitEditableRow, "ɵdir", ɵɵdefineDirective({
+  type: _InitEditableRow,
+  selectors: [["", "pInitEditableRow", ""]],
+  hostAttrs: [1, "p-element"],
+  hostBindings: function InitEditableRow_HostBindings(rf, ctx) {
+    if (rf & 1) {
+      ɵɵlistener("click", function InitEditableRow_click_HostBindingHandler($event) {
+        return ctx.onClick($event);
+      });
+    }
+  }
+}));
+var InitEditableRow = _InitEditableRow;
 (() => {
   (typeof ngDevMode === "undefined" || ngDevMode) && setClassMetadata(InitEditableRow, [{
     type: Directive,
@@ -7440,10 +7094,10 @@ var InitEditableRow = class _InitEditableRow {
     }]
   });
 })();
-var SaveEditableRow = class _SaveEditableRow {
-  dt;
-  editableRow;
+var _SaveEditableRow = class _SaveEditableRow {
   constructor(dt, editableRow) {
+    __publicField(this, "dt");
+    __publicField(this, "editableRow");
     this.dt = dt;
     this.editableRow = editableRow;
   }
@@ -7451,22 +7105,23 @@ var SaveEditableRow = class _SaveEditableRow {
     this.dt.saveRowEdit(this.editableRow.data, this.editableRow.el.nativeElement);
     event.preventDefault();
   }
-  static ɵfac = function SaveEditableRow_Factory(__ngFactoryType__) {
-    return new (__ngFactoryType__ || _SaveEditableRow)(ɵɵdirectiveInject(Table), ɵɵdirectiveInject(EditableRow));
-  };
-  static ɵdir = ɵɵdefineDirective({
-    type: _SaveEditableRow,
-    selectors: [["", "pSaveEditableRow", ""]],
-    hostAttrs: [1, "p-element"],
-    hostBindings: function SaveEditableRow_HostBindings(rf, ctx) {
-      if (rf & 1) {
-        ɵɵlistener("click", function SaveEditableRow_click_HostBindingHandler($event) {
-          return ctx.onClick($event);
-        });
-      }
-    }
-  });
 };
+__publicField(_SaveEditableRow, "ɵfac", function SaveEditableRow_Factory(__ngFactoryType__) {
+  return new (__ngFactoryType__ || _SaveEditableRow)(ɵɵdirectiveInject(Table), ɵɵdirectiveInject(EditableRow));
+});
+__publicField(_SaveEditableRow, "ɵdir", ɵɵdefineDirective({
+  type: _SaveEditableRow,
+  selectors: [["", "pSaveEditableRow", ""]],
+  hostAttrs: [1, "p-element"],
+  hostBindings: function SaveEditableRow_HostBindings(rf, ctx) {
+    if (rf & 1) {
+      ɵɵlistener("click", function SaveEditableRow_click_HostBindingHandler($event) {
+        return ctx.onClick($event);
+      });
+    }
+  }
+}));
+var SaveEditableRow = _SaveEditableRow;
 (() => {
   (typeof ngDevMode === "undefined" || ngDevMode) && setClassMetadata(SaveEditableRow, [{
     type: Directive,
@@ -7487,10 +7142,10 @@ var SaveEditableRow = class _SaveEditableRow {
     }]
   });
 })();
-var CancelEditableRow = class _CancelEditableRow {
-  dt;
-  editableRow;
+var _CancelEditableRow = class _CancelEditableRow {
   constructor(dt, editableRow) {
+    __publicField(this, "dt");
+    __publicField(this, "editableRow");
     this.dt = dt;
     this.editableRow = editableRow;
   }
@@ -7498,22 +7153,23 @@ var CancelEditableRow = class _CancelEditableRow {
     this.dt.cancelRowEdit(this.editableRow.data);
     event.preventDefault();
   }
-  static ɵfac = function CancelEditableRow_Factory(__ngFactoryType__) {
-    return new (__ngFactoryType__ || _CancelEditableRow)(ɵɵdirectiveInject(Table), ɵɵdirectiveInject(EditableRow));
-  };
-  static ɵdir = ɵɵdefineDirective({
-    type: _CancelEditableRow,
-    selectors: [["", "pCancelEditableRow", ""]],
-    hostAttrs: [1, "p-element"],
-    hostBindings: function CancelEditableRow_HostBindings(rf, ctx) {
-      if (rf & 1) {
-        ɵɵlistener("click", function CancelEditableRow_click_HostBindingHandler($event) {
-          return ctx.onClick($event);
-        });
-      }
-    }
-  });
 };
+__publicField(_CancelEditableRow, "ɵfac", function CancelEditableRow_Factory(__ngFactoryType__) {
+  return new (__ngFactoryType__ || _CancelEditableRow)(ɵɵdirectiveInject(Table), ɵɵdirectiveInject(EditableRow));
+});
+__publicField(_CancelEditableRow, "ɵdir", ɵɵdefineDirective({
+  type: _CancelEditableRow,
+  selectors: [["", "pCancelEditableRow", ""]],
+  hostAttrs: [1, "p-element"],
+  hostBindings: function CancelEditableRow_HostBindings(rf, ctx) {
+    if (rf & 1) {
+      ɵɵlistener("click", function CancelEditableRow_click_HostBindingHandler($event) {
+        return ctx.onClick($event);
+      });
+    }
+  }
+}));
+var CancelEditableRow = _CancelEditableRow;
 (() => {
   (typeof ngDevMode === "undefined" || ngDevMode) && setClassMetadata(CancelEditableRow, [{
     type: Directive,
@@ -7534,14 +7190,14 @@ var CancelEditableRow = class _CancelEditableRow {
     }]
   });
 })();
-var CellEditor = class _CellEditor {
-  dt;
-  editableColumn;
-  editableRow;
-  templates;
-  inputTemplate;
-  outputTemplate;
+var _CellEditor = class _CellEditor {
   constructor(dt, editableColumn, editableRow) {
+    __publicField(this, "dt");
+    __publicField(this, "editableColumn");
+    __publicField(this, "editableRow");
+    __publicField(this, "templates");
+    __publicField(this, "inputTemplate");
+    __publicField(this, "outputTemplate");
     this.dt = dt;
     this.editableColumn = editableColumn;
     this.editableRow = editableRow;
@@ -7561,52 +7217,46 @@ var CellEditor = class _CellEditor {
   get editing() {
     return this.dt.editingCell && this.editableColumn && this.dt.editingCell === this.editableColumn.el.nativeElement || this.editableRow && this.dt.editMode === "row" && this.dt.isRowEditing(this.editableRow.data);
   }
-  static ɵfac = function CellEditor_Factory(__ngFactoryType__) {
-    return new (__ngFactoryType__ || _CellEditor)(ɵɵdirectiveInject(Table), ɵɵdirectiveInject(EditableColumn, 8), ɵɵdirectiveInject(EditableRow, 8));
-  };
-  static ɵcmp = ɵɵdefineComponent({
-    type: _CellEditor,
-    selectors: [["p-cellEditor"]],
-    contentQueries: function CellEditor_ContentQueries(rf, ctx, dirIndex) {
-      if (rf & 1) {
-        ɵɵcontentQuery(dirIndex, PrimeTemplate, 4);
-      }
-      if (rf & 2) {
-        let _t;
-        ɵɵqueryRefresh(_t = ɵɵloadQuery()) && (ctx.templates = _t);
-      }
-    },
-    hostAttrs: [1, "p-element"],
-    decls: 2,
-    vars: 2,
-    consts: [[4, "ngIf"], [4, "ngTemplateOutlet"]],
-    template: function CellEditor_Template(rf, ctx) {
-      if (rf & 1) {
-        ɵɵtemplate(0, CellEditor_ng_container_0_Template, 2, 1, "ng-container", 0)(1, CellEditor_ng_container_1_Template, 2, 1, "ng-container", 0);
-      }
-      if (rf & 2) {
-        ɵɵproperty("ngIf", ctx.editing);
-        ɵɵadvance();
-        ɵɵproperty("ngIf", !ctx.editing);
-      }
-    },
-    dependencies: [NgIf, NgTemplateOutlet],
-    encapsulation: 2
-  });
 };
+__publicField(_CellEditor, "ɵfac", function CellEditor_Factory(__ngFactoryType__) {
+  return new (__ngFactoryType__ || _CellEditor)(ɵɵdirectiveInject(Table), ɵɵdirectiveInject(EditableColumn, 8), ɵɵdirectiveInject(EditableRow, 8));
+});
+__publicField(_CellEditor, "ɵcmp", ɵɵdefineComponent({
+  type: _CellEditor,
+  selectors: [["p-cellEditor"]],
+  contentQueries: function CellEditor_ContentQueries(rf, ctx, dirIndex) {
+    if (rf & 1) {
+      ɵɵcontentQuery(dirIndex, PrimeTemplate, 4);
+    }
+    if (rf & 2) {
+      let _t;
+      ɵɵqueryRefresh(_t = ɵɵloadQuery()) && (ctx.templates = _t);
+    }
+  },
+  hostAttrs: [1, "p-element"],
+  decls: 2,
+  vars: 2,
+  consts: [[4, "ngIf"], [4, "ngTemplateOutlet"]],
+  template: function CellEditor_Template(rf, ctx) {
+    if (rf & 1) {
+      ɵɵtemplate(0, CellEditor_ng_container_0_Template, 2, 1, "ng-container", 0)(1, CellEditor_ng_container_1_Template, 2, 1, "ng-container", 0);
+    }
+    if (rf & 2) {
+      ɵɵproperty("ngIf", ctx.editing);
+      ɵɵadvance();
+      ɵɵproperty("ngIf", !ctx.editing);
+    }
+  },
+  dependencies: [NgIf, NgTemplateOutlet],
+  encapsulation: 2
+}));
+var CellEditor = _CellEditor;
 (() => {
   (typeof ngDevMode === "undefined" || ngDevMode) && setClassMetadata(CellEditor, [{
     type: Component,
     args: [{
       selector: "p-cellEditor",
-      template: `
-        <ng-container *ngIf="editing">
-            <ng-container *ngTemplateOutlet="inputTemplate"></ng-container>
-        </ng-container>
-        <ng-container *ngIf="!editing">
-            <ng-container *ngTemplateOutlet="outputTemplate"></ng-container>
-        </ng-container>
-    `,
+      template: '\n        <ng-container *ngIf="editing">\n            <ng-container *ngTemplateOutlet="inputTemplate"></ng-container>\n        </ng-container>\n        <ng-container *ngIf="!editing">\n            <ng-container *ngTemplateOutlet="outputTemplate"></ng-container>\n        </ng-container>\n    ',
       encapsulation: ViewEncapsulation$1.None,
       host: {
         class: "p-element"
@@ -7631,20 +7281,20 @@ var CellEditor = class _CellEditor {
     }]
   });
 })();
-var TableRadioButton = class _TableRadioButton {
-  dt;
-  cd;
-  disabled;
-  value;
-  index;
-  inputId;
-  name;
-  ariaLabel;
-  inputViewChild;
-  checked;
-  focused;
-  subscription;
+var _TableRadioButton = class _TableRadioButton {
   constructor(dt, cd) {
+    __publicField(this, "dt");
+    __publicField(this, "cd");
+    __publicField(this, "disabled");
+    __publicField(this, "value");
+    __publicField(this, "index");
+    __publicField(this, "inputId");
+    __publicField(this, "name");
+    __publicField(this, "ariaLabel");
+    __publicField(this, "inputViewChild");
+    __publicField(this, "checked");
+    __publicField(this, "focused");
+    __publicField(this, "subscription");
     this.dt = dt;
     this.cd = cd;
     this.subscription = this.dt.tableService.selectionSource$.subscribe(() => {
@@ -7657,12 +7307,13 @@ var TableRadioButton = class _TableRadioButton {
     this.checked = this.dt.isSelected(this.value);
   }
   onClick(event) {
+    var _a, _b;
     if (!this.disabled) {
       this.dt.toggleRowWithRadio({
         originalEvent: event,
         rowIndex: this.index
       }, this.value);
-      this.inputViewChild?.nativeElement?.focus();
+      (_b = (_a = this.inputViewChild) == null ? void 0 : _a.nativeElement) == null ? void 0 : _b.focus();
     }
     DomHandler.clearSelection();
   }
@@ -7677,84 +7328,76 @@ var TableRadioButton = class _TableRadioButton {
       this.subscription.unsubscribe();
     }
   }
-  static ɵfac = function TableRadioButton_Factory(__ngFactoryType__) {
-    return new (__ngFactoryType__ || _TableRadioButton)(ɵɵdirectiveInject(Table), ɵɵdirectiveInject(ChangeDetectorRef));
-  };
-  static ɵcmp = ɵɵdefineComponent({
-    type: _TableRadioButton,
-    selectors: [["p-tableRadioButton"]],
-    viewQuery: function TableRadioButton_Query(rf, ctx) {
-      if (rf & 1) {
-        ɵɵviewQuery(_c23, 5);
-      }
-      if (rf & 2) {
-        let _t;
-        ɵɵqueryRefresh(_t = ɵɵloadQuery()) && (ctx.inputViewChild = _t.first);
-      }
-    },
-    hostAttrs: [1, "p-element"],
-    inputs: {
-      disabled: [2, "disabled", "disabled", booleanAttribute],
-      value: "value",
-      index: [2, "index", "index", numberAttribute],
-      inputId: "inputId",
-      name: "name",
-      ariaLabel: "ariaLabel"
-    },
-    features: [ɵɵInputTransformsFeature],
-    decls: 7,
-    vars: 16,
-    consts: [["rb", ""], ["box", ""], [1, "p-radiobutton", "p-component", 3, "click", "ngClass"], [1, "p-hidden-accessible"], ["type", "radio", 3, "focus", "blur", "checked", "disabled", "tabindex"], [3, "ngClass"], [1, "p-radiobutton-icon"]],
-    template: function TableRadioButton_Template(rf, ctx) {
-      if (rf & 1) {
-        const _r1 = ɵɵgetCurrentView();
-        ɵɵelementStart(0, "div", 2);
-        ɵɵlistener("click", function TableRadioButton_Template_div_click_0_listener($event) {
-          ɵɵrestoreView(_r1);
-          return ɵɵresetView(ctx.onClick($event));
-        });
-        ɵɵelementStart(1, "div", 3)(2, "input", 4, 0);
-        ɵɵlistener("focus", function TableRadioButton_Template_input_focus_2_listener() {
-          ɵɵrestoreView(_r1);
-          return ɵɵresetView(ctx.onFocus());
-        })("blur", function TableRadioButton_Template_input_blur_2_listener() {
-          ɵɵrestoreView(_r1);
-          return ɵɵresetView(ctx.onBlur());
-        });
-        ɵɵelementEnd()();
-        ɵɵelementStart(4, "div", 5, 1);
-        ɵɵelement(6, "div", 6);
-        ɵɵelementEnd()();
-      }
-      if (rf & 2) {
-        ɵɵproperty("ngClass", ɵɵpureFunction3(8, _c24, ctx.focused, ctx.checked, ctx.disabled));
-        ɵɵadvance(2);
-        ɵɵproperty("checked", ctx.checked)("disabled", ctx.disabled)("tabindex", ctx.disabled ? null : "0");
-        ɵɵattribute("id", ctx.inputId)("name", ctx.name)("aria-label", ctx.ariaLabel);
-        ɵɵadvance(2);
-        ɵɵproperty("ngClass", ɵɵpureFunction3(12, _c25, ctx.checked, ctx.focused, ctx.disabled));
-      }
-    },
-    dependencies: [NgClass],
-    encapsulation: 2,
-    changeDetection: 0
-  });
 };
+__publicField(_TableRadioButton, "ɵfac", function TableRadioButton_Factory(__ngFactoryType__) {
+  return new (__ngFactoryType__ || _TableRadioButton)(ɵɵdirectiveInject(Table), ɵɵdirectiveInject(ChangeDetectorRef));
+});
+__publicField(_TableRadioButton, "ɵcmp", ɵɵdefineComponent({
+  type: _TableRadioButton,
+  selectors: [["p-tableRadioButton"]],
+  viewQuery: function TableRadioButton_Query(rf, ctx) {
+    if (rf & 1) {
+      ɵɵviewQuery(_c23, 5);
+    }
+    if (rf & 2) {
+      let _t;
+      ɵɵqueryRefresh(_t = ɵɵloadQuery()) && (ctx.inputViewChild = _t.first);
+    }
+  },
+  hostAttrs: [1, "p-element"],
+  inputs: {
+    disabled: [2, "disabled", "disabled", booleanAttribute],
+    value: "value",
+    index: [2, "index", "index", numberAttribute],
+    inputId: "inputId",
+    name: "name",
+    ariaLabel: "ariaLabel"
+  },
+  features: [ɵɵInputTransformsFeature],
+  decls: 7,
+  vars: 16,
+  consts: [["rb", ""], ["box", ""], [1, "p-radiobutton", "p-component", 3, "click", "ngClass"], [1, "p-hidden-accessible"], ["type", "radio", 3, "focus", "blur", "checked", "disabled", "tabindex"], [3, "ngClass"], [1, "p-radiobutton-icon"]],
+  template: function TableRadioButton_Template(rf, ctx) {
+    if (rf & 1) {
+      const _r1 = ɵɵgetCurrentView();
+      ɵɵelementStart(0, "div", 2);
+      ɵɵlistener("click", function TableRadioButton_Template_div_click_0_listener($event) {
+        ɵɵrestoreView(_r1);
+        return ɵɵresetView(ctx.onClick($event));
+      });
+      ɵɵelementStart(1, "div", 3)(2, "input", 4, 0);
+      ɵɵlistener("focus", function TableRadioButton_Template_input_focus_2_listener() {
+        ɵɵrestoreView(_r1);
+        return ɵɵresetView(ctx.onFocus());
+      })("blur", function TableRadioButton_Template_input_blur_2_listener() {
+        ɵɵrestoreView(_r1);
+        return ɵɵresetView(ctx.onBlur());
+      });
+      ɵɵelementEnd()();
+      ɵɵelementStart(4, "div", 5, 1);
+      ɵɵelement(6, "div", 6);
+      ɵɵelementEnd()();
+    }
+    if (rf & 2) {
+      ɵɵproperty("ngClass", ɵɵpureFunction3(8, _c24, ctx.focused, ctx.checked, ctx.disabled));
+      ɵɵadvance(2);
+      ɵɵproperty("checked", ctx.checked)("disabled", ctx.disabled)("tabindex", ctx.disabled ? null : "0");
+      ɵɵattribute("id", ctx.inputId)("name", ctx.name)("aria-label", ctx.ariaLabel);
+      ɵɵadvance(2);
+      ɵɵproperty("ngClass", ɵɵpureFunction3(12, _c25, ctx.checked, ctx.focused, ctx.disabled));
+    }
+  },
+  dependencies: [NgClass],
+  encapsulation: 2,
+  changeDetection: 0
+}));
+var TableRadioButton = _TableRadioButton;
 (() => {
   (typeof ngDevMode === "undefined" || ngDevMode) && setClassMetadata(TableRadioButton, [{
     type: Component,
     args: [{
       selector: "p-tableRadioButton",
-      template: `
-        <div class="p-radiobutton p-component" [ngClass]="{ 'p-radiobutton-focused': focused, 'p-radiobutton-checked': checked, 'p-radiobutton-disabled': disabled }" (click)="onClick($event)">
-            <div class="p-hidden-accessible">
-                <input #rb type="radio" [attr.id]="inputId" [attr.name]="name" [checked]="checked" (focus)="onFocus()" (blur)="onBlur()" [disabled]="disabled" [attr.aria-label]="ariaLabel" [tabindex]="disabled ? null : '0'" />
-            </div>
-            <div #box [ngClass]="{ 'p-radiobutton-box p-component': true, 'p-highlight': checked, 'p-focus': focused, 'p-disabled': disabled }">
-                <div class="p-radiobutton-icon"></div>
-            </div>
-        </div>
-    `,
+      template: '\n        <div class="p-radiobutton p-component" [ngClass]="{ \'p-radiobutton-focused\': focused, \'p-radiobutton-checked\': checked, \'p-radiobutton-disabled\': disabled }" (click)="onClick($event)">\n            <div class="p-hidden-accessible">\n                <input #rb type="radio" [attr.id]="inputId" [attr.name]="name" [checked]="checked" (focus)="onFocus()" (blur)="onBlur()" [disabled]="disabled" [attr.aria-label]="ariaLabel" [tabindex]="disabled ? null : \'0\'" />\n            </div>\n            <div #box [ngClass]="{ \'p-radiobutton-box p-component\': true, \'p-highlight\': checked, \'p-focus\': focused, \'p-disabled\': disabled }">\n                <div class="p-radiobutton-icon"></div>\n            </div>\n        </div>\n    ',
       changeDetection: ChangeDetectionStrategy.OnPush,
       encapsulation: ViewEncapsulation$1.None,
       host: {
@@ -7796,23 +7439,23 @@ var TableRadioButton = class _TableRadioButton {
     }]
   });
 })();
-var TableCheckbox = class _TableCheckbox {
-  dt;
-  tableService;
-  cd;
-  disabled;
-  value;
-  index;
-  inputId;
-  name;
-  required;
-  ariaLabel;
-  checked;
-  focused;
-  subscription;
-  tableHeaderCheckboxSubscription;
-  isTableHeaderCheckboxSelection = false;
+var _TableCheckbox = class _TableCheckbox {
   constructor(dt, tableService, cd) {
+    __publicField(this, "dt");
+    __publicField(this, "tableService");
+    __publicField(this, "cd");
+    __publicField(this, "disabled");
+    __publicField(this, "value");
+    __publicField(this, "index");
+    __publicField(this, "inputId");
+    __publicField(this, "name");
+    __publicField(this, "required");
+    __publicField(this, "ariaLabel");
+    __publicField(this, "checked");
+    __publicField(this, "focused");
+    __publicField(this, "subscription");
+    __publicField(this, "tableHeaderCheckboxSubscription");
+    __publicField(this, "isTableHeaderCheckboxSelection", false);
     this.dt = dt;
     this.tableService = tableService;
     this.cd = cd;
@@ -7854,96 +7497,72 @@ var TableCheckbox = class _TableCheckbox {
       this.tableHeaderCheckboxSubscription.unsubscribe();
     }
   }
-  static ɵfac = function TableCheckbox_Factory(__ngFactoryType__) {
-    return new (__ngFactoryType__ || _TableCheckbox)(ɵɵdirectiveInject(Table), ɵɵdirectiveInject(TableService), ɵɵdirectiveInject(ChangeDetectorRef));
-  };
-  static ɵcmp = ɵɵdefineComponent({
-    type: _TableCheckbox,
-    selectors: [["p-tableCheckbox"]],
-    hostAttrs: [1, "p-element"],
-    inputs: {
-      disabled: [2, "disabled", "disabled", booleanAttribute],
-      value: "value",
-      index: [2, "index", "index", numberAttribute],
-      inputId: "inputId",
-      name: "name",
-      required: [2, "required", "required", booleanAttribute],
-      ariaLabel: "ariaLabel"
-    },
-    features: [ɵɵInputTransformsFeature],
-    decls: 7,
-    vars: 18,
-    consts: [["box", ""], [1, "p-checkbox", "p-component", 3, "click", "ngClass"], [1, "p-hidden-accessible"], ["type", "checkbox", 3, "focus", "blur", "checked", "disabled", "tabindex"], [3, "ngClass"], [4, "ngIf"], [3, "styleClass", 4, "ngIf"], [3, "styleClass"], [4, "ngTemplateOutlet", "ngTemplateOutletContext"]],
-    template: function TableCheckbox_Template(rf, ctx) {
-      if (rf & 1) {
-        const _r1 = ɵɵgetCurrentView();
-        ɵɵelementStart(0, "div", 1);
-        ɵɵlistener("click", function TableCheckbox_Template_div_click_0_listener($event) {
-          ɵɵrestoreView(_r1);
-          return ɵɵresetView(ctx.onClick($event));
-        });
-        ɵɵelementStart(1, "div", 2)(2, "input", 3);
-        ɵɵlistener("focus", function TableCheckbox_Template_input_focus_2_listener() {
-          ɵɵrestoreView(_r1);
-          return ɵɵresetView(ctx.onFocus());
-        })("blur", function TableCheckbox_Template_input_blur_2_listener() {
-          ɵɵrestoreView(_r1);
-          return ɵɵresetView(ctx.onBlur());
-        });
-        ɵɵelementEnd()();
-        ɵɵelementStart(3, "div", 4, 0);
-        ɵɵtemplate(5, TableCheckbox_ng_container_5_Template, 2, 1, "ng-container", 5)(6, TableCheckbox_span_6_Template, 2, 4, "span", 5);
-        ɵɵelementEnd()();
-      }
-      if (rf & 2) {
-        ɵɵproperty("ngClass", ɵɵpureFunction2(11, _c26, ctx.focused, ctx.disabled));
-        ɵɵadvance(2);
-        ɵɵproperty("checked", ctx.checked)("disabled", ctx.disabled)("tabindex", ctx.disabled ? null : "0");
-        ɵɵattribute("id", ctx.inputId)("name", ctx.name)("required", ctx.required)("aria-label", ctx.ariaLabel);
-        ɵɵadvance();
-        ɵɵproperty("ngClass", ɵɵpureFunction3(14, _c27, ctx.checked, ctx.focused, ctx.disabled));
-        ɵɵadvance(2);
-        ɵɵproperty("ngIf", !ctx.dt.checkboxIconTemplate);
-        ɵɵadvance();
-        ɵɵproperty("ngIf", ctx.dt.checkboxIconTemplate);
-      }
-    },
-    dependencies: () => [NgClass, NgIf, NgTemplateOutlet, CheckIcon],
-    encapsulation: 2,
-    changeDetection: 0
-  });
 };
+__publicField(_TableCheckbox, "ɵfac", function TableCheckbox_Factory(__ngFactoryType__) {
+  return new (__ngFactoryType__ || _TableCheckbox)(ɵɵdirectiveInject(Table), ɵɵdirectiveInject(TableService), ɵɵdirectiveInject(ChangeDetectorRef));
+});
+__publicField(_TableCheckbox, "ɵcmp", ɵɵdefineComponent({
+  type: _TableCheckbox,
+  selectors: [["p-tableCheckbox"]],
+  hostAttrs: [1, "p-element"],
+  inputs: {
+    disabled: [2, "disabled", "disabled", booleanAttribute],
+    value: "value",
+    index: [2, "index", "index", numberAttribute],
+    inputId: "inputId",
+    name: "name",
+    required: [2, "required", "required", booleanAttribute],
+    ariaLabel: "ariaLabel"
+  },
+  features: [ɵɵInputTransformsFeature],
+  decls: 7,
+  vars: 18,
+  consts: [["box", ""], [1, "p-checkbox", "p-component", 3, "click", "ngClass"], [1, "p-hidden-accessible"], ["type", "checkbox", 3, "focus", "blur", "checked", "disabled", "tabindex"], [3, "ngClass"], [4, "ngIf"], [3, "styleClass", 4, "ngIf"], [3, "styleClass"], [4, "ngTemplateOutlet", "ngTemplateOutletContext"]],
+  template: function TableCheckbox_Template(rf, ctx) {
+    if (rf & 1) {
+      const _r1 = ɵɵgetCurrentView();
+      ɵɵelementStart(0, "div", 1);
+      ɵɵlistener("click", function TableCheckbox_Template_div_click_0_listener($event) {
+        ɵɵrestoreView(_r1);
+        return ɵɵresetView(ctx.onClick($event));
+      });
+      ɵɵelementStart(1, "div", 2)(2, "input", 3);
+      ɵɵlistener("focus", function TableCheckbox_Template_input_focus_2_listener() {
+        ɵɵrestoreView(_r1);
+        return ɵɵresetView(ctx.onFocus());
+      })("blur", function TableCheckbox_Template_input_blur_2_listener() {
+        ɵɵrestoreView(_r1);
+        return ɵɵresetView(ctx.onBlur());
+      });
+      ɵɵelementEnd()();
+      ɵɵelementStart(3, "div", 4, 0);
+      ɵɵtemplate(5, TableCheckbox_ng_container_5_Template, 2, 1, "ng-container", 5)(6, TableCheckbox_span_6_Template, 2, 4, "span", 5);
+      ɵɵelementEnd()();
+    }
+    if (rf & 2) {
+      ɵɵproperty("ngClass", ɵɵpureFunction2(11, _c26, ctx.focused, ctx.disabled));
+      ɵɵadvance(2);
+      ɵɵproperty("checked", ctx.checked)("disabled", ctx.disabled)("tabindex", ctx.disabled ? null : "0");
+      ɵɵattribute("id", ctx.inputId)("name", ctx.name)("required", ctx.required)("aria-label", ctx.ariaLabel);
+      ɵɵadvance();
+      ɵɵproperty("ngClass", ɵɵpureFunction3(14, _c27, ctx.checked, ctx.focused, ctx.disabled));
+      ɵɵadvance(2);
+      ɵɵproperty("ngIf", !ctx.dt.checkboxIconTemplate);
+      ɵɵadvance();
+      ɵɵproperty("ngIf", ctx.dt.checkboxIconTemplate);
+    }
+  },
+  dependencies: () => [NgClass, NgIf, NgTemplateOutlet, CheckIcon],
+  encapsulation: 2,
+  changeDetection: 0
+}));
+var TableCheckbox = _TableCheckbox;
 (() => {
   (typeof ngDevMode === "undefined" || ngDevMode) && setClassMetadata(TableCheckbox, [{
     type: Component,
     args: [{
       selector: "p-tableCheckbox",
-      template: `
-        <div class="p-checkbox p-component" [ngClass]="{ 'p-checkbox-focused': focused, 'p-checkbox-disabled': disabled }" (click)="onClick($event)">
-            <div class="p-hidden-accessible">
-                <input
-                    type="checkbox"
-                    [attr.id]="inputId"
-                    [attr.name]="name"
-                    [checked]="checked"
-                    (focus)="onFocus()"
-                    (blur)="onBlur()"
-                    [disabled]="disabled"
-                    [attr.required]="required"
-                    [attr.aria-label]="ariaLabel"
-                    [tabindex]="disabled ? null : '0'"
-                />
-            </div>
-            <div #box [ngClass]="{ 'p-checkbox-box p-component': true, 'p-highlight': checked, 'p-focus': focused, 'p-disabled': disabled }">
-                <ng-container *ngIf="!dt.checkboxIconTemplate">
-                    <CheckIcon [styleClass]="'p-checkbox-icon'" *ngIf="checked" />
-                </ng-container>
-                <span *ngIf="dt.checkboxIconTemplate">
-                    <ng-template *ngTemplateOutlet="dt.checkboxIconTemplate; context: { $implicit: checked }"></ng-template>
-                </span>
-            </div>
-        </div>
-    `,
+      template: '\n        <div class="p-checkbox p-component" [ngClass]="{ \'p-checkbox-focused\': focused, \'p-checkbox-disabled\': disabled }" (click)="onClick($event)">\n            <div class="p-hidden-accessible">\n                <input\n                    type="checkbox"\n                    [attr.id]="inputId"\n                    [attr.name]="name"\n                    [checked]="checked"\n                    (focus)="onFocus()"\n                    (blur)="onBlur()"\n                    [disabled]="disabled"\n                    [attr.required]="required"\n                    [attr.aria-label]="ariaLabel"\n                    [tabindex]="disabled ? null : \'0\'"\n                />\n            </div>\n            <div #box [ngClass]="{ \'p-checkbox-box p-component\': true, \'p-highlight\': checked, \'p-focus\': focused, \'p-disabled\': disabled }">\n                <ng-container *ngIf="!dt.checkboxIconTemplate">\n                    <CheckIcon [styleClass]="\'p-checkbox-icon\'" *ngIf="checked" />\n                </ng-container>\n                <span *ngIf="dt.checkboxIconTemplate">\n                    <ng-template *ngTemplateOutlet="dt.checkboxIconTemplate; context: { $implicit: checked }"></ng-template>\n                </span>\n            </div>\n        </div>\n    ',
       changeDetection: ChangeDetectionStrategy.OnPush,
       encapsulation: ViewEncapsulation$1.None,
       host: {
@@ -7989,20 +7608,20 @@ var TableCheckbox = class _TableCheckbox {
     }]
   });
 })();
-var TableHeaderCheckbox = class _TableHeaderCheckbox {
-  dt;
-  tableService;
-  cd;
-  disabled;
-  inputId;
-  name;
-  ariaLabel;
-  checked;
-  focused;
-  selectionChangeSubscription;
-  valueChangeSubscription;
-  tableHeaderCheckboxSubscription;
+var _TableHeaderCheckbox = class _TableHeaderCheckbox {
   constructor(dt, tableService, cd) {
+    __publicField(this, "dt");
+    __publicField(this, "tableService");
+    __publicField(this, "cd");
+    __publicField(this, "disabled");
+    __publicField(this, "inputId");
+    __publicField(this, "name");
+    __publicField(this, "ariaLabel");
+    __publicField(this, "checked");
+    __publicField(this, "focused");
+    __publicField(this, "selectionChangeSubscription");
+    __publicField(this, "valueChangeSubscription");
+    __publicField(this, "tableHeaderCheckboxSubscription");
     this.dt = dt;
     this.tableService = tableService;
     this.cd = cd;
@@ -8057,82 +7676,69 @@ var TableHeaderCheckbox = class _TableHeaderCheckbox {
       return ObjectUtils.isNotEmpty(selectableVal) && ObjectUtils.isNotEmpty(this.dt.selection) && selectableVal.every((v) => this.dt.selection.some((s) => this.dt.equals(v, s)));
     }
   }
-  static ɵfac = function TableHeaderCheckbox_Factory(__ngFactoryType__) {
-    return new (__ngFactoryType__ || _TableHeaderCheckbox)(ɵɵdirectiveInject(Table), ɵɵdirectiveInject(TableService), ɵɵdirectiveInject(ChangeDetectorRef));
-  };
-  static ɵcmp = ɵɵdefineComponent({
-    type: _TableHeaderCheckbox,
-    selectors: [["p-tableHeaderCheckbox"]],
-    hostAttrs: [1, "p-element"],
-    inputs: {
-      disabled: [2, "disabled", "disabled", booleanAttribute],
-      inputId: "inputId",
-      name: "name",
-      ariaLabel: "ariaLabel"
-    },
-    features: [ɵɵInputTransformsFeature],
-    decls: 8,
-    vars: 17,
-    consts: [["cb", ""], ["box", ""], [1, "p-checkbox", "p-component", 3, "click", "ngClass"], [1, "p-hidden-accessible"], ["type", "checkbox", 3, "focus", "blur", "tabindex", "checked", "disabled"], [3, "ngClass"], [4, "ngIf"], ["class", "p-checkbox-icon", 4, "ngIf"], [3, "styleClass", 4, "ngIf"], [3, "styleClass"], [1, "p-checkbox-icon"], [4, "ngTemplateOutlet", "ngTemplateOutletContext"]],
-    template: function TableHeaderCheckbox_Template(rf, ctx) {
-      if (rf & 1) {
-        const _r1 = ɵɵgetCurrentView();
-        ɵɵelementStart(0, "div", 2);
-        ɵɵlistener("click", function TableHeaderCheckbox_Template_div_click_0_listener($event) {
-          ɵɵrestoreView(_r1);
-          return ɵɵresetView(ctx.onClick($event));
-        });
-        ɵɵelementStart(1, "div", 3)(2, "input", 4, 0);
-        ɵɵlistener("focus", function TableHeaderCheckbox_Template_input_focus_2_listener() {
-          ɵɵrestoreView(_r1);
-          return ɵɵresetView(ctx.onFocus());
-        })("blur", function TableHeaderCheckbox_Template_input_blur_2_listener() {
-          ɵɵrestoreView(_r1);
-          return ɵɵresetView(ctx.onBlur());
-        });
-        ɵɵelementEnd()();
-        ɵɵelementStart(4, "div", 5, 1);
-        ɵɵtemplate(6, TableHeaderCheckbox_ng_container_6_Template, 2, 1, "ng-container", 6)(7, TableHeaderCheckbox_span_7_Template, 2, 4, "span", 7);
-        ɵɵelementEnd()();
-      }
-      if (rf & 2) {
-        ɵɵproperty("ngClass", ɵɵpureFunction2(10, _c26, ctx.focused, ctx.isDisabled()));
-        ɵɵadvance(2);
-        ɵɵproperty("tabindex", ctx.disabled ? null : "0")("checked", ctx.checked)("disabled", ctx.isDisabled());
-        ɵɵattribute("id", ctx.inputId)("name", ctx.name)("aria-label", ctx.ariaLabel);
-        ɵɵadvance(2);
-        ɵɵproperty("ngClass", ɵɵpureFunction3(13, _c28, ctx.checked, ctx.focused, ctx.isDisabled()));
-        ɵɵadvance(2);
-        ɵɵproperty("ngIf", !ctx.dt.headerCheckboxIconTemplate);
-        ɵɵadvance();
-        ɵɵproperty("ngIf", ctx.dt.headerCheckboxIconTemplate);
-      }
-    },
-    dependencies: () => [NgClass, NgIf, NgTemplateOutlet, CheckIcon],
-    encapsulation: 2,
-    changeDetection: 0
-  });
 };
+__publicField(_TableHeaderCheckbox, "ɵfac", function TableHeaderCheckbox_Factory(__ngFactoryType__) {
+  return new (__ngFactoryType__ || _TableHeaderCheckbox)(ɵɵdirectiveInject(Table), ɵɵdirectiveInject(TableService), ɵɵdirectiveInject(ChangeDetectorRef));
+});
+__publicField(_TableHeaderCheckbox, "ɵcmp", ɵɵdefineComponent({
+  type: _TableHeaderCheckbox,
+  selectors: [["p-tableHeaderCheckbox"]],
+  hostAttrs: [1, "p-element"],
+  inputs: {
+    disabled: [2, "disabled", "disabled", booleanAttribute],
+    inputId: "inputId",
+    name: "name",
+    ariaLabel: "ariaLabel"
+  },
+  features: [ɵɵInputTransformsFeature],
+  decls: 8,
+  vars: 17,
+  consts: [["cb", ""], ["box", ""], [1, "p-checkbox", "p-component", 3, "click", "ngClass"], [1, "p-hidden-accessible"], ["type", "checkbox", 3, "focus", "blur", "tabindex", "checked", "disabled"], [3, "ngClass"], [4, "ngIf"], ["class", "p-checkbox-icon", 4, "ngIf"], [3, "styleClass", 4, "ngIf"], [3, "styleClass"], [1, "p-checkbox-icon"], [4, "ngTemplateOutlet", "ngTemplateOutletContext"]],
+  template: function TableHeaderCheckbox_Template(rf, ctx) {
+    if (rf & 1) {
+      const _r1 = ɵɵgetCurrentView();
+      ɵɵelementStart(0, "div", 2);
+      ɵɵlistener("click", function TableHeaderCheckbox_Template_div_click_0_listener($event) {
+        ɵɵrestoreView(_r1);
+        return ɵɵresetView(ctx.onClick($event));
+      });
+      ɵɵelementStart(1, "div", 3)(2, "input", 4, 0);
+      ɵɵlistener("focus", function TableHeaderCheckbox_Template_input_focus_2_listener() {
+        ɵɵrestoreView(_r1);
+        return ɵɵresetView(ctx.onFocus());
+      })("blur", function TableHeaderCheckbox_Template_input_blur_2_listener() {
+        ɵɵrestoreView(_r1);
+        return ɵɵresetView(ctx.onBlur());
+      });
+      ɵɵelementEnd()();
+      ɵɵelementStart(4, "div", 5, 1);
+      ɵɵtemplate(6, TableHeaderCheckbox_ng_container_6_Template, 2, 1, "ng-container", 6)(7, TableHeaderCheckbox_span_7_Template, 2, 4, "span", 7);
+      ɵɵelementEnd()();
+    }
+    if (rf & 2) {
+      ɵɵproperty("ngClass", ɵɵpureFunction2(10, _c26, ctx.focused, ctx.isDisabled()));
+      ɵɵadvance(2);
+      ɵɵproperty("tabindex", ctx.disabled ? null : "0")("checked", ctx.checked)("disabled", ctx.isDisabled());
+      ɵɵattribute("id", ctx.inputId)("name", ctx.name)("aria-label", ctx.ariaLabel);
+      ɵɵadvance(2);
+      ɵɵproperty("ngClass", ɵɵpureFunction3(13, _c28, ctx.checked, ctx.focused, ctx.isDisabled()));
+      ɵɵadvance(2);
+      ɵɵproperty("ngIf", !ctx.dt.headerCheckboxIconTemplate);
+      ɵɵadvance();
+      ɵɵproperty("ngIf", ctx.dt.headerCheckboxIconTemplate);
+    }
+  },
+  dependencies: () => [NgClass, NgIf, NgTemplateOutlet, CheckIcon],
+  encapsulation: 2,
+  changeDetection: 0
+}));
+var TableHeaderCheckbox = _TableHeaderCheckbox;
 (() => {
   (typeof ngDevMode === "undefined" || ngDevMode) && setClassMetadata(TableHeaderCheckbox, [{
     type: Component,
     args: [{
       selector: "p-tableHeaderCheckbox",
-      template: `
-        <div class="p-checkbox p-component" [ngClass]="{ 'p-checkbox-focused': focused, 'p-checkbox-disabled': isDisabled() }" (click)="onClick($event)">
-            <div class="p-hidden-accessible">
-                <input #cb type="checkbox" [tabindex]="disabled ? null : '0'" [attr.id]="inputId" [attr.name]="name" [checked]="checked" (focus)="onFocus()" (blur)="onBlur()" [disabled]="isDisabled()" [attr.aria-label]="ariaLabel" />
-            </div>
-            <div #box [ngClass]="{ 'p-checkbox-box': true, 'p-highlight': checked, 'p-focus': focused, 'p-disabled': isDisabled() }">
-                <ng-container *ngIf="!dt.headerCheckboxIconTemplate">
-                    <CheckIcon *ngIf="checked" [styleClass]="'p-checkbox-icon'" />
-                </ng-container>
-                <span class="p-checkbox-icon" *ngIf="dt.headerCheckboxIconTemplate">
-                    <ng-template *ngTemplateOutlet="dt.headerCheckboxIconTemplate; context: { $implicit: checked }"></ng-template>
-                </span>
-            </div>
-        </div>
-    `,
+      template: '\n        <div class="p-checkbox p-component" [ngClass]="{ \'p-checkbox-focused\': focused, \'p-checkbox-disabled\': isDisabled() }" (click)="onClick($event)">\n            <div class="p-hidden-accessible">\n                <input #cb type="checkbox" [tabindex]="disabled ? null : \'0\'" [attr.id]="inputId" [attr.name]="name" [checked]="checked" (focus)="onFocus()" (blur)="onBlur()" [disabled]="isDisabled()" [attr.aria-label]="ariaLabel" />\n            </div>\n            <div #box [ngClass]="{ \'p-checkbox-box\': true, \'p-highlight\': checked, \'p-focus\': focused, \'p-disabled\': isDisabled() }">\n                <ng-container *ngIf="!dt.headerCheckboxIconTemplate">\n                    <CheckIcon *ngIf="checked" [styleClass]="\'p-checkbox-icon\'" />\n                </ng-container>\n                <span class="p-checkbox-icon" *ngIf="dt.headerCheckboxIconTemplate">\n                    <ng-template *ngTemplateOutlet="dt.headerCheckboxIconTemplate; context: { $implicit: checked }"></ng-template>\n                </span>\n            </div>\n        </div>\n    ',
       changeDetection: ChangeDetectionStrategy.OnPush,
       encapsulation: ViewEncapsulation$1.None,
       host: {
@@ -8163,23 +7769,24 @@ var TableHeaderCheckbox = class _TableHeaderCheckbox {
     }]
   });
 })();
-var ReorderableRowHandle = class _ReorderableRowHandle {
-  el;
+var _ReorderableRowHandle = class _ReorderableRowHandle {
   constructor(el) {
+    __publicField(this, "el");
     this.el = el;
   }
   ngAfterViewInit() {
     DomHandler.addClass(this.el.nativeElement, "p-datatable-reorderablerow-handle");
   }
-  static ɵfac = function ReorderableRowHandle_Factory(__ngFactoryType__) {
-    return new (__ngFactoryType__ || _ReorderableRowHandle)(ɵɵdirectiveInject(ElementRef));
-  };
-  static ɵdir = ɵɵdefineDirective({
-    type: _ReorderableRowHandle,
-    selectors: [["", "pReorderableRowHandle", ""]],
-    hostAttrs: [1, "p-element"]
-  });
 };
+__publicField(_ReorderableRowHandle, "ɵfac", function ReorderableRowHandle_Factory(__ngFactoryType__) {
+  return new (__ngFactoryType__ || _ReorderableRowHandle)(ɵɵdirectiveInject(ElementRef));
+});
+__publicField(_ReorderableRowHandle, "ɵdir", ɵɵdefineDirective({
+  type: _ReorderableRowHandle,
+  selectors: [["", "pReorderableRowHandle", ""]],
+  hostAttrs: [1, "p-element"]
+}));
+var ReorderableRowHandle = _ReorderableRowHandle;
 (() => {
   (typeof ngDevMode === "undefined" || ngDevMode) && setClassMetadata(ReorderableRowHandle, [{
     type: Directive,
@@ -8193,20 +7800,20 @@ var ReorderableRowHandle = class _ReorderableRowHandle {
     type: ElementRef
   }], null);
 })();
-var ReorderableRow = class _ReorderableRow {
-  renderer;
-  dt;
-  el;
-  zone;
-  index;
-  pReorderableRowDisabled;
-  mouseDownListener;
-  dragStartListener;
-  dragEndListener;
-  dragOverListener;
-  dragLeaveListener;
-  dropListener;
+var _ReorderableRow = class _ReorderableRow {
   constructor(renderer, dt, el, zone) {
+    __publicField(this, "renderer");
+    __publicField(this, "dt");
+    __publicField(this, "el");
+    __publicField(this, "zone");
+    __publicField(this, "index");
+    __publicField(this, "pReorderableRowDisabled");
+    __publicField(this, "mouseDownListener");
+    __publicField(this, "dragStartListener");
+    __publicField(this, "dragEndListener");
+    __publicField(this, "dragOverListener");
+    __publicField(this, "dragLeaveListener");
+    __publicField(this, "dropListener");
     this.renderer = renderer;
     this.dt = dt;
     this.el = el;
@@ -8255,11 +7862,12 @@ var ReorderableRow = class _ReorderableRow {
     this.el.nativeElement.draggable = isHandleClicked;
   }
   isHandleElement(element) {
-    if (element?.classList.contains("p-datatable-reorderablerow-handle")) {
+    var _a;
+    if (element == null ? void 0 : element.classList.contains("p-datatable-reorderablerow-handle")) {
       return true;
     }
-    if (element?.parentElement && !["TD", "TR"].includes(element?.parentElement?.tagName)) {
-      return this.isHandleElement(element?.parentElement);
+    if ((element == null ? void 0 : element.parentElement) && !["TD", "TR"].includes((_a = element == null ? void 0 : element.parentElement) == null ? void 0 : _a.tagName)) {
+      return this.isHandleElement(element == null ? void 0 : element.parentElement);
     }
     return false;
   }
@@ -8289,27 +7897,28 @@ var ReorderableRow = class _ReorderableRow {
   ngOnDestroy() {
     this.unbindEvents();
   }
-  static ɵfac = function ReorderableRow_Factory(__ngFactoryType__) {
-    return new (__ngFactoryType__ || _ReorderableRow)(ɵɵdirectiveInject(Renderer2), ɵɵdirectiveInject(Table), ɵɵdirectiveInject(ElementRef), ɵɵdirectiveInject(NgZone));
-  };
-  static ɵdir = ɵɵdefineDirective({
-    type: _ReorderableRow,
-    selectors: [["", "pReorderableRow", ""]],
-    hostAttrs: [1, "p-element"],
-    hostBindings: function ReorderableRow_HostBindings(rf, ctx) {
-      if (rf & 1) {
-        ɵɵlistener("drop", function ReorderableRow_drop_HostBindingHandler($event) {
-          return ctx.onDrop($event);
-        });
-      }
-    },
-    inputs: {
-      index: [0, "pReorderableRow", "index"],
-      pReorderableRowDisabled: [2, "pReorderableRowDisabled", "pReorderableRowDisabled", booleanAttribute]
-    },
-    features: [ɵɵInputTransformsFeature]
-  });
 };
+__publicField(_ReorderableRow, "ɵfac", function ReorderableRow_Factory(__ngFactoryType__) {
+  return new (__ngFactoryType__ || _ReorderableRow)(ɵɵdirectiveInject(Renderer2), ɵɵdirectiveInject(Table), ɵɵdirectiveInject(ElementRef), ɵɵdirectiveInject(NgZone));
+});
+__publicField(_ReorderableRow, "ɵdir", ɵɵdefineDirective({
+  type: _ReorderableRow,
+  selectors: [["", "pReorderableRow", ""]],
+  hostAttrs: [1, "p-element"],
+  hostBindings: function ReorderableRow_HostBindings(rf, ctx) {
+    if (rf & 1) {
+      ɵɵlistener("drop", function ReorderableRow_drop_HostBindingHandler($event) {
+        return ctx.onDrop($event);
+      });
+    }
+  },
+  inputs: {
+    index: [0, "pReorderableRow", "index"],
+    pReorderableRowDisabled: [2, "pReorderableRowDisabled", "pReorderableRowDisabled", booleanAttribute]
+  },
+  features: [ɵɵInputTransformsFeature]
+}));
+var ReorderableRow = _ReorderableRow;
 (() => {
   (typeof ngDevMode === "undefined" || ngDevMode) && setClassMetadata(ReorderableRow, [{
     type: Directive,
@@ -8344,181 +7953,191 @@ var ReorderableRow = class _ReorderableRow {
     }]
   });
 })();
-var ColumnFilter = class _ColumnFilter {
-  document;
-  el;
-  dt;
-  renderer;
-  config;
-  overlayService;
-  cd;
-  /**
-   * Property represented by the column.
-   * @group Props
-   */
-  field;
-  /**
-   * Type of the input.
-   * @group Props
-   */
-  type = "text";
-  /**
-   * Filter display.
-   * @group Props
-   */
-  display = "row";
-  /**
-   * Decides whether to display filter menu popup.
-   * @group Props
-   */
-  showMenu = true;
-  /**
-   * Filter match mode.
-   * @group Props
-   */
-  matchMode;
-  /**
-   * Filter operator.
-   * @defaultValue 'AND'
-   * @group Props
-   */
-  operator = FilterOperator.AND;
-  /**
-   * Decides whether to display filter operator.
-   * @group Props
-   */
-  showOperator = true;
-  /**
-   * Decides whether to display clear filter button.
-   * @group Props
-   */
-  showClearButton = true;
-  /**
-   * Decides whether to display apply filter button.
-   * @group Props
-   */
-  showApplyButton = true;
-  /**
-   * Decides whether to display filter match modes.
-   * @group Props
-   */
-  showMatchModes = true;
-  /**
-   * Decides whether to display add filter button.
-   * @group Props
-   */
-  showAddButton = true;
-  /**
-   * Decides whether to close popup on clear button click.
-   * @group Props
-   */
-  hideOnClear = false;
-  /**
-   * Filter placeholder.
-   * @group Props
-   */
-  placeholder;
-  /**
-   * Filter match mode options.
-   * @group Props
-   */
-  matchModeOptions;
-  /**
-   * Defines maximum amount of constraints.
-   * @group Props
-   */
-  maxConstraints = 2;
-  /**
-   * Defines minimum fraction of digits.
-   * @group Props
-   */
-  minFractionDigits;
-  /**
-   * Defines maximum fraction of digits.
-   * @group Props
-   */
-  maxFractionDigits;
-  /**
-   * Defines prefix of the filter.
-   * @group Props
-   */
-  prefix;
-  /**
-   * Defines suffix of the filter.
-   * @group Props
-   */
-  suffix;
-  /**
-   * Defines filter locale.
-   * @group Props
-   */
-  locale;
-  /**
-   * Defines filter locale matcher.
-   * @group Props
-   */
-  localeMatcher;
-  /**
-   * Enables currency input.
-   * @group Props
-   */
-  currency;
-  /**
-   * Defines the display of the currency input.
-   * @group Props
-   */
-  currencyDisplay;
-  /**
-   * Defines if filter grouping will be enabled.
-   * @group Props
-   */
-  useGrouping = true;
-  /**
-   * Defines the visibility of buttons.
-   * @group Props
-   */
-  showButtons = true;
-  /**
-   * Defines the aria-label of the form element.
-   * @group Props
-   */
-  ariaLabel;
-  /**
-   * Callback to invoke on overlay is shown.
-   * @param {AnimationEvent} originalEvent - animation event.
-   * @group Emits
-   */
-  onShow = new EventEmitter();
-  /**
-   * Callback to invoke on overlay is hidden.
-   * @param {AnimationEvent} originalEvent - animation event.
-   * @group Emits
-   */
-  onHide = new EventEmitter();
-  icon;
-  clearButtonViewChild;
-  templates;
-  overlaySubscription;
-  headerTemplate;
-  filterTemplate;
-  footerTemplate;
-  filterIconTemplate;
-  removeRuleIconTemplate;
-  addRuleIconTemplate;
-  clearFilterIconTemplate;
-  operatorOptions;
-  overlayVisible;
-  overlay;
-  scrollHandler;
-  documentClickListener;
-  documentResizeListener;
-  matchModes;
-  translationSubscription;
-  resetSubscription;
-  selfClick;
-  overlayEventListener;
-  window;
-  overlayId;
+var _ColumnFilter = class _ColumnFilter {
+  constructor(document2, el, dt, renderer, config, overlayService, cd) {
+    __publicField(this, "document");
+    __publicField(this, "el");
+    __publicField(this, "dt");
+    __publicField(this, "renderer");
+    __publicField(this, "config");
+    __publicField(this, "overlayService");
+    __publicField(this, "cd");
+    /**
+     * Property represented by the column.
+     * @group Props
+     */
+    __publicField(this, "field");
+    /**
+     * Type of the input.
+     * @group Props
+     */
+    __publicField(this, "type", "text");
+    /**
+     * Filter display.
+     * @group Props
+     */
+    __publicField(this, "display", "row");
+    /**
+     * Decides whether to display filter menu popup.
+     * @group Props
+     */
+    __publicField(this, "showMenu", true);
+    /**
+     * Filter match mode.
+     * @group Props
+     */
+    __publicField(this, "matchMode");
+    /**
+     * Filter operator.
+     * @defaultValue 'AND'
+     * @group Props
+     */
+    __publicField(this, "operator", FilterOperator.AND);
+    /**
+     * Decides whether to display filter operator.
+     * @group Props
+     */
+    __publicField(this, "showOperator", true);
+    /**
+     * Decides whether to display clear filter button.
+     * @group Props
+     */
+    __publicField(this, "showClearButton", true);
+    /**
+     * Decides whether to display apply filter button.
+     * @group Props
+     */
+    __publicField(this, "showApplyButton", true);
+    /**
+     * Decides whether to display filter match modes.
+     * @group Props
+     */
+    __publicField(this, "showMatchModes", true);
+    /**
+     * Decides whether to display add filter button.
+     * @group Props
+     */
+    __publicField(this, "showAddButton", true);
+    /**
+     * Decides whether to close popup on clear button click.
+     * @group Props
+     */
+    __publicField(this, "hideOnClear", false);
+    /**
+     * Filter placeholder.
+     * @group Props
+     */
+    __publicField(this, "placeholder");
+    /**
+     * Filter match mode options.
+     * @group Props
+     */
+    __publicField(this, "matchModeOptions");
+    /**
+     * Defines maximum amount of constraints.
+     * @group Props
+     */
+    __publicField(this, "maxConstraints", 2);
+    /**
+     * Defines minimum fraction of digits.
+     * @group Props
+     */
+    __publicField(this, "minFractionDigits");
+    /**
+     * Defines maximum fraction of digits.
+     * @group Props
+     */
+    __publicField(this, "maxFractionDigits");
+    /**
+     * Defines prefix of the filter.
+     * @group Props
+     */
+    __publicField(this, "prefix");
+    /**
+     * Defines suffix of the filter.
+     * @group Props
+     */
+    __publicField(this, "suffix");
+    /**
+     * Defines filter locale.
+     * @group Props
+     */
+    __publicField(this, "locale");
+    /**
+     * Defines filter locale matcher.
+     * @group Props
+     */
+    __publicField(this, "localeMatcher");
+    /**
+     * Enables currency input.
+     * @group Props
+     */
+    __publicField(this, "currency");
+    /**
+     * Defines the display of the currency input.
+     * @group Props
+     */
+    __publicField(this, "currencyDisplay");
+    /**
+     * Defines if filter grouping will be enabled.
+     * @group Props
+     */
+    __publicField(this, "useGrouping", true);
+    /**
+     * Defines the visibility of buttons.
+     * @group Props
+     */
+    __publicField(this, "showButtons", true);
+    /**
+     * Defines the aria-label of the form element.
+     * @group Props
+     */
+    __publicField(this, "ariaLabel");
+    /**
+     * Callback to invoke on overlay is shown.
+     * @param {AnimationEvent} originalEvent - animation event.
+     * @group Emits
+     */
+    __publicField(this, "onShow", new EventEmitter());
+    /**
+     * Callback to invoke on overlay is hidden.
+     * @param {AnimationEvent} originalEvent - animation event.
+     * @group Emits
+     */
+    __publicField(this, "onHide", new EventEmitter());
+    __publicField(this, "icon");
+    __publicField(this, "clearButtonViewChild");
+    __publicField(this, "templates");
+    __publicField(this, "overlaySubscription");
+    __publicField(this, "headerTemplate");
+    __publicField(this, "filterTemplate");
+    __publicField(this, "footerTemplate");
+    __publicField(this, "filterIconTemplate");
+    __publicField(this, "removeRuleIconTemplate");
+    __publicField(this, "addRuleIconTemplate");
+    __publicField(this, "clearFilterIconTemplate");
+    __publicField(this, "operatorOptions");
+    __publicField(this, "overlayVisible");
+    __publicField(this, "overlay");
+    __publicField(this, "scrollHandler");
+    __publicField(this, "documentClickListener");
+    __publicField(this, "documentResizeListener");
+    __publicField(this, "matchModes");
+    __publicField(this, "translationSubscription");
+    __publicField(this, "resetSubscription");
+    __publicField(this, "selfClick");
+    __publicField(this, "overlayEventListener");
+    __publicField(this, "window");
+    __publicField(this, "overlayId");
+    this.document = document2;
+    this.el = el;
+    this.dt = dt;
+    this.renderer = renderer;
+    this.config = config;
+    this.overlayService = overlayService;
+    this.cd = cd;
+    this.window = this.document.defaultView;
+  }
   get fieldConstraints() {
     return this.dt.filters ? this.dt.filters[this.field] : null;
   }
@@ -8564,16 +8183,6 @@ var ColumnFilter = class _ColumnFilter {
   get filterConstraintAriaLabel() {
     return this.config.translation ? this.config.translation.aria.filterConstraint : void 0;
   }
-  constructor(document2, el, dt, renderer, config, overlayService, cd) {
-    this.document = document2;
-    this.el = el;
-    this.dt = dt;
-    this.renderer = renderer;
-    this.config = config;
-    this.overlayService = overlayService;
-    this.cd = cd;
-    this.window = this.document.defaultView;
-  }
   ngOnInit() {
     this.overlayId = UniqueComponentId();
     if (!this.dt.filters[this.field]) {
@@ -8587,12 +8196,13 @@ var ColumnFilter = class _ColumnFilter {
     this.generateOperatorOptions();
   }
   generateMatchModeOptions() {
-    this.matchModes = this.matchModeOptions || this.config.filterMatchModeOptions[this.type]?.map((key) => {
+    var _a;
+    this.matchModes = this.matchModeOptions || ((_a = this.config.filterMatchModeOptions[this.type]) == null ? void 0 : _a.map((key) => {
       return {
         label: this.config.getTranslation(key),
         value: key
       };
-    });
+    }));
   }
   generateOperatorOptions() {
     this.operatorOptions = [{
@@ -8686,7 +8296,8 @@ var ColumnFilter = class _ColumnFilter {
     this.hide();
   }
   isRowMatchModeSelected(matchMode) {
-    return this.dt.filters[this.field]?.matchMode === matchMode;
+    var _a;
+    return ((_a = this.dt.filters[this.field]) == null ? void 0 : _a.matchMode) === matchMode;
   }
   addConstraint() {
     this.dt.filters[this.field].push({
@@ -8740,28 +8351,32 @@ var ColumnFilter = class _ColumnFilter {
     }
   }
   onEscape() {
-    this.icon?.nativeElement.focus();
+    var _a;
+    (_a = this.icon) == null ? void 0 : _a.nativeElement.focus();
   }
   findNextItem(item) {
+    var _a;
     let nextItem = item.nextElementSibling;
     if (nextItem) return DomHandler.hasClass(nextItem, "p-column-filter-separator") ? this.findNextItem(nextItem) : nextItem;
-    else return item.parentElement?.firstElementChild;
+    else return (_a = item.parentElement) == null ? void 0 : _a.firstElementChild;
   }
   findPrevItem(item) {
+    var _a;
     let prevItem = item.previousElementSibling;
     if (prevItem) return DomHandler.hasClass(prevItem, "p-column-filter-separator") ? this.findPrevItem(prevItem) : prevItem;
-    else return item.parentElement?.lastElementChild;
+    else return (_a = item.parentElement) == null ? void 0 : _a.lastElementChild;
   }
   onContentClick() {
     this.selfClick = true;
   }
   onOverlayAnimationStart(event) {
+    var _a;
     switch (event.toState) {
       case "visible":
         this.overlay = event.element;
         this.renderer.appendChild(this.document.body, this.overlay);
         zindexutils.set("overlay", this.overlay, this.config.zIndex.overlay);
-        DomHandler.absolutePosition(this.overlay, this.icon?.nativeElement);
+        DomHandler.absolutePosition(this.overlay, (_a = this.icon) == null ? void 0 : _a.nativeElement);
         this.bindDocumentClickListener();
         this.bindDocumentResizeListener();
         this.bindScrollListener();
@@ -8826,7 +8441,8 @@ var ColumnFilter = class _ColumnFilter {
     return false;
   }
   isOutsideClicked(event) {
-    return !(DomHandler.hasClass(this.overlay?.nextElementSibling, "p-overlay") || this.overlay?.isSameNode(event.target) || this.overlay?.contains(event.target) || this.icon?.nativeElement.isSameNode(event.target) || this.icon?.nativeElement.contains(event.target) || DomHandler.hasClass(event.target, "p-column-filter-add-button") || DomHandler.hasClass(event.target.parentElement, "p-column-filter-add-button") || DomHandler.hasClass(event.target, "p-column-filter-remove-button") || DomHandler.hasClass(event.target.parentElement, "p-column-filter-remove-button"));
+    var _a, _b, _c, _d, _e;
+    return !(DomHandler.hasClass((_a = this.overlay) == null ? void 0 : _a.nextElementSibling, "p-overlay") || ((_b = this.overlay) == null ? void 0 : _b.isSameNode(event.target)) || ((_c = this.overlay) == null ? void 0 : _c.contains(event.target)) || ((_d = this.icon) == null ? void 0 : _d.nativeElement.isSameNode(event.target)) || ((_e = this.icon) == null ? void 0 : _e.nativeElement.contains(event.target)) || DomHandler.hasClass(event.target, "p-column-filter-add-button") || DomHandler.hasClass(event.target.parentElement, "p-column-filter-add-button") || DomHandler.hasClass(event.target, "p-column-filter-remove-button") || DomHandler.hasClass(event.target.parentElement, "p-column-filter-remove-button"));
   }
   bindDocumentClickListener() {
     if (!this.documentClickListener) {
@@ -8867,8 +8483,9 @@ var ColumnFilter = class _ColumnFilter {
     }
   }
   bindScrollListener() {
+    var _a;
     if (!this.scrollHandler) {
-      this.scrollHandler = new ConnectedOverlayScrollHandler(this.icon?.nativeElement, () => {
+      this.scrollHandler = new ConnectedOverlayScrollHandler((_a = this.icon) == null ? void 0 : _a.nativeElement, () => {
         if (this.overlayVisible) {
           this.hide();
         }
@@ -8916,237 +8533,106 @@ var ColumnFilter = class _ColumnFilter {
       this.overlaySubscription.unsubscribe();
     }
   }
-  static ɵfac = function ColumnFilter_Factory(__ngFactoryType__) {
-    return new (__ngFactoryType__ || _ColumnFilter)(ɵɵdirectiveInject(DOCUMENT), ɵɵdirectiveInject(ElementRef), ɵɵdirectiveInject(Table), ɵɵdirectiveInject(Renderer2), ɵɵdirectiveInject(PrimeNGConfig), ɵɵdirectiveInject(OverlayService), ɵɵdirectiveInject(ChangeDetectorRef));
-  };
-  static ɵcmp = ɵɵdefineComponent({
-    type: _ColumnFilter,
-    selectors: [["p-columnFilter"]],
-    contentQueries: function ColumnFilter_ContentQueries(rf, ctx, dirIndex) {
-      if (rf & 1) {
-        ɵɵcontentQuery(dirIndex, PrimeTemplate, 4);
-      }
-      if (rf & 2) {
-        let _t;
-        ɵɵqueryRefresh(_t = ɵɵloadQuery()) && (ctx.templates = _t);
-      }
-    },
-    viewQuery: function ColumnFilter_Query(rf, ctx) {
-      if (rf & 1) {
-        ɵɵviewQuery(_c29, 5);
-        ɵɵviewQuery(_c30, 5);
-      }
-      if (rf & 2) {
-        let _t;
-        ɵɵqueryRefresh(_t = ɵɵloadQuery()) && (ctx.icon = _t.first);
-        ɵɵqueryRefresh(_t = ɵɵloadQuery()) && (ctx.clearButtonViewChild = _t.first);
-      }
-    },
-    hostAttrs: [1, "p-element"],
-    inputs: {
-      field: "field",
-      type: "type",
-      display: "display",
-      showMenu: [2, "showMenu", "showMenu", booleanAttribute],
-      matchMode: "matchMode",
-      operator: "operator",
-      showOperator: [2, "showOperator", "showOperator", booleanAttribute],
-      showClearButton: [2, "showClearButton", "showClearButton", booleanAttribute],
-      showApplyButton: [2, "showApplyButton", "showApplyButton", booleanAttribute],
-      showMatchModes: [2, "showMatchModes", "showMatchModes", booleanAttribute],
-      showAddButton: [2, "showAddButton", "showAddButton", booleanAttribute],
-      hideOnClear: [2, "hideOnClear", "hideOnClear", booleanAttribute],
-      placeholder: "placeholder",
-      matchModeOptions: "matchModeOptions",
-      maxConstraints: [2, "maxConstraints", "maxConstraints", numberAttribute],
-      minFractionDigits: [2, "minFractionDigits", "minFractionDigits", (value) => numberAttribute(value, null)],
-      maxFractionDigits: [2, "maxFractionDigits", "maxFractionDigits", (value) => numberAttribute(value, null)],
-      prefix: "prefix",
-      suffix: "suffix",
-      locale: "locale",
-      localeMatcher: "localeMatcher",
-      currency: "currency",
-      currencyDisplay: "currencyDisplay",
-      useGrouping: [2, "useGrouping", "useGrouping", booleanAttribute],
-      showButtons: [2, "showButtons", "showButtons", booleanAttribute],
-      ariaLabel: "ariaLabel"
-    },
-    outputs: {
-      onShow: "onShow",
-      onHide: "onHide"
-    },
-    features: [ɵɵInputTransformsFeature],
-    decls: 5,
-    vars: 8,
-    consts: [["icon", ""], ["menu", ""], ["clearBtn", ""], [1, "p-column-filter", 3, "ngClass"], ["class", "p-fluid", 3, "type", "field", "ariaLabel", "filterConstraint", "filterTemplate", "placeholder", "minFractionDigits", "maxFractionDigits", "prefix", "suffix", "locale", "localeMatcher", "currency", "currencyDisplay", "useGrouping", "showButtons", 4, "ngIf"], ["type", "button", "class", "p-column-filter-menu-button p-link", "aria-haspopup", "true", 3, "ngClass", "click", "keydown", 4, "ngIf"], ["type", "button", "class", "p-column-filter-clear-button p-link", 3, "ngClass", "click", 4, "ngIf"], ["role", "dialog", 3, "ngClass", "id", "click", "keydown.escape", 4, "ngIf"], [1, "p-fluid", 3, "type", "field", "ariaLabel", "filterConstraint", "filterTemplate", "placeholder", "minFractionDigits", "maxFractionDigits", "prefix", "suffix", "locale", "localeMatcher", "currency", "currencyDisplay", "useGrouping", "showButtons"], ["type", "button", "aria-haspopup", "true", 1, "p-column-filter-menu-button", "p-link", 3, "click", "keydown", "ngClass"], [3, "styleClass", 4, "ngIf"], ["class", "pi-filter-icon", 4, "ngIf"], [3, "styleClass"], [1, "pi-filter-icon"], [4, "ngTemplateOutlet"], ["type", "button", 1, "p-column-filter-clear-button", "p-link", 3, "click", "ngClass"], [4, "ngIf"], ["role", "dialog", 3, "click", "keydown.escape", "ngClass", "id"], [4, "ngTemplateOutlet", "ngTemplateOutletContext"], ["class", "p-column-filter-row-items", 4, "ngIf", "ngIfElse"], [1, "p-column-filter-row-items"], ["class", "p-column-filter-row-item", 3, "ngClass", "click", "keydown", "keydown.enter", 4, "ngFor", "ngForOf"], [1, "p-column-filter-separator"], [1, "p-column-filter-row-item", 3, "click", "keydown", "keydown.enter"], [1, "p-column-filter-row-item", 3, "click", "keydown", "keydown.enter", "ngClass"], ["class", "p-column-filter-operator", 4, "ngIf"], [1, "p-column-filter-constraints"], ["class", "p-column-filter-constraint", 4, "ngFor", "ngForOf"], ["class", "p-column-filter-add-rule", 4, "ngIf"], ["class", "p-column-filter-buttonbar", 4, "ngIf"], [1, "p-column-filter-operator"], ["styleClass", "p-column-filter-operator-dropdown", 3, "ngModelChange", "options", "ngModel"], [1, "p-column-filter-constraint"], ["styleClass", "p-column-filter-matchmode-dropdown", 3, "options", "ngModel", "ngModelChange", 4, "ngIf"], [3, "type", "field", "filterConstraint", "filterTemplate", "placeholder", "minFractionDigits", "maxFractionDigits", "prefix", "suffix", "locale", "localeMatcher", "currency", "currencyDisplay", "useGrouping"], ["type", "button", "pButton", "", "class", "p-column-filter-remove-button p-button-text p-button-danger p-button-sm", "pRipple", "", 3, "label", "click", 4, "ngIf"], ["styleClass", "p-column-filter-matchmode-dropdown", 3, "ngModelChange", "options", "ngModel"], ["type", "button", "pButton", "", "pRipple", "", 1, "p-column-filter-remove-button", "p-button-text", "p-button-danger", "p-button-sm", 3, "click", "label"], [1, "p-column-filter-add-rule"], ["type", "button", "pButton", "", "pRipple", "", 1, "p-column-filter-add-button", "p-button-text", "p-button-sm", 3, "click", "label"], [1, "p-column-filter-buttonbar"], ["type", "button", "pButton", "", "class", "p-button-outlined p-button-sm", "pRipple", "", 3, "label", "click", 4, "ngIf"], ["type", "button", "pButton", "", "class", "p-button-sm", "pRipple", "", 3, "label", "click", 4, "ngIf"], ["type", "button", "pButton", "", "pRipple", "", 1, "p-button-outlined", "p-button-sm", 3, "click", "label"], ["type", "button", "pButton", "", "pRipple", "", 1, "p-button-sm", 3, "click", "label"]],
-    template: function ColumnFilter_Template(rf, ctx) {
-      if (rf & 1) {
-        ɵɵelementStart(0, "div", 3);
-        ɵɵtemplate(1, ColumnFilter_p_columnFilterFormElement_1_Template, 1, 16, "p-columnFilterFormElement", 4)(2, ColumnFilter_button_2_Template, 4, 9, "button", 5)(3, ColumnFilter_button_3_Template, 4, 6, "button", 6)(4, ColumnFilter_div_4_Template, 6, 16, "div", 7);
-        ɵɵelementEnd();
-      }
-      if (rf & 2) {
-        ɵɵproperty("ngClass", ɵɵpureFunction2(5, _c31, ctx.display === "row", ctx.display === "menu"));
-        ɵɵadvance();
-        ɵɵproperty("ngIf", ctx.display === "row");
-        ɵɵadvance();
-        ɵɵproperty("ngIf", ctx.showMenuButton);
-        ɵɵadvance();
-        ɵɵproperty("ngIf", ctx.showClearButton && ctx.display === "row");
-        ɵɵadvance();
-        ɵɵproperty("ngIf", ctx.showMenu && ctx.overlayVisible);
-      }
-    },
-    dependencies: () => [NgClass, NgForOf, NgIf, NgTemplateOutlet, Dropdown, NgControlStatus, NgModel, ButtonDirective, FilterIcon, FilterSlashIcon, PlusIcon, TrashIcon, ColumnFilterFormElement],
-    encapsulation: 2,
-    data: {
-      animation: [trigger("overlayAnimation", [transition(":enter", [style({
-        opacity: 0,
-        transform: "scaleY(0.8)"
-      }), animate(".12s cubic-bezier(0, 0, 0.2, 1)")]), transition(":leave", [animate(".1s linear", style({
-        opacity: 0
-      }))])])]
-    }
-  });
 };
+__publicField(_ColumnFilter, "ɵfac", function ColumnFilter_Factory(__ngFactoryType__) {
+  return new (__ngFactoryType__ || _ColumnFilter)(ɵɵdirectiveInject(DOCUMENT), ɵɵdirectiveInject(ElementRef), ɵɵdirectiveInject(Table), ɵɵdirectiveInject(Renderer2), ɵɵdirectiveInject(PrimeNGConfig), ɵɵdirectiveInject(OverlayService), ɵɵdirectiveInject(ChangeDetectorRef));
+});
+__publicField(_ColumnFilter, "ɵcmp", ɵɵdefineComponent({
+  type: _ColumnFilter,
+  selectors: [["p-columnFilter"]],
+  contentQueries: function ColumnFilter_ContentQueries(rf, ctx, dirIndex) {
+    if (rf & 1) {
+      ɵɵcontentQuery(dirIndex, PrimeTemplate, 4);
+    }
+    if (rf & 2) {
+      let _t;
+      ɵɵqueryRefresh(_t = ɵɵloadQuery()) && (ctx.templates = _t);
+    }
+  },
+  viewQuery: function ColumnFilter_Query(rf, ctx) {
+    if (rf & 1) {
+      ɵɵviewQuery(_c29, 5);
+      ɵɵviewQuery(_c30, 5);
+    }
+    if (rf & 2) {
+      let _t;
+      ɵɵqueryRefresh(_t = ɵɵloadQuery()) && (ctx.icon = _t.first);
+      ɵɵqueryRefresh(_t = ɵɵloadQuery()) && (ctx.clearButtonViewChild = _t.first);
+    }
+  },
+  hostAttrs: [1, "p-element"],
+  inputs: {
+    field: "field",
+    type: "type",
+    display: "display",
+    showMenu: [2, "showMenu", "showMenu", booleanAttribute],
+    matchMode: "matchMode",
+    operator: "operator",
+    showOperator: [2, "showOperator", "showOperator", booleanAttribute],
+    showClearButton: [2, "showClearButton", "showClearButton", booleanAttribute],
+    showApplyButton: [2, "showApplyButton", "showApplyButton", booleanAttribute],
+    showMatchModes: [2, "showMatchModes", "showMatchModes", booleanAttribute],
+    showAddButton: [2, "showAddButton", "showAddButton", booleanAttribute],
+    hideOnClear: [2, "hideOnClear", "hideOnClear", booleanAttribute],
+    placeholder: "placeholder",
+    matchModeOptions: "matchModeOptions",
+    maxConstraints: [2, "maxConstraints", "maxConstraints", numberAttribute],
+    minFractionDigits: [2, "minFractionDigits", "minFractionDigits", (value) => numberAttribute(value, null)],
+    maxFractionDigits: [2, "maxFractionDigits", "maxFractionDigits", (value) => numberAttribute(value, null)],
+    prefix: "prefix",
+    suffix: "suffix",
+    locale: "locale",
+    localeMatcher: "localeMatcher",
+    currency: "currency",
+    currencyDisplay: "currencyDisplay",
+    useGrouping: [2, "useGrouping", "useGrouping", booleanAttribute],
+    showButtons: [2, "showButtons", "showButtons", booleanAttribute],
+    ariaLabel: "ariaLabel"
+  },
+  outputs: {
+    onShow: "onShow",
+    onHide: "onHide"
+  },
+  features: [ɵɵInputTransformsFeature],
+  decls: 5,
+  vars: 8,
+  consts: [["icon", ""], ["menu", ""], ["clearBtn", ""], [1, "p-column-filter", 3, "ngClass"], ["class", "p-fluid", 3, "type", "field", "ariaLabel", "filterConstraint", "filterTemplate", "placeholder", "minFractionDigits", "maxFractionDigits", "prefix", "suffix", "locale", "localeMatcher", "currency", "currencyDisplay", "useGrouping", "showButtons", 4, "ngIf"], ["type", "button", "class", "p-column-filter-menu-button p-link", "aria-haspopup", "true", 3, "ngClass", "click", "keydown", 4, "ngIf"], ["type", "button", "class", "p-column-filter-clear-button p-link", 3, "ngClass", "click", 4, "ngIf"], ["role", "dialog", 3, "ngClass", "id", "click", "keydown.escape", 4, "ngIf"], [1, "p-fluid", 3, "type", "field", "ariaLabel", "filterConstraint", "filterTemplate", "placeholder", "minFractionDigits", "maxFractionDigits", "prefix", "suffix", "locale", "localeMatcher", "currency", "currencyDisplay", "useGrouping", "showButtons"], ["type", "button", "aria-haspopup", "true", 1, "p-column-filter-menu-button", "p-link", 3, "click", "keydown", "ngClass"], [3, "styleClass", 4, "ngIf"], ["class", "pi-filter-icon", 4, "ngIf"], [3, "styleClass"], [1, "pi-filter-icon"], [4, "ngTemplateOutlet"], ["type", "button", 1, "p-column-filter-clear-button", "p-link", 3, "click", "ngClass"], [4, "ngIf"], ["role", "dialog", 3, "click", "keydown.escape", "ngClass", "id"], [4, "ngTemplateOutlet", "ngTemplateOutletContext"], ["class", "p-column-filter-row-items", 4, "ngIf", "ngIfElse"], [1, "p-column-filter-row-items"], ["class", "p-column-filter-row-item", 3, "ngClass", "click", "keydown", "keydown.enter", 4, "ngFor", "ngForOf"], [1, "p-column-filter-separator"], [1, "p-column-filter-row-item", 3, "click", "keydown", "keydown.enter"], [1, "p-column-filter-row-item", 3, "click", "keydown", "keydown.enter", "ngClass"], ["class", "p-column-filter-operator", 4, "ngIf"], [1, "p-column-filter-constraints"], ["class", "p-column-filter-constraint", 4, "ngFor", "ngForOf"], ["class", "p-column-filter-add-rule", 4, "ngIf"], ["class", "p-column-filter-buttonbar", 4, "ngIf"], [1, "p-column-filter-operator"], ["styleClass", "p-column-filter-operator-dropdown", 3, "ngModelChange", "options", "ngModel"], [1, "p-column-filter-constraint"], ["styleClass", "p-column-filter-matchmode-dropdown", 3, "options", "ngModel", "ngModelChange", 4, "ngIf"], [3, "type", "field", "filterConstraint", "filterTemplate", "placeholder", "minFractionDigits", "maxFractionDigits", "prefix", "suffix", "locale", "localeMatcher", "currency", "currencyDisplay", "useGrouping"], ["type", "button", "pButton", "", "class", "p-column-filter-remove-button p-button-text p-button-danger p-button-sm", "pRipple", "", 3, "label", "click", 4, "ngIf"], ["styleClass", "p-column-filter-matchmode-dropdown", 3, "ngModelChange", "options", "ngModel"], ["type", "button", "pButton", "", "pRipple", "", 1, "p-column-filter-remove-button", "p-button-text", "p-button-danger", "p-button-sm", 3, "click", "label"], [1, "p-column-filter-add-rule"], ["type", "button", "pButton", "", "pRipple", "", 1, "p-column-filter-add-button", "p-button-text", "p-button-sm", 3, "click", "label"], [1, "p-column-filter-buttonbar"], ["type", "button", "pButton", "", "class", "p-button-outlined p-button-sm", "pRipple", "", 3, "label", "click", 4, "ngIf"], ["type", "button", "pButton", "", "class", "p-button-sm", "pRipple", "", 3, "label", "click", 4, "ngIf"], ["type", "button", "pButton", "", "pRipple", "", 1, "p-button-outlined", "p-button-sm", 3, "click", "label"], ["type", "button", "pButton", "", "pRipple", "", 1, "p-button-sm", 3, "click", "label"]],
+  template: function ColumnFilter_Template(rf, ctx) {
+    if (rf & 1) {
+      ɵɵelementStart(0, "div", 3);
+      ɵɵtemplate(1, ColumnFilter_p_columnFilterFormElement_1_Template, 1, 16, "p-columnFilterFormElement", 4)(2, ColumnFilter_button_2_Template, 4, 9, "button", 5)(3, ColumnFilter_button_3_Template, 4, 6, "button", 6)(4, ColumnFilter_div_4_Template, 6, 16, "div", 7);
+      ɵɵelementEnd();
+    }
+    if (rf & 2) {
+      ɵɵproperty("ngClass", ɵɵpureFunction2(5, _c31, ctx.display === "row", ctx.display === "menu"));
+      ɵɵadvance();
+      ɵɵproperty("ngIf", ctx.display === "row");
+      ɵɵadvance();
+      ɵɵproperty("ngIf", ctx.showMenuButton);
+      ɵɵadvance();
+      ɵɵproperty("ngIf", ctx.showClearButton && ctx.display === "row");
+      ɵɵadvance();
+      ɵɵproperty("ngIf", ctx.showMenu && ctx.overlayVisible);
+    }
+  },
+  dependencies: () => [NgClass, NgForOf, NgIf, NgTemplateOutlet, Dropdown, NgControlStatus, NgModel, ButtonDirective, FilterIcon, FilterSlashIcon, PlusIcon, TrashIcon, ColumnFilterFormElement],
+  encapsulation: 2,
+  data: {
+    animation: [trigger("overlayAnimation", [transition(":enter", [style({
+      opacity: 0,
+      transform: "scaleY(0.8)"
+    }), animate(".12s cubic-bezier(0, 0, 0.2, 1)")]), transition(":leave", [animate(".1s linear", style({
+      opacity: 0
+    }))])])]
+  }
+}));
+var ColumnFilter = _ColumnFilter;
 (() => {
   (typeof ngDevMode === "undefined" || ngDevMode) && setClassMetadata(ColumnFilter, [{
     type: Component,
     args: [{
       selector: "p-columnFilter",
-      template: `
-        <div class="p-column-filter" [ngClass]="{ 'p-column-filter-row': display === 'row', 'p-column-filter-menu': display === 'menu' }">
-            <p-columnFilterFormElement
-                *ngIf="display === 'row'"
-                class="p-fluid"
-                [type]="type"
-                [field]="field"
-                [ariaLabel]="ariaLabel"
-                [filterConstraint]="dt.filters[field]"
-                [filterTemplate]="filterTemplate"
-                [placeholder]="placeholder"
-                [minFractionDigits]="minFractionDigits"
-                [maxFractionDigits]="maxFractionDigits"
-                [prefix]="prefix"
-                [suffix]="suffix"
-                [locale]="locale"
-                [localeMatcher]="localeMatcher"
-                [currency]="currency"
-                [currencyDisplay]="currencyDisplay"
-                [useGrouping]="useGrouping"
-                [showButtons]="showButtons"
-            ></p-columnFilterFormElement>
-            <button
-                #icon
-                *ngIf="showMenuButton"
-                type="button"
-                class="p-column-filter-menu-button p-link"
-                aria-haspopup="true"
-                [attr.aria-label]="filterMenuButtonAriaLabel"
-                [attr.aria-controls]="overlayVisible ? overlayId : null"
-                [attr.aria-expanded]="overlayVisible ?? false"
-                [ngClass]="{ 'p-column-filter-menu-button-open': overlayVisible, 'p-column-filter-menu-button-active': hasFilter() }"
-                (click)="toggleMenu()"
-                (keydown)="onToggleButtonKeyDown($event)"
-            >
-                <FilterIcon [styleClass]="'pi-filter-icon'" *ngIf="!filterIconTemplate" />
-                <span class="pi-filter-icon" *ngIf="filterIconTemplate">
-                    <ng-template *ngTemplateOutlet="filterIconTemplate"></ng-template>
-                </span>
-            </button>
-            <button #icon *ngIf="showClearButton && display === 'row'" [ngClass]="{ 'p-hidden-space': !hasRowFilter() }" type="button" class="p-column-filter-clear-button p-link" (click)="clearFilter()" [attr.aria-label]="clearButtonLabel">
-                <FilterSlashIcon *ngIf="!clearFilterIconTemplate" />
-                <ng-template *ngTemplateOutlet="clearFilterIconTemplate"></ng-template>
-            </button>
-            <div
-                *ngIf="showMenu && overlayVisible"
-                [ngClass]="{ 'p-column-filter-overlay p-component p-fluid': true, 'p-column-filter-overlay-menu': display === 'menu' }"
-                [id]="overlayId"
-                [attr.aria-modal]="true"
-                role="dialog"
-                (click)="onContentClick()"
-                [@overlayAnimation]="'visible'"
-                (@overlayAnimation.start)="onOverlayAnimationStart($event)"
-                (@overlayAnimation.done)="onOverlayAnimationEnd($event)"
-                (keydown.escape)="onEscape()"
-            >
-                <ng-container *ngTemplateOutlet="headerTemplate; context: { $implicit: field }"></ng-container>
-                <ul *ngIf="display === 'row'; else menu" class="p-column-filter-row-items">
-                    <li
-                        class="p-column-filter-row-item"
-                        *ngFor="let matchMode of matchModes; let i = index"
-                        (click)="onRowMatchModeChange(matchMode.value)"
-                        (keydown)="onRowMatchModeKeyDown($event)"
-                        (keydown.enter)="this.onRowMatchModeChange(matchMode.value)"
-                        [ngClass]="{ 'p-highlight': isRowMatchModeSelected(matchMode.value) }"
-                        [attr.tabindex]="i === 0 ? '0' : null"
-                    >
-                        {{ matchMode.label }}
-                    </li>
-                    <li class="p-column-filter-separator"></li>
-                    <li class="p-column-filter-row-item" (click)="onRowClearItemClick()" (keydown)="onRowMatchModeKeyDown($event)" (keydown.enter)="onRowClearItemClick()">{{ noFilterLabel }}</li>
-                </ul>
-                <ng-template #menu>
-                    <div class="p-column-filter-operator" *ngIf="isShowOperator">
-                        <p-dropdown [options]="operatorOptions" [ngModel]="operator" (ngModelChange)="onOperatorChange($event)" styleClass="p-column-filter-operator-dropdown"></p-dropdown>
-                    </div>
-                    <div class="p-column-filter-constraints">
-                        <div *ngFor="let fieldConstraint of fieldConstraints; let i = index" class="p-column-filter-constraint">
-                            <p-dropdown
-                                *ngIf="showMatchModes && matchModes"
-                                [options]="matchModes"
-                                [ngModel]="fieldConstraint.matchMode"
-                                (ngModelChange)="onMenuMatchModeChange($event, fieldConstraint)"
-                                styleClass="p-column-filter-matchmode-dropdown"
-                            ></p-dropdown>
-                            <p-columnFilterFormElement
-                                [type]="type"
-                                [field]="field"
-                                [filterConstraint]="fieldConstraint"
-                                [filterTemplate]="filterTemplate"
-                                [placeholder]="placeholder"
-                                [minFractionDigits]="minFractionDigits"
-                                [maxFractionDigits]="maxFractionDigits"
-                                [prefix]="prefix"
-                                [suffix]="suffix"
-                                [locale]="locale"
-                                [localeMatcher]="localeMatcher"
-                                [currency]="currency"
-                                [currencyDisplay]="currencyDisplay"
-                                [useGrouping]="useGrouping"
-                            ></p-columnFilterFormElement>
-                            <div>
-                                <button
-                                    *ngIf="showRemoveIcon"
-                                    type="button"
-                                    pButton
-                                    class="p-column-filter-remove-button p-button-text p-button-danger p-button-sm"
-                                    (click)="removeConstraint(fieldConstraint)"
-                                    pRipple
-                                    [attr.aria-label]="removeRuleButtonLabel"
-                                    [label]="removeRuleButtonLabel"
-                                >
-                                    <TrashIcon *ngIf="!removeRuleIconTemplate" [styleClass]="'p-button-icon-left'" />
-                                    <ng-template *ngTemplateOutlet="removeRuleIconTemplate"></ng-template>
-                                </button>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="p-column-filter-add-rule" *ngIf="isShowAddConstraint">
-                        <button type="button" pButton [label]="addRuleButtonLabel" [attr.aria-label]="addRuleButtonLabel" class="p-column-filter-add-button p-button-text p-button-sm" (click)="addConstraint()" pRipple>
-                            <PlusIcon *ngIf="!addRuleIconTemplate" [styleClass]="'p-button-icon-left'" />
-                            <ng-template *ngTemplateOutlet="addRuleIconTemplate"></ng-template>
-                        </button>
-                    </div>
-                    <div class="p-column-filter-buttonbar" *ngIf="showButtons">
-                        <button #clearBtn *ngIf="showClearButton" type="button" pButton class="p-button-outlined p-button-sm" (click)="clearFilter()" [attr.aria-label]="clearButtonLabel" [label]="clearButtonLabel" pRipple></button>
-                        <button *ngIf="showApplyButton" type="button" pButton (click)="applyFilter()" class="p-button-sm" [label]="applyButtonLabel" pRipple [attr.aria-label]="applyButtonLabel"></button>
-                    </div>
-                </ng-template>
-                <ng-container *ngTemplateOutlet="footerTemplate; context: { $implicit: field }"></ng-container>
-            </div>
-        </div>
-    `,
+      template: '\n        <div class="p-column-filter" [ngClass]="{ \'p-column-filter-row\': display === \'row\', \'p-column-filter-menu\': display === \'menu\' }">\n            <p-columnFilterFormElement\n                *ngIf="display === \'row\'"\n                class="p-fluid"\n                [type]="type"\n                [field]="field"\n                [ariaLabel]="ariaLabel"\n                [filterConstraint]="dt.filters[field]"\n                [filterTemplate]="filterTemplate"\n                [placeholder]="placeholder"\n                [minFractionDigits]="minFractionDigits"\n                [maxFractionDigits]="maxFractionDigits"\n                [prefix]="prefix"\n                [suffix]="suffix"\n                [locale]="locale"\n                [localeMatcher]="localeMatcher"\n                [currency]="currency"\n                [currencyDisplay]="currencyDisplay"\n                [useGrouping]="useGrouping"\n                [showButtons]="showButtons"\n            ></p-columnFilterFormElement>\n            <button\n                #icon\n                *ngIf="showMenuButton"\n                type="button"\n                class="p-column-filter-menu-button p-link"\n                aria-haspopup="true"\n                [attr.aria-label]="filterMenuButtonAriaLabel"\n                [attr.aria-controls]="overlayVisible ? overlayId : null"\n                [attr.aria-expanded]="overlayVisible ?? false"\n                [ngClass]="{ \'p-column-filter-menu-button-open\': overlayVisible, \'p-column-filter-menu-button-active\': hasFilter() }"\n                (click)="toggleMenu()"\n                (keydown)="onToggleButtonKeyDown($event)"\n            >\n                <FilterIcon [styleClass]="\'pi-filter-icon\'" *ngIf="!filterIconTemplate" />\n                <span class="pi-filter-icon" *ngIf="filterIconTemplate">\n                    <ng-template *ngTemplateOutlet="filterIconTemplate"></ng-template>\n                </span>\n            </button>\n            <button #icon *ngIf="showClearButton && display === \'row\'" [ngClass]="{ \'p-hidden-space\': !hasRowFilter() }" type="button" class="p-column-filter-clear-button p-link" (click)="clearFilter()" [attr.aria-label]="clearButtonLabel">\n                <FilterSlashIcon *ngIf="!clearFilterIconTemplate" />\n                <ng-template *ngTemplateOutlet="clearFilterIconTemplate"></ng-template>\n            </button>\n            <div\n                *ngIf="showMenu && overlayVisible"\n                [ngClass]="{ \'p-column-filter-overlay p-component p-fluid\': true, \'p-column-filter-overlay-menu\': display === \'menu\' }"\n                [id]="overlayId"\n                [attr.aria-modal]="true"\n                role="dialog"\n                (click)="onContentClick()"\n                [@overlayAnimation]="\'visible\'"\n                (@overlayAnimation.start)="onOverlayAnimationStart($event)"\n                (@overlayAnimation.done)="onOverlayAnimationEnd($event)"\n                (keydown.escape)="onEscape()"\n            >\n                <ng-container *ngTemplateOutlet="headerTemplate; context: { $implicit: field }"></ng-container>\n                <ul *ngIf="display === \'row\'; else menu" class="p-column-filter-row-items">\n                    <li\n                        class="p-column-filter-row-item"\n                        *ngFor="let matchMode of matchModes; let i = index"\n                        (click)="onRowMatchModeChange(matchMode.value)"\n                        (keydown)="onRowMatchModeKeyDown($event)"\n                        (keydown.enter)="this.onRowMatchModeChange(matchMode.value)"\n                        [ngClass]="{ \'p-highlight\': isRowMatchModeSelected(matchMode.value) }"\n                        [attr.tabindex]="i === 0 ? \'0\' : null"\n                    >\n                        {{ matchMode.label }}\n                    </li>\n                    <li class="p-column-filter-separator"></li>\n                    <li class="p-column-filter-row-item" (click)="onRowClearItemClick()" (keydown)="onRowMatchModeKeyDown($event)" (keydown.enter)="onRowClearItemClick()">{{ noFilterLabel }}</li>\n                </ul>\n                <ng-template #menu>\n                    <div class="p-column-filter-operator" *ngIf="isShowOperator">\n                        <p-dropdown [options]="operatorOptions" [ngModel]="operator" (ngModelChange)="onOperatorChange($event)" styleClass="p-column-filter-operator-dropdown"></p-dropdown>\n                    </div>\n                    <div class="p-column-filter-constraints">\n                        <div *ngFor="let fieldConstraint of fieldConstraints; let i = index" class="p-column-filter-constraint">\n                            <p-dropdown\n                                *ngIf="showMatchModes && matchModes"\n                                [options]="matchModes"\n                                [ngModel]="fieldConstraint.matchMode"\n                                (ngModelChange)="onMenuMatchModeChange($event, fieldConstraint)"\n                                styleClass="p-column-filter-matchmode-dropdown"\n                            ></p-dropdown>\n                            <p-columnFilterFormElement\n                                [type]="type"\n                                [field]="field"\n                                [filterConstraint]="fieldConstraint"\n                                [filterTemplate]="filterTemplate"\n                                [placeholder]="placeholder"\n                                [minFractionDigits]="minFractionDigits"\n                                [maxFractionDigits]="maxFractionDigits"\n                                [prefix]="prefix"\n                                [suffix]="suffix"\n                                [locale]="locale"\n                                [localeMatcher]="localeMatcher"\n                                [currency]="currency"\n                                [currencyDisplay]="currencyDisplay"\n                                [useGrouping]="useGrouping"\n                            ></p-columnFilterFormElement>\n                            <div>\n                                <button\n                                    *ngIf="showRemoveIcon"\n                                    type="button"\n                                    pButton\n                                    class="p-column-filter-remove-button p-button-text p-button-danger p-button-sm"\n                                    (click)="removeConstraint(fieldConstraint)"\n                                    pRipple\n                                    [attr.aria-label]="removeRuleButtonLabel"\n                                    [label]="removeRuleButtonLabel"\n                                >\n                                    <TrashIcon *ngIf="!removeRuleIconTemplate" [styleClass]="\'p-button-icon-left\'" />\n                                    <ng-template *ngTemplateOutlet="removeRuleIconTemplate"></ng-template>\n                                </button>\n                            </div>\n                        </div>\n                    </div>\n                    <div class="p-column-filter-add-rule" *ngIf="isShowAddConstraint">\n                        <button type="button" pButton [label]="addRuleButtonLabel" [attr.aria-label]="addRuleButtonLabel" class="p-column-filter-add-button p-button-text p-button-sm" (click)="addConstraint()" pRipple>\n                            <PlusIcon *ngIf="!addRuleIconTemplate" [styleClass]="\'p-button-icon-left\'" />\n                            <ng-template *ngTemplateOutlet="addRuleIconTemplate"></ng-template>\n                        </button>\n                    </div>\n                    <div class="p-column-filter-buttonbar" *ngIf="showButtons">\n                        <button #clearBtn *ngIf="showClearButton" type="button" pButton class="p-button-outlined p-button-sm" (click)="clearFilter()" [attr.aria-label]="clearButtonLabel" [label]="clearButtonLabel" pRipple></button>\n                        <button *ngIf="showApplyButton" type="button" pButton (click)="applyFilter()" class="p-button-sm" [label]="applyButtonLabel" pRipple [attr.aria-label]="applyButtonLabel"></button>\n                    </div>\n                </ng-template>\n                <ng-container *ngTemplateOutlet="footerTemplate; context: { $implicit: field }"></ng-container>\n            </div>\n        </div>\n    ',
       animations: [trigger("overlayAnimation", [transition(":enter", [style({
         opacity: 0,
         transform: "scaleY(0.8)"
@@ -9311,31 +8797,31 @@ var ColumnFilter = class _ColumnFilter {
     }]
   });
 })();
-var ColumnFilterFormElement = class _ColumnFilterFormElement {
-  dt;
-  colFilter;
-  field;
-  type;
-  filterConstraint;
-  filterTemplate;
-  placeholder;
-  minFractionDigits;
-  maxFractionDigits;
-  prefix;
-  suffix;
-  locale;
-  localeMatcher;
-  currency;
-  currencyDisplay;
-  useGrouping = true;
-  ariaLabel;
-  get showButtons() {
-    return this.colFilter.showButtons;
-  }
-  filterCallback;
+var _ColumnFilterFormElement = class _ColumnFilterFormElement {
   constructor(dt, colFilter) {
+    __publicField(this, "dt");
+    __publicField(this, "colFilter");
+    __publicField(this, "field");
+    __publicField(this, "type");
+    __publicField(this, "filterConstraint");
+    __publicField(this, "filterTemplate");
+    __publicField(this, "placeholder");
+    __publicField(this, "minFractionDigits");
+    __publicField(this, "maxFractionDigits");
+    __publicField(this, "prefix");
+    __publicField(this, "suffix");
+    __publicField(this, "locale");
+    __publicField(this, "localeMatcher");
+    __publicField(this, "currency");
+    __publicField(this, "currencyDisplay");
+    __publicField(this, "useGrouping", true);
+    __publicField(this, "ariaLabel");
+    __publicField(this, "filterCallback");
     this.dt = dt;
     this.colFilter = colFilter;
+  }
+  get showButtons() {
+    return this.colFilter.showButtons;
   }
   ngOnInit() {
     this.filterCallback = (value) => {
@@ -9359,114 +8845,54 @@ var ColumnFilterFormElement = class _ColumnFilterFormElement {
       event.preventDefault();
     }
   }
-  static ɵfac = function ColumnFilterFormElement_Factory(__ngFactoryType__) {
-    return new (__ngFactoryType__ || _ColumnFilterFormElement)(ɵɵdirectiveInject(Table), ɵɵdirectiveInject(ColumnFilter));
-  };
-  static ɵcmp = ɵɵdefineComponent({
-    type: _ColumnFilterFormElement,
-    selectors: [["p-columnFilterFormElement"]],
-    hostAttrs: [1, "p-element"],
-    inputs: {
-      field: "field",
-      type: "type",
-      filterConstraint: "filterConstraint",
-      filterTemplate: "filterTemplate",
-      placeholder: "placeholder",
-      minFractionDigits: [2, "minFractionDigits", "minFractionDigits", (value) => numberAttribute(value, null)],
-      maxFractionDigits: [2, "maxFractionDigits", "maxFractionDigits", (value) => numberAttribute(value, null)],
-      prefix: "prefix",
-      suffix: "suffix",
-      locale: "locale",
-      localeMatcher: "localeMatcher",
-      currency: "currency",
-      currencyDisplay: "currencyDisplay",
-      useGrouping: [2, "useGrouping", "useGrouping", booleanAttribute],
-      ariaLabel: "ariaLabel"
-    },
-    features: [ɵɵInputTransformsFeature],
-    decls: 3,
-    vars: 2,
-    consts: [["builtInElement", ""], [4, "ngIf", "ngIfElse"], [4, "ngTemplateOutlet", "ngTemplateOutletContext"], [3, "ngSwitch"], ["type", "text", "pInputText", "", 3, "ariaLabel", "value", "input", "keydown.enter", 4, "ngSwitchCase"], [3, "ngModel", "showButtons", "minFractionDigits", "maxFractionDigits", "ariaLabel", "prefix", "suffix", "placeholder", "mode", "locale", "localeMatcher", "currency", "currencyDisplay", "useGrouping", "ngModelChange", "onKeyDown", 4, "ngSwitchCase"], [3, "ariaLabel", "ngModel", "ngModelChange", 4, "ngSwitchCase"], ["appendTo", "body", 3, "ariaLabel", "placeholder", "ngModel", "ngModelChange", 4, "ngSwitchCase"], ["type", "text", "pInputText", "", 3, "input", "keydown.enter", "ariaLabel", "value"], [3, "ngModelChange", "onKeyDown", "ngModel", "showButtons", "minFractionDigits", "maxFractionDigits", "ariaLabel", "prefix", "suffix", "placeholder", "mode", "locale", "localeMatcher", "currency", "currencyDisplay", "useGrouping"], [3, "ngModelChange", "ariaLabel", "ngModel"], ["appendTo", "body", 3, "ngModelChange", "ariaLabel", "placeholder", "ngModel"]],
-    template: function ColumnFilterFormElement_Template(rf, ctx) {
-      if (rf & 1) {
-        ɵɵtemplate(0, ColumnFilterFormElement_ng_container_0_Template, 2, 19, "ng-container", 1)(1, ColumnFilterFormElement_ng_template_1_Template, 5, 5, "ng-template", null, 0, ɵɵtemplateRefExtractor);
-      }
-      if (rf & 2) {
-        const builtInElement_r6 = ɵɵreference(2);
-        ɵɵproperty("ngIf", ctx.filterTemplate)("ngIfElse", builtInElement_r6);
-      }
-    },
-    dependencies: [NgIf, NgTemplateOutlet, NgSwitch, NgSwitchCase, InputNumber, NgControlStatus, NgModel, InputText, Calendar, TriStateCheckbox],
-    encapsulation: 2
-  });
 };
+__publicField(_ColumnFilterFormElement, "ɵfac", function ColumnFilterFormElement_Factory(__ngFactoryType__) {
+  return new (__ngFactoryType__ || _ColumnFilterFormElement)(ɵɵdirectiveInject(Table), ɵɵdirectiveInject(ColumnFilter));
+});
+__publicField(_ColumnFilterFormElement, "ɵcmp", ɵɵdefineComponent({
+  type: _ColumnFilterFormElement,
+  selectors: [["p-columnFilterFormElement"]],
+  hostAttrs: [1, "p-element"],
+  inputs: {
+    field: "field",
+    type: "type",
+    filterConstraint: "filterConstraint",
+    filterTemplate: "filterTemplate",
+    placeholder: "placeholder",
+    minFractionDigits: [2, "minFractionDigits", "minFractionDigits", (value) => numberAttribute(value, null)],
+    maxFractionDigits: [2, "maxFractionDigits", "maxFractionDigits", (value) => numberAttribute(value, null)],
+    prefix: "prefix",
+    suffix: "suffix",
+    locale: "locale",
+    localeMatcher: "localeMatcher",
+    currency: "currency",
+    currencyDisplay: "currencyDisplay",
+    useGrouping: [2, "useGrouping", "useGrouping", booleanAttribute],
+    ariaLabel: "ariaLabel"
+  },
+  features: [ɵɵInputTransformsFeature],
+  decls: 3,
+  vars: 2,
+  consts: [["builtInElement", ""], [4, "ngIf", "ngIfElse"], [4, "ngTemplateOutlet", "ngTemplateOutletContext"], [3, "ngSwitch"], ["type", "text", "pInputText", "", 3, "ariaLabel", "value", "input", "keydown.enter", 4, "ngSwitchCase"], [3, "ngModel", "showButtons", "minFractionDigits", "maxFractionDigits", "ariaLabel", "prefix", "suffix", "placeholder", "mode", "locale", "localeMatcher", "currency", "currencyDisplay", "useGrouping", "ngModelChange", "onKeyDown", 4, "ngSwitchCase"], [3, "ariaLabel", "ngModel", "ngModelChange", 4, "ngSwitchCase"], ["appendTo", "body", 3, "ariaLabel", "placeholder", "ngModel", "ngModelChange", 4, "ngSwitchCase"], ["type", "text", "pInputText", "", 3, "input", "keydown.enter", "ariaLabel", "value"], [3, "ngModelChange", "onKeyDown", "ngModel", "showButtons", "minFractionDigits", "maxFractionDigits", "ariaLabel", "prefix", "suffix", "placeholder", "mode", "locale", "localeMatcher", "currency", "currencyDisplay", "useGrouping"], [3, "ngModelChange", "ariaLabel", "ngModel"], ["appendTo", "body", 3, "ngModelChange", "ariaLabel", "placeholder", "ngModel"]],
+  template: function ColumnFilterFormElement_Template(rf, ctx) {
+    if (rf & 1) {
+      ɵɵtemplate(0, ColumnFilterFormElement_ng_container_0_Template, 2, 19, "ng-container", 1)(1, ColumnFilterFormElement_ng_template_1_Template, 5, 5, "ng-template", null, 0, ɵɵtemplateRefExtractor);
+    }
+    if (rf & 2) {
+      const builtInElement_r6 = ɵɵreference(2);
+      ɵɵproperty("ngIf", ctx.filterTemplate)("ngIfElse", builtInElement_r6);
+    }
+  },
+  dependencies: [NgIf, NgTemplateOutlet, NgSwitch, NgSwitchCase, InputNumber, NgControlStatus, NgModel, InputText, Calendar, TriStateCheckbox],
+  encapsulation: 2
+}));
+var ColumnFilterFormElement = _ColumnFilterFormElement;
 (() => {
   (typeof ngDevMode === "undefined" || ngDevMode) && setClassMetadata(ColumnFilterFormElement, [{
     type: Component,
     args: [{
       selector: "p-columnFilterFormElement",
-      template: `
-        <ng-container *ngIf="filterTemplate; else builtInElement">
-            <ng-container
-                *ngTemplateOutlet="
-                    filterTemplate;
-                    context: {
-                        $implicit: filterConstraint?.value,
-                        filterCallback: filterCallback,
-                        type: type,
-                        field: field,
-                        filterConstraint: filterConstraint,
-                        placeholder: placeholder,
-                        minFractionDigits: minFractionDigits,
-                        maxFractionDigits: maxFractionDigits,
-                        prefix: prefix,
-                        suffix: suffix,
-                        locale: locale,
-                        localeMatcher: localeMatcher,
-                        currency: currency,
-                        currencyDisplay: currencyDisplay,
-                        useGrouping: useGrouping,
-                        showButtons: showButtons
-                    }
-                "
-            ></ng-container>
-        </ng-container>
-        <ng-template #builtInElement>
-            <ng-container [ngSwitch]="type">
-                <input
-                    *ngSwitchCase="'text'"
-                    type="text"
-                    [ariaLabel]="ariaLabel"
-                    pInputText
-                    [value]="filterConstraint?.value"
-                    (input)="onModelChange($event.target.value)"
-                    (keydown.enter)="onTextInputEnterKeyDown($event)"
-                    [attr.placeholder]="placeholder"
-                />
-                <p-inputNumber
-                    *ngSwitchCase="'numeric'"
-                    [ngModel]="filterConstraint?.value"
-                    (ngModelChange)="onModelChange($event)"
-                    (onKeyDown)="onNumericInputKeyDown($event)"
-                    [showButtons]="showButtons"
-                    [minFractionDigits]="minFractionDigits"
-                    [maxFractionDigits]="maxFractionDigits"
-                    [ariaLabel]="ariaLabel"
-                    [prefix]="prefix"
-                    [suffix]="suffix"
-                    [placeholder]="placeholder"
-                    [mode]="currency ? 'currency' : 'decimal'"
-                    [locale]="locale"
-                    [localeMatcher]="localeMatcher"
-                    [currency]="currency"
-                    [currencyDisplay]="currencyDisplay"
-                    [useGrouping]="useGrouping"
-                ></p-inputNumber>
-                <p-triStateCheckbox [ariaLabel]="ariaLabel" *ngSwitchCase="'boolean'" [ngModel]="filterConstraint?.value" (ngModelChange)="onModelChange($event)"></p-triStateCheckbox>
-                <p-calendar [ariaLabel]="ariaLabel" *ngSwitchCase="'date'" [placeholder]="placeholder" [ngModel]="filterConstraint?.value" (ngModelChange)="onModelChange($event)" appendTo="body"></p-calendar>
-            </ng-container>
-        </ng-template>
-    `,
+      template: '\n        <ng-container *ngIf="filterTemplate; else builtInElement">\n            <ng-container\n                *ngTemplateOutlet="\n                    filterTemplate;\n                    context: {\n                        $implicit: filterConstraint?.value,\n                        filterCallback: filterCallback,\n                        type: type,\n                        field: field,\n                        filterConstraint: filterConstraint,\n                        placeholder: placeholder,\n                        minFractionDigits: minFractionDigits,\n                        maxFractionDigits: maxFractionDigits,\n                        prefix: prefix,\n                        suffix: suffix,\n                        locale: locale,\n                        localeMatcher: localeMatcher,\n                        currency: currency,\n                        currencyDisplay: currencyDisplay,\n                        useGrouping: useGrouping,\n                        showButtons: showButtons\n                    }\n                "\n            ></ng-container>\n        </ng-container>\n        <ng-template #builtInElement>\n            <ng-container [ngSwitch]="type">\n                <input\n                    *ngSwitchCase="\'text\'"\n                    type="text"\n                    [ariaLabel]="ariaLabel"\n                    pInputText\n                    [value]="filterConstraint?.value"\n                    (input)="onModelChange($event.target.value)"\n                    (keydown.enter)="onTextInputEnterKeyDown($event)"\n                    [attr.placeholder]="placeholder"\n                />\n                <p-inputNumber\n                    *ngSwitchCase="\'numeric\'"\n                    [ngModel]="filterConstraint?.value"\n                    (ngModelChange)="onModelChange($event)"\n                    (onKeyDown)="onNumericInputKeyDown($event)"\n                    [showButtons]="showButtons"\n                    [minFractionDigits]="minFractionDigits"\n                    [maxFractionDigits]="maxFractionDigits"\n                    [ariaLabel]="ariaLabel"\n                    [prefix]="prefix"\n                    [suffix]="suffix"\n                    [placeholder]="placeholder"\n                    [mode]="currency ? \'currency\' : \'decimal\'"\n                    [locale]="locale"\n                    [localeMatcher]="localeMatcher"\n                    [currency]="currency"\n                    [currencyDisplay]="currencyDisplay"\n                    [useGrouping]="useGrouping"\n                ></p-inputNumber>\n                <p-triStateCheckbox [ariaLabel]="ariaLabel" *ngSwitchCase="\'boolean\'" [ngModel]="filterConstraint?.value" (ngModelChange)="onModelChange($event)"></p-triStateCheckbox>\n                <p-calendar [ariaLabel]="ariaLabel" *ngSwitchCase="\'date\'" [placeholder]="placeholder" [ngModel]="filterConstraint?.value" (ngModelChange)="onModelChange($event)" appendTo="body"></p-calendar>\n            </ng-container>\n        </ng-template>\n    ',
       encapsulation: ViewEncapsulation$1.None,
       host: {
         class: "p-element"
@@ -9533,20 +8959,21 @@ var ColumnFilterFormElement = class _ColumnFilterFormElement {
     }]
   });
 })();
-var TableModule = class _TableModule {
-  static ɵfac = function TableModule_Factory(__ngFactoryType__) {
-    return new (__ngFactoryType__ || _TableModule)();
-  };
-  static ɵmod = ɵɵdefineNgModule({
-    type: _TableModule,
-    declarations: [Table, SortableColumn, FrozenColumn, RowGroupHeader, SelectableRow, RowToggler, ContextMenuRow, ResizableColumn, ReorderableColumn, EditableColumn, CellEditor, TableBody, SortIcon, TableRadioButton, TableCheckbox, TableHeaderCheckbox, ReorderableRowHandle, ReorderableRow, SelectableRowDblClick, EditableRow, InitEditableRow, SaveEditableRow, CancelEditableRow, ColumnFilter, ColumnFilterFormElement],
-    imports: [CommonModule, PaginatorModule, InputTextModule, DropdownModule, FormsModule, ButtonModule, SelectButtonModule, CalendarModule, InputNumberModule, TriStateCheckboxModule, ScrollerModule, ArrowDownIcon, ArrowUpIcon, SpinnerIcon, SortAltIcon, SortAmountUpAltIcon, SortAmountDownIcon, CheckIcon, FilterIcon, FilterSlashIcon, PlusIcon, TrashIcon],
-    exports: [Table, SharedModule, SortableColumn, FrozenColumn, RowGroupHeader, SelectableRow, RowToggler, ContextMenuRow, ResizableColumn, ReorderableColumn, EditableColumn, CellEditor, SortIcon, TableRadioButton, TableCheckbox, TableHeaderCheckbox, ReorderableRowHandle, ReorderableRow, SelectableRowDblClick, EditableRow, InitEditableRow, SaveEditableRow, CancelEditableRow, ColumnFilter, ColumnFilterFormElement, ScrollerModule]
-  });
-  static ɵinj = ɵɵdefineInjector({
-    imports: [CommonModule, PaginatorModule, InputTextModule, DropdownModule, FormsModule, ButtonModule, SelectButtonModule, CalendarModule, InputNumberModule, TriStateCheckboxModule, ScrollerModule, ArrowDownIcon, ArrowUpIcon, SpinnerIcon, SortAltIcon, SortAmountUpAltIcon, SortAmountDownIcon, CheckIcon, FilterIcon, FilterSlashIcon, PlusIcon, TrashIcon, SharedModule, ScrollerModule]
-  });
+var _TableModule = class _TableModule {
 };
+__publicField(_TableModule, "ɵfac", function TableModule_Factory(__ngFactoryType__) {
+  return new (__ngFactoryType__ || _TableModule)();
+});
+__publicField(_TableModule, "ɵmod", ɵɵdefineNgModule({
+  type: _TableModule,
+  declarations: [Table, SortableColumn, FrozenColumn, RowGroupHeader, SelectableRow, RowToggler, ContextMenuRow, ResizableColumn, ReorderableColumn, EditableColumn, CellEditor, TableBody, SortIcon, TableRadioButton, TableCheckbox, TableHeaderCheckbox, ReorderableRowHandle, ReorderableRow, SelectableRowDblClick, EditableRow, InitEditableRow, SaveEditableRow, CancelEditableRow, ColumnFilter, ColumnFilterFormElement],
+  imports: [CommonModule, PaginatorModule, InputTextModule, DropdownModule, FormsModule, ButtonModule, SelectButtonModule, CalendarModule, InputNumberModule, TriStateCheckboxModule, ScrollerModule, ArrowDownIcon, ArrowUpIcon, SpinnerIcon, SortAltIcon, SortAmountUpAltIcon, SortAmountDownIcon, CheckIcon, FilterIcon, FilterSlashIcon, PlusIcon, TrashIcon],
+  exports: [Table, SharedModule, SortableColumn, FrozenColumn, RowGroupHeader, SelectableRow, RowToggler, ContextMenuRow, ResizableColumn, ReorderableColumn, EditableColumn, CellEditor, SortIcon, TableRadioButton, TableCheckbox, TableHeaderCheckbox, ReorderableRowHandle, ReorderableRow, SelectableRowDblClick, EditableRow, InitEditableRow, SaveEditableRow, CancelEditableRow, ColumnFilter, ColumnFilterFormElement, ScrollerModule]
+}));
+__publicField(_TableModule, "ɵinj", ɵɵdefineInjector({
+  imports: [CommonModule, PaginatorModule, InputTextModule, DropdownModule, FormsModule, ButtonModule, SelectButtonModule, CalendarModule, InputNumberModule, TriStateCheckboxModule, ScrollerModule, ArrowDownIcon, ArrowUpIcon, SpinnerIcon, SortAltIcon, SortAmountUpAltIcon, SortAmountDownIcon, CheckIcon, FilterIcon, FilterSlashIcon, PlusIcon, TrashIcon, SharedModule, ScrollerModule]
+}));
+var TableModule = _TableModule;
 (() => {
   (typeof ngDevMode === "undefined" || ngDevMode) && setClassMetadata(TableModule, [{
     type: NgModule,

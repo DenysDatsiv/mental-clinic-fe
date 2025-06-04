@@ -1,15 +1,15 @@
 import {
   RouterModule
-} from "./chunk-AQMTG6B6.js";
-import "./chunk-3E3YFUVD.js";
-import "./chunk-DO2TVYAE.js";
+} from "./chunk-JBMGT7BE.js";
 import {
   SharedModule
-} from "./chunk-TQSVMJ6K.js";
-import "./chunk-3OF44R55.js";
+} from "./chunk-ZROJCIWL.js";
+import "./chunk-U3NLM53U.js";
+import "./chunk-MWP4G2UW.js";
+import "./chunk-RWZD3TDV.js";
 import {
   CommonModule
-} from "./chunk-UBZYO7FG.js";
+} from "./chunk-KUZ63KOD.js";
 import {
   ChangeDetectionStrategy,
   Component,
@@ -23,66 +23,66 @@ import {
   ɵɵelementStart,
   ɵɵprojection,
   ɵɵprojectionDef
-} from "./chunk-ZI2Q76R4.js";
-import "./chunk-5OPE3T2R.js";
+} from "./chunk-R75KKECJ.js";
 import "./chunk-4N4GOYJH.js";
+import "./chunk-5OPE3T2R.js";
 import "./chunk-FHTVLBLO.js";
-import "./chunk-3OV72XIM.js";
+import {
+  __publicField
+} from "./chunk-IJZFAMY6.js";
 
 // node_modules/primeng/fesm2022/primeng-floatlabel.mjs
 var _c0 = ["*"];
-var FloatLabel = class _FloatLabel {
-  static ɵfac = function FloatLabel_Factory(__ngFactoryType__) {
-    return new (__ngFactoryType__ || _FloatLabel)();
-  };
-  static ɵcmp = ɵɵdefineComponent({
-    type: _FloatLabel,
-    selectors: [["p-floatLabel"]],
-    ngContentSelectors: _c0,
-    decls: 2,
-    vars: 0,
-    consts: [[1, "p-float-label"]],
-    template: function FloatLabel_Template(rf, ctx) {
-      if (rf & 1) {
-        ɵɵprojectionDef();
-        ɵɵelementStart(0, "span", 0);
-        ɵɵprojection(1);
-        ɵɵelementEnd();
-      }
-    },
-    encapsulation: 2,
-    changeDetection: 0
-  });
+var _FloatLabel = class _FloatLabel {
 };
+__publicField(_FloatLabel, "ɵfac", function FloatLabel_Factory(__ngFactoryType__) {
+  return new (__ngFactoryType__ || _FloatLabel)();
+});
+__publicField(_FloatLabel, "ɵcmp", ɵɵdefineComponent({
+  type: _FloatLabel,
+  selectors: [["p-floatLabel"]],
+  ngContentSelectors: _c0,
+  decls: 2,
+  vars: 0,
+  consts: [[1, "p-float-label"]],
+  template: function FloatLabel_Template(rf, ctx) {
+    if (rf & 1) {
+      ɵɵprojectionDef();
+      ɵɵelementStart(0, "span", 0);
+      ɵɵprojection(1);
+      ɵɵelementEnd();
+    }
+  },
+  encapsulation: 2,
+  changeDetection: 0
+}));
+var FloatLabel = _FloatLabel;
 (() => {
   (typeof ngDevMode === "undefined" || ngDevMode) && setClassMetadata(FloatLabel, [{
     type: Component,
     args: [{
       selector: "p-floatLabel",
-      template: `
-        <span class="p-float-label">
-            <ng-content></ng-content>
-        </span>
-    `,
+      template: '\n        <span class="p-float-label">\n            <ng-content></ng-content>\n        </span>\n    ',
       changeDetection: ChangeDetectionStrategy.OnPush,
       encapsulation: ViewEncapsulation$1.None
     }]
   }], null, null);
 })();
-var FloatLabelModule = class _FloatLabelModule {
-  static ɵfac = function FloatLabelModule_Factory(__ngFactoryType__) {
-    return new (__ngFactoryType__ || _FloatLabelModule)();
-  };
-  static ɵmod = ɵɵdefineNgModule({
-    type: _FloatLabelModule,
-    declarations: [FloatLabel],
-    imports: [CommonModule, SharedModule, RouterModule],
-    exports: [FloatLabel, SharedModule]
-  });
-  static ɵinj = ɵɵdefineInjector({
-    imports: [CommonModule, SharedModule, RouterModule, SharedModule]
-  });
+var _FloatLabelModule = class _FloatLabelModule {
 };
+__publicField(_FloatLabelModule, "ɵfac", function FloatLabelModule_Factory(__ngFactoryType__) {
+  return new (__ngFactoryType__ || _FloatLabelModule)();
+});
+__publicField(_FloatLabelModule, "ɵmod", ɵɵdefineNgModule({
+  type: _FloatLabelModule,
+  declarations: [FloatLabel],
+  imports: [CommonModule, SharedModule, RouterModule],
+  exports: [FloatLabel, SharedModule]
+}));
+__publicField(_FloatLabelModule, "ɵinj", ɵɵdefineInjector({
+  imports: [CommonModule, SharedModule, RouterModule, SharedModule]
+}));
+var FloatLabelModule = _FloatLabelModule;
 (() => {
   (typeof ngDevMode === "undefined" || ngDevMode) && setClassMetadata(FloatLabelModule, [{
     type: NgModule,

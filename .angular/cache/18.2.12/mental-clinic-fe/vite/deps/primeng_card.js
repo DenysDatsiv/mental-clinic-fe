@@ -3,17 +3,17 @@ import {
   Header,
   PrimeTemplate,
   SharedModule
-} from "./chunk-TQSVMJ6K.js";
+} from "./chunk-ZROJCIWL.js";
 import {
   ObjectUtils
-} from "./chunk-3OF44R55.js";
+} from "./chunk-U3NLM53U.js";
 import {
   CommonModule,
   NgClass,
   NgIf,
   NgStyle,
   NgTemplateOutlet
-} from "./chunk-UBZYO7FG.js";
+} from "./chunk-KUZ63KOD.js";
 import {
   ChangeDetectionStrategy,
   Component,
@@ -45,11 +45,13 @@ import {
   ɵɵtemplate,
   ɵɵtext,
   ɵɵtextInterpolate1
-} from "./chunk-ZI2Q76R4.js";
-import "./chunk-5OPE3T2R.js";
+} from "./chunk-R75KKECJ.js";
 import "./chunk-4N4GOYJH.js";
+import "./chunk-5OPE3T2R.js";
 import "./chunk-FHTVLBLO.js";
-import "./chunk-3OV72XIM.js";
+import {
+  __publicField
+} from "./chunk-IJZFAMY6.js";
 
 // node_modules/primeng/fesm2022/primeng-card.mjs
 var _c0 = ["*", [["p-header"]], [["p-footer"]]];
@@ -135,18 +137,35 @@ function Card_div_8_Template(rf, ctx) {
     ɵɵproperty("ngTemplateOutlet", ctx_r0.footerTemplate);
   }
 }
-var Card = class _Card {
-  el;
-  /**
-   * Header of the card.
-   * @group Props
-   */
-  header;
-  /**
-   * Subheader of the card.
-   * @group Props
-   */
-  subheader;
+var _Card = class _Card {
+  constructor(el) {
+    __publicField(this, "el");
+    /**
+     * Header of the card.
+     * @group Props
+     */
+    __publicField(this, "header");
+    /**
+     * Subheader of the card.
+     * @group Props
+     */
+    __publicField(this, "subheader");
+    /**
+     * Class of the element.
+     * @group Props
+     */
+    __publicField(this, "styleClass");
+    __publicField(this, "headerFacet");
+    __publicField(this, "footerFacet");
+    __publicField(this, "templates");
+    __publicField(this, "headerTemplate");
+    __publicField(this, "titleTemplate");
+    __publicField(this, "subtitleTemplate");
+    __publicField(this, "contentTemplate");
+    __publicField(this, "footerTemplate");
+    __publicField(this, "_style", signal(null));
+    this.el = el;
+  }
   /**
    * Inline style of the element.
    * @group Props
@@ -155,23 +174,6 @@ var Card = class _Card {
     if (!ObjectUtils.equals(this._style(), value)) {
       this._style.set(value);
     }
-  }
-  /**
-   * Class of the element.
-   * @group Props
-   */
-  styleClass;
-  headerFacet;
-  footerFacet;
-  templates;
-  headerTemplate;
-  titleTemplate;
-  subtitleTemplate;
-  contentTemplate;
-  footerTemplate;
-  _style = signal(null);
-  constructor(el) {
-    this.el = el;
   }
   ngAfterContentInit() {
     this.templates.forEach((item) => {
@@ -200,103 +202,79 @@ var Card = class _Card {
   getBlockableElement() {
     return this.el.nativeElement.children[0];
   }
-  static ɵfac = function Card_Factory(__ngFactoryType__) {
-    return new (__ngFactoryType__ || _Card)(ɵɵdirectiveInject(ElementRef));
-  };
-  static ɵcmp = ɵɵdefineComponent({
-    type: _Card,
-    selectors: [["p-card"]],
-    contentQueries: function Card_ContentQueries(rf, ctx, dirIndex) {
-      if (rf & 1) {
-        ɵɵcontentQuery(dirIndex, Header, 5);
-        ɵɵcontentQuery(dirIndex, Footer, 5);
-        ɵɵcontentQuery(dirIndex, PrimeTemplate, 4);
-      }
-      if (rf & 2) {
-        let _t;
-        ɵɵqueryRefresh(_t = ɵɵloadQuery()) && (ctx.headerFacet = _t.first);
-        ɵɵqueryRefresh(_t = ɵɵloadQuery()) && (ctx.footerFacet = _t.first);
-        ɵɵqueryRefresh(_t = ɵɵloadQuery()) && (ctx.templates = _t);
-      }
-    },
-    hostAttrs: [1, "p-element"],
-    inputs: {
-      header: "header",
-      subheader: "subheader",
-      style: "style",
-      styleClass: "styleClass"
-    },
-    ngContentSelectors: _c1,
-    decls: 9,
-    vars: 10,
-    consts: [[3, "ngClass", "ngStyle"], ["class", "p-card-header", 4, "ngIf"], [1, "p-card-body"], ["class", "p-card-title", 4, "ngIf"], ["class", "p-card-subtitle", 4, "ngIf"], [1, "p-card-content"], [4, "ngTemplateOutlet"], ["class", "p-card-footer", 4, "ngIf"], [1, "p-card-header"], [1, "p-card-title"], [1, "p-card-subtitle"], [1, "p-card-footer"]],
-    template: function Card_Template(rf, ctx) {
-      if (rf & 1) {
-        ɵɵprojectionDef(_c0);
-        ɵɵelementStart(0, "div", 0);
-        ɵɵtemplate(1, Card_div_1_Template, 3, 1, "div", 1);
-        ɵɵelementStart(2, "div", 2);
-        ɵɵtemplate(3, Card_div_3_Template, 3, 2, "div", 3)(4, Card_div_4_Template, 3, 2, "div", 4);
-        ɵɵelementStart(5, "div", 5);
-        ɵɵprojection(6);
-        ɵɵtemplate(7, Card_ng_container_7_Template, 1, 0, "ng-container", 6);
-        ɵɵelementEnd();
-        ɵɵtemplate(8, Card_div_8_Template, 3, 1, "div", 7);
-        ɵɵelementEnd()();
-      }
-      if (rf & 2) {
-        ɵɵclassMap(ctx.styleClass);
-        ɵɵproperty("ngClass", "p-card p-component")("ngStyle", ctx._style());
-        ɵɵattribute("data-pc-name", "card");
-        ɵɵadvance();
-        ɵɵproperty("ngIf", ctx.headerFacet || ctx.headerTemplate);
-        ɵɵadvance(2);
-        ɵɵproperty("ngIf", ctx.header || ctx.titleTemplate);
-        ɵɵadvance();
-        ɵɵproperty("ngIf", ctx.subheader || ctx.subtitleTemplate);
-        ɵɵadvance(3);
-        ɵɵproperty("ngTemplateOutlet", ctx.contentTemplate);
-        ɵɵadvance();
-        ɵɵproperty("ngIf", ctx.footerFacet || ctx.footerTemplate);
-      }
-    },
-    dependencies: [NgClass, NgIf, NgTemplateOutlet, NgStyle],
-    styles: ["@layer primeng{.p-card-header img{width:100%}}\n"],
-    encapsulation: 2,
-    changeDetection: 0
-  });
 };
+__publicField(_Card, "ɵfac", function Card_Factory(__ngFactoryType__) {
+  return new (__ngFactoryType__ || _Card)(ɵɵdirectiveInject(ElementRef));
+});
+__publicField(_Card, "ɵcmp", ɵɵdefineComponent({
+  type: _Card,
+  selectors: [["p-card"]],
+  contentQueries: function Card_ContentQueries(rf, ctx, dirIndex) {
+    if (rf & 1) {
+      ɵɵcontentQuery(dirIndex, Header, 5);
+      ɵɵcontentQuery(dirIndex, Footer, 5);
+      ɵɵcontentQuery(dirIndex, PrimeTemplate, 4);
+    }
+    if (rf & 2) {
+      let _t;
+      ɵɵqueryRefresh(_t = ɵɵloadQuery()) && (ctx.headerFacet = _t.first);
+      ɵɵqueryRefresh(_t = ɵɵloadQuery()) && (ctx.footerFacet = _t.first);
+      ɵɵqueryRefresh(_t = ɵɵloadQuery()) && (ctx.templates = _t);
+    }
+  },
+  hostAttrs: [1, "p-element"],
+  inputs: {
+    header: "header",
+    subheader: "subheader",
+    style: "style",
+    styleClass: "styleClass"
+  },
+  ngContentSelectors: _c1,
+  decls: 9,
+  vars: 10,
+  consts: [[3, "ngClass", "ngStyle"], ["class", "p-card-header", 4, "ngIf"], [1, "p-card-body"], ["class", "p-card-title", 4, "ngIf"], ["class", "p-card-subtitle", 4, "ngIf"], [1, "p-card-content"], [4, "ngTemplateOutlet"], ["class", "p-card-footer", 4, "ngIf"], [1, "p-card-header"], [1, "p-card-title"], [1, "p-card-subtitle"], [1, "p-card-footer"]],
+  template: function Card_Template(rf, ctx) {
+    if (rf & 1) {
+      ɵɵprojectionDef(_c0);
+      ɵɵelementStart(0, "div", 0);
+      ɵɵtemplate(1, Card_div_1_Template, 3, 1, "div", 1);
+      ɵɵelementStart(2, "div", 2);
+      ɵɵtemplate(3, Card_div_3_Template, 3, 2, "div", 3)(4, Card_div_4_Template, 3, 2, "div", 4);
+      ɵɵelementStart(5, "div", 5);
+      ɵɵprojection(6);
+      ɵɵtemplate(7, Card_ng_container_7_Template, 1, 0, "ng-container", 6);
+      ɵɵelementEnd();
+      ɵɵtemplate(8, Card_div_8_Template, 3, 1, "div", 7);
+      ɵɵelementEnd()();
+    }
+    if (rf & 2) {
+      ɵɵclassMap(ctx.styleClass);
+      ɵɵproperty("ngClass", "p-card p-component")("ngStyle", ctx._style());
+      ɵɵattribute("data-pc-name", "card");
+      ɵɵadvance();
+      ɵɵproperty("ngIf", ctx.headerFacet || ctx.headerTemplate);
+      ɵɵadvance(2);
+      ɵɵproperty("ngIf", ctx.header || ctx.titleTemplate);
+      ɵɵadvance();
+      ɵɵproperty("ngIf", ctx.subheader || ctx.subtitleTemplate);
+      ɵɵadvance(3);
+      ɵɵproperty("ngTemplateOutlet", ctx.contentTemplate);
+      ɵɵadvance();
+      ɵɵproperty("ngIf", ctx.footerFacet || ctx.footerTemplate);
+    }
+  },
+  dependencies: [NgClass, NgIf, NgTemplateOutlet, NgStyle],
+  styles: ["@layer primeng{.p-card-header img{width:100%}}\n"],
+  encapsulation: 2,
+  changeDetection: 0
+}));
+var Card = _Card;
 (() => {
   (typeof ngDevMode === "undefined" || ngDevMode) && setClassMetadata(Card, [{
     type: Component,
     args: [{
       selector: "p-card",
-      template: `
-        <div [ngClass]="'p-card p-component'" [ngStyle]="_style()" [class]="styleClass" [attr.data-pc-name]="'card'">
-            <div class="p-card-header" *ngIf="headerFacet || headerTemplate">
-                <ng-content select="p-header"></ng-content>
-                <ng-container *ngTemplateOutlet="headerTemplate"></ng-container>
-            </div>
-            <div class="p-card-body">
-                <div class="p-card-title" *ngIf="header || titleTemplate">
-                    {{ header }}
-                    <ng-container *ngTemplateOutlet="titleTemplate"></ng-container>
-                </div>
-                <div class="p-card-subtitle" *ngIf="subheader || subtitleTemplate">
-                    {{ subheader }}
-                    <ng-container *ngTemplateOutlet="subtitleTemplate"></ng-container>
-                </div>
-                <div class="p-card-content">
-                    <ng-content></ng-content>
-                    <ng-container *ngTemplateOutlet="contentTemplate"></ng-container>
-                </div>
-                <div class="p-card-footer" *ngIf="footerFacet || footerTemplate">
-                    <ng-content select="p-footer"></ng-content>
-                    <ng-container *ngTemplateOutlet="footerTemplate"></ng-container>
-                </div>
-            </div>
-        </div>
-    `,
+      template: '\n        <div [ngClass]="\'p-card p-component\'" [ngStyle]="_style()" [class]="styleClass" [attr.data-pc-name]="\'card\'">\n            <div class="p-card-header" *ngIf="headerFacet || headerTemplate">\n                <ng-content select="p-header"></ng-content>\n                <ng-container *ngTemplateOutlet="headerTemplate"></ng-container>\n            </div>\n            <div class="p-card-body">\n                <div class="p-card-title" *ngIf="header || titleTemplate">\n                    {{ header }}\n                    <ng-container *ngTemplateOutlet="titleTemplate"></ng-container>\n                </div>\n                <div class="p-card-subtitle" *ngIf="subheader || subtitleTemplate">\n                    {{ subheader }}\n                    <ng-container *ngTemplateOutlet="subtitleTemplate"></ng-container>\n                </div>\n                <div class="p-card-content">\n                    <ng-content></ng-content>\n                    <ng-container *ngTemplateOutlet="contentTemplate"></ng-container>\n                </div>\n                <div class="p-card-footer" *ngIf="footerFacet || footerTemplate">\n                    <ng-content select="p-footer"></ng-content>\n                    <ng-container *ngTemplateOutlet="footerTemplate"></ng-container>\n                </div>\n            </div>\n        </div>\n    ',
       changeDetection: ChangeDetectionStrategy.OnPush,
       encapsulation: ViewEncapsulation$1.None,
       host: {
@@ -333,20 +311,21 @@ var Card = class _Card {
     }]
   });
 })();
-var CardModule = class _CardModule {
-  static ɵfac = function CardModule_Factory(__ngFactoryType__) {
-    return new (__ngFactoryType__ || _CardModule)();
-  };
-  static ɵmod = ɵɵdefineNgModule({
-    type: _CardModule,
-    declarations: [Card],
-    imports: [CommonModule],
-    exports: [Card, SharedModule]
-  });
-  static ɵinj = ɵɵdefineInjector({
-    imports: [CommonModule, SharedModule]
-  });
+var _CardModule = class _CardModule {
 };
+__publicField(_CardModule, "ɵfac", function CardModule_Factory(__ngFactoryType__) {
+  return new (__ngFactoryType__ || _CardModule)();
+});
+__publicField(_CardModule, "ɵmod", ɵɵdefineNgModule({
+  type: _CardModule,
+  declarations: [Card],
+  imports: [CommonModule],
+  exports: [Card, SharedModule]
+}));
+__publicField(_CardModule, "ɵinj", ɵɵdefineInjector({
+  imports: [CommonModule, SharedModule]
+}));
+var CardModule = _CardModule;
 (() => {
   (typeof ngDevMode === "undefined" || ngDevMode) && setClassMetadata(CardModule, [{
     type: NgModule,

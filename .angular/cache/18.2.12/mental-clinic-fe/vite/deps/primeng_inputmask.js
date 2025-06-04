@@ -1,27 +1,27 @@
 import {
   InputText,
   InputTextModule
-} from "./chunk-QU6QLMWV.js";
+} from "./chunk-SJTFEDMT.js";
 import {
   TimesIcon
-} from "./chunk-MDBJZ6LU.js";
+} from "./chunk-AP6UZX4B.js";
 import {
   AutoFocus,
   AutoFocusModule
-} from "./chunk-32JR77BM.js";
+} from "./chunk-LND2F6FW.js";
 import {
   NG_VALUE_ACCESSOR
-} from "./chunk-B7GQUK3J.js";
-import "./chunk-PXWZN6FU.js";
+} from "./chunk-ZOG4HQFG.js";
+import "./chunk-BJLZ3T2F.js";
 import {
   PrimeNGConfig,
   PrimeTemplate,
   SharedModule
-} from "./chunk-TQSVMJ6K.js";
-import "./chunk-3OF44R55.js";
+} from "./chunk-ZROJCIWL.js";
+import "./chunk-U3NLM53U.js";
 import {
   DomHandler
-} from "./chunk-BUGEQH7Q.js";
+} from "./chunk-LB42WWNC.js";
 import {
   CommonModule,
   DOCUMENT,
@@ -30,7 +30,7 @@ import {
   NgStyle,
   NgTemplateOutlet,
   isPlatformBrowser
-} from "./chunk-UBZYO7FG.js";
+} from "./chunk-KUZ63KOD.js";
 import {
   ChangeDetectionStrategy,
   ChangeDetectorRef,
@@ -74,11 +74,13 @@ import {
   ɵɵrestoreView,
   ɵɵtemplate,
   ɵɵviewQuery
-} from "./chunk-ZI2Q76R4.js";
-import "./chunk-5OPE3T2R.js";
+} from "./chunk-R75KKECJ.js";
 import "./chunk-4N4GOYJH.js";
+import "./chunk-5OPE3T2R.js";
 import "./chunk-FHTVLBLO.js";
-import "./chunk-3OV72XIM.js";
+import {
+  __publicField
+} from "./chunk-IJZFAMY6.js";
 
 // node_modules/primeng/fesm2022/primeng-inputmask.mjs
 var _c0 = ["input"];
@@ -143,127 +145,203 @@ var INPUTMASK_VALUE_ACCESSOR = {
   useExisting: forwardRef(() => InputMask),
   multi: true
 };
-var InputMask = class _InputMask {
-  document;
-  platformId;
-  el;
-  cd;
-  config;
-  /**
-   * HTML5 input type.
-   * @group Props
-   */
-  type = "text";
-  /**
-   * Placeholder character in mask, default is underscore.
-   * @group Props
-   */
-  slotChar = "_";
-  /**
-   * Clears the incomplete value on blur.
-   * @group Props
-   */
-  autoClear = true;
-  /**
-   * When enabled, a clear icon is displayed to clear the value.
-   * @group Props
-   */
-  showClear = false;
-  /**
-   * Inline style of the input field.
-   * @group Props
-   */
-  style;
-  /**
-   * Identifier of the focus input to match a label defined for the component.
-   * @group Props
-   */
-  inputId;
-  /**
-   * Style class of the input field.
-   * @group Props
-   */
-  styleClass;
-  /**
-   * Advisory information to display on input.
-   * @group Props
-   */
-  placeholder;
-  /**
-   * Size of the input field.
-   * @group Props
-   */
-  size;
-  /**
-   * Maximum number of character allows in the input field.
-   * @group Props
-   */
-  maxlength;
-  /**
-   * Specifies tab order of the element.
-   * @group Props
-   */
-  tabindex;
-  /**
-   * Title text of the input text.
-   * @group Props
-   */
-  title;
-  /**
-   * Specifies the input variant of the component.
-   * @group Props
-   */
-  variant = "outlined";
-  /**
-   * Used to define a string that labels the input element.
-   * @group Props
-   */
-  ariaLabel;
-  /**
-   * Establishes relationships between the component and label(s) where its value should be one or more element IDs.
-   * @group Props
-   */
-  ariaLabelledBy;
-  /**
-   * Used to indicate that user input is required on an element before a form can be submitted.
-   * @group Props
-   */
-  ariaRequired;
-  /**
-   * When present, it specifies that the element value cannot be altered.
-   * @group Props
-   */
-  disabled;
-  /**
-   * When present, it specifies that an input field is read-only.
-   * @group Props
-   */
-  readonly;
-  /**
-   * Defines if ngModel sets the raw unmasked value to bound value or the formatted mask value.
-   * @group Props
-   */
-  unmask;
-  /**
-   * Name of the input field.
-   * @group Props
-   */
-  name;
-  /**
-   * When present, it specifies that an input field must be filled out before submitting the form.
-   * @group Props
-   */
-  required;
-  /**
-   * Regex pattern for alpha characters
-   * @group Props
-   */
-  characterPattern = "[A-Za-z]";
-  /**
-   * When present, the input gets a focus automatically on load.
-   * @group Props
-   */
-  autofocus;
+var _InputMask = class _InputMask {
+  constructor(document, platformId, el, cd, config) {
+    __publicField(this, "document");
+    __publicField(this, "platformId");
+    __publicField(this, "el");
+    __publicField(this, "cd");
+    __publicField(this, "config");
+    /**
+     * HTML5 input type.
+     * @group Props
+     */
+    __publicField(this, "type", "text");
+    /**
+     * Placeholder character in mask, default is underscore.
+     * @group Props
+     */
+    __publicField(this, "slotChar", "_");
+    /**
+     * Clears the incomplete value on blur.
+     * @group Props
+     */
+    __publicField(this, "autoClear", true);
+    /**
+     * When enabled, a clear icon is displayed to clear the value.
+     * @group Props
+     */
+    __publicField(this, "showClear", false);
+    /**
+     * Inline style of the input field.
+     * @group Props
+     */
+    __publicField(this, "style");
+    /**
+     * Identifier of the focus input to match a label defined for the component.
+     * @group Props
+     */
+    __publicField(this, "inputId");
+    /**
+     * Style class of the input field.
+     * @group Props
+     */
+    __publicField(this, "styleClass");
+    /**
+     * Advisory information to display on input.
+     * @group Props
+     */
+    __publicField(this, "placeholder");
+    /**
+     * Size of the input field.
+     * @group Props
+     */
+    __publicField(this, "size");
+    /**
+     * Maximum number of character allows in the input field.
+     * @group Props
+     */
+    __publicField(this, "maxlength");
+    /**
+     * Specifies tab order of the element.
+     * @group Props
+     */
+    __publicField(this, "tabindex");
+    /**
+     * Title text of the input text.
+     * @group Props
+     */
+    __publicField(this, "title");
+    /**
+     * Specifies the input variant of the component.
+     * @group Props
+     */
+    __publicField(this, "variant", "outlined");
+    /**
+     * Used to define a string that labels the input element.
+     * @group Props
+     */
+    __publicField(this, "ariaLabel");
+    /**
+     * Establishes relationships between the component and label(s) where its value should be one or more element IDs.
+     * @group Props
+     */
+    __publicField(this, "ariaLabelledBy");
+    /**
+     * Used to indicate that user input is required on an element before a form can be submitted.
+     * @group Props
+     */
+    __publicField(this, "ariaRequired");
+    /**
+     * When present, it specifies that the element value cannot be altered.
+     * @group Props
+     */
+    __publicField(this, "disabled");
+    /**
+     * When present, it specifies that an input field is read-only.
+     * @group Props
+     */
+    __publicField(this, "readonly");
+    /**
+     * Defines if ngModel sets the raw unmasked value to bound value or the formatted mask value.
+     * @group Props
+     */
+    __publicField(this, "unmask");
+    /**
+     * Name of the input field.
+     * @group Props
+     */
+    __publicField(this, "name");
+    /**
+     * When present, it specifies that an input field must be filled out before submitting the form.
+     * @group Props
+     */
+    __publicField(this, "required");
+    /**
+     * Regex pattern for alpha characters
+     * @group Props
+     */
+    __publicField(this, "characterPattern", "[A-Za-z]");
+    /**
+     * When present, the input gets a focus automatically on load.
+     * @group Props
+     */
+    __publicField(this, "autofocus");
+    /**
+     * Used to define a string that autocomplete attribute the current element.
+     * @group Props
+     */
+    __publicField(this, "autocomplete");
+    /**
+     * When present, it specifies that whether to clean buffer value from model.
+     * @group Props
+     */
+    __publicField(this, "keepBuffer", false);
+    /**
+     * Callback to invoke when the mask is completed.
+     * @group Emits
+     */
+    __publicField(this, "onComplete", new EventEmitter());
+    /**
+     * Callback to invoke when the component receives focus.
+     * @param {Event} event - Browser event.
+     * @group Emits
+     */
+    __publicField(this, "onFocus", new EventEmitter());
+    /**
+     * Callback to invoke when the component loses focus.
+     * @param {Event} event - Browser event.
+     * @group Emits
+     */
+    __publicField(this, "onBlur", new EventEmitter());
+    /**
+     * Callback to invoke on input.
+     * @param {Event} event - Browser event.
+     * @group Emits
+     */
+    __publicField(this, "onInput", new EventEmitter());
+    /**
+     * Callback to invoke on input key press.
+     * @param {Event} event - Browser event.
+     * @group Emits
+     */
+    __publicField(this, "onKeydown", new EventEmitter());
+    /**
+     * Callback to invoke when input field is cleared.
+     * @group Emits
+     */
+    __publicField(this, "onClear", new EventEmitter());
+    __publicField(this, "inputViewChild");
+    __publicField(this, "templates");
+    __publicField(this, "clearIconTemplate");
+    __publicField(this, "value");
+    __publicField(this, "_mask");
+    __publicField(this, "onModelChange", () => {
+    });
+    __publicField(this, "onModelTouched", () => {
+    });
+    __publicField(this, "input");
+    __publicField(this, "filled");
+    __publicField(this, "defs");
+    __publicField(this, "tests");
+    __publicField(this, "partialPosition");
+    __publicField(this, "firstNonMaskPos");
+    __publicField(this, "lastRequiredNonMaskPos");
+    __publicField(this, "len");
+    __publicField(this, "oldVal");
+    __publicField(this, "buffer");
+    __publicField(this, "defaultBuffer");
+    __publicField(this, "focusText");
+    __publicField(this, "caretTimeoutId");
+    __publicField(this, "androidChrome", true);
+    __publicField(this, "focused");
+    __publicField(this, "_variant", "outlined");
+    this.document = document;
+    this.platformId = platformId;
+    this.el = el;
+    this.cd = cd;
+    this.config = config;
+  }
   /**
    * When present, the input gets a focus automatically on load.
    * @group Props
@@ -273,16 +351,6 @@ var InputMask = class _InputMask {
     this.autofocus = value;
     console.warn("autoFocus is deprecated. Use autofocus property instead.");
   }
-  /**
-   * Used to define a string that autocomplete attribute the current element.
-   * @group Props
-   */
-  autocomplete;
-  /**
-   * When present, it specifies that whether to clean buffer value from model.
-   * @group Props
-   */
-  keepBuffer = false;
   /**
    * Mask pattern.
    * @group Props
@@ -296,76 +364,10 @@ var InputMask = class _InputMask {
     this.writeValue("");
     this.onModelChange(this.value);
   }
-  /**
-   * Callback to invoke when the mask is completed.
-   * @group Emits
-   */
-  onComplete = new EventEmitter();
-  /**
-   * Callback to invoke when the component receives focus.
-   * @param {Event} event - Browser event.
-   * @group Emits
-   */
-  onFocus = new EventEmitter();
-  /**
-   * Callback to invoke when the component loses focus.
-   * @param {Event} event - Browser event.
-   * @group Emits
-   */
-  onBlur = new EventEmitter();
-  /**
-   * Callback to invoke on input.
-   * @param {Event} event - Browser event.
-   * @group Emits
-   */
-  onInput = new EventEmitter();
-  /**
-   * Callback to invoke on input key press.
-   * @param {Event} event - Browser event.
-   * @group Emits
-   */
-  onKeydown = new EventEmitter();
-  /**
-   * Callback to invoke when input field is cleared.
-   * @group Emits
-   */
-  onClear = new EventEmitter();
-  inputViewChild;
-  templates;
-  clearIconTemplate;
-  value;
-  _mask;
-  onModelChange = () => {
-  };
-  onModelTouched = () => {
-  };
-  input;
-  filled;
-  defs;
-  tests;
-  partialPosition;
-  firstNonMaskPos;
-  lastRequiredNonMaskPos;
-  len;
-  oldVal;
-  buffer;
-  defaultBuffer;
-  focusText;
-  caretTimeoutId;
-  androidChrome = true;
-  focused;
-  _variant = "outlined";
   get inputClass() {
     return {
       "p-inputmask": true
     };
-  }
-  constructor(document, platformId, el, cd, config) {
-    this.document = document;
-    this.platformId = platformId;
-    this.el = el;
-    this.cd = cd;
-    this.config = config;
   }
   ngOnInit() {
     if (isPlatformBrowser(this.platformId)) {
@@ -391,7 +393,7 @@ var InputMask = class _InputMask {
     this.defs = {
       "9": "[0-9]",
       a: this.characterPattern,
-      "*": `${this.characterPattern}|[0-9]`
+      "*": "".concat(this.characterPattern, "|[0-9]")
     };
     let maskTokens = this.mask.split("");
     for (let i = 0; i < maskTokens.length; i++) {
@@ -442,8 +444,9 @@ var InputMask = class _InputMask {
     this.cd.markForCheck();
   }
   caret(first, last) {
+    var _a;
     let range, begin, end;
-    if (!this.inputViewChild?.nativeElement.offsetParent || this.inputViewChild.nativeElement !== this.inputViewChild.nativeElement.ownerDocument.activeElement) {
+    if (!((_a = this.inputViewChild) == null ? void 0 : _a.nativeElement.offsetParent) || this.inputViewChild.nativeElement !== this.inputViewChild.nativeElement.ownerDocument.activeElement) {
       return;
     }
     if (typeof first == "number") {
@@ -531,7 +534,8 @@ var InputMask = class _InputMask {
     }
   }
   handleAndroidInput(e) {
-    var curVal = this.inputViewChild?.nativeElement.value;
+    var _a;
+    var curVal = (_a = this.inputViewChild) == null ? void 0 : _a.nativeElement.value;
     var pos = this.caret();
     if (this.oldVal && this.oldVal.length && this.oldVal.length > curVal.length) {
       this.checkVal(true);
@@ -567,6 +571,7 @@ var InputMask = class _InputMask {
     }
   }
   onInputBlur(e) {
+    var _a, _b, _c;
     this.focused = false;
     this.onModelTouched();
     if (!this.keepBuffer) {
@@ -574,14 +579,15 @@ var InputMask = class _InputMask {
     }
     this.updateFilledState();
     this.onBlur.emit(e);
-    if (this.inputViewChild?.nativeElement.value != this.focusText || this.inputViewChild?.nativeElement.value != this.value) {
+    if (((_a = this.inputViewChild) == null ? void 0 : _a.nativeElement.value) != this.focusText || ((_b = this.inputViewChild) == null ? void 0 : _b.nativeElement.value) != this.value) {
       this.updateModel(e);
       let event = this.document.createEvent("HTMLEvents");
       event.initEvent("change", true, false);
-      this.inputViewChild?.nativeElement.dispatchEvent(event);
+      (_c = this.inputViewChild) == null ? void 0 : _c.nativeElement.dispatchEvent(event);
     }
   }
   onInputKeydown(e) {
+    var _a;
     if (this.readonly) {
       return;
     }
@@ -590,7 +596,7 @@ var InputMask = class _InputMask {
     if (isPlatformBrowser(this.platformId)) {
       iPhone = /iphone/i.test(DomHandler.getUserAgent());
     }
-    this.oldVal = this.inputViewChild?.nativeElement.value;
+    this.oldVal = (_a = this.inputViewChild) == null ? void 0 : _a.nativeElement.value;
     this.onKeydown.emit(e);
     if (k === 8 || k === 46 || iPhone && k === 127) {
       pos = this.caret();
@@ -675,7 +681,8 @@ var InputMask = class _InputMask {
     this.inputViewChild.nativeElement.value = this.buffer.join("");
   }
   checkVal(allow) {
-    let test = this.inputViewChild?.nativeElement.value, lastMatch = -1, i, c, pos;
+    var _a, _b, _c;
+    let test = (_a = this.inputViewChild) == null ? void 0 : _a.nativeElement.value, lastMatch = -1, i, c, pos;
     for (i = 0, pos = 0; i < this.len; i++) {
       if (this.tests[i]) {
         this.buffer[i] = this.getPlaceholder(i);
@@ -706,32 +713,34 @@ var InputMask = class _InputMask {
       this.writeBuffer();
     } else if (lastMatch + 1 < this.partialPosition) {
       if (this.autoClear || this.buffer.join("") === this.defaultBuffer) {
-        if (this.inputViewChild?.nativeElement.value) this.inputViewChild.nativeElement.value = "";
+        if ((_b = this.inputViewChild) == null ? void 0 : _b.nativeElement.value) this.inputViewChild.nativeElement.value = "";
         this.clearBuffer(0, this.len);
       } else {
         this.writeBuffer();
       }
     } else {
       this.writeBuffer();
-      this.inputViewChild.nativeElement.value = this.inputViewChild?.nativeElement.value.substring(0, lastMatch + 1);
+      this.inputViewChild.nativeElement.value = (_c = this.inputViewChild) == null ? void 0 : _c.nativeElement.value.substring(0, lastMatch + 1);
     }
     return this.partialPosition ? i : this.firstNonMaskPos;
   }
   onInputFocus(event) {
+    var _a, _b;
     if (this.readonly) {
       return;
     }
     this.focused = true;
     clearTimeout(this.caretTimeoutId);
     let pos;
-    this.focusText = this.inputViewChild?.nativeElement.value;
-    pos = this.keepBuffer ? this.inputViewChild?.nativeElement.value.length : this.checkVal();
+    this.focusText = (_a = this.inputViewChild) == null ? void 0 : _a.nativeElement.value;
+    pos = this.keepBuffer ? (_b = this.inputViewChild) == null ? void 0 : _b.nativeElement.value.length : this.checkVal();
     this.caretTimeoutId = setTimeout(() => {
-      if (this.inputViewChild?.nativeElement !== this.inputViewChild?.nativeElement.ownerDocument.activeElement) {
+      var _a2, _b2, _c;
+      if (((_a2 = this.inputViewChild) == null ? void 0 : _a2.nativeElement) !== ((_b2 = this.inputViewChild) == null ? void 0 : _b2.nativeElement.ownerDocument.activeElement)) {
         return;
       }
       this.writeBuffer();
-      if (pos == this.mask?.replace("?", "").length) {
+      if (pos == ((_c = this.mask) == null ? void 0 : _c.replace("?", "").length)) {
         this.caret(0, pos);
       } else {
         this.caret(pos);
@@ -775,10 +784,12 @@ var InputMask = class _InputMask {
     }
   }
   updateFilledState() {
-    this.filled = this.inputViewChild?.nativeElement && this.inputViewChild.nativeElement.value != "";
+    var _a;
+    this.filled = ((_a = this.inputViewChild) == null ? void 0 : _a.nativeElement) && this.inputViewChild.nativeElement.value != "";
   }
   focus() {
-    this.inputViewChild?.nativeElement.focus();
+    var _a;
+    (_a = this.inputViewChild) == null ? void 0 : _a.nativeElement.focus();
   }
   clear() {
     this.inputViewChild.nativeElement.value = "";
@@ -786,164 +797,125 @@ var InputMask = class _InputMask {
     this.onModelChange(this.value);
     this.onClear.emit();
   }
-  static ɵfac = function InputMask_Factory(__ngFactoryType__) {
-    return new (__ngFactoryType__ || _InputMask)(ɵɵdirectiveInject(DOCUMENT), ɵɵdirectiveInject(PLATFORM_ID), ɵɵdirectiveInject(ElementRef), ɵɵdirectiveInject(ChangeDetectorRef), ɵɵdirectiveInject(PrimeNGConfig));
-  };
-  static ɵcmp = ɵɵdefineComponent({
-    type: _InputMask,
-    selectors: [["p-inputMask"]],
-    contentQueries: function InputMask_ContentQueries(rf, ctx, dirIndex) {
-      if (rf & 1) {
-        ɵɵcontentQuery(dirIndex, PrimeTemplate, 4);
-      }
-      if (rf & 2) {
-        let _t;
-        ɵɵqueryRefresh(_t = ɵɵloadQuery()) && (ctx.templates = _t);
-      }
-    },
-    viewQuery: function InputMask_Query(rf, ctx) {
-      if (rf & 1) {
-        ɵɵviewQuery(_c0, 7);
-      }
-      if (rf & 2) {
-        let _t;
-        ɵɵqueryRefresh(_t = ɵɵloadQuery()) && (ctx.inputViewChild = _t.first);
-      }
-    },
-    hostAttrs: [1, "p-element"],
-    hostVars: 6,
-    hostBindings: function InputMask_HostBindings(rf, ctx) {
-      if (rf & 2) {
-        ɵɵclassProp("p-inputwrapper-filled", ctx.filled)("p-inputwrapper-focus", ctx.focused)("p-inputmask-clearable", ctx.showClear && !ctx.disabled);
-      }
-    },
-    inputs: {
-      type: "type",
-      slotChar: "slotChar",
-      autoClear: [2, "autoClear", "autoClear", booleanAttribute],
-      showClear: [2, "showClear", "showClear", booleanAttribute],
-      style: "style",
-      inputId: "inputId",
-      styleClass: "styleClass",
-      placeholder: "placeholder",
-      size: [2, "size", "size", numberAttribute],
-      maxlength: [2, "maxlength", "maxlength", numberAttribute],
-      tabindex: "tabindex",
-      title: "title",
-      variant: "variant",
-      ariaLabel: "ariaLabel",
-      ariaLabelledBy: "ariaLabelledBy",
-      ariaRequired: [2, "ariaRequired", "ariaRequired", booleanAttribute],
-      disabled: [2, "disabled", "disabled", booleanAttribute],
-      readonly: [2, "readonly", "readonly", booleanAttribute],
-      unmask: [2, "unmask", "unmask", booleanAttribute],
-      name: "name",
-      required: [2, "required", "required", booleanAttribute],
-      characterPattern: "characterPattern",
-      autofocus: [2, "autofocus", "autofocus", booleanAttribute],
-      autoFocus: [2, "autoFocus", "autoFocus", booleanAttribute],
-      autocomplete: "autocomplete",
-      keepBuffer: [2, "keepBuffer", "keepBuffer", booleanAttribute],
-      mask: "mask"
-    },
-    outputs: {
-      onComplete: "onComplete",
-      onFocus: "onFocus",
-      onBlur: "onBlur",
-      onInput: "onInput",
-      onKeydown: "onKeydown",
-      onClear: "onClear"
-    },
-    features: [ɵɵProvidersFeature([INPUTMASK_VALUE_ACCESSOR]), ɵɵInputTransformsFeature],
-    decls: 3,
-    vars: 24,
-    consts: [["input", ""], ["pInputText", "", "pAutoFocus", "", 3, "focus", "blur", "keydown", "keypress", "input", "paste", "ngClass", "ngStyle", "disabled", "readonly", "variant", "autofocus"], [4, "ngIf"], [3, "styleClass", "click", 4, "ngIf"], ["class", "p-inputmask-clear-icon", 3, "click", 4, "ngIf"], [3, "click", "styleClass"], [1, "p-inputmask-clear-icon", 3, "click"], [4, "ngTemplateOutlet"]],
-    template: function InputMask_Template(rf, ctx) {
-      if (rf & 1) {
-        const _r1 = ɵɵgetCurrentView();
-        ɵɵelementStart(0, "input", 1, 0);
-        ɵɵlistener("focus", function InputMask_Template_input_focus_0_listener($event) {
-          ɵɵrestoreView(_r1);
-          return ɵɵresetView(ctx.onInputFocus($event));
-        })("blur", function InputMask_Template_input_blur_0_listener($event) {
-          ɵɵrestoreView(_r1);
-          return ɵɵresetView(ctx.onInputBlur($event));
-        })("keydown", function InputMask_Template_input_keydown_0_listener($event) {
-          ɵɵrestoreView(_r1);
-          return ɵɵresetView(ctx.onInputKeydown($event));
-        })("keypress", function InputMask_Template_input_keypress_0_listener($event) {
-          ɵɵrestoreView(_r1);
-          return ɵɵresetView(ctx.onKeyPress($event));
-        })("input", function InputMask_Template_input_input_0_listener($event) {
-          ɵɵrestoreView(_r1);
-          return ɵɵresetView(ctx.onInputChange($event));
-        })("paste", function InputMask_Template_input_paste_0_listener($event) {
-          ɵɵrestoreView(_r1);
-          return ɵɵresetView(ctx.handleInputChange($event));
-        });
-        ɵɵelementEnd();
-        ɵɵtemplate(2, InputMask_ng_container_2_Template, 3, 2, "ng-container", 2);
-      }
-      if (rf & 2) {
-        ɵɵclassMap(ctx.styleClass);
-        ɵɵproperty("ngClass", ctx.inputClass)("ngStyle", ctx.style)("disabled", ctx.disabled)("readonly", ctx.readonly)("variant", ctx.variant)("autofocus", ctx.autofocus);
-        ɵɵattribute("id", ctx.inputId)("type", ctx.type)("name", ctx.name)("placeholder", ctx.placeholder)("title", ctx.title)("size", ctx.size)("autocomplete", ctx.autocomplete)("maxlength", ctx.maxlength)("tabindex", ctx.tabindex)("aria-label", ctx.ariaLabel)("aria-labelledBy", ctx.ariaLabelledBy)("aria-required", ctx.ariaRequired)("required", ctx.required)("data-pc-name", "inputmask")("data-pc-section", "root");
-        ɵɵadvance(2);
-        ɵɵproperty("ngIf", ctx.value != null && ctx.filled && ctx.showClear && !ctx.disabled);
-      }
-    },
-    dependencies: () => [NgClass, NgIf, NgTemplateOutlet, NgStyle, InputText, AutoFocus, TimesIcon],
-    styles: ["@layer primeng{.p-inputmask-clear-icon{position:absolute;top:50%;margin-top:-.5rem;cursor:pointer}.p-inputmask-clearable{position:relative}}\n"],
-    encapsulation: 2,
-    changeDetection: 0
-  });
 };
+__publicField(_InputMask, "ɵfac", function InputMask_Factory(__ngFactoryType__) {
+  return new (__ngFactoryType__ || _InputMask)(ɵɵdirectiveInject(DOCUMENT), ɵɵdirectiveInject(PLATFORM_ID), ɵɵdirectiveInject(ElementRef), ɵɵdirectiveInject(ChangeDetectorRef), ɵɵdirectiveInject(PrimeNGConfig));
+});
+__publicField(_InputMask, "ɵcmp", ɵɵdefineComponent({
+  type: _InputMask,
+  selectors: [["p-inputMask"]],
+  contentQueries: function InputMask_ContentQueries(rf, ctx, dirIndex) {
+    if (rf & 1) {
+      ɵɵcontentQuery(dirIndex, PrimeTemplate, 4);
+    }
+    if (rf & 2) {
+      let _t;
+      ɵɵqueryRefresh(_t = ɵɵloadQuery()) && (ctx.templates = _t);
+    }
+  },
+  viewQuery: function InputMask_Query(rf, ctx) {
+    if (rf & 1) {
+      ɵɵviewQuery(_c0, 7);
+    }
+    if (rf & 2) {
+      let _t;
+      ɵɵqueryRefresh(_t = ɵɵloadQuery()) && (ctx.inputViewChild = _t.first);
+    }
+  },
+  hostAttrs: [1, "p-element"],
+  hostVars: 6,
+  hostBindings: function InputMask_HostBindings(rf, ctx) {
+    if (rf & 2) {
+      ɵɵclassProp("p-inputwrapper-filled", ctx.filled)("p-inputwrapper-focus", ctx.focused)("p-inputmask-clearable", ctx.showClear && !ctx.disabled);
+    }
+  },
+  inputs: {
+    type: "type",
+    slotChar: "slotChar",
+    autoClear: [2, "autoClear", "autoClear", booleanAttribute],
+    showClear: [2, "showClear", "showClear", booleanAttribute],
+    style: "style",
+    inputId: "inputId",
+    styleClass: "styleClass",
+    placeholder: "placeholder",
+    size: [2, "size", "size", numberAttribute],
+    maxlength: [2, "maxlength", "maxlength", numberAttribute],
+    tabindex: "tabindex",
+    title: "title",
+    variant: "variant",
+    ariaLabel: "ariaLabel",
+    ariaLabelledBy: "ariaLabelledBy",
+    ariaRequired: [2, "ariaRequired", "ariaRequired", booleanAttribute],
+    disabled: [2, "disabled", "disabled", booleanAttribute],
+    readonly: [2, "readonly", "readonly", booleanAttribute],
+    unmask: [2, "unmask", "unmask", booleanAttribute],
+    name: "name",
+    required: [2, "required", "required", booleanAttribute],
+    characterPattern: "characterPattern",
+    autofocus: [2, "autofocus", "autofocus", booleanAttribute],
+    autoFocus: [2, "autoFocus", "autoFocus", booleanAttribute],
+    autocomplete: "autocomplete",
+    keepBuffer: [2, "keepBuffer", "keepBuffer", booleanAttribute],
+    mask: "mask"
+  },
+  outputs: {
+    onComplete: "onComplete",
+    onFocus: "onFocus",
+    onBlur: "onBlur",
+    onInput: "onInput",
+    onKeydown: "onKeydown",
+    onClear: "onClear"
+  },
+  features: [ɵɵProvidersFeature([INPUTMASK_VALUE_ACCESSOR]), ɵɵInputTransformsFeature],
+  decls: 3,
+  vars: 24,
+  consts: [["input", ""], ["pInputText", "", "pAutoFocus", "", 3, "focus", "blur", "keydown", "keypress", "input", "paste", "ngClass", "ngStyle", "disabled", "readonly", "variant", "autofocus"], [4, "ngIf"], [3, "styleClass", "click", 4, "ngIf"], ["class", "p-inputmask-clear-icon", 3, "click", 4, "ngIf"], [3, "click", "styleClass"], [1, "p-inputmask-clear-icon", 3, "click"], [4, "ngTemplateOutlet"]],
+  template: function InputMask_Template(rf, ctx) {
+    if (rf & 1) {
+      const _r1 = ɵɵgetCurrentView();
+      ɵɵelementStart(0, "input", 1, 0);
+      ɵɵlistener("focus", function InputMask_Template_input_focus_0_listener($event) {
+        ɵɵrestoreView(_r1);
+        return ɵɵresetView(ctx.onInputFocus($event));
+      })("blur", function InputMask_Template_input_blur_0_listener($event) {
+        ɵɵrestoreView(_r1);
+        return ɵɵresetView(ctx.onInputBlur($event));
+      })("keydown", function InputMask_Template_input_keydown_0_listener($event) {
+        ɵɵrestoreView(_r1);
+        return ɵɵresetView(ctx.onInputKeydown($event));
+      })("keypress", function InputMask_Template_input_keypress_0_listener($event) {
+        ɵɵrestoreView(_r1);
+        return ɵɵresetView(ctx.onKeyPress($event));
+      })("input", function InputMask_Template_input_input_0_listener($event) {
+        ɵɵrestoreView(_r1);
+        return ɵɵresetView(ctx.onInputChange($event));
+      })("paste", function InputMask_Template_input_paste_0_listener($event) {
+        ɵɵrestoreView(_r1);
+        return ɵɵresetView(ctx.handleInputChange($event));
+      });
+      ɵɵelementEnd();
+      ɵɵtemplate(2, InputMask_ng_container_2_Template, 3, 2, "ng-container", 2);
+    }
+    if (rf & 2) {
+      ɵɵclassMap(ctx.styleClass);
+      ɵɵproperty("ngClass", ctx.inputClass)("ngStyle", ctx.style)("disabled", ctx.disabled)("readonly", ctx.readonly)("variant", ctx.variant)("autofocus", ctx.autofocus);
+      ɵɵattribute("id", ctx.inputId)("type", ctx.type)("name", ctx.name)("placeholder", ctx.placeholder)("title", ctx.title)("size", ctx.size)("autocomplete", ctx.autocomplete)("maxlength", ctx.maxlength)("tabindex", ctx.tabindex)("aria-label", ctx.ariaLabel)("aria-labelledBy", ctx.ariaLabelledBy)("aria-required", ctx.ariaRequired)("required", ctx.required)("data-pc-name", "inputmask")("data-pc-section", "root");
+      ɵɵadvance(2);
+      ɵɵproperty("ngIf", ctx.value != null && ctx.filled && ctx.showClear && !ctx.disabled);
+    }
+  },
+  dependencies: () => [NgClass, NgIf, NgTemplateOutlet, NgStyle, InputText, AutoFocus, TimesIcon],
+  styles: ["@layer primeng{.p-inputmask-clear-icon{position:absolute;top:50%;margin-top:-.5rem;cursor:pointer}.p-inputmask-clearable{position:relative}}\n"],
+  encapsulation: 2,
+  changeDetection: 0
+}));
+var InputMask = _InputMask;
 (() => {
   (typeof ngDevMode === "undefined" || ngDevMode) && setClassMetadata(InputMask, [{
     type: Component,
     args: [{
       selector: "p-inputMask",
-      template: `
-        <input
-            #input
-            pInputText
-            [class]="styleClass"
-            [ngClass]="inputClass"
-            [attr.id]="inputId"
-            [attr.type]="type"
-            [attr.name]="name"
-            [ngStyle]="style"
-            [attr.placeholder]="placeholder"
-            [attr.title]="title"
-            [attr.size]="size"
-            [attr.autocomplete]="autocomplete"
-            [attr.maxlength]="maxlength"
-            [attr.tabindex]="tabindex"
-            [attr.aria-label]="ariaLabel"
-            [attr.aria-labelledBy]="ariaLabelledBy"
-            [attr.aria-required]="ariaRequired"
-            [disabled]="disabled"
-            [readonly]="readonly"
-            [attr.required]="required"
-            (focus)="onInputFocus($event)"
-            (blur)="onInputBlur($event)"
-            (keydown)="onInputKeydown($event)"
-            (keypress)="onKeyPress($event)"
-            pAutoFocus
-            [variant]="variant"
-            [autofocus]="autofocus"
-            (input)="onInputChange($event)"
-            (paste)="handleInputChange($event)"
-            [attr.data-pc-name]="'inputmask'"
-            [attr.data-pc-section]="'root'"
-        />
-        <ng-container *ngIf="value != null && filled && showClear && !disabled">
-            <TimesIcon *ngIf="!clearIconTemplate" [styleClass]="'p-inputmask-clear-icon'" (click)="clear()" [attr.data-pc-section]="'clearIcon'" />
-            <span *ngIf="clearIconTemplate" class="p-inputmask-clear-icon" (click)="clear()" [attr.data-pc-section]="'clearIcon'">
-                <ng-template *ngTemplateOutlet="clearIconTemplate"></ng-template>
-            </span>
-        </ng-container>
-    `,
+      template: '\n        <input\n            #input\n            pInputText\n            [class]="styleClass"\n            [ngClass]="inputClass"\n            [attr.id]="inputId"\n            [attr.type]="type"\n            [attr.name]="name"\n            [ngStyle]="style"\n            [attr.placeholder]="placeholder"\n            [attr.title]="title"\n            [attr.size]="size"\n            [attr.autocomplete]="autocomplete"\n            [attr.maxlength]="maxlength"\n            [attr.tabindex]="tabindex"\n            [attr.aria-label]="ariaLabel"\n            [attr.aria-labelledBy]="ariaLabelledBy"\n            [attr.aria-required]="ariaRequired"\n            [disabled]="disabled"\n            [readonly]="readonly"\n            [attr.required]="required"\n            (focus)="onInputFocus($event)"\n            (blur)="onInputBlur($event)"\n            (keydown)="onInputKeydown($event)"\n            (keypress)="onKeyPress($event)"\n            pAutoFocus\n            [variant]="variant"\n            [autofocus]="autofocus"\n            (input)="onInputChange($event)"\n            (paste)="handleInputChange($event)"\n            [attr.data-pc-name]="\'inputmask\'"\n            [attr.data-pc-section]="\'root\'"\n        />\n        <ng-container *ngIf="value != null && filled && showClear && !disabled">\n            <TimesIcon *ngIf="!clearIconTemplate" [styleClass]="\'p-inputmask-clear-icon\'" (click)="clear()" [attr.data-pc-section]="\'clearIcon\'" />\n            <span *ngIf="clearIconTemplate" class="p-inputmask-clear-icon" (click)="clear()" [attr.data-pc-section]="\'clearIcon\'">\n                <ng-template *ngTemplateOutlet="clearIconTemplate"></ng-template>\n            </span>\n        </ng-container>\n    ',
       host: {
         class: "p-element",
         "[class.p-inputwrapper-filled]": "filled",
@@ -1121,20 +1093,21 @@ var InputMask = class _InputMask {
     }]
   });
 })();
-var InputMaskModule = class _InputMaskModule {
-  static ɵfac = function InputMaskModule_Factory(__ngFactoryType__) {
-    return new (__ngFactoryType__ || _InputMaskModule)();
-  };
-  static ɵmod = ɵɵdefineNgModule({
-    type: _InputMaskModule,
-    declarations: [InputMask],
-    imports: [CommonModule, InputTextModule, AutoFocusModule, TimesIcon],
-    exports: [InputMask, SharedModule]
-  });
-  static ɵinj = ɵɵdefineInjector({
-    imports: [CommonModule, InputTextModule, AutoFocusModule, TimesIcon, SharedModule]
-  });
+var _InputMaskModule = class _InputMaskModule {
 };
+__publicField(_InputMaskModule, "ɵfac", function InputMaskModule_Factory(__ngFactoryType__) {
+  return new (__ngFactoryType__ || _InputMaskModule)();
+});
+__publicField(_InputMaskModule, "ɵmod", ɵɵdefineNgModule({
+  type: _InputMaskModule,
+  declarations: [InputMask],
+  imports: [CommonModule, InputTextModule, AutoFocusModule, TimesIcon],
+  exports: [InputMask, SharedModule]
+}));
+__publicField(_InputMaskModule, "ɵinj", ɵɵdefineInjector({
+  imports: [CommonModule, InputTextModule, AutoFocusModule, TimesIcon, SharedModule]
+}));
+var InputMaskModule = _InputMaskModule;
 (() => {
   (typeof ngDevMode === "undefined" || ngDevMode) && setClassMetadata(InputMaskModule, [{
     type: NgModule,

@@ -19,6 +19,7 @@ export interface ResultInterpretation {
 export interface Test {
   name?: string;
   type?: string;
+  factor:any
   specialTest?: string
   description?: string;
   duration?: string;

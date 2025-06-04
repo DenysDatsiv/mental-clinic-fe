@@ -1,24 +1,24 @@
 import {
   WindowMaximizeIcon,
   WindowMinimizeIcon
-} from "./chunk-NVX5F6EP.js";
+} from "./chunk-QY4H5HEG.js";
 import {
   FocusTrap,
   FocusTrapModule
-} from "./chunk-HNGPSKRB.js";
+} from "./chunk-UZD2LWRL.js";
 import {
   TimesIcon
-} from "./chunk-MDBJZ6LU.js";
-import "./chunk-PXWZN6FU.js";
+} from "./chunk-AP6UZX4B.js";
+import "./chunk-BJLZ3T2F.js";
 import {
   PrimeNGConfig,
   SharedModule,
   TranslationKeys
-} from "./chunk-TQSVMJ6K.js";
+} from "./chunk-ZROJCIWL.js";
 import {
   UniqueComponentId,
   zindexutils
-} from "./chunk-3OF44R55.js";
+} from "./chunk-U3NLM53U.js";
 import {
   animate,
   animation,
@@ -26,10 +26,10 @@ import {
   transition,
   trigger,
   useAnimation
-} from "./chunk-OGB62SLM.js";
+} from "./chunk-5S7AEMUZ.js";
 import {
   DomHandler
-} from "./chunk-BUGEQH7Q.js";
+} from "./chunk-LB42WWNC.js";
 import {
   CommonModule,
   DOCUMENT,
@@ -38,7 +38,7 @@ import {
   NgIf,
   NgStyle,
   isPlatformBrowser
-} from "./chunk-UBZYO7FG.js";
+} from "./chunk-KUZ63KOD.js";
 import {
   ApplicationRef,
   ChangeDetectionStrategy,
@@ -93,16 +93,17 @@ import {
   ɵɵtextInterpolate,
   ɵɵtextInterpolate1,
   ɵɵviewQuery
-} from "./chunk-ZI2Q76R4.js";
-import "./chunk-5OPE3T2R.js";
+} from "./chunk-R75KKECJ.js";
 import "./chunk-4N4GOYJH.js";
+import "./chunk-5OPE3T2R.js";
 import {
   Subject
 } from "./chunk-FHTVLBLO.js";
 import {
+  __publicField,
   __spreadProps,
   __spreadValues
-} from "./chunk-3OV72XIM.js";
+} from "./chunk-IJZFAMY6.js";
 
 // node_modules/primeng/fesm2022/primeng-dynamicdialog.mjs
 var _c0 = ["mask"];
@@ -386,20 +387,21 @@ function DynamicDialogComponent_div_2_Template(rf, ctx) {
     ɵɵproperty("ngIf", ctx_r1.config.footer || ctx_r1.footerTemplate);
   }
 }
-var DynamicDialogContent = class _DynamicDialogContent {
-  viewContainerRef;
+var _DynamicDialogContent = class _DynamicDialogContent {
   constructor(viewContainerRef) {
+    __publicField(this, "viewContainerRef");
     this.viewContainerRef = viewContainerRef;
   }
-  static ɵfac = function DynamicDialogContent_Factory(__ngFactoryType__) {
-    return new (__ngFactoryType__ || _DynamicDialogContent)(ɵɵdirectiveInject(ViewContainerRef));
-  };
-  static ɵdir = ɵɵdefineDirective({
-    type: _DynamicDialogContent,
-    selectors: [["", "pDynamicDialogContent", ""]],
-    hostAttrs: [1, "p-element"]
-  });
 };
+__publicField(_DynamicDialogContent, "ɵfac", function DynamicDialogContent_Factory(__ngFactoryType__) {
+  return new (__ngFactoryType__ || _DynamicDialogContent)(ɵɵdirectiveInject(ViewContainerRef));
+});
+__publicField(_DynamicDialogContent, "ɵdir", ɵɵdefineDirective({
+  type: _DynamicDialogContent,
+  selectors: [["", "pDynamicDialogContent", ""]],
+  hostAttrs: [1, "p-element"]
+}));
+var DynamicDialogContent = _DynamicDialogContent;
 (() => {
   (typeof ngDevMode === "undefined" || ngDevMode) && setClassMetadata(DynamicDialogContent, [{
     type: Directive,
@@ -414,189 +416,244 @@ var DynamicDialogContent = class _DynamicDialogContent {
   }], null);
 })();
 var DynamicDialogConfig = class {
-  /**
-   * An object to pass to the component loaded inside the Dialog.
-   * @group Props
-   */
-  data;
-  /**
-   * Header text of the dialog.
-   * @group Props
-   */
-  header;
-  /**
-   * Identifies the element (or elements) that labels the element it is applied to.
-   * @group Props
-   */
-  ariaLabelledBy;
-  /**
-   * Footer text of the dialog.
-   * @group Props
-   */
-  footer;
-  /**
-   * Width of the dialog.
-   * @group Props
-   */
-  width;
-  /**
-   * Height of the dialog.
-   * @group Props
-   */
-  height;
-  /**
-   * Specifies if pressing escape key should hide the dialog.
-   * @group Props
-   */
-  closeOnEscape;
-  /**
-   * Specifies if autofocus should happen on show.
-   * @group Props
-   */
-  focusOnShow = true;
-  /**
-   * Specifies if autofocus should happen on close.
-   * @group Props
-   */
-  focusOnClose = true;
-  /**
-   * When enabled, can only focus on elements inside the dialog.
-   * @group Props
-   */
-  focusTrap = true;
-  /**
-   * Base zIndex value to use in layering.
-   * @group Props
-   */
-  baseZIndex;
-  /**
-   * Whether to automatically manage layering.
-   * @group Props
-   */
-  autoZIndex;
-  /**
-   * Specifies if clicking the modal background should hide the dialog.
-   * @group Props
-   */
-  dismissableMask;
-  /**
-   * Inline style of the component.
-   * @group Props
-   */
-  rtl;
-  /**
-   * Inline style of the comopnent.
-   * @group Props
-   */
-  style;
-  /**
-   * Inline style of the content.
-   * @group Props
-   */
-  contentStyle;
-  /**
-   * Style class of the component.
-   * @group Props
-   */
-  styleClass;
-  /**
-   * Transition options of the animation.
-   * @group Props
-   */
-  transitionOptions;
-  /**
-   * Adds a close icon to the header to hide the dialog.
-   * @group Props
-   */
-  closable;
-  /**
-   * Whether to show the header or not.
-   * @group Props
-   */
-  showHeader;
-  /**
-   * Defines if background should be blocked when dialog is displayed.
-   * @group Props
-   */
-  modal;
-  /**
-   * Style class of the mask.
-   * @group Props
-   */
-  maskStyleClass;
-  /**
-   * Enables resizing of the content.
-   * @group Props
-   */
-  resizable;
-  /**
-   * Enables dragging to change the position using header.
-   * @group Props
-   */
-  draggable;
-  /**
-   * Keeps dialog in the viewport.
-   * @group Props
-   */
-  keepInViewport;
-  /**
-   * Minimum value for the left coordinate of dialog in dragging.
-   * @group Props
-   */
-  minX;
-  /**
-   * Minimum value for the top coordinate of dialog in dragging.
-   * @group Props
-   */
-  minY;
-  /**
-   * Whether the dialog can be displayed full screen.
-   * @group Props
-   */
-  maximizable;
-  /**
-   * Name of the maximize icon.
-   * @group Props
-   */
-  maximizeIcon;
-  /**
-   * Name of the minimize icon.
-   * @group Props
-   */
-  minimizeIcon;
-  /**
-   * Position of the dialog, options are "center", "top", "bottom", "left", "right", "top-left", "top-right", "bottom-left" or "bottom-right".
-   * @group Props
-   */
-  position;
-  /**
-   * Defines a string that labels the close button for accessibility.
-   * @group Props
-   */
-  closeAriaLabel;
-  /**
-   * Target element to attach the overlay, valid values are "body" or a local ng-template variable of another element (note: use binding with brackets for template variables, e.g. [appendTo]="mydiv" for a div element having #mydiv as variable name).
-   * @group Props
-   */
-  appendTo;
-  /**
-   * A boolean to determine if it can be duplicate.
-   * @group Props
-   */
-  duplicate;
-  /**
-   * Object literal to define widths per screen size.
-   * @group Props
-   */
-  breakpoints;
-  /**
-   * Dialog templates.
-   * @group Props
-   */
-  templates;
+  constructor() {
+    /**
+     * An object to pass to the component loaded inside the Dialog.
+     * @group Props
+     */
+    __publicField(this, "data");
+    /**
+     * Header text of the dialog.
+     * @group Props
+     */
+    __publicField(this, "header");
+    /**
+     * Identifies the element (or elements) that labels the element it is applied to.
+     * @group Props
+     */
+    __publicField(this, "ariaLabelledBy");
+    /**
+     * Footer text of the dialog.
+     * @group Props
+     */
+    __publicField(this, "footer");
+    /**
+     * Width of the dialog.
+     * @group Props
+     */
+    __publicField(this, "width");
+    /**
+     * Height of the dialog.
+     * @group Props
+     */
+    __publicField(this, "height");
+    /**
+     * Specifies if pressing escape key should hide the dialog.
+     * @group Props
+     */
+    __publicField(this, "closeOnEscape");
+    /**
+     * Specifies if autofocus should happen on show.
+     * @group Props
+     */
+    __publicField(this, "focusOnShow", true);
+    /**
+     * Specifies if autofocus should happen on close.
+     * @group Props
+     */
+    __publicField(this, "focusOnClose", true);
+    /**
+     * When enabled, can only focus on elements inside the dialog.
+     * @group Props
+     */
+    __publicField(this, "focusTrap", true);
+    /**
+     * Base zIndex value to use in layering.
+     * @group Props
+     */
+    __publicField(this, "baseZIndex");
+    /**
+     * Whether to automatically manage layering.
+     * @group Props
+     */
+    __publicField(this, "autoZIndex");
+    /**
+     * Specifies if clicking the modal background should hide the dialog.
+     * @group Props
+     */
+    __publicField(this, "dismissableMask");
+    /**
+     * Inline style of the component.
+     * @group Props
+     */
+    __publicField(this, "rtl");
+    /**
+     * Inline style of the comopnent.
+     * @group Props
+     */
+    __publicField(this, "style");
+    /**
+     * Inline style of the content.
+     * @group Props
+     */
+    __publicField(this, "contentStyle");
+    /**
+     * Style class of the component.
+     * @group Props
+     */
+    __publicField(this, "styleClass");
+    /**
+     * Transition options of the animation.
+     * @group Props
+     */
+    __publicField(this, "transitionOptions");
+    /**
+     * Adds a close icon to the header to hide the dialog.
+     * @group Props
+     */
+    __publicField(this, "closable");
+    /**
+     * Whether to show the header or not.
+     * @group Props
+     */
+    __publicField(this, "showHeader");
+    /**
+     * Defines if background should be blocked when dialog is displayed.
+     * @group Props
+     */
+    __publicField(this, "modal");
+    /**
+     * Style class of the mask.
+     * @group Props
+     */
+    __publicField(this, "maskStyleClass");
+    /**
+     * Enables resizing of the content.
+     * @group Props
+     */
+    __publicField(this, "resizable");
+    /**
+     * Enables dragging to change the position using header.
+     * @group Props
+     */
+    __publicField(this, "draggable");
+    /**
+     * Keeps dialog in the viewport.
+     * @group Props
+     */
+    __publicField(this, "keepInViewport");
+    /**
+     * Minimum value for the left coordinate of dialog in dragging.
+     * @group Props
+     */
+    __publicField(this, "minX");
+    /**
+     * Minimum value for the top coordinate of dialog in dragging.
+     * @group Props
+     */
+    __publicField(this, "minY");
+    /**
+     * Whether the dialog can be displayed full screen.
+     * @group Props
+     */
+    __publicField(this, "maximizable");
+    /**
+     * Name of the maximize icon.
+     * @group Props
+     */
+    __publicField(this, "maximizeIcon");
+    /**
+     * Name of the minimize icon.
+     * @group Props
+     */
+    __publicField(this, "minimizeIcon");
+    /**
+     * Position of the dialog, options are "center", "top", "bottom", "left", "right", "top-left", "top-right", "bottom-left" or "bottom-right".
+     * @group Props
+     */
+    __publicField(this, "position");
+    /**
+     * Defines a string that labels the close button for accessibility.
+     * @group Props
+     */
+    __publicField(this, "closeAriaLabel");
+    /**
+     * Target element to attach the overlay, valid values are "body" or a local ng-template variable of another element (note: use binding with brackets for template variables, e.g. [appendTo]="mydiv" for a div element having #mydiv as variable name).
+     * @group Props
+     */
+    __publicField(this, "appendTo");
+    /**
+     * A boolean to determine if it can be duplicate.
+     * @group Props
+     */
+    __publicField(this, "duplicate");
+    /**
+     * Object literal to define widths per screen size.
+     * @group Props
+     */
+    __publicField(this, "breakpoints");
+    /**
+     * Dialog templates.
+     * @group Props
+     */
+    __publicField(this, "templates");
+  }
 };
 var DynamicDialogRef = class {
   constructor() {
+    __publicField(this, "_onClose", new Subject());
+    /**
+     * Event triggered on dialog is closed.
+     * @group Events
+     */
+    __publicField(this, "onClose", this._onClose.asObservable());
+    __publicField(this, "_onDestroy", new Subject());
+    /**
+     * Event triggered on dialog instance is destroyed.
+     * @group Events
+     */
+    __publicField(this, "onDestroy", this._onDestroy.asObservable());
+    __publicField(this, "_onDragStart", new Subject());
+    /**
+     * Event triggered on drag start.
+     * @param {MouseEvent} event - Mouse event.
+     * @group Events
+     */
+    __publicField(this, "onDragStart", this._onDragStart.asObservable());
+    __publicField(this, "_onDragEnd", new Subject());
+    /**
+     * Event triggered on drag end.
+     * @param {MouseEvent} event - Mouse event.
+     * @group Events
+     */
+    __publicField(this, "onDragEnd", this._onDragEnd.asObservable());
+    __publicField(this, "_onResizeInit", new Subject());
+    /**
+     * Event triggered on resize start.
+     * @param {MouseEvent} event - Mouse event.
+     * @group Events
+     */
+    __publicField(this, "onResizeInit", this._onResizeInit.asObservable());
+    __publicField(this, "_onResizeEnd", new Subject());
+    /**
+     * Event triggered on resize end.
+     * @param {MouseEvent} event - Mouse event.
+     * @group Events
+     */
+    __publicField(this, "onResizeEnd", this._onResizeEnd.asObservable());
+    __publicField(this, "_onMaximize", new Subject());
+    /**
+     * Event triggered on dialog is maximized.
+     * @param {*} value - Size value.
+     * @group Events
+     */
+    __publicField(this, "onMaximize", this._onMaximize.asObservable());
+    /**
+     * Event triggered on child component load.
+     * @param {*} value - Chi.
+     * @group Events
+     */
+    __publicField(this, "onChildComponentLoaded", new Subject());
   }
   /**
    * Closes dialog.
@@ -655,59 +712,6 @@ var DynamicDialogRef = class {
   maximize(value) {
     this._onMaximize.next(value);
   }
-  _onClose = new Subject();
-  /**
-   * Event triggered on dialog is closed.
-   * @group Events
-   */
-  onClose = this._onClose.asObservable();
-  _onDestroy = new Subject();
-  /**
-   * Event triggered on dialog instance is destroyed.
-   * @group Events
-   */
-  onDestroy = this._onDestroy.asObservable();
-  _onDragStart = new Subject();
-  /**
-   * Event triggered on drag start.
-   * @param {MouseEvent} event - Mouse event.
-   * @group Events
-   */
-  onDragStart = this._onDragStart.asObservable();
-  _onDragEnd = new Subject();
-  /**
-   * Event triggered on drag end.
-   * @param {MouseEvent} event - Mouse event.
-   * @group Events
-   */
-  onDragEnd = this._onDragEnd.asObservable();
-  _onResizeInit = new Subject();
-  /**
-   * Event triggered on resize start.
-   * @param {MouseEvent} event - Mouse event.
-   * @group Events
-   */
-  onResizeInit = this._onResizeInit.asObservable();
-  _onResizeEnd = new Subject();
-  /**
-   * Event triggered on resize end.
-   * @param {MouseEvent} event - Mouse event.
-   * @group Events
-   */
-  onResizeEnd = this._onResizeEnd.asObservable();
-  _onMaximize = new Subject();
-  /**
-   * Event triggered on dialog is maximized.
-   * @param {*} value - Size value.
-   * @group Events
-   */
-  onMaximize = this._onMaximize.asObservable();
-  /**
-   * Event triggered on child component load.
-   * @param {*} value - Chi.
-   * @group Events
-   */
-  onChildComponentLoaded = new Subject();
 };
 var showAnimation = animation([style({
   transform: "{{transform}}",
@@ -720,45 +724,56 @@ var hideAnimation = animation([animate("{{transition}}", style({
   transform: "{{transform}}",
   opacity: 0
 }))]);
-var DynamicDialogComponent = class _DynamicDialogComponent {
-  document;
-  platformId;
-  cd;
-  renderer;
-  config;
-  dialogRef;
-  zone;
-  primeNGConfig;
-  parentDialog;
-  visible = true;
-  componentRef;
-  mask;
-  resizing;
-  dragging;
-  maximized;
-  _style = {};
-  originalStyle;
-  lastPageX;
-  lastPageY;
-  ariaLabelledBy;
-  id = UniqueComponentId();
-  styleElement;
-  insertionPoint;
-  maskViewChild;
-  contentViewChild;
-  footerViewChild;
-  headerViewChild;
-  childComponentType;
-  container;
-  wrapper;
-  documentKeydownListener;
-  documentEscapeListener;
-  maskClickListener;
-  transformOptions = "scale(0.7)";
-  documentResizeListener;
-  documentResizeEndListener;
-  documentDragListener;
-  documentDragEndListener;
+var _DynamicDialogComponent = class _DynamicDialogComponent {
+  constructor(document, platformId, cd, renderer, config, dialogRef, zone, primeNGConfig, parentDialog) {
+    __publicField(this, "document");
+    __publicField(this, "platformId");
+    __publicField(this, "cd");
+    __publicField(this, "renderer");
+    __publicField(this, "config");
+    __publicField(this, "dialogRef");
+    __publicField(this, "zone");
+    __publicField(this, "primeNGConfig");
+    __publicField(this, "parentDialog");
+    __publicField(this, "visible", true);
+    __publicField(this, "componentRef");
+    __publicField(this, "mask");
+    __publicField(this, "resizing");
+    __publicField(this, "dragging");
+    __publicField(this, "maximized");
+    __publicField(this, "_style", {});
+    __publicField(this, "originalStyle");
+    __publicField(this, "lastPageX");
+    __publicField(this, "lastPageY");
+    __publicField(this, "ariaLabelledBy");
+    __publicField(this, "id", UniqueComponentId());
+    __publicField(this, "styleElement");
+    __publicField(this, "insertionPoint");
+    __publicField(this, "maskViewChild");
+    __publicField(this, "contentViewChild");
+    __publicField(this, "footerViewChild");
+    __publicField(this, "headerViewChild");
+    __publicField(this, "childComponentType");
+    __publicField(this, "container");
+    __publicField(this, "wrapper");
+    __publicField(this, "documentKeydownListener");
+    __publicField(this, "documentEscapeListener");
+    __publicField(this, "maskClickListener");
+    __publicField(this, "transformOptions", "scale(0.7)");
+    __publicField(this, "documentResizeListener");
+    __publicField(this, "documentResizeEndListener");
+    __publicField(this, "documentDragListener");
+    __publicField(this, "documentDragEndListener");
+    this.document = document;
+    this.platformId = platformId;
+    this.cd = cd;
+    this.renderer = renderer;
+    this.config = config;
+    this.dialogRef = dialogRef;
+    this.zone = zone;
+    this.primeNGConfig = primeNGConfig;
+    this.parentDialog = parentDialog;
+  }
   get minX() {
     return this.config.minX ? this.config.minX : 0;
   }
@@ -815,26 +830,32 @@ var DynamicDialogComponent = class _DynamicDialogComponent {
     return this.config.breakpoints;
   }
   get footerTemplate() {
-    return this.config?.templates?.footer;
+    var _a, _b;
+    return (_b = (_a = this.config) == null ? void 0 : _a.templates) == null ? void 0 : _b.footer;
   }
   get headerTemplate() {
-    return this.config?.templates?.header;
+    var _a, _b;
+    return (_b = (_a = this.config) == null ? void 0 : _a.templates) == null ? void 0 : _b.header;
   }
   get contentTemplate() {
-    return this.config?.templates?.content;
+    var _a, _b;
+    return (_b = (_a = this.config) == null ? void 0 : _a.templates) == null ? void 0 : _b.content;
   }
   get minimizeIconTemplate() {
-    return this.config?.templates?.minimizeicon;
+    var _a, _b;
+    return (_b = (_a = this.config) == null ? void 0 : _a.templates) == null ? void 0 : _b.minimizeicon;
   }
   get maximizeIconTemplate() {
-    return this.config?.templates?.maximizeicon;
+    var _a, _b;
+    return (_b = (_a = this.config) == null ? void 0 : _a.templates) == null ? void 0 : _b.maximizeicon;
   }
   get closeIconTemplate() {
-    return this.config?.templates?.closeicon;
+    var _a, _b;
+    return (_b = (_a = this.config) == null ? void 0 : _a.templates) == null ? void 0 : _b.closeicon;
   }
   get dynamicDialogCount() {
     const dynamicDialogs = this.document.querySelectorAll("p-dynamicdialog");
-    const dynamicDialogCount = dynamicDialogs?.length;
+    const dynamicDialogCount = dynamicDialogs == null ? void 0 : dynamicDialogs.length;
     return dynamicDialogCount;
   }
   get containerStyle() {
@@ -843,38 +864,22 @@ var DynamicDialogComponent = class _DynamicDialogComponent {
       height: this.config.height
     });
   }
-  constructor(document, platformId, cd, renderer, config, dialogRef, zone, primeNGConfig, parentDialog) {
-    this.document = document;
-    this.platformId = platformId;
-    this.cd = cd;
-    this.renderer = renderer;
-    this.config = config;
-    this.dialogRef = dialogRef;
-    this.zone = zone;
-    this.primeNGConfig = primeNGConfig;
-    this.parentDialog = parentDialog;
-  }
   ngOnInit() {
     if (this.breakpoints) {
       this.createStyle();
     }
   }
   createStyle() {
+    var _a, _b;
     if (isPlatformBrowser(this.platformId)) {
       if (!this.styleElement) {
         this.styleElement = this.renderer.createElement("style");
         this.styleElement.type = "text/css";
-        DomHandler.setAttribute(this.styleElement, "nonce", this.primeNGConfig?.csp()?.nonce);
+        DomHandler.setAttribute(this.styleElement, "nonce", (_b = (_a = this.primeNGConfig) == null ? void 0 : _a.csp()) == null ? void 0 : _b.nonce);
         this.renderer.appendChild(this.document.head, this.styleElement);
         let innerHTML = "";
         for (let breakpoint in this.breakpoints) {
-          innerHTML += `
-                        @media screen and (max-width: ${breakpoint}) {
-                            .p-dialog[${this.id}]:not(.p-dialog-maximized) {
-                                width: ${this.breakpoints[breakpoint]} !important;
-                            }
-                        }
-                    `;
+          innerHTML += "\n                        @media screen and (max-width: ".concat(breakpoint, ") {\n                            .p-dialog[").concat(this.id, "]:not(.p-dialog-maximized) {\n                                width: ").concat(this.breakpoints[breakpoint], " !important;\n                            }\n                        }\n                    ");
         }
         this.renderer.setProperty(this.styleElement, "innerHTML", innerHTML);
       }
@@ -895,9 +900,10 @@ var DynamicDialogComponent = class _DynamicDialogComponent {
     return this.header !== null ? UniqueComponentId() + "_header" : null;
   }
   loadChildComponent(componentType) {
-    let viewContainerRef = this.insertionPoint?.viewContainerRef;
-    viewContainerRef?.clear();
-    this.componentRef = viewContainerRef?.createComponent(componentType);
+    var _a;
+    let viewContainerRef = (_a = this.insertionPoint) == null ? void 0 : _a.viewContainerRef;
+    viewContainerRef == null ? void 0 : viewContainerRef.clear();
+    this.componentRef = viewContainerRef == null ? void 0 : viewContainerRef.createComponent(componentType);
     this.dialogRef.onChildComponentLoaded.next(this.componentRef.instance);
   }
   moveOnTop() {
@@ -907,6 +913,7 @@ var DynamicDialogComponent = class _DynamicDialogComponent {
     }
   }
   onAnimationStart(event) {
+    var _a;
     switch (event.toState) {
       case "visible":
         this.container = event.element;
@@ -916,7 +923,7 @@ var DynamicDialogComponent = class _DynamicDialogComponent {
           this.unbindGlobalListeners();
         }
         this.bindGlobalListeners();
-        this.container?.setAttribute(this.id, "");
+        (_a = this.container) == null ? void 0 : _a.setAttribute(this.id, "");
         if (this.config.modal !== false) {
           this.enableModality();
         }
@@ -1216,124 +1223,61 @@ var DynamicDialogComponent = class _DynamicDialogComponent {
     }
     this.destroyStyle();
   }
-  static ɵfac = function DynamicDialogComponent_Factory(__ngFactoryType__) {
-    return new (__ngFactoryType__ || _DynamicDialogComponent)(ɵɵdirectiveInject(DOCUMENT), ɵɵdirectiveInject(PLATFORM_ID), ɵɵdirectiveInject(ChangeDetectorRef), ɵɵdirectiveInject(Renderer2), ɵɵdirectiveInject(DynamicDialogConfig), ɵɵdirectiveInject(DynamicDialogRef), ɵɵdirectiveInject(NgZone), ɵɵdirectiveInject(PrimeNGConfig), ɵɵdirectiveInject(_DynamicDialogComponent, 12));
-  };
-  static ɵcmp = ɵɵdefineComponent({
-    type: _DynamicDialogComponent,
-    selectors: [["p-dynamicDialog"]],
-    viewQuery: function DynamicDialogComponent_Query(rf, ctx) {
-      if (rf & 1) {
-        ɵɵviewQuery(DynamicDialogContent, 5);
-        ɵɵviewQuery(_c0, 5);
-        ɵɵviewQuery(_c1, 5);
-        ɵɵviewQuery(_c2, 5);
-        ɵɵviewQuery(_c3, 5);
-      }
-      if (rf & 2) {
-        let _t;
-        ɵɵqueryRefresh(_t = ɵɵloadQuery()) && (ctx.insertionPoint = _t.first);
-        ɵɵqueryRefresh(_t = ɵɵloadQuery()) && (ctx.maskViewChild = _t.first);
-        ɵɵqueryRefresh(_t = ɵɵloadQuery()) && (ctx.contentViewChild = _t.first);
-        ɵɵqueryRefresh(_t = ɵɵloadQuery()) && (ctx.footerViewChild = _t.first);
-        ɵɵqueryRefresh(_t = ɵɵloadQuery()) && (ctx.headerViewChild = _t.first);
-      }
-    },
-    hostAttrs: [1, "p-element"],
-    decls: 3,
-    vars: 14,
-    consts: [["mask", ""], ["container", ""], ["content", ""], ["titlebar", ""], ["footer", ""], [3, "ngClass"], ["role", "dialog", "pFocusTrap", "", 3, "ngClass", "ngStyle", "class", "pFocusTrapDisabled", 4, "ngIf"], ["role", "dialog", "pFocusTrap", "", 3, "ngClass", "ngStyle", "pFocusTrapDisabled"], ["class", "p-resizable-handle", 3, "mousedown", 4, "ngIf"], ["class", "p-dialog-header", 3, "mousedown", 4, "ngIf"], [1, "p-dialog-content", 3, "ngStyle"], [4, "ngIf"], [4, "ngComponentOutlet"], ["class", "p-dialog-footer", 4, "ngIf"], [1, "p-resizable-handle", 3, "mousedown"], [1, "p-dialog-header", 3, "mousedown"], [1, "p-dialog-title", 3, "id"], [1, "p-dialog-header-icons"], ["type", "button", "tabindex", "-1", "pRipple", "", 3, "ngClass", "click", "keydown.enter", 4, "ngIf"], ["type", "button", "role", "button", 3, "ngClass", "click", "keydown.enter", 4, "ngIf"], ["type", "button", "tabindex", "-1", "pRipple", "", 3, "click", "keydown.enter", "ngClass"], ["class", "p-dialog-header-maximize-icon", 3, "ngClass", 4, "ngIf"], [3, "styleClass", 4, "ngIf"], [1, "p-dialog-header-maximize-icon", 3, "ngClass"], [3, "styleClass"], ["type", "button", "role", "button", 3, "click", "keydown.enter", "ngClass"], ["pDynamicDialogContent", ""], [1, "p-dialog-footer"]],
-    template: function DynamicDialogComponent_Template(rf, ctx) {
-      if (rf & 1) {
-        ɵɵelementStart(0, "div", 5, 0);
-        ɵɵtemplate(2, DynamicDialogComponent_div_2_Template, 9, 24, "div", 6);
-        ɵɵelementEnd();
-      }
-      if (rf & 2) {
-        ɵɵclassMap(ctx.config.maskStyleClass);
-        ɵɵproperty("ngClass", ɵɵpureFunctionV(4, _c4, [ctx.config.modal !== false, ctx.position === "left", ctx.position === "right", ctx.position === "top", ctx.position === "bottom", ctx.position === "topleft" || ctx.position === "top-left", ctx.position === "topright" || ctx.position === "top-right", ctx.position === "bottomleft" || ctx.position === "bottom-left", ctx.position === "bottomright" || ctx.position === "bottom-right"]));
-        ɵɵadvance(2);
-        ɵɵproperty("ngIf", ctx.visible);
-      }
-    },
-    dependencies: () => [NgClass, NgComponentOutlet, NgIf, NgStyle, WindowMaximizeIcon, WindowMinimizeIcon, TimesIcon, FocusTrap, DynamicDialogContent],
-    styles: ["@layer primeng{.p-dialog-mask{position:fixed;top:0;left:0;width:100%;height:100%;display:flex;justify-content:center;align-items:center;pointer-events:none}.p-dialog-mask.p-component-overlay{pointer-events:auto}.p-dialog{display:flex;flex-direction:column;pointer-events:auto;max-height:90%;transform:scale(1);position:relative}.p-dialog-content{overflow-y:auto;flex-grow:1}.p-dialog-header{display:flex;align-items:center;justify-content:space-between;flex-shrink:0}.p-dialog-draggable .p-dialog-header{cursor:move}.p-dialog-footer{flex-shrink:0}.p-dialog .p-dialog-header-icons{display:flex;align-items:center}.p-dialog .p-dialog-header-icon{display:flex;align-items:center;justify-content:center;overflow:hidden;position:relative}.p-fluid .p-dialog-footer .p-button{width:auto}.p-dialog-top .p-dialog,.p-dialog-bottom .p-dialog,.p-dialog-left .p-dialog,.p-dialog-right .p-dialog,.p-dialog-top-left .p-dialog,.p-dialog-top-right .p-dialog,.p-dialog-bottom-left .p-dialog,.p-dialog-bottom-right .p-dialog{margin:.75rem;transform:translateZ(0)}.p-dialog-maximized{-webkit-transition:none;transition:none;transform:none;width:100vw!important;height:100vh!important;top:0!important;left:0!important;max-height:100%;height:100%}.p-dialog-maximized .p-dialog-content{flex-grow:1}.p-dialog-left{justify-content:flex-start}.p-dialog-right{justify-content:flex-end}.p-dialog-top{align-items:flex-start}.p-dialog-top-left{justify-content:flex-start;align-items:flex-start}.p-dialog-top-right{justify-content:flex-end;align-items:flex-start}.p-dialog-bottom{align-items:flex-end}.p-dialog-bottom-left{justify-content:flex-start;align-items:flex-end}.p-dialog-bottom-right{justify-content:flex-end;align-items:flex-end}.p-dialog .p-resizable-handle{position:absolute;font-size:.1px;display:block;cursor:se-resize;width:12px;height:12px;right:1px;bottom:1px}.p-confirm-dialog .p-dialog-content{display:flex;align-items:center}}\n"],
-    encapsulation: 2,
-    data: {
-      animation: [trigger("animation", [transition("void => visible", [useAnimation(showAnimation)]), transition("visible => void", [useAnimation(hideAnimation)])])]
-    }
-  });
 };
+__publicField(_DynamicDialogComponent, "ɵfac", function DynamicDialogComponent_Factory(__ngFactoryType__) {
+  return new (__ngFactoryType__ || _DynamicDialogComponent)(ɵɵdirectiveInject(DOCUMENT), ɵɵdirectiveInject(PLATFORM_ID), ɵɵdirectiveInject(ChangeDetectorRef), ɵɵdirectiveInject(Renderer2), ɵɵdirectiveInject(DynamicDialogConfig), ɵɵdirectiveInject(DynamicDialogRef), ɵɵdirectiveInject(NgZone), ɵɵdirectiveInject(PrimeNGConfig), ɵɵdirectiveInject(_DynamicDialogComponent, 12));
+});
+__publicField(_DynamicDialogComponent, "ɵcmp", ɵɵdefineComponent({
+  type: _DynamicDialogComponent,
+  selectors: [["p-dynamicDialog"]],
+  viewQuery: function DynamicDialogComponent_Query(rf, ctx) {
+    if (rf & 1) {
+      ɵɵviewQuery(DynamicDialogContent, 5);
+      ɵɵviewQuery(_c0, 5);
+      ɵɵviewQuery(_c1, 5);
+      ɵɵviewQuery(_c2, 5);
+      ɵɵviewQuery(_c3, 5);
+    }
+    if (rf & 2) {
+      let _t;
+      ɵɵqueryRefresh(_t = ɵɵloadQuery()) && (ctx.insertionPoint = _t.first);
+      ɵɵqueryRefresh(_t = ɵɵloadQuery()) && (ctx.maskViewChild = _t.first);
+      ɵɵqueryRefresh(_t = ɵɵloadQuery()) && (ctx.contentViewChild = _t.first);
+      ɵɵqueryRefresh(_t = ɵɵloadQuery()) && (ctx.footerViewChild = _t.first);
+      ɵɵqueryRefresh(_t = ɵɵloadQuery()) && (ctx.headerViewChild = _t.first);
+    }
+  },
+  hostAttrs: [1, "p-element"],
+  decls: 3,
+  vars: 14,
+  consts: [["mask", ""], ["container", ""], ["content", ""], ["titlebar", ""], ["footer", ""], [3, "ngClass"], ["role", "dialog", "pFocusTrap", "", 3, "ngClass", "ngStyle", "class", "pFocusTrapDisabled", 4, "ngIf"], ["role", "dialog", "pFocusTrap", "", 3, "ngClass", "ngStyle", "pFocusTrapDisabled"], ["class", "p-resizable-handle", 3, "mousedown", 4, "ngIf"], ["class", "p-dialog-header", 3, "mousedown", 4, "ngIf"], [1, "p-dialog-content", 3, "ngStyle"], [4, "ngIf"], [4, "ngComponentOutlet"], ["class", "p-dialog-footer", 4, "ngIf"], [1, "p-resizable-handle", 3, "mousedown"], [1, "p-dialog-header", 3, "mousedown"], [1, "p-dialog-title", 3, "id"], [1, "p-dialog-header-icons"], ["type", "button", "tabindex", "-1", "pRipple", "", 3, "ngClass", "click", "keydown.enter", 4, "ngIf"], ["type", "button", "role", "button", 3, "ngClass", "click", "keydown.enter", 4, "ngIf"], ["type", "button", "tabindex", "-1", "pRipple", "", 3, "click", "keydown.enter", "ngClass"], ["class", "p-dialog-header-maximize-icon", 3, "ngClass", 4, "ngIf"], [3, "styleClass", 4, "ngIf"], [1, "p-dialog-header-maximize-icon", 3, "ngClass"], [3, "styleClass"], ["type", "button", "role", "button", 3, "click", "keydown.enter", "ngClass"], ["pDynamicDialogContent", ""], [1, "p-dialog-footer"]],
+  template: function DynamicDialogComponent_Template(rf, ctx) {
+    if (rf & 1) {
+      ɵɵelementStart(0, "div", 5, 0);
+      ɵɵtemplate(2, DynamicDialogComponent_div_2_Template, 9, 24, "div", 6);
+      ɵɵelementEnd();
+    }
+    if (rf & 2) {
+      ɵɵclassMap(ctx.config.maskStyleClass);
+      ɵɵproperty("ngClass", ɵɵpureFunctionV(4, _c4, [ctx.config.modal !== false, ctx.position === "left", ctx.position === "right", ctx.position === "top", ctx.position === "bottom", ctx.position === "topleft" || ctx.position === "top-left", ctx.position === "topright" || ctx.position === "top-right", ctx.position === "bottomleft" || ctx.position === "bottom-left", ctx.position === "bottomright" || ctx.position === "bottom-right"]));
+      ɵɵadvance(2);
+      ɵɵproperty("ngIf", ctx.visible);
+    }
+  },
+  dependencies: () => [NgClass, NgComponentOutlet, NgIf, NgStyle, WindowMaximizeIcon, WindowMinimizeIcon, TimesIcon, FocusTrap, DynamicDialogContent],
+  styles: ["@layer primeng{.p-dialog-mask{position:fixed;top:0;left:0;width:100%;height:100%;display:flex;justify-content:center;align-items:center;pointer-events:none}.p-dialog-mask.p-component-overlay{pointer-events:auto}.p-dialog{display:flex;flex-direction:column;pointer-events:auto;max-height:90%;transform:scale(1);position:relative}.p-dialog-content{overflow-y:auto;flex-grow:1}.p-dialog-header{display:flex;align-items:center;justify-content:space-between;flex-shrink:0}.p-dialog-draggable .p-dialog-header{cursor:move}.p-dialog-footer{flex-shrink:0}.p-dialog .p-dialog-header-icons{display:flex;align-items:center}.p-dialog .p-dialog-header-icon{display:flex;align-items:center;justify-content:center;overflow:hidden;position:relative}.p-fluid .p-dialog-footer .p-button{width:auto}.p-dialog-top .p-dialog,.p-dialog-bottom .p-dialog,.p-dialog-left .p-dialog,.p-dialog-right .p-dialog,.p-dialog-top-left .p-dialog,.p-dialog-top-right .p-dialog,.p-dialog-bottom-left .p-dialog,.p-dialog-bottom-right .p-dialog{margin:.75rem;transform:translateZ(0)}.p-dialog-maximized{-webkit-transition:none;transition:none;transform:none;width:100vw!important;height:100vh!important;top:0!important;left:0!important;max-height:100%;height:100%}.p-dialog-maximized .p-dialog-content{flex-grow:1}.p-dialog-left{justify-content:flex-start}.p-dialog-right{justify-content:flex-end}.p-dialog-top{align-items:flex-start}.p-dialog-top-left{justify-content:flex-start;align-items:flex-start}.p-dialog-top-right{justify-content:flex-end;align-items:flex-start}.p-dialog-bottom{align-items:flex-end}.p-dialog-bottom-left{justify-content:flex-start;align-items:flex-end}.p-dialog-bottom-right{justify-content:flex-end;align-items:flex-end}.p-dialog .p-resizable-handle{position:absolute;font-size:.1px;display:block;cursor:se-resize;width:12px;height:12px;right:1px;bottom:1px}.p-confirm-dialog .p-dialog-content{display:flex;align-items:center}}\n"],
+  encapsulation: 2,
+  data: {
+    animation: [trigger("animation", [transition("void => visible", [useAnimation(showAnimation)]), transition("visible => void", [useAnimation(hideAnimation)])])]
+  }
+}));
+var DynamicDialogComponent = _DynamicDialogComponent;
 (() => {
   (typeof ngDevMode === "undefined" || ngDevMode) && setClassMetadata(DynamicDialogComponent, [{
     type: Component,
     args: [{
       selector: "p-dynamicDialog",
-      template: `
-        <div
-            #mask
-            [ngClass]="{
-                'p-dialog-mask': true,
-                'p-component-overlay p-component-overlay-enter p-dialog-mask-scrollblocker': config.modal !== false,
-                'p-dialog-left': position === 'left',
-                'p-dialog-right': position === 'right',
-                'p-dialog-top': position === 'top',
-                'p-dialog-bottom': position === 'bottom',
-                'p-dialog-top-left': position === 'topleft' || position === 'top-left',
-                'p-dialog-top-right': position === 'topright' || position === 'top-right',
-                'p-dialog-bottom-left': position === 'bottomleft' || position === 'bottom-left',
-                'p-dialog-bottom-right': position === 'bottomright' || position === 'bottom-right'
-            }"
-            [class]="config.maskStyleClass"
-        >
-            <div
-                #container
-                [ngClass]="{ 'p-dialog p-dynamic-dialog p-component': true, 'p-dialog-rtl': config.rtl, 'p-dialog-resizable': config.resizable, 'p-dialog-draggable': config.draggable, 'p-dialog-maximized': maximized }"
-                [ngStyle]="containerStyle"
-                [class]="config.styleClass"
-                [@animation]="{ value: 'visible', params: { transform: transformOptions, transition: config.transitionOptions || '150ms cubic-bezier(0, 0, 0.2, 1)' } }"
-                (@animation.start)="onAnimationStart($event)"
-                (@animation.done)="onAnimationEnd($event)"
-                role="dialog"
-                *ngIf="visible"
-                pFocusTrap
-                [pFocusTrapDisabled]="config.focusTrap === false"
-                [attr.aria-labelledby]="ariaLabelledBy"
-                [attr.aria-modal]="true"
-            >
-                <div *ngIf="config.resizable" class="p-resizable-handle" (mousedown)="initResize($event)"></div>
-                <div #titlebar class="p-dialog-header" (mousedown)="initDrag($event)" *ngIf="config.showHeader === false ? false : true">
-                    <ng-container *ngComponentOutlet="headerTemplate"></ng-container>
-                    <ng-container *ngIf="!headerTemplate">
-                        <span class="p-dialog-title" [id]="ariaLabelledBy">{{ config.header }}</span>
-                        <div class="p-dialog-header-icons">
-                            <button *ngIf="config.maximizable" type="button" [ngClass]="{ 'p-dialog-header-icon p-dialog-header-maximize p-link': true }" (click)="maximize()" (keydown.enter)="maximize()" tabindex="-1" pRipple>
-                                <span class="p-dialog-header-maximize-icon" *ngIf="!maximizeIconTemplate || !minimizeIconTemplate" [ngClass]="maximized ? minimizeIcon : maximizeIcon"></span>
-                                <WindowMaximizeIcon *ngIf="!maximized && !maximizeIcon && !maximizeIconTemplate" [styleClass]="'p-dialog-header-maximize-icon'" />
-                                <WindowMinimizeIcon *ngIf="maximized && !minimizeIcon && !minimizeIconTemplate" [styleClass]="'p-dialog-header-maximize-icon'" />
-                                <ng-container *ngComponentOutlet="maximizeIconTemplate"></ng-container>
-                                <ng-container *ngComponentOutlet="minimizeIconTemplate"></ng-container>
-                            </button>
-                            <button [ngClass]="'p-dialog-header-icon p-dialog-header-maximize p-link'" type="button" role="button" (click)="hide()" (keydown.enter)="hide()" *ngIf="config.closable !== false" [attr.aria-label]="closeAriaLabel">
-                                <TimesIcon [styleClass]="'p-dialog-header-close-icon'" *ngIf="!closeIconTemplate" />
-                                <ng-container *ngComponentOutlet="closeIconTemplate"></ng-container>
-                            </button>
-                        </div>
-                    </ng-container>
-                </div>
-                <div #content class="p-dialog-content" [ngStyle]="config.contentStyle">
-                    <ng-template pDynamicDialogContent *ngIf="!contentTemplate"></ng-template>
-                    <ng-container *ngComponentOutlet="contentTemplate"></ng-container>
-                </div>
-                <div #footer class="p-dialog-footer" *ngIf="config.footer || footerTemplate">
-                    <ng-container *ngIf="!footerTemplate">
-                        {{ config.footer }}
-                    </ng-container>
-                    <ng-container *ngComponentOutlet="footerTemplate"></ng-container>
-                </div>
-            </div>
-        </div>
-    `,
+      template: '\n        <div\n            #mask\n            [ngClass]="{\n                \'p-dialog-mask\': true,\n                \'p-component-overlay p-component-overlay-enter p-dialog-mask-scrollblocker\': config.modal !== false,\n                \'p-dialog-left\': position === \'left\',\n                \'p-dialog-right\': position === \'right\',\n                \'p-dialog-top\': position === \'top\',\n                \'p-dialog-bottom\': position === \'bottom\',\n                \'p-dialog-top-left\': position === \'topleft\' || position === \'top-left\',\n                \'p-dialog-top-right\': position === \'topright\' || position === \'top-right\',\n                \'p-dialog-bottom-left\': position === \'bottomleft\' || position === \'bottom-left\',\n                \'p-dialog-bottom-right\': position === \'bottomright\' || position === \'bottom-right\'\n            }"\n            [class]="config.maskStyleClass"\n        >\n            <div\n                #container\n                [ngClass]="{ \'p-dialog p-dynamic-dialog p-component\': true, \'p-dialog-rtl\': config.rtl, \'p-dialog-resizable\': config.resizable, \'p-dialog-draggable\': config.draggable, \'p-dialog-maximized\': maximized }"\n                [ngStyle]="containerStyle"\n                [class]="config.styleClass"\n                [@animation]="{ value: \'visible\', params: { transform: transformOptions, transition: config.transitionOptions || \'150ms cubic-bezier(0, 0, 0.2, 1)\' } }"\n                (@animation.start)="onAnimationStart($event)"\n                (@animation.done)="onAnimationEnd($event)"\n                role="dialog"\n                *ngIf="visible"\n                pFocusTrap\n                [pFocusTrapDisabled]="config.focusTrap === false"\n                [attr.aria-labelledby]="ariaLabelledBy"\n                [attr.aria-modal]="true"\n            >\n                <div *ngIf="config.resizable" class="p-resizable-handle" (mousedown)="initResize($event)"></div>\n                <div #titlebar class="p-dialog-header" (mousedown)="initDrag($event)" *ngIf="config.showHeader === false ? false : true">\n                    <ng-container *ngComponentOutlet="headerTemplate"></ng-container>\n                    <ng-container *ngIf="!headerTemplate">\n                        <span class="p-dialog-title" [id]="ariaLabelledBy">{{ config.header }}</span>\n                        <div class="p-dialog-header-icons">\n                            <button *ngIf="config.maximizable" type="button" [ngClass]="{ \'p-dialog-header-icon p-dialog-header-maximize p-link\': true }" (click)="maximize()" (keydown.enter)="maximize()" tabindex="-1" pRipple>\n                                <span class="p-dialog-header-maximize-icon" *ngIf="!maximizeIconTemplate || !minimizeIconTemplate" [ngClass]="maximized ? minimizeIcon : maximizeIcon"></span>\n                                <WindowMaximizeIcon *ngIf="!maximized && !maximizeIcon && !maximizeIconTemplate" [styleClass]="\'p-dialog-header-maximize-icon\'" />\n                                <WindowMinimizeIcon *ngIf="maximized && !minimizeIcon && !minimizeIconTemplate" [styleClass]="\'p-dialog-header-maximize-icon\'" />\n                                <ng-container *ngComponentOutlet="maximizeIconTemplate"></ng-container>\n                                <ng-container *ngComponentOutlet="minimizeIconTemplate"></ng-container>\n                            </button>\n                            <button [ngClass]="\'p-dialog-header-icon p-dialog-header-maximize p-link\'" type="button" role="button" (click)="hide()" (keydown.enter)="hide()" *ngIf="config.closable !== false" [attr.aria-label]="closeAriaLabel">\n                                <TimesIcon [styleClass]="\'p-dialog-header-close-icon\'" *ngIf="!closeIconTemplate" />\n                                <ng-container *ngComponentOutlet="closeIconTemplate"></ng-container>\n                            </button>\n                        </div>\n                    </ng-container>\n                </div>\n                <div #content class="p-dialog-content" [ngStyle]="config.contentStyle">\n                    <ng-template pDynamicDialogContent *ngIf="!contentTemplate"></ng-template>\n                    <ng-container *ngComponentOutlet="contentTemplate"></ng-container>\n                </div>\n                <div #footer class="p-dialog-footer" *ngIf="config.footer || footerTemplate">\n                    <ng-container *ngIf="!footerTemplate">\n                        {{ config.footer }}\n                    </ng-container>\n                    <ng-container *ngComponentOutlet="footerTemplate"></ng-container>\n                </div>\n            </div>\n        </div>\n    ',
       animations: [trigger("animation", [transition("void => visible", [useAnimation(showAnimation)]), transition("visible => void", [useAnimation(hideAnimation)])])],
       changeDetection: ChangeDetectionStrategy.Default,
       encapsulation: ViewEncapsulation$1.None,
@@ -1396,20 +1340,21 @@ var DynamicDialogComponent = class _DynamicDialogComponent {
     }]
   });
 })();
-var DynamicDialogModule = class _DynamicDialogModule {
-  static ɵfac = function DynamicDialogModule_Factory(__ngFactoryType__) {
-    return new (__ngFactoryType__ || _DynamicDialogModule)();
-  };
-  static ɵmod = ɵɵdefineNgModule({
-    type: _DynamicDialogModule,
-    declarations: [DynamicDialogComponent, DynamicDialogContent],
-    imports: [CommonModule, WindowMaximizeIcon, WindowMinimizeIcon, TimesIcon, SharedModule, FocusTrapModule],
-    exports: [SharedModule]
-  });
-  static ɵinj = ɵɵdefineInjector({
-    imports: [CommonModule, WindowMaximizeIcon, WindowMinimizeIcon, TimesIcon, SharedModule, FocusTrapModule, SharedModule]
-  });
+var _DynamicDialogModule = class _DynamicDialogModule {
 };
+__publicField(_DynamicDialogModule, "ɵfac", function DynamicDialogModule_Factory(__ngFactoryType__) {
+  return new (__ngFactoryType__ || _DynamicDialogModule)();
+});
+__publicField(_DynamicDialogModule, "ɵmod", ɵɵdefineNgModule({
+  type: _DynamicDialogModule,
+  declarations: [DynamicDialogComponent, DynamicDialogContent],
+  imports: [CommonModule, WindowMaximizeIcon, WindowMinimizeIcon, TimesIcon, SharedModule, FocusTrapModule],
+  exports: [SharedModule]
+}));
+__publicField(_DynamicDialogModule, "ɵinj", ɵɵdefineInjector({
+  imports: [CommonModule, WindowMaximizeIcon, WindowMinimizeIcon, TimesIcon, SharedModule, FocusTrapModule, SharedModule]
+}));
+var DynamicDialogModule = _DynamicDialogModule;
 (() => {
   (typeof ngDevMode === "undefined" || ngDevMode) && setClassMetadata(DynamicDialogModule, [{
     type: NgModule,
@@ -1421,9 +1366,9 @@ var DynamicDialogModule = class _DynamicDialogModule {
   }], null, null);
 })();
 var DynamicDialogInjector = class {
-  _parentInjector;
-  _additionalTokens;
   constructor(_parentInjector, _additionalTokens) {
+    __publicField(this, "_parentInjector");
+    __publicField(this, "_additionalTokens");
     this._parentInjector = _parentInjector;
     this._additionalTokens = _additionalTokens;
   }
@@ -1433,12 +1378,12 @@ var DynamicDialogInjector = class {
     return this._parentInjector.get(token, notFoundValue);
   }
 };
-var DialogService = class _DialogService {
-  appRef;
-  injector;
-  document;
-  dialogComponentRefMap = /* @__PURE__ */ new Map();
+var _DialogService = class _DialogService {
   constructor(appRef, injector, document) {
+    __publicField(this, "appRef");
+    __publicField(this, "injector");
+    __publicField(this, "document");
+    __publicField(this, "dialogComponentRefMap", /* @__PURE__ */ new Map());
     this.appRef = appRef;
     this.injector = injector;
     this.document = document;
@@ -1515,14 +1460,15 @@ var DialogService = class _DialogService {
     }
     return permission;
   }
-  static ɵfac = function DialogService_Factory(__ngFactoryType__) {
-    return new (__ngFactoryType__ || _DialogService)(ɵɵinject(ApplicationRef), ɵɵinject(Injector), ɵɵinject(DOCUMENT));
-  };
-  static ɵprov = ɵɵdefineInjectable({
-    token: _DialogService,
-    factory: _DialogService.ɵfac
-  });
 };
+__publicField(_DialogService, "ɵfac", function DialogService_Factory(__ngFactoryType__) {
+  return new (__ngFactoryType__ || _DialogService)(ɵɵinject(ApplicationRef), ɵɵinject(Injector), ɵɵinject(DOCUMENT));
+});
+__publicField(_DialogService, "ɵprov", ɵɵdefineInjectable({
+  token: _DialogService,
+  factory: _DialogService.ɵfac
+}));
+var DialogService = _DialogService;
 (() => {
   (typeof ngDevMode === "undefined" || ngDevMode) && setClassMetadata(DialogService, [{
     type: Injectable

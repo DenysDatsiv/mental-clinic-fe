@@ -1,13 +1,13 @@
 import {
   NG_VALUE_ACCESSOR
-} from "./chunk-B7GQUK3J.js";
+} from "./chunk-ZOG4HQFG.js";
 import {
   CommonModule,
   DOCUMENT,
   NgClass,
   NgIf,
   NgStyle
-} from "./chunk-UBZYO7FG.js";
+} from "./chunk-KUZ63KOD.js";
 import {
   ChangeDetectionStrategy,
   ChangeDetectorRef,
@@ -44,11 +44,13 @@ import {
   ɵɵtemplate,
   ɵɵtext,
   ɵɵtextInterpolate
-} from "./chunk-ZI2Q76R4.js";
-import "./chunk-5OPE3T2R.js";
+} from "./chunk-R75KKECJ.js";
 import "./chunk-4N4GOYJH.js";
+import "./chunk-5OPE3T2R.js";
 import "./chunk-FHTVLBLO.js";
-import "./chunk-3OV72XIM.js";
+import {
+  __publicField
+} from "./chunk-IJZFAMY6.js";
 
 // node_modules/primeng/fesm2022/primeng-knob.mjs
 function Knob__svg_text_4_Template(rf, ctx) {
@@ -70,122 +72,122 @@ var KNOB_VALUE_ACCESSOR = {
   useExisting: forwardRef(() => Knob),
   multi: true
 };
-var Knob = class _Knob {
-  document;
-  renderer;
-  cd;
-  el;
-  /**
-   * Style class of the component.
-   * @group Props
-   */
-  styleClass;
-  /**
-   * Inline style of the component.
-   * @group Props
-   */
-  style;
-  /**
-   * Defines a string that labels the input for accessibility.
-   * @group Props
-   */
-  ariaLabel;
-  /**
-   * Specifies one or more IDs in the DOM that labels the input field.
-   * @group Props
-   */
-  ariaLabelledBy;
-  /**
-   * Index of the element in tabbing order.
-   * @group Props
-   */
-  tabindex = 0;
-  /**
-   * Background of the value.
-   * @group Props
-   */
-  valueColor = "var(--primary-color, Black)";
-  /**
-   * Background color of the range.
-   * @group Props
-   */
-  rangeColor = "var(--surface-border, LightGray)";
-  /**
-   * Color of the value text.
-   * @group Props
-   */
-  textColor = "var(--text-color-secondary, Black)";
-  /**
-   * Template string of the value.
-   * @group Props
-   */
-  valueTemplate = "{value}";
-  /**
-   * Name of the input element.
-   * @group Props
-   */
-  name;
-  /**
-   * Size of the component in pixels.
-   * @group Props
-   */
-  size = 100;
-  /**
-   * Step factor to increment/decrement the value.
-   * @group Props
-   */
-  step = 1;
-  /**
-   * Mininum boundary value.
-   * @group Props
-   */
-  min = 0;
-  /**
-   * Maximum boundary value.
-   * @group Props
-   */
-  max = 100;
-  /**
-   * Width of the knob stroke.
-   * @group Props
-   */
-  strokeWidth = 14;
-  /**
-   * When present, it specifies that the component should be disabled.
-   * @group Props
-   */
-  disabled;
-  /**
-   * Whether the show the value inside the knob.
-   * @group Props
-   */
-  showValue = true;
-  /**
-   * When present, it specifies that the component value cannot be edited.
-   * @group Props
-   */
-  readonly = false;
-  /**
-   * Callback to invoke on value change.
-   * @param {number} value - New value.
-   * @group Emits
-   */
-  onChange = new EventEmitter();
-  radius = 40;
-  midX = 50;
-  midY = 50;
-  minRadians = 4 * Math.PI / 3;
-  maxRadians = -Math.PI / 3;
-  value = 0;
-  windowMouseMoveListener;
-  windowMouseUpListener;
-  windowTouchMoveListener;
-  windowTouchEndListener;
-  onModelChange = () => {
-  };
-  onModelTouched = () => {
-  };
+var _Knob = class _Knob {
   constructor(document, renderer, cd, el) {
+    __publicField(this, "document");
+    __publicField(this, "renderer");
+    __publicField(this, "cd");
+    __publicField(this, "el");
+    /**
+     * Style class of the component.
+     * @group Props
+     */
+    __publicField(this, "styleClass");
+    /**
+     * Inline style of the component.
+     * @group Props
+     */
+    __publicField(this, "style");
+    /**
+     * Defines a string that labels the input for accessibility.
+     * @group Props
+     */
+    __publicField(this, "ariaLabel");
+    /**
+     * Specifies one or more IDs in the DOM that labels the input field.
+     * @group Props
+     */
+    __publicField(this, "ariaLabelledBy");
+    /**
+     * Index of the element in tabbing order.
+     * @group Props
+     */
+    __publicField(this, "tabindex", 0);
+    /**
+     * Background of the value.
+     * @group Props
+     */
+    __publicField(this, "valueColor", "var(--primary-color, Black)");
+    /**
+     * Background color of the range.
+     * @group Props
+     */
+    __publicField(this, "rangeColor", "var(--surface-border, LightGray)");
+    /**
+     * Color of the value text.
+     * @group Props
+     */
+    __publicField(this, "textColor", "var(--text-color-secondary, Black)");
+    /**
+     * Template string of the value.
+     * @group Props
+     */
+    __publicField(this, "valueTemplate", "{value}");
+    /**
+     * Name of the input element.
+     * @group Props
+     */
+    __publicField(this, "name");
+    /**
+     * Size of the component in pixels.
+     * @group Props
+     */
+    __publicField(this, "size", 100);
+    /**
+     * Step factor to increment/decrement the value.
+     * @group Props
+     */
+    __publicField(this, "step", 1);
+    /**
+     * Mininum boundary value.
+     * @group Props
+     */
+    __publicField(this, "min", 0);
+    /**
+     * Maximum boundary value.
+     * @group Props
+     */
+    __publicField(this, "max", 100);
+    /**
+     * Width of the knob stroke.
+     * @group Props
+     */
+    __publicField(this, "strokeWidth", 14);
+    /**
+     * When present, it specifies that the component should be disabled.
+     * @group Props
+     */
+    __publicField(this, "disabled");
+    /**
+     * Whether the show the value inside the knob.
+     * @group Props
+     */
+    __publicField(this, "showValue", true);
+    /**
+     * When present, it specifies that the component value cannot be edited.
+     * @group Props
+     */
+    __publicField(this, "readonly", false);
+    /**
+     * Callback to invoke on value change.
+     * @param {number} value - New value.
+     * @group Emits
+     */
+    __publicField(this, "onChange", new EventEmitter());
+    __publicField(this, "radius", 40);
+    __publicField(this, "midX", 50);
+    __publicField(this, "midY", 50);
+    __publicField(this, "minRadians", 4 * Math.PI / 3);
+    __publicField(this, "maxRadians", -Math.PI / 3);
+    __publicField(this, "value", 0);
+    __publicField(this, "windowMouseMoveListener");
+    __publicField(this, "windowMouseUpListener");
+    __publicField(this, "windowTouchMoveListener");
+    __publicField(this, "windowTouchEndListener");
+    __publicField(this, "onModelChange", () => {
+    });
+    __publicField(this, "onModelTouched", () => {
+    });
     this.document = document;
     this.renderer = renderer;
     this.cd = cd;
@@ -341,10 +343,10 @@ var Knob = class _Knob {
     };
   }
   rangePath() {
-    return `M ${this.minX()} ${this.minY()} A ${this.radius} ${this.radius} 0 1 1 ${this.maxX()} ${this.maxY()}`;
+    return "M ".concat(this.minX(), " ").concat(this.minY(), " A ").concat(this.radius, " ").concat(this.radius, " 0 1 1 ").concat(this.maxX(), " ").concat(this.maxY());
   }
   valuePath() {
-    return `M ${this.zeroX()} ${this.zeroY()} A ${this.radius} ${this.radius} 0 ${this.largeArc()} ${this.sweep()} ${this.valueX()} ${this.valueY()}`;
+    return "M ".concat(this.zeroX(), " ").concat(this.zeroY(), " A ").concat(this.radius, " ").concat(this.radius, " 0 ").concat(this.largeArc(), " ").concat(this.sweep(), " ").concat(this.valueX(), " ").concat(this.valueY());
   }
   zeroRadians() {
     if (this.min > 0 && this.max > 0) return this.mapRange(this.min, this.min, this.max, this.minRadians, this.maxRadians);
@@ -389,115 +391,90 @@ var Knob = class _Knob {
   get _value() {
     return this.value != null ? this.value : this.min;
   }
-  static ɵfac = function Knob_Factory(__ngFactoryType__) {
-    return new (__ngFactoryType__ || _Knob)(ɵɵdirectiveInject(DOCUMENT), ɵɵdirectiveInject(Renderer2), ɵɵdirectiveInject(ChangeDetectorRef), ɵɵdirectiveInject(ElementRef));
-  };
-  static ɵcmp = ɵɵdefineComponent({
-    type: _Knob,
-    selectors: [["p-knob"]],
-    hostAttrs: [1, "p-element"],
-    inputs: {
-      styleClass: "styleClass",
-      style: "style",
-      ariaLabel: "ariaLabel",
-      ariaLabelledBy: "ariaLabelledBy",
-      tabindex: [2, "tabindex", "tabindex", numberAttribute],
-      valueColor: "valueColor",
-      rangeColor: "rangeColor",
-      textColor: "textColor",
-      valueTemplate: "valueTemplate",
-      name: "name",
-      size: [2, "size", "size", numberAttribute],
-      step: [2, "step", "step", numberAttribute],
-      min: [2, "min", "min", numberAttribute],
-      max: [2, "max", "max", numberAttribute],
-      strokeWidth: [2, "strokeWidth", "strokeWidth", numberAttribute],
-      disabled: [2, "disabled", "disabled", booleanAttribute],
-      showValue: [2, "showValue", "showValue", booleanAttribute],
-      readonly: [2, "readonly", "readonly", booleanAttribute]
-    },
-    outputs: {
-      onChange: "onChange"
-    },
-    features: [ɵɵProvidersFeature([KNOB_VALUE_ACCESSOR]), ɵɵInputTransformsFeature],
-    decls: 5,
-    vars: 24,
-    consts: [[3, "ngClass", "ngStyle"], ["viewBox", "0 0 100 100", "role", "slider", 3, "click", "keydown", "mousedown", "mouseup", "touchstart", "touchend"], [1, "p-knob-range"], [1, "p-knob-value"], ["text-anchor", "middle", "class", "p-knob-text", 4, "ngIf"], ["text-anchor", "middle", 1, "p-knob-text"]],
-    template: function Knob_Template(rf, ctx) {
-      if (rf & 1) {
-        ɵɵelementStart(0, "div", 0);
-        ɵɵnamespaceSVG();
-        ɵɵelementStart(1, "svg", 1);
-        ɵɵlistener("click", function Knob_Template_svg_click_1_listener($event) {
-          return ctx.onClick($event);
-        })("keydown", function Knob_Template_svg_keydown_1_listener($event) {
-          return ctx.onKeyDown($event);
-        })("mousedown", function Knob_Template_svg_mousedown_1_listener($event) {
-          return ctx.onMouseDown($event);
-        })("mouseup", function Knob_Template_svg_mouseup_1_listener($event) {
-          return ctx.onMouseUp($event);
-        })("touchstart", function Knob_Template_svg_touchstart_1_listener($event) {
-          return ctx.onTouchStart($event);
-        })("touchend", function Knob_Template_svg_touchend_1_listener($event) {
-          return ctx.onTouchEnd($event);
-        });
-        ɵɵelement(2, "path", 2)(3, "path", 3);
-        ɵɵtemplate(4, Knob__svg_text_4_Template, 2, 5, "text", 4);
-        ɵɵelementEnd()();
-      }
-      if (rf & 2) {
-        ɵɵclassMap(ctx.styleClass);
-        ɵɵproperty("ngClass", ctx.containerClass())("ngStyle", ctx.style);
-        ɵɵattribute("data-pc-name", "knob")("data-pc-section", "root");
-        ɵɵadvance();
-        ɵɵstyleProp("width", ctx.size + "px")("height", ctx.size + "px");
-        ɵɵattribute("aria-valuemin", ctx.min)("aria-valuemax", ctx.max)("aria-valuenow", ctx._value)("aria-labelledby", ctx.ariaLabelledBy)("aria-label", ctx.ariaLabel)("tabindex", ctx.readonly || ctx.disabled ? -1 : ctx.tabindex)("data-pc-section", "svg");
-        ɵɵadvance();
-        ɵɵattribute("d", ctx.rangePath())("stroke-width", ctx.strokeWidth)("stroke", ctx.rangeColor);
-        ɵɵadvance();
-        ɵɵattribute("d", ctx.valuePath())("stroke-width", ctx.strokeWidth)("stroke", ctx.valueColor);
-        ɵɵadvance();
-        ɵɵproperty("ngIf", ctx.showValue);
-      }
-    },
-    dependencies: [NgClass, NgIf, NgStyle],
-    styles: ["@keyframes dash-frame{to{stroke-dashoffset:0}}@layer primeng{.p-knob-range{fill:none;transition:stroke .1s ease-in}.p-knob-value{animation-name:dash-frame;animation-fill-mode:forwards;fill:none}.p-knob-text{font-size:1.3rem;text-align:center}}\n"],
-    encapsulation: 2,
-    changeDetection: 0
-  });
 };
+__publicField(_Knob, "ɵfac", function Knob_Factory(__ngFactoryType__) {
+  return new (__ngFactoryType__ || _Knob)(ɵɵdirectiveInject(DOCUMENT), ɵɵdirectiveInject(Renderer2), ɵɵdirectiveInject(ChangeDetectorRef), ɵɵdirectiveInject(ElementRef));
+});
+__publicField(_Knob, "ɵcmp", ɵɵdefineComponent({
+  type: _Knob,
+  selectors: [["p-knob"]],
+  hostAttrs: [1, "p-element"],
+  inputs: {
+    styleClass: "styleClass",
+    style: "style",
+    ariaLabel: "ariaLabel",
+    ariaLabelledBy: "ariaLabelledBy",
+    tabindex: [2, "tabindex", "tabindex", numberAttribute],
+    valueColor: "valueColor",
+    rangeColor: "rangeColor",
+    textColor: "textColor",
+    valueTemplate: "valueTemplate",
+    name: "name",
+    size: [2, "size", "size", numberAttribute],
+    step: [2, "step", "step", numberAttribute],
+    min: [2, "min", "min", numberAttribute],
+    max: [2, "max", "max", numberAttribute],
+    strokeWidth: [2, "strokeWidth", "strokeWidth", numberAttribute],
+    disabled: [2, "disabled", "disabled", booleanAttribute],
+    showValue: [2, "showValue", "showValue", booleanAttribute],
+    readonly: [2, "readonly", "readonly", booleanAttribute]
+  },
+  outputs: {
+    onChange: "onChange"
+  },
+  features: [ɵɵProvidersFeature([KNOB_VALUE_ACCESSOR]), ɵɵInputTransformsFeature],
+  decls: 5,
+  vars: 24,
+  consts: [[3, "ngClass", "ngStyle"], ["viewBox", "0 0 100 100", "role", "slider", 3, "click", "keydown", "mousedown", "mouseup", "touchstart", "touchend"], [1, "p-knob-range"], [1, "p-knob-value"], ["text-anchor", "middle", "class", "p-knob-text", 4, "ngIf"], ["text-anchor", "middle", 1, "p-knob-text"]],
+  template: function Knob_Template(rf, ctx) {
+    if (rf & 1) {
+      ɵɵelementStart(0, "div", 0);
+      ɵɵnamespaceSVG();
+      ɵɵelementStart(1, "svg", 1);
+      ɵɵlistener("click", function Knob_Template_svg_click_1_listener($event) {
+        return ctx.onClick($event);
+      })("keydown", function Knob_Template_svg_keydown_1_listener($event) {
+        return ctx.onKeyDown($event);
+      })("mousedown", function Knob_Template_svg_mousedown_1_listener($event) {
+        return ctx.onMouseDown($event);
+      })("mouseup", function Knob_Template_svg_mouseup_1_listener($event) {
+        return ctx.onMouseUp($event);
+      })("touchstart", function Knob_Template_svg_touchstart_1_listener($event) {
+        return ctx.onTouchStart($event);
+      })("touchend", function Knob_Template_svg_touchend_1_listener($event) {
+        return ctx.onTouchEnd($event);
+      });
+      ɵɵelement(2, "path", 2)(3, "path", 3);
+      ɵɵtemplate(4, Knob__svg_text_4_Template, 2, 5, "text", 4);
+      ɵɵelementEnd()();
+    }
+    if (rf & 2) {
+      ɵɵclassMap(ctx.styleClass);
+      ɵɵproperty("ngClass", ctx.containerClass())("ngStyle", ctx.style);
+      ɵɵattribute("data-pc-name", "knob")("data-pc-section", "root");
+      ɵɵadvance();
+      ɵɵstyleProp("width", ctx.size + "px")("height", ctx.size + "px");
+      ɵɵattribute("aria-valuemin", ctx.min)("aria-valuemax", ctx.max)("aria-valuenow", ctx._value)("aria-labelledby", ctx.ariaLabelledBy)("aria-label", ctx.ariaLabel)("tabindex", ctx.readonly || ctx.disabled ? -1 : ctx.tabindex)("data-pc-section", "svg");
+      ɵɵadvance();
+      ɵɵattribute("d", ctx.rangePath())("stroke-width", ctx.strokeWidth)("stroke", ctx.rangeColor);
+      ɵɵadvance();
+      ɵɵattribute("d", ctx.valuePath())("stroke-width", ctx.strokeWidth)("stroke", ctx.valueColor);
+      ɵɵadvance();
+      ɵɵproperty("ngIf", ctx.showValue);
+    }
+  },
+  dependencies: [NgClass, NgIf, NgStyle],
+  styles: ["@keyframes dash-frame{to{stroke-dashoffset:0}}@layer primeng{.p-knob-range{fill:none;transition:stroke .1s ease-in}.p-knob-value{animation-name:dash-frame;animation-fill-mode:forwards;fill:none}.p-knob-text{font-size:1.3rem;text-align:center}}\n"],
+  encapsulation: 2,
+  changeDetection: 0
+}));
+var Knob = _Knob;
 (() => {
   (typeof ngDevMode === "undefined" || ngDevMode) && setClassMetadata(Knob, [{
     type: Component,
     args: [{
       selector: "p-knob",
-      template: `
-        <div [ngClass]="containerClass()" [class]="styleClass" [ngStyle]="style" [attr.data-pc-name]="'knob'" [attr.data-pc-section]="'root'">
-            <svg
-                viewBox="0 0 100 100"
-                role="slider"
-                [style.width]="size + 'px'"
-                [style.height]="size + 'px'"
-                (click)="onClick($event)"
-                (keydown)="onKeyDown($event)"
-                (mousedown)="onMouseDown($event)"
-                (mouseup)="onMouseUp($event)"
-                (touchstart)="onTouchStart($event)"
-                (touchend)="onTouchEnd($event)"
-                [attr.aria-valuemin]="min"
-                [attr.aria-valuemax]="max"
-                [attr.aria-valuenow]="_value"
-                [attr.aria-labelledby]="ariaLabelledBy"
-                [attr.aria-label]="ariaLabel"
-                [attr.tabindex]="readonly || disabled ? -1 : tabindex"
-                [attr.data-pc-section]="'svg'"
-            >
-                <path [attr.d]="rangePath()" [attr.stroke-width]="strokeWidth" [attr.stroke]="rangeColor" class="p-knob-range"></path>
-                <path [attr.d]="valuePath()" [attr.stroke-width]="strokeWidth" [attr.stroke]="valueColor" class="p-knob-value"></path>
-                <text *ngIf="showValue" [attr.x]="50" [attr.y]="57" text-anchor="middle" [attr.fill]="textColor" class="p-knob-text" [attr.name]="name">{{ valueToDisplay() }}</text>
-            </svg>
-        </div>
-    `,
+      template: '\n        <div [ngClass]="containerClass()" [class]="styleClass" [ngStyle]="style" [attr.data-pc-name]="\'knob\'" [attr.data-pc-section]="\'root\'">\n            <svg\n                viewBox="0 0 100 100"\n                role="slider"\n                [style.width]="size + \'px\'"\n                [style.height]="size + \'px\'"\n                (click)="onClick($event)"\n                (keydown)="onKeyDown($event)"\n                (mousedown)="onMouseDown($event)"\n                (mouseup)="onMouseUp($event)"\n                (touchstart)="onTouchStart($event)"\n                (touchend)="onTouchEnd($event)"\n                [attr.aria-valuemin]="min"\n                [attr.aria-valuemax]="max"\n                [attr.aria-valuenow]="_value"\n                [attr.aria-labelledby]="ariaLabelledBy"\n                [attr.aria-label]="ariaLabel"\n                [attr.tabindex]="readonly || disabled ? -1 : tabindex"\n                [attr.data-pc-section]="\'svg\'"\n            >\n                <path [attr.d]="rangePath()" [attr.stroke-width]="strokeWidth" [attr.stroke]="rangeColor" class="p-knob-range"></path>\n                <path [attr.d]="valuePath()" [attr.stroke-width]="strokeWidth" [attr.stroke]="valueColor" class="p-knob-value"></path>\n                <text *ngIf="showValue" [attr.x]="50" [attr.y]="57" text-anchor="middle" [attr.fill]="textColor" class="p-knob-text" [attr.name]="name">{{ valueToDisplay() }}</text>\n            </svg>\n        </div>\n    ',
       providers: [KNOB_VALUE_ACCESSOR],
       changeDetection: ChangeDetectionStrategy.OnPush,
       encapsulation: ViewEncapsulation$1.None,
@@ -605,20 +582,21 @@ var Knob = class _Knob {
     }]
   });
 })();
-var KnobModule = class _KnobModule {
-  static ɵfac = function KnobModule_Factory(__ngFactoryType__) {
-    return new (__ngFactoryType__ || _KnobModule)();
-  };
-  static ɵmod = ɵɵdefineNgModule({
-    type: _KnobModule,
-    declarations: [Knob],
-    imports: [CommonModule],
-    exports: [Knob]
-  });
-  static ɵinj = ɵɵdefineInjector({
-    imports: [CommonModule]
-  });
+var _KnobModule = class _KnobModule {
 };
+__publicField(_KnobModule, "ɵfac", function KnobModule_Factory(__ngFactoryType__) {
+  return new (__ngFactoryType__ || _KnobModule)();
+});
+__publicField(_KnobModule, "ɵmod", ɵɵdefineNgModule({
+  type: _KnobModule,
+  declarations: [Knob],
+  imports: [CommonModule],
+  exports: [Knob]
+}));
+__publicField(_KnobModule, "ɵinj", ɵɵdefineInjector({
+  imports: [CommonModule]
+}));
+var KnobModule = _KnobModule;
 (() => {
   (typeof ngDevMode === "undefined" || ngDevMode) && setClassMetadata(KnobModule, [{
     type: NgModule,

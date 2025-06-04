@@ -1,31 +1,31 @@
 import {
   CheckIcon
-} from "./chunk-T5D2NQ3S.js";
+} from "./chunk-A2QFKI6F.js";
 import {
   AutoFocus,
   AutoFocusModule
-} from "./chunk-32JR77BM.js";
+} from "./chunk-LND2F6FW.js";
 import {
   NG_VALUE_ACCESSOR,
   NgControl
-} from "./chunk-B7GQUK3J.js";
-import "./chunk-PXWZN6FU.js";
+} from "./chunk-ZOG4HQFG.js";
+import "./chunk-BJLZ3T2F.js";
 import {
   PrimeNGConfig,
   PrimeTemplate,
   SharedModule
-} from "./chunk-TQSVMJ6K.js";
+} from "./chunk-ZROJCIWL.js";
 import {
   ObjectUtils
-} from "./chunk-3OF44R55.js";
-import "./chunk-BUGEQH7Q.js";
+} from "./chunk-U3NLM53U.js";
+import "./chunk-LB42WWNC.js";
 import {
   CommonModule,
   NgClass,
   NgIf,
   NgStyle,
   NgTemplateOutlet
-} from "./chunk-UBZYO7FG.js";
+} from "./chunk-KUZ63KOD.js";
 import {
   ChangeDetectionStrategy,
   ChangeDetectorRef,
@@ -72,11 +72,13 @@ import {
   ɵɵtext,
   ɵɵtextInterpolate1,
   ɵɵviewQuery
-} from "./chunk-ZI2Q76R4.js";
-import "./chunk-5OPE3T2R.js";
+} from "./chunk-R75KKECJ.js";
 import "./chunk-4N4GOYJH.js";
+import "./chunk-5OPE3T2R.js";
 import "./chunk-FHTVLBLO.js";
-import "./chunk-3OV72XIM.js";
+import {
+  __publicField
+} from "./chunk-IJZFAMY6.js";
 
 // node_modules/primeng/fesm2022/primeng-checkbox.mjs
 var _c0 = ["input"];
@@ -192,138 +194,138 @@ var CHECKBOX_VALUE_ACCESSOR = {
   useExisting: forwardRef(() => Checkbox),
   multi: true
 };
-var Checkbox = class _Checkbox {
-  cd;
-  injector;
-  config;
-  /**
-   * Value of the checkbox.
-   * @group Props
-   */
-  value;
-  /**
-   * Name of the checkbox group.
-   * @group Props
-   */
-  name;
-  /**
-   * When present, it specifies that the element should be disabled.
-   * @group Props
-   */
-  disabled;
-  /**
-   * Allows to select a boolean value instead of multiple values.
-   * @group Props
-   */
-  binary;
-  /**
-   * Label of the checkbox.
-   * @group Props
-   */
-  label;
-  /**
-   * Establishes relationships between the component and label(s) where its value should be one or more element IDs.
-   * @group Props
-   */
-  ariaLabelledBy;
-  /**
-   * Used to define a string that labels the input element.
-   * @group Props
-   */
-  ariaLabel;
-  /**
-   * Index of the element in tabbing order.
-   * @group Props
-   */
-  tabindex;
-  /**
-   * Identifier of the focus input to match a label defined for the component.
-   * @group Props
-   */
-  inputId;
-  /**
-   * Inline style of the component.
-   * @group Props
-   */
-  style;
-  /**
-   * Style class of the component.
-   * @group Props
-   */
-  styleClass;
-  /**
-   * Style class of the label.
-   * @group Props
-   */
-  labelStyleClass;
-  /**
-   * Form control value.
-   * @group Props
-   */
-  formControl;
-  /**
-   * Icon class of the checkbox icon.
-   * @group Props
-   */
-  checkboxIcon;
-  /**
-   * When present, it specifies that the component cannot be edited.
-   * @group Props
-   */
-  readonly;
-  /**
-   * When present, it specifies that checkbox must be checked before submitting the form.
-   * @group Props
-   */
-  required;
-  /**
-   * When present, it specifies that the component should automatically get focus on load.
-   * @group Props
-   */
-  autofocus;
-  /**
-   * Value in checked state.
-   * @group Props
-   */
-  trueValue = true;
-  /**
-   * Value in unchecked state.
-   * @group Props
-   */
-  falseValue = false;
-  /**
-   * Specifies the input variant of the component.
-   * @group Props
-   */
-  variant = "outlined";
-  /**
-   * Callback to invoke on value change.
-   * @param {CheckboxChangeEvent} event - Custom value change event.
-   * @group Emits
-   */
-  onChange = new EventEmitter();
-  /**
-   * Callback to invoke when the receives focus.
-   * @param {Event} event - Browser event.
-   * @group Emits
-   */
-  onFocus = new EventEmitter();
-  /**
-   * Callback to invoke when the loses focus.
-   * @param {Event} event - Browser event.
-   * @group Emits
-   */
-  onBlur = new EventEmitter();
-  inputViewChild;
-  templates;
-  checkboxIconTemplate;
-  model;
-  onModelChange = () => {
-  };
-  onModelTouched = () => {
-  };
-  focused = false;
+var _Checkbox = class _Checkbox {
   constructor(cd, injector, config) {
+    __publicField(this, "cd");
+    __publicField(this, "injector");
+    __publicField(this, "config");
+    /**
+     * Value of the checkbox.
+     * @group Props
+     */
+    __publicField(this, "value");
+    /**
+     * Name of the checkbox group.
+     * @group Props
+     */
+    __publicField(this, "name");
+    /**
+     * When present, it specifies that the element should be disabled.
+     * @group Props
+     */
+    __publicField(this, "disabled");
+    /**
+     * Allows to select a boolean value instead of multiple values.
+     * @group Props
+     */
+    __publicField(this, "binary");
+    /**
+     * Label of the checkbox.
+     * @group Props
+     */
+    __publicField(this, "label");
+    /**
+     * Establishes relationships between the component and label(s) where its value should be one or more element IDs.
+     * @group Props
+     */
+    __publicField(this, "ariaLabelledBy");
+    /**
+     * Used to define a string that labels the input element.
+     * @group Props
+     */
+    __publicField(this, "ariaLabel");
+    /**
+     * Index of the element in tabbing order.
+     * @group Props
+     */
+    __publicField(this, "tabindex");
+    /**
+     * Identifier of the focus input to match a label defined for the component.
+     * @group Props
+     */
+    __publicField(this, "inputId");
+    /**
+     * Inline style of the component.
+     * @group Props
+     */
+    __publicField(this, "style");
+    /**
+     * Style class of the component.
+     * @group Props
+     */
+    __publicField(this, "styleClass");
+    /**
+     * Style class of the label.
+     * @group Props
+     */
+    __publicField(this, "labelStyleClass");
+    /**
+     * Form control value.
+     * @group Props
+     */
+    __publicField(this, "formControl");
+    /**
+     * Icon class of the checkbox icon.
+     * @group Props
+     */
+    __publicField(this, "checkboxIcon");
+    /**
+     * When present, it specifies that the component cannot be edited.
+     * @group Props
+     */
+    __publicField(this, "readonly");
+    /**
+     * When present, it specifies that checkbox must be checked before submitting the form.
+     * @group Props
+     */
+    __publicField(this, "required");
+    /**
+     * When present, it specifies that the component should automatically get focus on load.
+     * @group Props
+     */
+    __publicField(this, "autofocus");
+    /**
+     * Value in checked state.
+     * @group Props
+     */
+    __publicField(this, "trueValue", true);
+    /**
+     * Value in unchecked state.
+     * @group Props
+     */
+    __publicField(this, "falseValue", false);
+    /**
+     * Specifies the input variant of the component.
+     * @group Props
+     */
+    __publicField(this, "variant", "outlined");
+    /**
+     * Callback to invoke on value change.
+     * @param {CheckboxChangeEvent} event - Custom value change event.
+     * @group Emits
+     */
+    __publicField(this, "onChange", new EventEmitter());
+    /**
+     * Callback to invoke when the receives focus.
+     * @param {Event} event - Browser event.
+     * @group Emits
+     */
+    __publicField(this, "onFocus", new EventEmitter());
+    /**
+     * Callback to invoke when the loses focus.
+     * @param {Event} event - Browser event.
+     * @group Emits
+     */
+    __publicField(this, "onBlur", new EventEmitter());
+    __publicField(this, "inputViewChild");
+    __publicField(this, "templates");
+    __publicField(this, "checkboxIconTemplate");
+    __publicField(this, "model");
+    __publicField(this, "onModelChange", () => {
+    });
+    __publicField(this, "onModelTouched", () => {
+    });
+    __publicField(this, "focused", false);
     this.cd = cd;
     this.injector = injector;
     this.config = config;
@@ -408,184 +410,118 @@ var Checkbox = class _Checkbox {
   checked() {
     return this.binary ? this.model === this.trueValue : ObjectUtils.contains(this.value, this.model);
   }
-  static ɵfac = function Checkbox_Factory(__ngFactoryType__) {
-    return new (__ngFactoryType__ || _Checkbox)(ɵɵdirectiveInject(ChangeDetectorRef), ɵɵdirectiveInject(Injector), ɵɵdirectiveInject(PrimeNGConfig));
-  };
-  static ɵcmp = ɵɵdefineComponent({
-    type: _Checkbox,
-    selectors: [["p-checkbox"]],
-    contentQueries: function Checkbox_ContentQueries(rf, ctx, dirIndex) {
-      if (rf & 1) {
-        ɵɵcontentQuery(dirIndex, PrimeTemplate, 4);
-      }
-      if (rf & 2) {
-        let _t;
-        ɵɵqueryRefresh(_t = ɵɵloadQuery()) && (ctx.templates = _t);
-      }
-    },
-    viewQuery: function Checkbox_Query(rf, ctx) {
-      if (rf & 1) {
-        ɵɵviewQuery(_c0, 5);
-      }
-      if (rf & 2) {
-        let _t;
-        ɵɵqueryRefresh(_t = ɵɵloadQuery()) && (ctx.inputViewChild = _t.first);
-      }
-    },
-    hostAttrs: [1, "p-element"],
-    inputs: {
-      value: "value",
-      name: "name",
-      disabled: [2, "disabled", "disabled", booleanAttribute],
-      binary: [2, "binary", "binary", booleanAttribute],
-      label: "label",
-      ariaLabelledBy: "ariaLabelledBy",
-      ariaLabel: "ariaLabel",
-      tabindex: [2, "tabindex", "tabindex", numberAttribute],
-      inputId: "inputId",
-      style: "style",
-      styleClass: "styleClass",
-      labelStyleClass: "labelStyleClass",
-      formControl: "formControl",
-      checkboxIcon: "checkboxIcon",
-      readonly: [2, "readonly", "readonly", booleanAttribute],
-      required: [2, "required", "required", booleanAttribute],
-      autofocus: [2, "autofocus", "autofocus", booleanAttribute],
-      trueValue: "trueValue",
-      falseValue: "falseValue",
-      variant: "variant"
-    },
-    outputs: {
-      onChange: "onChange",
-      onFocus: "onFocus",
-      onBlur: "onBlur"
-    },
-    features: [ɵɵProvidersFeature([CHECKBOX_VALUE_ACCESSOR]), ɵɵInputTransformsFeature],
-    decls: 7,
-    vars: 37,
-    consts: [["input", ""], [3, "ngStyle", "ngClass"], [1, "p-hidden-accessible"], ["type", "checkbox", "pAutoFocus", "", 3, "change", "focus", "blur", "value", "checked", "disabled", "readonly", "autofocus"], [1, "p-checkbox-box", 3, "click", "ngClass"], [4, "ngIf"], [3, "class", "ngClass", "click", 4, "ngIf"], ["class", "p-checkbox-icon", 4, "ngIf"], ["class", "p-checkbox-icon", 3, "ngClass", 4, "ngIf"], [3, "styleClass", 4, "ngIf"], [1, "p-checkbox-icon", 3, "ngClass"], [3, "styleClass"], [1, "p-checkbox-icon"], [4, "ngTemplateOutlet"], [3, "click", "ngClass"]],
-    template: function Checkbox_Template(rf, ctx) {
-      if (rf & 1) {
-        const _r1 = ɵɵgetCurrentView();
-        ɵɵelementStart(0, "div", 1)(1, "div", 2)(2, "input", 3, 0);
-        ɵɵlistener("change", function Checkbox_Template_input_change_2_listener($event) {
-          ɵɵrestoreView(_r1);
-          return ɵɵresetView(ctx.handleChange($event));
-        })("focus", function Checkbox_Template_input_focus_2_listener($event) {
-          ɵɵrestoreView(_r1);
-          return ɵɵresetView(ctx.onInputFocus($event));
-        })("blur", function Checkbox_Template_input_blur_2_listener($event) {
-          ɵɵrestoreView(_r1);
-          return ɵɵresetView(ctx.onInputBlur($event));
-        });
-        ɵɵelementEnd()();
-        ɵɵelementStart(4, "div", 4);
-        ɵɵlistener("click", function Checkbox_Template_div_click_4_listener($event) {
-          ɵɵrestoreView(_r1);
-          const input_r2 = ɵɵreference(3);
-          return ɵɵresetView(ctx.onClick($event, input_r2, true));
-        });
-        ɵɵtemplate(5, Checkbox_ng_container_5_Template, 3, 2, "ng-container", 5);
-        ɵɵelementEnd()();
-        ɵɵtemplate(6, Checkbox_label_6_Template, 2, 10, "label", 6);
-      }
-      if (rf & 2) {
-        ɵɵclassMap(ctx.styleClass);
-        ɵɵproperty("ngStyle", ctx.style)("ngClass", ɵɵpureFunction4(28, _c1, ctx.checked(), ctx.disabled, ctx.focused, ctx.variant === "filled" || ctx.config.inputStyle() === "filled"));
-        ɵɵattribute("data-pc-name", "checkbox")("data-pc-section", "root");
-        ɵɵadvance();
-        ɵɵattribute("data-pc-section", "hiddenInputWrapper")("data-p-hidden-accessible", true);
-        ɵɵadvance();
-        ɵɵproperty("value", ctx.value)("checked", ctx.checked())("disabled", ctx.disabled)("readonly", ctx.readonly)("autofocus", ctx.autofocus);
-        ɵɵattribute("id", ctx.inputId)("name", ctx.name)("tabindex", ctx.tabindex)("required", ctx.required)("aria-labelledby", ctx.ariaLabelledBy)("aria-label", ctx.ariaLabel)("aria-checked", ctx.checked())("data-pc-section", "hiddenInput");
-        ɵɵadvance(2);
-        ɵɵproperty("ngClass", ɵɵpureFunction3(33, _c2, ctx.checked(), ctx.disabled, ctx.focused));
-        ɵɵattribute("data-p-highlight", ctx.checked())("data-p-disabled", ctx.disabled)("data-p-focused", ctx.focused)("data-pc-section", "input");
-        ɵɵadvance();
-        ɵɵproperty("ngIf", ctx.checked());
-        ɵɵadvance();
-        ɵɵproperty("ngIf", ctx.label);
-      }
-    },
-    dependencies: () => [NgClass, NgIf, NgTemplateOutlet, NgStyle, AutoFocus, CheckIcon],
-    styles: ["@layer primeng{.p-checkbox{display:inline-flex;cursor:pointer;-webkit-user-select:none;user-select:none;vertical-align:bottom;position:relative}.p-checkbox-disabled{cursor:default!important;pointer-events:none}.p-checkbox-box{display:flex;justify-content:center;align-items:center}p-checkbox{display:inline-flex;vertical-align:bottom;align-items:center}.p-checkbox-label{line-height:1}}\n"],
-    encapsulation: 2,
-    changeDetection: 0
-  });
 };
+__publicField(_Checkbox, "ɵfac", function Checkbox_Factory(__ngFactoryType__) {
+  return new (__ngFactoryType__ || _Checkbox)(ɵɵdirectiveInject(ChangeDetectorRef), ɵɵdirectiveInject(Injector), ɵɵdirectiveInject(PrimeNGConfig));
+});
+__publicField(_Checkbox, "ɵcmp", ɵɵdefineComponent({
+  type: _Checkbox,
+  selectors: [["p-checkbox"]],
+  contentQueries: function Checkbox_ContentQueries(rf, ctx, dirIndex) {
+    if (rf & 1) {
+      ɵɵcontentQuery(dirIndex, PrimeTemplate, 4);
+    }
+    if (rf & 2) {
+      let _t;
+      ɵɵqueryRefresh(_t = ɵɵloadQuery()) && (ctx.templates = _t);
+    }
+  },
+  viewQuery: function Checkbox_Query(rf, ctx) {
+    if (rf & 1) {
+      ɵɵviewQuery(_c0, 5);
+    }
+    if (rf & 2) {
+      let _t;
+      ɵɵqueryRefresh(_t = ɵɵloadQuery()) && (ctx.inputViewChild = _t.first);
+    }
+  },
+  hostAttrs: [1, "p-element"],
+  inputs: {
+    value: "value",
+    name: "name",
+    disabled: [2, "disabled", "disabled", booleanAttribute],
+    binary: [2, "binary", "binary", booleanAttribute],
+    label: "label",
+    ariaLabelledBy: "ariaLabelledBy",
+    ariaLabel: "ariaLabel",
+    tabindex: [2, "tabindex", "tabindex", numberAttribute],
+    inputId: "inputId",
+    style: "style",
+    styleClass: "styleClass",
+    labelStyleClass: "labelStyleClass",
+    formControl: "formControl",
+    checkboxIcon: "checkboxIcon",
+    readonly: [2, "readonly", "readonly", booleanAttribute],
+    required: [2, "required", "required", booleanAttribute],
+    autofocus: [2, "autofocus", "autofocus", booleanAttribute],
+    trueValue: "trueValue",
+    falseValue: "falseValue",
+    variant: "variant"
+  },
+  outputs: {
+    onChange: "onChange",
+    onFocus: "onFocus",
+    onBlur: "onBlur"
+  },
+  features: [ɵɵProvidersFeature([CHECKBOX_VALUE_ACCESSOR]), ɵɵInputTransformsFeature],
+  decls: 7,
+  vars: 37,
+  consts: [["input", ""], [3, "ngStyle", "ngClass"], [1, "p-hidden-accessible"], ["type", "checkbox", "pAutoFocus", "", 3, "change", "focus", "blur", "value", "checked", "disabled", "readonly", "autofocus"], [1, "p-checkbox-box", 3, "click", "ngClass"], [4, "ngIf"], [3, "class", "ngClass", "click", 4, "ngIf"], ["class", "p-checkbox-icon", 4, "ngIf"], ["class", "p-checkbox-icon", 3, "ngClass", 4, "ngIf"], [3, "styleClass", 4, "ngIf"], [1, "p-checkbox-icon", 3, "ngClass"], [3, "styleClass"], [1, "p-checkbox-icon"], [4, "ngTemplateOutlet"], [3, "click", "ngClass"]],
+  template: function Checkbox_Template(rf, ctx) {
+    if (rf & 1) {
+      const _r1 = ɵɵgetCurrentView();
+      ɵɵelementStart(0, "div", 1)(1, "div", 2)(2, "input", 3, 0);
+      ɵɵlistener("change", function Checkbox_Template_input_change_2_listener($event) {
+        ɵɵrestoreView(_r1);
+        return ɵɵresetView(ctx.handleChange($event));
+      })("focus", function Checkbox_Template_input_focus_2_listener($event) {
+        ɵɵrestoreView(_r1);
+        return ɵɵresetView(ctx.onInputFocus($event));
+      })("blur", function Checkbox_Template_input_blur_2_listener($event) {
+        ɵɵrestoreView(_r1);
+        return ɵɵresetView(ctx.onInputBlur($event));
+      });
+      ɵɵelementEnd()();
+      ɵɵelementStart(4, "div", 4);
+      ɵɵlistener("click", function Checkbox_Template_div_click_4_listener($event) {
+        ɵɵrestoreView(_r1);
+        const input_r2 = ɵɵreference(3);
+        return ɵɵresetView(ctx.onClick($event, input_r2, true));
+      });
+      ɵɵtemplate(5, Checkbox_ng_container_5_Template, 3, 2, "ng-container", 5);
+      ɵɵelementEnd()();
+      ɵɵtemplate(6, Checkbox_label_6_Template, 2, 10, "label", 6);
+    }
+    if (rf & 2) {
+      ɵɵclassMap(ctx.styleClass);
+      ɵɵproperty("ngStyle", ctx.style)("ngClass", ɵɵpureFunction4(28, _c1, ctx.checked(), ctx.disabled, ctx.focused, ctx.variant === "filled" || ctx.config.inputStyle() === "filled"));
+      ɵɵattribute("data-pc-name", "checkbox")("data-pc-section", "root");
+      ɵɵadvance();
+      ɵɵattribute("data-pc-section", "hiddenInputWrapper")("data-p-hidden-accessible", true);
+      ɵɵadvance();
+      ɵɵproperty("value", ctx.value)("checked", ctx.checked())("disabled", ctx.disabled)("readonly", ctx.readonly)("autofocus", ctx.autofocus);
+      ɵɵattribute("id", ctx.inputId)("name", ctx.name)("tabindex", ctx.tabindex)("required", ctx.required)("aria-labelledby", ctx.ariaLabelledBy)("aria-label", ctx.ariaLabel)("aria-checked", ctx.checked())("data-pc-section", "hiddenInput");
+      ɵɵadvance(2);
+      ɵɵproperty("ngClass", ɵɵpureFunction3(33, _c2, ctx.checked(), ctx.disabled, ctx.focused));
+      ɵɵattribute("data-p-highlight", ctx.checked())("data-p-disabled", ctx.disabled)("data-p-focused", ctx.focused)("data-pc-section", "input");
+      ɵɵadvance();
+      ɵɵproperty("ngIf", ctx.checked());
+      ɵɵadvance();
+      ɵɵproperty("ngIf", ctx.label);
+    }
+  },
+  dependencies: () => [NgClass, NgIf, NgTemplateOutlet, NgStyle, AutoFocus, CheckIcon],
+  styles: ["@layer primeng{.p-checkbox{display:inline-flex;cursor:pointer;-webkit-user-select:none;user-select:none;vertical-align:bottom;position:relative}.p-checkbox-disabled{cursor:default!important;pointer-events:none}.p-checkbox-box{display:flex;justify-content:center;align-items:center}p-checkbox{display:inline-flex;vertical-align:bottom;align-items:center}.p-checkbox-label{line-height:1}}\n"],
+  encapsulation: 2,
+  changeDetection: 0
+}));
+var Checkbox = _Checkbox;
 (() => {
   (typeof ngDevMode === "undefined" || ngDevMode) && setClassMetadata(Checkbox, [{
     type: Component,
     args: [{
       selector: "p-checkbox",
-      template: `
-        <div
-            [ngStyle]="style"
-            [ngClass]="{
-                'p-checkbox p-component': true,
-                'p-checkbox-checked': checked(),
-                'p-checkbox-disabled': disabled,
-                'p-checkbox-focused': focused,
-                'p-variant-filled': variant === 'filled' || config.inputStyle() === 'filled'
-            }"
-            [class]="styleClass"
-            [attr.data-pc-name]="'checkbox'"
-            [attr.data-pc-section]="'root'"
-        >
-            <div class="p-hidden-accessible" [attr.data-pc-section]="'hiddenInputWrapper'" [attr.data-p-hidden-accessible]="true">
-                <input
-                    #input
-                    [attr.id]="inputId"
-                    type="checkbox"
-                    [value]="value"
-                    [attr.name]="name"
-                    [checked]="checked()"
-                    [attr.tabindex]="tabindex"
-                    [disabled]="disabled"
-                    [readonly]="readonly"
-                    [attr.required]="required"
-                    [attr.aria-labelledby]="ariaLabelledBy"
-                    [attr.aria-label]="ariaLabel"
-                    [attr.aria-checked]="checked()"
-                    (change)="handleChange($event)"
-                    (focus)="onInputFocus($event)"
-                    (blur)="onInputBlur($event)"
-                    [attr.data-pc-section]="'hiddenInput'"
-                    pAutoFocus
-                    [autofocus]="autofocus"
-                />
-            </div>
-            <div
-                class="p-checkbox-box"
-                [ngClass]="{ 'p-highlight': checked(), 'p-disabled': disabled, 'p-focus': focused }"
-                (click)="onClick($event, input, true)"
-                [attr.data-p-highlight]="checked()"
-                [attr.data-p-disabled]="disabled"
-                [attr.data-p-focused]="focused"
-                [attr.data-pc-section]="'input'"
-            >
-                <ng-container *ngIf="checked()">
-                    <ng-container *ngIf="!checkboxIconTemplate">
-                        <span *ngIf="checkboxIcon" class="p-checkbox-icon" [ngClass]="checkboxIcon" [attr.data-pc-section]="'icon'"></span>
-                        <CheckIcon *ngIf="!checkboxIcon" [styleClass]="'p-checkbox-icon'" [attr.data-pc-section]="'icon'" />
-                    </ng-container>
-                    <span *ngIf="checkboxIconTemplate" class="p-checkbox-icon" [attr.data-pc-section]="'icon'">
-                        <ng-template *ngTemplateOutlet="checkboxIconTemplate"></ng-template>
-                    </span>
-                </ng-container>
-            </div>
-        </div>
-        <label
-            (click)="onClick($event, input, true)"
-            [class]="labelStyleClass"
-            [ngClass]="{ 'p-checkbox-label': true, 'p-checkbox-label-active': checked(), 'p-disabled': disabled, 'p-checkbox-label-focus': focused }"
-            *ngIf="label"
-            [attr.for]="inputId"
-            [attr.data-pc-section]="'label'"
-        >
-            {{ label }}</label
-        >
-    `,
+      template: '\n        <div\n            [ngStyle]="style"\n            [ngClass]="{\n                \'p-checkbox p-component\': true,\n                \'p-checkbox-checked\': checked(),\n                \'p-checkbox-disabled\': disabled,\n                \'p-checkbox-focused\': focused,\n                \'p-variant-filled\': variant === \'filled\' || config.inputStyle() === \'filled\'\n            }"\n            [class]="styleClass"\n            [attr.data-pc-name]="\'checkbox\'"\n            [attr.data-pc-section]="\'root\'"\n        >\n            <div class="p-hidden-accessible" [attr.data-pc-section]="\'hiddenInputWrapper\'" [attr.data-p-hidden-accessible]="true">\n                <input\n                    #input\n                    [attr.id]="inputId"\n                    type="checkbox"\n                    [value]="value"\n                    [attr.name]="name"\n                    [checked]="checked()"\n                    [attr.tabindex]="tabindex"\n                    [disabled]="disabled"\n                    [readonly]="readonly"\n                    [attr.required]="required"\n                    [attr.aria-labelledby]="ariaLabelledBy"\n                    [attr.aria-label]="ariaLabel"\n                    [attr.aria-checked]="checked()"\n                    (change)="handleChange($event)"\n                    (focus)="onInputFocus($event)"\n                    (blur)="onInputBlur($event)"\n                    [attr.data-pc-section]="\'hiddenInput\'"\n                    pAutoFocus\n                    [autofocus]="autofocus"\n                />\n            </div>\n            <div\n                class="p-checkbox-box"\n                [ngClass]="{ \'p-highlight\': checked(), \'p-disabled\': disabled, \'p-focus\': focused }"\n                (click)="onClick($event, input, true)"\n                [attr.data-p-highlight]="checked()"\n                [attr.data-p-disabled]="disabled"\n                [attr.data-p-focused]="focused"\n                [attr.data-pc-section]="\'input\'"\n            >\n                <ng-container *ngIf="checked()">\n                    <ng-container *ngIf="!checkboxIconTemplate">\n                        <span *ngIf="checkboxIcon" class="p-checkbox-icon" [ngClass]="checkboxIcon" [attr.data-pc-section]="\'icon\'"></span>\n                        <CheckIcon *ngIf="!checkboxIcon" [styleClass]="\'p-checkbox-icon\'" [attr.data-pc-section]="\'icon\'" />\n                    </ng-container>\n                    <span *ngIf="checkboxIconTemplate" class="p-checkbox-icon" [attr.data-pc-section]="\'icon\'">\n                        <ng-template *ngTemplateOutlet="checkboxIconTemplate"></ng-template>\n                    </span>\n                </ng-container>\n            </div>\n        </div>\n        <label\n            (click)="onClick($event, input, true)"\n            [class]="labelStyleClass"\n            [ngClass]="{ \'p-checkbox-label\': true, \'p-checkbox-label-active\': checked(), \'p-disabled\': disabled, \'p-checkbox-label-focus\': focused }"\n            *ngIf="label"\n            [attr.for]="inputId"\n            [attr.data-pc-section]="\'label\'"\n        >\n            {{ label }}</label\n        >\n    ',
       providers: [CHECKBOX_VALUE_ACCESSOR],
       changeDetection: ChangeDetectionStrategy.OnPush,
       encapsulation: ViewEncapsulation$1.None,
@@ -698,20 +634,21 @@ var Checkbox = class _Checkbox {
     }]
   });
 })();
-var CheckboxModule = class _CheckboxModule {
-  static ɵfac = function CheckboxModule_Factory(__ngFactoryType__) {
-    return new (__ngFactoryType__ || _CheckboxModule)();
-  };
-  static ɵmod = ɵɵdefineNgModule({
-    type: _CheckboxModule,
-    declarations: [Checkbox],
-    imports: [CommonModule, AutoFocusModule, CheckIcon],
-    exports: [Checkbox, SharedModule]
-  });
-  static ɵinj = ɵɵdefineInjector({
-    imports: [CommonModule, AutoFocusModule, CheckIcon, SharedModule]
-  });
+var _CheckboxModule = class _CheckboxModule {
 };
+__publicField(_CheckboxModule, "ɵfac", function CheckboxModule_Factory(__ngFactoryType__) {
+  return new (__ngFactoryType__ || _CheckboxModule)();
+});
+__publicField(_CheckboxModule, "ɵmod", ɵɵdefineNgModule({
+  type: _CheckboxModule,
+  declarations: [Checkbox],
+  imports: [CommonModule, AutoFocusModule, CheckIcon],
+  exports: [Checkbox, SharedModule]
+}));
+__publicField(_CheckboxModule, "ɵinj", ɵɵdefineInjector({
+  imports: [CommonModule, AutoFocusModule, CheckIcon, SharedModule]
+}));
+var CheckboxModule = _CheckboxModule;
 (() => {
   (typeof ngDevMode === "undefined" || ngDevMode) && setClassMetadata(CheckboxModule, [{
     type: NgModule,

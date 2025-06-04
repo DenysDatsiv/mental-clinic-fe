@@ -1,22 +1,22 @@
 import {
   SearchIcon
-} from "./chunk-26A77ZYK.js";
+} from "./chunk-ZVYGKXDY.js";
 import {
   CheckIcon
-} from "./chunk-T5D2NQ3S.js";
+} from "./chunk-A2QFKI6F.js";
 import {
   Scroller,
   ScrollerModule
-} from "./chunk-TB2LYZAF.js";
-import "./chunk-PCVGMHYY.js";
+} from "./chunk-VW3MRXK5.js";
+import "./chunk-VYCWYYRS.js";
 import {
   Ripple,
   RippleModule
-} from "./chunk-QN24C4B3.js";
+} from "./chunk-MUJBADSC.js";
 import {
   NG_VALUE_ACCESSOR
-} from "./chunk-B7GQUK3J.js";
-import "./chunk-PXWZN6FU.js";
+} from "./chunk-ZOG4HQFG.js";
+import "./chunk-BJLZ3T2F.js";
 import {
   FilterService,
   Footer,
@@ -24,14 +24,14 @@ import {
   PrimeNGConfig,
   PrimeTemplate,
   SharedModule
-} from "./chunk-TQSVMJ6K.js";
+} from "./chunk-ZROJCIWL.js";
 import {
   ObjectUtils,
   UniqueComponentId
-} from "./chunk-3OF44R55.js";
+} from "./chunk-U3NLM53U.js";
 import {
   DomHandler
-} from "./chunk-BUGEQH7Q.js";
+} from "./chunk-LB42WWNC.js";
 import {
   CommonModule,
   NgClass,
@@ -39,7 +39,7 @@ import {
   NgIf,
   NgStyle,
   NgTemplateOutlet
-} from "./chunk-UBZYO7FG.js";
+} from "./chunk-KUZ63KOD.js";
 import {
   ChangeDetectionStrategy,
   ChangeDetectorRef,
@@ -99,11 +99,13 @@ import {
   ɵɵtextInterpolate,
   ɵɵtextInterpolate1,
   ɵɵviewQuery
-} from "./chunk-ZI2Q76R4.js";
-import "./chunk-5OPE3T2R.js";
+} from "./chunk-R75KKECJ.js";
 import "./chunk-4N4GOYJH.js";
+import "./chunk-5OPE3T2R.js";
 import "./chunk-FHTVLBLO.js";
-import "./chunk-3OV72XIM.js";
+import {
+  __publicField
+} from "./chunk-IJZFAMY6.js";
 
 // node_modules/primeng/fesm2022/primeng-listbox.mjs
 var _c0 = ["headerchkbox"];
@@ -787,225 +789,322 @@ var LISTBOX_VALUE_ACCESSOR = {
   useExisting: forwardRef(() => Listbox),
   multi: true
 };
-var Listbox = class _Listbox {
-  el;
-  cd;
-  filterService;
-  config;
-  renderer;
-  /**
-   * Unique identifier of the component.
-   * @group Props
-   */
-  id;
-  /**
-   * Text to display when the search is active. Defaults to global value in i18n translation configuration.
-   * @group Props
-   * @defaultValue '{0} results are available'
-   */
-  searchMessage;
-  /**
-   * Text to display when filtering does not return any results. Defaults to global value in i18n translation configuration.
-   * @group Props
-   * @defaultValue 'No selected item'
-   */
-  emptySelectionMessage;
-  /**
-   * Text to be displayed in hidden accessible field when options are selected. Defaults to global value in i18n translation configuration.
-   * @group Props
-   * @defaultValue '{0} items selected'
-   */
-  selectionMessage;
-  /**
-   * Whether to focus on the first visible or selected element when the overlay panel is shown.
-   * @group Props
-   */
-  autoOptionFocus = true;
-  /**
-   * Defines a string that labels the input for accessibility.
-   * @group Props
-   */
-  ariaLabel;
-  /**
-   * When enabled, the focused option is selected.
-   * @group Props
-   */
-  selectOnFocus;
-  /**
-   * Locale to use in searching. The default locale is the host environment's current locale.
-   * @group Props
-   */
-  searchLocale;
-  /**
-   * When enabled, the hovered option will be focused.
-   * @group Props
-   */
-  focusOnHover;
-  /**
-   * Text to display when filtering.
-   * @group Props
-   */
-  filterMessage;
-  /**
-   * Fields used when filtering the options, defaults to optionLabel.
-   * @group Props
-   */
-  filterFields;
-  /**
-   * Defines if data is loaded and interacted with in lazy manner.
-   * @group Props
-   */
-  lazy = false;
-  /**
-   * Whether the data should be loaded on demand during scroll.
-   * @group Props
-   */
-  virtualScroll;
-  /**
-   * Height of an item in the list for VirtualScrolling.
-   * @group Props
-   */
-  virtualScrollItemSize;
-  /**
-   * Whether to use the scroller feature. The properties of scroller component can be used like an object in it.
-   * @group Props
-   */
-  virtualScrollOptions;
-  /**
-   * Height of the viewport in pixels, a scrollbar is defined if height of list exceeds this value.
-   * @group Props
-   */
-  scrollHeight = "200px";
-  /**
-   * Index of the element in tabbing order.
-   * @group Props
-   */
-  tabindex = 0;
-  /**
-   * When specified, allows selecting multiple values.
-   * @group Props
-   */
-  multiple;
-  /**
-   * Inline style of the container.
-   * @group Props
-   */
-  style;
-  /**
-   * Style class of the container.
-   * @group Props
-   */
-  styleClass;
-  /**
-   * Inline style of the list element.
-   * @group Props
-   */
-  listStyle;
-  /**
-   * Style class of the list element.
-   * @group Props
-   */
-  listStyleClass;
-  /**
-   * When present, it specifies that the element value cannot be changed.
-   * @group Props
-   */
-  readonly;
-  /**
-   * When present, it specifies that the element should be disabled.
-   * @group Props
-   */
-  disabled;
-  /**
-   * When specified, allows selecting items with checkboxes.
-   * @group Props
-   */
-  checkbox = false;
-  /**
-   * When specified, displays a filter input at header.
-   * @group Props
-   */
-  filter = false;
-  /**
-   * When filtering is enabled, filterBy decides which field or fields (comma separated) to search against.
-   * @group Props
-   */
-  filterBy;
-  /**
-   * Defines how the items are filtered.
-   * @group Props
-   */
-  filterMatchMode = "contains";
-  /**
-   * Locale to use in filtering. The default locale is the host environment's current locale.
-   * @group Props
-   */
-  filterLocale;
-  /**
-   * Defines how multiple items can be selected, when true metaKey needs to be pressed to select or unselect an item and when set to false selection of each item can be toggled individually. On touch enabled devices, metaKeySelection is turned off automatically.
-   * @group Props
-   */
-  metaKeySelection = false;
-  /**
-   * A property to uniquely identify a value in options.
-   * @group Props
-   */
-  dataKey;
-  /**
-   * Whether header checkbox is shown in multiple mode.
-   * @group Props
-   */
-  showToggleAll = true;
-  /**
-   * Name of the label field of an option.
-   * @group Props
-   */
-  optionLabel;
-  /**
-   * Name of the value field of an option.
-   * @group Props
-   */
-  optionValue;
-  /**
-   * Name of the options field of an option group.
-   * @group Props
-   */
-  optionGroupChildren = "items";
-  /**
-   * Name of the label field of an option group.
-   * @group Props
-   */
-  optionGroupLabel = "label";
-  /**
-   * Name of the disabled field of an option.
-   * @group Props
-   */
-  optionDisabled;
-  /**
-   * Defines a string that labels the filter input.
-   * @group Props
-   */
-  ariaFilterLabel;
-  /**
-   * Defines placeholder of the filter input.
-   * @group Props
-   */
-  filterPlaceHolder;
-  /**
-   * Text to display when filtering does not return any results.
-   * @group Props
-   */
-  emptyFilterMessage;
-  /**
-   * Text to display when there is no data. Defaults to global value in i18n translation configuration.
-   * @group Props
-   */
-  emptyMessage;
-  /**
-   * Whether to display options as grouped when nested options are provided.
-   * @group Props
-   */
-  group;
+var _Listbox = class _Listbox {
+  constructor(el, cd, filterService, config, renderer) {
+    __publicField(this, "el");
+    __publicField(this, "cd");
+    __publicField(this, "filterService");
+    __publicField(this, "config");
+    __publicField(this, "renderer");
+    /**
+     * Unique identifier of the component.
+     * @group Props
+     */
+    __publicField(this, "id");
+    /**
+     * Text to display when the search is active. Defaults to global value in i18n translation configuration.
+     * @group Props
+     * @defaultValue '{0} results are available'
+     */
+    __publicField(this, "searchMessage");
+    /**
+     * Text to display when filtering does not return any results. Defaults to global value in i18n translation configuration.
+     * @group Props
+     * @defaultValue 'No selected item'
+     */
+    __publicField(this, "emptySelectionMessage");
+    /**
+     * Text to be displayed in hidden accessible field when options are selected. Defaults to global value in i18n translation configuration.
+     * @group Props
+     * @defaultValue '{0} items selected'
+     */
+    __publicField(this, "selectionMessage");
+    /**
+     * Whether to focus on the first visible or selected element when the overlay panel is shown.
+     * @group Props
+     */
+    __publicField(this, "autoOptionFocus", true);
+    /**
+     * Defines a string that labels the input for accessibility.
+     * @group Props
+     */
+    __publicField(this, "ariaLabel");
+    /**
+     * When enabled, the focused option is selected.
+     * @group Props
+     */
+    __publicField(this, "selectOnFocus");
+    /**
+     * Locale to use in searching. The default locale is the host environment's current locale.
+     * @group Props
+     */
+    __publicField(this, "searchLocale");
+    /**
+     * When enabled, the hovered option will be focused.
+     * @group Props
+     */
+    __publicField(this, "focusOnHover");
+    /**
+     * Text to display when filtering.
+     * @group Props
+     */
+    __publicField(this, "filterMessage");
+    /**
+     * Fields used when filtering the options, defaults to optionLabel.
+     * @group Props
+     */
+    __publicField(this, "filterFields");
+    /**
+     * Defines if data is loaded and interacted with in lazy manner.
+     * @group Props
+     */
+    __publicField(this, "lazy", false);
+    /**
+     * Whether the data should be loaded on demand during scroll.
+     * @group Props
+     */
+    __publicField(this, "virtualScroll");
+    /**
+     * Height of an item in the list for VirtualScrolling.
+     * @group Props
+     */
+    __publicField(this, "virtualScrollItemSize");
+    /**
+     * Whether to use the scroller feature. The properties of scroller component can be used like an object in it.
+     * @group Props
+     */
+    __publicField(this, "virtualScrollOptions");
+    /**
+     * Height of the viewport in pixels, a scrollbar is defined if height of list exceeds this value.
+     * @group Props
+     */
+    __publicField(this, "scrollHeight", "200px");
+    /**
+     * Index of the element in tabbing order.
+     * @group Props
+     */
+    __publicField(this, "tabindex", 0);
+    /**
+     * When specified, allows selecting multiple values.
+     * @group Props
+     */
+    __publicField(this, "multiple");
+    /**
+     * Inline style of the container.
+     * @group Props
+     */
+    __publicField(this, "style");
+    /**
+     * Style class of the container.
+     * @group Props
+     */
+    __publicField(this, "styleClass");
+    /**
+     * Inline style of the list element.
+     * @group Props
+     */
+    __publicField(this, "listStyle");
+    /**
+     * Style class of the list element.
+     * @group Props
+     */
+    __publicField(this, "listStyleClass");
+    /**
+     * When present, it specifies that the element value cannot be changed.
+     * @group Props
+     */
+    __publicField(this, "readonly");
+    /**
+     * When present, it specifies that the element should be disabled.
+     * @group Props
+     */
+    __publicField(this, "disabled");
+    /**
+     * When specified, allows selecting items with checkboxes.
+     * @group Props
+     */
+    __publicField(this, "checkbox", false);
+    /**
+     * When specified, displays a filter input at header.
+     * @group Props
+     */
+    __publicField(this, "filter", false);
+    /**
+     * When filtering is enabled, filterBy decides which field or fields (comma separated) to search against.
+     * @group Props
+     */
+    __publicField(this, "filterBy");
+    /**
+     * Defines how the items are filtered.
+     * @group Props
+     */
+    __publicField(this, "filterMatchMode", "contains");
+    /**
+     * Locale to use in filtering. The default locale is the host environment's current locale.
+     * @group Props
+     */
+    __publicField(this, "filterLocale");
+    /**
+     * Defines how multiple items can be selected, when true metaKey needs to be pressed to select or unselect an item and when set to false selection of each item can be toggled individually. On touch enabled devices, metaKeySelection is turned off automatically.
+     * @group Props
+     */
+    __publicField(this, "metaKeySelection", false);
+    /**
+     * A property to uniquely identify a value in options.
+     * @group Props
+     */
+    __publicField(this, "dataKey");
+    /**
+     * Whether header checkbox is shown in multiple mode.
+     * @group Props
+     */
+    __publicField(this, "showToggleAll", true);
+    /**
+     * Name of the label field of an option.
+     * @group Props
+     */
+    __publicField(this, "optionLabel");
+    /**
+     * Name of the value field of an option.
+     * @group Props
+     */
+    __publicField(this, "optionValue");
+    /**
+     * Name of the options field of an option group.
+     * @group Props
+     */
+    __publicField(this, "optionGroupChildren", "items");
+    /**
+     * Name of the label field of an option group.
+     * @group Props
+     */
+    __publicField(this, "optionGroupLabel", "label");
+    /**
+     * Name of the disabled field of an option.
+     * @group Props
+     */
+    __publicField(this, "optionDisabled");
+    /**
+     * Defines a string that labels the filter input.
+     * @group Props
+     */
+    __publicField(this, "ariaFilterLabel");
+    /**
+     * Defines placeholder of the filter input.
+     * @group Props
+     */
+    __publicField(this, "filterPlaceHolder");
+    /**
+     * Text to display when filtering does not return any results.
+     * @group Props
+     */
+    __publicField(this, "emptyFilterMessage");
+    /**
+     * Text to display when there is no data. Defaults to global value in i18n translation configuration.
+     * @group Props
+     */
+    __publicField(this, "emptyMessage");
+    /**
+     * Whether to display options as grouped when nested options are provided.
+     * @group Props
+     */
+    __publicField(this, "group");
+    /**
+     * Callback to invoke on value change.
+     * @param {ListboxChangeEvent} event - Custom change event.
+     * @group Emits
+     */
+    __publicField(this, "onChange", new EventEmitter());
+    /**
+     * Callback to invoke when option is clicked.
+     * @param {ListboxClickEvent} event - Custom click event.
+     * @group Emits
+     */
+    __publicField(this, "onClick", new EventEmitter());
+    /**
+     * Callback to invoke when option is double clicked.
+     * @param {ListboxDoubleClickEvent} event - Custom double click event.
+     * @group Emits
+     */
+    __publicField(this, "onDblClick", new EventEmitter());
+    /**
+     * Callback to invoke when data is filtered.
+     * @param {ListboxFilterEvent} event - Custom filter event.
+     * @group Emits
+     */
+    __publicField(this, "onFilter", new EventEmitter());
+    /**
+     * Callback to invoke when component receives focus.
+     * @param {FocusEvent} event - Focus event.
+     * @group Emits
+     */
+    __publicField(this, "onFocus", new EventEmitter());
+    /**
+     * Callback to invoke when component loses focus.
+     * @param {FocusEvent} event - Blur event.
+     * @group Emits
+     */
+    __publicField(this, "onBlur", new EventEmitter());
+    /**
+     * Callback to invoke when all data is selected.
+     * @param {ListboxSelectAllChangeEvent} event - Custom select event.
+     * @group Emits
+     */
+    __publicField(this, "onSelectAllChange", new EventEmitter());
+    __publicField(this, "headerCheckboxViewChild");
+    __publicField(this, "filterViewChild");
+    __publicField(this, "lastHiddenFocusableElement");
+    __publicField(this, "firstHiddenFocusableElement");
+    __publicField(this, "scroller");
+    __publicField(this, "listViewChild");
+    __publicField(this, "wrapperViewChild");
+    __publicField(this, "headerFacet");
+    __publicField(this, "footerFacet");
+    __publicField(this, "templates");
+    __publicField(this, "itemTemplate");
+    __publicField(this, "groupTemplate");
+    __publicField(this, "headerTemplate");
+    __publicField(this, "filterTemplate");
+    __publicField(this, "footerTemplate");
+    __publicField(this, "emptyFilterTemplate");
+    __publicField(this, "emptyTemplate");
+    __publicField(this, "filterIconTemplate");
+    __publicField(this, "checkIconTemplate");
+    __publicField(this, "_filterValue", signal(null));
+    __publicField(this, "_filteredOptions");
+    __publicField(this, "filterOptions");
+    __publicField(this, "filtered");
+    __publicField(this, "value");
+    __publicField(this, "onModelChange", () => {
+    });
+    __publicField(this, "onModelTouched", () => {
+    });
+    __publicField(this, "optionTouched");
+    __publicField(this, "focus");
+    __publicField(this, "headerCheckboxFocus");
+    __publicField(this, "translationSubscription");
+    __publicField(this, "focused");
+    __publicField(this, "scrollerTabIndex", "0");
+    __publicField(this, "searchValue");
+    __publicField(this, "searchTimeout");
+    __publicField(this, "_selectAll", null);
+    __publicField(this, "_options", signal(null));
+    __publicField(this, "startRangeIndex", signal(-1));
+    __publicField(this, "focusedOptionIndex", signal(-1));
+    __publicField(this, "modelValue", signal(null));
+    __publicField(this, "visibleOptions", computed(() => {
+      const options = this.group ? this.flatOptions(this._options()) : this._options() || [];
+      const filterValue = this._filterValue();
+      if (this.searchFields[0] === void 0) {
+        return filterValue ? options.filter((option) => option.toString().toLocaleLowerCase(this.filterLocale).indexOf(filterValue.toLocaleLowerCase(this.filterLocale).trim()) !== -1) : options;
+      } else return filterValue ? this.filterService.filter(options, this.searchFields, filterValue, this.filterMatchMode, this.filterLocale) : options;
+    }));
+    this.el = el;
+    this.cd = cd;
+    this.filterService = filterService;
+    this.config = config;
+    this.renderer = renderer;
+  }
   /**
    * An array of selectitems to display as the available options.
    * @group Props
@@ -1036,82 +1135,6 @@ var Listbox = class _Listbox {
   set selectAll(value) {
     this._selectAll = value;
   }
-  /**
-   * Callback to invoke on value change.
-   * @param {ListboxChangeEvent} event - Custom change event.
-   * @group Emits
-   */
-  onChange = new EventEmitter();
-  /**
-   * Callback to invoke when option is clicked.
-   * @param {ListboxClickEvent} event - Custom click event.
-   * @group Emits
-   */
-  onClick = new EventEmitter();
-  /**
-   * Callback to invoke when option is double clicked.
-   * @param {ListboxDoubleClickEvent} event - Custom double click event.
-   * @group Emits
-   */
-  onDblClick = new EventEmitter();
-  /**
-   * Callback to invoke when data is filtered.
-   * @param {ListboxFilterEvent} event - Custom filter event.
-   * @group Emits
-   */
-  onFilter = new EventEmitter();
-  /**
-   * Callback to invoke when component receives focus.
-   * @param {FocusEvent} event - Focus event.
-   * @group Emits
-   */
-  onFocus = new EventEmitter();
-  /**
-   * Callback to invoke when component loses focus.
-   * @param {FocusEvent} event - Blur event.
-   * @group Emits
-   */
-  onBlur = new EventEmitter();
-  /**
-   * Callback to invoke when all data is selected.
-   * @param {ListboxSelectAllChangeEvent} event - Custom select event.
-   * @group Emits
-   */
-  onSelectAllChange = new EventEmitter();
-  headerCheckboxViewChild;
-  filterViewChild;
-  lastHiddenFocusableElement;
-  firstHiddenFocusableElement;
-  scroller;
-  listViewChild;
-  wrapperViewChild;
-  headerFacet;
-  footerFacet;
-  templates;
-  itemTemplate;
-  groupTemplate;
-  headerTemplate;
-  filterTemplate;
-  footerTemplate;
-  emptyFilterTemplate;
-  emptyTemplate;
-  filterIconTemplate;
-  checkIconTemplate;
-  _filterValue = signal(null);
-  _filteredOptions;
-  filterOptions;
-  filtered;
-  value;
-  onModelChange = () => {
-  };
-  onModelTouched = () => {
-  };
-  optionTouched;
-  focus;
-  headerCheckboxFocus;
-  translationSubscription;
-  focused;
-  scrollerTabIndex = "0";
   get containerClass() {
     return {
       "p-listbox p-component": true,
@@ -1119,7 +1142,7 @@ var Listbox = class _Listbox {
     };
   }
   get focusedOptionId() {
-    return this.focusedOptionIndex() !== -1 ? `${this.id}_${this.focusedOptionIndex()}` : null;
+    return this.focusedOptionIndex() !== -1 ? "".concat(this.id, "_").concat(this.focusedOptionIndex()) : null;
   }
   get filterResultMessageText() {
     return ObjectUtils.isNotEmpty(this.visibleOptions()) ? this.filterMessageText.replaceAll("{0}", this.visibleOptions().length) : this.emptyFilterMessageText;
@@ -1153,27 +1176,6 @@ var Listbox = class _Listbox {
   }
   get toggleAllAriaLabel() {
     return this.config.translation.aria ? this.config.translation.aria[this.allSelected() ? "selectAll" : "unselectAll"] : void 0;
-  }
-  searchValue;
-  searchTimeout;
-  _selectAll = null;
-  _options = signal(null);
-  startRangeIndex = signal(-1);
-  focusedOptionIndex = signal(-1);
-  modelValue = signal(null);
-  visibleOptions = computed(() => {
-    const options = this.group ? this.flatOptions(this._options()) : this._options() || [];
-    const filterValue = this._filterValue();
-    if (this.searchFields[0] === void 0) {
-      return filterValue ? options.filter((option) => option.toString().toLocaleLowerCase(this.filterLocale).indexOf(filterValue.toLocaleLowerCase(this.filterLocale).trim()) !== -1) : options;
-    } else return filterValue ? this.filterService.filter(options, this.searchFields, filterValue, this.filterMatchMode, this.filterLocale) : options;
-  });
-  constructor(el, cd, filterService, config, renderer) {
-    this.el = el;
-    this.cd = cd;
-    this.filterService = filterService;
-    this.config = config;
-    this.renderer = renderer;
   }
   ngOnInit() {
     this.id = this.id || UniqueComponentId();
@@ -1449,7 +1451,8 @@ var Listbox = class _Listbox {
     event.preventDefault();
   }
   onFilterChange(event) {
-    let value = event.target.value?.trim();
+    var _a;
+    let value = (_a = event.target.value) == null ? void 0 : _a.trim();
     this._filterValue.set(value);
     this.focusedOptionIndex.set(-1);
     this.startRangeIndex.set(-1);
@@ -1677,8 +1680,8 @@ var Listbox = class _Listbox {
     return this.isValidOption(option) && this.getOptionLabel(option).toLocaleLowerCase(this.filterLocale).startsWith(this.searchValue.toLocaleLowerCase(this.filterLocale));
   }
   scrollInView(index = -1) {
-    const id = index !== -1 ? `${this.id}_${index}` : this.focusedOptionId;
-    const element = DomHandler.findSingle(this.listViewChild.nativeElement, `li[id="${id}"]`);
+    const id = index !== -1 ? "".concat(this.id, "_").concat(index) : this.focusedOptionId;
+    const element = DomHandler.findSingle(this.listViewChild.nativeElement, 'li[id="'.concat(id, '"]'));
     if (element) {
       element.scrollIntoView && element.scrollIntoView({
         block: "nearest",
@@ -1755,7 +1758,8 @@ var Listbox = class _Listbox {
     return option && !(this.isOptionDisabled(option) || this.isOptionGroup(option));
   }
   isEmpty() {
-    return !this._options()?.length || !this.visibleOptions()?.length;
+    var _a, _b;
+    return !((_a = this._options()) == null ? void 0 : _a.length) || !((_b = this.visibleOptions()) == null ? void 0 : _b.length);
   }
   hasEmptyMessage() {
     return this.emptyMessage ? true : false;
@@ -1774,351 +1778,177 @@ var Listbox = class _Listbox {
       this.translationSubscription.unsubscribe();
     }
   }
-  static ɵfac = function Listbox_Factory(__ngFactoryType__) {
-    return new (__ngFactoryType__ || _Listbox)(ɵɵdirectiveInject(ElementRef), ɵɵdirectiveInject(ChangeDetectorRef), ɵɵdirectiveInject(FilterService), ɵɵdirectiveInject(PrimeNGConfig), ɵɵdirectiveInject(Renderer2));
-  };
-  static ɵcmp = ɵɵdefineComponent({
-    type: _Listbox,
-    selectors: [["p-listbox"]],
-    contentQueries: function Listbox_ContentQueries(rf, ctx, dirIndex) {
-      if (rf & 1) {
-        ɵɵcontentQuery(dirIndex, Header, 5);
-        ɵɵcontentQuery(dirIndex, Footer, 5);
-        ɵɵcontentQuery(dirIndex, PrimeTemplate, 4);
-      }
-      if (rf & 2) {
-        let _t;
-        ɵɵqueryRefresh(_t = ɵɵloadQuery()) && (ctx.headerFacet = _t.first);
-        ɵɵqueryRefresh(_t = ɵɵloadQuery()) && (ctx.footerFacet = _t.first);
-        ɵɵqueryRefresh(_t = ɵɵloadQuery()) && (ctx.templates = _t);
-      }
-    },
-    viewQuery: function Listbox_Query(rf, ctx) {
-      if (rf & 1) {
-        ɵɵviewQuery(_c0, 5);
-        ɵɵviewQuery(_c1, 5);
-        ɵɵviewQuery(_c2, 5);
-        ɵɵviewQuery(_c3, 5);
-        ɵɵviewQuery(_c4, 5);
-        ɵɵviewQuery(_c5, 5);
-        ɵɵviewQuery(_c6, 5);
-      }
-      if (rf & 2) {
-        let _t;
-        ɵɵqueryRefresh(_t = ɵɵloadQuery()) && (ctx.headerCheckboxViewChild = _t.first);
-        ɵɵqueryRefresh(_t = ɵɵloadQuery()) && (ctx.filterViewChild = _t.first);
-        ɵɵqueryRefresh(_t = ɵɵloadQuery()) && (ctx.lastHiddenFocusableElement = _t.first);
-        ɵɵqueryRefresh(_t = ɵɵloadQuery()) && (ctx.firstHiddenFocusableElement = _t.first);
-        ɵɵqueryRefresh(_t = ɵɵloadQuery()) && (ctx.scroller = _t.first);
-        ɵɵqueryRefresh(_t = ɵɵloadQuery()) && (ctx.listViewChild = _t.first);
-        ɵɵqueryRefresh(_t = ɵɵloadQuery()) && (ctx.wrapperViewChild = _t.first);
-      }
-    },
-    hostAttrs: [1, "p-element"],
-    inputs: {
-      id: "id",
-      searchMessage: "searchMessage",
-      emptySelectionMessage: "emptySelectionMessage",
-      selectionMessage: "selectionMessage",
-      autoOptionFocus: [2, "autoOptionFocus", "autoOptionFocus", booleanAttribute],
-      ariaLabel: "ariaLabel",
-      selectOnFocus: [2, "selectOnFocus", "selectOnFocus", booleanAttribute],
-      searchLocale: [2, "searchLocale", "searchLocale", booleanAttribute],
-      focusOnHover: [2, "focusOnHover", "focusOnHover", booleanAttribute],
-      filterMessage: "filterMessage",
-      filterFields: "filterFields",
-      lazy: [2, "lazy", "lazy", booleanAttribute],
-      virtualScroll: [2, "virtualScroll", "virtualScroll", booleanAttribute],
-      virtualScrollItemSize: [2, "virtualScrollItemSize", "virtualScrollItemSize", numberAttribute],
-      virtualScrollOptions: "virtualScrollOptions",
-      scrollHeight: "scrollHeight",
-      tabindex: [2, "tabindex", "tabindex", numberAttribute],
-      multiple: [2, "multiple", "multiple", booleanAttribute],
-      style: "style",
-      styleClass: "styleClass",
-      listStyle: "listStyle",
-      listStyleClass: "listStyleClass",
-      readonly: [2, "readonly", "readonly", booleanAttribute],
-      disabled: [2, "disabled", "disabled", booleanAttribute],
-      checkbox: [2, "checkbox", "checkbox", booleanAttribute],
-      filter: [2, "filter", "filter", booleanAttribute],
-      filterBy: "filterBy",
-      filterMatchMode: "filterMatchMode",
-      filterLocale: "filterLocale",
-      metaKeySelection: [2, "metaKeySelection", "metaKeySelection", booleanAttribute],
-      dataKey: "dataKey",
-      showToggleAll: [2, "showToggleAll", "showToggleAll", booleanAttribute],
-      optionLabel: "optionLabel",
-      optionValue: "optionValue",
-      optionGroupChildren: "optionGroupChildren",
-      optionGroupLabel: "optionGroupLabel",
-      optionDisabled: "optionDisabled",
-      ariaFilterLabel: "ariaFilterLabel",
-      filterPlaceHolder: "filterPlaceHolder",
-      emptyFilterMessage: "emptyFilterMessage",
-      emptyMessage: "emptyMessage",
-      group: [2, "group", "group", booleanAttribute],
-      options: "options",
-      filterValue: "filterValue",
-      selectAll: "selectAll"
-    },
-    outputs: {
-      onChange: "onChange",
-      onClick: "onClick",
-      onDblClick: "onDblClick",
-      onFilter: "onFilter",
-      onFocus: "onFocus",
-      onBlur: "onBlur",
-      onSelectAllChange: "onSelectAllChange"
-    },
-    features: [ɵɵProvidersFeature([LISTBOX_VALUE_ACCESSOR]), ɵɵInputTransformsFeature],
-    ngContentSelectors: _c8,
-    decls: 15,
-    vars: 22,
-    consts: [["firstHiddenFocusableElement", ""], ["wrapper", ""], ["buildInItems", ""], ["lastHiddenFocusableElement", ""], ["builtInFilterElement", ""], ["headerchkbox", ""], ["filterInput", ""], ["scroller", ""], ["list", ""], ["emptyFilter", ""], ["empty", ""], [3, "focusout", "ngClass", "ngStyle"], ["role", "presentation", 1, "p-hidden-accessible", "p-hidden-focusable", 3, "focus", "tabindex"], ["class", "p-listbox-header", 4, "ngIf"], [3, "ngClass", "ngStyle"], [3, "items", "style", "itemSize", "autoSize", "lazy", "options", "tabindex", "onLazyLoad", 4, "ngIf"], [4, "ngIf"], ["class", "p-listbox-footer", 4, "ngIf"], ["role", "status", "aria-live", "polite", "class", "p-hidden-accessible", 4, "ngIf"], [1, "p-listbox-header"], [4, "ngTemplateOutlet", "ngTemplateOutletContext"], ["class", "p-checkbox p-component", 3, "ngClass", "click", "keydown", 4, "ngIf"], [4, "ngIf", "ngIfElse"], [1, "p-checkbox", "p-component", 3, "click", "keydown", "ngClass"], [1, "p-hidden-accessible"], ["type", "checkbox", "readonly", "readonly", 3, "focus", "blur", "disabled"], ["role", "checkbox", 1, "p-checkbox-box", 3, "ngClass"], [3, "styleClass", 4, "ngIf"], ["class", "p-checkbox-icon", 4, "ngIf"], [3, "styleClass"], [1, "p-checkbox-icon"], [4, "ngTemplateOutlet"], ["class", "p-listbox-filter-container", 4, "ngIf"], ["role", "status", "attr.aria-live", "polite", 1, "p-hidden-accessible"], [1, "p-listbox-filter-container"], ["type", "text", "role", "searchbox", 1, "p-listbox-filter", "p-inputtext", "p-component", 3, "input", "keydown", "focus", "blur", "value", "disabled", "tabindex"], ["class", "p-listbox-filter-icon", 4, "ngIf"], [1, "p-listbox-filter-icon"], [3, "onLazyLoad", "items", "itemSize", "autoSize", "lazy", "options", "tabindex"], ["pTemplate", "content"], ["pTemplate", "loader"], ["role", "listbox", 1, "p-listbox-list", 3, "focus", "blur", "keydown", "tabindex", "ngClass", "ngStyle"], ["ngFor", "", 3, "ngForOf"], ["class", "p-listbox-empty-message", "role", "option", 4, "ngIf"], ["role", "option", 1, "p-listbox-item-group", 3, "ngStyle"], ["pRipple", "", "role", "option", 1, "p-listbox-item", 3, "click", "dblclick", "mousedown", "mouseenter", "touchend", "ngStyle", "ngClass"], ["class", "p-checkbox p-component", 3, "ngClass", 4, "ngIf"], [1, "p-checkbox", "p-component", 3, "ngClass"], [1, "p-checkbox-box", 3, "ngClass"], ["role", "option", 1, "p-listbox-empty-message"], [1, "p-listbox-footer"], ["role", "status", "aria-live", "polite", 1, "p-hidden-accessible"]],
-    template: function Listbox_Template(rf, ctx) {
-      if (rf & 1) {
-        const _r1 = ɵɵgetCurrentView();
-        ɵɵprojectionDef(_c7);
-        ɵɵelementStart(0, "div", 11);
-        ɵɵlistener("focusout", function Listbox_Template_div_focusout_0_listener($event) {
-          ɵɵrestoreView(_r1);
-          return ɵɵresetView(ctx.onFocusout($event));
-        });
-        ɵɵelementStart(1, "span", 12, 0);
-        ɵɵlistener("focus", function Listbox_Template_span_focus_1_listener($event) {
-          ɵɵrestoreView(_r1);
-          return ɵɵresetView(ctx.onFirstHiddenFocus($event));
-        });
-        ɵɵelementEnd();
-        ɵɵtemplate(3, Listbox_div_3_Template, 3, 5, "div", 13)(4, Listbox_div_4_Template, 5, 3, "div", 13);
-        ɵɵelementStart(5, "div", 14, 1);
-        ɵɵtemplate(7, Listbox_p_scroller_7_Template, 4, 11, "p-scroller", 15)(8, Listbox_ng_container_8_Template, 2, 6, "ng-container", 16)(9, Listbox_ng_template_9_Template, 5, 11, "ng-template", null, 2, ɵɵtemplateRefExtractor);
-        ɵɵelementEnd();
-        ɵɵtemplate(11, Listbox_div_11_Template, 3, 5, "div", 17)(12, Listbox_span_12_Template, 3, 2, "span", 18);
-        ɵɵelementStart(13, "span", 12, 3);
-        ɵɵlistener("focus", function Listbox_Template_span_focus_13_listener($event) {
-          ɵɵrestoreView(_r1);
-          return ɵɵresetView(ctx.onLastHiddenFocus($event));
-        });
-        ɵɵelementEnd()();
-      }
-      if (rf & 2) {
-        ɵɵclassMap(ctx.styleClass);
-        ɵɵproperty("ngClass", ctx.containerClass)("ngStyle", ctx.style);
-        ɵɵattribute("id", ctx.id);
-        ɵɵadvance();
-        ɵɵproperty("tabindex", !ctx.disabled ? ctx.tabindex : -1);
-        ɵɵattribute("data-p-hidden-focusable", true);
-        ɵɵadvance(2);
-        ɵɵproperty("ngIf", ctx.headerFacet || ctx.headerTemplate);
-        ɵɵadvance();
-        ɵɵproperty("ngIf", ctx.checkbox && ctx.multiple && ctx.showToggleAll || ctx.filter);
-        ɵɵadvance();
-        ɵɵclassMap(ctx.listStyleClass);
-        ɵɵstyleProp("max-height", ctx.virtualScroll ? "auto" : ctx.scrollHeight || "auto");
-        ɵɵproperty("ngClass", "p-listbox-list-wrapper")("ngStyle", ctx.listStyle);
-        ɵɵattribute("tabindex", !ctx.disabled && "0");
-        ɵɵadvance(2);
-        ɵɵproperty("ngIf", ctx.virtualScroll);
-        ɵɵadvance();
-        ɵɵproperty("ngIf", !ctx.virtualScroll);
-        ɵɵadvance(3);
-        ɵɵproperty("ngIf", ctx.footerFacet || ctx.footerTemplate);
-        ɵɵadvance();
-        ɵɵproperty("ngIf", ctx.isEmpty());
-        ɵɵadvance();
-        ɵɵproperty("tabindex", !ctx.disabled ? ctx.tabindex : -1);
-        ɵɵattribute("data-p-hidden-focusable", true);
-      }
-    },
-    dependencies: () => [NgClass, NgForOf, NgIf, NgTemplateOutlet, NgStyle, PrimeTemplate, Ripple, Scroller, SearchIcon, CheckIcon],
-    styles: ["@layer primeng{.p-listbox-list-wrapper{overflow:auto}.p-listbox-list{list-style-type:none;margin:0;padding:0}.p-listbox-item{cursor:pointer;position:relative;overflow:hidden;display:flex;align-items:center;-webkit-user-select:none;user-select:none}.p-listbox-header{display:flex;align-items:center}.p-listbox-filter-container{position:relative;flex:1 1 auto}.p-listbox-filter-icon{position:absolute;top:50%;margin-top:-.5rem}.p-listbox-filter{width:100%}}\n"],
-    encapsulation: 2,
-    changeDetection: 0
-  });
 };
+__publicField(_Listbox, "ɵfac", function Listbox_Factory(__ngFactoryType__) {
+  return new (__ngFactoryType__ || _Listbox)(ɵɵdirectiveInject(ElementRef), ɵɵdirectiveInject(ChangeDetectorRef), ɵɵdirectiveInject(FilterService), ɵɵdirectiveInject(PrimeNGConfig), ɵɵdirectiveInject(Renderer2));
+});
+__publicField(_Listbox, "ɵcmp", ɵɵdefineComponent({
+  type: _Listbox,
+  selectors: [["p-listbox"]],
+  contentQueries: function Listbox_ContentQueries(rf, ctx, dirIndex) {
+    if (rf & 1) {
+      ɵɵcontentQuery(dirIndex, Header, 5);
+      ɵɵcontentQuery(dirIndex, Footer, 5);
+      ɵɵcontentQuery(dirIndex, PrimeTemplate, 4);
+    }
+    if (rf & 2) {
+      let _t;
+      ɵɵqueryRefresh(_t = ɵɵloadQuery()) && (ctx.headerFacet = _t.first);
+      ɵɵqueryRefresh(_t = ɵɵloadQuery()) && (ctx.footerFacet = _t.first);
+      ɵɵqueryRefresh(_t = ɵɵloadQuery()) && (ctx.templates = _t);
+    }
+  },
+  viewQuery: function Listbox_Query(rf, ctx) {
+    if (rf & 1) {
+      ɵɵviewQuery(_c0, 5);
+      ɵɵviewQuery(_c1, 5);
+      ɵɵviewQuery(_c2, 5);
+      ɵɵviewQuery(_c3, 5);
+      ɵɵviewQuery(_c4, 5);
+      ɵɵviewQuery(_c5, 5);
+      ɵɵviewQuery(_c6, 5);
+    }
+    if (rf & 2) {
+      let _t;
+      ɵɵqueryRefresh(_t = ɵɵloadQuery()) && (ctx.headerCheckboxViewChild = _t.first);
+      ɵɵqueryRefresh(_t = ɵɵloadQuery()) && (ctx.filterViewChild = _t.first);
+      ɵɵqueryRefresh(_t = ɵɵloadQuery()) && (ctx.lastHiddenFocusableElement = _t.first);
+      ɵɵqueryRefresh(_t = ɵɵloadQuery()) && (ctx.firstHiddenFocusableElement = _t.first);
+      ɵɵqueryRefresh(_t = ɵɵloadQuery()) && (ctx.scroller = _t.first);
+      ɵɵqueryRefresh(_t = ɵɵloadQuery()) && (ctx.listViewChild = _t.first);
+      ɵɵqueryRefresh(_t = ɵɵloadQuery()) && (ctx.wrapperViewChild = _t.first);
+    }
+  },
+  hostAttrs: [1, "p-element"],
+  inputs: {
+    id: "id",
+    searchMessage: "searchMessage",
+    emptySelectionMessage: "emptySelectionMessage",
+    selectionMessage: "selectionMessage",
+    autoOptionFocus: [2, "autoOptionFocus", "autoOptionFocus", booleanAttribute],
+    ariaLabel: "ariaLabel",
+    selectOnFocus: [2, "selectOnFocus", "selectOnFocus", booleanAttribute],
+    searchLocale: [2, "searchLocale", "searchLocale", booleanAttribute],
+    focusOnHover: [2, "focusOnHover", "focusOnHover", booleanAttribute],
+    filterMessage: "filterMessage",
+    filterFields: "filterFields",
+    lazy: [2, "lazy", "lazy", booleanAttribute],
+    virtualScroll: [2, "virtualScroll", "virtualScroll", booleanAttribute],
+    virtualScrollItemSize: [2, "virtualScrollItemSize", "virtualScrollItemSize", numberAttribute],
+    virtualScrollOptions: "virtualScrollOptions",
+    scrollHeight: "scrollHeight",
+    tabindex: [2, "tabindex", "tabindex", numberAttribute],
+    multiple: [2, "multiple", "multiple", booleanAttribute],
+    style: "style",
+    styleClass: "styleClass",
+    listStyle: "listStyle",
+    listStyleClass: "listStyleClass",
+    readonly: [2, "readonly", "readonly", booleanAttribute],
+    disabled: [2, "disabled", "disabled", booleanAttribute],
+    checkbox: [2, "checkbox", "checkbox", booleanAttribute],
+    filter: [2, "filter", "filter", booleanAttribute],
+    filterBy: "filterBy",
+    filterMatchMode: "filterMatchMode",
+    filterLocale: "filterLocale",
+    metaKeySelection: [2, "metaKeySelection", "metaKeySelection", booleanAttribute],
+    dataKey: "dataKey",
+    showToggleAll: [2, "showToggleAll", "showToggleAll", booleanAttribute],
+    optionLabel: "optionLabel",
+    optionValue: "optionValue",
+    optionGroupChildren: "optionGroupChildren",
+    optionGroupLabel: "optionGroupLabel",
+    optionDisabled: "optionDisabled",
+    ariaFilterLabel: "ariaFilterLabel",
+    filterPlaceHolder: "filterPlaceHolder",
+    emptyFilterMessage: "emptyFilterMessage",
+    emptyMessage: "emptyMessage",
+    group: [2, "group", "group", booleanAttribute],
+    options: "options",
+    filterValue: "filterValue",
+    selectAll: "selectAll"
+  },
+  outputs: {
+    onChange: "onChange",
+    onClick: "onClick",
+    onDblClick: "onDblClick",
+    onFilter: "onFilter",
+    onFocus: "onFocus",
+    onBlur: "onBlur",
+    onSelectAllChange: "onSelectAllChange"
+  },
+  features: [ɵɵProvidersFeature([LISTBOX_VALUE_ACCESSOR]), ɵɵInputTransformsFeature],
+  ngContentSelectors: _c8,
+  decls: 15,
+  vars: 22,
+  consts: [["firstHiddenFocusableElement", ""], ["wrapper", ""], ["buildInItems", ""], ["lastHiddenFocusableElement", ""], ["builtInFilterElement", ""], ["headerchkbox", ""], ["filterInput", ""], ["scroller", ""], ["list", ""], ["emptyFilter", ""], ["empty", ""], [3, "focusout", "ngClass", "ngStyle"], ["role", "presentation", 1, "p-hidden-accessible", "p-hidden-focusable", 3, "focus", "tabindex"], ["class", "p-listbox-header", 4, "ngIf"], [3, "ngClass", "ngStyle"], [3, "items", "style", "itemSize", "autoSize", "lazy", "options", "tabindex", "onLazyLoad", 4, "ngIf"], [4, "ngIf"], ["class", "p-listbox-footer", 4, "ngIf"], ["role", "status", "aria-live", "polite", "class", "p-hidden-accessible", 4, "ngIf"], [1, "p-listbox-header"], [4, "ngTemplateOutlet", "ngTemplateOutletContext"], ["class", "p-checkbox p-component", 3, "ngClass", "click", "keydown", 4, "ngIf"], [4, "ngIf", "ngIfElse"], [1, "p-checkbox", "p-component", 3, "click", "keydown", "ngClass"], [1, "p-hidden-accessible"], ["type", "checkbox", "readonly", "readonly", 3, "focus", "blur", "disabled"], ["role", "checkbox", 1, "p-checkbox-box", 3, "ngClass"], [3, "styleClass", 4, "ngIf"], ["class", "p-checkbox-icon", 4, "ngIf"], [3, "styleClass"], [1, "p-checkbox-icon"], [4, "ngTemplateOutlet"], ["class", "p-listbox-filter-container", 4, "ngIf"], ["role", "status", "attr.aria-live", "polite", 1, "p-hidden-accessible"], [1, "p-listbox-filter-container"], ["type", "text", "role", "searchbox", 1, "p-listbox-filter", "p-inputtext", "p-component", 3, "input", "keydown", "focus", "blur", "value", "disabled", "tabindex"], ["class", "p-listbox-filter-icon", 4, "ngIf"], [1, "p-listbox-filter-icon"], [3, "onLazyLoad", "items", "itemSize", "autoSize", "lazy", "options", "tabindex"], ["pTemplate", "content"], ["pTemplate", "loader"], ["role", "listbox", 1, "p-listbox-list", 3, "focus", "blur", "keydown", "tabindex", "ngClass", "ngStyle"], ["ngFor", "", 3, "ngForOf"], ["class", "p-listbox-empty-message", "role", "option", 4, "ngIf"], ["role", "option", 1, "p-listbox-item-group", 3, "ngStyle"], ["pRipple", "", "role", "option", 1, "p-listbox-item", 3, "click", "dblclick", "mousedown", "mouseenter", "touchend", "ngStyle", "ngClass"], ["class", "p-checkbox p-component", 3, "ngClass", 4, "ngIf"], [1, "p-checkbox", "p-component", 3, "ngClass"], [1, "p-checkbox-box", 3, "ngClass"], ["role", "option", 1, "p-listbox-empty-message"], [1, "p-listbox-footer"], ["role", "status", "aria-live", "polite", 1, "p-hidden-accessible"]],
+  template: function Listbox_Template(rf, ctx) {
+    if (rf & 1) {
+      const _r1 = ɵɵgetCurrentView();
+      ɵɵprojectionDef(_c7);
+      ɵɵelementStart(0, "div", 11);
+      ɵɵlistener("focusout", function Listbox_Template_div_focusout_0_listener($event) {
+        ɵɵrestoreView(_r1);
+        return ɵɵresetView(ctx.onFocusout($event));
+      });
+      ɵɵelementStart(1, "span", 12, 0);
+      ɵɵlistener("focus", function Listbox_Template_span_focus_1_listener($event) {
+        ɵɵrestoreView(_r1);
+        return ɵɵresetView(ctx.onFirstHiddenFocus($event));
+      });
+      ɵɵelementEnd();
+      ɵɵtemplate(3, Listbox_div_3_Template, 3, 5, "div", 13)(4, Listbox_div_4_Template, 5, 3, "div", 13);
+      ɵɵelementStart(5, "div", 14, 1);
+      ɵɵtemplate(7, Listbox_p_scroller_7_Template, 4, 11, "p-scroller", 15)(8, Listbox_ng_container_8_Template, 2, 6, "ng-container", 16)(9, Listbox_ng_template_9_Template, 5, 11, "ng-template", null, 2, ɵɵtemplateRefExtractor);
+      ɵɵelementEnd();
+      ɵɵtemplate(11, Listbox_div_11_Template, 3, 5, "div", 17)(12, Listbox_span_12_Template, 3, 2, "span", 18);
+      ɵɵelementStart(13, "span", 12, 3);
+      ɵɵlistener("focus", function Listbox_Template_span_focus_13_listener($event) {
+        ɵɵrestoreView(_r1);
+        return ɵɵresetView(ctx.onLastHiddenFocus($event));
+      });
+      ɵɵelementEnd()();
+    }
+    if (rf & 2) {
+      ɵɵclassMap(ctx.styleClass);
+      ɵɵproperty("ngClass", ctx.containerClass)("ngStyle", ctx.style);
+      ɵɵattribute("id", ctx.id);
+      ɵɵadvance();
+      ɵɵproperty("tabindex", !ctx.disabled ? ctx.tabindex : -1);
+      ɵɵattribute("data-p-hidden-focusable", true);
+      ɵɵadvance(2);
+      ɵɵproperty("ngIf", ctx.headerFacet || ctx.headerTemplate);
+      ɵɵadvance();
+      ɵɵproperty("ngIf", ctx.checkbox && ctx.multiple && ctx.showToggleAll || ctx.filter);
+      ɵɵadvance();
+      ɵɵclassMap(ctx.listStyleClass);
+      ɵɵstyleProp("max-height", ctx.virtualScroll ? "auto" : ctx.scrollHeight || "auto");
+      ɵɵproperty("ngClass", "p-listbox-list-wrapper")("ngStyle", ctx.listStyle);
+      ɵɵattribute("tabindex", !ctx.disabled && "0");
+      ɵɵadvance(2);
+      ɵɵproperty("ngIf", ctx.virtualScroll);
+      ɵɵadvance();
+      ɵɵproperty("ngIf", !ctx.virtualScroll);
+      ɵɵadvance(3);
+      ɵɵproperty("ngIf", ctx.footerFacet || ctx.footerTemplate);
+      ɵɵadvance();
+      ɵɵproperty("ngIf", ctx.isEmpty());
+      ɵɵadvance();
+      ɵɵproperty("tabindex", !ctx.disabled ? ctx.tabindex : -1);
+      ɵɵattribute("data-p-hidden-focusable", true);
+    }
+  },
+  dependencies: () => [NgClass, NgForOf, NgIf, NgTemplateOutlet, NgStyle, PrimeTemplate, Ripple, Scroller, SearchIcon, CheckIcon],
+  styles: ["@layer primeng{.p-listbox-list-wrapper{overflow:auto}.p-listbox-list{list-style-type:none;margin:0;padding:0}.p-listbox-item{cursor:pointer;position:relative;overflow:hidden;display:flex;align-items:center;-webkit-user-select:none;user-select:none}.p-listbox-header{display:flex;align-items:center}.p-listbox-filter-container{position:relative;flex:1 1 auto}.p-listbox-filter-icon{position:absolute;top:50%;margin-top:-.5rem}.p-listbox-filter{width:100%}}\n"],
+  encapsulation: 2,
+  changeDetection: 0
+}));
+var Listbox = _Listbox;
 (() => {
   (typeof ngDevMode === "undefined" || ngDevMode) && setClassMetadata(Listbox, [{
     type: Component,
     args: [{
       selector: "p-listbox",
-      template: `
-        <div [attr.id]="id" [ngClass]="containerClass" [ngStyle]="style" [class]="styleClass" (focusout)="onFocusout($event)">
-            <span #firstHiddenFocusableElement role="presentation" class="p-hidden-accessible p-hidden-focusable" [tabindex]="!disabled ? tabindex : -1" (focus)="onFirstHiddenFocus($event)" [attr.data-p-hidden-focusable]="true"> </span>
-            <div class="p-listbox-header" *ngIf="headerFacet || headerTemplate">
-                <ng-content select="p-header"></ng-content>
-                <ng-container *ngTemplateOutlet="headerTemplate; context: { $implicit: modelValue(), options: visibleOptions() }"></ng-container>
-            </div>
-            <div class="p-listbox-header" *ngIf="(checkbox && multiple && showToggleAll) || filter">
-                <div *ngIf="checkbox && multiple && showToggleAll" class="p-checkbox p-component" [ngClass]="{ 'p-checkbox-disabled': disabled || toggleAllDisabled }" (click)="onToggleAll($event)" (keydown)="onHeaderCheckboxKeyDown($event)">
-                    <div class="p-hidden-accessible" [attr.data-p-hidden-accessible]="true">
-                        <input
-                            #headerchkbox
-                            type="checkbox"
-                            readonly="readonly"
-                            [attr.checked]="allSelected()"
-                            [disabled]="disabled || toggleAllDisabled"
-                            (focus)="onHeaderCheckboxFocus($event)"
-                            (blur)="onHeaderCheckboxBlur($event)"
-                            [attr.aria-label]="toggleAllAriaLabel"
-                        />
-                    </div>
-                    <div class="p-checkbox-box" role="checkbox" [attr.aria-checked]="allSelected()" [ngClass]="{ 'p-highlight': allSelected(), 'p-focus': headerCheckboxFocus, 'p-disabled': disabled || toggleAllDisabled }">
-                        <ng-container *ngIf="allSelected()">
-                            <CheckIcon [styleClass]="'p-checkbox-icon'" *ngIf="!checkIconTemplate" [attr.aria-hidden]="true" />
-                            <span *ngIf="checkIconTemplate" class="p-checkbox-icon" [attr.aria-hidden]="true">
-                                <ng-template *ngTemplateOutlet="checkIconTemplate"></ng-template>
-                            </span>
-                        </ng-container>
-                    </div>
-                </div>
-                <ng-container *ngIf="filterTemplate; else builtInFilterElement">
-                    <ng-container *ngTemplateOutlet="filterTemplate; context: { options: filterOptions }"></ng-container>
-                </ng-container>
-                <ng-template #builtInFilterElement>
-                    <div class="p-listbox-filter-container" *ngIf="filter">
-                        <input
-                            #filterInput
-                            type="text"
-                            class="p-listbox-filter p-inputtext p-component"
-                            role="searchbox"
-                            [value]="_filterValue() || ''"
-                            [disabled]="disabled"
-                            [attr.aria-owns]="id + '_list'"
-                            [attr.aria-activedescendant]="focusedOptionId"
-                            [attr.placeholder]="filterPlaceHolder"
-                            [attr.aria-label]="ariaFilterLabel"
-                            [tabindex]="!disabled && !focused ? tabindex : -1"
-                            (input)="onFilterChange($event)"
-                            (keydown)="onFilterKeyDown($event)"
-                            (focus)="onFilterFocus($event)"
-                            (blur)="onFilterBlur($event)"
-                        />
-                        <SearchIcon *ngIf="!filterIconTemplate" [styleClass]="'p-listbox-filter-icon'" [attr.aria-hidden]="true" />
-                        <span *ngIf="filterIconTemplate" class="p-listbox-filter-icon" [attr.aria-hidden]="true">
-                            <ng-template *ngTemplateOutlet="filterIconTemplate"></ng-template>
-                        </span>
-                    </div>
-                    <span role="status" attr.aria-live="polite" class="p-hidden-accessible" [attr.data-p-hidden-accessible]="true">
-                        {{ filterResultMessageText }}
-                    </span>
-                </ng-template>
-            </div>
-            <div #wrapper [ngClass]="'p-listbox-list-wrapper'" [ngStyle]="listStyle" [class]="listStyleClass" [style.max-height]="virtualScroll ? 'auto' : scrollHeight || 'auto'" [attr.tabindex]="!disabled && '0'">
-                <p-scroller
-                    #scroller
-                    *ngIf="virtualScroll"
-                    [items]="visibleOptions()"
-                    [style]="{ height: scrollHeight }"
-                    [itemSize]="virtualScrollItemSize"
-                    [autoSize]="true"
-                    [lazy]="lazy"
-                    [options]="virtualScrollOptions"
-                    (onLazyLoad)="onLazyLoad.emit($event)"
-                    [tabindex]="scrollerTabIndex"
-                >
-                    <ng-template pTemplate="content" let-items let-scrollerOptions="options">
-                        <ng-container *ngTemplateOutlet="buildInItems; context: { $implicit: items, options: scrollerOptions }"></ng-container>
-                    </ng-template>
-                    <ng-container *ngIf="loaderTemplate">
-                        <ng-template pTemplate="loader" let-scrollerOptions="options">
-                            <ng-container *ngTemplateOutlet="loaderTemplate; context: { options: scrollerOptions }"></ng-container>
-                        </ng-template>
-                    </ng-container>
-                </p-scroller>
-                <ng-container *ngIf="!virtualScroll">
-                    <ng-container *ngTemplateOutlet="buildInItems; context: { $implicit: visibleOptions(), options: {} }"></ng-container>
-                </ng-container>
-
-                <ng-template #buildInItems let-items let-scrollerOptions="options">
-                    <ul
-                        #list
-                        class="p-listbox-list"
-                        role="listbox"
-                        [tabindex]="-1"
-                        [attr.aria-multiselectable]="true"
-                        [ngClass]="scrollerOptions.contentStyleClass"
-                        [ngStyle]="scrollerOptions.contentStyle"
-                        [attr.aria-activedescendant]="focused ? focusedOptionId : undefined"
-                        [attr.aria-label]="ariaLabel"
-                        [attr.aria-multiselectable]="multiple"
-                        [attr.aria-disabled]="disabled"
-                        (focus)="onListFocus($event)"
-                        (blur)="onListBlur($event)"
-                        (keydown)="onListKeyDown($event)"
-                    >
-                        <ng-template ngFor let-option [ngForOf]="items" let-i="index">
-                            <ng-container *ngIf="isOptionGroup(option)">
-                                <li [attr.id]="id + '_' + getOptionIndex(i, scrollerOptions)" class="p-listbox-item-group" [ngStyle]="{ height: scrollerOptions.itemSize + 'px' }" role="option">
-                                    <span *ngIf="!groupTemplate">{{ getOptionGroupLabel(option.optionGroup) }}</span>
-                                    <ng-container *ngTemplateOutlet="groupTemplate; context: { $implicit: option.optionGroup }"></ng-container>
-                                </li>
-                            </ng-container>
-                            <ng-container *ngIf="!isOptionGroup(option)">
-                                <li
-                                    pRipple
-                                    class="p-listbox-item"
-                                    role="option"
-                                    [attr.id]="id + '_' + getOptionIndex(i, scrollerOptions)"
-                                    [ngStyle]="{ height: scrollerOptions.itemSize + 'px' }"
-                                    [ngClass]="{ 'p-listbox-item': true, 'p-highlight': isSelected(option), 'p-focus': focusedOptionIndex() === getOptionIndex(i, scrollerOptions), 'p-disabled': isOptionDisabled(option) }"
-                                    [attr.aria-label]="getOptionLabel(option)"
-                                    [attr.aria-selected]="isSelected(option)"
-                                    [attr.aria-disabled]="isOptionDisabled(option)"
-                                    [attr.aria-setsize]="ariaSetSize"
-                                    [attr.ariaPosInset]="getAriaPosInset(getOptionIndex(i, scrollerOptions))"
-                                    (click)="onOptionSelect($event, option, getOptionIndex(i, scrollerOptions))"
-                                    (dblclick)="onOptionDoubleClick($event, option)"
-                                    (mousedown)="onOptionMouseDown($event, getOptionIndex(i, scrollerOptions))"
-                                    (mouseenter)="onOptionMouseEnter($event, getOptionIndex(i, scrollerOptions))"
-                                    (touchend)="onOptionTouchEnd()"
-                                >
-                                    <div class="p-checkbox p-component" *ngIf="checkbox && multiple" [ngClass]="{ 'p-checkbox-disabled': disabled || isOptionDisabled(option) }">
-                                        <div class="p-checkbox-box" [ngClass]="{ 'p-highlight': isSelected(option) }">
-                                            <ng-container *ngIf="isSelected(option)">
-                                                <CheckIcon [styleClass]="'p-checkbox-icon'" *ngIf="!checkIconTemplate" [attr.aria-hidden]="true" />
-                                                <span *ngIf="checkIconTemplate" class="p-checkbox-icon" [attr.aria-hidden]="true">
-                                                    <ng-template *ngTemplateOutlet="checkIconTemplate"></ng-template>
-                                                </span>
-                                            </ng-container>
-                                        </div>
-                                    </div>
-                                    <span *ngIf="!itemTemplate">{{ getOptionLabel(option) }}</span>
-                                    <ng-container *ngTemplateOutlet="itemTemplate; context: { $implicit: option, index: getOptionIndex(i, scrollerOptions) }"></ng-container>
-                                </li>
-                            </ng-container>
-                        </ng-template>
-                        <li *ngIf="hasFilter() && isEmpty()" class="p-listbox-empty-message" role="option">
-                            <ng-container *ngIf="!emptyFilterTemplate && !emptyTemplate; else emptyFilter">
-                                {{ emptyFilterMessageText }}
-                            </ng-container>
-                            <ng-container #emptyFilter *ngTemplateOutlet="emptyFilterTemplate || emptyTemplate"></ng-container>
-                        </li>
-                        <li *ngIf="!hasFilter() && isEmpty()" class="p-listbox-empty-message" role="option">
-                            <ng-container *ngIf="!emptyTemplate; else empty">
-                                {{ emptyMessage }}
-                            </ng-container>
-                            <ng-container #empty *ngTemplateOutlet="emptyTemplate"></ng-container>
-                        </li>
-                    </ul>
-                </ng-template>
-            </div>
-            <div class="p-listbox-footer" *ngIf="footerFacet || footerTemplate">
-                <ng-content select="p-footer"></ng-content>
-                <ng-container *ngTemplateOutlet="footerTemplate; context: { $implicit: modelValue(), options: visibleOptions() }"></ng-container>
-            </div>
-            <span *ngIf="isEmpty()" role="status" aria-live="polite" class="p-hidden-accessible">
-                <ng-container *ngIf="hasEmptyMessage()">
-                    {{ emptyMessage }}
-                </ng-container>
-                <ng-container *ngIf="!hasEmptyMessage()">
-                    {{ selectedMessageText }}
-                </ng-container>
-            </span>
-            <span #lastHiddenFocusableElement role="presentation" class="p-hidden-accessible p-hidden-focusable" [tabindex]="!disabled ? tabindex : -1" (focus)="onLastHiddenFocus($event)" [attr.data-p-hidden-focusable]="true"> </span>
-        </div>
-    `,
+      template: '\n        <div [attr.id]="id" [ngClass]="containerClass" [ngStyle]="style" [class]="styleClass" (focusout)="onFocusout($event)">\n            <span #firstHiddenFocusableElement role="presentation" class="p-hidden-accessible p-hidden-focusable" [tabindex]="!disabled ? tabindex : -1" (focus)="onFirstHiddenFocus($event)" [attr.data-p-hidden-focusable]="true"> </span>\n            <div class="p-listbox-header" *ngIf="headerFacet || headerTemplate">\n                <ng-content select="p-header"></ng-content>\n                <ng-container *ngTemplateOutlet="headerTemplate; context: { $implicit: modelValue(), options: visibleOptions() }"></ng-container>\n            </div>\n            <div class="p-listbox-header" *ngIf="(checkbox && multiple && showToggleAll) || filter">\n                <div *ngIf="checkbox && multiple && showToggleAll" class="p-checkbox p-component" [ngClass]="{ \'p-checkbox-disabled\': disabled || toggleAllDisabled }" (click)="onToggleAll($event)" (keydown)="onHeaderCheckboxKeyDown($event)">\n                    <div class="p-hidden-accessible" [attr.data-p-hidden-accessible]="true">\n                        <input\n                            #headerchkbox\n                            type="checkbox"\n                            readonly="readonly"\n                            [attr.checked]="allSelected()"\n                            [disabled]="disabled || toggleAllDisabled"\n                            (focus)="onHeaderCheckboxFocus($event)"\n                            (blur)="onHeaderCheckboxBlur($event)"\n                            [attr.aria-label]="toggleAllAriaLabel"\n                        />\n                    </div>\n                    <div class="p-checkbox-box" role="checkbox" [attr.aria-checked]="allSelected()" [ngClass]="{ \'p-highlight\': allSelected(), \'p-focus\': headerCheckboxFocus, \'p-disabled\': disabled || toggleAllDisabled }">\n                        <ng-container *ngIf="allSelected()">\n                            <CheckIcon [styleClass]="\'p-checkbox-icon\'" *ngIf="!checkIconTemplate" [attr.aria-hidden]="true" />\n                            <span *ngIf="checkIconTemplate" class="p-checkbox-icon" [attr.aria-hidden]="true">\n                                <ng-template *ngTemplateOutlet="checkIconTemplate"></ng-template>\n                            </span>\n                        </ng-container>\n                    </div>\n                </div>\n                <ng-container *ngIf="filterTemplate; else builtInFilterElement">\n                    <ng-container *ngTemplateOutlet="filterTemplate; context: { options: filterOptions }"></ng-container>\n                </ng-container>\n                <ng-template #builtInFilterElement>\n                    <div class="p-listbox-filter-container" *ngIf="filter">\n                        <input\n                            #filterInput\n                            type="text"\n                            class="p-listbox-filter p-inputtext p-component"\n                            role="searchbox"\n                            [value]="_filterValue() || \'\'"\n                            [disabled]="disabled"\n                            [attr.aria-owns]="id + \'_list\'"\n                            [attr.aria-activedescendant]="focusedOptionId"\n                            [attr.placeholder]="filterPlaceHolder"\n                            [attr.aria-label]="ariaFilterLabel"\n                            [tabindex]="!disabled && !focused ? tabindex : -1"\n                            (input)="onFilterChange($event)"\n                            (keydown)="onFilterKeyDown($event)"\n                            (focus)="onFilterFocus($event)"\n                            (blur)="onFilterBlur($event)"\n                        />\n                        <SearchIcon *ngIf="!filterIconTemplate" [styleClass]="\'p-listbox-filter-icon\'" [attr.aria-hidden]="true" />\n                        <span *ngIf="filterIconTemplate" class="p-listbox-filter-icon" [attr.aria-hidden]="true">\n                            <ng-template *ngTemplateOutlet="filterIconTemplate"></ng-template>\n                        </span>\n                    </div>\n                    <span role="status" attr.aria-live="polite" class="p-hidden-accessible" [attr.data-p-hidden-accessible]="true">\n                        {{ filterResultMessageText }}\n                    </span>\n                </ng-template>\n            </div>\n            <div #wrapper [ngClass]="\'p-listbox-list-wrapper\'" [ngStyle]="listStyle" [class]="listStyleClass" [style.max-height]="virtualScroll ? \'auto\' : scrollHeight || \'auto\'" [attr.tabindex]="!disabled && \'0\'">\n                <p-scroller\n                    #scroller\n                    *ngIf="virtualScroll"\n                    [items]="visibleOptions()"\n                    [style]="{ height: scrollHeight }"\n                    [itemSize]="virtualScrollItemSize"\n                    [autoSize]="true"\n                    [lazy]="lazy"\n                    [options]="virtualScrollOptions"\n                    (onLazyLoad)="onLazyLoad.emit($event)"\n                    [tabindex]="scrollerTabIndex"\n                >\n                    <ng-template pTemplate="content" let-items let-scrollerOptions="options">\n                        <ng-container *ngTemplateOutlet="buildInItems; context: { $implicit: items, options: scrollerOptions }"></ng-container>\n                    </ng-template>\n                    <ng-container *ngIf="loaderTemplate">\n                        <ng-template pTemplate="loader" let-scrollerOptions="options">\n                            <ng-container *ngTemplateOutlet="loaderTemplate; context: { options: scrollerOptions }"></ng-container>\n                        </ng-template>\n                    </ng-container>\n                </p-scroller>\n                <ng-container *ngIf="!virtualScroll">\n                    <ng-container *ngTemplateOutlet="buildInItems; context: { $implicit: visibleOptions(), options: {} }"></ng-container>\n                </ng-container>\n\n                <ng-template #buildInItems let-items let-scrollerOptions="options">\n                    <ul\n                        #list\n                        class="p-listbox-list"\n                        role="listbox"\n                        [tabindex]="-1"\n                        [attr.aria-multiselectable]="true"\n                        [ngClass]="scrollerOptions.contentStyleClass"\n                        [ngStyle]="scrollerOptions.contentStyle"\n                        [attr.aria-activedescendant]="focused ? focusedOptionId : undefined"\n                        [attr.aria-label]="ariaLabel"\n                        [attr.aria-multiselectable]="multiple"\n                        [attr.aria-disabled]="disabled"\n                        (focus)="onListFocus($event)"\n                        (blur)="onListBlur($event)"\n                        (keydown)="onListKeyDown($event)"\n                    >\n                        <ng-template ngFor let-option [ngForOf]="items" let-i="index">\n                            <ng-container *ngIf="isOptionGroup(option)">\n                                <li [attr.id]="id + \'_\' + getOptionIndex(i, scrollerOptions)" class="p-listbox-item-group" [ngStyle]="{ height: scrollerOptions.itemSize + \'px\' }" role="option">\n                                    <span *ngIf="!groupTemplate">{{ getOptionGroupLabel(option.optionGroup) }}</span>\n                                    <ng-container *ngTemplateOutlet="groupTemplate; context: { $implicit: option.optionGroup }"></ng-container>\n                                </li>\n                            </ng-container>\n                            <ng-container *ngIf="!isOptionGroup(option)">\n                                <li\n                                    pRipple\n                                    class="p-listbox-item"\n                                    role="option"\n                                    [attr.id]="id + \'_\' + getOptionIndex(i, scrollerOptions)"\n                                    [ngStyle]="{ height: scrollerOptions.itemSize + \'px\' }"\n                                    [ngClass]="{ \'p-listbox-item\': true, \'p-highlight\': isSelected(option), \'p-focus\': focusedOptionIndex() === getOptionIndex(i, scrollerOptions), \'p-disabled\': isOptionDisabled(option) }"\n                                    [attr.aria-label]="getOptionLabel(option)"\n                                    [attr.aria-selected]="isSelected(option)"\n                                    [attr.aria-disabled]="isOptionDisabled(option)"\n                                    [attr.aria-setsize]="ariaSetSize"\n                                    [attr.ariaPosInset]="getAriaPosInset(getOptionIndex(i, scrollerOptions))"\n                                    (click)="onOptionSelect($event, option, getOptionIndex(i, scrollerOptions))"\n                                    (dblclick)="onOptionDoubleClick($event, option)"\n                                    (mousedown)="onOptionMouseDown($event, getOptionIndex(i, scrollerOptions))"\n                                    (mouseenter)="onOptionMouseEnter($event, getOptionIndex(i, scrollerOptions))"\n                                    (touchend)="onOptionTouchEnd()"\n                                >\n                                    <div class="p-checkbox p-component" *ngIf="checkbox && multiple" [ngClass]="{ \'p-checkbox-disabled\': disabled || isOptionDisabled(option) }">\n                                        <div class="p-checkbox-box" [ngClass]="{ \'p-highlight\': isSelected(option) }">\n                                            <ng-container *ngIf="isSelected(option)">\n                                                <CheckIcon [styleClass]="\'p-checkbox-icon\'" *ngIf="!checkIconTemplate" [attr.aria-hidden]="true" />\n                                                <span *ngIf="checkIconTemplate" class="p-checkbox-icon" [attr.aria-hidden]="true">\n                                                    <ng-template *ngTemplateOutlet="checkIconTemplate"></ng-template>\n                                                </span>\n                                            </ng-container>\n                                        </div>\n                                    </div>\n                                    <span *ngIf="!itemTemplate">{{ getOptionLabel(option) }}</span>\n                                    <ng-container *ngTemplateOutlet="itemTemplate; context: { $implicit: option, index: getOptionIndex(i, scrollerOptions) }"></ng-container>\n                                </li>\n                            </ng-container>\n                        </ng-template>\n                        <li *ngIf="hasFilter() && isEmpty()" class="p-listbox-empty-message" role="option">\n                            <ng-container *ngIf="!emptyFilterTemplate && !emptyTemplate; else emptyFilter">\n                                {{ emptyFilterMessageText }}\n                            </ng-container>\n                            <ng-container #emptyFilter *ngTemplateOutlet="emptyFilterTemplate || emptyTemplate"></ng-container>\n                        </li>\n                        <li *ngIf="!hasFilter() && isEmpty()" class="p-listbox-empty-message" role="option">\n                            <ng-container *ngIf="!emptyTemplate; else empty">\n                                {{ emptyMessage }}\n                            </ng-container>\n                            <ng-container #empty *ngTemplateOutlet="emptyTemplate"></ng-container>\n                        </li>\n                    </ul>\n                </ng-template>\n            </div>\n            <div class="p-listbox-footer" *ngIf="footerFacet || footerTemplate">\n                <ng-content select="p-footer"></ng-content>\n                <ng-container *ngTemplateOutlet="footerTemplate; context: { $implicit: modelValue(), options: visibleOptions() }"></ng-container>\n            </div>\n            <span *ngIf="isEmpty()" role="status" aria-live="polite" class="p-hidden-accessible">\n                <ng-container *ngIf="hasEmptyMessage()">\n                    {{ emptyMessage }}\n                </ng-container>\n                <ng-container *ngIf="!hasEmptyMessage()">\n                    {{ selectedMessageText }}\n                </ng-container>\n            </span>\n            <span #lastHiddenFocusableElement role="presentation" class="p-hidden-accessible p-hidden-focusable" [tabindex]="!disabled ? tabindex : -1" (focus)="onLastHiddenFocus($event)" [attr.data-p-hidden-focusable]="true"> </span>\n        </div>\n    ',
       providers: [LISTBOX_VALUE_ACCESSOR],
       changeDetection: ChangeDetectionStrategy.OnPush,
       encapsulation: ViewEncapsulation$1.None,
@@ -2384,20 +2214,21 @@ var Listbox = class _Listbox {
     }]
   });
 })();
-var ListboxModule = class _ListboxModule {
-  static ɵfac = function ListboxModule_Factory(__ngFactoryType__) {
-    return new (__ngFactoryType__ || _ListboxModule)();
-  };
-  static ɵmod = ɵɵdefineNgModule({
-    type: _ListboxModule,
-    declarations: [Listbox],
-    imports: [CommonModule, SharedModule, RippleModule, ScrollerModule, SearchIcon, CheckIcon],
-    exports: [Listbox, SharedModule, ScrollerModule]
-  });
-  static ɵinj = ɵɵdefineInjector({
-    imports: [CommonModule, SharedModule, RippleModule, ScrollerModule, SearchIcon, CheckIcon, SharedModule, ScrollerModule]
-  });
+var _ListboxModule = class _ListboxModule {
 };
+__publicField(_ListboxModule, "ɵfac", function ListboxModule_Factory(__ngFactoryType__) {
+  return new (__ngFactoryType__ || _ListboxModule)();
+});
+__publicField(_ListboxModule, "ɵmod", ɵɵdefineNgModule({
+  type: _ListboxModule,
+  declarations: [Listbox],
+  imports: [CommonModule, SharedModule, RippleModule, ScrollerModule, SearchIcon, CheckIcon],
+  exports: [Listbox, SharedModule, ScrollerModule]
+}));
+__publicField(_ListboxModule, "ɵinj", ɵɵdefineInjector({
+  imports: [CommonModule, SharedModule, RippleModule, ScrollerModule, SearchIcon, CheckIcon, SharedModule, ScrollerModule]
+}));
+var ListboxModule = _ListboxModule;
 (() => {
   (typeof ngDevMode === "undefined" || ngDevMode) && setClassMetadata(ListboxModule, [{
     type: NgModule,

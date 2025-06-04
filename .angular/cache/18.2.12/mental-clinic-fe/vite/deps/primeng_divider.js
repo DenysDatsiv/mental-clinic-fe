@@ -2,7 +2,7 @@ import {
   CommonModule,
   NgClass,
   NgStyle
-} from "./chunk-UBZYO7FG.js";
+} from "./chunk-KUZ63KOD.js";
 import {
   ChangeDetectionStrategy,
   Component,
@@ -20,40 +20,44 @@ import {
   ɵɵprojection,
   ɵɵprojectionDef,
   ɵɵproperty
-} from "./chunk-ZI2Q76R4.js";
-import "./chunk-5OPE3T2R.js";
+} from "./chunk-R75KKECJ.js";
 import "./chunk-4N4GOYJH.js";
+import "./chunk-5OPE3T2R.js";
 import "./chunk-FHTVLBLO.js";
-import "./chunk-3OV72XIM.js";
+import {
+  __publicField
+} from "./chunk-IJZFAMY6.js";
 
 // node_modules/primeng/fesm2022/primeng-divider.mjs
 var _c0 = ["*"];
-var Divider = class _Divider {
-  /**
-   * Inline style of the component.
-   * @group Props
-   */
-  style;
-  /**
-   * Style class of the component.
-   * @group Props
-   */
-  styleClass;
-  /**
-   * Specifies the orientation.
-   * @group Props
-   */
-  layout = "horizontal";
-  /**
-   * Border style type.
-   * @group Props
-   */
-  type = "solid";
-  /**
-   * Alignment of the content.
-   * @group Props
-   */
-  align;
+var _Divider = class _Divider {
+  constructor() {
+    /**
+     * Inline style of the component.
+     * @group Props
+     */
+    __publicField(this, "style");
+    /**
+     * Style class of the component.
+     * @group Props
+     */
+    __publicField(this, "styleClass");
+    /**
+     * Specifies the orientation.
+     * @group Props
+     */
+    __publicField(this, "layout", "horizontal");
+    /**
+     * Border style type.
+     * @group Props
+     */
+    __publicField(this, "type", "solid");
+    /**
+     * Alignment of the content.
+     * @group Props
+     */
+    __publicField(this, "align");
+  }
   containerClass() {
     return {
       "p-divider p-component": true,
@@ -69,55 +73,50 @@ var Divider = class _Divider {
       "p-divider-bottom": this.layout === "vertical" && this.align === "bottom"
     };
   }
-  static ɵfac = function Divider_Factory(__ngFactoryType__) {
-    return new (__ngFactoryType__ || _Divider)();
-  };
-  static ɵcmp = ɵɵdefineComponent({
-    type: _Divider,
-    selectors: [["p-divider"]],
-    hostAttrs: [1, "p-element"],
-    inputs: {
-      style: "style",
-      styleClass: "styleClass",
-      layout: "layout",
-      type: "type",
-      align: "align"
-    },
-    ngContentSelectors: _c0,
-    decls: 3,
-    vars: 6,
-    consts: [["role", "separator", 3, "ngClass", "ngStyle"], [1, "p-divider-content"]],
-    template: function Divider_Template(rf, ctx) {
-      if (rf & 1) {
-        ɵɵprojectionDef();
-        ɵɵelementStart(0, "div", 0)(1, "div", 1);
-        ɵɵprojection(2);
-        ɵɵelementEnd()();
-      }
-      if (rf & 2) {
-        ɵɵclassMap(ctx.styleClass);
-        ɵɵproperty("ngClass", ctx.containerClass())("ngStyle", ctx.style);
-        ɵɵattribute("aria-orientation", ctx.layout)("data-pc-name", "divider");
-      }
-    },
-    dependencies: [NgClass, NgStyle],
-    styles: ['@layer primeng{.p-divider-horizontal{display:flex;width:100%;position:relative;align-items:center}.p-divider-horizontal:before{position:absolute;display:block;top:50%;left:0;width:100%;content:""}.p-divider-horizontal.p-divider-left{justify-content:flex-start}.p-divider-horizontal.p-divider-right{justify-content:flex-end}.p-divider-horizontal.p-divider-center{justify-content:center}.p-divider-content{z-index:1}.p-divider-vertical{min-height:100%;margin:0 1rem;display:flex;position:relative;justify-content:center}.p-divider-vertical:before{position:absolute;display:block;top:0;left:50%;height:100%;content:""}.p-divider-vertical.p-divider-top{align-items:flex-start}.p-divider-vertical.p-divider-center{align-items:center}.p-divider-vertical.p-divider-bottom{align-items:flex-end}.p-divider-solid.p-divider-horizontal:before{border-top-style:solid}.p-divider-solid.p-divider-vertical:before{border-left-style:solid}.p-divider-dashed.p-divider-horizontal:before{border-top-style:dashed}.p-divider-dashed.p-divider-vertical:before{border-left-style:dashed}.p-divider-dotted.p-divider-horizontal:before{border-top-style:dotted}.p-divider-dotted.p-divider-vertical:before{border-left-style:dotted}}\n'],
-    encapsulation: 2,
-    changeDetection: 0
-  });
 };
+__publicField(_Divider, "ɵfac", function Divider_Factory(__ngFactoryType__) {
+  return new (__ngFactoryType__ || _Divider)();
+});
+__publicField(_Divider, "ɵcmp", ɵɵdefineComponent({
+  type: _Divider,
+  selectors: [["p-divider"]],
+  hostAttrs: [1, "p-element"],
+  inputs: {
+    style: "style",
+    styleClass: "styleClass",
+    layout: "layout",
+    type: "type",
+    align: "align"
+  },
+  ngContentSelectors: _c0,
+  decls: 3,
+  vars: 6,
+  consts: [["role", "separator", 3, "ngClass", "ngStyle"], [1, "p-divider-content"]],
+  template: function Divider_Template(rf, ctx) {
+    if (rf & 1) {
+      ɵɵprojectionDef();
+      ɵɵelementStart(0, "div", 0)(1, "div", 1);
+      ɵɵprojection(2);
+      ɵɵelementEnd()();
+    }
+    if (rf & 2) {
+      ɵɵclassMap(ctx.styleClass);
+      ɵɵproperty("ngClass", ctx.containerClass())("ngStyle", ctx.style);
+      ɵɵattribute("aria-orientation", ctx.layout)("data-pc-name", "divider");
+    }
+  },
+  dependencies: [NgClass, NgStyle],
+  styles: ['@layer primeng{.p-divider-horizontal{display:flex;width:100%;position:relative;align-items:center}.p-divider-horizontal:before{position:absolute;display:block;top:50%;left:0;width:100%;content:""}.p-divider-horizontal.p-divider-left{justify-content:flex-start}.p-divider-horizontal.p-divider-right{justify-content:flex-end}.p-divider-horizontal.p-divider-center{justify-content:center}.p-divider-content{z-index:1}.p-divider-vertical{min-height:100%;margin:0 1rem;display:flex;position:relative;justify-content:center}.p-divider-vertical:before{position:absolute;display:block;top:0;left:50%;height:100%;content:""}.p-divider-vertical.p-divider-top{align-items:flex-start}.p-divider-vertical.p-divider-center{align-items:center}.p-divider-vertical.p-divider-bottom{align-items:flex-end}.p-divider-solid.p-divider-horizontal:before{border-top-style:solid}.p-divider-solid.p-divider-vertical:before{border-left-style:solid}.p-divider-dashed.p-divider-horizontal:before{border-top-style:dashed}.p-divider-dashed.p-divider-vertical:before{border-left-style:dashed}.p-divider-dotted.p-divider-horizontal:before{border-top-style:dotted}.p-divider-dotted.p-divider-vertical:before{border-left-style:dotted}}\n'],
+  encapsulation: 2,
+  changeDetection: 0
+}));
+var Divider = _Divider;
 (() => {
   (typeof ngDevMode === "undefined" || ngDevMode) && setClassMetadata(Divider, [{
     type: Component,
     args: [{
       selector: "p-divider",
-      template: `
-        <div [ngClass]="containerClass()" [class]="styleClass" [ngStyle]="style" role="separator" [attr.aria-orientation]="layout" [attr.data-pc-name]="'divider'">
-            <div class="p-divider-content">
-                <ng-content></ng-content>
-            </div>
-        </div>
-    `,
+      template: '\n        <div [ngClass]="containerClass()" [class]="styleClass" [ngStyle]="style" role="separator" [attr.aria-orientation]="layout" [attr.data-pc-name]="\'divider\'">\n            <div class="p-divider-content">\n                <ng-content></ng-content>\n            </div>\n        </div>\n    ',
       changeDetection: ChangeDetectionStrategy.OnPush,
       encapsulation: ViewEncapsulation$1.None,
       host: {
@@ -143,20 +142,21 @@ var Divider = class _Divider {
     }]
   });
 })();
-var DividerModule = class _DividerModule {
-  static ɵfac = function DividerModule_Factory(__ngFactoryType__) {
-    return new (__ngFactoryType__ || _DividerModule)();
-  };
-  static ɵmod = ɵɵdefineNgModule({
-    type: _DividerModule,
-    declarations: [Divider],
-    imports: [CommonModule],
-    exports: [Divider]
-  });
-  static ɵinj = ɵɵdefineInjector({
-    imports: [CommonModule]
-  });
+var _DividerModule = class _DividerModule {
 };
+__publicField(_DividerModule, "ɵfac", function DividerModule_Factory(__ngFactoryType__) {
+  return new (__ngFactoryType__ || _DividerModule)();
+});
+__publicField(_DividerModule, "ɵmod", ɵɵdefineNgModule({
+  type: _DividerModule,
+  declarations: [Divider],
+  imports: [CommonModule],
+  exports: [Divider]
+}));
+__publicField(_DividerModule, "ɵinj", ɵɵdefineInjector({
+  imports: [CommonModule]
+}));
+var DividerModule = _DividerModule;
 (() => {
   (typeof ngDevMode === "undefined" || ngDevMode) && setClassMetadata(DividerModule, [{
     type: NgModule,

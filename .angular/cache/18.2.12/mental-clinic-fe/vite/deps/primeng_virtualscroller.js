@@ -1,24 +1,24 @@
 import {
   Scroller,
   ScrollerModule
-} from "./chunk-TB2LYZAF.js";
-import "./chunk-PCVGMHYY.js";
-import "./chunk-PXWZN6FU.js";
+} from "./chunk-VW3MRXK5.js";
+import "./chunk-VYCWYYRS.js";
+import "./chunk-BJLZ3T2F.js";
 import {
   Footer,
   Header,
   PrimeTemplate,
   SharedModule
-} from "./chunk-TQSVMJ6K.js";
-import "./chunk-3OF44R55.js";
-import "./chunk-BUGEQH7Q.js";
+} from "./chunk-ZROJCIWL.js";
+import "./chunk-U3NLM53U.js";
+import "./chunk-LB42WWNC.js";
 import {
   CommonModule,
   NgClass,
   NgIf,
   NgStyle,
   NgTemplateOutlet
-} from "./chunk-UBZYO7FG.js";
+} from "./chunk-KUZ63KOD.js";
 import {
   ChangeDetectionStrategy,
   ChangeDetectorRef,
@@ -62,14 +62,15 @@ import {
   ɵɵstyleMap,
   ɵɵtemplate,
   ɵɵviewQuery
-} from "./chunk-ZI2Q76R4.js";
-import "./chunk-5OPE3T2R.js";
+} from "./chunk-R75KKECJ.js";
 import "./chunk-4N4GOYJH.js";
+import "./chunk-5OPE3T2R.js";
 import "./chunk-FHTVLBLO.js";
 import {
+  __publicField,
   __spreadProps,
   __spreadValues
-} from "./chunk-3OV72XIM.js";
+} from "./chunk-IJZFAMY6.js";
 
 // node_modules/primeng/fesm2022/primeng-virtualscroller.mjs
 var _c0 = ["scroller"];
@@ -139,65 +140,65 @@ function VirtualScroller_div_7_Template(rf, ctx) {
     ɵɵproperty("ngTemplateOutlet", ctx_r1.footerTemplate);
   }
 }
-var VirtualScroller = class _VirtualScroller {
-  el;
-  cd;
-  /**
-   * An array of objects to display.
-   * @group Props
-   */
-  value;
-  /**
-   * Height of an item in the list.
-   * @group Props
-   */
-  itemSize;
-  /**
-   * Inline style of the component.
-   * @group Props
-   */
-  style;
-  /**
-   * Style class of the component.
-   * @group Props
-   */
-  styleClass;
-  /**
-   * Max height of the content area in inline mode.
-   * @group Props
-   */
-  scrollHeight;
-  /**
-   * Defines if data is loaded and interacted with in lazy manner.
-   * @group Props
-   */
-  lazy;
-  /**
-   * Whether to use the scroller feature. The properties of scroller component can be used like an object in it.
-   * @group Props
-   */
-  options;
-  /**
-   * Threshold in milliseconds to delay lazy loading during scrolling.
-   * @group Props
-   */
-  delay = 250;
-  /**
-   * Callback to invoke in lazy mode to load new data.
-   * @param {VirtualScrollerLazyLoadEvent} event - custom lazy load event.
-   * @group Emits
-   */
-  onLazyLoad = new EventEmitter();
-  header;
-  footer;
-  templates;
-  scroller;
-  itemTemplate;
-  headerTemplate;
-  footerTemplate;
-  loadingItemTemplate;
-  virtualScrollTimeout;
+var _VirtualScroller = class _VirtualScroller {
   constructor(el, cd) {
+    __publicField(this, "el");
+    __publicField(this, "cd");
+    /**
+     * An array of objects to display.
+     * @group Props
+     */
+    __publicField(this, "value");
+    /**
+     * Height of an item in the list.
+     * @group Props
+     */
+    __publicField(this, "itemSize");
+    /**
+     * Inline style of the component.
+     * @group Props
+     */
+    __publicField(this, "style");
+    /**
+     * Style class of the component.
+     * @group Props
+     */
+    __publicField(this, "styleClass");
+    /**
+     * Max height of the content area in inline mode.
+     * @group Props
+     */
+    __publicField(this, "scrollHeight");
+    /**
+     * Defines if data is loaded and interacted with in lazy manner.
+     * @group Props
+     */
+    __publicField(this, "lazy");
+    /**
+     * Whether to use the scroller feature. The properties of scroller component can be used like an object in it.
+     * @group Props
+     */
+    __publicField(this, "options");
+    /**
+     * Threshold in milliseconds to delay lazy loading during scrolling.
+     * @group Props
+     */
+    __publicField(this, "delay", 250);
+    /**
+     * Callback to invoke in lazy mode to load new data.
+     * @param {VirtualScrollerLazyLoadEvent} event - custom lazy load event.
+     * @group Emits
+     */
+    __publicField(this, "onLazyLoad", new EventEmitter());
+    __publicField(this, "header");
+    __publicField(this, "footer");
+    __publicField(this, "templates");
+    __publicField(this, "scroller");
+    __publicField(this, "itemTemplate");
+    __publicField(this, "headerTemplate");
+    __publicField(this, "footerTemplate");
+    __publicField(this, "loadingItemTemplate");
+    __publicField(this, "virtualScrollTimeout");
     this.el = el;
     this.cd = cd;
   }
@@ -237,116 +238,98 @@ var VirtualScroller = class _VirtualScroller {
     return this.el.nativeElement.children[0];
   }
   scrollToIndex(index, mode) {
-    this.scroller?.scrollToIndex(index, mode);
+    var _a;
+    (_a = this.scroller) == null ? void 0 : _a.scrollToIndex(index, mode);
   }
-  static ɵfac = function VirtualScroller_Factory(__ngFactoryType__) {
-    return new (__ngFactoryType__ || _VirtualScroller)(ɵɵdirectiveInject(ElementRef), ɵɵdirectiveInject(ChangeDetectorRef));
-  };
-  static ɵcmp = ɵɵdefineComponent({
-    type: _VirtualScroller,
-    selectors: [["p-virtualScroller"]],
-    contentQueries: function VirtualScroller_ContentQueries(rf, ctx, dirIndex) {
-      if (rf & 1) {
-        ɵɵcontentQuery(dirIndex, Header, 5);
-        ɵɵcontentQuery(dirIndex, Footer, 5);
-        ɵɵcontentQuery(dirIndex, PrimeTemplate, 4);
-      }
-      if (rf & 2) {
-        let _t;
-        ɵɵqueryRefresh(_t = ɵɵloadQuery()) && (ctx.header = _t.first);
-        ɵɵqueryRefresh(_t = ɵɵloadQuery()) && (ctx.footer = _t.first);
-        ɵɵqueryRefresh(_t = ɵɵloadQuery()) && (ctx.templates = _t);
-      }
-    },
-    viewQuery: function VirtualScroller_Query(rf, ctx) {
-      if (rf & 1) {
-        ɵɵviewQuery(_c0, 5);
-      }
-      if (rf & 2) {
-        let _t;
-        ɵɵqueryRefresh(_t = ɵɵloadQuery()) && (ctx.scroller = _t.first);
-      }
-    },
-    hostAttrs: [1, "p-element"],
-    inputs: {
-      value: "value",
-      itemSize: [2, "itemSize", "itemSize", numberAttribute],
-      style: "style",
-      styleClass: "styleClass",
-      scrollHeight: "scrollHeight",
-      lazy: [2, "lazy", "lazy", booleanAttribute],
-      options: "options",
-      delay: [2, "delay", "delay", numberAttribute]
-    },
-    outputs: {
-      onLazyLoad: "onLazyLoad"
-    },
-    features: [ɵɵInputTransformsFeature],
-    ngContentSelectors: _c2,
-    decls: 8,
-    vars: 17,
-    consts: [["content", ""], ["scroller", ""], [3, "ngClass", "ngStyle"], ["class", "p-virtualscroller-header", 4, "ngIf"], [1, "p-virtualscroller-content"], ["styleClass", "p-virtualscroller-list", 3, "onLazyLoad", "items", "itemSize", "lazy", "options"], ["pTemplate", "item"], ["class", "p-virtualscroller-footer", 4, "ngIf"], [1, "p-virtualscroller-header"], [4, "ngTemplateOutlet"], [1, "p-virtualscroller-item", 3, "ngStyle"], [4, "ngTemplateOutlet", "ngTemplateOutletContext"], [1, "p-virtualscroller-footer"]],
-    template: function VirtualScroller_Template(rf, ctx) {
-      if (rf & 1) {
-        const _r1 = ɵɵgetCurrentView();
-        ɵɵprojectionDef(_c1);
-        ɵɵelementStart(0, "div", 2);
-        ɵɵtemplate(1, VirtualScroller_div_1_Template, 3, 1, "div", 3);
-        ɵɵelementStart(2, "div", 4, 0)(4, "p-scroller", 5, 1);
-        ɵɵlistener("onLazyLoad", function VirtualScroller_Template_p_scroller_onLazyLoad_4_listener($event) {
-          ɵɵrestoreView(_r1);
-          return ɵɵresetView(ctx.onLazyItemLoad($event));
-        });
-        ɵɵtemplate(6, VirtualScroller_ng_template_6_Template, 2, 8, "ng-template", 6);
-        ɵɵelementEnd()();
-        ɵɵtemplate(7, VirtualScroller_div_7_Template, 3, 2, "div", 7);
-        ɵɵelementEnd();
-      }
-      if (rf & 2) {
-        ɵɵclassMap(ctx.styleClass);
-        ɵɵproperty("ngClass", "p-virtualscroller p-component")("ngStyle", ctx.style);
-        ɵɵattribute("data-pc-name", "virtualscroller")("data-pc-section", "root");
-        ɵɵadvance();
-        ɵɵproperty("ngIf", ctx.header || ctx.headerTemplate);
-        ɵɵadvance();
-        ɵɵattribute("data-pc-section", "content");
-        ɵɵadvance(2);
-        ɵɵstyleMap(ɵɵpureFunction1(15, _c3, ctx.scrollHeight));
-        ɵɵproperty("items", ctx.value)("itemSize", ctx.itemSize)("lazy", ctx.lazy)("options", ctx.options);
-        ɵɵadvance(3);
-        ɵɵproperty("ngIf", ctx.footer || ctx.footerTemplate);
-      }
-    },
-    dependencies: [NgClass, NgIf, NgTemplateOutlet, NgStyle, PrimeTemplate, Scroller],
-    encapsulation: 2
-  });
 };
+__publicField(_VirtualScroller, "ɵfac", function VirtualScroller_Factory(__ngFactoryType__) {
+  return new (__ngFactoryType__ || _VirtualScroller)(ɵɵdirectiveInject(ElementRef), ɵɵdirectiveInject(ChangeDetectorRef));
+});
+__publicField(_VirtualScroller, "ɵcmp", ɵɵdefineComponent({
+  type: _VirtualScroller,
+  selectors: [["p-virtualScroller"]],
+  contentQueries: function VirtualScroller_ContentQueries(rf, ctx, dirIndex) {
+    if (rf & 1) {
+      ɵɵcontentQuery(dirIndex, Header, 5);
+      ɵɵcontentQuery(dirIndex, Footer, 5);
+      ɵɵcontentQuery(dirIndex, PrimeTemplate, 4);
+    }
+    if (rf & 2) {
+      let _t;
+      ɵɵqueryRefresh(_t = ɵɵloadQuery()) && (ctx.header = _t.first);
+      ɵɵqueryRefresh(_t = ɵɵloadQuery()) && (ctx.footer = _t.first);
+      ɵɵqueryRefresh(_t = ɵɵloadQuery()) && (ctx.templates = _t);
+    }
+  },
+  viewQuery: function VirtualScroller_Query(rf, ctx) {
+    if (rf & 1) {
+      ɵɵviewQuery(_c0, 5);
+    }
+    if (rf & 2) {
+      let _t;
+      ɵɵqueryRefresh(_t = ɵɵloadQuery()) && (ctx.scroller = _t.first);
+    }
+  },
+  hostAttrs: [1, "p-element"],
+  inputs: {
+    value: "value",
+    itemSize: [2, "itemSize", "itemSize", numberAttribute],
+    style: "style",
+    styleClass: "styleClass",
+    scrollHeight: "scrollHeight",
+    lazy: [2, "lazy", "lazy", booleanAttribute],
+    options: "options",
+    delay: [2, "delay", "delay", numberAttribute]
+  },
+  outputs: {
+    onLazyLoad: "onLazyLoad"
+  },
+  features: [ɵɵInputTransformsFeature],
+  ngContentSelectors: _c2,
+  decls: 8,
+  vars: 17,
+  consts: [["content", ""], ["scroller", ""], [3, "ngClass", "ngStyle"], ["class", "p-virtualscroller-header", 4, "ngIf"], [1, "p-virtualscroller-content"], ["styleClass", "p-virtualscroller-list", 3, "onLazyLoad", "items", "itemSize", "lazy", "options"], ["pTemplate", "item"], ["class", "p-virtualscroller-footer", 4, "ngIf"], [1, "p-virtualscroller-header"], [4, "ngTemplateOutlet"], [1, "p-virtualscroller-item", 3, "ngStyle"], [4, "ngTemplateOutlet", "ngTemplateOutletContext"], [1, "p-virtualscroller-footer"]],
+  template: function VirtualScroller_Template(rf, ctx) {
+    if (rf & 1) {
+      const _r1 = ɵɵgetCurrentView();
+      ɵɵprojectionDef(_c1);
+      ɵɵelementStart(0, "div", 2);
+      ɵɵtemplate(1, VirtualScroller_div_1_Template, 3, 1, "div", 3);
+      ɵɵelementStart(2, "div", 4, 0)(4, "p-scroller", 5, 1);
+      ɵɵlistener("onLazyLoad", function VirtualScroller_Template_p_scroller_onLazyLoad_4_listener($event) {
+        ɵɵrestoreView(_r1);
+        return ɵɵresetView(ctx.onLazyItemLoad($event));
+      });
+      ɵɵtemplate(6, VirtualScroller_ng_template_6_Template, 2, 8, "ng-template", 6);
+      ɵɵelementEnd()();
+      ɵɵtemplate(7, VirtualScroller_div_7_Template, 3, 2, "div", 7);
+      ɵɵelementEnd();
+    }
+    if (rf & 2) {
+      ɵɵclassMap(ctx.styleClass);
+      ɵɵproperty("ngClass", "p-virtualscroller p-component")("ngStyle", ctx.style);
+      ɵɵattribute("data-pc-name", "virtualscroller")("data-pc-section", "root");
+      ɵɵadvance();
+      ɵɵproperty("ngIf", ctx.header || ctx.headerTemplate);
+      ɵɵadvance();
+      ɵɵattribute("data-pc-section", "content");
+      ɵɵadvance(2);
+      ɵɵstyleMap(ɵɵpureFunction1(15, _c3, ctx.scrollHeight));
+      ɵɵproperty("items", ctx.value)("itemSize", ctx.itemSize)("lazy", ctx.lazy)("options", ctx.options);
+      ɵɵadvance(3);
+      ɵɵproperty("ngIf", ctx.footer || ctx.footerTemplate);
+    }
+  },
+  dependencies: [NgClass, NgIf, NgTemplateOutlet, NgStyle, PrimeTemplate, Scroller],
+  encapsulation: 2
+}));
+var VirtualScroller = _VirtualScroller;
 (() => {
   (typeof ngDevMode === "undefined" || ngDevMode) && setClassMetadata(VirtualScroller, [{
     type: Component,
     args: [{
       selector: "p-virtualScroller",
-      template: `
-        <div [ngClass]="'p-virtualscroller p-component'" [ngStyle]="style" [class]="styleClass" [attr.data-pc-name]="'virtualscroller'" [attr.data-pc-section]="'root'">
-            <div class="p-virtualscroller-header" *ngIf="header || headerTemplate">
-                <ng-content select="p-header"></ng-content>
-                <ng-container *ngTemplateOutlet="headerTemplate"></ng-container>
-            </div>
-            <div #content class="p-virtualscroller-content" [attr.data-pc-section]="'content'">
-                <p-scroller #scroller [items]="value" styleClass="p-virtualscroller-list" [style]="{ height: scrollHeight }" [itemSize]="itemSize" [lazy]="lazy" (onLazyLoad)="onLazyItemLoad($event)" [options]="options">
-                    <ng-template pTemplate="item" let-item let-scrollerOptions="options">
-                        <div [ngStyle]="{ height: itemSize + 'px' }" class="p-virtualscroller-item">
-                            <ng-container *ngTemplateOutlet="item ? itemTemplate : loadingItemTemplate; context: { $implicit: item, options: scrollerOptions }"></ng-container>
-                        </div>
-                    </ng-template>
-                </p-scroller>
-            </div>
-            <div class="p-virtualscroller-footer" *ngIf="footer || footerTemplate" [attr.data-pc-section]="'footer'">
-                <ng-content select="p-footer"></ng-content>
-                <ng-container *ngTemplateOutlet="footerTemplate"></ng-container>
-            </div>
-        </div>
-    `,
+      template: '\n        <div [ngClass]="\'p-virtualscroller p-component\'" [ngStyle]="style" [class]="styleClass" [attr.data-pc-name]="\'virtualscroller\'" [attr.data-pc-section]="\'root\'">\n            <div class="p-virtualscroller-header" *ngIf="header || headerTemplate">\n                <ng-content select="p-header"></ng-content>\n                <ng-container *ngTemplateOutlet="headerTemplate"></ng-container>\n            </div>\n            <div #content class="p-virtualscroller-content" [attr.data-pc-section]="\'content\'">\n                <p-scroller #scroller [items]="value" styleClass="p-virtualscroller-list" [style]="{ height: scrollHeight }" [itemSize]="itemSize" [lazy]="lazy" (onLazyLoad)="onLazyItemLoad($event)" [options]="options">\n                    <ng-template pTemplate="item" let-item let-scrollerOptions="options">\n                        <div [ngStyle]="{ height: itemSize + \'px\' }" class="p-virtualscroller-item">\n                            <ng-container *ngTemplateOutlet="item ? itemTemplate : loadingItemTemplate; context: { $implicit: item, options: scrollerOptions }"></ng-container>\n                        </div>\n                    </ng-template>\n                </p-scroller>\n            </div>\n            <div class="p-virtualscroller-footer" *ngIf="footer || footerTemplate" [attr.data-pc-section]="\'footer\'">\n                <ng-content select="p-footer"></ng-content>\n                <ng-container *ngTemplateOutlet="footerTemplate"></ng-container>\n            </div>\n        </div>\n    ',
       changeDetection: ChangeDetectionStrategy.Default,
       encapsulation: ViewEncapsulation$1.None,
       host: {
@@ -412,20 +395,21 @@ var VirtualScroller = class _VirtualScroller {
     }]
   });
 })();
-var VirtualScrollerModule = class _VirtualScrollerModule {
-  static ɵfac = function VirtualScrollerModule_Factory(__ngFactoryType__) {
-    return new (__ngFactoryType__ || _VirtualScrollerModule)();
-  };
-  static ɵmod = ɵɵdefineNgModule({
-    type: _VirtualScrollerModule,
-    declarations: [VirtualScroller],
-    imports: [CommonModule, SharedModule, ScrollerModule],
-    exports: [VirtualScroller, SharedModule, ScrollerModule]
-  });
-  static ɵinj = ɵɵdefineInjector({
-    imports: [CommonModule, SharedModule, ScrollerModule, SharedModule, ScrollerModule]
-  });
+var _VirtualScrollerModule = class _VirtualScrollerModule {
 };
+__publicField(_VirtualScrollerModule, "ɵfac", function VirtualScrollerModule_Factory(__ngFactoryType__) {
+  return new (__ngFactoryType__ || _VirtualScrollerModule)();
+});
+__publicField(_VirtualScrollerModule, "ɵmod", ɵɵdefineNgModule({
+  type: _VirtualScrollerModule,
+  declarations: [VirtualScroller],
+  imports: [CommonModule, SharedModule, ScrollerModule],
+  exports: [VirtualScroller, SharedModule, ScrollerModule]
+}));
+__publicField(_VirtualScrollerModule, "ɵinj", ɵɵdefineInjector({
+  imports: [CommonModule, SharedModule, ScrollerModule, SharedModule, ScrollerModule]
+}));
+var VirtualScrollerModule = _VirtualScrollerModule;
 (() => {
   (typeof ngDevMode === "undefined" || ngDevMode) && setClassMetadata(VirtualScrollerModule, [{
     type: NgModule,

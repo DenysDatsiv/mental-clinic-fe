@@ -1,44 +1,44 @@
 import {
   Tooltip,
   TooltipModule
-} from "./chunk-STBFZVQ2.js";
+} from "./chunk-IC7NSP6U.js";
 import {
   AngleRightIcon
-} from "./chunk-KFVC45AI.js";
-import {
-  Ripple,
-  RippleModule
-} from "./chunk-QN24C4B3.js";
+} from "./chunk-BGJ2FQDY.js";
 import {
   RouterLink,
   RouterLinkActive,
   RouterModule
-} from "./chunk-AQMTG6B6.js";
-import "./chunk-3E3YFUVD.js";
-import "./chunk-DO2TVYAE.js";
+} from "./chunk-JBMGT7BE.js";
+import {
+  Ripple,
+  RippleModule
+} from "./chunk-MUJBADSC.js";
 import {
   BaseIcon
-} from "./chunk-PXWZN6FU.js";
+} from "./chunk-BJLZ3T2F.js";
 import {
   OverlayService,
   PrimeNGConfig,
   PrimeTemplate,
   SharedModule
-} from "./chunk-TQSVMJ6K.js";
+} from "./chunk-ZROJCIWL.js";
 import {
   ObjectUtils,
   UniqueComponentId,
   zindexutils
-} from "./chunk-3OF44R55.js";
+} from "./chunk-U3NLM53U.js";
 import {
   animate,
   style,
   transition,
   trigger
-} from "./chunk-OGB62SLM.js";
+} from "./chunk-5S7AEMUZ.js";
+import "./chunk-MWP4G2UW.js";
+import "./chunk-RWZD3TDV.js";
 import {
   DomHandler
-} from "./chunk-BUGEQH7Q.js";
+} from "./chunk-LB42WWNC.js";
 import {
   CommonModule,
   DOCUMENT,
@@ -48,7 +48,7 @@ import {
   NgStyle,
   NgTemplateOutlet,
   isPlatformBrowser
-} from "./chunk-UBZYO7FG.js";
+} from "./chunk-KUZ63KOD.js";
 import {
   ChangeDetectionStrategy,
   ChangeDetectorRef,
@@ -110,46 +110,48 @@ import {
   ɵɵtextInterpolate,
   ɵɵtextInterpolate1,
   ɵɵviewQuery
-} from "./chunk-ZI2Q76R4.js";
-import "./chunk-5OPE3T2R.js";
+} from "./chunk-R75KKECJ.js";
 import "./chunk-4N4GOYJH.js";
+import "./chunk-5OPE3T2R.js";
 import "./chunk-FHTVLBLO.js";
 import {
+  __publicField,
   __spreadProps,
   __spreadValues
-} from "./chunk-3OV72XIM.js";
+} from "./chunk-IJZFAMY6.js";
 
 // node_modules/primeng/fesm2022/primeng-icons-caretleft.mjs
-var CaretLeftIcon = class _CaretLeftIcon extends BaseIcon {
-  static ɵfac = /* @__PURE__ */ (() => {
-    let ɵCaretLeftIcon_BaseFactory;
-    return function CaretLeftIcon_Factory(__ngFactoryType__) {
-      return (ɵCaretLeftIcon_BaseFactory || (ɵCaretLeftIcon_BaseFactory = ɵɵgetInheritedFactory(_CaretLeftIcon)))(__ngFactoryType__ || _CaretLeftIcon);
-    };
-  })();
-  static ɵcmp = ɵɵdefineComponent({
-    type: _CaretLeftIcon,
-    selectors: [["CaretLeftIcon"]],
-    standalone: true,
-    features: [ɵɵInheritDefinitionFeature, ɵɵStandaloneFeature],
-    decls: 2,
-    vars: 5,
-    consts: [["width", "14", "height", "14", "viewBox", "0 0 14 14", "fill", "none", "xmlns", "http://www.w3.org/2000/svg"], ["d", "M10.5553 13C10.411 13.0006 10.2704 12.9538 10.1554 12.8667L3.04473 7.53369C2.96193 7.4716 2.89474 7.39108 2.84845 7.29852C2.80217 7.20595 2.77808 7.10388 2.77808 7.00039C2.77808 6.8969 2.80217 6.79484 2.84845 6.70227C2.89474 6.60971 2.96193 6.52919 3.04473 6.4671L10.1554 1.13412C10.2549 1.05916 10.3734 1.0136 10.4976 1.0026C10.6217 0.991605 10.7464 1.01561 10.8575 1.0719C10.9668 1.12856 11.0584 1.21398 11.1226 1.31893C11.1869 1.42388 11.2212 1.54438 11.222 1.66742V12.3334C11.2212 12.4564 11.1869 12.5769 11.1226 12.6819C11.0584 12.7868 10.9668 12.8722 10.8575 12.9289C10.7629 12.9735 10.6599 12.9977 10.5553 13ZM4.55574 7.00039L9.88871 11.0001V3.00066L4.55574 7.00039Z", "fill", "currentColor"]],
-    template: function CaretLeftIcon_Template(rf, ctx) {
-      if (rf & 1) {
-        ɵɵnamespaceSVG();
-        ɵɵelementStart(0, "svg", 0);
-        ɵɵelement(1, "path", 1);
-        ɵɵelementEnd();
-      }
-      if (rf & 2) {
-        ɵɵclassMap(ctx.getClassNames());
-        ɵɵattribute("aria-label", ctx.ariaLabel)("aria-hidden", ctx.ariaHidden)("role", ctx.role);
-      }
-    },
-    encapsulation: 2
-  });
+var _CaretLeftIcon = class _CaretLeftIcon extends BaseIcon {
 };
+__publicField(_CaretLeftIcon, "ɵfac", /* @__PURE__ */ (() => {
+  let ɵCaretLeftIcon_BaseFactory;
+  return function CaretLeftIcon_Factory(__ngFactoryType__) {
+    return (ɵCaretLeftIcon_BaseFactory || (ɵCaretLeftIcon_BaseFactory = ɵɵgetInheritedFactory(_CaretLeftIcon)))(__ngFactoryType__ || _CaretLeftIcon);
+  };
+})());
+__publicField(_CaretLeftIcon, "ɵcmp", ɵɵdefineComponent({
+  type: _CaretLeftIcon,
+  selectors: [["CaretLeftIcon"]],
+  standalone: true,
+  features: [ɵɵInheritDefinitionFeature, ɵɵStandaloneFeature],
+  decls: 2,
+  vars: 5,
+  consts: [["width", "14", "height", "14", "viewBox", "0 0 14 14", "fill", "none", "xmlns", "http://www.w3.org/2000/svg"], ["d", "M10.5553 13C10.411 13.0006 10.2704 12.9538 10.1554 12.8667L3.04473 7.53369C2.96193 7.4716 2.89474 7.39108 2.84845 7.29852C2.80217 7.20595 2.77808 7.10388 2.77808 7.00039C2.77808 6.8969 2.80217 6.79484 2.84845 6.70227C2.89474 6.60971 2.96193 6.52919 3.04473 6.4671L10.1554 1.13412C10.2549 1.05916 10.3734 1.0136 10.4976 1.0026C10.6217 0.991605 10.7464 1.01561 10.8575 1.0719C10.9668 1.12856 11.0584 1.21398 11.1226 1.31893C11.1869 1.42388 11.2212 1.54438 11.222 1.66742V12.3334C11.2212 12.4564 11.1869 12.5769 11.1226 12.6819C11.0584 12.7868 10.9668 12.8722 10.8575 12.9289C10.7629 12.9735 10.6599 12.9977 10.5553 13ZM4.55574 7.00039L9.88871 11.0001V3.00066L4.55574 7.00039Z", "fill", "currentColor"]],
+  template: function CaretLeftIcon_Template(rf, ctx) {
+    if (rf & 1) {
+      ɵɵnamespaceSVG();
+      ɵɵelementStart(0, "svg", 0);
+      ɵɵelement(1, "path", 1);
+      ɵɵelementEnd();
+    }
+    if (rf & 2) {
+      ɵɵclassMap(ctx.getClassNames());
+      ɵɵattribute("aria-label", ctx.ariaLabel)("aria-hidden", ctx.ariaHidden)("role", ctx.role);
+    }
+  },
+  encapsulation: 2
+}));
+var CaretLeftIcon = _CaretLeftIcon;
 (() => {
   (typeof ngDevMode === "undefined" || ngDevMode) && setClassMetadata(CaretLeftIcon, [{
     type: Component,
@@ -157,14 +159,7 @@ var CaretLeftIcon = class _CaretLeftIcon extends BaseIcon {
       selector: "CaretLeftIcon",
       standalone: true,
       imports: [BaseIcon],
-      template: `
-        <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg" [attr.aria-label]="ariaLabel" [attr.aria-hidden]="ariaHidden" [attr.role]="role" [class]="getClassNames()">
-            <path
-                d="M10.5553 13C10.411 13.0006 10.2704 12.9538 10.1554 12.8667L3.04473 7.53369C2.96193 7.4716 2.89474 7.39108 2.84845 7.29852C2.80217 7.20595 2.77808 7.10388 2.77808 7.00039C2.77808 6.8969 2.80217 6.79484 2.84845 6.70227C2.89474 6.60971 2.96193 6.52919 3.04473 6.4671L10.1554 1.13412C10.2549 1.05916 10.3734 1.0136 10.4976 1.0026C10.6217 0.991605 10.7464 1.01561 10.8575 1.0719C10.9668 1.12856 11.0584 1.21398 11.1226 1.31893C11.1869 1.42388 11.2212 1.54438 11.222 1.66742V12.3334C11.2212 12.4564 11.1869 12.5769 11.1226 12.6819C11.0584 12.7868 10.9668 12.8722 10.8575 12.9289C10.7629 12.9735 10.6599 12.9977 10.5553 13ZM4.55574 7.00039L9.88871 11.0001V3.00066L4.55574 7.00039Z"
-                fill="currentColor"
-            />
-        </svg>
-    `
+      template: '\n        <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg" [attr.aria-label]="ariaLabel" [attr.aria-hidden]="ariaHidden" [attr.role]="role" [class]="getClassNames()">\n            <path\n                d="M10.5553 13C10.411 13.0006 10.2704 12.9538 10.1554 12.8667L3.04473 7.53369C2.96193 7.4716 2.89474 7.39108 2.84845 7.29852C2.80217 7.20595 2.77808 7.10388 2.77808 7.00039C2.77808 6.8969 2.80217 6.79484 2.84845 6.70227C2.89474 6.60971 2.96193 6.52919 3.04473 6.4671L10.1554 1.13412C10.2549 1.05916 10.3734 1.0136 10.4976 1.0026C10.6217 0.991605 10.7464 1.01561 10.8575 1.0719C10.9668 1.12856 11.0584 1.21398 11.1226 1.31893C11.1869 1.42388 11.2212 1.54438 11.222 1.66742V12.3334C11.2212 12.4564 11.1869 12.5769 11.1226 12.6819C11.0584 12.7868 10.9668 12.8722 10.8575 12.9289C10.7629 12.9735 10.6599 12.9977 10.5553 13ZM4.55574 7.00039L9.88871 11.0001V3.00066L4.55574 7.00039Z"\n                fill="currentColor"\n            />\n        </svg>\n    '
     }]
   }], null, null);
 })();
@@ -604,49 +599,50 @@ function SlideMenu_div_0_Template(rf, ctx) {
     ɵɵtextInterpolate(ctx_r1.backLabel);
   }
 }
-var SlideMenuSub = class _SlideMenuSub {
-  document;
-  el;
-  renderer;
-  cd;
-  slideMenu;
-  items;
-  menuWidth;
-  root = false;
-  easing = "ease-out";
-  effectDuration;
-  autoDisplay;
-  autoZIndex = true;
-  baseZIndex = 0;
-  popup;
-  menuId;
-  ariaLabel;
-  ariaLabelledBy;
-  level = 0;
-  focusedItemId;
-  activeItemPath;
-  tabindex = 0;
-  itemClick = new EventEmitter();
-  itemMouseEnter = new EventEmitter();
-  menuFocus = new EventEmitter();
-  menuBlur = new EventEmitter();
-  menuKeydown = new EventEmitter();
-  sublistViewChild;
-  get isActive() {
-    return -this.slideMenu.left == this.level * this.menuWidth;
-  }
+var _SlideMenuSub = class _SlideMenuSub {
   constructor(document, el, renderer, cd, slideMenu) {
+    __publicField(this, "document");
+    __publicField(this, "el");
+    __publicField(this, "renderer");
+    __publicField(this, "cd");
+    __publicField(this, "slideMenu");
+    __publicField(this, "items");
+    __publicField(this, "menuWidth");
+    __publicField(this, "root", false);
+    __publicField(this, "easing", "ease-out");
+    __publicField(this, "effectDuration");
+    __publicField(this, "autoDisplay");
+    __publicField(this, "autoZIndex", true);
+    __publicField(this, "baseZIndex", 0);
+    __publicField(this, "popup");
+    __publicField(this, "menuId");
+    __publicField(this, "ariaLabel");
+    __publicField(this, "ariaLabelledBy");
+    __publicField(this, "level", 0);
+    __publicField(this, "focusedItemId");
+    __publicField(this, "activeItemPath");
+    __publicField(this, "tabindex", 0);
+    __publicField(this, "itemClick", new EventEmitter());
+    __publicField(this, "itemMouseEnter", new EventEmitter());
+    __publicField(this, "menuFocus", new EventEmitter());
+    __publicField(this, "menuBlur", new EventEmitter());
+    __publicField(this, "menuKeydown", new EventEmitter());
+    __publicField(this, "sublistViewChild");
     this.document = document;
     this.el = el;
     this.renderer = renderer;
     this.cd = cd;
     this.slideMenu = slideMenu;
   }
+  get isActive() {
+    return -this.slideMenu.left == this.level * this.menuWidth;
+  }
   getItemProp(processedItem, name, params = null) {
     return processedItem && processedItem.item ? ObjectUtils.getItemValue(processedItem.item[name], params) : void 0;
   }
   getItemId(processedItem) {
-    return processedItem.item && processedItem.item?.id ? processedItem.item.id : `${this.menuId}_${processedItem.key}`;
+    var _a;
+    return processedItem.item && ((_a = processedItem.item) == null ? void 0 : _a.id) ? processedItem.item.id : "".concat(this.menuId, "_").concat(processedItem.key);
   }
   getItemKey(processedItem) {
     return this.getItemId(processedItem);
@@ -705,232 +701,83 @@ var SlideMenuSub = class _SlideMenuSub {
   onMenuKeyDown(event) {
     this.menuKeydown.emit(event);
   }
-  static ɵfac = function SlideMenuSub_Factory(__ngFactoryType__) {
-    return new (__ngFactoryType__ || _SlideMenuSub)(ɵɵdirectiveInject(DOCUMENT), ɵɵdirectiveInject(ElementRef), ɵɵdirectiveInject(Renderer2), ɵɵdirectiveInject(ChangeDetectorRef), ɵɵdirectiveInject(forwardRef(() => SlideMenu)));
-  };
-  static ɵcmp = ɵɵdefineComponent({
-    type: _SlideMenuSub,
-    selectors: [["p-slideMenuSub"]],
-    viewQuery: function SlideMenuSub_Query(rf, ctx) {
-      if (rf & 1) {
-        ɵɵviewQuery(_c0, 7);
-      }
-      if (rf & 2) {
-        let _t;
-        ɵɵqueryRefresh(_t = ɵɵloadQuery()) && (ctx.sublistViewChild = _t.first);
-      }
-    },
-    hostAttrs: [1, "p-element"],
-    inputs: {
-      items: "items",
-      menuWidth: [2, "menuWidth", "menuWidth", numberAttribute],
-      root: [2, "root", "root", booleanAttribute],
-      easing: "easing",
-      effectDuration: [2, "effectDuration", "effectDuration", numberAttribute],
-      autoDisplay: [2, "autoDisplay", "autoDisplay", booleanAttribute],
-      autoZIndex: [2, "autoZIndex", "autoZIndex", booleanAttribute],
-      baseZIndex: [2, "baseZIndex", "baseZIndex", numberAttribute],
-      popup: [2, "popup", "popup", booleanAttribute],
-      menuId: "menuId",
-      ariaLabel: "ariaLabel",
-      ariaLabelledBy: "ariaLabelledBy",
-      level: [2, "level", "level", numberAttribute],
-      focusedItemId: "focusedItemId",
-      activeItemPath: "activeItemPath",
-      tabindex: [2, "tabindex", "tabindex", numberAttribute]
-    },
-    outputs: {
-      itemClick: "itemClick",
-      itemMouseEnter: "itemMouseEnter",
-      menuFocus: "menuFocus",
-      menuBlur: "menuBlur",
-      menuKeydown: "menuKeydown"
-    },
-    features: [ɵɵInputTransformsFeature],
-    decls: 3,
-    vars: 21,
-    consts: [["sublist", ""], ["listItem", ""], ["htmlLabel", ""], ["role", "menu", 3, "keydown", "focusin", "ngClass", "id", "ngStyle", "tabindex"], ["ngFor", "", 3, "ngForOf"], ["role", "separator", 3, "id", "ngStyle", "ngClass", 4, "ngIf"], ["role", "menuitem", "pTooltip", "", 3, "id", "ngStyle", "ngClass", "class", "tooltipOptions", 4, "ngIf"], ["role", "separator", 3, "id", "ngStyle", "ngClass"], ["role", "menuitem", "pTooltip", "", 3, "id", "ngStyle", "ngClass", "tooltipOptions"], [1, "p-menuitem-content", 3, "click", "mouseenter"], ["pRipple", "", 3, "target", "ngClass", 4, "ngIf"], ["pRipple", "", 3, "routerLink", "queryParams", "routerLinkActive", "routerLinkActiveOptions", "target", "ngClass", "fragment", "queryParamsHandling", "preserveFragment", "skipLocationChange", "replaceUrl", "state", 4, "ngIf"], ["class", "p-submenu", 3, "items", "autoDisplay", "menuId", "activeItemPath", "focusedItemId", "level", "menuWidth", "itemClick", "itemMouseEnter", 4, "ngIf"], ["pRipple", "", 3, "target", "ngClass"], ["class", "p-menuitem-icon", 3, "ngClass", "ngStyle", 4, "ngIf"], ["class", "p-menuitem-text", 4, "ngIf", "ngIfElse"], ["class", "p-menuitem-badge", 3, "ngClass", 4, "ngIf"], [4, "ngIf"], [1, "p-menuitem-icon", 3, "ngClass", "ngStyle"], [1, "p-menuitem-text"], [1, "p-menuitem-text", 3, "innerHTML"], [1, "p-menuitem-badge", 3, "ngClass"], [3, "styleClass", 4, "ngIf"], [4, "ngTemplateOutlet"], [3, "styleClass"], [3, "data-pc-section", "aria-hidden"], ["pRipple", "", 3, "routerLink", "queryParams", "routerLinkActive", "routerLinkActiveOptions", "target", "ngClass", "fragment", "queryParamsHandling", "preserveFragment", "skipLocationChange", "replaceUrl", "state"], [1, "p-submenu", 3, "itemClick", "itemMouseEnter", "items", "autoDisplay", "menuId", "activeItemPath", "focusedItemId", "level", "menuWidth"]],
-    template: function SlideMenuSub_Template(rf, ctx) {
-      if (rf & 1) {
-        const _r1 = ɵɵgetCurrentView();
-        ɵɵelementStart(0, "ul", 3, 0);
-        ɵɵlistener("keydown", function SlideMenuSub_Template_ul_keydown_0_listener($event) {
-          ɵɵrestoreView(_r1);
-          return ɵɵresetView(ctx.menuKeydown.emit($event));
-        })("focusin", function SlideMenuSub_Template_ul_focusin_0_listener($event) {
-          ɵɵrestoreView(_r1);
-          return ɵɵresetView(ctx.menuFocus.emit($event));
-        });
-        ɵɵtemplate(2, SlideMenuSub_ng_template_2_Template, 2, 2, "ng-template", 4);
-        ɵɵelementEnd();
-      }
-      if (rf & 2) {
-        ɵɵproperty("ngClass", ɵɵpureFunction3(11, _c1, !ctx.root, ctx.root, ctx.isActive))("id", ctx.menuId + "_list")("ngStyle", ɵɵpureFunction5(15, _c2, ctx.menuWidth, ctx.root ? ctx.slideMenu.left : ctx.slideMenu.menuWidth, ctx.root ? "left" : "none", ctx.effectDuration + "ms", ctx.easing))("tabindex", ctx.tabindex);
-        ɵɵattribute("aria-label", ctx.ariaLabel)("aria-labelledBy", ctx.ariaLabelledBy)("aria-aria-activedescendant", ctx.focusedItemId)("aria-orientation", "vertical")("data-pc-section", "menu")("data-pc-state", ctx.isActive ? "active" : "inactive");
-        ɵɵadvance(2);
-        ɵɵproperty("ngForOf", ctx.items);
-      }
-    },
-    dependencies: () => [NgClass, NgForOf, NgIf, NgTemplateOutlet, NgStyle, RouterLink, RouterLinkActive, Ripple, Tooltip, AngleRightIcon, _SlideMenuSub],
-    encapsulation: 2
-  });
 };
+__publicField(_SlideMenuSub, "ɵfac", function SlideMenuSub_Factory(__ngFactoryType__) {
+  return new (__ngFactoryType__ || _SlideMenuSub)(ɵɵdirectiveInject(DOCUMENT), ɵɵdirectiveInject(ElementRef), ɵɵdirectiveInject(Renderer2), ɵɵdirectiveInject(ChangeDetectorRef), ɵɵdirectiveInject(forwardRef(() => SlideMenu)));
+});
+__publicField(_SlideMenuSub, "ɵcmp", ɵɵdefineComponent({
+  type: _SlideMenuSub,
+  selectors: [["p-slideMenuSub"]],
+  viewQuery: function SlideMenuSub_Query(rf, ctx) {
+    if (rf & 1) {
+      ɵɵviewQuery(_c0, 7);
+    }
+    if (rf & 2) {
+      let _t;
+      ɵɵqueryRefresh(_t = ɵɵloadQuery()) && (ctx.sublistViewChild = _t.first);
+    }
+  },
+  hostAttrs: [1, "p-element"],
+  inputs: {
+    items: "items",
+    menuWidth: [2, "menuWidth", "menuWidth", numberAttribute],
+    root: [2, "root", "root", booleanAttribute],
+    easing: "easing",
+    effectDuration: [2, "effectDuration", "effectDuration", numberAttribute],
+    autoDisplay: [2, "autoDisplay", "autoDisplay", booleanAttribute],
+    autoZIndex: [2, "autoZIndex", "autoZIndex", booleanAttribute],
+    baseZIndex: [2, "baseZIndex", "baseZIndex", numberAttribute],
+    popup: [2, "popup", "popup", booleanAttribute],
+    menuId: "menuId",
+    ariaLabel: "ariaLabel",
+    ariaLabelledBy: "ariaLabelledBy",
+    level: [2, "level", "level", numberAttribute],
+    focusedItemId: "focusedItemId",
+    activeItemPath: "activeItemPath",
+    tabindex: [2, "tabindex", "tabindex", numberAttribute]
+  },
+  outputs: {
+    itemClick: "itemClick",
+    itemMouseEnter: "itemMouseEnter",
+    menuFocus: "menuFocus",
+    menuBlur: "menuBlur",
+    menuKeydown: "menuKeydown"
+  },
+  features: [ɵɵInputTransformsFeature],
+  decls: 3,
+  vars: 21,
+  consts: [["sublist", ""], ["listItem", ""], ["htmlLabel", ""], ["role", "menu", 3, "keydown", "focusin", "ngClass", "id", "ngStyle", "tabindex"], ["ngFor", "", 3, "ngForOf"], ["role", "separator", 3, "id", "ngStyle", "ngClass", 4, "ngIf"], ["role", "menuitem", "pTooltip", "", 3, "id", "ngStyle", "ngClass", "class", "tooltipOptions", 4, "ngIf"], ["role", "separator", 3, "id", "ngStyle", "ngClass"], ["role", "menuitem", "pTooltip", "", 3, "id", "ngStyle", "ngClass", "tooltipOptions"], [1, "p-menuitem-content", 3, "click", "mouseenter"], ["pRipple", "", 3, "target", "ngClass", 4, "ngIf"], ["pRipple", "", 3, "routerLink", "queryParams", "routerLinkActive", "routerLinkActiveOptions", "target", "ngClass", "fragment", "queryParamsHandling", "preserveFragment", "skipLocationChange", "replaceUrl", "state", 4, "ngIf"], ["class", "p-submenu", 3, "items", "autoDisplay", "menuId", "activeItemPath", "focusedItemId", "level", "menuWidth", "itemClick", "itemMouseEnter", 4, "ngIf"], ["pRipple", "", 3, "target", "ngClass"], ["class", "p-menuitem-icon", 3, "ngClass", "ngStyle", 4, "ngIf"], ["class", "p-menuitem-text", 4, "ngIf", "ngIfElse"], ["class", "p-menuitem-badge", 3, "ngClass", 4, "ngIf"], [4, "ngIf"], [1, "p-menuitem-icon", 3, "ngClass", "ngStyle"], [1, "p-menuitem-text"], [1, "p-menuitem-text", 3, "innerHTML"], [1, "p-menuitem-badge", 3, "ngClass"], [3, "styleClass", 4, "ngIf"], [4, "ngTemplateOutlet"], [3, "styleClass"], [3, "data-pc-section", "aria-hidden"], ["pRipple", "", 3, "routerLink", "queryParams", "routerLinkActive", "routerLinkActiveOptions", "target", "ngClass", "fragment", "queryParamsHandling", "preserveFragment", "skipLocationChange", "replaceUrl", "state"], [1, "p-submenu", 3, "itemClick", "itemMouseEnter", "items", "autoDisplay", "menuId", "activeItemPath", "focusedItemId", "level", "menuWidth"]],
+  template: function SlideMenuSub_Template(rf, ctx) {
+    if (rf & 1) {
+      const _r1 = ɵɵgetCurrentView();
+      ɵɵelementStart(0, "ul", 3, 0);
+      ɵɵlistener("keydown", function SlideMenuSub_Template_ul_keydown_0_listener($event) {
+        ɵɵrestoreView(_r1);
+        return ɵɵresetView(ctx.menuKeydown.emit($event));
+      })("focusin", function SlideMenuSub_Template_ul_focusin_0_listener($event) {
+        ɵɵrestoreView(_r1);
+        return ɵɵresetView(ctx.menuFocus.emit($event));
+      });
+      ɵɵtemplate(2, SlideMenuSub_ng_template_2_Template, 2, 2, "ng-template", 4);
+      ɵɵelementEnd();
+    }
+    if (rf & 2) {
+      ɵɵproperty("ngClass", ɵɵpureFunction3(11, _c1, !ctx.root, ctx.root, ctx.isActive))("id", ctx.menuId + "_list")("ngStyle", ɵɵpureFunction5(15, _c2, ctx.menuWidth, ctx.root ? ctx.slideMenu.left : ctx.slideMenu.menuWidth, ctx.root ? "left" : "none", ctx.effectDuration + "ms", ctx.easing))("tabindex", ctx.tabindex);
+      ɵɵattribute("aria-label", ctx.ariaLabel)("aria-labelledBy", ctx.ariaLabelledBy)("aria-aria-activedescendant", ctx.focusedItemId)("aria-orientation", "vertical")("data-pc-section", "menu")("data-pc-state", ctx.isActive ? "active" : "inactive");
+      ɵɵadvance(2);
+      ɵɵproperty("ngForOf", ctx.items);
+    }
+  },
+  dependencies: () => [NgClass, NgForOf, NgIf, NgTemplateOutlet, NgStyle, RouterLink, RouterLinkActive, Ripple, Tooltip, AngleRightIcon, _SlideMenuSub],
+  encapsulation: 2
+}));
+var SlideMenuSub = _SlideMenuSub;
 (() => {
   (typeof ngDevMode === "undefined" || ngDevMode) && setClassMetadata(SlideMenuSub, [{
     type: Component,
     args: [{
       selector: "p-slideMenuSub",
-      template: `
-        <ul
-            #sublist
-            role="menu"
-            [ngClass]="{ 'p-submenu-list': !root, 'p-slidemenu-root-list': root, 'p-active-submenu': isActive }"
-            [id]="menuId + '_list'"
-            [ngStyle]="{
-                'width.px': menuWidth,
-                'left.px': root ? slideMenu.left : slideMenu.menuWidth,
-                'transition-property': root ? 'left' : 'none',
-                'transition-duration': effectDuration + 'ms',
-                'transition-timing-function': easing
-            }"
-            [tabindex]="tabindex"
-            [attr.aria-label]="ariaLabel"
-            [attr.aria-labelledBy]="ariaLabelledBy"
-            [attr.aria-aria-activedescendant]="focusedItemId"
-            [attr.aria-orientation]="'vertical'"
-            [attr.data-pc-section]="'menu'"
-            (keydown)="menuKeydown.emit($event)"
-            (focusin)="menuFocus.emit($event)"
-            [attr.data-pc-state]="isActive ? 'active' : 'inactive'"
-        >
-            <ng-template ngFor let-processedItem [ngForOf]="items" let-index="index">
-                <li
-                    *ngIf="isItemVisible(processedItem) && getItemProp(processedItem, 'separator')"
-                    [id]="getItemId(processedItem)"
-                    [ngStyle]="getItemProp(processedItem, 'style')"
-                    [ngClass]="getSeparatorItemClass(processedItem)"
-                    role="separator"
-                    [attr.data-pc-section]="'separator'"
-                ></li>
-                <li
-                    #listItem
-                    *ngIf="isItemVisible(processedItem) && !getItemProp(processedItem, 'separator')"
-                    role="menuitem"
-                    [id]="getItemId(processedItem)"
-                    [attr.data-pc-section]="'menuitem'"
-                    [attr.data-p-highlight]="isItemActive(processedItem)"
-                    [attr.data-p-focused]="isItemFocused(processedItem)"
-                    [attr.data-p-disabled]="isItemDisabled(processedItem)"
-                    [attr.aria-label]="getItemLabel(processedItem)"
-                    [attr.aria-disabled]="isItemDisabled(processedItem) || undefined"
-                    [attr.aria-haspopup]="isItemGroup(processedItem) && !getItemProp(processedItem, 'to') ? 'menu' : undefined"
-                    [attr.aria-expanded]="isItemGroup(processedItem) ? isItemActive(processedItem) : undefined"
-                    [attr.aria-level]="level + 1"
-                    [attr.aria-setsize]="getAriaSetSize()"
-                    [attr.aria-posinset]="getAriaPosInset(index)"
-                    [ngStyle]="getItemProp(processedItem, 'style')"
-                    [ngClass]="getItemClass(processedItem)"
-                    [class]="getItemProp(processedItem, 'styleClass')"
-                    pTooltip
-                    [tooltipOptions]="getItemProp(processedItem, 'tooltipOptions')"
-                >
-                    <div [attr.data-pc-section]="'content'" class="p-menuitem-content" (click)="onItemClick($event, processedItem)" (mouseenter)="itemMouseEnter.emit({ originalEvent: $event, processedItem })">
-                        <a
-                            *ngIf="!getItemProp(processedItem, 'routerLink')"
-                            [attr.href]="getItemProp(processedItem, 'url')"
-                            [attr.aria-hidden]="true"
-                            [attr.data-automationid]="getItemProp(processedItem, 'automationId')"
-                            [attr.data-pc-section]="'action'"
-                            [target]="getItemProp(processedItem, 'target')"
-                            [ngClass]="{ 'p-menuitem-link': true, 'p-disabled': getItemProp(processedItem, 'disabled') }"
-                            [attr.tabindex]="-1"
-                            pRipple
-                        >
-                            <span
-                                *ngIf="getItemProp(processedItem, 'icon')"
-                                class="p-menuitem-icon"
-                                [ngClass]="getItemProp(processedItem, 'icon')"
-                                [ngStyle]="getItemProp(processedItem, 'iconStyle')"
-                                [attr.data-pc-section]="'icon'"
-                                [attr.aria-hidden]="true"
-                                [attr.tabindex]="-1"
-                            >
-                            </span>
-                            <span *ngIf="getItemProp(processedItem, 'escape'); else htmlLabel" class="p-menuitem-text" [attr.data-pc-section]="'label'">
-                                {{ getItemLabel(processedItem) }}
-                            </span>
-                            <ng-template #htmlLabel>
-                                <span class="p-menuitem-text" [innerHTML]="getItemLabel(processedItem)" [attr.data-pc-section]="'label'"></span>
-                            </ng-template>
-                            <span class="p-menuitem-badge" *ngIf="getItemProp(processedItem, 'badge')" [ngClass]="getItemProp(processedItem, 'badgeStyleClass')">{{ getItemProp(processedItem, 'badge') }}</span>
-
-                            <ng-container *ngIf="isItemGroup(processedItem)">
-                                <AngleRightIcon *ngIf="!slideMenu.submenuIconTemplate" [styleClass]="'p-submenu-icon'" [attr.data-pc-section]="'submenuicon'" [attr.aria-hidden]="true" />
-                                <ng-template *ngTemplateOutlet="slideMenu.submenuIconTemplate" [attr.data-pc-section]="'submenuicon'" [attr.aria-hidden]="true"></ng-template>
-                            </ng-container>
-                        </a>
-                        <a
-                            *ngIf="getItemProp(processedItem, 'routerLink')"
-                            [routerLink]="getItemProp(processedItem, 'routerLink')"
-                            [attr.data-automationid]="getItemProp(processedItem, 'automationId')"
-                            [attr.tabindex]="-1"
-                            [attr.aria-hidden]="true"
-                            [attr.data-pc-section]="'action'"
-                            [queryParams]="getItemProp(processedItem, 'queryParams')"
-                            [routerLinkActive]="'p-menuitem-link-active'"
-                            [routerLinkActiveOptions]="getItemProp(processedItem, 'routerLinkActiveOptions') || { exact: false }"
-                            [target]="getItemProp(processedItem, 'target')"
-                            [ngClass]="{ 'p-menuitem-link': true, 'p-disabled': getItemProp(processedItem, 'disabled') }"
-                            [fragment]="getItemProp(processedItem, 'fragment')"
-                            [queryParamsHandling]="getItemProp(processedItem, 'queryParamsHandling')"
-                            [preserveFragment]="getItemProp(processedItem, 'preserveFragment')"
-                            [skipLocationChange]="getItemProp(processedItem, 'skipLocationChange')"
-                            [replaceUrl]="getItemProp(processedItem, 'replaceUrl')"
-                            [state]="getItemProp(processedItem, 'state')"
-                            pRipple
-                        >
-                            <span
-                                *ngIf="getItemProp(processedItem, 'icon')"
-                                class="p-menuitem-icon"
-                                [ngClass]="getItemProp(processedItem, 'icon')"
-                                [ngStyle]="getItemProp(processedItem, 'iconStyle')"
-                                [attr.data-pc-section]="'icon'"
-                                [attr.aria-hidden]="true"
-                                [attr.tabindex]="-1"
-                            >
-                            </span>
-                            <span *ngIf="getItemProp(processedItem, 'escape'); else htmlLabel" class="p-menuitem-text" [attr.data-pc-section]="'label'">
-                                {{ getItemLabel(processedItem) }}
-                            </span>
-                            <ng-template #htmlLabel>
-                                <span class="p-menuitem-text" [innerHTML]="getItemLabel(processedItem)" [attr.data-pc-section]="'label'"></span>
-                            </ng-template>
-                            <span class="p-menuitem-badge" *ngIf="getItemProp(processedItem, 'badge')" [ngClass]="getItemProp(processedItem, 'badgeStyleClass')">{{ getItemProp(processedItem, 'badge') }}</span>
-
-                            <ng-container *ngIf="isItemGroup(processedItem)">
-                                <AngleRightIcon *ngIf="!slideMenu.submenuIconTemplate" [styleClass]="'p-submenu-icon'" [attr.data-pc-section]="'submenuicon'" [attr.aria-hidden]="true" />
-                                <ng-template *ngTemplateOutlet="slideMenu.submenuIconTemplate" [attr.data-pc-section]="'submenuicon'" [attr.aria-hidden]="true"></ng-template>
-                            </ng-container>
-                        </a>
-                    </div>
-
-                    <p-slideMenuSub
-                        *ngIf="isItemVisible(processedItem) && isItemGroup(processedItem)"
-                        class="p-submenu"
-                        [items]="processedItem.items"
-                        [autoDisplay]="autoDisplay"
-                        [menuId]="menuId"
-                        [activeItemPath]="activeItemPath"
-                        [focusedItemId]="focusedItemId"
-                        [level]="level + 1"
-                        [menuWidth]="menuWidth"
-                        (itemClick)="itemClick.emit($event)"
-                        (itemMouseEnter)="itemMouseEnter.emit($event)"
-                    ></p-slideMenuSub>
-                </li>
-            </ng-template>
-        </ul>
-    `,
+      template: '\n        <ul\n            #sublist\n            role="menu"\n            [ngClass]="{ \'p-submenu-list\': !root, \'p-slidemenu-root-list\': root, \'p-active-submenu\': isActive }"\n            [id]="menuId + \'_list\'"\n            [ngStyle]="{\n                \'width.px\': menuWidth,\n                \'left.px\': root ? slideMenu.left : slideMenu.menuWidth,\n                \'transition-property\': root ? \'left\' : \'none\',\n                \'transition-duration\': effectDuration + \'ms\',\n                \'transition-timing-function\': easing\n            }"\n            [tabindex]="tabindex"\n            [attr.aria-label]="ariaLabel"\n            [attr.aria-labelledBy]="ariaLabelledBy"\n            [attr.aria-aria-activedescendant]="focusedItemId"\n            [attr.aria-orientation]="\'vertical\'"\n            [attr.data-pc-section]="\'menu\'"\n            (keydown)="menuKeydown.emit($event)"\n            (focusin)="menuFocus.emit($event)"\n            [attr.data-pc-state]="isActive ? \'active\' : \'inactive\'"\n        >\n            <ng-template ngFor let-processedItem [ngForOf]="items" let-index="index">\n                <li\n                    *ngIf="isItemVisible(processedItem) && getItemProp(processedItem, \'separator\')"\n                    [id]="getItemId(processedItem)"\n                    [ngStyle]="getItemProp(processedItem, \'style\')"\n                    [ngClass]="getSeparatorItemClass(processedItem)"\n                    role="separator"\n                    [attr.data-pc-section]="\'separator\'"\n                ></li>\n                <li\n                    #listItem\n                    *ngIf="isItemVisible(processedItem) && !getItemProp(processedItem, \'separator\')"\n                    role="menuitem"\n                    [id]="getItemId(processedItem)"\n                    [attr.data-pc-section]="\'menuitem\'"\n                    [attr.data-p-highlight]="isItemActive(processedItem)"\n                    [attr.data-p-focused]="isItemFocused(processedItem)"\n                    [attr.data-p-disabled]="isItemDisabled(processedItem)"\n                    [attr.aria-label]="getItemLabel(processedItem)"\n                    [attr.aria-disabled]="isItemDisabled(processedItem) || undefined"\n                    [attr.aria-haspopup]="isItemGroup(processedItem) && !getItemProp(processedItem, \'to\') ? \'menu\' : undefined"\n                    [attr.aria-expanded]="isItemGroup(processedItem) ? isItemActive(processedItem) : undefined"\n                    [attr.aria-level]="level + 1"\n                    [attr.aria-setsize]="getAriaSetSize()"\n                    [attr.aria-posinset]="getAriaPosInset(index)"\n                    [ngStyle]="getItemProp(processedItem, \'style\')"\n                    [ngClass]="getItemClass(processedItem)"\n                    [class]="getItemProp(processedItem, \'styleClass\')"\n                    pTooltip\n                    [tooltipOptions]="getItemProp(processedItem, \'tooltipOptions\')"\n                >\n                    <div [attr.data-pc-section]="\'content\'" class="p-menuitem-content" (click)="onItemClick($event, processedItem)" (mouseenter)="itemMouseEnter.emit({ originalEvent: $event, processedItem })">\n                        <a\n                            *ngIf="!getItemProp(processedItem, \'routerLink\')"\n                            [attr.href]="getItemProp(processedItem, \'url\')"\n                            [attr.aria-hidden]="true"\n                            [attr.data-automationid]="getItemProp(processedItem, \'automationId\')"\n                            [attr.data-pc-section]="\'action\'"\n                            [target]="getItemProp(processedItem, \'target\')"\n                            [ngClass]="{ \'p-menuitem-link\': true, \'p-disabled\': getItemProp(processedItem, \'disabled\') }"\n                            [attr.tabindex]="-1"\n                            pRipple\n                        >\n                            <span\n                                *ngIf="getItemProp(processedItem, \'icon\')"\n                                class="p-menuitem-icon"\n                                [ngClass]="getItemProp(processedItem, \'icon\')"\n                                [ngStyle]="getItemProp(processedItem, \'iconStyle\')"\n                                [attr.data-pc-section]="\'icon\'"\n                                [attr.aria-hidden]="true"\n                                [attr.tabindex]="-1"\n                            >\n                            </span>\n                            <span *ngIf="getItemProp(processedItem, \'escape\'); else htmlLabel" class="p-menuitem-text" [attr.data-pc-section]="\'label\'">\n                                {{ getItemLabel(processedItem) }}\n                            </span>\n                            <ng-template #htmlLabel>\n                                <span class="p-menuitem-text" [innerHTML]="getItemLabel(processedItem)" [attr.data-pc-section]="\'label\'"></span>\n                            </ng-template>\n                            <span class="p-menuitem-badge" *ngIf="getItemProp(processedItem, \'badge\')" [ngClass]="getItemProp(processedItem, \'badgeStyleClass\')">{{ getItemProp(processedItem, \'badge\') }}</span>\n\n                            <ng-container *ngIf="isItemGroup(processedItem)">\n                                <AngleRightIcon *ngIf="!slideMenu.submenuIconTemplate" [styleClass]="\'p-submenu-icon\'" [attr.data-pc-section]="\'submenuicon\'" [attr.aria-hidden]="true" />\n                                <ng-template *ngTemplateOutlet="slideMenu.submenuIconTemplate" [attr.data-pc-section]="\'submenuicon\'" [attr.aria-hidden]="true"></ng-template>\n                            </ng-container>\n                        </a>\n                        <a\n                            *ngIf="getItemProp(processedItem, \'routerLink\')"\n                            [routerLink]="getItemProp(processedItem, \'routerLink\')"\n                            [attr.data-automationid]="getItemProp(processedItem, \'automationId\')"\n                            [attr.tabindex]="-1"\n                            [attr.aria-hidden]="true"\n                            [attr.data-pc-section]="\'action\'"\n                            [queryParams]="getItemProp(processedItem, \'queryParams\')"\n                            [routerLinkActive]="\'p-menuitem-link-active\'"\n                            [routerLinkActiveOptions]="getItemProp(processedItem, \'routerLinkActiveOptions\') || { exact: false }"\n                            [target]="getItemProp(processedItem, \'target\')"\n                            [ngClass]="{ \'p-menuitem-link\': true, \'p-disabled\': getItemProp(processedItem, \'disabled\') }"\n                            [fragment]="getItemProp(processedItem, \'fragment\')"\n                            [queryParamsHandling]="getItemProp(processedItem, \'queryParamsHandling\')"\n                            [preserveFragment]="getItemProp(processedItem, \'preserveFragment\')"\n                            [skipLocationChange]="getItemProp(processedItem, \'skipLocationChange\')"\n                            [replaceUrl]="getItemProp(processedItem, \'replaceUrl\')"\n                            [state]="getItemProp(processedItem, \'state\')"\n                            pRipple\n                        >\n                            <span\n                                *ngIf="getItemProp(processedItem, \'icon\')"\n                                class="p-menuitem-icon"\n                                [ngClass]="getItemProp(processedItem, \'icon\')"\n                                [ngStyle]="getItemProp(processedItem, \'iconStyle\')"\n                                [attr.data-pc-section]="\'icon\'"\n                                [attr.aria-hidden]="true"\n                                [attr.tabindex]="-1"\n                            >\n                            </span>\n                            <span *ngIf="getItemProp(processedItem, \'escape\'); else htmlLabel" class="p-menuitem-text" [attr.data-pc-section]="\'label\'">\n                                {{ getItemLabel(processedItem) }}\n                            </span>\n                            <ng-template #htmlLabel>\n                                <span class="p-menuitem-text" [innerHTML]="getItemLabel(processedItem)" [attr.data-pc-section]="\'label\'"></span>\n                            </ng-template>\n                            <span class="p-menuitem-badge" *ngIf="getItemProp(processedItem, \'badge\')" [ngClass]="getItemProp(processedItem, \'badgeStyleClass\')">{{ getItemProp(processedItem, \'badge\') }}</span>\n\n                            <ng-container *ngIf="isItemGroup(processedItem)">\n                                <AngleRightIcon *ngIf="!slideMenu.submenuIconTemplate" [styleClass]="\'p-submenu-icon\'" [attr.data-pc-section]="\'submenuicon\'" [attr.aria-hidden]="true" />\n                                <ng-template *ngTemplateOutlet="slideMenu.submenuIconTemplate" [attr.data-pc-section]="\'submenuicon\'" [attr.aria-hidden]="true"></ng-template>\n                            </ng-container>\n                        </a>\n                    </div>\n\n                    <p-slideMenuSub\n                        *ngIf="isItemVisible(processedItem) && isItemGroup(processedItem)"\n                        class="p-submenu"\n                        [items]="processedItem.items"\n                        [autoDisplay]="autoDisplay"\n                        [menuId]="menuId"\n                        [activeItemPath]="activeItemPath"\n                        [focusedItemId]="focusedItemId"\n                        [level]="level + 1"\n                        [menuWidth]="menuWidth"\n                        (itemClick)="itemClick.emit($event)"\n                        (itemMouseEnter)="itemMouseEnter.emit($event)"\n                    ></p-slideMenuSub>\n                </li>\n            </ng-template>\n        </ul>\n    ',
       encapsulation: ViewEncapsulation$1.None,
       host: {
         class: "p-element"
@@ -1053,180 +900,154 @@ var SlideMenuSub = class _SlideMenuSub {
     }]
   });
 })();
-var SlideMenu = class _SlideMenu {
-  document;
-  platformId;
-  el;
-  renderer;
-  cd;
-  config;
-  overlayService;
-  /**
-   * An array of menuitems.
-   * @group Props
-   */
-  set model(value) {
-    this._model = value;
-    this._processedItems = this.createProcessedItems(this._model || []);
-  }
-  get model() {
-    return this._model;
-  }
-  /**
-   * Width of the submenus.
-   * @group Props
-   */
-  menuWidth = 190;
-  /**
-   * Height of the scrollable area, a scrollbar appears if a menu height is longer than this value.
-   * @group Props
-   */
-  viewportHeight = 180;
-  /**
-   * Duration of the sliding animation in milliseconds.
-   * @group Props
-   */
-  effectDuration = 250;
-  /**
-   * Easing animation to use for sliding.
-   * @group Props
-   */
-  easing = "ease-out";
-  /**
-   * Label of element to navigate back.
-   * @group Props
-   */
-  backLabel = "Back";
-  /**
-   * When present, it specifies that the component should be disabled.
-   * @group Props
-   */
-  disabled = false;
-  /**
-   * Index of the element in tabbing order.
-   * @group Props
-   */
-  tabindex = 0;
-  /**
-   * Defines if menu would displayed as a popup.
-   * @group Props
-   */
-  popup;
-  /**
-   * Inline style of the component.
-   * @group Props
-   */
-  style;
-  /**
-   * Style class of the component.
-   * @group Props
-   */
-  styleClass;
-  /**
-   * Target element to attach the overlay, valid values are "body" or a local ng-template variable of another element.
-   * @group Props
-   */
-  appendTo;
-  /**
-   * Whether to automatically manage layering.
-   * @group Props
-   */
-  autoZIndex = true;
-  /**
-   * Base zIndex value to use in layering.
-   * @group Props
-   */
-  baseZIndex = 0;
-  /**
-   * Whether to show a root submenu on mouse over.
-   * @defaultValue true
-   * @group Props
-   */
-  autoDisplay = true;
-  /**
-   * Transition options of the show animation.
-   * @group Props
-   */
-  showTransitionOptions = ".12s cubic-bezier(0, 0, 0.2, 1)";
-  /**
-   * Transition options of the hide animation.
-   * @group Props
-   */
-  hideTransitionOptions = ".1s linear";
-  /**
-   * Current id state as a string.
-   * @group Props
-   */
-  id;
-  /**
-   * Defines a string value that labels an interactive element.
-   * @group Props
-   */
-  ariaLabel;
-  /**
-   * Identifier of the underlying input element.
-   * @group Props
-   */
-  ariaLabelledBy;
-  /**
-   * Callback to invoke when overlay menu is shown.
-   * @group Emits
-   */
-  onShow = new EventEmitter();
-  /**
-   * Callback to invoke when overlay menu is hidden.
-   * @group Emits
-   */
-  onHide = new EventEmitter();
-  templates;
-  rootmenu;
-  containerViewChild;
-  set backward(element) {
-    this.backwardViewChild = element;
-  }
-  slideMenuContentViewChild;
-  submenuIconTemplate;
-  backIconTemplate;
-  outsideClickListener;
-  resizeListener;
-  transitionEndListener;
-  transitionStartListener;
-  backwardViewChild;
-  transition = false;
-  left = 0;
-  animating = false;
-  target;
-  visible;
-  relativeAlign;
-  window;
-  focused = false;
-  activeItemPath = signal([]);
-  focusedItemInfo = signal({
-    index: -1,
-    level: 0,
-    parentKey: ""
-  });
-  searchValue = "";
-  searchTimeout;
-  _processedItems;
-  _model;
-  container;
-  itemClick = false;
-  get visibleItems() {
-    const processedItem = this.activeItemPath().find((p) => p.key === this.focusedItemInfo().parentKey);
-    return processedItem ? processedItem.items : this.processedItems;
-  }
-  get processedItems() {
-    if (!this._processedItems || !this._processedItems.length) {
-      this._processedItems = this.createProcessedItems(this.model || []);
-    }
-    return this._processedItems;
-  }
-  get focusedItemId() {
-    const focusedItem = this.focusedItemInfo();
-    return focusedItem.item && focusedItem.item?.id ? focusedItem.item.id : focusedItem.index !== -1 ? `${this.id}${ObjectUtils.isNotEmpty(focusedItem.parentKey) ? "_" + focusedItem.parentKey : ""}_${focusedItem.index}` : null;
-  }
+var _SlideMenu = class _SlideMenu {
   constructor(document, platformId, el, renderer, cd, config, overlayService) {
+    __publicField(this, "document");
+    __publicField(this, "platformId");
+    __publicField(this, "el");
+    __publicField(this, "renderer");
+    __publicField(this, "cd");
+    __publicField(this, "config");
+    __publicField(this, "overlayService");
+    /**
+     * Width of the submenus.
+     * @group Props
+     */
+    __publicField(this, "menuWidth", 190);
+    /**
+     * Height of the scrollable area, a scrollbar appears if a menu height is longer than this value.
+     * @group Props
+     */
+    __publicField(this, "viewportHeight", 180);
+    /**
+     * Duration of the sliding animation in milliseconds.
+     * @group Props
+     */
+    __publicField(this, "effectDuration", 250);
+    /**
+     * Easing animation to use for sliding.
+     * @group Props
+     */
+    __publicField(this, "easing", "ease-out");
+    /**
+     * Label of element to navigate back.
+     * @group Props
+     */
+    __publicField(this, "backLabel", "Back");
+    /**
+     * When present, it specifies that the component should be disabled.
+     * @group Props
+     */
+    __publicField(this, "disabled", false);
+    /**
+     * Index of the element in tabbing order.
+     * @group Props
+     */
+    __publicField(this, "tabindex", 0);
+    /**
+     * Defines if menu would displayed as a popup.
+     * @group Props
+     */
+    __publicField(this, "popup");
+    /**
+     * Inline style of the component.
+     * @group Props
+     */
+    __publicField(this, "style");
+    /**
+     * Style class of the component.
+     * @group Props
+     */
+    __publicField(this, "styleClass");
+    /**
+     * Target element to attach the overlay, valid values are "body" or a local ng-template variable of another element.
+     * @group Props
+     */
+    __publicField(this, "appendTo");
+    /**
+     * Whether to automatically manage layering.
+     * @group Props
+     */
+    __publicField(this, "autoZIndex", true);
+    /**
+     * Base zIndex value to use in layering.
+     * @group Props
+     */
+    __publicField(this, "baseZIndex", 0);
+    /**
+     * Whether to show a root submenu on mouse over.
+     * @defaultValue true
+     * @group Props
+     */
+    __publicField(this, "autoDisplay", true);
+    /**
+     * Transition options of the show animation.
+     * @group Props
+     */
+    __publicField(this, "showTransitionOptions", ".12s cubic-bezier(0, 0, 0.2, 1)");
+    /**
+     * Transition options of the hide animation.
+     * @group Props
+     */
+    __publicField(this, "hideTransitionOptions", ".1s linear");
+    /**
+     * Current id state as a string.
+     * @group Props
+     */
+    __publicField(this, "id");
+    /**
+     * Defines a string value that labels an interactive element.
+     * @group Props
+     */
+    __publicField(this, "ariaLabel");
+    /**
+     * Identifier of the underlying input element.
+     * @group Props
+     */
+    __publicField(this, "ariaLabelledBy");
+    /**
+     * Callback to invoke when overlay menu is shown.
+     * @group Emits
+     */
+    __publicField(this, "onShow", new EventEmitter());
+    /**
+     * Callback to invoke when overlay menu is hidden.
+     * @group Emits
+     */
+    __publicField(this, "onHide", new EventEmitter());
+    __publicField(this, "templates");
+    __publicField(this, "rootmenu");
+    __publicField(this, "containerViewChild");
+    __publicField(this, "slideMenuContentViewChild");
+    __publicField(this, "submenuIconTemplate");
+    __publicField(this, "backIconTemplate");
+    __publicField(this, "outsideClickListener");
+    __publicField(this, "resizeListener");
+    __publicField(this, "transitionEndListener");
+    __publicField(this, "transitionStartListener");
+    __publicField(this, "backwardViewChild");
+    __publicField(this, "transition", false);
+    __publicField(this, "left", 0);
+    __publicField(this, "animating", false);
+    __publicField(this, "target");
+    __publicField(this, "visible");
+    __publicField(this, "relativeAlign");
+    __publicField(this, "window");
+    __publicField(this, "focused", false);
+    __publicField(this, "activeItemPath", signal([]));
+    __publicField(this, "focusedItemInfo", signal({
+      index: -1,
+      level: 0,
+      parentKey: ""
+    }));
+    __publicField(this, "searchValue", "");
+    __publicField(this, "searchTimeout");
+    __publicField(this, "_processedItems");
+    __publicField(this, "_model");
+    __publicField(this, "container");
+    __publicField(this, "itemClick", false);
+    __publicField(this, "documentFocusListener");
+    __publicField(this, "activeLevel", signal(0));
     this.document = document;
     this.platformId = platformId;
     this.el = el;
@@ -1248,7 +1069,35 @@ var SlideMenu = class _SlideMenu {
       }
     });
   }
-  documentFocusListener;
+  /**
+   * An array of menuitems.
+   * @group Props
+   */
+  set model(value) {
+    this._model = value;
+    this._processedItems = this.createProcessedItems(this._model || []);
+  }
+  get model() {
+    return this._model;
+  }
+  set backward(element) {
+    this.backwardViewChild = element;
+  }
+  get visibleItems() {
+    const processedItem = this.activeItemPath().find((p) => p.key === this.focusedItemInfo().parentKey);
+    return processedItem ? processedItem.items : this.processedItems;
+  }
+  get processedItems() {
+    if (!this._processedItems || !this._processedItems.length) {
+      this._processedItems = this.createProcessedItems(this.model || []);
+    }
+    return this._processedItems;
+  }
+  get focusedItemId() {
+    var _a;
+    const focusedItem = this.focusedItemInfo();
+    return focusedItem.item && ((_a = focusedItem.item) == null ? void 0 : _a.id) ? focusedItem.item.id : focusedItem.index !== -1 ? "".concat(this.id).concat(ObjectUtils.isNotEmpty(focusedItem.parentKey) ? "_" + focusedItem.parentKey : "", "_").concat(focusedItem.index) : null;
+  }
   ngOnInit() {
     this.id = this.id || UniqueComponentId();
   }
@@ -1551,7 +1400,7 @@ var SlideMenu = class _SlideMenu {
       if (grouped) {
         this.onArrowRightKey(event);
       } else {
-        const element = DomHandler.findSingle(this.rootmenu.el.nativeElement, `li[id="${`${this.focusedItemId}`}"]`);
+        const element = DomHandler.findSingle(this.rootmenu.el.nativeElement, 'li[id="'.concat("".concat(this.focusedItemId), '"]'));
         const anchorElement = element && DomHandler.findSingle(element, 'a[data-pc-section="action"]');
         anchorElement ? anchorElement.click() : element && element.click();
         const focusedItemInfo = this.focusedItemInfo();
@@ -1632,7 +1481,6 @@ var SlideMenu = class _SlideMenu {
     this.searchValue = "";
     !this.popup && this.unbindOutsideClickListener();
   }
-  activeLevel = signal(0);
   bindTransitionListeners() {
     if (!this.transitionStartListener) {
       this.transitionStartListener = this.renderer.listen(this.rootmenu.sublistViewChild.nativeElement, "transitionstart", (event) => {
@@ -1642,7 +1490,7 @@ var SlideMenu = class _SlideMenu {
     }
     if (!this.transitionEndListener) {
       this.transitionEndListener = this.renderer.listen(this.rootmenu.sublistViewChild.nativeElement, "transitionend", (event) => {
-        const activeMenu = DomHandler.findSingle(this.rootmenu.el.nativeElement, `ul[data-pc-state="active"]`);
+        const activeMenu = DomHandler.findSingle(this.rootmenu.el.nativeElement, 'ul[data-pc-state="active"]');
         const activeLevel = DomHandler.getAttribute(activeMenu.firstElementChild, "aria-level") - 1;
         this.activeLevel.set(activeLevel);
         if (!this.left) {
@@ -1828,8 +1676,8 @@ var SlideMenu = class _SlideMenu {
     }
   }
   scrollInView(index = -1) {
-    const id = index !== -1 ? `${this.id}_${index}` : this.focusedItemId;
-    const element = DomHandler.findSingle(this.rootmenu.el.nativeElement, `li[id="${id}"]`);
+    const id = index !== -1 ? "".concat(this.id, "_").concat(index) : this.focusedItemId;
+    const element = DomHandler.findSingle(this.rootmenu.el.nativeElement, 'li[id="'.concat(id, '"]'));
     if (element) {
       element.scrollIntoView && element.scrollIntoView({
         block: "nearest",
@@ -1901,159 +1749,96 @@ var SlideMenu = class _SlideMenu {
     }
     this.unbindTransitionListeners();
   }
-  static ɵfac = function SlideMenu_Factory(__ngFactoryType__) {
-    return new (__ngFactoryType__ || _SlideMenu)(ɵɵdirectiveInject(DOCUMENT), ɵɵdirectiveInject(PLATFORM_ID), ɵɵdirectiveInject(ElementRef), ɵɵdirectiveInject(Renderer2), ɵɵdirectiveInject(ChangeDetectorRef), ɵɵdirectiveInject(PrimeNGConfig), ɵɵdirectiveInject(OverlayService));
-  };
-  static ɵcmp = ɵɵdefineComponent({
-    type: _SlideMenu,
-    selectors: [["p-slideMenu"]],
-    contentQueries: function SlideMenu_ContentQueries(rf, ctx, dirIndex) {
-      if (rf & 1) {
-        ɵɵcontentQuery(dirIndex, PrimeTemplate, 4);
-      }
-      if (rf & 2) {
-        let _t;
-        ɵɵqueryRefresh(_t = ɵɵloadQuery()) && (ctx.templates = _t);
-      }
-    },
-    viewQuery: function SlideMenu_Query(rf, ctx) {
-      if (rf & 1) {
-        ɵɵviewQuery(_c5, 5);
-        ɵɵviewQuery(_c6, 5);
-        ɵɵviewQuery(_c7, 5);
-        ɵɵviewQuery(_c8, 5);
-      }
-      if (rf & 2) {
-        let _t;
-        ɵɵqueryRefresh(_t = ɵɵloadQuery()) && (ctx.rootmenu = _t.first);
-        ɵɵqueryRefresh(_t = ɵɵloadQuery()) && (ctx.containerViewChild = _t.first);
-        ɵɵqueryRefresh(_t = ɵɵloadQuery()) && (ctx.backward = _t.first);
-        ɵɵqueryRefresh(_t = ɵɵloadQuery()) && (ctx.slideMenuContentViewChild = _t.first);
-      }
-    },
-    hostAttrs: [1, "p-element"],
-    inputs: {
-      model: "model",
-      menuWidth: [2, "menuWidth", "menuWidth", numberAttribute],
-      viewportHeight: [2, "viewportHeight", "viewportHeight", numberAttribute],
-      effectDuration: [2, "effectDuration", "effectDuration", numberAttribute],
-      easing: "easing",
-      backLabel: "backLabel",
-      disabled: [2, "disabled", "disabled", booleanAttribute],
-      tabindex: [2, "tabindex", "tabindex", numberAttribute],
-      popup: [2, "popup", "popup", booleanAttribute],
-      style: "style",
-      styleClass: "styleClass",
-      appendTo: "appendTo",
-      autoZIndex: [2, "autoZIndex", "autoZIndex", booleanAttribute],
-      baseZIndex: [2, "baseZIndex", "baseZIndex", numberAttribute],
-      autoDisplay: [2, "autoDisplay", "autoDisplay", booleanAttribute],
-      showTransitionOptions: "showTransitionOptions",
-      hideTransitionOptions: "hideTransitionOptions",
-      id: "id",
-      ariaLabel: "ariaLabel",
-      ariaLabelledBy: "ariaLabelledBy"
-    },
-    outputs: {
-      onShow: "onShow",
-      onHide: "onHide"
-    },
-    features: [ɵɵInputTransformsFeature],
-    decls: 1,
-    vars: 1,
-    consts: [["container", ""], ["slideMenuContent", ""], ["rootmenu", ""], ["backward", ""], [3, "id", "ngClass", "class", "ngStyle", "click", 4, "ngIf"], [3, "click", "id", "ngClass", "ngStyle"], [1, "p-slidemenu-wrapper", 3, "ngStyle"], [1, "p-slidemenu-content", 3, "focus"], [3, "itemClick", "menuFocus", "menuKeydown", "itemMouseEnter", "root", "items", "menuId", "tabindex", "ariaLabel", "ariaLabelledBy", "baseZIndex", "autoZIndex", "autoDisplay", "menuWidth", "popup", "effectDuration", "easing", "focusedItemId", "activeItemPath"], ["tabindex", "0", 1, "p-slidemenu-backward", "p-menuitem-link", 3, "click", "keydown", "ngStyle"], [3, "styleClass", "ngStyle", 4, "ngIf"], [4, "ngTemplateOutlet"], [3, "styleClass", "ngStyle"]],
-    template: function SlideMenu_Template(rf, ctx) {
-      if (rf & 1) {
-        ɵɵtemplate(0, SlideMenu_div_0_Template, 13, 42, "div", 4);
-      }
-      if (rf & 2) {
-        ɵɵproperty("ngIf", !ctx.popup || ctx.visible);
-      }
-    },
-    dependencies: () => [NgClass, NgIf, NgTemplateOutlet, NgStyle, CaretLeftIcon, SlideMenuSub],
-    styles: ["@layer primeng{.p-slidemenu .p-slidemenu-root-list{position:relative;top:0}.p-slidemenu-overlay{position:absolute;top:0;left:0}.p-slidemenu .p-menuitem-active{position:static}.p-slidemenu .p-slidemenu-wrapper{position:relative}.p-slidemenu ul{margin:0;padding:0;list-style:none}.p-slidemenu .p-submenu-list{position:absolute;min-width:100%;z-index:1;display:none}.p-slidemenu .p-slidemenu-content{overflow-x:hidden;overflow-y:auto;position:relative;height:100%}.p-slidemenu .p-menuitem-link:not(.p-slidemenu-backward){cursor:pointer;display:flex;align-items:center;text-decoration:none;overflow:hidden;position:relative}.p-slidemenu .p-menuitem-text{line-height:1}.p-slidemenu .p-menuitem{position:relative}.p-slidemenu .p-menuitem-link .p-submenu-icon:not(svg){margin-left:auto}.p-slidemenu .p-menuitem-link .p-icon-wrapper{margin-left:auto}.p-slidemenu .p-menuitem-active>p-slidemenusub>.p-submenu-list{display:block;left:100%;top:0}.p-slidemenu .p-menuitem-active>.p-menuitem-content>.p-submenu>.p-submenu-list{display:block}.p-slidemenu ul:not(.p-active-submenu)>.p-menuitem:not(.p-menuitem-active),.p-slidemenu .p-active-submenu>.p-menuitem-active>.p-menuitem-content>.p-submenu>.p-submenu-list{display:none}.p-slidemenu .p-active-submenu>.p-menuitem-active~.p-menuitem{display:block}.p-slidemenu-backward{position:absolute;bottom:0;width:100%;cursor:pointer;display:none}.p-slidemenu-backward .p-slidemenu-backward-icon,.p-slidemenu-backward span{vertical-align:middle}}\n"],
-    encapsulation: 2,
-    data: {
-      animation: [trigger("overlayAnimation", [transition(":enter", [style({
-        opacity: 0,
-        transform: "scaleY(0.8)"
-      }), animate("{{showTransitionParams}}")]), transition(":leave", [animate("{{hideTransitionParams}}", style({
-        opacity: 0
-      }))])])]
-    },
-    changeDetection: 0
-  });
 };
+__publicField(_SlideMenu, "ɵfac", function SlideMenu_Factory(__ngFactoryType__) {
+  return new (__ngFactoryType__ || _SlideMenu)(ɵɵdirectiveInject(DOCUMENT), ɵɵdirectiveInject(PLATFORM_ID), ɵɵdirectiveInject(ElementRef), ɵɵdirectiveInject(Renderer2), ɵɵdirectiveInject(ChangeDetectorRef), ɵɵdirectiveInject(PrimeNGConfig), ɵɵdirectiveInject(OverlayService));
+});
+__publicField(_SlideMenu, "ɵcmp", ɵɵdefineComponent({
+  type: _SlideMenu,
+  selectors: [["p-slideMenu"]],
+  contentQueries: function SlideMenu_ContentQueries(rf, ctx, dirIndex) {
+    if (rf & 1) {
+      ɵɵcontentQuery(dirIndex, PrimeTemplate, 4);
+    }
+    if (rf & 2) {
+      let _t;
+      ɵɵqueryRefresh(_t = ɵɵloadQuery()) && (ctx.templates = _t);
+    }
+  },
+  viewQuery: function SlideMenu_Query(rf, ctx) {
+    if (rf & 1) {
+      ɵɵviewQuery(_c5, 5);
+      ɵɵviewQuery(_c6, 5);
+      ɵɵviewQuery(_c7, 5);
+      ɵɵviewQuery(_c8, 5);
+    }
+    if (rf & 2) {
+      let _t;
+      ɵɵqueryRefresh(_t = ɵɵloadQuery()) && (ctx.rootmenu = _t.first);
+      ɵɵqueryRefresh(_t = ɵɵloadQuery()) && (ctx.containerViewChild = _t.first);
+      ɵɵqueryRefresh(_t = ɵɵloadQuery()) && (ctx.backward = _t.first);
+      ɵɵqueryRefresh(_t = ɵɵloadQuery()) && (ctx.slideMenuContentViewChild = _t.first);
+    }
+  },
+  hostAttrs: [1, "p-element"],
+  inputs: {
+    model: "model",
+    menuWidth: [2, "menuWidth", "menuWidth", numberAttribute],
+    viewportHeight: [2, "viewportHeight", "viewportHeight", numberAttribute],
+    effectDuration: [2, "effectDuration", "effectDuration", numberAttribute],
+    easing: "easing",
+    backLabel: "backLabel",
+    disabled: [2, "disabled", "disabled", booleanAttribute],
+    tabindex: [2, "tabindex", "tabindex", numberAttribute],
+    popup: [2, "popup", "popup", booleanAttribute],
+    style: "style",
+    styleClass: "styleClass",
+    appendTo: "appendTo",
+    autoZIndex: [2, "autoZIndex", "autoZIndex", booleanAttribute],
+    baseZIndex: [2, "baseZIndex", "baseZIndex", numberAttribute],
+    autoDisplay: [2, "autoDisplay", "autoDisplay", booleanAttribute],
+    showTransitionOptions: "showTransitionOptions",
+    hideTransitionOptions: "hideTransitionOptions",
+    id: "id",
+    ariaLabel: "ariaLabel",
+    ariaLabelledBy: "ariaLabelledBy"
+  },
+  outputs: {
+    onShow: "onShow",
+    onHide: "onHide"
+  },
+  features: [ɵɵInputTransformsFeature],
+  decls: 1,
+  vars: 1,
+  consts: [["container", ""], ["slideMenuContent", ""], ["rootmenu", ""], ["backward", ""], [3, "id", "ngClass", "class", "ngStyle", "click", 4, "ngIf"], [3, "click", "id", "ngClass", "ngStyle"], [1, "p-slidemenu-wrapper", 3, "ngStyle"], [1, "p-slidemenu-content", 3, "focus"], [3, "itemClick", "menuFocus", "menuKeydown", "itemMouseEnter", "root", "items", "menuId", "tabindex", "ariaLabel", "ariaLabelledBy", "baseZIndex", "autoZIndex", "autoDisplay", "menuWidth", "popup", "effectDuration", "easing", "focusedItemId", "activeItemPath"], ["tabindex", "0", 1, "p-slidemenu-backward", "p-menuitem-link", 3, "click", "keydown", "ngStyle"], [3, "styleClass", "ngStyle", 4, "ngIf"], [4, "ngTemplateOutlet"], [3, "styleClass", "ngStyle"]],
+  template: function SlideMenu_Template(rf, ctx) {
+    if (rf & 1) {
+      ɵɵtemplate(0, SlideMenu_div_0_Template, 13, 42, "div", 4);
+    }
+    if (rf & 2) {
+      ɵɵproperty("ngIf", !ctx.popup || ctx.visible);
+    }
+  },
+  dependencies: () => [NgClass, NgIf, NgTemplateOutlet, NgStyle, CaretLeftIcon, SlideMenuSub],
+  styles: ["@layer primeng{.p-slidemenu .p-slidemenu-root-list{position:relative;top:0}.p-slidemenu-overlay{position:absolute;top:0;left:0}.p-slidemenu .p-menuitem-active{position:static}.p-slidemenu .p-slidemenu-wrapper{position:relative}.p-slidemenu ul{margin:0;padding:0;list-style:none}.p-slidemenu .p-submenu-list{position:absolute;min-width:100%;z-index:1;display:none}.p-slidemenu .p-slidemenu-content{overflow-x:hidden;overflow-y:auto;position:relative;height:100%}.p-slidemenu .p-menuitem-link:not(.p-slidemenu-backward){cursor:pointer;display:flex;align-items:center;text-decoration:none;overflow:hidden;position:relative}.p-slidemenu .p-menuitem-text{line-height:1}.p-slidemenu .p-menuitem{position:relative}.p-slidemenu .p-menuitem-link .p-submenu-icon:not(svg){margin-left:auto}.p-slidemenu .p-menuitem-link .p-icon-wrapper{margin-left:auto}.p-slidemenu .p-menuitem-active>p-slidemenusub>.p-submenu-list{display:block;left:100%;top:0}.p-slidemenu .p-menuitem-active>.p-menuitem-content>.p-submenu>.p-submenu-list{display:block}.p-slidemenu ul:not(.p-active-submenu)>.p-menuitem:not(.p-menuitem-active),.p-slidemenu .p-active-submenu>.p-menuitem-active>.p-menuitem-content>.p-submenu>.p-submenu-list{display:none}.p-slidemenu .p-active-submenu>.p-menuitem-active~.p-menuitem{display:block}.p-slidemenu-backward{position:absolute;bottom:0;width:100%;cursor:pointer;display:none}.p-slidemenu-backward .p-slidemenu-backward-icon,.p-slidemenu-backward span{vertical-align:middle}}\n"],
+  encapsulation: 2,
+  data: {
+    animation: [trigger("overlayAnimation", [transition(":enter", [style({
+      opacity: 0,
+      transform: "scaleY(0.8)"
+    }), animate("{{showTransitionParams}}")]), transition(":leave", [animate("{{hideTransitionParams}}", style({
+      opacity: 0
+    }))])])]
+  },
+  changeDetection: 0
+}));
+var SlideMenu = _SlideMenu;
 (() => {
   (typeof ngDevMode === "undefined" || ngDevMode) && setClassMetadata(SlideMenu, [{
     type: Component,
     args: [{
       selector: "p-slideMenu",
-      template: `
-        <div
-            #container
-            [attr.data-pc-section]="'root'"
-            [attr.data-pc-name]="'slidemenu'"
-            [id]="id"
-            [ngClass]="{ 'p-slidemenu p-component': true, 'p-slidemenu-overlay': popup }"
-            [class]="styleClass"
-            [ngStyle]="style"
-            (click)="onOverlayClick($event)"
-            [@overlayAnimation]="{ value: 'visible', params: { showTransitionParams: showTransitionOptions, hideTransitionParams: hideTransitionOptions } }"
-            [@.disabled]="popup !== true"
-            (@overlayAnimation.start)="onOverlayAnimationStart($event)"
-            (@overlayAnimation.done)="onOverlayAnimationEnd($event)"
-            *ngIf="!popup || visible"
-        >
-            <div
-                class="p-slidemenu-wrapper"
-                [ngStyle]="{
-                    height: left ? viewportHeight + 'px' : 'auto',
-                    width: menuWidth + 'px'
-                }"
-            >
-                <div #slideMenuContent class="p-slidemenu-content" (focus)="logFocus($event, slideMenuContent)">
-                    <p-slideMenuSub
-                        #rootmenu
-                        [root]="true"
-                        [items]="processedItems"
-                        [menuId]="id"
-                        [tabindex]="!disabled ? tabindex : -1"
-                        [ariaLabel]="ariaLabel"
-                        [ariaLabelledBy]="ariaLabelledBy"
-                        [baseZIndex]="baseZIndex"
-                        [autoZIndex]="autoZIndex"
-                        [autoDisplay]="autoDisplay"
-                        [menuWidth]="menuWidth"
-                        [popup]="popup"
-                        [effectDuration]="effectDuration"
-                        [easing]="easing"
-                        [focusedItemId]="focused ? focusedItemId : undefined"
-                        [activeItemPath]="activeItemPath()"
-                        (itemClick)="onItemClick($event)"
-                        (menuFocus)="onMenuFocus($event)"
-                        (menuKeydown)="onKeyDown($event)"
-                        (itemMouseEnter)="onItemMouseEnter($event)"
-                    ></p-slideMenuSub>
-                </div>
-                <a
-                    #backward
-                    class="p-slidemenu-backward p-menuitem-link"
-                    tabindex="0"
-                    [ngStyle]="{
-                        display: left ? 'block' : 'none'
-                    }"
-                    (click)="goBack($event)"
-                    (keydown)="onNavigationKeyDown($event)"
-                    [attr.data-pc-section]="'navigation'"
-                >
-                    <CaretLeftIcon *ngIf="!backIconTemplate" [styleClass]="'p-slidemenu-backward-icon'" [ngStyle]="{ 'vertical-align': 'middle' }" />
-                    <ng-template *ngTemplateOutlet="backIconTemplate"></ng-template>
-                    <span>{{ backLabel }}</span>
-                </a>
-            </div>
-        </div>
-    `,
+      template: '\n        <div\n            #container\n            [attr.data-pc-section]="\'root\'"\n            [attr.data-pc-name]="\'slidemenu\'"\n            [id]="id"\n            [ngClass]="{ \'p-slidemenu p-component\': true, \'p-slidemenu-overlay\': popup }"\n            [class]="styleClass"\n            [ngStyle]="style"\n            (click)="onOverlayClick($event)"\n            [@overlayAnimation]="{ value: \'visible\', params: { showTransitionParams: showTransitionOptions, hideTransitionParams: hideTransitionOptions } }"\n            [@.disabled]="popup !== true"\n            (@overlayAnimation.start)="onOverlayAnimationStart($event)"\n            (@overlayAnimation.done)="onOverlayAnimationEnd($event)"\n            *ngIf="!popup || visible"\n        >\n            <div\n                class="p-slidemenu-wrapper"\n                [ngStyle]="{\n                    height: left ? viewportHeight + \'px\' : \'auto\',\n                    width: menuWidth + \'px\'\n                }"\n            >\n                <div #slideMenuContent class="p-slidemenu-content" (focus)="logFocus($event, slideMenuContent)">\n                    <p-slideMenuSub\n                        #rootmenu\n                        [root]="true"\n                        [items]="processedItems"\n                        [menuId]="id"\n                        [tabindex]="!disabled ? tabindex : -1"\n                        [ariaLabel]="ariaLabel"\n                        [ariaLabelledBy]="ariaLabelledBy"\n                        [baseZIndex]="baseZIndex"\n                        [autoZIndex]="autoZIndex"\n                        [autoDisplay]="autoDisplay"\n                        [menuWidth]="menuWidth"\n                        [popup]="popup"\n                        [effectDuration]="effectDuration"\n                        [easing]="easing"\n                        [focusedItemId]="focused ? focusedItemId : undefined"\n                        [activeItemPath]="activeItemPath()"\n                        (itemClick)="onItemClick($event)"\n                        (menuFocus)="onMenuFocus($event)"\n                        (menuKeydown)="onKeyDown($event)"\n                        (itemMouseEnter)="onItemMouseEnter($event)"\n                    ></p-slideMenuSub>\n                </div>\n                <a\n                    #backward\n                    class="p-slidemenu-backward p-menuitem-link"\n                    tabindex="0"\n                    [ngStyle]="{\n                        display: left ? \'block\' : \'none\'\n                    }"\n                    (click)="goBack($event)"\n                    (keydown)="onNavigationKeyDown($event)"\n                    [attr.data-pc-section]="\'navigation\'"\n                >\n                    <CaretLeftIcon *ngIf="!backIconTemplate" [styleClass]="\'p-slidemenu-backward-icon\'" [ngStyle]="{ \'vertical-align\': \'middle\' }" />\n                    <ng-template *ngTemplateOutlet="backIconTemplate"></ng-template>\n                    <span>{{ backLabel }}</span>\n                </a>\n            </div>\n        </div>\n    ',
       animations: [trigger("overlayAnimation", [transition(":enter", [style({
         opacity: 0,
         transform: "scaleY(0.8)"
@@ -2205,20 +1990,21 @@ var SlideMenu = class _SlideMenu {
     }]
   });
 })();
-var SlideMenuModule = class _SlideMenuModule {
-  static ɵfac = function SlideMenuModule_Factory(__ngFactoryType__) {
-    return new (__ngFactoryType__ || _SlideMenuModule)();
-  };
-  static ɵmod = ɵɵdefineNgModule({
-    type: _SlideMenuModule,
-    declarations: [SlideMenu, SlideMenuSub],
-    imports: [CommonModule, RouterModule, RippleModule, TooltipModule, AngleRightIcon, SharedModule, CaretLeftIcon],
-    exports: [SlideMenu, RouterModule, TooltipModule, SharedModule]
-  });
-  static ɵinj = ɵɵdefineInjector({
-    imports: [CommonModule, RouterModule, RippleModule, TooltipModule, AngleRightIcon, SharedModule, CaretLeftIcon, RouterModule, TooltipModule, SharedModule]
-  });
+var _SlideMenuModule = class _SlideMenuModule {
 };
+__publicField(_SlideMenuModule, "ɵfac", function SlideMenuModule_Factory(__ngFactoryType__) {
+  return new (__ngFactoryType__ || _SlideMenuModule)();
+});
+__publicField(_SlideMenuModule, "ɵmod", ɵɵdefineNgModule({
+  type: _SlideMenuModule,
+  declarations: [SlideMenu, SlideMenuSub],
+  imports: [CommonModule, RouterModule, RippleModule, TooltipModule, AngleRightIcon, SharedModule, CaretLeftIcon],
+  exports: [SlideMenu, RouterModule, TooltipModule, SharedModule]
+}));
+__publicField(_SlideMenuModule, "ɵinj", ɵɵdefineInjector({
+  imports: [CommonModule, RouterModule, RippleModule, TooltipModule, AngleRightIcon, SharedModule, CaretLeftIcon, RouterModule, TooltipModule, SharedModule]
+}));
+var SlideMenuModule = _SlideMenuModule;
 (() => {
   (typeof ngDevMode === "undefined" || ngDevMode) && setClassMetadata(SlideMenuModule, [{
     type: NgModule,

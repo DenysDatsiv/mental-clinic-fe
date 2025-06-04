@@ -1,21 +1,21 @@
 import {
   TimesCircleIcon
-} from "./chunk-E4M3NR5Z.js";
-import "./chunk-PXWZN6FU.js";
+} from "./chunk-OLOIW27Q.js";
+import "./chunk-BJLZ3T2F.js";
 import {
   PrimeNGConfig,
   PrimeTemplate,
   SharedModule,
   TranslationKeys
-} from "./chunk-TQSVMJ6K.js";
-import "./chunk-3OF44R55.js";
+} from "./chunk-ZROJCIWL.js";
+import "./chunk-U3NLM53U.js";
 import {
   CommonModule,
   NgClass,
   NgIf,
   NgStyle,
   NgTemplateOutlet
-} from "./chunk-UBZYO7FG.js";
+} from "./chunk-KUZ63KOD.js";
 import {
   ChangeDetectionStrategy,
   Component,
@@ -57,11 +57,13 @@ import {
   ɵɵtemplateRefExtractor,
   ɵɵtext,
   ɵɵtextInterpolate
-} from "./chunk-ZI2Q76R4.js";
-import "./chunk-5OPE3T2R.js";
+} from "./chunk-R75KKECJ.js";
 import "./chunk-4N4GOYJH.js";
+import "./chunk-5OPE3T2R.js";
 import "./chunk-FHTVLBLO.js";
-import "./chunk-3OV72XIM.js";
+import {
+  __publicField
+} from "./chunk-IJZFAMY6.js";
 
 // node_modules/primeng/fesm2022/primeng-chip.mjs
 var _c0 = ["*"];
@@ -236,66 +238,68 @@ function Chip_div_0_Template(rf, ctx) {
     ɵɵproperty("ngIf", ctx_r1.removable);
   }
 }
-var Chip = class _Chip {
-  /**
-   * Defines the text to display.
-   * @group Props
-   */
-  label;
-  /**
-   * Defines the icon to display.
-   * @group Props
-   */
-  icon;
-  /**
-   * Defines the image to display.
-   * @group Props
-   */
-  image;
-  /**
-   * Alt attribute of the image.
-   * @group Props
-   */
-  alt;
-  /**
-   * Inline style of the element.
-   * @group Props
-   */
-  style;
-  /**
-   * Class of the element.
-   * @group Props
-   */
-  styleClass;
-  /**
-   * Whether to display a remove icon.
-   * @group Props
-   */
-  removable = false;
-  /**
-   * Icon of the remove element.
-   * @group Props
-   */
-  removeIcon;
-  /**
-   * Callback to invoke when a chip is removed.
-   * @param {MouseEvent} event - Mouse event.
-   * @group Emits
-   */
-  onRemove = new EventEmitter();
-  /**
-   * This event is triggered if an error occurs while loading an image file.
-   * @param {Event} event - Browser event.
-   * @group Emits
-   */
-  onImageError = new EventEmitter();
-  config = inject(PrimeNGConfig);
-  visible = true;
-  removeIconTemplate;
+var _Chip = class _Chip {
+  constructor() {
+    /**
+     * Defines the text to display.
+     * @group Props
+     */
+    __publicField(this, "label");
+    /**
+     * Defines the icon to display.
+     * @group Props
+     */
+    __publicField(this, "icon");
+    /**
+     * Defines the image to display.
+     * @group Props
+     */
+    __publicField(this, "image");
+    /**
+     * Alt attribute of the image.
+     * @group Props
+     */
+    __publicField(this, "alt");
+    /**
+     * Inline style of the element.
+     * @group Props
+     */
+    __publicField(this, "style");
+    /**
+     * Class of the element.
+     * @group Props
+     */
+    __publicField(this, "styleClass");
+    /**
+     * Whether to display a remove icon.
+     * @group Props
+     */
+    __publicField(this, "removable", false);
+    /**
+     * Icon of the remove element.
+     * @group Props
+     */
+    __publicField(this, "removeIcon");
+    /**
+     * Callback to invoke when a chip is removed.
+     * @param {MouseEvent} event - Mouse event.
+     * @group Emits
+     */
+    __publicField(this, "onRemove", new EventEmitter());
+    /**
+     * This event is triggered if an error occurs while loading an image file.
+     * @param {Event} event - Browser event.
+     * @group Emits
+     */
+    __publicField(this, "onImageError", new EventEmitter());
+    __publicField(this, "config", inject(PrimeNGConfig));
+    __publicField(this, "visible", true);
+    __publicField(this, "removeIconTemplate");
+    __publicField(this, "templates");
+  }
   get removeAriaLabel() {
     return this.config.getTranslation(TranslationKeys.ARIA)["removeLabel"];
   }
-  templates;
   ngAfterContentInit() {
     this.templates.forEach((item) => {
       switch (item.getType()) {
@@ -326,88 +330,63 @@ var Chip = class _Chip {
   imageError(event) {
     this.onImageError.emit(event);
   }
-  static ɵfac = function Chip_Factory(__ngFactoryType__) {
-    return new (__ngFactoryType__ || _Chip)();
-  };
-  static ɵcmp = ɵɵdefineComponent({
-    type: _Chip,
-    selectors: [["p-chip"]],
-    contentQueries: function Chip_ContentQueries(rf, ctx, dirIndex) {
-      if (rf & 1) {
-        ɵɵcontentQuery(dirIndex, PrimeTemplate, 4);
-      }
-      if (rf & 2) {
-        let _t;
-        ɵɵqueryRefresh(_t = ɵɵloadQuery()) && (ctx.templates = _t);
-      }
-    },
-    hostAttrs: [1, "p-element"],
-    inputs: {
-      label: "label",
-      icon: "icon",
-      image: "image",
-      alt: "alt",
-      style: "style",
-      styleClass: "styleClass",
-      removable: [2, "removable", "removable", booleanAttribute],
-      removeIcon: "removeIcon"
-    },
-    outputs: {
-      onRemove: "onRemove",
-      onImageError: "onImageError"
-    },
-    features: [ɵɵInputTransformsFeature],
-    ngContentSelectors: _c0,
-    decls: 1,
-    vars: 1,
-    consts: [["iconTemplate", ""], [3, "ngClass", "class", "ngStyle", 4, "ngIf"], [3, "ngClass", "ngStyle"], [3, "src", "alt", "error", 4, "ngIf", "ngIfElse"], ["class", "p-chip-text", 4, "ngIf"], [4, "ngIf"], [3, "error", "src", "alt"], [3, "class", "ngClass", 4, "ngIf"], [3, "ngClass"], [1, "p-chip-text"], ["tabindex", "0", "class", "pi-chip-remove-icon", "role", "button", 3, "click", "keydown", 4, "ngIf"], ["tabindex", "0", "role", "button", 3, "class", "ngClass", "click", "keydown", 4, "ngIf"], ["tabindex", "0", "role", "button", 3, "class", "click", "keydown", 4, "ngIf"], ["tabindex", "0", "role", "button", 3, "click", "keydown", "ngClass"], ["tabindex", "0", "role", "button", 3, "click", "keydown"], ["tabindex", "0", "role", "button", 1, "pi-chip-remove-icon", 3, "click", "keydown"], [4, "ngTemplateOutlet"]],
-    template: function Chip_Template(rf, ctx) {
-      if (rf & 1) {
-        ɵɵprojectionDef();
-        ɵɵtemplate(0, Chip_div_0_Template, 7, 11, "div", 1);
-      }
-      if (rf & 2) {
-        ɵɵproperty("ngIf", ctx.visible);
-      }
-    },
-    dependencies: () => [NgClass, NgIf, NgTemplateOutlet, NgStyle, TimesCircleIcon],
-    styles: ["@layer primeng{.p-chip{display:inline-flex;align-items:center}.p-chip-text,.p-chip-icon.pi,.pi-chip-remove-icon.pi{line-height:1.5}.pi-chip-remove-icon{cursor:pointer}.p-chip img{border-radius:50%}}\n"],
-    encapsulation: 2,
-    changeDetection: 0
-  });
 };
+__publicField(_Chip, "ɵfac", function Chip_Factory(__ngFactoryType__) {
+  return new (__ngFactoryType__ || _Chip)();
+});
+__publicField(_Chip, "ɵcmp", ɵɵdefineComponent({
+  type: _Chip,
+  selectors: [["p-chip"]],
+  contentQueries: function Chip_ContentQueries(rf, ctx, dirIndex) {
+    if (rf & 1) {
+      ɵɵcontentQuery(dirIndex, PrimeTemplate, 4);
+    }
+    if (rf & 2) {
+      let _t;
+      ɵɵqueryRefresh(_t = ɵɵloadQuery()) && (ctx.templates = _t);
+    }
+  },
+  hostAttrs: [1, "p-element"],
+  inputs: {
+    label: "label",
+    icon: "icon",
+    image: "image",
+    alt: "alt",
+    style: "style",
+    styleClass: "styleClass",
+    removable: [2, "removable", "removable", booleanAttribute],
+    removeIcon: "removeIcon"
+  },
+  outputs: {
+    onRemove: "onRemove",
+    onImageError: "onImageError"
+  },
+  features: [ɵɵInputTransformsFeature],
+  ngContentSelectors: _c0,
+  decls: 1,
+  vars: 1,
+  consts: [["iconTemplate", ""], [3, "ngClass", "class", "ngStyle", 4, "ngIf"], [3, "ngClass", "ngStyle"], [3, "src", "alt", "error", 4, "ngIf", "ngIfElse"], ["class", "p-chip-text", 4, "ngIf"], [4, "ngIf"], [3, "error", "src", "alt"], [3, "class", "ngClass", 4, "ngIf"], [3, "ngClass"], [1, "p-chip-text"], ["tabindex", "0", "class", "pi-chip-remove-icon", "role", "button", 3, "click", "keydown", 4, "ngIf"], ["tabindex", "0", "role", "button", 3, "class", "ngClass", "click", "keydown", 4, "ngIf"], ["tabindex", "0", "role", "button", 3, "class", "click", "keydown", 4, "ngIf"], ["tabindex", "0", "role", "button", 3, "click", "keydown", "ngClass"], ["tabindex", "0", "role", "button", 3, "click", "keydown"], ["tabindex", "0", "role", "button", 1, "pi-chip-remove-icon", 3, "click", "keydown"], [4, "ngTemplateOutlet"]],
+  template: function Chip_Template(rf, ctx) {
+    if (rf & 1) {
+      ɵɵprojectionDef();
+      ɵɵtemplate(0, Chip_div_0_Template, 7, 11, "div", 1);
+    }
+    if (rf & 2) {
+      ɵɵproperty("ngIf", ctx.visible);
+    }
+  },
+  dependencies: () => [NgClass, NgIf, NgTemplateOutlet, NgStyle, TimesCircleIcon],
+  styles: ["@layer primeng{.p-chip{display:inline-flex;align-items:center}.p-chip-text,.p-chip-icon.pi,.pi-chip-remove-icon.pi{line-height:1.5}.pi-chip-remove-icon{cursor:pointer}.p-chip img{border-radius:50%}}\n"],
+  encapsulation: 2,
+  changeDetection: 0
+}));
+var Chip = _Chip;
 (() => {
   (typeof ngDevMode === "undefined" || ngDevMode) && setClassMetadata(Chip, [{
     type: Component,
     args: [{
       selector: "p-chip",
-      template: `
-        <div [ngClass]="containerClass()" [class]="styleClass" [ngStyle]="style" *ngIf="visible" [attr.data-pc-name]="'chip'" [attr.aria-label]="label" [attr.data-pc-section]="'root'">
-            <ng-content></ng-content>
-            <img [src]="image" *ngIf="image; else iconTemplate" (error)="imageError($event)" [alt]="alt" />
-            <ng-template #iconTemplate><span *ngIf="icon" [class]="icon" [ngClass]="'p-chip-icon'" [attr.data-pc-section]="'icon'"></span></ng-template>
-            <div class="p-chip-text" *ngIf="label" [attr.data-pc-section]="'label'">{{ label }}</div>
-            <ng-container *ngIf="removable">
-                <ng-container *ngIf="!removeIconTemplate">
-                    <span
-                        tabindex="0"
-                        *ngIf="removeIcon"
-                        [class]="removeIcon"
-                        [ngClass]="'pi-chip-remove-icon'"
-                        [attr.data-pc-section]="'removeicon'"
-                        (click)="close($event)"
-                        (keydown)="onKeydown($event)"
-                        [attr.aria-label]="removeAriaLabel"
-                        role="button"
-                    ></span>
-                    <TimesCircleIcon tabindex="0" *ngIf="!removeIcon" [class]="'pi-chip-remove-icon'" [attr.data-pc-section]="'removeicon'" (click)="close($event)" (keydown)="onKeydown($event)" [attr.aria-label]="removeAriaLabel" role="button" />
-                </ng-container>
-                <span *ngIf="removeIconTemplate" tabindex="0" [attr.data-pc-section]="'removeicon'" class="pi-chip-remove-icon" (click)="close($event)" (keydown)="onKeydown($event)" [attr.aria-label]="removeAriaLabel" role="button">
-                    <ng-template *ngTemplateOutlet="removeIconTemplate"></ng-template>
-                </span>
-            </ng-container>
-        </div>
-    `,
+      template: '\n        <div [ngClass]="containerClass()" [class]="styleClass" [ngStyle]="style" *ngIf="visible" [attr.data-pc-name]="\'chip\'" [attr.aria-label]="label" [attr.data-pc-section]="\'root\'">\n            <ng-content></ng-content>\n            <img [src]="image" *ngIf="image; else iconTemplate" (error)="imageError($event)" [alt]="alt" />\n            <ng-template #iconTemplate><span *ngIf="icon" [class]="icon" [ngClass]="\'p-chip-icon\'" [attr.data-pc-section]="\'icon\'"></span></ng-template>\n            <div class="p-chip-text" *ngIf="label" [attr.data-pc-section]="\'label\'">{{ label }}</div>\n            <ng-container *ngIf="removable">\n                <ng-container *ngIf="!removeIconTemplate">\n                    <span\n                        tabindex="0"\n                        *ngIf="removeIcon"\n                        [class]="removeIcon"\n                        [ngClass]="\'pi-chip-remove-icon\'"\n                        [attr.data-pc-section]="\'removeicon\'"\n                        (click)="close($event)"\n                        (keydown)="onKeydown($event)"\n                        [attr.aria-label]="removeAriaLabel"\n                        role="button"\n                    ></span>\n                    <TimesCircleIcon tabindex="0" *ngIf="!removeIcon" [class]="\'pi-chip-remove-icon\'" [attr.data-pc-section]="\'removeicon\'" (click)="close($event)" (keydown)="onKeydown($event)" [attr.aria-label]="removeAriaLabel" role="button" />\n                </ng-container>\n                <span *ngIf="removeIconTemplate" tabindex="0" [attr.data-pc-section]="\'removeicon\'" class="pi-chip-remove-icon" (click)="close($event)" (keydown)="onKeydown($event)" [attr.aria-label]="removeAriaLabel" role="button">\n                    <ng-template *ngTemplateOutlet="removeIconTemplate"></ng-template>\n                </span>\n            </ng-container>\n        </div>\n    ',
       changeDetection: ChangeDetectionStrategy.OnPush,
       encapsulation: ViewEncapsulation$1.None,
       host: {
@@ -455,20 +434,21 @@ var Chip = class _Chip {
     }]
   });
 })();
-var ChipModule = class _ChipModule {
-  static ɵfac = function ChipModule_Factory(__ngFactoryType__) {
-    return new (__ngFactoryType__ || _ChipModule)();
-  };
-  static ɵmod = ɵɵdefineNgModule({
-    type: _ChipModule,
-    declarations: [Chip],
-    imports: [CommonModule, TimesCircleIcon, SharedModule],
-    exports: [Chip, SharedModule]
-  });
-  static ɵinj = ɵɵdefineInjector({
-    imports: [CommonModule, TimesCircleIcon, SharedModule, SharedModule]
-  });
+var _ChipModule = class _ChipModule {
 };
+__publicField(_ChipModule, "ɵfac", function ChipModule_Factory(__ngFactoryType__) {
+  return new (__ngFactoryType__ || _ChipModule)();
+});
+__publicField(_ChipModule, "ɵmod", ɵɵdefineNgModule({
+  type: _ChipModule,
+  declarations: [Chip],
+  imports: [CommonModule, TimesCircleIcon, SharedModule],
+  exports: [Chip, SharedModule]
+}));
+__publicField(_ChipModule, "ɵinj", ɵɵdefineInjector({
+  imports: [CommonModule, TimesCircleIcon, SharedModule, SharedModule]
+}));
+var ChipModule = _ChipModule;
 (() => {
   (typeof ngDevMode === "undefined" || ngDevMode) && setClassMetadata(ChipModule, [{
     type: NgModule,

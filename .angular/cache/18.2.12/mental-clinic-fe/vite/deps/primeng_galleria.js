@@ -1,43 +1,43 @@
 import {
   WindowMaximizeIcon,
   WindowMinimizeIcon
-} from "./chunk-NVX5F6EP.js";
+} from "./chunk-QY4H5HEG.js";
 import {
   FocusTrap,
   FocusTrapModule
-} from "./chunk-HNGPSKRB.js";
+} from "./chunk-UZD2LWRL.js";
 import {
   ChevronLeftIcon
-} from "./chunk-CA4J3LLG.js";
+} from "./chunk-63U6WJYF.js";
 import {
   TimesIcon
-} from "./chunk-MDBJZ6LU.js";
+} from "./chunk-AP6UZX4B.js";
 import {
   Ripple,
   RippleModule
-} from "./chunk-QN24C4B3.js";
+} from "./chunk-MUJBADSC.js";
 import {
   ChevronRightIcon
-} from "./chunk-EYQJO2JR.js";
-import "./chunk-PXWZN6FU.js";
+} from "./chunk-CDDPLBF3.js";
+import "./chunk-BJLZ3T2F.js";
 import {
   PrimeNGConfig,
   PrimeTemplate,
   SharedModule
-} from "./chunk-TQSVMJ6K.js";
+} from "./chunk-ZROJCIWL.js";
 import {
   UniqueComponentId,
   zindexutils
-} from "./chunk-3OF44R55.js";
+} from "./chunk-U3NLM53U.js";
 import {
   animate,
   style,
   transition,
   trigger
-} from "./chunk-OGB62SLM.js";
+} from "./chunk-5S7AEMUZ.js";
 import {
   DomHandler
-} from "./chunk-BUGEQH7Q.js";
+} from "./chunk-LB42WWNC.js";
 import {
   CommonModule,
   DOCUMENT,
@@ -47,7 +47,7 @@ import {
   NgStyle,
   NgTemplateOutlet,
   isPlatformBrowser
-} from "./chunk-UBZYO7FG.js";
+} from "./chunk-KUZ63KOD.js";
 import {
   ChangeDetectionStrategy,
   ChangeDetectorRef,
@@ -103,11 +103,13 @@ import {
   ɵɵtemplate,
   ɵɵtemplateRefExtractor,
   ɵɵviewQuery
-} from "./chunk-ZI2Q76R4.js";
-import "./chunk-5OPE3T2R.js";
+} from "./chunk-R75KKECJ.js";
 import "./chunk-4N4GOYJH.js";
+import "./chunk-5OPE3T2R.js";
 import "./chunk-FHTVLBLO.js";
-import "./chunk-3OV72XIM.js";
+import {
+  __publicField
+} from "./chunk-IJZFAMY6.js";
 
 // node_modules/primeng/fesm2022/primeng-galleria.mjs
 var _c0 = ["mask"];
@@ -684,12 +686,173 @@ function GalleriaThumbnails_button_7_Template(rf, ctx) {
     ɵɵproperty("ngTemplateOutlet", ctx_r2.galleria.nextThumbnailIconTemplate);
   }
 }
-var Galleria = class _Galleria {
-  document;
-  platformId;
-  element;
-  cd;
-  config;
+var _Galleria = class _Galleria {
+  constructor(document2, platformId, element, cd, config) {
+    __publicField(this, "document");
+    __publicField(this, "platformId");
+    __publicField(this, "element");
+    __publicField(this, "cd");
+    __publicField(this, "config");
+    /**
+     * Whether to display the component on fullscreen.
+     * @group Props
+     */
+    __publicField(this, "fullScreen", false);
+    /**
+     * Unique identifier of the element.
+     * @group Props
+     */
+    __publicField(this, "id");
+    /**
+     * An array of objects to display.
+     * @group Props
+     */
+    __publicField(this, "value");
+    /**
+     * Number of items per page.
+     * @group Props
+     */
+    __publicField(this, "numVisible", 3);
+    /**
+     * An array of options for responsive design.
+     * @see {GalleriaResponsiveOptions}
+     * @group Props
+     */
+    __publicField(this, "responsiveOptions");
+    /**
+     * Whether to display navigation buttons in item section.
+     * @group Props
+     */
+    __publicField(this, "showItemNavigators", false);
+    /**
+     * Whether to display navigation buttons in thumbnail container.
+     * @group Props
+     */
+    __publicField(this, "showThumbnailNavigators", true);
+    /**
+     * Whether to display navigation buttons on item hover.
+     * @group Props
+     */
+    __publicField(this, "showItemNavigatorsOnHover", false);
+    /**
+     * When enabled, item is changed on indicator hover.
+     * @group Props
+     */
+    __publicField(this, "changeItemOnIndicatorHover", false);
+    /**
+     * Defines if scrolling would be infinite.
+     * @group Props
+     */
+    __publicField(this, "circular", false);
+    /**
+     * Items are displayed with a slideshow in autoPlay mode.
+     * @group Props
+     */
+    __publicField(this, "autoPlay", false);
+    /**
+     * When enabled, autorun should stop by click.
+     * @group Props
+     */
+    __publicField(this, "shouldStopAutoplayByClick", true);
+    /**
+     * Time in milliseconds to scroll items.
+     * @group Props
+     */
+    __publicField(this, "transitionInterval", 4e3);
+    /**
+     * Whether to display thumbnail container.
+     * @group Props
+     */
+    __publicField(this, "showThumbnails", true);
+    /**
+     * Position of thumbnails.
+     * @group Props
+     */
+    __publicField(this, "thumbnailsPosition", "bottom");
+    /**
+     * Height of the viewport in vertical thumbnail.
+     * @group Props
+     */
+    __publicField(this, "verticalThumbnailViewPortHeight", "300px");
+    /**
+     * Whether to display indicator container.
+     * @group Props
+     */
+    __publicField(this, "showIndicators", false);
+    /**
+     * When enabled, indicator container is displayed on item container.
+     * @group Props
+     */
+    __publicField(this, "showIndicatorsOnItem", false);
+    /**
+     * Position of indicators.
+     * @group Props
+     */
+    __publicField(this, "indicatorsPosition", "bottom");
+    /**
+     * Base zIndex value to use in layering.
+     * @group Props
+     */
+    __publicField(this, "baseZIndex", 0);
+    /**
+     * Style class of the mask on fullscreen mode.
+     * @group Props
+     */
+    __publicField(this, "maskClass");
+    /**
+     * Style class of the component on fullscreen mode. Otherwise, the 'class' property can be used.
+     * @group Props
+     */
+    __publicField(this, "containerClass");
+    /**
+     * Inline style of the component on fullscreen mode. Otherwise, the 'style' property can be used.
+     * @group Props
+     */
+    __publicField(this, "containerStyle");
+    /**
+     * Transition options of the show animation.
+     * @group Props
+     */
+    __publicField(this, "showTransitionOptions", "150ms cubic-bezier(0, 0, 0.2, 1)");
+    /**
+     * Transition options of the hide animation.
+     * @group Props
+     */
+    __publicField(this, "hideTransitionOptions", "150ms cubic-bezier(0, 0, 0.2, 1)");
+    /**
+     * Callback to invoke on active index change.
+     * @param {number} number - Active index.
+     * @group Emits
+     */
+    __publicField(this, "activeIndexChange", new EventEmitter());
+    /**
+     * Callback to invoke on visiblity change.
+     * @param {boolean} boolean - Visible value.
+     * @group Emits
+     */
+    __publicField(this, "visibleChange", new EventEmitter());
+    __publicField(this, "mask");
+    __publicField(this, "container");
+    __publicField(this, "templates");
+    __publicField(this, "_visible", false);
+    __publicField(this, "_activeIndex", 0);
+    __publicField(this, "headerFacet");
+    __publicField(this, "footerFacet");
+    __publicField(this, "indicatorFacet");
+    __publicField(this, "captionFacet");
+    __publicField(this, "closeIconTemplate");
+    __publicField(this, "previousThumbnailIconTemplate");
+    __publicField(this, "nextThumbnailIconTemplate");
+    __publicField(this, "itemPreviousIconTemplate");
+    __publicField(this, "itemNextIconTemplate");
+    __publicField(this, "maskVisible", false);
+    __publicField(this, "numVisibleLimit", 0);
+    this.document = document2;
+    this.platformId = platformId;
+    this.element = element;
+    this.cd = cd;
+    this.config = config;
+  }
   /**
    * Index of the first item.
    * @group Props
@@ -700,132 +863,6 @@ var Galleria = class _Galleria {
   set activeIndex(activeIndex) {
     this._activeIndex = activeIndex;
   }
-  /**
-   * Whether to display the component on fullscreen.
-   * @group Props
-   */
-  fullScreen = false;
-  /**
-   * Unique identifier of the element.
-   * @group Props
-   */
-  id;
-  /**
-   * An array of objects to display.
-   * @group Props
-   */
-  value;
-  /**
-   * Number of items per page.
-   * @group Props
-   */
-  numVisible = 3;
-  /**
-   * An array of options for responsive design.
-   * @see {GalleriaResponsiveOptions}
-   * @group Props
-   */
-  responsiveOptions;
-  /**
-   * Whether to display navigation buttons in item section.
-   * @group Props
-   */
-  showItemNavigators = false;
-  /**
-   * Whether to display navigation buttons in thumbnail container.
-   * @group Props
-   */
-  showThumbnailNavigators = true;
-  /**
-   * Whether to display navigation buttons on item hover.
-   * @group Props
-   */
-  showItemNavigatorsOnHover = false;
-  /**
-   * When enabled, item is changed on indicator hover.
-   * @group Props
-   */
-  changeItemOnIndicatorHover = false;
-  /**
-   * Defines if scrolling would be infinite.
-   * @group Props
-   */
-  circular = false;
-  /**
-   * Items are displayed with a slideshow in autoPlay mode.
-   * @group Props
-   */
-  autoPlay = false;
-  /**
-   * When enabled, autorun should stop by click.
-   * @group Props
-   */
-  shouldStopAutoplayByClick = true;
-  /**
-   * Time in milliseconds to scroll items.
-   * @group Props
-   */
-  transitionInterval = 4e3;
-  /**
-   * Whether to display thumbnail container.
-   * @group Props
-   */
-  showThumbnails = true;
-  /**
-   * Position of thumbnails.
-   * @group Props
-   */
-  thumbnailsPosition = "bottom";
-  /**
-   * Height of the viewport in vertical thumbnail.
-   * @group Props
-   */
-  verticalThumbnailViewPortHeight = "300px";
-  /**
-   * Whether to display indicator container.
-   * @group Props
-   */
-  showIndicators = false;
-  /**
-   * When enabled, indicator container is displayed on item container.
-   * @group Props
-   */
-  showIndicatorsOnItem = false;
-  /**
-   * Position of indicators.
-   * @group Props
-   */
-  indicatorsPosition = "bottom";
-  /**
-   * Base zIndex value to use in layering.
-   * @group Props
-   */
-  baseZIndex = 0;
-  /**
-   * Style class of the mask on fullscreen mode.
-   * @group Props
-   */
-  maskClass;
-  /**
-   * Style class of the component on fullscreen mode. Otherwise, the 'class' property can be used.
-   * @group Props
-   */
-  containerClass;
-  /**
-   * Inline style of the component on fullscreen mode. Otherwise, the 'style' property can be used.
-   * @group Props
-   */
-  containerStyle;
-  /**
-   * Transition options of the show animation.
-   * @group Props
-   */
-  showTransitionOptions = "150ms cubic-bezier(0, 0, 0.2, 1)";
-  /**
-   * Transition options of the hide animation.
-   * @group Props
-   */
-  hideTransitionOptions = "150ms cubic-bezier(0, 0, 0.2, 1)";
   /**
    * Specifies the visibility of the mask on fullscreen mode.
    * @group Props
@@ -839,43 +876,9 @@ var Galleria = class _Galleria {
       this.maskVisible = true;
     }
   }
-  /**
-   * Callback to invoke on active index change.
-   * @param {number} number - Active index.
-   * @group Emits
-   */
-  activeIndexChange = new EventEmitter();
-  /**
-   * Callback to invoke on visiblity change.
-   * @param {boolean} boolean - Visible value.
-   * @group Emits
-   */
-  visibleChange = new EventEmitter();
-  mask;
-  container;
-  templates;
-  _visible = false;
-  _activeIndex = 0;
-  headerFacet;
-  footerFacet;
-  indicatorFacet;
-  captionFacet;
-  closeIconTemplate;
-  previousThumbnailIconTemplate;
-  nextThumbnailIconTemplate;
-  itemPreviousIconTemplate;
-  itemNextIconTemplate;
-  maskVisible = false;
-  numVisibleLimit = 0;
-  constructor(document2, platformId, element, cd, config) {
-    this.document = document2;
-    this.platformId = platformId;
-    this.element = element;
-    this.cd = cd;
-    this.config = config;
-  }
   ngAfterContentInit() {
-    this.templates?.forEach((item) => {
+    var _a;
+    (_a = this.templates) == null ? void 0 : _a.forEach((item) => {
       switch (item.getType()) {
         case "header":
           this.headerFacet = item.template;
@@ -908,7 +911,8 @@ var Galleria = class _Galleria {
     });
   }
   ngOnChanges(simpleChanges) {
-    if (simpleChanges.value && simpleChanges.value.currentValue?.length < this.numVisible) {
+    var _a;
+    if (simpleChanges.value && ((_a = simpleChanges.value.currentValue) == null ? void 0 : _a.length) < this.numVisible) {
       this.numVisibleLimit = simpleChanges.value.currentValue.length;
     } else {
       this.numVisibleLimit = 0;
@@ -925,6 +929,7 @@ var Galleria = class _Galleria {
     }
   }
   onAnimationStart(event) {
+    var _a;
     switch (event.toState) {
       case "visible":
         this.enableModality();
@@ -933,7 +938,7 @@ var Galleria = class _Galleria {
         }, 25);
         break;
       case "void":
-        DomHandler.addClass(this.mask?.nativeElement, "p-component-overlay-leave");
+        DomHandler.addClass((_a = this.mask) == null ? void 0 : _a.nativeElement, "p-component-overlay-leave");
         break;
     }
   }
@@ -967,129 +972,101 @@ var Galleria = class _Galleria {
       this.disableModality();
     }
   }
-  static ɵfac = function Galleria_Factory(__ngFactoryType__) {
-    return new (__ngFactoryType__ || _Galleria)(ɵɵdirectiveInject(DOCUMENT), ɵɵdirectiveInject(PLATFORM_ID), ɵɵdirectiveInject(ElementRef), ɵɵdirectiveInject(ChangeDetectorRef), ɵɵdirectiveInject(PrimeNGConfig));
-  };
-  static ɵcmp = ɵɵdefineComponent({
-    type: _Galleria,
-    selectors: [["p-galleria"]],
-    contentQueries: function Galleria_ContentQueries(rf, ctx, dirIndex) {
-      if (rf & 1) {
-        ɵɵcontentQuery(dirIndex, PrimeTemplate, 4);
-      }
-      if (rf & 2) {
-        let _t;
-        ɵɵqueryRefresh(_t = ɵɵloadQuery()) && (ctx.templates = _t);
-      }
-    },
-    viewQuery: function Galleria_Query(rf, ctx) {
-      if (rf & 1) {
-        ɵɵviewQuery(_c0, 5);
-        ɵɵviewQuery(_c1, 5);
-      }
-      if (rf & 2) {
-        let _t;
-        ɵɵqueryRefresh(_t = ɵɵloadQuery()) && (ctx.mask = _t.first);
-        ɵɵqueryRefresh(_t = ɵɵloadQuery()) && (ctx.container = _t.first);
-      }
-    },
-    hostAttrs: [1, "p-element"],
-    inputs: {
-      activeIndex: "activeIndex",
-      fullScreen: [2, "fullScreen", "fullScreen", booleanAttribute],
-      id: "id",
-      value: "value",
-      numVisible: [2, "numVisible", "numVisible", numberAttribute],
-      responsiveOptions: "responsiveOptions",
-      showItemNavigators: [2, "showItemNavigators", "showItemNavigators", booleanAttribute],
-      showThumbnailNavigators: [2, "showThumbnailNavigators", "showThumbnailNavigators", booleanAttribute],
-      showItemNavigatorsOnHover: [2, "showItemNavigatorsOnHover", "showItemNavigatorsOnHover", booleanAttribute],
-      changeItemOnIndicatorHover: [2, "changeItemOnIndicatorHover", "changeItemOnIndicatorHover", booleanAttribute],
-      circular: [2, "circular", "circular", booleanAttribute],
-      autoPlay: [2, "autoPlay", "autoPlay", booleanAttribute],
-      shouldStopAutoplayByClick: [2, "shouldStopAutoplayByClick", "shouldStopAutoplayByClick", booleanAttribute],
-      transitionInterval: [2, "transitionInterval", "transitionInterval", numberAttribute],
-      showThumbnails: [2, "showThumbnails", "showThumbnails", booleanAttribute],
-      thumbnailsPosition: "thumbnailsPosition",
-      verticalThumbnailViewPortHeight: "verticalThumbnailViewPortHeight",
-      showIndicators: [2, "showIndicators", "showIndicators", booleanAttribute],
-      showIndicatorsOnItem: [2, "showIndicatorsOnItem", "showIndicatorsOnItem", booleanAttribute],
-      indicatorsPosition: "indicatorsPosition",
-      baseZIndex: [2, "baseZIndex", "baseZIndex", numberAttribute],
-      maskClass: "maskClass",
-      containerClass: "containerClass",
-      containerStyle: "containerStyle",
-      showTransitionOptions: "showTransitionOptions",
-      hideTransitionOptions: "hideTransitionOptions",
-      visible: "visible"
-    },
-    outputs: {
-      activeIndexChange: "activeIndexChange",
-      visibleChange: "visibleChange"
-    },
-    features: [ɵɵInputTransformsFeature, ɵɵNgOnChangesFeature],
-    decls: 3,
-    vars: 2,
-    consts: [["windowed", ""], ["container", ""], ["mask", ""], [4, "ngIf", "ngIfElse"], [3, "ngClass", "class", 4, "ngIf"], [3, "ngClass"], [3, "value", "activeIndex", "numVisible", "ngStyle", "fullScreen", "maskHide", "activeItemChange", 4, "ngIf"], [3, "maskHide", "activeItemChange", "value", "activeIndex", "numVisible", "ngStyle", "fullScreen"], [3, "activeItemChange", "value", "activeIndex", "numVisible"]],
-    template: function Galleria_Template(rf, ctx) {
-      if (rf & 1) {
-        ɵɵtemplate(0, Galleria_div_0_Template, 3, 1, "div", 3)(1, Galleria_ng_template_1_Template, 1, 3, "ng-template", null, 0, ɵɵtemplateRefExtractor);
-      }
-      if (rf & 2) {
-        const windowed_r4 = ɵɵreference(2);
-        ɵɵproperty("ngIf", ctx.fullScreen)("ngIfElse", windowed_r4);
-      }
-    },
-    dependencies: () => [NgClass, NgIf, NgStyle, GalleriaContent],
-    styles: ["@layer primeng{.p-galleria-content{display:flex;flex-direction:column}.p-galleria-item-wrapper{display:flex;flex-direction:column;position:relative}.p-galleria-item-container{position:relative;display:flex;height:100%}.p-galleria-item-nav{position:absolute;top:50%;margin-top:-.5rem;display:inline-flex;justify-content:center;align-items:center;overflow:hidden}.p-galleria-item-prev{left:0;border-top-left-radius:0;border-bottom-left-radius:0}.p-galleria-item-next{right:0;border-top-right-radius:0;border-bottom-right-radius:0}.p-galleria-item{display:flex;justify-content:center;align-items:center;height:100%;width:100%}.p-galleria-item-nav-onhover .p-galleria-item-nav{pointer-events:none;opacity:0;transition:opacity .2s ease-in-out}.p-galleria-item-nav-onhover .p-galleria-item-wrapper:hover .p-galleria-item-nav,.p-galleria-item-nav-onhover .p-galleria-item-nav-focused{pointer-events:all;opacity:1}.p-galleria-item-nav-onhover .p-galleria-item-wrapper:hover .p-galleria-item-nav.p-disabled{pointer-events:none}.p-galleria-caption{position:absolute;bottom:0;left:0;width:100%}.p-galleria-thumbnail-wrapper{display:flex;flex-direction:column;overflow:auto;flex-shrink:0}.p-galleria-thumbnail-prev,.p-galleria-thumbnail-next{align-self:center;flex:0 0 auto;display:flex;justify-content:center;align-items:center;overflow:hidden;position:relative}.p-galleria-thumbnail-prev span,.p-galleria-thumbnail-next span{display:flex;justify-content:center;align-items:center}.p-galleria-thumbnail-container{display:flex;flex-direction:row}.p-galleria-thumbnail-items-container{overflow:hidden;width:100%}.p-galleria-thumbnail-items{display:flex}.p-galleria-thumbnail-item{overflow:auto;display:flex;align-items:center;justify-content:center;cursor:pointer;opacity:.5}.p-galleria-thumbnail-item:hover{opacity:1;transition:opacity .3s}.p-galleria-thumbnail-item-current{opacity:1}.p-galleria-thumbnails-left .p-galleria-content,.p-galleria-thumbnails-right .p-galleria-content,.p-galleria-thumbnails-left .p-galleria-item-wrapper,.p-galleria-thumbnails-right .p-galleria-item-wrapper{flex-direction:row}.p-galleria-thumbnails-left p-galleriaitem,.p-galleria-thumbnails-top p-galleriaitem{order:2}.p-galleria-thumbnails-left p-galleriathumbnails,.p-galleria-thumbnails-top p-galleriathumbnails{order:1}.p-galleria-thumbnails-left .p-galleria-thumbnail-container,.p-galleria-thumbnails-right .p-galleria-thumbnail-container{flex-direction:column;flex-grow:1}.p-galleria-thumbnails-left .p-galleria-thumbnail-items,.p-galleria-thumbnails-right .p-galleria-thumbnail-items{flex-direction:column;height:100%}.p-galleria-thumbnails-left .p-galleria-thumbnail-wrapper,.p-galleria-thumbnails-right .p-galleria-thumbnail-wrapper{height:100%}.p-galleria-indicators{display:flex;align-items:center;justify-content:center}.p-galleria-indicator>button{display:inline-flex;align-items:center}.p-galleria-indicators-left .p-galleria-item-wrapper,.p-galleria-indicators-right .p-galleria-item-wrapper{flex-direction:row;align-items:center}.p-galleria-indicators-left .p-galleria-item-container,.p-galleria-indicators-top .p-galleria-item-container{order:2}.p-galleria-indicators-left .p-galleria-indicators,.p-galleria-indicators-top .p-galleria-indicators{order:1}.p-galleria-indicators-left .p-galleria-indicators,.p-galleria-indicators-right .p-galleria-indicators{flex-direction:column}.p-galleria-indicator-onitem .p-galleria-indicators{position:absolute;display:flex;z-index:1}.p-galleria-indicator-onitem.p-galleria-indicators-top .p-galleria-indicators{top:0;left:0;width:100%;align-items:flex-start}.p-galleria-indicator-onitem.p-galleria-indicators-right .p-galleria-indicators{right:0;top:0;height:100%;align-items:flex-end}.p-galleria-indicator-onitem.p-galleria-indicators-bottom .p-galleria-indicators{bottom:0;left:0;width:100%;align-items:flex-end}.p-galleria-indicator-onitem.p-galleria-indicators-left .p-galleria-indicators{left:0;top:0;height:100%;align-items:flex-start}.p-galleria-mask{position:fixed;top:0;left:0;width:100%;height:100%;display:flex;align-items:center;justify-content:center;background-color:transparent;transition-property:background-color}.p-galleria-close{position:absolute;top:0;right:0;display:flex;justify-content:center;align-items:center;overflow:hidden}.p-galleria-mask .p-galleria-item-nav{position:fixed;top:50%;margin-top:-.5rem}.p-galleria-mask.p-galleria-mask-leave{background-color:transparent}.p-items-hidden .p-galleria-thumbnail-item{visibility:hidden}.p-items-hidden .p-galleria-thumbnail-item.p-galleria-thumbnail-item-active{visibility:visible}}\n"],
-    encapsulation: 2,
-    data: {
-      animation: [trigger("animation", [transition("void => visible", [style({
-        transform: "scale(0.7)",
-        opacity: 0
-      }), animate("{{showTransitionParams}}")]), transition("visible => void", [animate("{{hideTransitionParams}}", style({
-        transform: "scale(0.7)",
-        opacity: 0
-      }))])])]
-    },
-    changeDetection: 0
-  });
 };
+__publicField(_Galleria, "ɵfac", function Galleria_Factory(__ngFactoryType__) {
+  return new (__ngFactoryType__ || _Galleria)(ɵɵdirectiveInject(DOCUMENT), ɵɵdirectiveInject(PLATFORM_ID), ɵɵdirectiveInject(ElementRef), ɵɵdirectiveInject(ChangeDetectorRef), ɵɵdirectiveInject(PrimeNGConfig));
+});
+__publicField(_Galleria, "ɵcmp", ɵɵdefineComponent({
+  type: _Galleria,
+  selectors: [["p-galleria"]],
+  contentQueries: function Galleria_ContentQueries(rf, ctx, dirIndex) {
+    if (rf & 1) {
+      ɵɵcontentQuery(dirIndex, PrimeTemplate, 4);
+    }
+    if (rf & 2) {
+      let _t;
+      ɵɵqueryRefresh(_t = ɵɵloadQuery()) && (ctx.templates = _t);
+    }
+  },
+  viewQuery: function Galleria_Query(rf, ctx) {
+    if (rf & 1) {
+      ɵɵviewQuery(_c0, 5);
+      ɵɵviewQuery(_c1, 5);
+    }
+    if (rf & 2) {
+      let _t;
+      ɵɵqueryRefresh(_t = ɵɵloadQuery()) && (ctx.mask = _t.first);
+      ɵɵqueryRefresh(_t = ɵɵloadQuery()) && (ctx.container = _t.first);
+    }
+  },
+  hostAttrs: [1, "p-element"],
+  inputs: {
+    activeIndex: "activeIndex",
+    fullScreen: [2, "fullScreen", "fullScreen", booleanAttribute],
+    id: "id",
+    value: "value",
+    numVisible: [2, "numVisible", "numVisible", numberAttribute],
+    responsiveOptions: "responsiveOptions",
+    showItemNavigators: [2, "showItemNavigators", "showItemNavigators", booleanAttribute],
+    showThumbnailNavigators: [2, "showThumbnailNavigators", "showThumbnailNavigators", booleanAttribute],
+    showItemNavigatorsOnHover: [2, "showItemNavigatorsOnHover", "showItemNavigatorsOnHover", booleanAttribute],
+    changeItemOnIndicatorHover: [2, "changeItemOnIndicatorHover", "changeItemOnIndicatorHover", booleanAttribute],
+    circular: [2, "circular", "circular", booleanAttribute],
+    autoPlay: [2, "autoPlay", "autoPlay", booleanAttribute],
+    shouldStopAutoplayByClick: [2, "shouldStopAutoplayByClick", "shouldStopAutoplayByClick", booleanAttribute],
+    transitionInterval: [2, "transitionInterval", "transitionInterval", numberAttribute],
+    showThumbnails: [2, "showThumbnails", "showThumbnails", booleanAttribute],
+    thumbnailsPosition: "thumbnailsPosition",
+    verticalThumbnailViewPortHeight: "verticalThumbnailViewPortHeight",
+    showIndicators: [2, "showIndicators", "showIndicators", booleanAttribute],
+    showIndicatorsOnItem: [2, "showIndicatorsOnItem", "showIndicatorsOnItem", booleanAttribute],
+    indicatorsPosition: "indicatorsPosition",
+    baseZIndex: [2, "baseZIndex", "baseZIndex", numberAttribute],
+    maskClass: "maskClass",
+    containerClass: "containerClass",
+    containerStyle: "containerStyle",
+    showTransitionOptions: "showTransitionOptions",
+    hideTransitionOptions: "hideTransitionOptions",
+    visible: "visible"
+  },
+  outputs: {
+    activeIndexChange: "activeIndexChange",
+    visibleChange: "visibleChange"
+  },
+  features: [ɵɵInputTransformsFeature, ɵɵNgOnChangesFeature],
+  decls: 3,
+  vars: 2,
+  consts: [["windowed", ""], ["container", ""], ["mask", ""], [4, "ngIf", "ngIfElse"], [3, "ngClass", "class", 4, "ngIf"], [3, "ngClass"], [3, "value", "activeIndex", "numVisible", "ngStyle", "fullScreen", "maskHide", "activeItemChange", 4, "ngIf"], [3, "maskHide", "activeItemChange", "value", "activeIndex", "numVisible", "ngStyle", "fullScreen"], [3, "activeItemChange", "value", "activeIndex", "numVisible"]],
+  template: function Galleria_Template(rf, ctx) {
+    if (rf & 1) {
+      ɵɵtemplate(0, Galleria_div_0_Template, 3, 1, "div", 3)(1, Galleria_ng_template_1_Template, 1, 3, "ng-template", null, 0, ɵɵtemplateRefExtractor);
+    }
+    if (rf & 2) {
+      const windowed_r4 = ɵɵreference(2);
+      ɵɵproperty("ngIf", ctx.fullScreen)("ngIfElse", windowed_r4);
+    }
+  },
+  dependencies: () => [NgClass, NgIf, NgStyle, GalleriaContent],
+  styles: ["@layer primeng{.p-galleria-content{display:flex;flex-direction:column}.p-galleria-item-wrapper{display:flex;flex-direction:column;position:relative}.p-galleria-item-container{position:relative;display:flex;height:100%}.p-galleria-item-nav{position:absolute;top:50%;margin-top:-.5rem;display:inline-flex;justify-content:center;align-items:center;overflow:hidden}.p-galleria-item-prev{left:0;border-top-left-radius:0;border-bottom-left-radius:0}.p-galleria-item-next{right:0;border-top-right-radius:0;border-bottom-right-radius:0}.p-galleria-item{display:flex;justify-content:center;align-items:center;height:100%;width:100%}.p-galleria-item-nav-onhover .p-galleria-item-nav{pointer-events:none;opacity:0;transition:opacity .2s ease-in-out}.p-galleria-item-nav-onhover .p-galleria-item-wrapper:hover .p-galleria-item-nav,.p-galleria-item-nav-onhover .p-galleria-item-nav-focused{pointer-events:all;opacity:1}.p-galleria-item-nav-onhover .p-galleria-item-wrapper:hover .p-galleria-item-nav.p-disabled{pointer-events:none}.p-galleria-caption{position:absolute;bottom:0;left:0;width:100%}.p-galleria-thumbnail-wrapper{display:flex;flex-direction:column;overflow:auto;flex-shrink:0}.p-galleria-thumbnail-prev,.p-galleria-thumbnail-next{align-self:center;flex:0 0 auto;display:flex;justify-content:center;align-items:center;overflow:hidden;position:relative}.p-galleria-thumbnail-prev span,.p-galleria-thumbnail-next span{display:flex;justify-content:center;align-items:center}.p-galleria-thumbnail-container{display:flex;flex-direction:row}.p-galleria-thumbnail-items-container{overflow:hidden;width:100%}.p-galleria-thumbnail-items{display:flex}.p-galleria-thumbnail-item{overflow:auto;display:flex;align-items:center;justify-content:center;cursor:pointer;opacity:.5}.p-galleria-thumbnail-item:hover{opacity:1;transition:opacity .3s}.p-galleria-thumbnail-item-current{opacity:1}.p-galleria-thumbnails-left .p-galleria-content,.p-galleria-thumbnails-right .p-galleria-content,.p-galleria-thumbnails-left .p-galleria-item-wrapper,.p-galleria-thumbnails-right .p-galleria-item-wrapper{flex-direction:row}.p-galleria-thumbnails-left p-galleriaitem,.p-galleria-thumbnails-top p-galleriaitem{order:2}.p-galleria-thumbnails-left p-galleriathumbnails,.p-galleria-thumbnails-top p-galleriathumbnails{order:1}.p-galleria-thumbnails-left .p-galleria-thumbnail-container,.p-galleria-thumbnails-right .p-galleria-thumbnail-container{flex-direction:column;flex-grow:1}.p-galleria-thumbnails-left .p-galleria-thumbnail-items,.p-galleria-thumbnails-right .p-galleria-thumbnail-items{flex-direction:column;height:100%}.p-galleria-thumbnails-left .p-galleria-thumbnail-wrapper,.p-galleria-thumbnails-right .p-galleria-thumbnail-wrapper{height:100%}.p-galleria-indicators{display:flex;align-items:center;justify-content:center}.p-galleria-indicator>button{display:inline-flex;align-items:center}.p-galleria-indicators-left .p-galleria-item-wrapper,.p-galleria-indicators-right .p-galleria-item-wrapper{flex-direction:row;align-items:center}.p-galleria-indicators-left .p-galleria-item-container,.p-galleria-indicators-top .p-galleria-item-container{order:2}.p-galleria-indicators-left .p-galleria-indicators,.p-galleria-indicators-top .p-galleria-indicators{order:1}.p-galleria-indicators-left .p-galleria-indicators,.p-galleria-indicators-right .p-galleria-indicators{flex-direction:column}.p-galleria-indicator-onitem .p-galleria-indicators{position:absolute;display:flex;z-index:1}.p-galleria-indicator-onitem.p-galleria-indicators-top .p-galleria-indicators{top:0;left:0;width:100%;align-items:flex-start}.p-galleria-indicator-onitem.p-galleria-indicators-right .p-galleria-indicators{right:0;top:0;height:100%;align-items:flex-end}.p-galleria-indicator-onitem.p-galleria-indicators-bottom .p-galleria-indicators{bottom:0;left:0;width:100%;align-items:flex-end}.p-galleria-indicator-onitem.p-galleria-indicators-left .p-galleria-indicators{left:0;top:0;height:100%;align-items:flex-start}.p-galleria-mask{position:fixed;top:0;left:0;width:100%;height:100%;display:flex;align-items:center;justify-content:center;background-color:transparent;transition-property:background-color}.p-galleria-close{position:absolute;top:0;right:0;display:flex;justify-content:center;align-items:center;overflow:hidden}.p-galleria-mask .p-galleria-item-nav{position:fixed;top:50%;margin-top:-.5rem}.p-galleria-mask.p-galleria-mask-leave{background-color:transparent}.p-items-hidden .p-galleria-thumbnail-item{visibility:hidden}.p-items-hidden .p-galleria-thumbnail-item.p-galleria-thumbnail-item-active{visibility:visible}}\n"],
+  encapsulation: 2,
+  data: {
+    animation: [trigger("animation", [transition("void => visible", [style({
+      transform: "scale(0.7)",
+      opacity: 0
+    }), animate("{{showTransitionParams}}")]), transition("visible => void", [animate("{{hideTransitionParams}}", style({
+      transform: "scale(0.7)",
+      opacity: 0
+    }))])])]
+  },
+  changeDetection: 0
+}));
+var Galleria = _Galleria;
 (() => {
   (typeof ngDevMode === "undefined" || ngDevMode) && setClassMetadata(Galleria, [{
     type: Component,
     args: [{
       selector: "p-galleria",
-      template: `
-        <div *ngIf="fullScreen; else windowed" #container>
-            <div
-                *ngIf="maskVisible"
-                #mask
-                [ngClass]="{ 'p-galleria-mask p-component-overlay p-component-overlay-enter': true, 'p-galleria-visible': this.visible }"
-                [class]="maskClass"
-                [attr.role]="fullScreen ? 'dialog' : 'region'"
-                [attr.aria-modal]="fullScreen ? 'true' : undefined"
-            >
-                <p-galleriaContent
-                    *ngIf="visible"
-                    [@animation]="{ value: 'visible', params: { showTransitionParams: showTransitionOptions, hideTransitionParams: hideTransitionOptions } }"
-                    (@animation.start)="onAnimationStart($event)"
-                    (@animation.done)="onAnimationEnd($event)"
-                    [value]="value"
-                    [activeIndex]="activeIndex"
-                    [numVisible]="numVisibleLimit || numVisible"
-                    (maskHide)="onMaskHide()"
-                    (activeItemChange)="onActiveItemChange($event)"
-                    [ngStyle]="containerStyle"
-                    [fullScreen]="fullScreen"
-                ></p-galleriaContent>
-            </div>
-        </div>
-
-        <ng-template #windowed>
-            <p-galleriaContent [value]="value" [activeIndex]="activeIndex" [numVisible]="numVisibleLimit || numVisible" (activeItemChange)="onActiveItemChange($event)"></p-galleriaContent>
-        </ng-template>
-    `,
+      template: '\n        <div *ngIf="fullScreen; else windowed" #container>\n            <div\n                *ngIf="maskVisible"\n                #mask\n                [ngClass]="{ \'p-galleria-mask p-component-overlay p-component-overlay-enter\': true, \'p-galleria-visible\': this.visible }"\n                [class]="maskClass"\n                [attr.role]="fullScreen ? \'dialog\' : \'region\'"\n                [attr.aria-modal]="fullScreen ? \'true\' : undefined"\n            >\n                <p-galleriaContent\n                    *ngIf="visible"\n                    [@animation]="{ value: \'visible\', params: { showTransitionParams: showTransitionOptions, hideTransitionParams: hideTransitionOptions } }"\n                    (@animation.start)="onAnimationStart($event)"\n                    (@animation.done)="onAnimationEnd($event)"\n                    [value]="value"\n                    [activeIndex]="activeIndex"\n                    [numVisible]="numVisibleLimit || numVisible"\n                    (maskHide)="onMaskHide()"\n                    (activeItemChange)="onActiveItemChange($event)"\n                    [ngStyle]="containerStyle"\n                    [fullScreen]="fullScreen"\n                ></p-galleriaContent>\n            </div>\n        </div>\n\n        <ng-template #windowed>\n            <p-galleriaContent [value]="value" [activeIndex]="activeIndex" [numVisible]="numVisibleLimit || numVisible" (activeItemChange)="onActiveItemChange($event)"></p-galleriaContent>\n        </ng-template>\n    ',
       animations: [trigger("animation", [transition("void => visible", [style({
         transform: "scale(0.7)",
         opacity: 0
@@ -1266,31 +1243,25 @@ var Galleria = class _Galleria {
     }]
   });
 })();
-var GalleriaContent = class _GalleriaContent {
-  galleria;
-  cd;
-  differs;
-  config;
-  elementRef;
-  get activeIndex() {
-    return this._activeIndex;
-  }
-  set activeIndex(activeIndex) {
-    this._activeIndex = activeIndex;
-  }
-  value = [];
-  numVisible;
-  fullScreen;
-  maskHide = new EventEmitter();
-  activeItemChange = new EventEmitter();
-  closeButton;
-  id;
-  _activeIndex = 0;
-  slideShowActive = true;
-  interval;
-  styleClass;
-  differ;
+var _GalleriaContent = class _GalleriaContent {
   constructor(galleria, cd, differs, config, elementRef) {
+    __publicField(this, "galleria");
+    __publicField(this, "cd");
+    __publicField(this, "differs");
+    __publicField(this, "config");
+    __publicField(this, "elementRef");
+    __publicField(this, "value", []);
+    __publicField(this, "numVisible");
+    __publicField(this, "fullScreen");
+    __publicField(this, "maskHide", new EventEmitter());
+    __publicField(this, "activeItemChange", new EventEmitter());
+    __publicField(this, "closeButton");
+    __publicField(this, "id");
+    __publicField(this, "_activeIndex", 0);
+    __publicField(this, "slideShowActive", true);
+    __publicField(this, "interval");
+    __publicField(this, "styleClass");
+    __publicField(this, "differ");
     this.galleria = galleria;
     this.cd = cd;
     this.differs = differs;
@@ -1299,9 +1270,16 @@ var GalleriaContent = class _GalleriaContent {
     this.id = this.galleria.id || UniqueComponentId();
     this.differ = this.differs.find(this.galleria).create();
   }
+  get activeIndex() {
+    return this._activeIndex;
+  }
+  set activeIndex(activeIndex) {
+    this._activeIndex = activeIndex;
+  }
   // For custom fullscreen
   handleFullscreenChange(event) {
-    if (document?.fullscreenElement === this.elementRef.nativeElement?.children[0]) {
+    var _a;
+    if ((document == null ? void 0 : document.fullscreenElement) === ((_a = this.elementRef.nativeElement) == null ? void 0 : _a.children[0])) {
       this.fullScreen = true;
     } else {
       this.fullScreen = false;
@@ -1342,7 +1320,7 @@ var GalleriaContent = class _GalleriaContent {
   getPositionClass(preClassName, position) {
     const positions = ["top", "left", "bottom", "right"];
     const pos = positions.find((item) => item === position);
-    return pos ? `${preClassName}-${pos}` : "";
+    return pos ? "".concat(preClassName, "-").concat(pos) : "";
   }
   isVertical() {
     return this.galleria.thumbnailsPosition === "left" || this.galleria.thumbnailsPosition === "right";
@@ -1356,124 +1334,62 @@ var GalleriaContent = class _GalleriaContent {
   closeAriaLabel() {
     return this.config.translation.aria ? this.config.translation.aria.close : void 0;
   }
-  static ɵfac = function GalleriaContent_Factory(__ngFactoryType__) {
-    return new (__ngFactoryType__ || _GalleriaContent)(ɵɵdirectiveInject(Galleria), ɵɵdirectiveInject(ChangeDetectorRef), ɵɵdirectiveInject(KeyValueDiffers), ɵɵdirectiveInject(PrimeNGConfig), ɵɵdirectiveInject(ElementRef));
-  };
-  static ɵcmp = ɵɵdefineComponent({
-    type: _GalleriaContent,
-    selectors: [["p-galleriaContent"]],
-    viewQuery: function GalleriaContent_Query(rf, ctx) {
-      if (rf & 1) {
-        ɵɵviewQuery(_c5, 5);
-      }
-      if (rf & 2) {
-        let _t;
-        ɵɵqueryRefresh(_t = ɵɵloadQuery()) && (ctx.closeButton = _t.first);
-      }
-    },
-    hostBindings: function GalleriaContent_HostBindings(rf, ctx) {
-      if (rf & 1) {
-        ɵɵlistener("fullscreenchange", function GalleriaContent_fullscreenchange_HostBindingHandler($event) {
-          return ctx.handleFullscreenChange($event);
-        }, false, ɵɵresolveDocument);
-      }
-    },
-    inputs: {
-      activeIndex: "activeIndex",
-      value: "value",
-      numVisible: [2, "numVisible", "numVisible", numberAttribute],
-      fullScreen: [2, "fullScreen", "fullScreen", booleanAttribute]
-    },
-    outputs: {
-      maskHide: "maskHide",
-      activeItemChange: "activeItemChange"
-    },
-    features: [ɵɵInputTransformsFeature],
-    decls: 1,
-    vars: 1,
-    consts: [["pFocusTrap", "", 3, "ngClass", "ngStyle", "class", "pFocusTrapDisabled", 4, "ngIf"], ["pFocusTrap", "", 3, "ngClass", "ngStyle", "pFocusTrapDisabled"], ["type", "button", "class", "p-galleria-close p-link", "pRipple", "", 3, "click", 4, "ngIf"], ["class", "p-galleria-header", 4, "ngIf"], [1, "p-galleria-content"], [3, "onActiveIndexChange", "startSlideShow", "stopSlideShow", "id", "value", "activeIndex", "circular", "templates", "showIndicators", "changeItemOnIndicatorHover", "indicatorFacet", "captionFacet", "showItemNavigators", "autoPlay", "slideShowActive"], [3, "containerId", "value", "activeIndex", "templates", "numVisible", "responsiveOptions", "circular", "isVertical", "contentHeight", "showThumbnailNavigators", "slideShowActive", "onActiveIndexChange", "stopSlideShow", 4, "ngIf"], ["class", "p-galleria-footer", 4, "ngIf"], ["type", "button", "pRipple", "", 1, "p-galleria-close", "p-link", 3, "click"], [3, "styleClass", 4, "ngIf"], [4, "ngTemplateOutlet"], [3, "styleClass"], [1, "p-galleria-header"], ["type", "header", 3, "templates"], [3, "onActiveIndexChange", "stopSlideShow", "containerId", "value", "activeIndex", "templates", "numVisible", "responsiveOptions", "circular", "isVertical", "contentHeight", "showThumbnailNavigators", "slideShowActive"], [1, "p-galleria-footer"], ["type", "footer", 3, "templates"]],
-    template: function GalleriaContent_Template(rf, ctx) {
-      if (rf & 1) {
-        ɵɵtemplate(0, GalleriaContent_div_0_Template, 7, 29, "div", 0);
-      }
-      if (rf & 2) {
-        ɵɵproperty("ngIf", ctx.value && ctx.value.length > 0);
-      }
-    },
-    dependencies: () => [NgClass, NgIf, NgTemplateOutlet, NgStyle, Ripple, TimesIcon, FocusTrap, GalleriaItemSlot, GalleriaItem, GalleriaThumbnails],
-    encapsulation: 2,
-    changeDetection: 0
-  });
 };
+__publicField(_GalleriaContent, "ɵfac", function GalleriaContent_Factory(__ngFactoryType__) {
+  return new (__ngFactoryType__ || _GalleriaContent)(ɵɵdirectiveInject(Galleria), ɵɵdirectiveInject(ChangeDetectorRef), ɵɵdirectiveInject(KeyValueDiffers), ɵɵdirectiveInject(PrimeNGConfig), ɵɵdirectiveInject(ElementRef));
+});
+__publicField(_GalleriaContent, "ɵcmp", ɵɵdefineComponent({
+  type: _GalleriaContent,
+  selectors: [["p-galleriaContent"]],
+  viewQuery: function GalleriaContent_Query(rf, ctx) {
+    if (rf & 1) {
+      ɵɵviewQuery(_c5, 5);
+    }
+    if (rf & 2) {
+      let _t;
+      ɵɵqueryRefresh(_t = ɵɵloadQuery()) && (ctx.closeButton = _t.first);
+    }
+  },
+  hostBindings: function GalleriaContent_HostBindings(rf, ctx) {
+    if (rf & 1) {
+      ɵɵlistener("fullscreenchange", function GalleriaContent_fullscreenchange_HostBindingHandler($event) {
+        return ctx.handleFullscreenChange($event);
+      }, false, ɵɵresolveDocument);
+    }
+  },
+  inputs: {
+    activeIndex: "activeIndex",
+    value: "value",
+    numVisible: [2, "numVisible", "numVisible", numberAttribute],
+    fullScreen: [2, "fullScreen", "fullScreen", booleanAttribute]
+  },
+  outputs: {
+    maskHide: "maskHide",
+    activeItemChange: "activeItemChange"
+  },
+  features: [ɵɵInputTransformsFeature],
+  decls: 1,
+  vars: 1,
+  consts: [["pFocusTrap", "", 3, "ngClass", "ngStyle", "class", "pFocusTrapDisabled", 4, "ngIf"], ["pFocusTrap", "", 3, "ngClass", "ngStyle", "pFocusTrapDisabled"], ["type", "button", "class", "p-galleria-close p-link", "pRipple", "", 3, "click", 4, "ngIf"], ["class", "p-galleria-header", 4, "ngIf"], [1, "p-galleria-content"], [3, "onActiveIndexChange", "startSlideShow", "stopSlideShow", "id", "value", "activeIndex", "circular", "templates", "showIndicators", "changeItemOnIndicatorHover", "indicatorFacet", "captionFacet", "showItemNavigators", "autoPlay", "slideShowActive"], [3, "containerId", "value", "activeIndex", "templates", "numVisible", "responsiveOptions", "circular", "isVertical", "contentHeight", "showThumbnailNavigators", "slideShowActive", "onActiveIndexChange", "stopSlideShow", 4, "ngIf"], ["class", "p-galleria-footer", 4, "ngIf"], ["type", "button", "pRipple", "", 1, "p-galleria-close", "p-link", 3, "click"], [3, "styleClass", 4, "ngIf"], [4, "ngTemplateOutlet"], [3, "styleClass"], [1, "p-galleria-header"], ["type", "header", 3, "templates"], [3, "onActiveIndexChange", "stopSlideShow", "containerId", "value", "activeIndex", "templates", "numVisible", "responsiveOptions", "circular", "isVertical", "contentHeight", "showThumbnailNavigators", "slideShowActive"], [1, "p-galleria-footer"], ["type", "footer", 3, "templates"]],
+  template: function GalleriaContent_Template(rf, ctx) {
+    if (rf & 1) {
+      ɵɵtemplate(0, GalleriaContent_div_0_Template, 7, 29, "div", 0);
+    }
+    if (rf & 2) {
+      ɵɵproperty("ngIf", ctx.value && ctx.value.length > 0);
+    }
+  },
+  dependencies: () => [NgClass, NgIf, NgTemplateOutlet, NgStyle, Ripple, TimesIcon, FocusTrap, GalleriaItemSlot, GalleriaItem, GalleriaThumbnails],
+  encapsulation: 2,
+  changeDetection: 0
+}));
+var GalleriaContent = _GalleriaContent;
 (() => {
   (typeof ngDevMode === "undefined" || ngDevMode) && setClassMetadata(GalleriaContent, [{
     type: Component,
     args: [{
       selector: "p-galleriaContent",
-      template: `
-        <div
-            [attr.id]="id"
-            [attr.role]="'region'"
-            *ngIf="value && value.length > 0"
-            [ngClass]="{
-                'p-galleria p-component': true,
-                'p-galleria-fullscreen': this.galleria.fullScreen,
-                'p-galleria-indicator-onitem': this.galleria.showIndicatorsOnItem,
-                'p-galleria-item-nav-onhover': this.galleria.showItemNavigatorsOnHover && !this.galleria.fullScreen
-            }"
-            [ngStyle]="!galleria.fullScreen ? galleria.containerStyle : {}"
-            [class]="galleriaClass()"
-            pFocusTrap
-            [pFocusTrapDisabled]="!fullScreen"
-        >
-            <button *ngIf="galleria.fullScreen" type="button" class="p-galleria-close p-link" (click)="maskHide.emit()" pRipple [attr.aria-label]="closeAriaLabel()" [attr.data-pc-section]="'closebutton'">
-                <TimesIcon *ngIf="!galleria.closeIconTemplate" [styleClass]="'p-galleria-close-icon'" />
-                <ng-template *ngTemplateOutlet="galleria.closeIconTemplate"></ng-template>
-            </button>
-            <div *ngIf="galleria.templates && galleria.headerFacet" class="p-galleria-header">
-                <p-galleriaItemSlot type="header" [templates]="galleria.templates"></p-galleriaItemSlot>
-            </div>
-            <div class="p-galleria-content" [attr.aria-live]="galleria.autoPlay ? 'polite' : 'off'">
-                <p-galleriaItem
-                    [id]="id"
-                    [value]="value"
-                    [activeIndex]="activeIndex"
-                    [circular]="galleria.circular"
-                    [templates]="galleria.templates"
-                    (onActiveIndexChange)="onActiveIndexChange($event)"
-                    [showIndicators]="galleria.showIndicators"
-                    [changeItemOnIndicatorHover]="galleria.changeItemOnIndicatorHover"
-                    [indicatorFacet]="galleria.indicatorFacet"
-                    [captionFacet]="galleria.captionFacet"
-                    [showItemNavigators]="galleria.showItemNavigators"
-                    [autoPlay]="galleria.autoPlay"
-                    [slideShowActive]="slideShowActive"
-                    (startSlideShow)="startSlideShow()"
-                    (stopSlideShow)="stopSlideShow()"
-                ></p-galleriaItem>
-
-                <p-galleriaThumbnails
-                    *ngIf="galleria.showThumbnails"
-                    [containerId]="id"
-                    [value]="value"
-                    (onActiveIndexChange)="onActiveIndexChange($event)"
-                    [activeIndex]="activeIndex"
-                    [templates]="galleria.templates"
-                    [numVisible]="numVisible"
-                    [responsiveOptions]="galleria.responsiveOptions"
-                    [circular]="galleria.circular"
-                    [isVertical]="isVertical()"
-                    [contentHeight]="galleria.verticalThumbnailViewPortHeight"
-                    [showThumbnailNavigators]="galleria.showThumbnailNavigators"
-                    [slideShowActive]="slideShowActive"
-                    (stopSlideShow)="stopSlideShow()"
-                ></p-galleriaThumbnails>
-            </div>
-            <div *ngIf="galleria.templates && galleria.footerFacet" class="p-galleria-footer">
-                <p-galleriaItemSlot type="footer" [templates]="galleria.templates"></p-galleriaItemSlot>
-            </div>
-        </div>
-    `,
+      template: '\n        <div\n            [attr.id]="id"\n            [attr.role]="\'region\'"\n            *ngIf="value && value.length > 0"\n            [ngClass]="{\n                \'p-galleria p-component\': true,\n                \'p-galleria-fullscreen\': this.galleria.fullScreen,\n                \'p-galleria-indicator-onitem\': this.galleria.showIndicatorsOnItem,\n                \'p-galleria-item-nav-onhover\': this.galleria.showItemNavigatorsOnHover && !this.galleria.fullScreen\n            }"\n            [ngStyle]="!galleria.fullScreen ? galleria.containerStyle : {}"\n            [class]="galleriaClass()"\n            pFocusTrap\n            [pFocusTrapDisabled]="!fullScreen"\n        >\n            <button *ngIf="galleria.fullScreen" type="button" class="p-galleria-close p-link" (click)="maskHide.emit()" pRipple [attr.aria-label]="closeAriaLabel()" [attr.data-pc-section]="\'closebutton\'">\n                <TimesIcon *ngIf="!galleria.closeIconTemplate" [styleClass]="\'p-galleria-close-icon\'" />\n                <ng-template *ngTemplateOutlet="galleria.closeIconTemplate"></ng-template>\n            </button>\n            <div *ngIf="galleria.templates && galleria.headerFacet" class="p-galleria-header">\n                <p-galleriaItemSlot type="header" [templates]="galleria.templates"></p-galleriaItemSlot>\n            </div>\n            <div class="p-galleria-content" [attr.aria-live]="galleria.autoPlay ? \'polite\' : \'off\'">\n                <p-galleriaItem\n                    [id]="id"\n                    [value]="value"\n                    [activeIndex]="activeIndex"\n                    [circular]="galleria.circular"\n                    [templates]="galleria.templates"\n                    (onActiveIndexChange)="onActiveIndexChange($event)"\n                    [showIndicators]="galleria.showIndicators"\n                    [changeItemOnIndicatorHover]="galleria.changeItemOnIndicatorHover"\n                    [indicatorFacet]="galleria.indicatorFacet"\n                    [captionFacet]="galleria.captionFacet"\n                    [showItemNavigators]="galleria.showItemNavigators"\n                    [autoPlay]="galleria.autoPlay"\n                    [slideShowActive]="slideShowActive"\n                    (startSlideShow)="startSlideShow()"\n                    (stopSlideShow)="stopSlideShow()"\n                ></p-galleriaItem>\n\n                <p-galleriaThumbnails\n                    *ngIf="galleria.showThumbnails"\n                    [containerId]="id"\n                    [value]="value"\n                    (onActiveIndexChange)="onActiveIndexChange($event)"\n                    [activeIndex]="activeIndex"\n                    [templates]="galleria.templates"\n                    [numVisible]="numVisible"\n                    [responsiveOptions]="galleria.responsiveOptions"\n                    [circular]="galleria.circular"\n                    [isVertical]="isVertical()"\n                    [contentHeight]="galleria.verticalThumbnailViewPortHeight"\n                    [showThumbnailNavigators]="galleria.showThumbnailNavigators"\n                    [slideShowActive]="slideShowActive"\n                    (stopSlideShow)="stopSlideShow()"\n                ></p-galleriaThumbnails>\n            </div>\n            <div *ngIf="galleria.templates && galleria.footerFacet" class="p-galleria-footer">\n                <p-galleriaItemSlot type="footer" [templates]="galleria.templates"></p-galleriaItemSlot>\n            </div>\n        </div>\n    ',
       changeDetection: ChangeDetectionStrategy.OnPush
     }]
   }], () => [{
@@ -1521,9 +1437,15 @@ var GalleriaContent = class _GalleriaContent {
     }]
   });
 })();
-var GalleriaItemSlot = class _GalleriaItemSlot {
-  templates;
-  index;
+var _GalleriaItemSlot = class _GalleriaItemSlot {
+  constructor() {
+    __publicField(this, "templates");
+    __publicField(this, "index");
+    __publicField(this, "type");
+    __publicField(this, "contentTemplate");
+    __publicField(this, "context");
+    __publicField(this, "_item");
+  }
   get item() {
     return this._item;
   }
@@ -1546,12 +1468,9 @@ var GalleriaItemSlot = class _GalleriaItemSlot {
       });
     }
   }
-  type;
-  contentTemplate;
-  context;
-  _item;
   ngAfterContentInit() {
-    this.templates?.forEach((item) => {
+    var _a;
+    (_a = this.templates) == null ? void 0 : _a.forEach((item) => {
       if (item.getType() === this.type) {
         switch (this.type) {
           case "item":
@@ -1576,45 +1495,42 @@ var GalleriaItemSlot = class _GalleriaItemSlot {
       }
     });
   }
-  static ɵfac = function GalleriaItemSlot_Factory(__ngFactoryType__) {
-    return new (__ngFactoryType__ || _GalleriaItemSlot)();
-  };
-  static ɵcmp = ɵɵdefineComponent({
-    type: _GalleriaItemSlot,
-    selectors: [["p-galleriaItemSlot"]],
-    inputs: {
-      templates: "templates",
-      index: [2, "index", "index", numberAttribute],
-      item: "item",
-      type: "type"
-    },
-    features: [ɵɵInputTransformsFeature],
-    decls: 1,
-    vars: 1,
-    consts: [[4, "ngIf"], [4, "ngTemplateOutlet", "ngTemplateOutletContext"]],
-    template: function GalleriaItemSlot_Template(rf, ctx) {
-      if (rf & 1) {
-        ɵɵtemplate(0, GalleriaItemSlot_ng_container_0_Template, 2, 2, "ng-container", 0);
-      }
-      if (rf & 2) {
-        ɵɵproperty("ngIf", ctx.contentTemplate);
-      }
-    },
-    dependencies: [NgIf, NgTemplateOutlet],
-    encapsulation: 2,
-    changeDetection: 0
-  });
 };
+__publicField(_GalleriaItemSlot, "ɵfac", function GalleriaItemSlot_Factory(__ngFactoryType__) {
+  return new (__ngFactoryType__ || _GalleriaItemSlot)();
+});
+__publicField(_GalleriaItemSlot, "ɵcmp", ɵɵdefineComponent({
+  type: _GalleriaItemSlot,
+  selectors: [["p-galleriaItemSlot"]],
+  inputs: {
+    templates: "templates",
+    index: [2, "index", "index", numberAttribute],
+    item: "item",
+    type: "type"
+  },
+  features: [ɵɵInputTransformsFeature],
+  decls: 1,
+  vars: 1,
+  consts: [[4, "ngIf"], [4, "ngTemplateOutlet", "ngTemplateOutletContext"]],
+  template: function GalleriaItemSlot_Template(rf, ctx) {
+    if (rf & 1) {
+      ɵɵtemplate(0, GalleriaItemSlot_ng_container_0_Template, 2, 2, "ng-container", 0);
+    }
+    if (rf & 2) {
+      ɵɵproperty("ngIf", ctx.contentTemplate);
+    }
+  },
+  dependencies: [NgIf, NgTemplateOutlet],
+  encapsulation: 2,
+  changeDetection: 0
+}));
+var GalleriaItemSlot = _GalleriaItemSlot;
 (() => {
   (typeof ngDevMode === "undefined" || ngDevMode) && setClassMetadata(GalleriaItemSlot, [{
     type: Component,
     args: [{
       selector: "p-galleriaItemSlot",
-      template: `
-        <ng-container *ngIf="contentTemplate">
-            <ng-container *ngTemplateOutlet="contentTemplate; context: context"></ng-container>
-        </ng-container>
-    `,
+      template: '\n        <ng-container *ngIf="contentTemplate">\n            <ng-container *ngTemplateOutlet="contentTemplate; context: context"></ng-container>\n        </ng-container>\n    ',
       changeDetection: ChangeDetectionStrategy.OnPush
     }]
   }], null, {
@@ -1635,22 +1551,28 @@ var GalleriaItemSlot = class _GalleriaItemSlot {
     }]
   });
 })();
-var GalleriaItem = class _GalleriaItem {
-  galleria;
-  id;
-  circular = false;
-  value;
-  showItemNavigators = false;
-  showIndicators = true;
-  slideShowActive = true;
-  changeItemOnIndicatorHover = true;
-  autoPlay = false;
-  templates;
-  indicatorFacet;
-  captionFacet;
-  startSlideShow = new EventEmitter();
-  stopSlideShow = new EventEmitter();
-  onActiveIndexChange = new EventEmitter();
+var _GalleriaItem = class _GalleriaItem {
+  constructor(galleria) {
+    __publicField(this, "galleria");
+    __publicField(this, "id");
+    __publicField(this, "circular", false);
+    __publicField(this, "value");
+    __publicField(this, "showItemNavigators", false);
+    __publicField(this, "showIndicators", true);
+    __publicField(this, "slideShowActive", true);
+    __publicField(this, "changeItemOnIndicatorHover", true);
+    __publicField(this, "autoPlay", false);
+    __publicField(this, "templates");
+    __publicField(this, "indicatorFacet");
+    __publicField(this, "captionFacet");
+    __publicField(this, "startSlideShow", new EventEmitter());
+    __publicField(this, "stopSlideShow", new EventEmitter());
+    __publicField(this, "onActiveIndexChange", new EventEmitter());
+    __publicField(this, "_activeIndex", 0);
+    __publicField(this, "leftButtonFocused", false);
+    __publicField(this, "rightButtonFocused", false);
+    this.galleria = galleria;
+  }
   get activeIndex() {
     return this._activeIndex;
   }
@@ -1660,16 +1582,10 @@ var GalleriaItem = class _GalleriaItem {
   get activeItem() {
     return this.value && this.value[this._activeIndex];
   }
-  _activeIndex = 0;
-  leftButtonFocused = false;
-  rightButtonFocused = false;
-  constructor(galleria) {
-    this.galleria = galleria;
-  }
   ngOnChanges({
     autoPlay
   }) {
-    if (autoPlay?.currentValue) {
+    if (autoPlay == null ? void 0 : autoPlay.currentValue) {
       this.startSlideShow.emit();
     }
     if (autoPlay && autoPlay.currentValue === false) {
@@ -1765,130 +1681,76 @@ var GalleriaItem = class _GalleriaItem {
   ariaPreviousNavigationLabel() {
     return this.galleria.config.translation.aria ? this.galleria.config.translation.aria.previous : void 0;
   }
-  static ɵfac = function GalleriaItem_Factory(__ngFactoryType__) {
-    return new (__ngFactoryType__ || _GalleriaItem)(ɵɵdirectiveInject(Galleria));
-  };
-  static ɵcmp = ɵɵdefineComponent({
-    type: _GalleriaItem,
-    selectors: [["p-galleriaItem"]],
-    inputs: {
-      id: "id",
-      circular: [2, "circular", "circular", booleanAttribute],
-      value: "value",
-      showItemNavigators: [2, "showItemNavigators", "showItemNavigators", booleanAttribute],
-      showIndicators: [2, "showIndicators", "showIndicators", booleanAttribute],
-      slideShowActive: [2, "slideShowActive", "slideShowActive", booleanAttribute],
-      changeItemOnIndicatorHover: [2, "changeItemOnIndicatorHover", "changeItemOnIndicatorHover", booleanAttribute],
-      autoPlay: [2, "autoPlay", "autoPlay", booleanAttribute],
-      templates: "templates",
-      indicatorFacet: "indicatorFacet",
-      captionFacet: "captionFacet",
-      activeIndex: "activeIndex"
-    },
-    outputs: {
-      startSlideShow: "startSlideShow",
-      stopSlideShow: "stopSlideShow",
-      onActiveIndexChange: "onActiveIndexChange"
-    },
-    features: [ɵɵInputTransformsFeature, ɵɵNgOnChangesFeature],
-    decls: 8,
-    vars: 11,
-    consts: [[1, "p-galleria-item-wrapper"], [1, "p-galleria-item-container"], ["type", "button", "pRipple", "", 3, "ngClass", "disabled", "click", "focus", "blur", 4, "ngIf"], ["role", "group", 3, "id"], ["type", "item", 1, "p-galleria-item", 3, "item", "templates"], ["class", "p-galleria-caption", 4, "ngIf"], ["class", "p-galleria-indicators p-reset", 4, "ngIf"], ["type", "button", "pRipple", "", 3, "click", "focus", "blur", "ngClass", "disabled"], [3, "styleClass", 4, "ngIf"], [4, "ngTemplateOutlet"], [3, "styleClass"], [1, "p-galleria-caption"], ["type", "caption", 3, "item", "templates"], [1, "p-galleria-indicators", "p-reset"], ["tabindex", "0", 3, "ngClass", "click", "mouseenter", "keydown", 4, "ngFor", "ngForOf"], ["tabindex", "0", 3, "click", "mouseenter", "keydown", "ngClass"], ["type", "button", "tabIndex", "-1", "class", "p-link", 4, "ngIf"], ["type", "indicator", 3, "index", "templates"], ["type", "button", "tabIndex", "-1", 1, "p-link"]],
-    template: function GalleriaItem_Template(rf, ctx) {
-      if (rf & 1) {
-        ɵɵelementStart(0, "div", 0)(1, "div", 1);
-        ɵɵtemplate(2, GalleriaItem_button_2_Template, 3, 8, "button", 2);
-        ɵɵelementStart(3, "div", 3);
-        ɵɵelement(4, "p-galleriaItemSlot", 4);
-        ɵɵelementEnd();
-        ɵɵtemplate(5, GalleriaItem_button_5_Template, 3, 8, "button", 2)(6, GalleriaItem_div_6_Template, 2, 2, "div", 5);
-        ɵɵelementEnd();
-        ɵɵtemplate(7, GalleriaItem_ul_7_Template, 2, 1, "ul", 6);
-        ɵɵelementEnd();
-      }
-      if (rf & 2) {
-        ɵɵadvance(2);
-        ɵɵproperty("ngIf", ctx.showItemNavigators);
-        ɵɵadvance();
-        ɵɵstyleProp("width", "100%");
-        ɵɵproperty("id", ctx.id + "_item_" + ctx.activeIndex);
-        ɵɵattribute("aria-label", ctx.ariaSlideNumber(ctx.activeIndex + 1))("aria-roledescription", ctx.ariaSlideLabel());
-        ɵɵadvance();
-        ɵɵproperty("item", ctx.activeItem)("templates", ctx.templates);
-        ɵɵadvance();
-        ɵɵproperty("ngIf", ctx.showItemNavigators);
-        ɵɵadvance();
-        ɵɵproperty("ngIf", ctx.captionFacet);
-        ɵɵadvance();
-        ɵɵproperty("ngIf", ctx.showIndicators);
-      }
-    },
-    dependencies: () => [NgClass, NgForOf, NgIf, NgTemplateOutlet, Ripple, ChevronRightIcon, ChevronLeftIcon, GalleriaItemSlot],
-    encapsulation: 2,
-    changeDetection: 0
-  });
 };
+__publicField(_GalleriaItem, "ɵfac", function GalleriaItem_Factory(__ngFactoryType__) {
+  return new (__ngFactoryType__ || _GalleriaItem)(ɵɵdirectiveInject(Galleria));
+});
+__publicField(_GalleriaItem, "ɵcmp", ɵɵdefineComponent({
+  type: _GalleriaItem,
+  selectors: [["p-galleriaItem"]],
+  inputs: {
+    id: "id",
+    circular: [2, "circular", "circular", booleanAttribute],
+    value: "value",
+    showItemNavigators: [2, "showItemNavigators", "showItemNavigators", booleanAttribute],
+    showIndicators: [2, "showIndicators", "showIndicators", booleanAttribute],
+    slideShowActive: [2, "slideShowActive", "slideShowActive", booleanAttribute],
+    changeItemOnIndicatorHover: [2, "changeItemOnIndicatorHover", "changeItemOnIndicatorHover", booleanAttribute],
+    autoPlay: [2, "autoPlay", "autoPlay", booleanAttribute],
+    templates: "templates",
+    indicatorFacet: "indicatorFacet",
+    captionFacet: "captionFacet",
+    activeIndex: "activeIndex"
+  },
+  outputs: {
+    startSlideShow: "startSlideShow",
+    stopSlideShow: "stopSlideShow",
+    onActiveIndexChange: "onActiveIndexChange"
+  },
+  features: [ɵɵInputTransformsFeature, ɵɵNgOnChangesFeature],
+  decls: 8,
+  vars: 11,
+  consts: [[1, "p-galleria-item-wrapper"], [1, "p-galleria-item-container"], ["type", "button", "pRipple", "", 3, "ngClass", "disabled", "click", "focus", "blur", 4, "ngIf"], ["role", "group", 3, "id"], ["type", "item", 1, "p-galleria-item", 3, "item", "templates"], ["class", "p-galleria-caption", 4, "ngIf"], ["class", "p-galleria-indicators p-reset", 4, "ngIf"], ["type", "button", "pRipple", "", 3, "click", "focus", "blur", "ngClass", "disabled"], [3, "styleClass", 4, "ngIf"], [4, "ngTemplateOutlet"], [3, "styleClass"], [1, "p-galleria-caption"], ["type", "caption", 3, "item", "templates"], [1, "p-galleria-indicators", "p-reset"], ["tabindex", "0", 3, "ngClass", "click", "mouseenter", "keydown", 4, "ngFor", "ngForOf"], ["tabindex", "0", 3, "click", "mouseenter", "keydown", "ngClass"], ["type", "button", "tabIndex", "-1", "class", "p-link", 4, "ngIf"], ["type", "indicator", 3, "index", "templates"], ["type", "button", "tabIndex", "-1", 1, "p-link"]],
+  template: function GalleriaItem_Template(rf, ctx) {
+    if (rf & 1) {
+      ɵɵelementStart(0, "div", 0)(1, "div", 1);
+      ɵɵtemplate(2, GalleriaItem_button_2_Template, 3, 8, "button", 2);
+      ɵɵelementStart(3, "div", 3);
+      ɵɵelement(4, "p-galleriaItemSlot", 4);
+      ɵɵelementEnd();
+      ɵɵtemplate(5, GalleriaItem_button_5_Template, 3, 8, "button", 2)(6, GalleriaItem_div_6_Template, 2, 2, "div", 5);
+      ɵɵelementEnd();
+      ɵɵtemplate(7, GalleriaItem_ul_7_Template, 2, 1, "ul", 6);
+      ɵɵelementEnd();
+    }
+    if (rf & 2) {
+      ɵɵadvance(2);
+      ɵɵproperty("ngIf", ctx.showItemNavigators);
+      ɵɵadvance();
+      ɵɵstyleProp("width", "100%");
+      ɵɵproperty("id", ctx.id + "_item_" + ctx.activeIndex);
+      ɵɵattribute("aria-label", ctx.ariaSlideNumber(ctx.activeIndex + 1))("aria-roledescription", ctx.ariaSlideLabel());
+      ɵɵadvance();
+      ɵɵproperty("item", ctx.activeItem)("templates", ctx.templates);
+      ɵɵadvance();
+      ɵɵproperty("ngIf", ctx.showItemNavigators);
+      ɵɵadvance();
+      ɵɵproperty("ngIf", ctx.captionFacet);
+      ɵɵadvance();
+      ɵɵproperty("ngIf", ctx.showIndicators);
+    }
+  },
+  dependencies: () => [NgClass, NgForOf, NgIf, NgTemplateOutlet, Ripple, ChevronRightIcon, ChevronLeftIcon, GalleriaItemSlot],
+  encapsulation: 2,
+  changeDetection: 0
+}));
+var GalleriaItem = _GalleriaItem;
 (() => {
   (typeof ngDevMode === "undefined" || ngDevMode) && setClassMetadata(GalleriaItem, [{
     type: Component,
     args: [{
       selector: "p-galleriaItem",
-      template: `
-        <div class="p-galleria-item-wrapper">
-            <div class="p-galleria-item-container">
-                <button
-                    *ngIf="showItemNavigators"
-                    type="button"
-                    [ngClass]="{ 'p-galleria-item-prev p-galleria-item-nav p-link': true, 'p-galleria-item-nav-focused': leftButtonFocused, 'p-disabled': this.isNavBackwardDisabled() }"
-                    (click)="navBackward($event)"
-                    [disabled]="isNavBackwardDisabled()"
-                    pRipple
-                    (focus)="onButtonFocus('left')"
-                    (blur)="onButtonBlur('left')"
-                    [attr.aria-label]="ariaPreviousNavigationLabel()"
-                >
-                    <ChevronLeftIcon *ngIf="!galleria.itemPreviousIconTemplate" [styleClass]="'p-galleria-item-prev-icon'" />
-                    <ng-template *ngTemplateOutlet="galleria.itemPreviousIconTemplate"></ng-template>
-                </button>
-                <div [id]="id + '_item_' + activeIndex" role="group" [attr.aria-label]="ariaSlideNumber(activeIndex + 1)" [attr.aria-roledescription]="ariaSlideLabel()" [style.width]="'100%'">
-                    <p-galleriaItemSlot type="item" [item]="activeItem" [templates]="templates" class="p-galleria-item"></p-galleriaItemSlot>
-                </div>
-                <button
-                    *ngIf="showItemNavigators"
-                    type="button"
-                    [ngClass]="{ 'p-galleria-item-next p-galleria-item-nav p-link': true, 'p-galleria-item-nav-focused': rightButtonFocused, 'p-disabled': this.isNavForwardDisabled() }"
-                    (click)="navForward($event)"
-                    [disabled]="isNavForwardDisabled()"
-                    pRipple
-                    (focus)="onButtonFocus('right')"
-                    (blur)="onButtonBlur('right')"
-                    [attr.aria-label]="ariaNextNavigationLabel()"
-                >
-                    <ChevronRightIcon *ngIf="!galleria.itemNextIconTemplate" [styleClass]="'p-galleria-item-next-icon'" />
-                    <ng-template *ngTemplateOutlet="galleria.itemNextIconTemplate"></ng-template>
-                </button>
-                <div class="p-galleria-caption" *ngIf="captionFacet">
-                    <p-galleriaItemSlot type="caption" [item]="activeItem" [templates]="templates"></p-galleriaItemSlot>
-                </div>
-            </div>
-            <ul *ngIf="showIndicators" class="p-galleria-indicators p-reset">
-                <li
-                    *ngFor="let item of value; let index = index"
-                    tabindex="0"
-                    (click)="onIndicatorClick(index)"
-                    (mouseenter)="onIndicatorMouseEnter(index)"
-                    (keydown)="onIndicatorKeyDown($event, index)"
-                    [ngClass]="{ 'p-galleria-indicator': true, 'p-highlight': isIndicatorItemActive(index) }"
-                    [attr.aria-label]="ariaPageLabel(index + 1)"
-                    [attr.aria-selected]="activeIndex === index"
-                    [attr.aria-controls]="id + '_item_' + index"
-                >
-                    <button type="button" tabIndex="-1" class="p-link" *ngIf="!indicatorFacet"></button>
-                    <p-galleriaItemSlot type="indicator" [index]="index" [templates]="templates"></p-galleriaItemSlot>
-                </li>
-            </ul>
-        </div>
-    `,
+      template: '\n        <div class="p-galleria-item-wrapper">\n            <div class="p-galleria-item-container">\n                <button\n                    *ngIf="showItemNavigators"\n                    type="button"\n                    [ngClass]="{ \'p-galleria-item-prev p-galleria-item-nav p-link\': true, \'p-galleria-item-nav-focused\': leftButtonFocused, \'p-disabled\': this.isNavBackwardDisabled() }"\n                    (click)="navBackward($event)"\n                    [disabled]="isNavBackwardDisabled()"\n                    pRipple\n                    (focus)="onButtonFocus(\'left\')"\n                    (blur)="onButtonBlur(\'left\')"\n                    [attr.aria-label]="ariaPreviousNavigationLabel()"\n                >\n                    <ChevronLeftIcon *ngIf="!galleria.itemPreviousIconTemplate" [styleClass]="\'p-galleria-item-prev-icon\'" />\n                    <ng-template *ngTemplateOutlet="galleria.itemPreviousIconTemplate"></ng-template>\n                </button>\n                <div [id]="id + \'_item_\' + activeIndex" role="group" [attr.aria-label]="ariaSlideNumber(activeIndex + 1)" [attr.aria-roledescription]="ariaSlideLabel()" [style.width]="\'100%\'">\n                    <p-galleriaItemSlot type="item" [item]="activeItem" [templates]="templates" class="p-galleria-item"></p-galleriaItemSlot>\n                </div>\n                <button\n                    *ngIf="showItemNavigators"\n                    type="button"\n                    [ngClass]="{ \'p-galleria-item-next p-galleria-item-nav p-link\': true, \'p-galleria-item-nav-focused\': rightButtonFocused, \'p-disabled\': this.isNavForwardDisabled() }"\n                    (click)="navForward($event)"\n                    [disabled]="isNavForwardDisabled()"\n                    pRipple\n                    (focus)="onButtonFocus(\'right\')"\n                    (blur)="onButtonBlur(\'right\')"\n                    [attr.aria-label]="ariaNextNavigationLabel()"\n                >\n                    <ChevronRightIcon *ngIf="!galleria.itemNextIconTemplate" [styleClass]="\'p-galleria-item-next-icon\'" />\n                    <ng-template *ngTemplateOutlet="galleria.itemNextIconTemplate"></ng-template>\n                </button>\n                <div class="p-galleria-caption" *ngIf="captionFacet">\n                    <p-galleriaItemSlot type="caption" [item]="activeItem" [templates]="templates"></p-galleriaItemSlot>\n                </div>\n            </div>\n            <ul *ngIf="showIndicators" class="p-galleria-indicators p-reset">\n                <li\n                    *ngFor="let item of value; let index = index"\n                    tabindex="0"\n                    (click)="onIndicatorClick(index)"\n                    (mouseenter)="onIndicatorMouseEnter(index)"\n                    (keydown)="onIndicatorKeyDown($event, index)"\n                    [ngClass]="{ \'p-galleria-indicator\': true, \'p-highlight\': isIndicatorItemActive(index) }"\n                    [attr.aria-label]="ariaPageLabel(index + 1)"\n                    [attr.aria-selected]="activeIndex === index"\n                    [attr.aria-controls]="id + \'_item_\' + index"\n                >\n                    <button type="button" tabIndex="-1" class="p-link" *ngIf="!indicatorFacet"></button>\n                    <p-galleriaItemSlot type="indicator" [index]="index" [templates]="templates"></p-galleriaItemSlot>\n                </li>\n            </ul>\n        </div>\n    ',
       changeDetection: ChangeDetectionStrategy.OnPush
     }]
   }], () => [{
@@ -1959,24 +1821,43 @@ var GalleriaItem = class _GalleriaItem {
     }]
   });
 })();
-var GalleriaThumbnails = class _GalleriaThumbnails {
-  galleria;
-  document;
-  platformId;
-  renderer;
-  cd;
-  containerId;
-  value;
-  isVertical = false;
-  slideShowActive = false;
-  circular = false;
-  responsiveOptions;
-  contentHeight = "300px";
-  showThumbnailNavigators = true;
-  templates;
-  onActiveIndexChange = new EventEmitter();
-  stopSlideShow = new EventEmitter();
-  itemsContainer;
+var _GalleriaThumbnails = class _GalleriaThumbnails {
+  constructor(galleria, document2, platformId, renderer, cd) {
+    __publicField(this, "galleria");
+    __publicField(this, "document");
+    __publicField(this, "platformId");
+    __publicField(this, "renderer");
+    __publicField(this, "cd");
+    __publicField(this, "containerId");
+    __publicField(this, "value");
+    __publicField(this, "isVertical", false);
+    __publicField(this, "slideShowActive", false);
+    __publicField(this, "circular", false);
+    __publicField(this, "responsiveOptions");
+    __publicField(this, "contentHeight", "300px");
+    __publicField(this, "showThumbnailNavigators", true);
+    __publicField(this, "templates");
+    __publicField(this, "onActiveIndexChange", new EventEmitter());
+    __publicField(this, "stopSlideShow", new EventEmitter());
+    __publicField(this, "itemsContainer");
+    __publicField(this, "index");
+    __publicField(this, "startPos", null);
+    __publicField(this, "thumbnailsStyle", null);
+    __publicField(this, "sortedResponsiveOptions", null);
+    __publicField(this, "totalShiftedItems", 0);
+    __publicField(this, "page", 0);
+    __publicField(this, "documentResizeListener");
+    __publicField(this, "_numVisible", 0);
+    __publicField(this, "d_numVisible", 0);
+    __publicField(this, "_oldNumVisible", 0);
+    __publicField(this, "_activeIndex", 0);
+    __publicField(this, "_oldactiveIndex", 0);
+    this.galleria = galleria;
+    this.document = document2;
+    this.platformId = platformId;
+    this.renderer = renderer;
+    this.cd = cd;
+  }
   get numVisible() {
     return this._numVisible;
   }
@@ -1991,25 +1872,6 @@ var GalleriaThumbnails = class _GalleriaThumbnails {
   set activeIndex(activeIndex) {
     this._oldactiveIndex = this._activeIndex;
     this._activeIndex = activeIndex;
-  }
-  index;
-  startPos = null;
-  thumbnailsStyle = null;
-  sortedResponsiveOptions = null;
-  totalShiftedItems = 0;
-  page = 0;
-  documentResizeListener;
-  _numVisible = 0;
-  d_numVisible = 0;
-  _oldNumVisible = 0;
-  _activeIndex = 0;
-  _oldactiveIndex = 0;
-  constructor(galleria, document2, platformId, renderer, cd) {
-    this.galleria = galleria;
-    this.document = document2;
-    this.platformId = platformId;
-    this.renderer = renderer;
-    this.cd = cd;
   }
   ngOnInit() {
     if (isPlatformBrowser(this.platformId)) {
@@ -2035,7 +1897,7 @@ var GalleriaThumbnails = class _GalleriaThumbnails {
         this.totalShiftedItems = totalShiftedItems;
       }
       if (this.itemsContainer && this.itemsContainer.nativeElement) {
-        this.itemsContainer.nativeElement.style.transform = this.isVertical ? `translate3d(0, ${totalShiftedItems * (100 / this.d_numVisible)}%, 0)` : `translate3d(${totalShiftedItems * (100 / this.d_numVisible)}%, 0, 0)`;
+        this.itemsContainer.nativeElement.style.transform = this.isVertical ? "translate3d(0, ".concat(totalShiftedItems * (100 / this.d_numVisible), "%, 0)") : "translate3d(".concat(totalShiftedItems * (100 / this.d_numVisible), "%, 0, 0)");
       }
       if (this._oldactiveIndex !== this._activeIndex) {
         DomHandler.removeClass(this.itemsContainer.nativeElement, "p-items-hidden");
@@ -2051,15 +1913,12 @@ var GalleriaThumbnails = class _GalleriaThumbnails {
     }
   }
   createStyle() {
+    var _a, _b;
     if (!this.thumbnailsStyle) {
       this.thumbnailsStyle = this.document.createElement("style");
       this.document.body.appendChild(this.thumbnailsStyle);
     }
-    let innerHTML = `
-            #${this.containerId} .p-galleria-thumbnail-item {
-                flex: 1 0 ${100 / this.d_numVisible}%
-            }
-        `;
+    let innerHTML = "\n            #".concat(this.containerId, " .p-galleria-thumbnail-item {\n                flex: 1 0 ").concat(100 / this.d_numVisible, "%\n            }\n        ");
     if (this.responsiveOptions) {
       this.sortedResponsiveOptions = [...this.responsiveOptions];
       this.sortedResponsiveOptions.sort((data1, data2) => {
@@ -2077,17 +1936,11 @@ var GalleriaThumbnails = class _GalleriaThumbnails {
       });
       for (let i = 0; i < this.sortedResponsiveOptions.length; i++) {
         let res = this.sortedResponsiveOptions[i];
-        innerHTML += `
-                    @media screen and (max-width: ${res.breakpoint}) {
-                        #${this.containerId} .p-galleria-thumbnail-item {
-                            flex: 1 0 ${100 / res.numVisible}%
-                        }
-                    }
-                `;
+        innerHTML += "\n                    @media screen and (max-width: ".concat(res.breakpoint, ") {\n                        #").concat(this.containerId, " .p-galleria-thumbnail-item {\n                            flex: 1 0 ").concat(100 / res.numVisible, "%\n                        }\n                    }\n                ");
       }
     }
     this.thumbnailsStyle.innerHTML = innerHTML;
-    DomHandler.setAttribute(this.thumbnailsStyle, "nonce", this.galleria.config?.csp()?.nonce);
+    DomHandler.setAttribute(this.thumbnailsStyle, "nonce", (_b = (_a = this.galleria.config) == null ? void 0 : _a.csp()) == null ? void 0 : _b.nonce);
   }
   calculatePosition() {
     if (isPlatformBrowser(this.platformId)) {
@@ -2242,7 +2095,7 @@ var GalleriaThumbnails = class _GalleriaThumbnails {
     }
     if (this.itemsContainer) {
       DomHandler.removeClass(this.itemsContainer.nativeElement, "p-items-hidden");
-      this.itemsContainer.nativeElement.style.transform = this.isVertical ? `translate3d(0, ${totalShiftedItems * (100 / this.d_numVisible)}%, 0)` : `translate3d(${totalShiftedItems * (100 / this.d_numVisible)}%, 0, 0)`;
+      this.itemsContainer.nativeElement.style.transform = this.isVertical ? "translate3d(0, ".concat(totalShiftedItems * (100 / this.d_numVisible), "%, 0)") : "translate3d(".concat(totalShiftedItems * (100 / this.d_numVisible), "%, 0, 0)");
       this.itemsContainer.nativeElement.style.transition = "transform 500ms ease 0s";
     }
     this.totalShiftedItems = totalShiftedItems;
@@ -2322,11 +2175,12 @@ var GalleriaThumbnails = class _GalleriaThumbnails {
     }
   }
   ngOnDestroy() {
+    var _a;
     if (this.responsiveOptions) {
       this.unbindDocumentListeners();
     }
     if (this.thumbnailsStyle) {
-      this.thumbnailsStyle.parentNode?.removeChild(this.thumbnailsStyle);
+      (_a = this.thumbnailsStyle.parentNode) == null ? void 0 : _a.removeChild(this.thumbnailsStyle);
     }
   }
   ariaPrevButtonLabel() {
@@ -2338,151 +2192,86 @@ var GalleriaThumbnails = class _GalleriaThumbnails {
   ariaPageLabel(value) {
     return this.galleria.config.translation.aria ? this.galleria.config.translation.aria.pageLabel.replace(/{page}/g, value) : void 0;
   }
-  static ɵfac = function GalleriaThumbnails_Factory(__ngFactoryType__) {
-    return new (__ngFactoryType__ || _GalleriaThumbnails)(ɵɵdirectiveInject(Galleria), ɵɵdirectiveInject(DOCUMENT), ɵɵdirectiveInject(PLATFORM_ID), ɵɵdirectiveInject(Renderer2), ɵɵdirectiveInject(ChangeDetectorRef));
-  };
-  static ɵcmp = ɵɵdefineComponent({
-    type: _GalleriaThumbnails,
-    selectors: [["p-galleriaThumbnails"]],
-    viewQuery: function GalleriaThumbnails_Query(rf, ctx) {
-      if (rf & 1) {
-        ɵɵviewQuery(_c11, 5);
-      }
-      if (rf & 2) {
-        let _t;
-        ɵɵqueryRefresh(_t = ɵɵloadQuery()) && (ctx.itemsContainer = _t.first);
-      }
-    },
-    inputs: {
-      containerId: "containerId",
-      value: "value",
-      isVertical: [2, "isVertical", "isVertical", booleanAttribute],
-      slideShowActive: [2, "slideShowActive", "slideShowActive", booleanAttribute],
-      circular: [2, "circular", "circular", booleanAttribute],
-      responsiveOptions: "responsiveOptions",
-      contentHeight: "contentHeight",
-      showThumbnailNavigators: "showThumbnailNavigators",
-      templates: "templates",
-      numVisible: "numVisible",
-      activeIndex: "activeIndex"
-    },
-    outputs: {
-      onActiveIndexChange: "onActiveIndexChange",
-      stopSlideShow: "stopSlideShow"
-    },
-    features: [ɵɵInputTransformsFeature],
-    decls: 8,
-    vars: 6,
-    consts: [["itemsContainer", ""], [1, "p-galleria-thumbnail-wrapper"], [1, "p-galleria-thumbnail-container"], ["type", "button", "pRipple", "", 3, "ngClass", "disabled", "click", 4, "ngIf"], [1, "p-galleria-thumbnail-items-container", 3, "ngStyle"], ["role", "tablist", 1, "p-galleria-thumbnail-items", 3, "transitionend", "touchstart", "touchmove"], [3, "ngClass", "keydown", 4, "ngFor", "ngForOf"], ["type", "button", "pRipple", "", 3, "click", "ngClass", "disabled"], [4, "ngIf"], [4, "ngTemplateOutlet"], [3, "styleClass", 4, "ngIf"], [3, "styleClass"], [3, "keydown", "ngClass"], [1, "p-galleria-thumbnail-item-content", 3, "click", "touchend", "keydown.enter"], ["type", "thumbnail", 3, "item", "templates"], [3, "ngClass", 4, "ngIf"], [3, "ngClass"]],
-    template: function GalleriaThumbnails_Template(rf, ctx) {
-      if (rf & 1) {
-        const _r1 = ɵɵgetCurrentView();
-        ɵɵelementStart(0, "div", 1)(1, "div", 2);
-        ɵɵtemplate(2, GalleriaThumbnails_button_2_Template, 3, 7, "button", 3);
-        ɵɵelementStart(3, "div", 4)(4, "div", 5, 0);
-        ɵɵlistener("transitionend", function GalleriaThumbnails_Template_div_transitionend_4_listener() {
-          ɵɵrestoreView(_r1);
-          return ɵɵresetView(ctx.onTransitionEnd());
-        })("touchstart", function GalleriaThumbnails_Template_div_touchstart_4_listener($event) {
-          ɵɵrestoreView(_r1);
-          return ɵɵresetView(ctx.onTouchStart($event));
-        })("touchmove", function GalleriaThumbnails_Template_div_touchmove_4_listener($event) {
-          ɵɵrestoreView(_r1);
-          return ɵɵresetView(ctx.onTouchMove($event));
-        });
-        ɵɵtemplate(6, GalleriaThumbnails_div_6_Template, 3, 15, "div", 6);
-        ɵɵelementEnd()();
-        ɵɵtemplate(7, GalleriaThumbnails_button_7_Template, 3, 7, "button", 3);
-        ɵɵelementEnd()();
-      }
-      if (rf & 2) {
-        ɵɵadvance(2);
-        ɵɵproperty("ngIf", ctx.showThumbnailNavigators);
-        ɵɵadvance();
-        ɵɵproperty("ngStyle", ɵɵpureFunction1(4, _c12, ctx.isVertical ? ctx.contentHeight : ""));
-        ɵɵadvance(3);
-        ɵɵproperty("ngForOf", ctx.value);
-        ɵɵadvance();
-        ɵɵproperty("ngIf", ctx.showThumbnailNavigators);
-      }
-    },
-    dependencies: () => [NgClass, NgForOf, NgIf, NgTemplateOutlet, NgStyle, Ripple, ChevronRightIcon, ChevronLeftIcon, GalleriaItemSlot],
-    encapsulation: 2,
-    changeDetection: 0
-  });
 };
+__publicField(_GalleriaThumbnails, "ɵfac", function GalleriaThumbnails_Factory(__ngFactoryType__) {
+  return new (__ngFactoryType__ || _GalleriaThumbnails)(ɵɵdirectiveInject(Galleria), ɵɵdirectiveInject(DOCUMENT), ɵɵdirectiveInject(PLATFORM_ID), ɵɵdirectiveInject(Renderer2), ɵɵdirectiveInject(ChangeDetectorRef));
+});
+__publicField(_GalleriaThumbnails, "ɵcmp", ɵɵdefineComponent({
+  type: _GalleriaThumbnails,
+  selectors: [["p-galleriaThumbnails"]],
+  viewQuery: function GalleriaThumbnails_Query(rf, ctx) {
+    if (rf & 1) {
+      ɵɵviewQuery(_c11, 5);
+    }
+    if (rf & 2) {
+      let _t;
+      ɵɵqueryRefresh(_t = ɵɵloadQuery()) && (ctx.itemsContainer = _t.first);
+    }
+  },
+  inputs: {
+    containerId: "containerId",
+    value: "value",
+    isVertical: [2, "isVertical", "isVertical", booleanAttribute],
+    slideShowActive: [2, "slideShowActive", "slideShowActive", booleanAttribute],
+    circular: [2, "circular", "circular", booleanAttribute],
+    responsiveOptions: "responsiveOptions",
+    contentHeight: "contentHeight",
+    showThumbnailNavigators: "showThumbnailNavigators",
+    templates: "templates",
+    numVisible: "numVisible",
+    activeIndex: "activeIndex"
+  },
+  outputs: {
+    onActiveIndexChange: "onActiveIndexChange",
+    stopSlideShow: "stopSlideShow"
+  },
+  features: [ɵɵInputTransformsFeature],
+  decls: 8,
+  vars: 6,
+  consts: [["itemsContainer", ""], [1, "p-galleria-thumbnail-wrapper"], [1, "p-galleria-thumbnail-container"], ["type", "button", "pRipple", "", 3, "ngClass", "disabled", "click", 4, "ngIf"], [1, "p-galleria-thumbnail-items-container", 3, "ngStyle"], ["role", "tablist", 1, "p-galleria-thumbnail-items", 3, "transitionend", "touchstart", "touchmove"], [3, "ngClass", "keydown", 4, "ngFor", "ngForOf"], ["type", "button", "pRipple", "", 3, "click", "ngClass", "disabled"], [4, "ngIf"], [4, "ngTemplateOutlet"], [3, "styleClass", 4, "ngIf"], [3, "styleClass"], [3, "keydown", "ngClass"], [1, "p-galleria-thumbnail-item-content", 3, "click", "touchend", "keydown.enter"], ["type", "thumbnail", 3, "item", "templates"], [3, "ngClass", 4, "ngIf"], [3, "ngClass"]],
+  template: function GalleriaThumbnails_Template(rf, ctx) {
+    if (rf & 1) {
+      const _r1 = ɵɵgetCurrentView();
+      ɵɵelementStart(0, "div", 1)(1, "div", 2);
+      ɵɵtemplate(2, GalleriaThumbnails_button_2_Template, 3, 7, "button", 3);
+      ɵɵelementStart(3, "div", 4)(4, "div", 5, 0);
+      ɵɵlistener("transitionend", function GalleriaThumbnails_Template_div_transitionend_4_listener() {
+        ɵɵrestoreView(_r1);
+        return ɵɵresetView(ctx.onTransitionEnd());
+      })("touchstart", function GalleriaThumbnails_Template_div_touchstart_4_listener($event) {
+        ɵɵrestoreView(_r1);
+        return ɵɵresetView(ctx.onTouchStart($event));
+      })("touchmove", function GalleriaThumbnails_Template_div_touchmove_4_listener($event) {
+        ɵɵrestoreView(_r1);
+        return ɵɵresetView(ctx.onTouchMove($event));
+      });
+      ɵɵtemplate(6, GalleriaThumbnails_div_6_Template, 3, 15, "div", 6);
+      ɵɵelementEnd()();
+      ɵɵtemplate(7, GalleriaThumbnails_button_7_Template, 3, 7, "button", 3);
+      ɵɵelementEnd()();
+    }
+    if (rf & 2) {
+      ɵɵadvance(2);
+      ɵɵproperty("ngIf", ctx.showThumbnailNavigators);
+      ɵɵadvance();
+      ɵɵproperty("ngStyle", ɵɵpureFunction1(4, _c12, ctx.isVertical ? ctx.contentHeight : ""));
+      ɵɵadvance(3);
+      ɵɵproperty("ngForOf", ctx.value);
+      ɵɵadvance();
+      ɵɵproperty("ngIf", ctx.showThumbnailNavigators);
+    }
+  },
+  dependencies: () => [NgClass, NgForOf, NgIf, NgTemplateOutlet, NgStyle, Ripple, ChevronRightIcon, ChevronLeftIcon, GalleriaItemSlot],
+  encapsulation: 2,
+  changeDetection: 0
+}));
+var GalleriaThumbnails = _GalleriaThumbnails;
 (() => {
   (typeof ngDevMode === "undefined" || ngDevMode) && setClassMetadata(GalleriaThumbnails, [{
     type: Component,
     args: [{
       selector: "p-galleriaThumbnails",
-      template: `
-        <div class="p-galleria-thumbnail-wrapper">
-            <div class="p-galleria-thumbnail-container">
-                <button
-                    *ngIf="showThumbnailNavigators"
-                    type="button"
-                    [ngClass]="{ 'p-galleria-thumbnail-prev p-link': true, 'p-disabled': this.isNavBackwardDisabled() }"
-                    (click)="navBackward($event)"
-                    [disabled]="isNavBackwardDisabled()"
-                    pRipple
-                    [attr.aria-label]="ariaPrevButtonLabel()"
-                >
-                    <ng-container *ngIf="!galleria.previousThumbnailIconTemplate">
-                        <ChevronLeftIcon *ngIf="!isVertical" [styleClass]="'p-galleria-thumbnail-prev-icon'" />
-                        <ChevronUpIcon *ngIf="isVertical" [styleClass]="'p-galleria-thumbnail-prev-icon'" />
-                    </ng-container>
-                    <ng-template *ngTemplateOutlet="galleria.previousThumbnailIconTemplate"></ng-template>
-                </button>
-                <div class="p-galleria-thumbnail-items-container" [ngStyle]="{ height: isVertical ? contentHeight : '' }">
-                    <div #itemsContainer class="p-galleria-thumbnail-items" (transitionend)="onTransitionEnd()" (touchstart)="onTouchStart($event)" (touchmove)="onTouchMove($event)" role="tablist">
-                        <div
-                            *ngFor="let item of value; let index = index"
-                            [ngClass]="{
-                                'p-galleria-thumbnail-item': true,
-                                'p-galleria-thumbnail-item-current': activeIndex === index,
-                                'p-galleria-thumbnail-item-active': isItemActive(index),
-                                'p-galleria-thumbnail-item-start': firstItemAciveIndex() === index,
-                                'p-galleria-thumbnail-item-end': lastItemActiveIndex() === index
-                            }"
-                            [attr.aria-selected]="activeIndex === index"
-                            [attr.aria-controls]="containerId + '_item_' + index"
-                            [attr.data-pc-section]="'thumbnailitem'"
-                            [attr.data-p-active]="activeIndex === index"
-                            (keydown)="onThumbnailKeydown($event, index)"
-                        >
-                            <div
-                                class="p-galleria-thumbnail-item-content"
-                                [attr.tabindex]="activeIndex === index ? 0 : -1"
-                                [attr.aria-current]="activeIndex === index ? 'page' : undefined"
-                                [attr.aria-label]="ariaPageLabel(index + 1)"
-                                (click)="onItemClick(index)"
-                                (touchend)="onItemClick(index)"
-                                (keydown.enter)="onItemClick(index)"
-                            >
-                                <p-galleriaItemSlot type="thumbnail" [item]="item" [templates]="templates"></p-galleriaItemSlot>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <button
-                    *ngIf="showThumbnailNavigators"
-                    type="button"
-                    [ngClass]="{ 'p-galleria-thumbnail-next p-link': true, 'p-disabled': this.isNavForwardDisabled() }"
-                    (click)="navForward($event)"
-                    [disabled]="isNavForwardDisabled()"
-                    pRipple
-                    [attr.aria-label]="ariaNextButtonLabel()"
-                >
-                    <ng-container *ngIf="!galleria.nextThumbnailIconTemplate">
-                        <ChevronRightIcon *ngIf="!isVertical" [ngClass]="'p-galleria-thumbnail-next-icon'" />
-                        <ChevronDownIcon *ngIf="isVertical" [ngClass]="'p-galleria-thumbnail-next-icon'" />
-                    </ng-container>
-                    <ng-template *ngTemplateOutlet="galleria.nextThumbnailIconTemplate"></ng-template>
-                </button>
-            </div>
-        </div>
-    `,
+      template: '\n        <div class="p-galleria-thumbnail-wrapper">\n            <div class="p-galleria-thumbnail-container">\n                <button\n                    *ngIf="showThumbnailNavigators"\n                    type="button"\n                    [ngClass]="{ \'p-galleria-thumbnail-prev p-link\': true, \'p-disabled\': this.isNavBackwardDisabled() }"\n                    (click)="navBackward($event)"\n                    [disabled]="isNavBackwardDisabled()"\n                    pRipple\n                    [attr.aria-label]="ariaPrevButtonLabel()"\n                >\n                    <ng-container *ngIf="!galleria.previousThumbnailIconTemplate">\n                        <ChevronLeftIcon *ngIf="!isVertical" [styleClass]="\'p-galleria-thumbnail-prev-icon\'" />\n                        <ChevronUpIcon *ngIf="isVertical" [styleClass]="\'p-galleria-thumbnail-prev-icon\'" />\n                    </ng-container>\n                    <ng-template *ngTemplateOutlet="galleria.previousThumbnailIconTemplate"></ng-template>\n                </button>\n                <div class="p-galleria-thumbnail-items-container" [ngStyle]="{ height: isVertical ? contentHeight : \'\' }">\n                    <div #itemsContainer class="p-galleria-thumbnail-items" (transitionend)="onTransitionEnd()" (touchstart)="onTouchStart($event)" (touchmove)="onTouchMove($event)" role="tablist">\n                        <div\n                            *ngFor="let item of value; let index = index"\n                            [ngClass]="{\n                                \'p-galleria-thumbnail-item\': true,\n                                \'p-galleria-thumbnail-item-current\': activeIndex === index,\n                                \'p-galleria-thumbnail-item-active\': isItemActive(index),\n                                \'p-galleria-thumbnail-item-start\': firstItemAciveIndex() === index,\n                                \'p-galleria-thumbnail-item-end\': lastItemActiveIndex() === index\n                            }"\n                            [attr.aria-selected]="activeIndex === index"\n                            [attr.aria-controls]="containerId + \'_item_\' + index"\n                            [attr.data-pc-section]="\'thumbnailitem\'"\n                            [attr.data-p-active]="activeIndex === index"\n                            (keydown)="onThumbnailKeydown($event, index)"\n                        >\n                            <div\n                                class="p-galleria-thumbnail-item-content"\n                                [attr.tabindex]="activeIndex === index ? 0 : -1"\n                                [attr.aria-current]="activeIndex === index ? \'page\' : undefined"\n                                [attr.aria-label]="ariaPageLabel(index + 1)"\n                                (click)="onItemClick(index)"\n                                (touchend)="onItemClick(index)"\n                                (keydown.enter)="onItemClick(index)"\n                            >\n                                <p-galleriaItemSlot type="thumbnail" [item]="item" [templates]="templates"></p-galleriaItemSlot>\n                            </div>\n                        </div>\n                    </div>\n                </div>\n                <button\n                    *ngIf="showThumbnailNavigators"\n                    type="button"\n                    [ngClass]="{ \'p-galleria-thumbnail-next p-link\': true, \'p-disabled\': this.isNavForwardDisabled() }"\n                    (click)="navForward($event)"\n                    [disabled]="isNavForwardDisabled()"\n                    pRipple\n                    [attr.aria-label]="ariaNextButtonLabel()"\n                >\n                    <ng-container *ngIf="!galleria.nextThumbnailIconTemplate">\n                        <ChevronRightIcon *ngIf="!isVertical" [ngClass]="\'p-galleria-thumbnail-next-icon\'" />\n                        <ChevronDownIcon *ngIf="isVertical" [ngClass]="\'p-galleria-thumbnail-next-icon\'" />\n                    </ng-container>\n                    <ng-template *ngTemplateOutlet="galleria.nextThumbnailIconTemplate"></ng-template>\n                </button>\n            </div>\n        </div>\n    ',
       changeDetection: ChangeDetectionStrategy.OnPush
     }]
   }], () => [{
@@ -2558,20 +2347,21 @@ var GalleriaThumbnails = class _GalleriaThumbnails {
     }]
   });
 })();
-var GalleriaModule = class _GalleriaModule {
-  static ɵfac = function GalleriaModule_Factory(__ngFactoryType__) {
-    return new (__ngFactoryType__ || _GalleriaModule)();
-  };
-  static ɵmod = ɵɵdefineNgModule({
-    type: _GalleriaModule,
-    declarations: [Galleria, GalleriaContent, GalleriaItemSlot, GalleriaItem, GalleriaThumbnails],
-    imports: [CommonModule, SharedModule, RippleModule, TimesIcon, ChevronRightIcon, ChevronLeftIcon, WindowMaximizeIcon, WindowMinimizeIcon, FocusTrapModule],
-    exports: [CommonModule, Galleria, GalleriaContent, GalleriaItemSlot, GalleriaItem, GalleriaThumbnails, SharedModule]
-  });
-  static ɵinj = ɵɵdefineInjector({
-    imports: [CommonModule, SharedModule, RippleModule, TimesIcon, ChevronRightIcon, ChevronLeftIcon, WindowMaximizeIcon, WindowMinimizeIcon, FocusTrapModule, CommonModule, SharedModule]
-  });
+var _GalleriaModule = class _GalleriaModule {
 };
+__publicField(_GalleriaModule, "ɵfac", function GalleriaModule_Factory(__ngFactoryType__) {
+  return new (__ngFactoryType__ || _GalleriaModule)();
+});
+__publicField(_GalleriaModule, "ɵmod", ɵɵdefineNgModule({
+  type: _GalleriaModule,
+  declarations: [Galleria, GalleriaContent, GalleriaItemSlot, GalleriaItem, GalleriaThumbnails],
+  imports: [CommonModule, SharedModule, RippleModule, TimesIcon, ChevronRightIcon, ChevronLeftIcon, WindowMaximizeIcon, WindowMinimizeIcon, FocusTrapModule],
+  exports: [CommonModule, Galleria, GalleriaContent, GalleriaItemSlot, GalleriaItem, GalleriaThumbnails, SharedModule]
+}));
+__publicField(_GalleriaModule, "ɵinj", ɵɵdefineInjector({
+  imports: [CommonModule, SharedModule, RippleModule, TimesIcon, ChevronRightIcon, ChevronLeftIcon, WindowMaximizeIcon, WindowMinimizeIcon, FocusTrapModule, CommonModule, SharedModule]
+}));
+var GalleriaModule = _GalleriaModule;
 (() => {
   (typeof ngDevMode === "undefined" || ngDevMode) && setClassMetadata(GalleriaModule, [{
     type: NgModule,

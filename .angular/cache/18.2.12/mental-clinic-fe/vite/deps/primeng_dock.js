@@ -1,28 +1,28 @@
 import {
   Tooltip,
   TooltipModule
-} from "./chunk-STBFZVQ2.js";
-import {
-  Ripple,
-  RippleModule
-} from "./chunk-QN24C4B3.js";
+} from "./chunk-IC7NSP6U.js";
 import {
   RouterLink,
   RouterModule
-} from "./chunk-AQMTG6B6.js";
-import "./chunk-3E3YFUVD.js";
-import "./chunk-DO2TVYAE.js";
+} from "./chunk-JBMGT7BE.js";
+import {
+  Ripple,
+  RippleModule
+} from "./chunk-MUJBADSC.js";
 import {
   PrimeTemplate,
   SharedModule
-} from "./chunk-TQSVMJ6K.js";
+} from "./chunk-ZROJCIWL.js";
 import {
   ObjectUtils,
   UniqueComponentId
-} from "./chunk-3OF44R55.js";
+} from "./chunk-U3NLM53U.js";
+import "./chunk-MWP4G2UW.js";
+import "./chunk-RWZD3TDV.js";
 import {
   DomHandler
-} from "./chunk-BUGEQH7Q.js";
+} from "./chunk-LB42WWNC.js";
 import {
   CommonModule,
   NgClass,
@@ -30,7 +30,7 @@ import {
   NgIf,
   NgStyle,
   NgTemplateOutlet
-} from "./chunk-UBZYO7FG.js";
+} from "./chunk-KUZ63KOD.js";
 import {
   ChangeDetectionStrategy,
   ChangeDetectorRef,
@@ -71,11 +71,13 @@ import {
   ɵɵtemplate,
   ɵɵtemplateRefExtractor,
   ɵɵviewQuery
-} from "./chunk-ZI2Q76R4.js";
-import "./chunk-5OPE3T2R.js";
+} from "./chunk-R75KKECJ.js";
 import "./chunk-4N4GOYJH.js";
+import "./chunk-5OPE3T2R.js";
 import "./chunk-FHTVLBLO.js";
-import "./chunk-3OV72XIM.js";
+import {
+  __publicField
+} from "./chunk-IJZFAMY6.js";
 
 // node_modules/primeng/fesm2022/primeng-dock.mjs
 var _c0 = ["list"];
@@ -182,76 +184,77 @@ function Dock_li_4_Template(rf, ctx) {
     ɵɵproperty("ngIf", ctx_r3.isClickableRouterLink(item_r3))("ngIfElse", elseBlock_r7);
   }
 }
-var Dock = class _Dock {
-  el;
-  cd;
-  /**
-   * Current id state as a string.
-   * @group Props
-   */
-  id;
-  /**
-   * Inline style of the element.
-   * @group Props
-   */
-  style;
-  /**
-   * Class of the element.
-   * @group Props
-   */
-  styleClass;
-  /**
-   * MenuModel instance to define the action items.
-   * @group Props
-   */
-  model = null;
-  /**
-   * Position of element.
-   * @group Props
-   */
-  position = "bottom";
-  /**
-   * Defines a string that labels the input for accessibility.
-   * @group Props
-   */
-  ariaLabel;
-  /**
-   * Defines a string that labels the dropdown button for accessibility.
-   * @group Props
-   */
-  ariaLabelledBy;
-  /**
-   * Callback to execute when button is focused.
-   * @param {FocusEvent} event - Focus event.
-   * @group Emits
-   */
-  onFocus = new EventEmitter();
-  /**
-   * Callback to invoke when the component loses focus.
-   * @param {FocusEvent} event - Focus event.
-   * @group Emits
-   */
-  onBlur = new EventEmitter();
-  templates;
-  listViewChild;
-  itemTemplate;
-  currentIndex;
-  tabindex = 0;
-  focused = false;
-  focusedOptionIndex = -1;
-  get focusedOptionId() {
-    return this.focusedOptionIndex !== -1 ? this.focusedOptionIndex : null;
-  }
+var _Dock = class _Dock {
   constructor(el, cd) {
+    __publicField(this, "el");
+    __publicField(this, "cd");
+    /**
+     * Current id state as a string.
+     * @group Props
+     */
+    __publicField(this, "id");
+    /**
+     * Inline style of the element.
+     * @group Props
+     */
+    __publicField(this, "style");
+    /**
+     * Class of the element.
+     * @group Props
+     */
+    __publicField(this, "styleClass");
+    /**
+     * MenuModel instance to define the action items.
+     * @group Props
+     */
+    __publicField(this, "model", null);
+    /**
+     * Position of element.
+     * @group Props
+     */
+    __publicField(this, "position", "bottom");
+    /**
+     * Defines a string that labels the input for accessibility.
+     * @group Props
+     */
+    __publicField(this, "ariaLabel");
+    /**
+     * Defines a string that labels the dropdown button for accessibility.
+     * @group Props
+     */
+    __publicField(this, "ariaLabelledBy");
+    /**
+     * Callback to execute when button is focused.
+     * @param {FocusEvent} event - Focus event.
+     * @group Emits
+     */
+    __publicField(this, "onFocus", new EventEmitter());
+    /**
+     * Callback to invoke when the component loses focus.
+     * @param {FocusEvent} event - Focus event.
+     * @group Emits
+     */
+    __publicField(this, "onBlur", new EventEmitter());
+    __publicField(this, "templates");
+    __publicField(this, "listViewChild");
+    __publicField(this, "itemTemplate");
+    __publicField(this, "currentIndex");
+    __publicField(this, "tabindex", 0);
+    __publicField(this, "focused", false);
+    __publicField(this, "focusedOptionIndex", -1);
     this.el = el;
     this.cd = cd;
     this.currentIndex = -3;
+  }
+  get focusedOptionId() {
+    return this.focusedOptionIndex !== -1 ? this.focusedOptionIndex : null;
   }
   ngOnInit() {
     this.id = this.id || UniqueComponentId();
   }
   ngAfterContentInit() {
-    this.templates?.forEach((item) => {
+    var _a;
+    (_a = this.templates) == null ? void 0 : _a.forEach((item) => {
       switch (item.getType()) {
         case "item":
           this.itemTemplate = item.template;
@@ -263,7 +266,7 @@ var Dock = class _Dock {
     });
   }
   getItemId(item, index) {
-    return item && item?.id ? item.id : `${index}`;
+    return item && (item == null ? void 0 : item.id) ? item.id : "".concat(index);
   }
   getItemProp(processedItem, name) {
     return processedItem && processedItem.item ? ObjectUtils.getItemValue(processedItem.item[name]) : void 0;
@@ -359,7 +362,7 @@ var Dock = class _Dock {
     this.changeFocusedOptionIndex(DomHandler.find(this.listViewChild.nativeElement, 'li[data-pc-section="menuitem"][data-p-disabled="false"]').length - 1);
   }
   onSpaceKey() {
-    const element = DomHandler.findSingle(this.listViewChild.nativeElement, `li[id="${`${this.focusedOptionIndex}`}"]`);
+    const element = DomHandler.findSingle(this.listViewChild.nativeElement, 'li[id="'.concat("".concat(this.focusedOptionIndex), '"]'));
     const anchorElement = element && DomHandler.findSingle(element, '[data-pc-section="action"]');
     anchorElement ? anchorElement.click() : element && element.click();
   }
@@ -380,7 +383,7 @@ var Dock = class _Dock {
   }
   get containerClass() {
     return {
-      [`p-dock p-component  p-dock-${this.position}`]: true
+      ["p-dock p-component " + " p-dock-".concat(this.position)]: true
     };
   }
   isClickableRouterLink(item) {
@@ -397,166 +400,91 @@ var Dock = class _Dock {
       "p-focus": this.isItemActive(this.getItemId(item, index))
     };
   }
-  static ɵfac = function Dock_Factory(__ngFactoryType__) {
-    return new (__ngFactoryType__ || _Dock)(ɵɵdirectiveInject(ElementRef), ɵɵdirectiveInject(ChangeDetectorRef));
-  };
-  static ɵcmp = ɵɵdefineComponent({
-    type: _Dock,
-    selectors: [["p-dock"]],
-    contentQueries: function Dock_ContentQueries(rf, ctx, dirIndex) {
-      if (rf & 1) {
-        ɵɵcontentQuery(dirIndex, PrimeTemplate, 4);
-      }
-      if (rf & 2) {
-        let _t;
-        ɵɵqueryRefresh(_t = ɵɵloadQuery()) && (ctx.templates = _t);
-      }
-    },
-    viewQuery: function Dock_Query(rf, ctx) {
-      if (rf & 1) {
-        ɵɵviewQuery(_c0, 5);
-      }
-      if (rf & 2) {
-        let _t;
-        ɵɵqueryRefresh(_t = ɵɵloadQuery()) && (ctx.listViewChild = _t.first);
-      }
-    },
-    hostAttrs: [1, "p-element"],
-    inputs: {
-      id: "id",
-      style: "style",
-      styleClass: "styleClass",
-      model: "model",
-      position: "position",
-      ariaLabel: "ariaLabel",
-      ariaLabelledBy: "ariaLabelledBy"
-    },
-    outputs: {
-      onFocus: "onFocus",
-      onBlur: "onBlur"
-    },
-    decls: 5,
-    vars: 13,
-    consts: [["list", ""], ["elseBlock", ""], [3, "ngClass", "ngStyle"], [1, "p-dock-list-container"], ["role", "menu", 1, "p-dock-list", 3, "focus", "blur", "keydown", "mouseleave", "tabindex"], ["role", "menuitem", 3, "ngClass", "click", "mouseenter", 4, "ngFor", "ngForOf"], ["role", "menuitem", 3, "click", "mouseenter", "ngClass"], [1, "p-menuitem-content"], ["pRipple", "", "class", "p-dock-link", "pTooltip", "", 3, "routerLink", "queryParams", "ngClass", "routerLinkActiveOptions", "target", "tooltipOptions", "fragment", "queryParamsHandling", "preserveFragment", "skipLocationChange", "replaceUrl", "state", 4, "ngIf", "ngIfElse"], ["pRipple", "", "pTooltip", "", 1, "p-dock-link", 3, "routerLink", "queryParams", "ngClass", "routerLinkActiveOptions", "target", "tooltipOptions", "fragment", "queryParamsHandling", "preserveFragment", "skipLocationChange", "replaceUrl", "state"], ["class", "p-dock-action-icon", 3, "ngClass", "ngStyle", 4, "ngIf"], [4, "ngTemplateOutlet", "ngTemplateOutletContext"], [1, "p-dock-action-icon", 3, "ngClass", "ngStyle"], ["pRipple", "", "pTooltip", "", 1, "p-dock-link", 3, "tooltipPosition", "tooltipOptions", "ngClass", "target"]],
-    template: function Dock_Template(rf, ctx) {
-      if (rf & 1) {
-        const _r1 = ɵɵgetCurrentView();
-        ɵɵelementStart(0, "div", 2)(1, "div", 3)(2, "ul", 4, 0);
-        ɵɵlistener("focus", function Dock_Template_ul_focus_2_listener($event) {
-          ɵɵrestoreView(_r1);
-          return ɵɵresetView(ctx.onListFocus($event));
-        })("blur", function Dock_Template_ul_blur_2_listener($event) {
-          ɵɵrestoreView(_r1);
-          return ɵɵresetView(ctx.onListBlur($event));
-        })("keydown", function Dock_Template_ul_keydown_2_listener($event) {
-          ɵɵrestoreView(_r1);
-          return ɵɵresetView(ctx.onListKeyDown($event));
-        })("mouseleave", function Dock_Template_ul_mouseleave_2_listener() {
-          ɵɵrestoreView(_r1);
-          return ɵɵresetView(ctx.onListMouseLeave());
-        });
-        ɵɵtemplate(4, Dock_li_4_Template, 5, 10, "li", 5);
-        ɵɵelementEnd()()();
-      }
-      if (rf & 2) {
-        ɵɵclassMap(ctx.styleClass);
-        ɵɵproperty("ngClass", ctx.containerClass)("ngStyle", ctx.style);
-        ɵɵattribute("data-pc-name", "dock");
-        ɵɵadvance(2);
-        ɵɵproperty("tabindex", ctx.tabindex);
-        ɵɵattribute("id", ctx.id)("aria-orientation", ctx.position === "bottom" || ctx.position === "top" ? "horizontal" : "vertical")("aria-activedescendant", ctx.focused ? ctx.focusedOptionId : void 0)("aria-label", ctx.ariaLabel)("aria-labelledby", ctx.ariaLabelledBy)("data-pc-section", "menu");
-        ɵɵadvance(2);
-        ɵɵproperty("ngForOf", ctx.model);
-      }
-    },
-    dependencies: [NgClass, NgForOf, NgIf, NgTemplateOutlet, NgStyle, RouterLink, Ripple, Tooltip],
-    styles: ["@layer primeng{.p-dock{position:absolute;z-index:1;display:flex;justify-content:center;align-items:center;pointer-events:none}.p-dock-list-container{display:flex;pointer-events:auto}.p-dock-list{margin:0;padding:0;list-style:none;display:flex;align-items:center;justify-content:center}.p-dock-item{transition:all .2s cubic-bezier(.4,0,.2,1);will-change:transform}.p-dock-link{display:flex;flex-direction:column;align-items:center;justify-content:center;position:relative;overflow:hidden;cursor:default}.p-dock-item-second-prev,.p-dock-item-second-next{transform:scale(1.2)}.p-dock-item-prev,.p-dock-item-next{transform:scale(1.4)}.p-dock-item-current{transform:scale(1.6);z-index:1}.p-dock-top{left:0;top:0;width:100%}.p-dock-top .p-dock-item{transform-origin:center top}.p-dock-bottom{left:0;bottom:0;width:100%}.p-dock-bottom .p-dock-item{transform-origin:center bottom}.p-dock-right{right:0;top:0;height:100%}.p-dock-right .p-dock-item{transform-origin:center right}.p-dock-right .p-dock-list{flex-direction:column}.p-dock-left{left:0;top:0;height:100%}.p-dock-left .p-dock-item{transform-origin:center left}.p-dock-left .p-dock-list{flex-direction:column}}\n"],
-    encapsulation: 2,
-    changeDetection: 0
-  });
 };
+__publicField(_Dock, "ɵfac", function Dock_Factory(__ngFactoryType__) {
+  return new (__ngFactoryType__ || _Dock)(ɵɵdirectiveInject(ElementRef), ɵɵdirectiveInject(ChangeDetectorRef));
+});
+__publicField(_Dock, "ɵcmp", ɵɵdefineComponent({
+  type: _Dock,
+  selectors: [["p-dock"]],
+  contentQueries: function Dock_ContentQueries(rf, ctx, dirIndex) {
+    if (rf & 1) {
+      ɵɵcontentQuery(dirIndex, PrimeTemplate, 4);
+    }
+    if (rf & 2) {
+      let _t;
+      ɵɵqueryRefresh(_t = ɵɵloadQuery()) && (ctx.templates = _t);
+    }
+  },
+  viewQuery: function Dock_Query(rf, ctx) {
+    if (rf & 1) {
+      ɵɵviewQuery(_c0, 5);
+    }
+    if (rf & 2) {
+      let _t;
+      ɵɵqueryRefresh(_t = ɵɵloadQuery()) && (ctx.listViewChild = _t.first);
+    }
+  },
+  hostAttrs: [1, "p-element"],
+  inputs: {
+    id: "id",
+    style: "style",
+    styleClass: "styleClass",
+    model: "model",
+    position: "position",
+    ariaLabel: "ariaLabel",
+    ariaLabelledBy: "ariaLabelledBy"
+  },
+  outputs: {
+    onFocus: "onFocus",
+    onBlur: "onBlur"
+  },
+  decls: 5,
+  vars: 13,
+  consts: [["list", ""], ["elseBlock", ""], [3, "ngClass", "ngStyle"], [1, "p-dock-list-container"], ["role", "menu", 1, "p-dock-list", 3, "focus", "blur", "keydown", "mouseleave", "tabindex"], ["role", "menuitem", 3, "ngClass", "click", "mouseenter", 4, "ngFor", "ngForOf"], ["role", "menuitem", 3, "click", "mouseenter", "ngClass"], [1, "p-menuitem-content"], ["pRipple", "", "class", "p-dock-link", "pTooltip", "", 3, "routerLink", "queryParams", "ngClass", "routerLinkActiveOptions", "target", "tooltipOptions", "fragment", "queryParamsHandling", "preserveFragment", "skipLocationChange", "replaceUrl", "state", 4, "ngIf", "ngIfElse"], ["pRipple", "", "pTooltip", "", 1, "p-dock-link", 3, "routerLink", "queryParams", "ngClass", "routerLinkActiveOptions", "target", "tooltipOptions", "fragment", "queryParamsHandling", "preserveFragment", "skipLocationChange", "replaceUrl", "state"], ["class", "p-dock-action-icon", 3, "ngClass", "ngStyle", 4, "ngIf"], [4, "ngTemplateOutlet", "ngTemplateOutletContext"], [1, "p-dock-action-icon", 3, "ngClass", "ngStyle"], ["pRipple", "", "pTooltip", "", 1, "p-dock-link", 3, "tooltipPosition", "tooltipOptions", "ngClass", "target"]],
+  template: function Dock_Template(rf, ctx) {
+    if (rf & 1) {
+      const _r1 = ɵɵgetCurrentView();
+      ɵɵelementStart(0, "div", 2)(1, "div", 3)(2, "ul", 4, 0);
+      ɵɵlistener("focus", function Dock_Template_ul_focus_2_listener($event) {
+        ɵɵrestoreView(_r1);
+        return ɵɵresetView(ctx.onListFocus($event));
+      })("blur", function Dock_Template_ul_blur_2_listener($event) {
+        ɵɵrestoreView(_r1);
+        return ɵɵresetView(ctx.onListBlur($event));
+      })("keydown", function Dock_Template_ul_keydown_2_listener($event) {
+        ɵɵrestoreView(_r1);
+        return ɵɵresetView(ctx.onListKeyDown($event));
+      })("mouseleave", function Dock_Template_ul_mouseleave_2_listener() {
+        ɵɵrestoreView(_r1);
+        return ɵɵresetView(ctx.onListMouseLeave());
+      });
+      ɵɵtemplate(4, Dock_li_4_Template, 5, 10, "li", 5);
+      ɵɵelementEnd()()();
+    }
+    if (rf & 2) {
+      ɵɵclassMap(ctx.styleClass);
+      ɵɵproperty("ngClass", ctx.containerClass)("ngStyle", ctx.style);
+      ɵɵattribute("data-pc-name", "dock");
+      ɵɵadvance(2);
+      ɵɵproperty("tabindex", ctx.tabindex);
+      ɵɵattribute("id", ctx.id)("aria-orientation", ctx.position === "bottom" || ctx.position === "top" ? "horizontal" : "vertical")("aria-activedescendant", ctx.focused ? ctx.focusedOptionId : void 0)("aria-label", ctx.ariaLabel)("aria-labelledby", ctx.ariaLabelledBy)("data-pc-section", "menu");
+      ɵɵadvance(2);
+      ɵɵproperty("ngForOf", ctx.model);
+    }
+  },
+  dependencies: [NgClass, NgForOf, NgIf, NgTemplateOutlet, NgStyle, RouterLink, Ripple, Tooltip],
+  styles: ["@layer primeng{.p-dock{position:absolute;z-index:1;display:flex;justify-content:center;align-items:center;pointer-events:none}.p-dock-list-container{display:flex;pointer-events:auto}.p-dock-list{margin:0;padding:0;list-style:none;display:flex;align-items:center;justify-content:center}.p-dock-item{transition:all .2s cubic-bezier(.4,0,.2,1);will-change:transform}.p-dock-link{display:flex;flex-direction:column;align-items:center;justify-content:center;position:relative;overflow:hidden;cursor:default}.p-dock-item-second-prev,.p-dock-item-second-next{transform:scale(1.2)}.p-dock-item-prev,.p-dock-item-next{transform:scale(1.4)}.p-dock-item-current{transform:scale(1.6);z-index:1}.p-dock-top{left:0;top:0;width:100%}.p-dock-top .p-dock-item{transform-origin:center top}.p-dock-bottom{left:0;bottom:0;width:100%}.p-dock-bottom .p-dock-item{transform-origin:center bottom}.p-dock-right{right:0;top:0;height:100%}.p-dock-right .p-dock-item{transform-origin:center right}.p-dock-right .p-dock-list{flex-direction:column}.p-dock-left{left:0;top:0;height:100%}.p-dock-left .p-dock-item{transform-origin:center left}.p-dock-left .p-dock-list{flex-direction:column}}\n"],
+  encapsulation: 2,
+  changeDetection: 0
+}));
+var Dock = _Dock;
 (() => {
   (typeof ngDevMode === "undefined" || ngDevMode) && setClassMetadata(Dock, [{
     type: Component,
     args: [{
       selector: "p-dock",
-      template: `
-        <div [ngClass]="containerClass" [ngStyle]="style" [class]="styleClass" [attr.data-pc-name]="'dock'">
-            <div class="p-dock-list-container">
-                <ul
-                    #list
-                    [attr.id]="id"
-                    class="p-dock-list"
-                    role="menu"
-                    [attr.aria-orientation]="position === 'bottom' || position === 'top' ? 'horizontal' : 'vertical'"
-                    [attr.aria-activedescendant]="focused ? focusedOptionId : undefined"
-                    [tabindex]="tabindex"
-                    [attr.aria-label]="ariaLabel"
-                    [attr.aria-labelledby]="ariaLabelledBy"
-                    [attr.data-pc-section]="'menu'"
-                    (focus)="onListFocus($event)"
-                    (blur)="onListBlur($event)"
-                    (keydown)="onListKeyDown($event)"
-                    (mouseleave)="onListMouseLeave()"
-                >
-                    <li
-                        *ngFor="let item of model; let i = index"
-                        [attr.id]="getItemId(item, i)"
-                        [ngClass]="itemClass(item, i)"
-                        role="menuitem"
-                        [attr.aria-label]="item.label"
-                        [attr.aria-disabled]="disabled(item)"
-                        (click)="onItemClick($event, item)"
-                        (mouseenter)="onItemMouseEnter(i)"
-                        [attr.data-pc-section]="'menuitem'"
-                        [attr.data-p-focused]="isItemActive(getItemId(item, i))"
-                        [attr.data-p-disabled]="disabled(item) || false"
-                    >
-                        <div class="p-menuitem-content" [attr.data-pc-section]="'content'">
-                            <a
-                                *ngIf="isClickableRouterLink(item); else elseBlock"
-                                pRipple
-                                [routerLink]="item.routerLink"
-                                [queryParams]="item.queryParams"
-                                [ngClass]="{ 'p-disabled': item.disabled }"
-                                class="p-dock-link"
-                                [routerLinkActiveOptions]="item.routerLinkActiveOptions || { exact: false }"
-                                [target]="item.target"
-                                [attr.tabindex]="item.disabled || readonly ? null : item.tabindex ? item.tabindex : '-1'"
-                                pTooltip
-                                [tooltipOptions]="item.tooltipOptions"
-                                [fragment]="item.fragment"
-                                [queryParamsHandling]="item.queryParamsHandling"
-                                [preserveFragment]="item.preserveFragment"
-                                [skipLocationChange]="item.skipLocationChange"
-                                [replaceUrl]="item.replaceUrl"
-                                [state]="item.state"
-                            >
-                                <span class="p-dock-action-icon" *ngIf="item.icon && !itemTemplate" [ngClass]="item.icon" [ngStyle]="item.iconStyle"></span>
-                                <ng-container *ngTemplateOutlet="itemTemplate; context: { $implicit: item }"></ng-container>
-                            </a>
-                            <ng-template #elseBlock>
-                                <a
-                                    [tooltipPosition]="item.tooltipPosition"
-                                    [attr.href]="item.url || null"
-                                    class="p-dock-link"
-                                    pRipple
-                                    pTooltip
-                                    [tooltipOptions]="item.tooltipOptions"
-                                    [ngClass]="{ 'p-disabled': item.disabled }"
-                                    [target]="item.target"
-                                    [attr.tabindex]="item.disabled || (i !== activeIndex && readonly) ? null : item.tabindex ? item.tabindex : '-1'"
-                                >
-                                    <span class="p-dock-action-icon" *ngIf="item.icon && !itemTemplate" [ngClass]="item.icon" [ngStyle]="item.iconStyle"></span>
-                                    <ng-container *ngTemplateOutlet="itemTemplate; context: { $implicit: item }"></ng-container>
-                                </a>
-                            </ng-template>
-                        </div>
-                    </li>
-                </ul>
-            </div>
-        </div>
-    `,
+      template: '\n        <div [ngClass]="containerClass" [ngStyle]="style" [class]="styleClass" [attr.data-pc-name]="\'dock\'">\n            <div class="p-dock-list-container">\n                <ul\n                    #list\n                    [attr.id]="id"\n                    class="p-dock-list"\n                    role="menu"\n                    [attr.aria-orientation]="position === \'bottom\' || position === \'top\' ? \'horizontal\' : \'vertical\'"\n                    [attr.aria-activedescendant]="focused ? focusedOptionId : undefined"\n                    [tabindex]="tabindex"\n                    [attr.aria-label]="ariaLabel"\n                    [attr.aria-labelledby]="ariaLabelledBy"\n                    [attr.data-pc-section]="\'menu\'"\n                    (focus)="onListFocus($event)"\n                    (blur)="onListBlur($event)"\n                    (keydown)="onListKeyDown($event)"\n                    (mouseleave)="onListMouseLeave()"\n                >\n                    <li\n                        *ngFor="let item of model; let i = index"\n                        [attr.id]="getItemId(item, i)"\n                        [ngClass]="itemClass(item, i)"\n                        role="menuitem"\n                        [attr.aria-label]="item.label"\n                        [attr.aria-disabled]="disabled(item)"\n                        (click)="onItemClick($event, item)"\n                        (mouseenter)="onItemMouseEnter(i)"\n                        [attr.data-pc-section]="\'menuitem\'"\n                        [attr.data-p-focused]="isItemActive(getItemId(item, i))"\n                        [attr.data-p-disabled]="disabled(item) || false"\n                    >\n                        <div class="p-menuitem-content" [attr.data-pc-section]="\'content\'">\n                            <a\n                                *ngIf="isClickableRouterLink(item); else elseBlock"\n                                pRipple\n                                [routerLink]="item.routerLink"\n                                [queryParams]="item.queryParams"\n                                [ngClass]="{ \'p-disabled\': item.disabled }"\n                                class="p-dock-link"\n                                [routerLinkActiveOptions]="item.routerLinkActiveOptions || { exact: false }"\n                                [target]="item.target"\n                                [attr.tabindex]="item.disabled || readonly ? null : item.tabindex ? item.tabindex : \'-1\'"\n                                pTooltip\n                                [tooltipOptions]="item.tooltipOptions"\n                                [fragment]="item.fragment"\n                                [queryParamsHandling]="item.queryParamsHandling"\n                                [preserveFragment]="item.preserveFragment"\n                                [skipLocationChange]="item.skipLocationChange"\n                                [replaceUrl]="item.replaceUrl"\n                                [state]="item.state"\n                            >\n                                <span class="p-dock-action-icon" *ngIf="item.icon && !itemTemplate" [ngClass]="item.icon" [ngStyle]="item.iconStyle"></span>\n                                <ng-container *ngTemplateOutlet="itemTemplate; context: { $implicit: item }"></ng-container>\n                            </a>\n                            <ng-template #elseBlock>\n                                <a\n                                    [tooltipPosition]="item.tooltipPosition"\n                                    [attr.href]="item.url || null"\n                                    class="p-dock-link"\n                                    pRipple\n                                    pTooltip\n                                    [tooltipOptions]="item.tooltipOptions"\n                                    [ngClass]="{ \'p-disabled\': item.disabled }"\n                                    [target]="item.target"\n                                    [attr.tabindex]="item.disabled || (i !== activeIndex && readonly) ? null : item.tabindex ? item.tabindex : \'-1\'"\n                                >\n                                    <span class="p-dock-action-icon" *ngIf="item.icon && !itemTemplate" [ngClass]="item.icon" [ngStyle]="item.iconStyle"></span>\n                                    <ng-container *ngTemplateOutlet="itemTemplate; context: { $implicit: item }"></ng-container>\n                                </a>\n                            </ng-template>\n                        </div>\n                    </li>\n                </ul>\n            </div>\n        </div>\n    ',
       changeDetection: ChangeDetectionStrategy.OnPush,
       encapsulation: ViewEncapsulation$1.None,
       host: {
@@ -608,20 +536,21 @@ var Dock = class _Dock {
     }]
   });
 })();
-var DockModule = class _DockModule {
-  static ɵfac = function DockModule_Factory(__ngFactoryType__) {
-    return new (__ngFactoryType__ || _DockModule)();
-  };
-  static ɵmod = ɵɵdefineNgModule({
-    type: _DockModule,
-    declarations: [Dock],
-    imports: [CommonModule, RouterModule, RippleModule, TooltipModule],
-    exports: [Dock, SharedModule, TooltipModule, RouterModule]
-  });
-  static ɵinj = ɵɵdefineInjector({
-    imports: [CommonModule, RouterModule, RippleModule, TooltipModule, SharedModule, TooltipModule, RouterModule]
-  });
+var _DockModule = class _DockModule {
 };
+__publicField(_DockModule, "ɵfac", function DockModule_Factory(__ngFactoryType__) {
+  return new (__ngFactoryType__ || _DockModule)();
+});
+__publicField(_DockModule, "ɵmod", ɵɵdefineNgModule({
+  type: _DockModule,
+  declarations: [Dock],
+  imports: [CommonModule, RouterModule, RippleModule, TooltipModule],
+  exports: [Dock, SharedModule, TooltipModule, RouterModule]
+}));
+__publicField(_DockModule, "ɵinj", ɵɵdefineInjector({
+  imports: [CommonModule, RouterModule, RippleModule, TooltipModule, SharedModule, TooltipModule, RouterModule]
+}));
+var DockModule = _DockModule;
 (() => {
   (typeof ngDevMode === "undefined" || ngDevMode) && setClassMetadata(DockModule, [{
     type: NgModule,

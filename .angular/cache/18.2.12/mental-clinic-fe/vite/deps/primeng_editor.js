@@ -1,15 +1,15 @@
 import {
   NG_VALUE_ACCESSOR
-} from "./chunk-B7GQUK3J.js";
+} from "./chunk-ZOG4HQFG.js";
 import {
   Header,
   PrimeTemplate,
   SharedModule
-} from "./chunk-TQSVMJ6K.js";
-import "./chunk-3OF44R55.js";
+} from "./chunk-ZROJCIWL.js";
+import "./chunk-U3NLM53U.js";
 import {
   DomHandler
-} from "./chunk-BUGEQH7Q.js";
+} from "./chunk-LB42WWNC.js";
 import {
   CommonModule,
   NgClass,
@@ -17,7 +17,7 @@ import {
   NgStyle,
   NgTemplateOutlet,
   isPlatformServer
-} from "./chunk-UBZYO7FG.js";
+} from "./chunk-KUZ63KOD.js";
 import {
   ChangeDetectionStrategy,
   Component,
@@ -54,13 +54,14 @@ import {
   ɵɵqueryRefresh,
   ɵɵtemplate,
   ɵɵtext
-} from "./chunk-ZI2Q76R4.js";
-import "./chunk-5OPE3T2R.js";
+} from "./chunk-R75KKECJ.js";
 import "./chunk-4N4GOYJH.js";
+import "./chunk-5OPE3T2R.js";
 import "./chunk-FHTVLBLO.js";
 import {
+  __publicField,
   __spreadValues
-} from "./chunk-3OV72XIM.js";
+} from "./chunk-IJZFAMY6.js";
 
 // node_modules/primeng/fesm2022/primeng-editor.mjs
 var _c0 = [[["p-header"]]];
@@ -135,49 +136,87 @@ var EDITOR_VALUE_ACCESSOR = {
   useExisting: forwardRef(() => Editor),
   multi: true
 };
-var Editor = class _Editor {
-  el;
-  platformId;
-  /**
-   * Inline style of the container.
-   * @group Props
-   */
-  style;
-  /**
-   * Style class of the container.
-   * @group Props
-   */
-  styleClass;
-  /**
-   * Placeholder text to show when editor is empty.
-   * @group Props
-   */
-  placeholder;
-  /**
-   * Whitelist of formats to display, see here for available options.
-   * @group Props
-   */
-  formats;
-  /**
-   * Modules configuration of Editor, see here for available options.
-   * @group Props
-   */
-  modules;
-  /**
-   * DOM Element or a CSS selector for a DOM Element, within which the editor’s p elements (i.e. tooltips, etc.) should be confined. Currently, it only considers left and right boundaries.
-   * @group Props
-   */
-  bounds;
-  /**
-   * DOM Element or a CSS selector for a DOM Element, specifying which container has the scrollbars (i.e. overflow-y: auto), if is has been changed from the default ql-editor with custom CSS. Necessary to fix scroll jumping bugs when Quill is set to auto grow its height, and another ancestor container is responsible from the scrolling..
-   * @group Props
-   */
-  scrollingContainer;
-  /**
-   * Shortcut for debug. Note debug is a static method and will affect other instances of Quill editors on the page. Only warning and error messages are enabled by default.
-   * @group Props
-   */
-  debug;
+var _Editor = class _Editor {
+  constructor(el, platformId) {
+    __publicField(this, "el");
+    __publicField(this, "platformId");
+    /**
+     * Inline style of the container.
+     * @group Props
+     */
+    __publicField(this, "style");
+    /**
+     * Style class of the container.
+     * @group Props
+     */
+    __publicField(this, "styleClass");
+    /**
+     * Placeholder text to show when editor is empty.
+     * @group Props
+     */
+    __publicField(this, "placeholder");
+    /**
+     * Whitelist of formats to display, see here for available options.
+     * @group Props
+     */
+    __publicField(this, "formats");
+    /**
+     * Modules configuration of Editor, see here for available options.
+     * @group Props
+     */
+    __publicField(this, "modules");
+    /**
+     * DOM Element or a CSS selector for a DOM Element, within which the editor’s p elements (i.e. tooltips, etc.) should be confined. Currently, it only considers left and right boundaries.
+     * @group Props
+     */
+    __publicField(this, "bounds");
+    /**
+     * DOM Element or a CSS selector for a DOM Element, specifying which container has the scrollbars (i.e. overflow-y: auto), if is has been changed from the default ql-editor with custom CSS. Necessary to fix scroll jumping bugs when Quill is set to auto grow its height, and another ancestor container is responsible from the scrolling..
+     * @group Props
+     */
+    __publicField(this, "scrollingContainer");
+    /**
+     * Shortcut for debug. Note debug is a static method and will affect other instances of Quill editors on the page. Only warning and error messages are enabled by default.
+     * @group Props
+     */
+    __publicField(this, "debug");
+    /**
+     * Callback to invoke when the quill modules are loaded.
+     * @param {EditorInitEvent} event - custom event.
+     * @group Emits
+     */
+    __publicField(this, "onInit", new EventEmitter());
+    /**
+     * Callback to invoke when text of editor changes.
+     * @param {EditorTextChangeEvent} event - custom event.
+     * @group Emits
+     */
+    __publicField(this, "onTextChange", new EventEmitter());
+    /**
+     * Callback to invoke when selection of the text changes.
+     * @param {EditorSelectionChangeEvent} event - custom event.
+     * @group Emits
+     */
+    __publicField(this, "onSelectionChange", new EventEmitter());
+    __publicField(this, "templates");
+    __publicField(this, "toolbar");
+    __publicField(this, "value");
+    __publicField(this, "_readonly", false);
+    __publicField(this, "onModelChange", () => {
+    });
+    __publicField(this, "onModelTouched", () => {
+    });
+    __publicField(this, "quill");
+    __publicField(this, "dynamicQuill");
+    __publicField(this, "headerTemplate");
+    __publicField(this, "quillElements");
+    this.el = el;
+    this.platformId = platformId;
+    afterNextRender(() => {
+      this.initQuillElements();
+      this.initQuillEditor();
+    });
+  }
   /**
    * Whether to instantiate the editor to read-only mode.
    * @group Props
@@ -191,44 +230,6 @@ var Editor = class _Editor {
       if (this._readonly) this.quill.disable();
       else this.quill.enable();
     }
-  }
-  /**
-   * Callback to invoke when the quill modules are loaded.
-   * @param {EditorInitEvent} event - custom event.
-   * @group Emits
-   */
-  onInit = new EventEmitter();
-  /**
-   * Callback to invoke when text of editor changes.
-   * @param {EditorTextChangeEvent} event - custom event.
-   * @group Emits
-   */
-  onTextChange = new EventEmitter();
-  /**
-   * Callback to invoke when selection of the text changes.
-   * @param {EditorSelectionChangeEvent} event - custom event.
-   * @group Emits
-   */
-  onSelectionChange = new EventEmitter();
-  templates;
-  toolbar;
-  value;
-  _readonly = false;
-  onModelChange = () => {
-  };
-  onModelTouched = () => {
-  };
-  quill;
-  dynamicQuill;
-  headerTemplate;
-  quillElements;
-  constructor(el, platformId) {
-    this.el = el;
-    this.platformId = platformId;
-    afterNextRender(() => {
-      this.initQuillElements();
-      this.initQuillEditor();
-    });
   }
   ngAfterContentInit() {
     this.templates.forEach((item) => {
@@ -265,7 +266,7 @@ var Editor = class _Editor {
       return;
     }
     if (!this.dynamicQuill) {
-      import("./quill-V3AXVTDE.js").then((quillModule) => {
+      import("./quill-OTFTHGQN.js").then((quillModule) => {
         this.dynamicQuill = quillModule.default;
         this.createQuillEditor();
       }).catch((e) => console.error(e.message));
@@ -335,125 +336,77 @@ var Editor = class _Editor {
       };
     }
   }
-  static ɵfac = function Editor_Factory(__ngFactoryType__) {
-    return new (__ngFactoryType__ || _Editor)(ɵɵdirectiveInject(ElementRef), ɵɵdirectiveInject(PLATFORM_ID));
-  };
-  static ɵcmp = ɵɵdefineComponent({
-    type: _Editor,
-    selectors: [["p-editor"]],
-    contentQueries: function Editor_ContentQueries(rf, ctx, dirIndex) {
-      if (rf & 1) {
-        ɵɵcontentQuery(dirIndex, Header, 5);
-        ɵɵcontentQuery(dirIndex, PrimeTemplate, 4);
-      }
-      if (rf & 2) {
-        let _t;
-        ɵɵqueryRefresh(_t = ɵɵloadQuery()) && (ctx.toolbar = _t.first);
-        ɵɵqueryRefresh(_t = ɵɵloadQuery()) && (ctx.templates = _t);
-      }
-    },
-    hostAttrs: [1, "p-element"],
-    inputs: {
-      style: "style",
-      styleClass: "styleClass",
-      placeholder: "placeholder",
-      formats: "formats",
-      modules: "modules",
-      bounds: "bounds",
-      scrollingContainer: "scrollingContainer",
-      debug: "debug",
-      readonly: "readonly"
-    },
-    outputs: {
-      onInit: "onInit",
-      onTextChange: "onTextChange",
-      onSelectionChange: "onSelectionChange"
-    },
-    features: [ɵɵProvidersFeature([EDITOR_VALUE_ACCESSOR])],
-    ngContentSelectors: _c1,
-    decls: 4,
-    vars: 6,
-    consts: [[3, "ngClass"], ["class", "p-editor-toolbar", 4, "ngIf"], [1, "p-editor-content", 3, "ngStyle"], [1, "p-editor-toolbar"], [4, "ngTemplateOutlet"], [1, "ql-formats"], [1, "ql-header"], ["value", "1"], ["value", "2"], ["selected", ""], [1, "ql-font"], ["value", "serif"], ["value", "monospace"], ["aria-label", "Bold", "type", "button", 1, "ql-bold"], ["aria-label", "Italic", "type", "button", 1, "ql-italic"], ["aria-label", "Underline", "type", "button", 1, "ql-underline"], [1, "ql-color"], [1, "ql-background"], ["value", "ordered", "aria-label", "Ordered List", "type", "button", 1, "ql-list"], ["value", "bullet", "aria-label", "Unordered List", "type", "button", 1, "ql-list"], [1, "ql-align"], ["value", "center"], ["value", "right"], ["value", "justify"], ["aria-label", "Insert Link", "type", "button", 1, "ql-link"], ["aria-label", "Insert Image", "type", "button", 1, "ql-image"], ["aria-label", "Insert Code Block", "type", "button", 1, "ql-code-block"], ["aria-label", "Remove Styles", "type", "button", 1, "ql-clean"]],
-    template: function Editor_Template(rf, ctx) {
-      if (rf & 1) {
-        ɵɵprojectionDef(_c0);
-        ɵɵelementStart(0, "div", 0);
-        ɵɵtemplate(1, Editor_div_1_Template, 3, 1, "div", 1)(2, Editor_div_2_Template, 40, 0, "div", 1);
-        ɵɵelement(3, "div", 2);
-        ɵɵelementEnd();
-      }
-      if (rf & 2) {
-        ɵɵclassMap(ctx.styleClass);
-        ɵɵproperty("ngClass", "p-editor-container");
-        ɵɵadvance();
-        ɵɵproperty("ngIf", ctx.toolbar || ctx.headerTemplate);
-        ɵɵadvance();
-        ɵɵproperty("ngIf", !ctx.modules && !ctx.toolbar && !ctx.headerTemplate);
-        ɵɵadvance();
-        ɵɵproperty("ngStyle", ctx.style);
-      }
-    },
-    dependencies: [NgClass, NgIf, NgTemplateOutlet, NgStyle],
-    styles: [".p-editor-container .p-editor-toolbar.ql-snow .ql-picker.ql-expanded .ql-picker-options .ql-picker-item{width:auto;height:auto}\n"],
-    encapsulation: 2,
-    changeDetection: 0
-  });
 };
+__publicField(_Editor, "ɵfac", function Editor_Factory(__ngFactoryType__) {
+  return new (__ngFactoryType__ || _Editor)(ɵɵdirectiveInject(ElementRef), ɵɵdirectiveInject(PLATFORM_ID));
+});
+__publicField(_Editor, "ɵcmp", ɵɵdefineComponent({
+  type: _Editor,
+  selectors: [["p-editor"]],
+  contentQueries: function Editor_ContentQueries(rf, ctx, dirIndex) {
+    if (rf & 1) {
+      ɵɵcontentQuery(dirIndex, Header, 5);
+      ɵɵcontentQuery(dirIndex, PrimeTemplate, 4);
+    }
+    if (rf & 2) {
+      let _t;
+      ɵɵqueryRefresh(_t = ɵɵloadQuery()) && (ctx.toolbar = _t.first);
+      ɵɵqueryRefresh(_t = ɵɵloadQuery()) && (ctx.templates = _t);
+    }
+  },
+  hostAttrs: [1, "p-element"],
+  inputs: {
+    style: "style",
+    styleClass: "styleClass",
+    placeholder: "placeholder",
+    formats: "formats",
+    modules: "modules",
+    bounds: "bounds",
+    scrollingContainer: "scrollingContainer",
+    debug: "debug",
+    readonly: "readonly"
+  },
+  outputs: {
+    onInit: "onInit",
+    onTextChange: "onTextChange",
+    onSelectionChange: "onSelectionChange"
+  },
+  features: [ɵɵProvidersFeature([EDITOR_VALUE_ACCESSOR])],
+  ngContentSelectors: _c1,
+  decls: 4,
+  vars: 6,
+  consts: [[3, "ngClass"], ["class", "p-editor-toolbar", 4, "ngIf"], [1, "p-editor-content", 3, "ngStyle"], [1, "p-editor-toolbar"], [4, "ngTemplateOutlet"], [1, "ql-formats"], [1, "ql-header"], ["value", "1"], ["value", "2"], ["selected", ""], [1, "ql-font"], ["value", "serif"], ["value", "monospace"], ["aria-label", "Bold", "type", "button", 1, "ql-bold"], ["aria-label", "Italic", "type", "button", 1, "ql-italic"], ["aria-label", "Underline", "type", "button", 1, "ql-underline"], [1, "ql-color"], [1, "ql-background"], ["value", "ordered", "aria-label", "Ordered List", "type", "button", 1, "ql-list"], ["value", "bullet", "aria-label", "Unordered List", "type", "button", 1, "ql-list"], [1, "ql-align"], ["value", "center"], ["value", "right"], ["value", "justify"], ["aria-label", "Insert Link", "type", "button", 1, "ql-link"], ["aria-label", "Insert Image", "type", "button", 1, "ql-image"], ["aria-label", "Insert Code Block", "type", "button", 1, "ql-code-block"], ["aria-label", "Remove Styles", "type", "button", 1, "ql-clean"]],
+  template: function Editor_Template(rf, ctx) {
+    if (rf & 1) {
+      ɵɵprojectionDef(_c0);
+      ɵɵelementStart(0, "div", 0);
+      ɵɵtemplate(1, Editor_div_1_Template, 3, 1, "div", 1)(2, Editor_div_2_Template, 40, 0, "div", 1);
+      ɵɵelement(3, "div", 2);
+      ɵɵelementEnd();
+    }
+    if (rf & 2) {
+      ɵɵclassMap(ctx.styleClass);
+      ɵɵproperty("ngClass", "p-editor-container");
+      ɵɵadvance();
+      ɵɵproperty("ngIf", ctx.toolbar || ctx.headerTemplate);
+      ɵɵadvance();
+      ɵɵproperty("ngIf", !ctx.modules && !ctx.toolbar && !ctx.headerTemplate);
+      ɵɵadvance();
+      ɵɵproperty("ngStyle", ctx.style);
+    }
+  },
+  dependencies: [NgClass, NgIf, NgTemplateOutlet, NgStyle],
+  styles: [".p-editor-container .p-editor-toolbar.ql-snow .ql-picker.ql-expanded .ql-picker-options .ql-picker-item{width:auto;height:auto}\n"],
+  encapsulation: 2,
+  changeDetection: 0
+}));
+var Editor = _Editor;
 (() => {
   (typeof ngDevMode === "undefined" || ngDevMode) && setClassMetadata(Editor, [{
     type: Component,
     args: [{
       selector: "p-editor",
-      template: `
-        <div [ngClass]="'p-editor-container'" [class]="styleClass">
-            <div class="p-editor-toolbar" *ngIf="toolbar || headerTemplate">
-                <ng-content select="p-header"></ng-content>
-                <ng-container *ngTemplateOutlet="headerTemplate"></ng-container>
-            </div>
-            <div class="p-editor-toolbar" *ngIf="!modules && !toolbar && !headerTemplate">
-                <span class="ql-formats">
-                    <select class="ql-header">
-                        <option value="1">Heading</option>
-                        <option value="2">Subheading</option>
-                        <option selected>Normal</option>
-                    </select>
-                    <select class="ql-font">
-                        <option selected>Sans Serif</option>
-                        <option value="serif">Serif</option>
-                        <option value="monospace">Monospace</option>
-                    </select>
-                </span>
-                <span class="ql-formats">
-                    <button class="ql-bold" aria-label="Bold" type="button"></button>
-                    <button class="ql-italic" aria-label="Italic" type="button"></button>
-                    <button class="ql-underline" aria-label="Underline" type="button"></button>
-                </span>
-                <span class="ql-formats">
-                    <select class="ql-color"></select>
-                    <select class="ql-background"></select>
-                </span>
-                <span class="ql-formats">
-                    <button class="ql-list" value="ordered" aria-label="Ordered List" type="button"></button>
-                    <button class="ql-list" value="bullet" aria-label="Unordered List" type="button"></button>
-                    <select class="ql-align">
-                        <option selected></option>
-                        <option value="center">center</option>
-                        <option value="right">right</option>
-                        <option value="justify">justify</option>
-                    </select>
-                </span>
-                <span class="ql-formats">
-                    <button class="ql-link" aria-label="Insert Link" type="button"></button>
-                    <button class="ql-image" aria-label="Insert Image" type="button"></button>
-                    <button class="ql-code-block" aria-label="Insert Code Block" type="button"></button>
-                </span>
-                <span class="ql-formats">
-                    <button class="ql-clean" aria-label="Remove Styles" type="button"></button>
-                </span>
-            </div>
-            <div class="p-editor-content" [ngStyle]="style"></div>
-        </div>
-    `,
+      template: '\n        <div [ngClass]="\'p-editor-container\'" [class]="styleClass">\n            <div class="p-editor-toolbar" *ngIf="toolbar || headerTemplate">\n                <ng-content select="p-header"></ng-content>\n                <ng-container *ngTemplateOutlet="headerTemplate"></ng-container>\n            </div>\n            <div class="p-editor-toolbar" *ngIf="!modules && !toolbar && !headerTemplate">\n                <span class="ql-formats">\n                    <select class="ql-header">\n                        <option value="1">Heading</option>\n                        <option value="2">Subheading</option>\n                        <option selected>Normal</option>\n                    </select>\n                    <select class="ql-font">\n                        <option selected>Sans Serif</option>\n                        <option value="serif">Serif</option>\n                        <option value="monospace">Monospace</option>\n                    </select>\n                </span>\n                <span class="ql-formats">\n                    <button class="ql-bold" aria-label="Bold" type="button"></button>\n                    <button class="ql-italic" aria-label="Italic" type="button"></button>\n                    <button class="ql-underline" aria-label="Underline" type="button"></button>\n                </span>\n                <span class="ql-formats">\n                    <select class="ql-color"></select>\n                    <select class="ql-background"></select>\n                </span>\n                <span class="ql-formats">\n                    <button class="ql-list" value="ordered" aria-label="Ordered List" type="button"></button>\n                    <button class="ql-list" value="bullet" aria-label="Unordered List" type="button"></button>\n                    <select class="ql-align">\n                        <option selected></option>\n                        <option value="center">center</option>\n                        <option value="right">right</option>\n                        <option value="justify">justify</option>\n                    </select>\n                </span>\n                <span class="ql-formats">\n                    <button class="ql-link" aria-label="Insert Link" type="button"></button>\n                    <button class="ql-image" aria-label="Insert Image" type="button"></button>\n                    <button class="ql-code-block" aria-label="Insert Code Block" type="button"></button>\n                </span>\n                <span class="ql-formats">\n                    <button class="ql-clean" aria-label="Remove Styles" type="button"></button>\n                </span>\n            </div>\n            <div class="p-editor-content" [ngStyle]="style"></div>\n        </div>\n    ',
       providers: [EDITOR_VALUE_ACCESSOR],
       changeDetection: ChangeDetectionStrategy.OnPush,
       encapsulation: ViewEncapsulation$1.None,
@@ -517,20 +470,21 @@ var Editor = class _Editor {
     }]
   });
 })();
-var EditorModule = class _EditorModule {
-  static ɵfac = function EditorModule_Factory(__ngFactoryType__) {
-    return new (__ngFactoryType__ || _EditorModule)();
-  };
-  static ɵmod = ɵɵdefineNgModule({
-    type: _EditorModule,
-    declarations: [Editor],
-    imports: [CommonModule],
-    exports: [Editor, SharedModule]
-  });
-  static ɵinj = ɵɵdefineInjector({
-    imports: [CommonModule, SharedModule]
-  });
+var _EditorModule = class _EditorModule {
 };
+__publicField(_EditorModule, "ɵfac", function EditorModule_Factory(__ngFactoryType__) {
+  return new (__ngFactoryType__ || _EditorModule)();
+});
+__publicField(_EditorModule, "ɵmod", ɵɵdefineNgModule({
+  type: _EditorModule,
+  declarations: [Editor],
+  imports: [CommonModule],
+  exports: [Editor, SharedModule]
+}));
+__publicField(_EditorModule, "ɵinj", ɵɵdefineInjector({
+  imports: [CommonModule, SharedModule]
+}));
+var EditorModule = _EditorModule;
 (() => {
   (typeof ngDevMode === "undefined" || ngDevMode) && setClassMetadata(EditorModule, [{
     type: NgModule,

@@ -1,35 +1,35 @@
 import {
   ChevronRightIcon
-} from "./chunk-EYQJO2JR.js";
+} from "./chunk-CDDPLBF3.js";
 import {
   ChevronDownIcon
-} from "./chunk-WH2DAWOG.js";
-import "./chunk-PXWZN6FU.js";
+} from "./chunk-HCVMWVY4.js";
+import "./chunk-BJLZ3T2F.js";
 import {
   Header,
   PrimeTemplate,
   SharedModule
-} from "./chunk-TQSVMJ6K.js";
+} from "./chunk-ZROJCIWL.js";
 import {
   UniqueComponentId
-} from "./chunk-3OF44R55.js";
+} from "./chunk-U3NLM53U.js";
 import {
   animate,
   state,
   style,
   transition,
   trigger
-} from "./chunk-OGB62SLM.js";
+} from "./chunk-5S7AEMUZ.js";
 import {
   DomHandler
-} from "./chunk-BUGEQH7Q.js";
+} from "./chunk-LB42WWNC.js";
 import {
   CommonModule,
   NgClass,
   NgIf,
   NgStyle,
   NgTemplateOutlet
-} from "./chunk-UBZYO7FG.js";
+} from "./chunk-KUZ63KOD.js";
 import {
   ChangeDetectionStrategy,
   ChangeDetectorRef,
@@ -74,11 +74,13 @@ import {
   ɵɵtemplate,
   ɵɵtext,
   ɵɵtextInterpolate1
-} from "./chunk-ZI2Q76R4.js";
-import "./chunk-5OPE3T2R.js";
+} from "./chunk-R75KKECJ.js";
 import "./chunk-4N4GOYJH.js";
+import "./chunk-5OPE3T2R.js";
 import "./chunk-FHTVLBLO.js";
-import "./chunk-3OV72XIM.js";
+import {
+  __publicField
+} from "./chunk-IJZFAMY6.js";
 
 // node_modules/primeng/fesm2022/primeng-accordion.mjs
 var _c0 = ["*", [["p-header"]]];
@@ -228,69 +230,94 @@ function AccordionTab_ng_container_11_Template(rf, ctx) {
   }
 }
 var _c6 = ["*"];
-var AccordionTab = class _AccordionTab {
-  el;
-  changeDetector;
-  /**
-   * Current id state as a string.
-   * @group Props
-   */
-  id;
-  /**
-   * Used to define the header of the tab.
-   * @group Props
-   */
-  header;
-  /**
-   * Inline style of the tab header.
-   * @group Props
-   */
-  headerStyle;
-  /**
-   * Inline style of the tab.
-   * @group Props
-   */
-  tabStyle;
-  /**
-   * Inline style of the tab content.
-   * @group Props
-   */
-  contentStyle;
-  /**
-   * Style class of the tab.
-   * @group Props
-   */
-  tabStyleClass;
-  /**
-   * Style class of the tab header.
-   * @group Props
-   */
-  headerStyleClass;
-  /**
-   * Style class of the tab content.
-   * @group Props
-   */
-  contentStyleClass;
-  /**
-   * Whether the tab is disabled.
-   * @group Props
-   */
-  disabled;
-  /**
-   * Whether a lazy loaded panel should avoid getting loaded again on reselection.
-   * @group Props
-   */
-  cache = true;
-  /**
-   * Transition options of the animation.
-   * @group Props
-   */
-  transitionOptions = "400ms cubic-bezier(0.86, 0, 0.07, 1)";
-  /**
-   * Position of the icon.
-   * @group Props
-   */
-  iconPos = "start";
+var _AccordionTab = class _AccordionTab {
+  constructor(accordion, el, changeDetector) {
+    __publicField(this, "el");
+    __publicField(this, "changeDetector");
+    /**
+     * Current id state as a string.
+     * @group Props
+     */
+    __publicField(this, "id");
+    /**
+     * Used to define the header of the tab.
+     * @group Props
+     */
+    __publicField(this, "header");
+    /**
+     * Inline style of the tab header.
+     * @group Props
+     */
+    __publicField(this, "headerStyle");
+    /**
+     * Inline style of the tab.
+     * @group Props
+     */
+    __publicField(this, "tabStyle");
+    /**
+     * Inline style of the tab content.
+     * @group Props
+     */
+    __publicField(this, "contentStyle");
+    /**
+     * Style class of the tab.
+     * @group Props
+     */
+    __publicField(this, "tabStyleClass");
+    /**
+     * Style class of the tab header.
+     * @group Props
+     */
+    __publicField(this, "headerStyleClass");
+    /**
+     * Style class of the tab content.
+     * @group Props
+     */
+    __publicField(this, "contentStyleClass");
+    /**
+     * Whether the tab is disabled.
+     * @group Props
+     */
+    __publicField(this, "disabled");
+    /**
+     * Whether a lazy loaded panel should avoid getting loaded again on reselection.
+     * @group Props
+     */
+    __publicField(this, "cache", true);
+    /**
+     * Transition options of the animation.
+     * @group Props
+     */
+    __publicField(this, "transitionOptions", "400ms cubic-bezier(0.86, 0, 0.07, 1)");
+    /**
+     * Position of the icon.
+     * @group Props
+     */
+    __publicField(this, "iconPos", "start");
+    /**
+     * The aria-level that each accordion header will have. The default value is 2 as per W3C specifications
+     * @group Props
+     */
+    __publicField(this, "headerAriaLevel", 2);
+    /**
+     * Event triggered by changing the choice.
+     * @param {boolean} value - Boolean value indicates that the option is changed.
+     * @group Emits
+     */
+    __publicField(this, "selectedChange", new EventEmitter());
+    __publicField(this, "headerFacet");
+    __publicField(this, "templates");
+    __publicField(this, "_selected", false);
+    __publicField(this, "contentTemplate");
+    __publicField(this, "headerTemplate");
+    __publicField(this, "iconTemplate");
+    __publicField(this, "loaded", false);
+    __publicField(this, "accordion");
+    this.el = el;
+    this.changeDetector = changeDetector;
+    this.accordion = accordion;
+    this.id = UniqueComponentId();
+  }
   /**
    * The value that returns the selection.
    * @group Props
@@ -307,37 +334,12 @@ var AccordionTab = class _AccordionTab {
       this.changeDetector.detectChanges();
     }
   }
-  /**
-   * The aria-level that each accordion header will have. The default value is 2 as per W3C specifications
-   * @group Props
-   */
-  headerAriaLevel = 2;
-  /**
-   * Event triggered by changing the choice.
-   * @param {boolean} value - Boolean value indicates that the option is changed.
-   * @group Emits
-   */
-  selectedChange = new EventEmitter();
-  headerFacet;
-  templates;
-  _selected = false;
   get iconClass() {
     if (this.iconPos === "end") {
       return "p-accordion-toggle-icon-end";
     } else {
       return "p-accordion-toggle-icon";
     }
-  }
-  contentTemplate;
-  headerTemplate;
-  iconTemplate;
-  loaded = false;
-  accordion;
-  constructor(accordion, el, changeDetector) {
-    this.el = el;
-    this.changeDetector = changeDetector;
-    this.accordion = accordion;
-    this.id = UniqueComponentId();
   }
   ngAfterContentInit() {
     this.templates.forEach((item) => {
@@ -388,7 +390,7 @@ var AccordionTab = class _AccordionTab {
     this.selectedChange.emit(this.selected);
     this.accordion.updateActiveIndex();
     this.changeDetector.markForCheck();
-    event?.preventDefault();
+    event == null ? void 0 : event.preventDefault();
   }
   findTabIndex() {
     let index = -1;
@@ -415,174 +417,123 @@ var AccordionTab = class _AccordionTab {
     }
   }
   getTabHeaderActionId(tabId) {
-    return `${tabId}_header_action`;
+    return "".concat(tabId, "_header_action");
   }
   getTabContentId(tabId) {
-    return `${tabId}_content`;
+    return "".concat(tabId, "_content");
   }
   ngOnDestroy() {
     this.accordion.tabs.splice(this.findTabIndex(), 1);
   }
-  static ɵfac = function AccordionTab_Factory(__ngFactoryType__) {
-    return new (__ngFactoryType__ || _AccordionTab)(ɵɵdirectiveInject(forwardRef(() => Accordion)), ɵɵdirectiveInject(ElementRef), ɵɵdirectiveInject(ChangeDetectorRef));
-  };
-  static ɵcmp = ɵɵdefineComponent({
-    type: _AccordionTab,
-    selectors: [["p-accordionTab"]],
-    contentQueries: function AccordionTab_ContentQueries(rf, ctx, dirIndex) {
-      if (rf & 1) {
-        ɵɵcontentQuery(dirIndex, Header, 4);
-        ɵɵcontentQuery(dirIndex, PrimeTemplate, 4);
-      }
-      if (rf & 2) {
-        let _t;
-        ɵɵqueryRefresh(_t = ɵɵloadQuery()) && (ctx.headerFacet = _t);
-        ɵɵqueryRefresh(_t = ɵɵloadQuery()) && (ctx.templates = _t);
-      }
-    },
-    hostAttrs: [1, "p-element"],
-    inputs: {
-      id: "id",
-      header: "header",
-      headerStyle: "headerStyle",
-      tabStyle: "tabStyle",
-      contentStyle: "contentStyle",
-      tabStyleClass: "tabStyleClass",
-      headerStyleClass: "headerStyleClass",
-      contentStyleClass: "contentStyleClass",
-      disabled: [2, "disabled", "disabled", booleanAttribute],
-      cache: [2, "cache", "cache", booleanAttribute],
-      transitionOptions: "transitionOptions",
-      iconPos: "iconPos",
-      selected: "selected",
-      headerAriaLevel: [2, "headerAriaLevel", "headerAriaLevel", numberAttribute]
-    },
-    outputs: {
-      selectedChange: "selectedChange"
-    },
-    features: [ɵɵInputTransformsFeature],
-    ngContentSelectors: _c1,
-    decls: 12,
-    vars: 44,
-    consts: [[1, "p-accordion-tab", 3, "ngClass", "ngStyle"], ["role", "heading", 1, "p-accordion-header"], ["role", "button", 1, "p-accordion-header-link", 3, "click", "keydown", "ngClass", "ngStyle"], [4, "ngIf"], [4, "ngTemplateOutlet", "ngTemplateOutletContext"], ["class", "p-accordion-header-text", 4, "ngIf"], [4, "ngTemplateOutlet"], ["role", "region", 1, "p-toggleable-content"], [1, "p-accordion-content", 3, "ngClass", "ngStyle"], [3, "class", "ngClass", 4, "ngIf"], [3, "ngClass", 4, "ngIf"], [3, "ngClass"], [1, "p-accordion-header-text"]],
-    template: function AccordionTab_Template(rf, ctx) {
-      if (rf & 1) {
-        ɵɵprojectionDef(_c0);
-        ɵɵelementStart(0, "div", 0)(1, "div", 1)(2, "a", 2);
-        ɵɵlistener("click", function AccordionTab_Template_a_click_2_listener($event) {
-          return ctx.toggle($event);
-        })("keydown", function AccordionTab_Template_a_keydown_2_listener($event) {
-          return ctx.onKeydown($event);
-        });
-        ɵɵtemplate(3, AccordionTab_ng_container_3_Template, 3, 2, "ng-container", 3)(4, AccordionTab_4_Template, 1, 0, null, 4)(5, AccordionTab_span_5_Template, 2, 1, "span", 5)(6, AccordionTab_ng_container_6_Template, 1, 0, "ng-container", 6)(7, AccordionTab_ng_content_7_Template, 1, 0, "ng-content", 3);
-        ɵɵelementEnd()();
-        ɵɵelementStart(8, "div", 7)(9, "div", 8);
-        ɵɵprojection(10);
-        ɵɵtemplate(11, AccordionTab_ng_container_11_Template, 2, 1, "ng-container", 3);
-        ɵɵelementEnd()()();
-      }
-      if (rf & 2) {
-        ɵɵclassProp("p-accordion-tab-active", ctx.selected);
-        ɵɵproperty("ngClass", ctx.tabStyleClass)("ngStyle", ctx.tabStyle);
-        ɵɵattribute("data-pc-name", "accordiontab");
-        ɵɵadvance();
-        ɵɵclassProp("p-highlight", ctx.selected)("p-disabled", ctx.disabled);
-        ɵɵattribute("aria-level", ctx.headerAriaLevel)("data-p-disabled", ctx.disabled)("data-pc-section", "header");
-        ɵɵadvance();
-        ɵɵproperty("ngClass", ctx.headerStyleClass)("ngStyle", ctx.headerStyle);
-        ɵɵattribute("tabindex", ctx.disabled ? null : 0)("id", ctx.getTabHeaderActionId(ctx.id))("aria-controls", ctx.getTabContentId(ctx.id))("aria-expanded", ctx.selected)("aria-disabled", ctx.disabled)("data-pc-section", "headeraction");
-        ɵɵadvance();
-        ɵɵproperty("ngIf", !ctx.iconTemplate);
-        ɵɵadvance();
-        ɵɵproperty("ngTemplateOutlet", ctx.iconTemplate)("ngTemplateOutletContext", ɵɵpureFunction1(34, _c2, ctx.selected));
-        ɵɵadvance();
-        ɵɵproperty("ngIf", !ctx.hasHeaderFacet);
-        ɵɵadvance();
-        ɵɵproperty("ngTemplateOutlet", ctx.headerTemplate);
-        ɵɵadvance();
-        ɵɵproperty("ngIf", ctx.hasHeaderFacet);
-        ɵɵadvance();
-        ɵɵproperty("@tabContent", ctx.selected ? ɵɵpureFunction1(38, _c4, ɵɵpureFunction1(36, _c3, ctx.transitionOptions)) : ɵɵpureFunction1(42, _c5, ɵɵpureFunction1(40, _c3, ctx.transitionOptions)));
-        ɵɵattribute("id", ctx.getTabContentId(ctx.id))("aria-hidden", !ctx.selected)("aria-labelledby", ctx.getTabHeaderActionId(ctx.id))("data-pc-section", "toggleablecontent");
-        ɵɵadvance();
-        ɵɵproperty("ngClass", ctx.contentStyleClass)("ngStyle", ctx.contentStyle);
-        ɵɵadvance(2);
-        ɵɵproperty("ngIf", ctx.contentTemplate && (ctx.cache ? ctx.loaded : ctx.selected));
-      }
-    },
-    dependencies: () => [NgClass, NgIf, NgTemplateOutlet, NgStyle, ChevronRightIcon, ChevronDownIcon],
-    styles: ["@layer primeng{.p-accordion-header-link{cursor:pointer;display:flex;align-items:center;-webkit-user-select:none;user-select:none;position:relative;text-decoration:none}.p-accordion-header-link:focus{z-index:1}.p-accordion-header-text{line-height:1}.p-accordion .p-toggleable-content{overflow:hidden}.p-accordion .p-accordion-tab-active>.p-toggleable-content:not(.ng-animating){overflow:inherit}.p-accordion-toggle-icon-end{order:1;margin-left:auto}.p-accordion-toggle-icon{order:0}}\n"],
-    encapsulation: 2,
-    data: {
-      animation: [trigger("tabContent", [state("hidden", style({
-        height: "0",
-        visibility: "hidden"
-      })), state("visible", style({
-        height: "*",
-        visibility: "visible"
-      })), transition("visible <=> hidden", [animate("{{transitionParams}}")]), transition("void => *", animate(0))])]
-    },
-    changeDetection: 0
-  });
 };
+__publicField(_AccordionTab, "ɵfac", function AccordionTab_Factory(__ngFactoryType__) {
+  return new (__ngFactoryType__ || _AccordionTab)(ɵɵdirectiveInject(forwardRef(() => Accordion)), ɵɵdirectiveInject(ElementRef), ɵɵdirectiveInject(ChangeDetectorRef));
+});
+__publicField(_AccordionTab, "ɵcmp", ɵɵdefineComponent({
+  type: _AccordionTab,
+  selectors: [["p-accordionTab"]],
+  contentQueries: function AccordionTab_ContentQueries(rf, ctx, dirIndex) {
+    if (rf & 1) {
+      ɵɵcontentQuery(dirIndex, Header, 4);
+      ɵɵcontentQuery(dirIndex, PrimeTemplate, 4);
+    }
+    if (rf & 2) {
+      let _t;
+      ɵɵqueryRefresh(_t = ɵɵloadQuery()) && (ctx.headerFacet = _t);
+      ɵɵqueryRefresh(_t = ɵɵloadQuery()) && (ctx.templates = _t);
+    }
+  },
+  hostAttrs: [1, "p-element"],
+  inputs: {
+    id: "id",
+    header: "header",
+    headerStyle: "headerStyle",
+    tabStyle: "tabStyle",
+    contentStyle: "contentStyle",
+    tabStyleClass: "tabStyleClass",
+    headerStyleClass: "headerStyleClass",
+    contentStyleClass: "contentStyleClass",
+    disabled: [2, "disabled", "disabled", booleanAttribute],
+    cache: [2, "cache", "cache", booleanAttribute],
+    transitionOptions: "transitionOptions",
+    iconPos: "iconPos",
+    selected: "selected",
+    headerAriaLevel: [2, "headerAriaLevel", "headerAriaLevel", numberAttribute]
+  },
+  outputs: {
+    selectedChange: "selectedChange"
+  },
+  features: [ɵɵInputTransformsFeature],
+  ngContentSelectors: _c1,
+  decls: 12,
+  vars: 44,
+  consts: [[1, "p-accordion-tab", 3, "ngClass", "ngStyle"], ["role", "heading", 1, "p-accordion-header"], ["role", "button", 1, "p-accordion-header-link", 3, "click", "keydown", "ngClass", "ngStyle"], [4, "ngIf"], [4, "ngTemplateOutlet", "ngTemplateOutletContext"], ["class", "p-accordion-header-text", 4, "ngIf"], [4, "ngTemplateOutlet"], ["role", "region", 1, "p-toggleable-content"], [1, "p-accordion-content", 3, "ngClass", "ngStyle"], [3, "class", "ngClass", 4, "ngIf"], [3, "ngClass", 4, "ngIf"], [3, "ngClass"], [1, "p-accordion-header-text"]],
+  template: function AccordionTab_Template(rf, ctx) {
+    if (rf & 1) {
+      ɵɵprojectionDef(_c0);
+      ɵɵelementStart(0, "div", 0)(1, "div", 1)(2, "a", 2);
+      ɵɵlistener("click", function AccordionTab_Template_a_click_2_listener($event) {
+        return ctx.toggle($event);
+      })("keydown", function AccordionTab_Template_a_keydown_2_listener($event) {
+        return ctx.onKeydown($event);
+      });
+      ɵɵtemplate(3, AccordionTab_ng_container_3_Template, 3, 2, "ng-container", 3)(4, AccordionTab_4_Template, 1, 0, null, 4)(5, AccordionTab_span_5_Template, 2, 1, "span", 5)(6, AccordionTab_ng_container_6_Template, 1, 0, "ng-container", 6)(7, AccordionTab_ng_content_7_Template, 1, 0, "ng-content", 3);
+      ɵɵelementEnd()();
+      ɵɵelementStart(8, "div", 7)(9, "div", 8);
+      ɵɵprojection(10);
+      ɵɵtemplate(11, AccordionTab_ng_container_11_Template, 2, 1, "ng-container", 3);
+      ɵɵelementEnd()()();
+    }
+    if (rf & 2) {
+      ɵɵclassProp("p-accordion-tab-active", ctx.selected);
+      ɵɵproperty("ngClass", ctx.tabStyleClass)("ngStyle", ctx.tabStyle);
+      ɵɵattribute("data-pc-name", "accordiontab");
+      ɵɵadvance();
+      ɵɵclassProp("p-highlight", ctx.selected)("p-disabled", ctx.disabled);
+      ɵɵattribute("aria-level", ctx.headerAriaLevel)("data-p-disabled", ctx.disabled)("data-pc-section", "header");
+      ɵɵadvance();
+      ɵɵproperty("ngClass", ctx.headerStyleClass)("ngStyle", ctx.headerStyle);
+      ɵɵattribute("tabindex", ctx.disabled ? null : 0)("id", ctx.getTabHeaderActionId(ctx.id))("aria-controls", ctx.getTabContentId(ctx.id))("aria-expanded", ctx.selected)("aria-disabled", ctx.disabled)("data-pc-section", "headeraction");
+      ɵɵadvance();
+      ɵɵproperty("ngIf", !ctx.iconTemplate);
+      ɵɵadvance();
+      ɵɵproperty("ngTemplateOutlet", ctx.iconTemplate)("ngTemplateOutletContext", ɵɵpureFunction1(34, _c2, ctx.selected));
+      ɵɵadvance();
+      ɵɵproperty("ngIf", !ctx.hasHeaderFacet);
+      ɵɵadvance();
+      ɵɵproperty("ngTemplateOutlet", ctx.headerTemplate);
+      ɵɵadvance();
+      ɵɵproperty("ngIf", ctx.hasHeaderFacet);
+      ɵɵadvance();
+      ɵɵproperty("@tabContent", ctx.selected ? ɵɵpureFunction1(38, _c4, ɵɵpureFunction1(36, _c3, ctx.transitionOptions)) : ɵɵpureFunction1(42, _c5, ɵɵpureFunction1(40, _c3, ctx.transitionOptions)));
+      ɵɵattribute("id", ctx.getTabContentId(ctx.id))("aria-hidden", !ctx.selected)("aria-labelledby", ctx.getTabHeaderActionId(ctx.id))("data-pc-section", "toggleablecontent");
+      ɵɵadvance();
+      ɵɵproperty("ngClass", ctx.contentStyleClass)("ngStyle", ctx.contentStyle);
+      ɵɵadvance(2);
+      ɵɵproperty("ngIf", ctx.contentTemplate && (ctx.cache ? ctx.loaded : ctx.selected));
+    }
+  },
+  dependencies: () => [NgClass, NgIf, NgTemplateOutlet, NgStyle, ChevronRightIcon, ChevronDownIcon],
+  styles: ["@layer primeng{.p-accordion-header-link{cursor:pointer;display:flex;align-items:center;-webkit-user-select:none;user-select:none;position:relative;text-decoration:none}.p-accordion-header-link:focus{z-index:1}.p-accordion-header-text{line-height:1}.p-accordion .p-toggleable-content{overflow:hidden}.p-accordion .p-accordion-tab-active>.p-toggleable-content:not(.ng-animating){overflow:inherit}.p-accordion-toggle-icon-end{order:1;margin-left:auto}.p-accordion-toggle-icon{order:0}}\n"],
+  encapsulation: 2,
+  data: {
+    animation: [trigger("tabContent", [state("hidden", style({
+      height: "0",
+      visibility: "hidden"
+    })), state("visible", style({
+      height: "*",
+      visibility: "visible"
+    })), transition("visible <=> hidden", [animate("{{transitionParams}}")]), transition("void => *", animate(0))])]
+  },
+  changeDetection: 0
+}));
+var AccordionTab = _AccordionTab;
 (() => {
   (typeof ngDevMode === "undefined" || ngDevMode) && setClassMetadata(AccordionTab, [{
     type: Component,
     args: [{
       selector: "p-accordionTab",
-      template: `
-        <div class="p-accordion-tab" [class.p-accordion-tab-active]="selected" [ngClass]="tabStyleClass" [ngStyle]="tabStyle" [attr.data-pc-name]="'accordiontab'">
-            <div class="p-accordion-header" role="heading" [attr.aria-level]="headerAriaLevel" [class.p-highlight]="selected" [class.p-disabled]="disabled" [attr.data-p-disabled]="disabled" [attr.data-pc-section]="'header'">
-                <a
-                    [ngClass]="headerStyleClass"
-                    [ngStyle]="headerStyle"
-                    role="button"
-                    class="p-accordion-header-link"
-                    (click)="toggle($event)"
-                    (keydown)="onKeydown($event)"
-                    [attr.tabindex]="disabled ? null : 0"
-                    [attr.id]="getTabHeaderActionId(id)"
-                    [attr.aria-controls]="getTabContentId(id)"
-                    [attr.aria-expanded]="selected"
-                    [attr.aria-disabled]="disabled"
-                    [attr.data-pc-section]="'headeraction'"
-                >
-                    <ng-container *ngIf="!iconTemplate">
-                        <ng-container *ngIf="selected">
-                            <span *ngIf="accordion.collapseIcon" [class]="accordion.collapseIcon" [ngClass]="iconClass" [attr.aria-hidden]="true"></span>
-                            <ChevronDownIcon *ngIf="!accordion.collapseIcon" [ngClass]="iconClass" [attr.aria-hidden]="true" />
-                        </ng-container>
-                        <ng-container *ngIf="!selected">
-                            <span *ngIf="accordion.expandIcon" [class]="accordion.expandIcon" [ngClass]="iconClass" [attr.aria-hidden]="true"></span>
-                            <ChevronRightIcon *ngIf="!accordion.expandIcon" [ngClass]="iconClass" [attr.aria-hidden]="true" />
-                        </ng-container>
-                    </ng-container>
-                    <ng-template *ngTemplateOutlet="iconTemplate; context: { $implicit: selected }"></ng-template>
-                    <span class="p-accordion-header-text" *ngIf="!hasHeaderFacet">
-                        {{ header }}
-                    </span>
-                    <ng-container *ngTemplateOutlet="headerTemplate"></ng-container>
-                    <ng-content select="p-header" *ngIf="hasHeaderFacet"></ng-content>
-                </a>
-            </div>
-            <div
-                [attr.id]="getTabContentId(id)"
-                class="p-toggleable-content"
-                [@tabContent]="selected ? { value: 'visible', params: { transitionParams: transitionOptions } } : { value: 'hidden', params: { transitionParams: transitionOptions } }"
-                role="region"
-                [attr.aria-hidden]="!selected"
-                [attr.aria-labelledby]="getTabHeaderActionId(id)"
-                [attr.data-pc-section]="'toggleablecontent'"
-            >
-                <div class="p-accordion-content" [ngClass]="contentStyleClass" [ngStyle]="contentStyle">
-                    <ng-content></ng-content>
-                    <ng-container *ngIf="contentTemplate && (cache ? loaded : selected)">
-                        <ng-container *ngTemplateOutlet="contentTemplate"></ng-container>
-                    </ng-container>
-                </div>
-            </div>
-        </div>
-    `,
+      template: '\n        <div class="p-accordion-tab" [class.p-accordion-tab-active]="selected" [ngClass]="tabStyleClass" [ngStyle]="tabStyle" [attr.data-pc-name]="\'accordiontab\'">\n            <div class="p-accordion-header" role="heading" [attr.aria-level]="headerAriaLevel" [class.p-highlight]="selected" [class.p-disabled]="disabled" [attr.data-p-disabled]="disabled" [attr.data-pc-section]="\'header\'">\n                <a\n                    [ngClass]="headerStyleClass"\n                    [ngStyle]="headerStyle"\n                    role="button"\n                    class="p-accordion-header-link"\n                    (click)="toggle($event)"\n                    (keydown)="onKeydown($event)"\n                    [attr.tabindex]="disabled ? null : 0"\n                    [attr.id]="getTabHeaderActionId(id)"\n                    [attr.aria-controls]="getTabContentId(id)"\n                    [attr.aria-expanded]="selected"\n                    [attr.aria-disabled]="disabled"\n                    [attr.data-pc-section]="\'headeraction\'"\n                >\n                    <ng-container *ngIf="!iconTemplate">\n                        <ng-container *ngIf="selected">\n                            <span *ngIf="accordion.collapseIcon" [class]="accordion.collapseIcon" [ngClass]="iconClass" [attr.aria-hidden]="true"></span>\n                            <ChevronDownIcon *ngIf="!accordion.collapseIcon" [ngClass]="iconClass" [attr.aria-hidden]="true" />\n                        </ng-container>\n                        <ng-container *ngIf="!selected">\n                            <span *ngIf="accordion.expandIcon" [class]="accordion.expandIcon" [ngClass]="iconClass" [attr.aria-hidden]="true"></span>\n                            <ChevronRightIcon *ngIf="!accordion.expandIcon" [ngClass]="iconClass" [attr.aria-hidden]="true" />\n                        </ng-container>\n                    </ng-container>\n                    <ng-template *ngTemplateOutlet="iconTemplate; context: { $implicit: selected }"></ng-template>\n                    <span class="p-accordion-header-text" *ngIf="!hasHeaderFacet">\n                        {{ header }}\n                    </span>\n                    <ng-container *ngTemplateOutlet="headerTemplate"></ng-container>\n                    <ng-content select="p-header" *ngIf="hasHeaderFacet"></ng-content>\n                </a>\n            </div>\n            <div\n                [attr.id]="getTabContentId(id)"\n                class="p-toggleable-content"\n                [@tabContent]="selected ? { value: \'visible\', params: { transitionParams: transitionOptions } } : { value: \'hidden\', params: { transitionParams: transitionOptions } }"\n                role="region"\n                [attr.aria-hidden]="!selected"\n                [attr.aria-labelledby]="getTabHeaderActionId(id)"\n                [attr.data-pc-section]="\'toggleablecontent\'"\n            >\n                <div class="p-accordion-content" [ngClass]="contentStyleClass" [ngStyle]="contentStyle">\n                    <ng-content></ng-content>\n                    <ng-container *ngIf="contentTemplate && (cache ? loaded : selected)">\n                        <ng-container *ngTemplateOutlet="contentTemplate"></ng-container>\n                    </ng-container>\n                </div>\n            </div>\n        </div>\n    ',
       animations: [trigger("tabContent", [state("hidden", style({
         height: "0",
         visibility: "hidden"
@@ -672,34 +623,67 @@ var AccordionTab = class _AccordionTab {
     }]
   });
 })();
-var Accordion = class _Accordion {
-  el;
-  changeDetector;
-  /**
-   * When enabled, multiple tabs can be activated at the same time.
-   * @group Props
-   */
-  multiple = false;
-  /**
-   * Inline style of the tab header and content.
-   * @group Props
-   */
-  style;
-  /**
-   * Class of the element.
-   * @group Props
-   */
-  styleClass;
-  /**
-   * Icon of a collapsed tab.
-   * @group Props
-   */
-  expandIcon;
-  /**
-   * Icon of an expanded tab.
-   * @group Props
-   */
-  collapseIcon;
+var _Accordion = class _Accordion {
+  constructor(el, changeDetector) {
+    __publicField(this, "el");
+    __publicField(this, "changeDetector");
+    /**
+     * When enabled, multiple tabs can be activated at the same time.
+     * @group Props
+     */
+    __publicField(this, "multiple", false);
+    /**
+     * Inline style of the tab header and content.
+     * @group Props
+     */
+    __publicField(this, "style");
+    /**
+     * Class of the element.
+     * @group Props
+     */
+    __publicField(this, "styleClass");
+    /**
+     * Icon of a collapsed tab.
+     * @group Props
+     */
+    __publicField(this, "expandIcon");
+    /**
+     * Icon of an expanded tab.
+     * @group Props
+     */
+    __publicField(this, "collapseIcon");
+    /**
+     * When enabled, the focused tab is activated.
+     * @group Props
+     */
+    __publicField(this, "selectOnFocus", false);
+    /**
+     * Callback to invoke when an active tab is collapsed by clicking on the header.
+     * @param {AccordionTabCloseEvent} event - Custom tab close event.
+     * @group Emits
+     */
+    __publicField(this, "onClose", new EventEmitter());
+    /**
+     * Callback to invoke when a tab gets expanded.
+     * @param {AccordionTabOpenEvent} event - Custom tab open event.
+     * @group Emits
+     */
+    __publicField(this, "onOpen", new EventEmitter());
+    /**
+     * Returns the active index.
+     * @param {number | number[]} value - New index.
+     * @group Emits
+     */
+    __publicField(this, "activeIndexChange", new EventEmitter());
+    __publicField(this, "tabList");
+    __publicField(this, "tabListSubscription", null);
+    __publicField(this, "_activeIndex");
+    __publicField(this, "_headerAriaLevel", 2);
+    __publicField(this, "preventActiveIndexPropagation", false);
+    __publicField(this, "tabs", []);
+    this.el = el;
+    this.changeDetector = changeDetector;
+  }
   /**
    * Index of the active tab or an array of indexes in multiple mode.
    * @group Props
@@ -716,11 +700,6 @@ var Accordion = class _Accordion {
     this.updateSelectionState();
   }
   /**
-   * When enabled, the focused tab is activated.
-   * @group Props
-   */
-  selectOnFocus = false;
-  /**
    * The aria-level that each accordion header will have. The default value is 2 as per W3C specifications
    * @group Props
    */
@@ -733,34 +712,6 @@ var Accordion = class _Accordion {
     } else if (this._headerAriaLevel !== 2) {
       this._headerAriaLevel = 2;
     }
-  }
-  /**
-   * Callback to invoke when an active tab is collapsed by clicking on the header.
-   * @param {AccordionTabCloseEvent} event - Custom tab close event.
-   * @group Emits
-   */
-  onClose = new EventEmitter();
-  /**
-   * Callback to invoke when a tab gets expanded.
-   * @param {AccordionTabOpenEvent} event - Custom tab open event.
-   * @group Emits
-   */
-  onOpen = new EventEmitter();
-  /**
-   * Returns the active index.
-   * @param {number | number[]} value - New index.
-   * @group Emits
-   */
-  activeIndexChange = new EventEmitter();
-  tabList;
-  tabListSubscription = null;
-  _activeIndex;
-  _headerAriaLevel = 2;
-  preventActiveIndexPropagation = false;
-  tabs = [];
-  constructor(el, changeDetector) {
-    this.el = el;
-    this.changeDetector = changeDetector;
   }
   onKeydown(event) {
     switch (event.code) {
@@ -862,7 +813,8 @@ var Accordion = class _Accordion {
     event.preventDefault();
   }
   resetActiveTab() {
-    this.tabs?.forEach((tab) => {
+    var _a;
+    (_a = this.tabs) == null ? void 0 : _a.forEach((tab) => {
       tab.selected = false;
       tab.changeDetector.markForCheck();
     });
@@ -925,76 +877,73 @@ var Accordion = class _Accordion {
       this.tabListSubscription.unsubscribe();
     }
   }
-  static ɵfac = function Accordion_Factory(__ngFactoryType__) {
-    return new (__ngFactoryType__ || _Accordion)(ɵɵdirectiveInject(ElementRef), ɵɵdirectiveInject(ChangeDetectorRef));
-  };
-  static ɵcmp = ɵɵdefineComponent({
-    type: _Accordion,
-    selectors: [["p-accordion"]],
-    contentQueries: function Accordion_ContentQueries(rf, ctx, dirIndex) {
-      if (rf & 1) {
-        ɵɵcontentQuery(dirIndex, AccordionTab, 5);
-      }
-      if (rf & 2) {
-        let _t;
-        ɵɵqueryRefresh(_t = ɵɵloadQuery()) && (ctx.tabList = _t);
-      }
-    },
-    hostAttrs: [1, "p-element"],
-    hostBindings: function Accordion_HostBindings(rf, ctx) {
-      if (rf & 1) {
-        ɵɵlistener("keydown", function Accordion_keydown_HostBindingHandler($event) {
-          return ctx.onKeydown($event);
-        });
-      }
-    },
-    inputs: {
-      multiple: [2, "multiple", "multiple", booleanAttribute],
-      style: "style",
-      styleClass: "styleClass",
-      expandIcon: "expandIcon",
-      collapseIcon: "collapseIcon",
-      activeIndex: "activeIndex",
-      selectOnFocus: [2, "selectOnFocus", "selectOnFocus", booleanAttribute],
-      headerAriaLevel: "headerAriaLevel"
-    },
-    outputs: {
-      onClose: "onClose",
-      onOpen: "onOpen",
-      activeIndexChange: "activeIndexChange"
-    },
-    features: [ɵɵInputTransformsFeature],
-    ngContentSelectors: _c6,
-    decls: 2,
-    vars: 4,
-    consts: [[3, "ngClass", "ngStyle"]],
-    template: function Accordion_Template(rf, ctx) {
-      if (rf & 1) {
-        ɵɵprojectionDef();
-        ɵɵelementStart(0, "div", 0);
-        ɵɵprojection(1);
-        ɵɵelementEnd();
-      }
-      if (rf & 2) {
-        ɵɵclassMap(ctx.styleClass);
-        ɵɵproperty("ngClass", "p-accordion p-component")("ngStyle", ctx.style);
-      }
-    },
-    dependencies: [NgClass, NgStyle],
-    encapsulation: 2,
-    changeDetection: 0
-  });
 };
+__publicField(_Accordion, "ɵfac", function Accordion_Factory(__ngFactoryType__) {
+  return new (__ngFactoryType__ || _Accordion)(ɵɵdirectiveInject(ElementRef), ɵɵdirectiveInject(ChangeDetectorRef));
+});
+__publicField(_Accordion, "ɵcmp", ɵɵdefineComponent({
+  type: _Accordion,
+  selectors: [["p-accordion"]],
+  contentQueries: function Accordion_ContentQueries(rf, ctx, dirIndex) {
+    if (rf & 1) {
+      ɵɵcontentQuery(dirIndex, AccordionTab, 5);
+    }
+    if (rf & 2) {
+      let _t;
+      ɵɵqueryRefresh(_t = ɵɵloadQuery()) && (ctx.tabList = _t);
+    }
+  },
+  hostAttrs: [1, "p-element"],
+  hostBindings: function Accordion_HostBindings(rf, ctx) {
+    if (rf & 1) {
+      ɵɵlistener("keydown", function Accordion_keydown_HostBindingHandler($event) {
+        return ctx.onKeydown($event);
+      });
+    }
+  },
+  inputs: {
+    multiple: [2, "multiple", "multiple", booleanAttribute],
+    style: "style",
+    styleClass: "styleClass",
+    expandIcon: "expandIcon",
+    collapseIcon: "collapseIcon",
+    activeIndex: "activeIndex",
+    selectOnFocus: [2, "selectOnFocus", "selectOnFocus", booleanAttribute],
+    headerAriaLevel: "headerAriaLevel"
+  },
+  outputs: {
+    onClose: "onClose",
+    onOpen: "onOpen",
+    activeIndexChange: "activeIndexChange"
+  },
+  features: [ɵɵInputTransformsFeature],
+  ngContentSelectors: _c6,
+  decls: 2,
+  vars: 4,
+  consts: [[3, "ngClass", "ngStyle"]],
+  template: function Accordion_Template(rf, ctx) {
+    if (rf & 1) {
+      ɵɵprojectionDef();
+      ɵɵelementStart(0, "div", 0);
+      ɵɵprojection(1);
+      ɵɵelementEnd();
+    }
+    if (rf & 2) {
+      ɵɵclassMap(ctx.styleClass);
+      ɵɵproperty("ngClass", "p-accordion p-component")("ngStyle", ctx.style);
+    }
+  },
+  dependencies: [NgClass, NgStyle],
+  encapsulation: 2,
+  changeDetection: 0
+}));
+var Accordion = _Accordion;
 (() => {
   (typeof ngDevMode === "undefined" || ngDevMode) && setClassMetadata(Accordion, [{
     type: Component,
     args: [{
       selector: "p-accordion",
-      template: `
-        <div [ngClass]="'p-accordion p-component'" [ngStyle]="style" [class]="styleClass">
-            <ng-content></ng-content>
-        </div>
-    `,
+      template: '\n        <div [ngClass]="\'p-accordion p-component\'" [ngStyle]="style" [class]="styleClass">\n            <ng-content></ng-content>\n        </div>\n    ',
       changeDetection: ChangeDetectionStrategy.OnPush,
       host: {
         class: "p-element"
@@ -1056,20 +1005,21 @@ var Accordion = class _Accordion {
     }]
   });
 })();
-var AccordionModule = class _AccordionModule {
-  static ɵfac = function AccordionModule_Factory(__ngFactoryType__) {
-    return new (__ngFactoryType__ || _AccordionModule)();
-  };
-  static ɵmod = ɵɵdefineNgModule({
-    type: _AccordionModule,
-    declarations: [Accordion, AccordionTab],
-    imports: [CommonModule, ChevronRightIcon, ChevronDownIcon],
-    exports: [Accordion, AccordionTab, SharedModule]
-  });
-  static ɵinj = ɵɵdefineInjector({
-    imports: [CommonModule, ChevronRightIcon, ChevronDownIcon, SharedModule]
-  });
+var _AccordionModule = class _AccordionModule {
 };
+__publicField(_AccordionModule, "ɵfac", function AccordionModule_Factory(__ngFactoryType__) {
+  return new (__ngFactoryType__ || _AccordionModule)();
+});
+__publicField(_AccordionModule, "ɵmod", ɵɵdefineNgModule({
+  type: _AccordionModule,
+  declarations: [Accordion, AccordionTab],
+  imports: [CommonModule, ChevronRightIcon, ChevronDownIcon],
+  exports: [Accordion, AccordionTab, SharedModule]
+}));
+__publicField(_AccordionModule, "ɵinj", ɵɵdefineInjector({
+  imports: [CommonModule, ChevronRightIcon, ChevronDownIcon, SharedModule]
+}));
+var AccordionModule = _AccordionModule;
 (() => {
   (typeof ngDevMode === "undefined" || ngDevMode) && setClassMetadata(AccordionModule, [{
     type: NgModule,

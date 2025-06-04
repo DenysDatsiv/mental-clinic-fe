@@ -1,9 +1,9 @@
 import {
   DomHandler
-} from "./chunk-BUGEQH7Q.js";
+} from "./chunk-LB42WWNC.js";
 import {
   CommonModule
-} from "./chunk-UBZYO7FG.js";
+} from "./chunk-KUZ63KOD.js";
 import {
   Directive,
   ElementRef,
@@ -20,27 +20,83 @@ import {
   ɵɵdefineNgModule,
   ɵɵdirectiveInject,
   ɵɵlistener
-} from "./chunk-ZI2Q76R4.js";
-import "./chunk-5OPE3T2R.js";
+} from "./chunk-R75KKECJ.js";
 import "./chunk-4N4GOYJH.js";
+import "./chunk-5OPE3T2R.js";
 import "./chunk-FHTVLBLO.js";
-import "./chunk-3OV72XIM.js";
+import {
+  __publicField
+} from "./chunk-IJZFAMY6.js";
 
 // node_modules/primeng/fesm2022/primeng-styleclass.mjs
-var StyleClass = class _StyleClass {
-  el;
-  renderer;
-  zone;
+var _StyleClass = class _StyleClass {
   constructor(el, renderer, zone) {
+    __publicField(this, "el");
+    __publicField(this, "renderer");
+    __publicField(this, "zone");
+    /**
+     * Selector to define the target element. Available selectors are '@next', '@prev', '@parent' and '@grandparent'.
+     * @group Props
+     */
+    __publicField(this, "selector");
+    /**
+     * Style class to add when item begins to get displayed.
+     * @group Props
+     */
+    __publicField(this, "enterFromClass");
+    /**
+     * Style class to add during enter animation.
+     * @group Props
+     */
+    __publicField(this, "enterActiveClass");
+    /**
+     * Style class to add when item begins to get displayed.
+     * @group Props
+     */
+    __publicField(this, "enterToClass");
+    /**
+     * Style class to add when item begins to get hidden.
+     * @group Props
+     */
+    __publicField(this, "leaveFromClass");
+    /**
+     * Style class to add during leave animation.
+     * @group Props
+     */
+    __publicField(this, "leaveActiveClass");
+    /**
+     * Style class to add when leave animation is completed.
+     * @group Props
+     */
+    __publicField(this, "leaveToClass");
+    /**
+     * Whether to trigger leave animation when outside of the element is clicked.
+     * @group Props
+     */
+    __publicField(this, "hideOnOutsideClick");
+    /**
+     * Adds or removes a class when no enter-leave animation is required.
+     * @group Props
+     */
+    __publicField(this, "toggleClass");
+    /**
+     * Whether to trigger leave animation when escape key pressed.
+     * @group Props
+     */
+    __publicField(this, "hideOnEscape");
+    __publicField(this, "eventListener");
+    __publicField(this, "documentClickListener");
+    __publicField(this, "documentKeydownListener");
+    __publicField(this, "target");
+    __publicField(this, "enterListener");
+    __publicField(this, "leaveListener");
+    __publicField(this, "animating");
+    __publicField(this, "_enterClass");
+    __publicField(this, "_leaveClass");
     this.el = el;
     this.renderer = renderer;
     this.zone = zone;
   }
-  /**
-   * Selector to define the target element. Available selectors are '@next', '@prev', '@parent' and '@grandparent'.
-   * @group Props
-   */
-  selector;
   /**
    * Style class to add when item begins to get displayed.
    * @group Props
@@ -54,21 +110,6 @@ var StyleClass = class _StyleClass {
     return this._enterClass;
   }
   /**
-   * Style class to add when item begins to get displayed.
-   * @group Props
-   */
-  enterFromClass;
-  /**
-   * Style class to add during enter animation.
-   * @group Props
-   */
-  enterActiveClass;
-  /**
-   * Style class to add when item begins to get displayed.
-   * @group Props
-   */
-  enterToClass;
-  /**
    * Style class to add when item begins to get hidden.
    * @group Props
    * @deprecated Use leaveFromClass instead
@@ -80,45 +121,6 @@ var StyleClass = class _StyleClass {
   get leaveClass() {
     return this._leaveClass;
   }
-  /**
-   * Style class to add when item begins to get hidden.
-   * @group Props
-   */
-  leaveFromClass;
-  /**
-   * Style class to add during leave animation.
-   * @group Props
-   */
-  leaveActiveClass;
-  /**
-   * Style class to add when leave animation is completed.
-   * @group Props
-   */
-  leaveToClass;
-  /**
-   * Whether to trigger leave animation when outside of the element is clicked.
-   * @group Props
-   */
-  hideOnOutsideClick;
-  /**
-   * Adds or removes a class when no enter-leave animation is required.
-   * @group Props
-   */
-  toggleClass;
-  /**
-   * Whether to trigger leave animation when escape key pressed.
-   * @group Props
-   */
-  hideOnEscape;
-  eventListener;
-  documentClickListener;
-  documentKeydownListener;
-  target;
-  enterListener;
-  leaveListener;
-  animating;
-  _enterClass;
-  _leaveClass;
   clickListener() {
     this.target = this.resolveTarget();
     if (this.toggleClass) {
@@ -273,37 +275,38 @@ var StyleClass = class _StyleClass {
     this.unbindDocumentClickListener();
     this.unbindDocumentKeydownListener();
   }
-  static ɵfac = function StyleClass_Factory(__ngFactoryType__) {
-    return new (__ngFactoryType__ || _StyleClass)(ɵɵdirectiveInject(ElementRef), ɵɵdirectiveInject(Renderer2), ɵɵdirectiveInject(NgZone));
-  };
-  static ɵdir = ɵɵdefineDirective({
-    type: _StyleClass,
-    selectors: [["", "pStyleClass", ""]],
-    hostAttrs: [1, "p-element"],
-    hostBindings: function StyleClass_HostBindings(rf, ctx) {
-      if (rf & 1) {
-        ɵɵlistener("click", function StyleClass_click_HostBindingHandler($event) {
-          return ctx.clickListener($event);
-        });
-      }
-    },
-    inputs: {
-      selector: [0, "pStyleClass", "selector"],
-      enterClass: "enterClass",
-      enterFromClass: "enterFromClass",
-      enterActiveClass: "enterActiveClass",
-      enterToClass: "enterToClass",
-      leaveClass: "leaveClass",
-      leaveFromClass: "leaveFromClass",
-      leaveActiveClass: "leaveActiveClass",
-      leaveToClass: "leaveToClass",
-      hideOnOutsideClick: [2, "hideOnOutsideClick", "hideOnOutsideClick", booleanAttribute],
-      toggleClass: "toggleClass",
-      hideOnEscape: [2, "hideOnEscape", "hideOnEscape", booleanAttribute]
-    },
-    features: [ɵɵInputTransformsFeature]
-  });
 };
+__publicField(_StyleClass, "ɵfac", function StyleClass_Factory(__ngFactoryType__) {
+  return new (__ngFactoryType__ || _StyleClass)(ɵɵdirectiveInject(ElementRef), ɵɵdirectiveInject(Renderer2), ɵɵdirectiveInject(NgZone));
+});
+__publicField(_StyleClass, "ɵdir", ɵɵdefineDirective({
+  type: _StyleClass,
+  selectors: [["", "pStyleClass", ""]],
+  hostAttrs: [1, "p-element"],
+  hostBindings: function StyleClass_HostBindings(rf, ctx) {
+    if (rf & 1) {
+      ɵɵlistener("click", function StyleClass_click_HostBindingHandler($event) {
+        return ctx.clickListener($event);
+      });
+    }
+  },
+  inputs: {
+    selector: [0, "pStyleClass", "selector"],
+    enterClass: "enterClass",
+    enterFromClass: "enterFromClass",
+    enterActiveClass: "enterActiveClass",
+    enterToClass: "enterToClass",
+    leaveClass: "leaveClass",
+    leaveFromClass: "leaveFromClass",
+    leaveActiveClass: "leaveActiveClass",
+    leaveToClass: "leaveToClass",
+    hideOnOutsideClick: [2, "hideOnOutsideClick", "hideOnOutsideClick", booleanAttribute],
+    toggleClass: "toggleClass",
+    hideOnEscape: [2, "hideOnEscape", "hideOnEscape", booleanAttribute]
+  },
+  features: [ɵɵInputTransformsFeature]
+}));
+var StyleClass = _StyleClass;
 (() => {
   (typeof ngDevMode === "undefined" || ngDevMode) && setClassMetadata(StyleClass, [{
     type: Directive,
@@ -369,20 +372,21 @@ var StyleClass = class _StyleClass {
     }]
   });
 })();
-var StyleClassModule = class _StyleClassModule {
-  static ɵfac = function StyleClassModule_Factory(__ngFactoryType__) {
-    return new (__ngFactoryType__ || _StyleClassModule)();
-  };
-  static ɵmod = ɵɵdefineNgModule({
-    type: _StyleClassModule,
-    declarations: [StyleClass],
-    imports: [CommonModule],
-    exports: [StyleClass]
-  });
-  static ɵinj = ɵɵdefineInjector({
-    imports: [CommonModule]
-  });
+var _StyleClassModule = class _StyleClassModule {
 };
+__publicField(_StyleClassModule, "ɵfac", function StyleClassModule_Factory(__ngFactoryType__) {
+  return new (__ngFactoryType__ || _StyleClassModule)();
+});
+__publicField(_StyleClassModule, "ɵmod", ɵɵdefineNgModule({
+  type: _StyleClassModule,
+  declarations: [StyleClass],
+  imports: [CommonModule],
+  exports: [StyleClass]
+}));
+__publicField(_StyleClassModule, "ɵinj", ɵɵdefineInjector({
+  imports: [CommonModule]
+}));
+var StyleClassModule = _StyleClassModule;
 (() => {
   (typeof ngDevMode === "undefined" || ngDevMode) && setClassMetadata(StyleClassModule, [{
     type: NgModule,

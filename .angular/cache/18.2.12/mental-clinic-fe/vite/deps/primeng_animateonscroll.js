@@ -1,11 +1,11 @@
 import {
   DomHandler
-} from "./chunk-BUGEQH7Q.js";
+} from "./chunk-LB42WWNC.js";
 import {
   CommonModule,
   DOCUMENT,
   isPlatformBrowser
-} from "./chunk-UBZYO7FG.js";
+} from "./chunk-KUZ63KOD.js";
 import {
   Directive,
   ElementRef,
@@ -23,58 +23,59 @@ import {
   ɵɵdefineInjector,
   ɵɵdefineNgModule,
   ɵɵdirectiveInject
-} from "./chunk-ZI2Q76R4.js";
-import "./chunk-5OPE3T2R.js";
+} from "./chunk-R75KKECJ.js";
 import "./chunk-4N4GOYJH.js";
+import "./chunk-5OPE3T2R.js";
 import "./chunk-FHTVLBLO.js";
 import {
+  __publicField,
   __spreadProps,
   __spreadValues
-} from "./chunk-3OV72XIM.js";
+} from "./chunk-IJZFAMY6.js";
 
 // node_modules/primeng/fesm2022/primeng-animateonscroll.mjs
-var AnimateOnScroll = class _AnimateOnScroll {
-  document;
-  platformId;
-  host;
-  el;
-  renderer;
-  /**
-   * Selector to define the CSS class for enter animation.
-   * @group Props
-   */
-  enterClass;
-  /**
-   * Selector to define the CSS class for leave animation.
-   * @group Props
-   */
-  leaveClass;
-  /**
-   * Specifies the root option of the IntersectionObserver API.
-   * @group Props
-   */
-  root;
-  /**
-   * Specifies the rootMargin option of the IntersectionObserver API.
-   * @group Props
-   */
-  rootMargin;
-  /**
-   * Specifies the threshold option of the IntersectionObserver API
-   * @group Props
-   */
-  threshold;
-  /**
-   * Whether the scroll event listener should be removed after initial run.
-   * @group Props
-   */
-  once = true;
-  observer;
-  resetObserver;
-  isObserverActive = false;
-  animationState;
-  animationEndListener;
+var _AnimateOnScroll = class _AnimateOnScroll {
   constructor(document, platformId, host, el, renderer) {
+    __publicField(this, "document");
+    __publicField(this, "platformId");
+    __publicField(this, "host");
+    __publicField(this, "el");
+    __publicField(this, "renderer");
+    /**
+     * Selector to define the CSS class for enter animation.
+     * @group Props
+     */
+    __publicField(this, "enterClass");
+    /**
+     * Selector to define the CSS class for leave animation.
+     * @group Props
+     */
+    __publicField(this, "leaveClass");
+    /**
+     * Specifies the root option of the IntersectionObserver API.
+     * @group Props
+     */
+    __publicField(this, "root");
+    /**
+     * Specifies the rootMargin option of the IntersectionObserver API.
+     * @group Props
+     */
+    __publicField(this, "rootMargin");
+    /**
+     * Specifies the threshold option of the IntersectionObserver API
+     * @group Props
+     */
+    __publicField(this, "threshold");
+    /**
+     * Whether the scroll event listener should be removed after initial run.
+     * @group Props
+     */
+    __publicField(this, "once", true);
+    __publicField(this, "observer");
+    __publicField(this, "resetObserver");
+    __publicField(this, "isObserverActive", false);
+    __publicField(this, "animationState");
+    __publicField(this, "animationEndListener");
     this.document = document;
     this.platformId = platformId;
     this.host = host;
@@ -156,37 +157,39 @@ var AnimateOnScroll = class _AnimateOnScroll {
     }
   }
   unbindIntersectionObserver() {
-    this.observer?.unobserve(this.host.nativeElement);
-    this.resetObserver?.unobserve(this.host.nativeElement);
+    var _a, _b;
+    (_a = this.observer) == null ? void 0 : _a.unobserve(this.host.nativeElement);
+    (_b = this.resetObserver) == null ? void 0 : _b.unobserve(this.host.nativeElement);
     this.isObserverActive = false;
   }
   ngOnDestroy() {
     this.unbindAnimationEvents();
     this.unbindIntersectionObserver();
   }
-  static ɵfac = function AnimateOnScroll_Factory(__ngFactoryType__) {
-    return new (__ngFactoryType__ || _AnimateOnScroll)(ɵɵdirectiveInject(DOCUMENT), ɵɵdirectiveInject(PLATFORM_ID), ɵɵdirectiveInject(ElementRef), ɵɵdirectiveInject(ElementRef), ɵɵdirectiveInject(Renderer2));
-  };
-  static ɵdir = ɵɵdefineDirective({
-    type: _AnimateOnScroll,
-    selectors: [["", "pAnimateOnScroll", ""]],
-    hostVars: 2,
-    hostBindings: function AnimateOnScroll_HostBindings(rf, ctx) {
-      if (rf & 2) {
-        ɵɵclassProp("p-animateonscroll", true);
-      }
-    },
-    inputs: {
-      enterClass: "enterClass",
-      leaveClass: "leaveClass",
-      root: "root",
-      rootMargin: "rootMargin",
-      threshold: [2, "threshold", "threshold", numberAttribute],
-      once: [2, "once", "once", booleanAttribute]
-    },
-    features: [ɵɵInputTransformsFeature]
-  });
 };
+__publicField(_AnimateOnScroll, "ɵfac", function AnimateOnScroll_Factory(__ngFactoryType__) {
+  return new (__ngFactoryType__ || _AnimateOnScroll)(ɵɵdirectiveInject(DOCUMENT), ɵɵdirectiveInject(PLATFORM_ID), ɵɵdirectiveInject(ElementRef), ɵɵdirectiveInject(ElementRef), ɵɵdirectiveInject(Renderer2));
+});
+__publicField(_AnimateOnScroll, "ɵdir", ɵɵdefineDirective({
+  type: _AnimateOnScroll,
+  selectors: [["", "pAnimateOnScroll", ""]],
+  hostVars: 2,
+  hostBindings: function AnimateOnScroll_HostBindings(rf, ctx) {
+    if (rf & 2) {
+      ɵɵclassProp("p-animateonscroll", true);
+    }
+  },
+  inputs: {
+    enterClass: "enterClass",
+    leaveClass: "leaveClass",
+    root: "root",
+    rootMargin: "rootMargin",
+    threshold: [2, "threshold", "threshold", numberAttribute],
+    once: [2, "once", "once", booleanAttribute]
+  },
+  features: [ɵɵInputTransformsFeature]
+}));
+var AnimateOnScroll = _AnimateOnScroll;
 (() => {
   (typeof ngDevMode === "undefined" || ngDevMode) && setClassMetadata(AnimateOnScroll, [{
     type: Directive,
@@ -241,20 +244,21 @@ var AnimateOnScroll = class _AnimateOnScroll {
     }]
   });
 })();
-var AnimateOnScrollModule = class _AnimateOnScrollModule {
-  static ɵfac = function AnimateOnScrollModule_Factory(__ngFactoryType__) {
-    return new (__ngFactoryType__ || _AnimateOnScrollModule)();
-  };
-  static ɵmod = ɵɵdefineNgModule({
-    type: _AnimateOnScrollModule,
-    declarations: [AnimateOnScroll],
-    imports: [CommonModule],
-    exports: [AnimateOnScroll]
-  });
-  static ɵinj = ɵɵdefineInjector({
-    imports: [CommonModule]
-  });
+var _AnimateOnScrollModule = class _AnimateOnScrollModule {
 };
+__publicField(_AnimateOnScrollModule, "ɵfac", function AnimateOnScrollModule_Factory(__ngFactoryType__) {
+  return new (__ngFactoryType__ || _AnimateOnScrollModule)();
+});
+__publicField(_AnimateOnScrollModule, "ɵmod", ɵɵdefineNgModule({
+  type: _AnimateOnScrollModule,
+  declarations: [AnimateOnScroll],
+  imports: [CommonModule],
+  exports: [AnimateOnScroll]
+}));
+__publicField(_AnimateOnScrollModule, "ɵinj", ɵɵdefineInjector({
+  imports: [CommonModule]
+}));
+var AnimateOnScrollModule = _AnimateOnScrollModule;
 (() => {
   (typeof ngDevMode === "undefined" || ngDevMode) && setClassMetadata(AnimateOnScrollModule, [{
     type: NgModule,

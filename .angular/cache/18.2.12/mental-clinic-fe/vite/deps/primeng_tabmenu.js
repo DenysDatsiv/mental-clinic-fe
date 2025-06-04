@@ -1,14 +1,10 @@
 import {
   Tooltip,
   TooltipModule
-} from "./chunk-STBFZVQ2.js";
+} from "./chunk-IC7NSP6U.js";
 import {
   ChevronLeftIcon
-} from "./chunk-CA4J3LLG.js";
-import {
-  Ripple,
-  RippleModule
-} from "./chunk-QN24C4B3.js";
+} from "./chunk-63U6WJYF.js";
 import {
   ActivatedRoute,
   NavigationEnd,
@@ -16,23 +12,27 @@ import {
   RouterLink,
   RouterLinkActive,
   RouterModule
-} from "./chunk-AQMTG6B6.js";
-import "./chunk-3E3YFUVD.js";
-import "./chunk-DO2TVYAE.js";
+} from "./chunk-JBMGT7BE.js";
+import {
+  Ripple,
+  RippleModule
+} from "./chunk-MUJBADSC.js";
 import {
   ChevronRightIcon
-} from "./chunk-EYQJO2JR.js";
-import "./chunk-PXWZN6FU.js";
+} from "./chunk-CDDPLBF3.js";
+import "./chunk-BJLZ3T2F.js";
 import {
   PrimeTemplate,
   SharedModule
-} from "./chunk-TQSVMJ6K.js";
+} from "./chunk-ZROJCIWL.js";
 import {
   ObjectUtils
-} from "./chunk-3OF44R55.js";
+} from "./chunk-U3NLM53U.js";
+import "./chunk-MWP4G2UW.js";
+import "./chunk-RWZD3TDV.js";
 import {
   DomHandler
-} from "./chunk-BUGEQH7Q.js";
+} from "./chunk-LB42WWNC.js";
 import {
   CommonModule,
   NgClass,
@@ -41,7 +41,7 @@ import {
   NgStyle,
   NgTemplateOutlet,
   isPlatformBrowser
-} from "./chunk-UBZYO7FG.js";
+} from "./chunk-KUZ63KOD.js";
 import {
   ChangeDetectionStrategy,
   ChangeDetectorRef,
@@ -95,13 +95,15 @@ import {
   ɵɵtext,
   ɵɵtextInterpolate,
   ɵɵviewQuery
-} from "./chunk-ZI2Q76R4.js";
-import "./chunk-5OPE3T2R.js";
+} from "./chunk-R75KKECJ.js";
 import "./chunk-4N4GOYJH.js";
+import "./chunk-5OPE3T2R.js";
 import {
   filter
 } from "./chunk-FHTVLBLO.js";
-import "./chunk-3OV72XIM.js";
+import {
+  __publicField
+} from "./chunk-IJZFAMY6.js";
 
 // node_modules/primeng/fesm2022/primeng-tabmenu.mjs
 var _c0 = ["content"];
@@ -377,11 +379,74 @@ function TabMenu_button_10_Template(rf, ctx) {
     ɵɵproperty("ngTemplateOutlet", ctx_r2.nextIconTemplate);
   }
 }
-var TabMenu = class _TabMenu {
-  platformId;
-  router;
-  route;
-  cd;
+var _TabMenu = class _TabMenu {
+  constructor(platformId, router, route, cd) {
+    __publicField(this, "platformId");
+    __publicField(this, "router");
+    __publicField(this, "route");
+    __publicField(this, "cd");
+    /**
+     * When enabled displays buttons at each side of the tab headers to scroll the tab list.
+     * @group Props
+     */
+    __publicField(this, "scrollable");
+    /**
+     * Defines if popup mode enabled.
+     */
+    __publicField(this, "popup");
+    /**
+     * Inline style of the element.
+     * @group Props
+     */
+    __publicField(this, "style");
+    /**
+     * Class of the element.
+     * @group Props
+     */
+    __publicField(this, "styleClass");
+    /**
+     * Defines a string value that labels an interactive element.
+     * @group Props
+     */
+    __publicField(this, "ariaLabel");
+    /**
+     * Identifier of the underlying input element.
+     * @group Props
+     */
+    __publicField(this, "ariaLabelledBy");
+    /**
+     * Event fired when a tab is selected.
+     * @param {MenuItem} item - Menu item.
+     * @group Emits
+     */
+    __publicField(this, "activeItemChange", new EventEmitter());
+    __publicField(this, "content");
+    __publicField(this, "navbar");
+    __publicField(this, "inkbar");
+    __publicField(this, "prevBtn");
+    __publicField(this, "nextBtn");
+    __publicField(this, "tabLink");
+    __publicField(this, "tab");
+    __publicField(this, "templates");
+    __publicField(this, "itemTemplate");
+    __publicField(this, "previousIconTemplate");
+    __publicField(this, "nextIconTemplate");
+    __publicField(this, "tabChanged");
+    __publicField(this, "backwardIsDisabled", true);
+    __publicField(this, "forwardIsDisabled", false);
+    __publicField(this, "timerIdForAutoScroll", null);
+    __publicField(this, "_focusableItems");
+    __publicField(this, "_model");
+    __publicField(this, "_activeItem");
+    __publicField(this, "focusedItemInfo", signal(null));
+    this.platformId = platformId;
+    this.router = router;
+    this.route = route;
+    this.cd = cd;
+    this.router.events.pipe(filter((event) => event instanceof NavigationEnd)).subscribe((event) => {
+      this.cd.markForCheck();
+    });
+  }
   /**
    * An array of menuitems.
    * @group Props
@@ -408,60 +473,6 @@ var TabMenu = class _TabMenu {
   get activeItem() {
     return this._activeItem;
   }
-  /**
-   * When enabled displays buttons at each side of the tab headers to scroll the tab list.
-   * @group Props
-   */
-  scrollable;
-  /**
-   * Defines if popup mode enabled.
-   */
-  popup;
-  /**
-   * Inline style of the element.
-   * @group Props
-   */
-  style;
-  /**
-   * Class of the element.
-   * @group Props
-   */
-  styleClass;
-  /**
-   * Defines a string value that labels an interactive element.
-   * @group Props
-   */
-  ariaLabel;
-  /**
-   * Identifier of the underlying input element.
-   * @group Props
-   */
-  ariaLabelledBy;
-  /**
-   * Event fired when a tab is selected.
-   * @param {MenuItem} item - Menu item.
-   * @group Emits
-   */
-  activeItemChange = new EventEmitter();
-  content;
-  navbar;
-  inkbar;
-  prevBtn;
-  nextBtn;
-  tabLink;
-  tab;
-  templates;
-  itemTemplate;
-  previousIconTemplate;
-  nextIconTemplate;
-  tabChanged;
-  backwardIsDisabled = true;
-  forwardIsDisabled = false;
-  timerIdForAutoScroll = null;
-  _focusableItems;
-  _model;
-  _activeItem;
-  focusedItemInfo = signal(null);
   get focusableItems() {
     if (!this._focusableItems || !this._focusableItems.length) {
       this._focusableItems = (this.model || []).reduce((result, item) => {
@@ -471,22 +482,14 @@ var TabMenu = class _TabMenu {
     }
     return this._focusableItems;
   }
-  constructor(platformId, router, route, cd) {
-    this.platformId = platformId;
-    this.router = router;
-    this.route = route;
-    this.cd = cd;
-    this.router.events.pipe(filter((event) => event instanceof NavigationEnd)).subscribe((event) => {
-      this.cd.markForCheck();
-    });
-  }
   ngOnChanges(simpleChange) {
     if (simpleChange.activeItem) {
       this.autoScrollForActiveItem();
     }
   }
   ngAfterContentInit() {
-    this.templates?.forEach((item) => {
+    var _a;
+    (_a = this.templates) == null ? void 0 : _a.forEach((item) => {
       switch (item.getType()) {
         case "item":
           this.itemTemplate = item.template;
@@ -520,11 +523,12 @@ var TabMenu = class _TabMenu {
     this.clearAutoScrollHandler();
   }
   isActive(item) {
+    var _a, _b, _c;
     if (item.routerLink) {
       const routerLink = Array.isArray(item.routerLink) ? item.routerLink : [item.routerLink];
       return this.router.isActive(this.router.createUrlTree(routerLink, {
         relativeTo: this.route
-      }).toString(), item.routerLinkActiveOptions?.exact ?? item.routerLinkActiveOptions ?? false);
+      }).toString(), (_c = (_b = (_a = item.routerLinkActiveOptions) == null ? void 0 : _a.exact) != null ? _b : item.routerLinkActiveOptions) != null ? _c : false);
     }
     return item === this.activeItem;
   }
@@ -635,17 +639,20 @@ var TabMenu = class _TabMenu {
     else return null;
   }
   updateInkBar() {
-    const tabHeader = DomHandler.findSingle(this.navbar?.nativeElement, "li.p-highlight");
+    var _a, _b;
+    const tabHeader = DomHandler.findSingle((_a = this.navbar) == null ? void 0 : _a.nativeElement, "li.p-highlight");
     if (tabHeader) {
       this.inkbar.nativeElement.style.width = DomHandler.getWidth(tabHeader) + "px";
-      this.inkbar.nativeElement.style.left = DomHandler.getOffset(tabHeader).left - DomHandler.getOffset(this.navbar?.nativeElement).left + "px";
+      this.inkbar.nativeElement.style.left = DomHandler.getOffset(tabHeader).left - DomHandler.getOffset((_b = this.navbar) == null ? void 0 : _b.nativeElement).left + "px";
     }
   }
   getVisibleButtonWidths() {
-    return [this.prevBtn?.nativeElement, this.nextBtn?.nativeElement].reduce((acc, el) => el ? acc + DomHandler.getWidth(el) : acc, 0);
+    var _a, _b;
+    return [(_a = this.prevBtn) == null ? void 0 : _a.nativeElement, (_b = this.nextBtn) == null ? void 0 : _b.nativeElement].reduce((acc, el) => el ? acc + DomHandler.getWidth(el) : acc, 0);
   }
   updateButtonState() {
-    const content = this.content?.nativeElement;
+    var _a;
+    const content = (_a = this.content) == null ? void 0 : _a.nativeElement;
     const {
       scrollLeft,
       scrollWidth
@@ -655,7 +662,8 @@ var TabMenu = class _TabMenu {
     this.forwardIsDisabled = parseInt(scrollLeft) === scrollWidth - width;
   }
   updateScrollBar(index) {
-    const tabHeader = this.navbar?.nativeElement.children[index];
+    var _a;
+    const tabHeader = (_a = this.navbar) == null ? void 0 : _a.nativeElement.children[index];
     if (!tabHeader) {
       return;
     }
@@ -671,13 +679,15 @@ var TabMenu = class _TabMenu {
     event.preventDefault();
   }
   navBackward() {
-    const content = this.content?.nativeElement;
+    var _a;
+    const content = (_a = this.content) == null ? void 0 : _a.nativeElement;
     const width = DomHandler.getWidth(content) - this.getVisibleButtonWidths();
     const pos = content.scrollLeft - width;
     content.scrollLeft = pos <= 0 ? 0 : pos;
   }
   navForward() {
-    const content = this.content?.nativeElement;
+    var _a;
+    const content = (_a = this.content) == null ? void 0 : _a.nativeElement;
     const width = DomHandler.getWidth(content) - this.getVisibleButtonWidths();
     const pos = content.scrollLeft + width;
     const lastPos = content.scrollWidth - width;
@@ -709,186 +719,103 @@ var TabMenu = class _TabMenu {
       });
     }
   }
-  static ɵfac = function TabMenu_Factory(__ngFactoryType__) {
-    return new (__ngFactoryType__ || _TabMenu)(ɵɵdirectiveInject(PLATFORM_ID), ɵɵdirectiveInject(Router), ɵɵdirectiveInject(ActivatedRoute), ɵɵdirectiveInject(ChangeDetectorRef));
-  };
-  static ɵcmp = ɵɵdefineComponent({
-    type: _TabMenu,
-    selectors: [["p-tabMenu"]],
-    contentQueries: function TabMenu_ContentQueries(rf, ctx, dirIndex) {
-      if (rf & 1) {
-        ɵɵcontentQuery(dirIndex, PrimeTemplate, 4);
-      }
-      if (rf & 2) {
-        let _t;
-        ɵɵqueryRefresh(_t = ɵɵloadQuery()) && (ctx.templates = _t);
-      }
-    },
-    viewQuery: function TabMenu_Query(rf, ctx) {
-      if (rf & 1) {
-        ɵɵviewQuery(_c0, 5);
-        ɵɵviewQuery(_c1, 5);
-        ɵɵviewQuery(_c2, 5);
-        ɵɵviewQuery(_c3, 5);
-        ɵɵviewQuery(_c4, 5);
-        ɵɵviewQuery(_c5, 5);
-        ɵɵviewQuery(_c6, 5);
-      }
-      if (rf & 2) {
-        let _t;
-        ɵɵqueryRefresh(_t = ɵɵloadQuery()) && (ctx.content = _t.first);
-        ɵɵqueryRefresh(_t = ɵɵloadQuery()) && (ctx.navbar = _t.first);
-        ɵɵqueryRefresh(_t = ɵɵloadQuery()) && (ctx.inkbar = _t.first);
-        ɵɵqueryRefresh(_t = ɵɵloadQuery()) && (ctx.prevBtn = _t.first);
-        ɵɵqueryRefresh(_t = ɵɵloadQuery()) && (ctx.nextBtn = _t.first);
-        ɵɵqueryRefresh(_t = ɵɵloadQuery()) && (ctx.tabLink = _t);
-        ɵɵqueryRefresh(_t = ɵɵloadQuery()) && (ctx.tab = _t);
-      }
-    },
-    hostAttrs: [1, "p-element"],
-    inputs: {
-      model: "model",
-      activeItem: "activeItem",
-      scrollable: [2, "scrollable", "scrollable", booleanAttribute],
-      popup: [2, "popup", "popup", booleanAttribute],
-      style: "style",
-      styleClass: "styleClass",
-      ariaLabel: "ariaLabel",
-      ariaLabelledBy: "ariaLabelledBy"
-    },
-    outputs: {
-      activeItemChange: "activeItemChange"
-    },
-    features: [ɵɵInputTransformsFeature, ɵɵNgOnChangesFeature],
-    decls: 11,
-    vars: 11,
-    consts: [["content", ""], ["navbar", ""], ["inkbar", ""], ["prevBtn", ""], ["tab", ""], ["tabLink", ""], ["htmlLabel", ""], ["htmlRouteLabel", ""], ["nextBtn", ""], [3, "ngClass", "ngStyle"], [1, "p-tabmenu-nav-container"], ["class", "p-tabmenu-nav-prev p-tabmenu-nav-btn p-link", "type", "button", "role", "navigation", "pRipple", "", 3, "click", 4, "ngIf"], [1, "p-tabmenu-nav-content", 3, "scroll"], ["role", "menubar", 1, "p-tabmenu-nav", "p-reset"], ["role", "presentation", "pTooltip", "", 3, "ngStyle", "class", "ngClass", "tooltipOptions", "click", "keydown", "focus", 4, "ngFor", "ngForOf"], ["role", "none", 1, "p-tabmenu-ink-bar"], ["class", "p-tabmenu-nav-next p-tabmenu-nav-btn p-link", "type", "button", "role", "navigation", "pRipple", "", 3, "click", 4, "ngIf"], ["type", "button", "role", "navigation", "pRipple", "", 1, "p-tabmenu-nav-prev", "p-tabmenu-nav-btn", "p-link", 3, "click"], [4, "ngIf"], [4, "ngTemplateOutlet"], ["role", "presentation", "pTooltip", "", 3, "click", "keydown", "focus", "ngStyle", "ngClass", "tooltipOptions"], ["class", "p-menuitem-link", "role", "menuitem", "pRipple", "", 3, "target", 4, "ngIf"], ["role", "menuitem", "class", "p-menuitem-link", "pRipple", "", 3, "routerLink", "queryParams", "routerLinkActive", "routerLinkActiveOptions", "target", "fragment", "queryParamsHandling", "preserveFragment", "skipLocationChange", "replaceUrl", "state", 4, "ngIf"], [4, "ngTemplateOutlet", "ngTemplateOutletContext"], ["role", "menuitem", "pRipple", "", 1, "p-menuitem-link", 3, "target"], ["class", "p-menuitem-icon", 3, "ngClass", "ngStyle", 4, "ngIf"], ["class", "p-menuitem-text", 4, "ngIf", "ngIfElse"], ["class", "p-menuitem-badge", 3, "ngClass", 4, "ngIf"], [1, "p-menuitem-icon", 3, "ngClass", "ngStyle"], [1, "p-menuitem-text"], [1, "p-menuitem-text", 3, "innerHTML"], [1, "p-menuitem-badge", 3, "ngClass"], ["role", "menuitem", "pRipple", "", 1, "p-menuitem-link", 3, "routerLink", "queryParams", "routerLinkActive", "routerLinkActiveOptions", "target", "fragment", "queryParamsHandling", "preserveFragment", "skipLocationChange", "replaceUrl", "state"], ["type", "button", "role", "navigation", "pRipple", "", 1, "p-tabmenu-nav-next", "p-tabmenu-nav-btn", "p-link", 3, "click"]],
-    template: function TabMenu_Template(rf, ctx) {
-      if (rf & 1) {
-        const _r1 = ɵɵgetCurrentView();
-        ɵɵelementStart(0, "div", 9)(1, "div", 10);
-        ɵɵtemplate(2, TabMenu_button_2_Template, 4, 2, "button", 11);
-        ɵɵelementStart(3, "div", 12, 0);
-        ɵɵlistener("scroll", function TabMenu_Template_div_scroll_3_listener($event) {
-          ɵɵrestoreView(_r1);
-          return ɵɵresetView(ctx.onScroll($event));
-        });
-        ɵɵelementStart(5, "ul", 13, 1);
-        ɵɵtemplate(7, TabMenu_li_7_Template, 5, 18, "li", 14);
-        ɵɵelement(8, "li", 15, 2);
-        ɵɵelementEnd()();
-        ɵɵtemplate(10, TabMenu_button_10_Template, 4, 2, "button", 16);
-        ɵɵelementEnd()();
-      }
-      if (rf & 2) {
-        ɵɵclassMap(ctx.styleClass);
-        ɵɵproperty("ngClass", ɵɵpureFunction1(9, _c7, ctx.scrollable))("ngStyle", ctx.style);
-        ɵɵadvance(2);
-        ɵɵproperty("ngIf", ctx.scrollable && !ctx.backwardIsDisabled);
-        ɵɵadvance(3);
-        ɵɵattribute("aria-labelledby", ctx.ariaLabelledBy)("aria-label", ctx.ariaLabel);
-        ɵɵadvance(2);
-        ɵɵproperty("ngForOf", ctx.focusableItems);
-        ɵɵadvance(3);
-        ɵɵproperty("ngIf", ctx.scrollable && !ctx.forwardIsDisabled);
-      }
-    },
-    dependencies: () => [NgClass, NgForOf, NgIf, NgTemplateOutlet, NgStyle, RouterLink, RouterLinkActive, Ripple, Tooltip, ChevronLeftIcon, ChevronRightIcon],
-    styles: ["@layer primeng{.p-tabmenu-nav-container{position:relative}.p-tabmenu-scrollable .p-tabmenu-nav-container{overflow:hidden}.p-tabmenu-nav-content{overflow-x:auto;overflow-y:hidden;scroll-behavior:smooth;scrollbar-width:none;overscroll-behavior:contain auto}.p-tabmenu-nav-btn{position:absolute;top:0;z-index:2;height:100%;display:flex;align-items:center;justify-content:center}.p-tabmenu-nav-prev{left:0}.p-tabmenu-nav-next{right:0}.p-tabview-nav-content::-webkit-scrollbar{display:none}.p-tabmenu-nav{display:flex;margin:0;padding:0;list-style-type:none;flex-wrap:nowrap}.p-tabmenu-nav a{cursor:pointer;-webkit-user-select:none;user-select:none;display:flex;align-items:center;position:relative;text-decoration:none;overflow:hidden}.p-tabmenu-nav a:focus{z-index:1}.p-tabmenu-nav .p-menuitem-text{line-height:1;white-space:nowrap}.p-tabmenu-ink-bar{display:none;z-index:1}.p-tabmenu-nav-content::-webkit-scrollbar{display:none}.p-tabmenuitem:not(.p-hidden){display:flex}}\n"],
-    encapsulation: 2,
-    changeDetection: 0
-  });
 };
+__publicField(_TabMenu, "ɵfac", function TabMenu_Factory(__ngFactoryType__) {
+  return new (__ngFactoryType__ || _TabMenu)(ɵɵdirectiveInject(PLATFORM_ID), ɵɵdirectiveInject(Router), ɵɵdirectiveInject(ActivatedRoute), ɵɵdirectiveInject(ChangeDetectorRef));
+});
+__publicField(_TabMenu, "ɵcmp", ɵɵdefineComponent({
+  type: _TabMenu,
+  selectors: [["p-tabMenu"]],
+  contentQueries: function TabMenu_ContentQueries(rf, ctx, dirIndex) {
+    if (rf & 1) {
+      ɵɵcontentQuery(dirIndex, PrimeTemplate, 4);
+    }
+    if (rf & 2) {
+      let _t;
+      ɵɵqueryRefresh(_t = ɵɵloadQuery()) && (ctx.templates = _t);
+    }
+  },
+  viewQuery: function TabMenu_Query(rf, ctx) {
+    if (rf & 1) {
+      ɵɵviewQuery(_c0, 5);
+      ɵɵviewQuery(_c1, 5);
+      ɵɵviewQuery(_c2, 5);
+      ɵɵviewQuery(_c3, 5);
+      ɵɵviewQuery(_c4, 5);
+      ɵɵviewQuery(_c5, 5);
+      ɵɵviewQuery(_c6, 5);
+    }
+    if (rf & 2) {
+      let _t;
+      ɵɵqueryRefresh(_t = ɵɵloadQuery()) && (ctx.content = _t.first);
+      ɵɵqueryRefresh(_t = ɵɵloadQuery()) && (ctx.navbar = _t.first);
+      ɵɵqueryRefresh(_t = ɵɵloadQuery()) && (ctx.inkbar = _t.first);
+      ɵɵqueryRefresh(_t = ɵɵloadQuery()) && (ctx.prevBtn = _t.first);
+      ɵɵqueryRefresh(_t = ɵɵloadQuery()) && (ctx.nextBtn = _t.first);
+      ɵɵqueryRefresh(_t = ɵɵloadQuery()) && (ctx.tabLink = _t);
+      ɵɵqueryRefresh(_t = ɵɵloadQuery()) && (ctx.tab = _t);
+    }
+  },
+  hostAttrs: [1, "p-element"],
+  inputs: {
+    model: "model",
+    activeItem: "activeItem",
+    scrollable: [2, "scrollable", "scrollable", booleanAttribute],
+    popup: [2, "popup", "popup", booleanAttribute],
+    style: "style",
+    styleClass: "styleClass",
+    ariaLabel: "ariaLabel",
+    ariaLabelledBy: "ariaLabelledBy"
+  },
+  outputs: {
+    activeItemChange: "activeItemChange"
+  },
+  features: [ɵɵInputTransformsFeature, ɵɵNgOnChangesFeature],
+  decls: 11,
+  vars: 11,
+  consts: [["content", ""], ["navbar", ""], ["inkbar", ""], ["prevBtn", ""], ["tab", ""], ["tabLink", ""], ["htmlLabel", ""], ["htmlRouteLabel", ""], ["nextBtn", ""], [3, "ngClass", "ngStyle"], [1, "p-tabmenu-nav-container"], ["class", "p-tabmenu-nav-prev p-tabmenu-nav-btn p-link", "type", "button", "role", "navigation", "pRipple", "", 3, "click", 4, "ngIf"], [1, "p-tabmenu-nav-content", 3, "scroll"], ["role", "menubar", 1, "p-tabmenu-nav", "p-reset"], ["role", "presentation", "pTooltip", "", 3, "ngStyle", "class", "ngClass", "tooltipOptions", "click", "keydown", "focus", 4, "ngFor", "ngForOf"], ["role", "none", 1, "p-tabmenu-ink-bar"], ["class", "p-tabmenu-nav-next p-tabmenu-nav-btn p-link", "type", "button", "role", "navigation", "pRipple", "", 3, "click", 4, "ngIf"], ["type", "button", "role", "navigation", "pRipple", "", 1, "p-tabmenu-nav-prev", "p-tabmenu-nav-btn", "p-link", 3, "click"], [4, "ngIf"], [4, "ngTemplateOutlet"], ["role", "presentation", "pTooltip", "", 3, "click", "keydown", "focus", "ngStyle", "ngClass", "tooltipOptions"], ["class", "p-menuitem-link", "role", "menuitem", "pRipple", "", 3, "target", 4, "ngIf"], ["role", "menuitem", "class", "p-menuitem-link", "pRipple", "", 3, "routerLink", "queryParams", "routerLinkActive", "routerLinkActiveOptions", "target", "fragment", "queryParamsHandling", "preserveFragment", "skipLocationChange", "replaceUrl", "state", 4, "ngIf"], [4, "ngTemplateOutlet", "ngTemplateOutletContext"], ["role", "menuitem", "pRipple", "", 1, "p-menuitem-link", 3, "target"], ["class", "p-menuitem-icon", 3, "ngClass", "ngStyle", 4, "ngIf"], ["class", "p-menuitem-text", 4, "ngIf", "ngIfElse"], ["class", "p-menuitem-badge", 3, "ngClass", 4, "ngIf"], [1, "p-menuitem-icon", 3, "ngClass", "ngStyle"], [1, "p-menuitem-text"], [1, "p-menuitem-text", 3, "innerHTML"], [1, "p-menuitem-badge", 3, "ngClass"], ["role", "menuitem", "pRipple", "", 1, "p-menuitem-link", 3, "routerLink", "queryParams", "routerLinkActive", "routerLinkActiveOptions", "target", "fragment", "queryParamsHandling", "preserveFragment", "skipLocationChange", "replaceUrl", "state"], ["type", "button", "role", "navigation", "pRipple", "", 1, "p-tabmenu-nav-next", "p-tabmenu-nav-btn", "p-link", 3, "click"]],
+  template: function TabMenu_Template(rf, ctx) {
+    if (rf & 1) {
+      const _r1 = ɵɵgetCurrentView();
+      ɵɵelementStart(0, "div", 9)(1, "div", 10);
+      ɵɵtemplate(2, TabMenu_button_2_Template, 4, 2, "button", 11);
+      ɵɵelementStart(3, "div", 12, 0);
+      ɵɵlistener("scroll", function TabMenu_Template_div_scroll_3_listener($event) {
+        ɵɵrestoreView(_r1);
+        return ɵɵresetView(ctx.onScroll($event));
+      });
+      ɵɵelementStart(5, "ul", 13, 1);
+      ɵɵtemplate(7, TabMenu_li_7_Template, 5, 18, "li", 14);
+      ɵɵelement(8, "li", 15, 2);
+      ɵɵelementEnd()();
+      ɵɵtemplate(10, TabMenu_button_10_Template, 4, 2, "button", 16);
+      ɵɵelementEnd()();
+    }
+    if (rf & 2) {
+      ɵɵclassMap(ctx.styleClass);
+      ɵɵproperty("ngClass", ɵɵpureFunction1(9, _c7, ctx.scrollable))("ngStyle", ctx.style);
+      ɵɵadvance(2);
+      ɵɵproperty("ngIf", ctx.scrollable && !ctx.backwardIsDisabled);
+      ɵɵadvance(3);
+      ɵɵattribute("aria-labelledby", ctx.ariaLabelledBy)("aria-label", ctx.ariaLabel);
+      ɵɵadvance(2);
+      ɵɵproperty("ngForOf", ctx.focusableItems);
+      ɵɵadvance(3);
+      ɵɵproperty("ngIf", ctx.scrollable && !ctx.forwardIsDisabled);
+    }
+  },
+  dependencies: () => [NgClass, NgForOf, NgIf, NgTemplateOutlet, NgStyle, RouterLink, RouterLinkActive, Ripple, Tooltip, ChevronLeftIcon, ChevronRightIcon],
+  styles: ["@layer primeng{.p-tabmenu-nav-container{position:relative}.p-tabmenu-scrollable .p-tabmenu-nav-container{overflow:hidden}.p-tabmenu-nav-content{overflow-x:auto;overflow-y:hidden;scroll-behavior:smooth;scrollbar-width:none;overscroll-behavior:contain auto}.p-tabmenu-nav-btn{position:absolute;top:0;z-index:2;height:100%;display:flex;align-items:center;justify-content:center}.p-tabmenu-nav-prev{left:0}.p-tabmenu-nav-next{right:0}.p-tabview-nav-content::-webkit-scrollbar{display:none}.p-tabmenu-nav{display:flex;margin:0;padding:0;list-style-type:none;flex-wrap:nowrap}.p-tabmenu-nav a{cursor:pointer;-webkit-user-select:none;user-select:none;display:flex;align-items:center;position:relative;text-decoration:none;overflow:hidden}.p-tabmenu-nav a:focus{z-index:1}.p-tabmenu-nav .p-menuitem-text{line-height:1;white-space:nowrap}.p-tabmenu-ink-bar{display:none;z-index:1}.p-tabmenu-nav-content::-webkit-scrollbar{display:none}.p-tabmenuitem:not(.p-hidden){display:flex}}\n"],
+  encapsulation: 2,
+  changeDetection: 0
+}));
+var TabMenu = _TabMenu;
 (() => {
   (typeof ngDevMode === "undefined" || ngDevMode) && setClassMetadata(TabMenu, [{
     type: Component,
     args: [{
       selector: "p-tabMenu",
-      template: `
-        <div [ngClass]="{ 'p-tabmenu p-component': true, 'p-tabmenu-scrollable': scrollable }" [ngStyle]="style" [class]="styleClass">
-            <div class="p-tabmenu-nav-container">
-                <button *ngIf="scrollable && !backwardIsDisabled" #prevBtn class="p-tabmenu-nav-prev p-tabmenu-nav-btn p-link" (click)="navBackward()" type="button" role="navigation" pRipple>
-                    <ChevronLeftIcon *ngIf="!previousIconTemplate" [attr.aria-hidden]="true" />
-                    <ng-template *ngTemplateOutlet="previousIconTemplate"></ng-template>
-                </button>
-                <div #content class="p-tabmenu-nav-content" (scroll)="onScroll($event)">
-                    <ul #navbar class="p-tabmenu-nav p-reset" role="menubar" [attr.aria-labelledby]="ariaLabelledBy" [attr.aria-label]="ariaLabel">
-                        <li
-                            #tab
-                            *ngFor="let item of focusableItems; let i = index"
-                            role="presentation"
-                            [ngStyle]="item.style"
-                            [class]="item.styleClass"
-                            [attr.data-p-disabled]="disabled(item)"
-                            [attr.data-p-highlight]="focusedItemInfo() === item"
-                            (click)="itemClick($event, item)"
-                            (keydown)="onKeydownItem($event, i, item)"
-                            (focus)="onMenuItemFocus(item)"
-                            [ngClass]="{ 'p-tabmenuitem': true, 'p-disabled': getItemProp(item, 'disabled'), 'p-highlight': isActive(item), 'p-hidden': item.visible === false }"
-                            pTooltip
-                            [tooltipOptions]="item.tooltipOptions"
-                        >
-                            <a
-                                #tabLink
-                                *ngIf="!item.routerLink && !itemTemplate"
-                                class="p-menuitem-link"
-                                role="menuitem"
-                                [attr.href]="getItemProp(item, 'url')"
-                                [attr.id]="getItemProp(item, 'id')"
-                                [attr.aria-disabled]="disabled(item)"
-                                [attr.aria-label]="getItemProp(item, 'label')"
-                                [attr.tabindex]="disabled(item) ? -1 : 0"
-                                [target]="getItemProp(item, 'target')"
-                                pRipple
-                            >
-                                <ng-container>
-                                    <span class="p-menuitem-icon" [ngClass]="item.icon" *ngIf="item.icon" [ngStyle]="item.iconStyle"></span>
-                                    <span class="p-menuitem-text" *ngIf="item.escape !== false; else htmlLabel">{{ getItemProp(item, 'label') }}</span>
-                                    <ng-template #htmlLabel><span class="p-menuitem-text" [innerHTML]="getItemProp(item, 'label')"></span></ng-template>
-                                    <span class="p-menuitem-badge" *ngIf="item.badge" [ngClass]="item.badgeStyleClass">{{ getItemProp(item, 'badge') }}</span>
-                                </ng-container>
-                            </a>
-                            <a
-                                #tabLink
-                                *ngIf="item.routerLink && !itemTemplate"
-                                [routerLink]="item.routerLink"
-                                [queryParams]="item.queryParams"
-                                [routerLinkActive]="'p-menuitem-link-active'"
-                                [routerLinkActiveOptions]="item.routerLinkActiveOptions || { exact: false }"
-                                role="menuitem"
-                                class="p-menuitem-link"
-                                [target]="item.target"
-                                [attr.id]="getItemProp(item, 'id')"
-                                [attr.aria-disabled]="disabled(item)"
-                                [attr.aria-label]="getItemProp(item, 'label')"
-                                [attr.tabindex]="disabled(item) ? -1 : 0"
-                                [fragment]="item.fragment"
-                                [queryParamsHandling]="item.queryParamsHandling"
-                                [preserveFragment]="item.preserveFragment"
-                                [skipLocationChange]="item.skipLocationChange"
-                                [replaceUrl]="item.replaceUrl"
-                                [state]="item.state"
-                                pRipple
-                            >
-                                <ng-container>
-                                    <span class="p-menuitem-icon" [attr.aria-hidden]="true" [ngClass]="item.icon" *ngIf="item.icon" [ngStyle]="item.iconStyle"></span>
-                                    <span class="p-menuitem-text" *ngIf="item.escape !== false; else htmlRouteLabel">{{ getItemProp(item, 'label') }}</span>
-                                    <ng-template #htmlRouteLabel><span class="p-menuitem-text" [innerHTML]="getItemProp(item, 'label')"></span></ng-template>
-                                    <span class="p-menuitem-badge" *ngIf="item.badge" [ngClass]="item.badgeStyleClass">{{ getItemProp(item, 'badge') }}</span>
-                                </ng-container>
-                            </a>
-                            <ng-container *ngTemplateOutlet="itemTemplate; context: { $implicit: item, index: i }"></ng-container>
-                        </li>
-                        <li #inkbar class="p-tabmenu-ink-bar" role="none"></li>
-                    </ul>
-                </div>
-                <button *ngIf="scrollable && !forwardIsDisabled" #nextBtn class="p-tabmenu-nav-next p-tabmenu-nav-btn p-link" (click)="navForward()" type="button" role="navigation" pRipple>
-                    <ChevronRightIcon *ngIf="!previousIconTemplate" [attr.aria-hidden]="true" />
-                    <ng-template *ngTemplateOutlet="nextIconTemplate"></ng-template>
-                </button>
-            </div>
-        </div>
-    `,
+      template: '\n        <div [ngClass]="{ \'p-tabmenu p-component\': true, \'p-tabmenu-scrollable\': scrollable }" [ngStyle]="style" [class]="styleClass">\n            <div class="p-tabmenu-nav-container">\n                <button *ngIf="scrollable && !backwardIsDisabled" #prevBtn class="p-tabmenu-nav-prev p-tabmenu-nav-btn p-link" (click)="navBackward()" type="button" role="navigation" pRipple>\n                    <ChevronLeftIcon *ngIf="!previousIconTemplate" [attr.aria-hidden]="true" />\n                    <ng-template *ngTemplateOutlet="previousIconTemplate"></ng-template>\n                </button>\n                <div #content class="p-tabmenu-nav-content" (scroll)="onScroll($event)">\n                    <ul #navbar class="p-tabmenu-nav p-reset" role="menubar" [attr.aria-labelledby]="ariaLabelledBy" [attr.aria-label]="ariaLabel">\n                        <li\n                            #tab\n                            *ngFor="let item of focusableItems; let i = index"\n                            role="presentation"\n                            [ngStyle]="item.style"\n                            [class]="item.styleClass"\n                            [attr.data-p-disabled]="disabled(item)"\n                            [attr.data-p-highlight]="focusedItemInfo() === item"\n                            (click)="itemClick($event, item)"\n                            (keydown)="onKeydownItem($event, i, item)"\n                            (focus)="onMenuItemFocus(item)"\n                            [ngClass]="{ \'p-tabmenuitem\': true, \'p-disabled\': getItemProp(item, \'disabled\'), \'p-highlight\': isActive(item), \'p-hidden\': item.visible === false }"\n                            pTooltip\n                            [tooltipOptions]="item.tooltipOptions"\n                        >\n                            <a\n                                #tabLink\n                                *ngIf="!item.routerLink && !itemTemplate"\n                                class="p-menuitem-link"\n                                role="menuitem"\n                                [attr.href]="getItemProp(item, \'url\')"\n                                [attr.id]="getItemProp(item, \'id\')"\n                                [attr.aria-disabled]="disabled(item)"\n                                [attr.aria-label]="getItemProp(item, \'label\')"\n                                [attr.tabindex]="disabled(item) ? -1 : 0"\n                                [target]="getItemProp(item, \'target\')"\n                                pRipple\n                            >\n                                <ng-container>\n                                    <span class="p-menuitem-icon" [ngClass]="item.icon" *ngIf="item.icon" [ngStyle]="item.iconStyle"></span>\n                                    <span class="p-menuitem-text" *ngIf="item.escape !== false; else htmlLabel">{{ getItemProp(item, \'label\') }}</span>\n                                    <ng-template #htmlLabel><span class="p-menuitem-text" [innerHTML]="getItemProp(item, \'label\')"></span></ng-template>\n                                    <span class="p-menuitem-badge" *ngIf="item.badge" [ngClass]="item.badgeStyleClass">{{ getItemProp(item, \'badge\') }}</span>\n                                </ng-container>\n                            </a>\n                            <a\n                                #tabLink\n                                *ngIf="item.routerLink && !itemTemplate"\n                                [routerLink]="item.routerLink"\n                                [queryParams]="item.queryParams"\n                                [routerLinkActive]="\'p-menuitem-link-active\'"\n                                [routerLinkActiveOptions]="item.routerLinkActiveOptions || { exact: false }"\n                                role="menuitem"\n                                class="p-menuitem-link"\n                                [target]="item.target"\n                                [attr.id]="getItemProp(item, \'id\')"\n                                [attr.aria-disabled]="disabled(item)"\n                                [attr.aria-label]="getItemProp(item, \'label\')"\n                                [attr.tabindex]="disabled(item) ? -1 : 0"\n                                [fragment]="item.fragment"\n                                [queryParamsHandling]="item.queryParamsHandling"\n                                [preserveFragment]="item.preserveFragment"\n                                [skipLocationChange]="item.skipLocationChange"\n                                [replaceUrl]="item.replaceUrl"\n                                [state]="item.state"\n                                pRipple\n                            >\n                                <ng-container>\n                                    <span class="p-menuitem-icon" [attr.aria-hidden]="true" [ngClass]="item.icon" *ngIf="item.icon" [ngStyle]="item.iconStyle"></span>\n                                    <span class="p-menuitem-text" *ngIf="item.escape !== false; else htmlRouteLabel">{{ getItemProp(item, \'label\') }}</span>\n                                    <ng-template #htmlRouteLabel><span class="p-menuitem-text" [innerHTML]="getItemProp(item, \'label\')"></span></ng-template>\n                                    <span class="p-menuitem-badge" *ngIf="item.badge" [ngClass]="item.badgeStyleClass">{{ getItemProp(item, \'badge\') }}</span>\n                                </ng-container>\n                            </a>\n                            <ng-container *ngTemplateOutlet="itemTemplate; context: { $implicit: item, index: i }"></ng-container>\n                        </li>\n                        <li #inkbar class="p-tabmenu-ink-bar" role="none"></li>\n                    </ul>\n                </div>\n                <button *ngIf="scrollable && !forwardIsDisabled" #nextBtn class="p-tabmenu-nav-next p-tabmenu-nav-btn p-link" (click)="navForward()" type="button" role="navigation" pRipple>\n                    <ChevronRightIcon *ngIf="!previousIconTemplate" [attr.aria-hidden]="true" />\n                    <ng-template *ngTemplateOutlet="nextIconTemplate"></ng-template>\n                </button>\n            </div>\n        </div>\n    ',
       changeDetection: ChangeDetectionStrategy.OnPush,
       encapsulation: ViewEncapsulation$1.None,
       host: {
@@ -976,20 +903,21 @@ var TabMenu = class _TabMenu {
     }]
   });
 })();
-var TabMenuModule = class _TabMenuModule {
-  static ɵfac = function TabMenuModule_Factory(__ngFactoryType__) {
-    return new (__ngFactoryType__ || _TabMenuModule)();
-  };
-  static ɵmod = ɵɵdefineNgModule({
-    type: _TabMenuModule,
-    declarations: [TabMenu],
-    imports: [CommonModule, RouterModule, SharedModule, RippleModule, TooltipModule, ChevronLeftIcon, ChevronRightIcon],
-    exports: [TabMenu, RouterModule, SharedModule, TooltipModule]
-  });
-  static ɵinj = ɵɵdefineInjector({
-    imports: [CommonModule, RouterModule, SharedModule, RippleModule, TooltipModule, ChevronLeftIcon, ChevronRightIcon, RouterModule, SharedModule, TooltipModule]
-  });
+var _TabMenuModule = class _TabMenuModule {
 };
+__publicField(_TabMenuModule, "ɵfac", function TabMenuModule_Factory(__ngFactoryType__) {
+  return new (__ngFactoryType__ || _TabMenuModule)();
+});
+__publicField(_TabMenuModule, "ɵmod", ɵɵdefineNgModule({
+  type: _TabMenuModule,
+  declarations: [TabMenu],
+  imports: [CommonModule, RouterModule, SharedModule, RippleModule, TooltipModule, ChevronLeftIcon, ChevronRightIcon],
+  exports: [TabMenu, RouterModule, SharedModule, TooltipModule]
+}));
+__publicField(_TabMenuModule, "ɵinj", ɵɵdefineInjector({
+  imports: [CommonModule, RouterModule, SharedModule, RippleModule, TooltipModule, ChevronLeftIcon, ChevronRightIcon, RouterModule, SharedModule, TooltipModule]
+}));
+var TabMenuModule = _TabMenuModule;
 (() => {
   (typeof ngDevMode === "undefined" || ngDevMode) && setClassMetadata(TabMenuModule, [{
     type: NgModule,

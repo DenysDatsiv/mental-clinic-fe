@@ -1,26 +1,26 @@
 import {
   InputText,
   InputTextModule
-} from "./chunk-QU6QLMWV.js";
+} from "./chunk-SJTFEDMT.js";
 import {
   AutoFocus,
   AutoFocusModule
-} from "./chunk-32JR77BM.js";
+} from "./chunk-LND2F6FW.js";
 import {
   NG_VALUE_ACCESSOR
-} from "./chunk-B7GQUK3J.js";
+} from "./chunk-ZOG4HQFG.js";
 import {
   PrimeTemplate,
   SharedModule
-} from "./chunk-TQSVMJ6K.js";
-import "./chunk-3OF44R55.js";
-import "./chunk-BUGEQH7Q.js";
+} from "./chunk-ZROJCIWL.js";
+import "./chunk-U3NLM53U.js";
+import "./chunk-LB42WWNC.js";
 import {
   CommonModule,
   NgForOf,
   NgIf,
   NgTemplateOutlet
-} from "./chunk-UBZYO7FG.js";
+} from "./chunk-KUZ63KOD.js";
 import {
   ChangeDetectionStrategy,
   ChangeDetectorRef,
@@ -57,11 +57,13 @@ import {
   ɵɵresetView,
   ɵɵrestoreView,
   ɵɵtemplate
-} from "./chunk-ZI2Q76R4.js";
-import "./chunk-5OPE3T2R.js";
+} from "./chunk-R75KKECJ.js";
 import "./chunk-4N4GOYJH.js";
+import "./chunk-5OPE3T2R.js";
 import "./chunk-FHTVLBLO.js";
-import "./chunk-3OV72XIM.js";
+import {
+  __publicField
+} from "./chunk-IJZFAMY6.js";
 
 // node_modules/primeng/fesm2022/primeng-inputotp.mjs
 var _c0 = (a0, a1, a2) => ({
@@ -143,86 +145,86 @@ var INPUT_OTP_VALUE_ACCESSOR = {
   useExisting: forwardRef(() => InputOtp),
   multi: true
 };
-var InputOtp = class _InputOtp {
-  cd;
-  /**
-   * When present, it specifies that the component should have invalid state style.
-   * @group Props
-   */
-  invalid = false;
-  /**
-   * When present, it specifies that the component should be disabled.
-   * @group Props
-   */
-  disabled = false;
-  /**
-   * When present, it specifies that an input field is read-only.
-   * @group Props
-   */
-  readonly = false;
-  /**
-   * Specifies the input variant of the component.
-   * @group Props
-   */
-  variant = "outlined";
-  /**
-   * Index of the element in tabbing order.
-   * @group Props
-   */
-  tabindex = null;
-  /**
-   * Number of characters to initiate.
-   * @group Props
-   */
-  length = 4;
-  /**
-   * Mask pattern.
-   * @group Props
-   */
-  mask = false;
-  /**
-   * When present, it specifies that an input field is integer-only.
-   * @group Props
-   */
-  integerOnly = false;
-  /**
-   * When present, it specifies that the component should automatically get focus on load.
-   * @group Props
-   */
-  autofocus;
-  /**
-   * Callback to invoke on value change.
-   * @group Emits
-   */
-  onChange = new EventEmitter();
-  /**
-   * Callback to invoke when the component receives focus.
-   * @param {Event} event - Browser event.
-   * @group Emits
-   */
-  onFocus = new EventEmitter();
-  /**
-   * Callback to invoke when the component loses focus.
-   * @param {Event} event - Browser event.
-   * @group Emits
-   */
-  onBlur = new EventEmitter();
-  templates;
-  inputTemplate;
-  tokens = [];
-  onModelChange = () => {
-  };
-  onModelTouched = () => {
-  };
-  value;
+var _InputOtp = class _InputOtp {
+  constructor(cd) {
+    __publicField(this, "cd");
+    /**
+     * When present, it specifies that the component should have invalid state style.
+     * @group Props
+     */
+    __publicField(this, "invalid", false);
+    /**
+     * When present, it specifies that the component should be disabled.
+     * @group Props
+     */
+    __publicField(this, "disabled", false);
+    /**
+     * When present, it specifies that an input field is read-only.
+     * @group Props
+     */
+    __publicField(this, "readonly", false);
+    /**
+     * Specifies the input variant of the component.
+     * @group Props
+     */
+    __publicField(this, "variant", "outlined");
+    /**
+     * Index of the element in tabbing order.
+     * @group Props
+     */
+    __publicField(this, "tabindex", null);
+    /**
+     * Number of characters to initiate.
+     * @group Props
+     */
+    __publicField(this, "length", 4);
+    /**
+     * Mask pattern.
+     * @group Props
+     */
+    __publicField(this, "mask", false);
+    /**
+     * When present, it specifies that an input field is integer-only.
+     * @group Props
+     */
+    __publicField(this, "integerOnly", false);
+    /**
+     * When present, it specifies that the component should automatically get focus on load.
+     * @group Props
+     */
+    __publicField(this, "autofocus");
+    /**
+     * Callback to invoke on value change.
+     * @group Emits
+     */
+    __publicField(this, "onChange", new EventEmitter());
+    /**
+     * Callback to invoke when the component receives focus.
+     * @param {Event} event - Browser event.
+     * @group Emits
+     */
+    __publicField(this, "onFocus", new EventEmitter());
+    /**
+     * Callback to invoke when the component loses focus.
+     * @param {Event} event - Browser event.
+     * @group Emits
+     */
+    __publicField(this, "onBlur", new EventEmitter());
+    __publicField(this, "templates");
+    __publicField(this, "inputTemplate");
+    __publicField(this, "tokens", []);
+    __publicField(this, "onModelChange", () => {
+    });
+    __publicField(this, "onModelTouched", () => {
+    });
+    __publicField(this, "value");
+    this.cd = cd;
+  }
   get inputMode() {
     return this.integerOnly ? "numeric" : "text";
   }
   get inputType() {
     return this.mask ? "password" : "text";
-  }
-  constructor(cd) {
-    this.cd = cd;
   }
   ngAfterContentInit() {
     this.templates.forEach((item) => {
@@ -388,91 +390,62 @@ var InputOtp = class _InputOtp {
   trackByFn(index) {
     return index;
   }
-  static ɵfac = function InputOtp_Factory(__ngFactoryType__) {
-    return new (__ngFactoryType__ || _InputOtp)(ɵɵdirectiveInject(ChangeDetectorRef));
-  };
-  static ɵcmp = ɵɵdefineComponent({
-    type: _InputOtp,
-    selectors: [["p-inputOtp"]],
-    contentQueries: function InputOtp_ContentQueries(rf, ctx, dirIndex) {
-      if (rf & 1) {
-        ɵɵcontentQuery(dirIndex, PrimeTemplate, 4);
-      }
-      if (rf & 2) {
-        let _t;
-        ɵɵqueryRefresh(_t = ɵɵloadQuery()) && (ctx.templates = _t);
-      }
-    },
-    hostAttrs: [1, "p-inputotp", "p-component"],
-    inputs: {
-      invalid: "invalid",
-      disabled: "disabled",
-      readonly: "readonly",
-      variant: "variant",
-      tabindex: "tabindex",
-      length: "length",
-      mask: "mask",
-      integerOnly: "integerOnly",
-      autofocus: [2, "autofocus", "autofocus", booleanAttribute]
-    },
-    outputs: {
-      onChange: "onChange",
-      onFocus: "onFocus",
-      onBlur: "onBlur"
-    },
-    features: [ɵɵProvidersFeature([INPUT_OTP_VALUE_ACCESSOR]), ɵɵInputTransformsFeature],
-    decls: 1,
-    vars: 2,
-    consts: [[4, "ngFor", "ngForOf", "ngForTrackBy"], [4, "ngIf"], ["type", "text", "pInputText", "", "pAutoFocus", "", 1, "p-inputotp-input", 3, "input", "focus", "blur", "paste", "keydown", "value", "maxLength", "type", "inputmode", "variant", "readonly", "disabled", "invalid", "tabindex", "unstyled", "autofocus"], [4, "ngTemplateOutlet", "ngTemplateOutletContext"]],
-    template: function InputOtp_Template(rf, ctx) {
-      if (rf & 1) {
-        ɵɵtemplate(0, InputOtp_ng_container_0_Template, 3, 2, "ng-container", 0);
-      }
-      if (rf & 2) {
-        ɵɵproperty("ngForOf", ctx.getRange(ctx.length))("ngForTrackBy", ctx.trackByFn);
-      }
-    },
-    dependencies: [NgForOf, NgIf, NgTemplateOutlet, InputText, AutoFocus],
-    encapsulation: 2,
-    changeDetection: 0
-  });
 };
+__publicField(_InputOtp, "ɵfac", function InputOtp_Factory(__ngFactoryType__) {
+  return new (__ngFactoryType__ || _InputOtp)(ɵɵdirectiveInject(ChangeDetectorRef));
+});
+__publicField(_InputOtp, "ɵcmp", ɵɵdefineComponent({
+  type: _InputOtp,
+  selectors: [["p-inputOtp"]],
+  contentQueries: function InputOtp_ContentQueries(rf, ctx, dirIndex) {
+    if (rf & 1) {
+      ɵɵcontentQuery(dirIndex, PrimeTemplate, 4);
+    }
+    if (rf & 2) {
+      let _t;
+      ɵɵqueryRefresh(_t = ɵɵloadQuery()) && (ctx.templates = _t);
+    }
+  },
+  hostAttrs: [1, "p-inputotp", "p-component"],
+  inputs: {
+    invalid: "invalid",
+    disabled: "disabled",
+    readonly: "readonly",
+    variant: "variant",
+    tabindex: "tabindex",
+    length: "length",
+    mask: "mask",
+    integerOnly: "integerOnly",
+    autofocus: [2, "autofocus", "autofocus", booleanAttribute]
+  },
+  outputs: {
+    onChange: "onChange",
+    onFocus: "onFocus",
+    onBlur: "onBlur"
+  },
+  features: [ɵɵProvidersFeature([INPUT_OTP_VALUE_ACCESSOR]), ɵɵInputTransformsFeature],
+  decls: 1,
+  vars: 2,
+  consts: [[4, "ngFor", "ngForOf", "ngForTrackBy"], [4, "ngIf"], ["type", "text", "pInputText", "", "pAutoFocus", "", 1, "p-inputotp-input", 3, "input", "focus", "blur", "paste", "keydown", "value", "maxLength", "type", "inputmode", "variant", "readonly", "disabled", "invalid", "tabindex", "unstyled", "autofocus"], [4, "ngTemplateOutlet", "ngTemplateOutletContext"]],
+  template: function InputOtp_Template(rf, ctx) {
+    if (rf & 1) {
+      ɵɵtemplate(0, InputOtp_ng_container_0_Template, 3, 2, "ng-container", 0);
+    }
+    if (rf & 2) {
+      ɵɵproperty("ngForOf", ctx.getRange(ctx.length))("ngForTrackBy", ctx.trackByFn);
+    }
+  },
+  dependencies: [NgForOf, NgIf, NgTemplateOutlet, InputText, AutoFocus],
+  encapsulation: 2,
+  changeDetection: 0
+}));
+var InputOtp = _InputOtp;
 (() => {
   (typeof ngDevMode === "undefined" || ngDevMode) && setClassMetadata(InputOtp, [{
     type: Component,
     args: [{
       selector: "p-inputOtp",
-      template: `
-        <ng-container *ngFor="let i of getRange(length); trackBy: trackByFn">
-            <ng-container *ngIf="!inputTemplate">
-                <input
-                    type="text"
-                    pInputText
-                    [value]="getModelValue(i)"
-                    [maxLength]="1"
-                    [type]="inputType"
-                    class="p-inputotp-input"
-                    [inputmode]="inputMode"
-                    [variant]="variant"
-                    [readonly]="readonly"
-                    [disabled]="disabled"
-                    [invalid]="invalid"
-                    [tabindex]="tabindex"
-                    [unstyled]="unstyled"
-                    (input)="onInput($event, i - 1)"
-                    (focus)="onInputFocus($event)"
-                    (blur)="onInputBlur($event)"
-                    (paste)="onPaste($event)"
-                    (keydown)="onKeyDown($event)"
-                    pAutoFocus
-                    [autofocus]="getAutofocus(i)"
-                />
-            </ng-container>
-            <ng-container *ngIf="inputTemplate">
-                <ng-container *ngTemplateOutlet="inputTemplate; context: { $implicit: getToken(i - 1), events: getTemplateEvents(i - 1), index: i }"> </ng-container>
-            </ng-container>
-        </ng-container>
-    `,
+      template: '\n        <ng-container *ngFor="let i of getRange(length); trackBy: trackByFn">\n            <ng-container *ngIf="!inputTemplate">\n                <input\n                    type="text"\n                    pInputText\n                    [value]="getModelValue(i)"\n                    [maxLength]="1"\n                    [type]="inputType"\n                    class="p-inputotp-input"\n                    [inputmode]="inputMode"\n                    [variant]="variant"\n                    [readonly]="readonly"\n                    [disabled]="disabled"\n                    [invalid]="invalid"\n                    [tabindex]="tabindex"\n                    [unstyled]="unstyled"\n                    (input)="onInput($event, i - 1)"\n                    (focus)="onInputFocus($event)"\n                    (blur)="onInputBlur($event)"\n                    (paste)="onPaste($event)"\n                    (keydown)="onKeyDown($event)"\n                    pAutoFocus\n                    [autofocus]="getAutofocus(i)"\n                />\n            </ng-container>\n            <ng-container *ngIf="inputTemplate">\n                <ng-container *ngTemplateOutlet="inputTemplate; context: { $implicit: getToken(i - 1), events: getTemplateEvents(i - 1), index: i }"> </ng-container>\n            </ng-container>\n        </ng-container>\n    ',
       changeDetection: ChangeDetectionStrategy.OnPush,
       encapsulation: ViewEncapsulation$1.None,
       host: {
@@ -528,20 +501,21 @@ var InputOtp = class _InputOtp {
     }]
   });
 })();
-var InputOtpModule = class _InputOtpModule {
-  static ɵfac = function InputOtpModule_Factory(__ngFactoryType__) {
-    return new (__ngFactoryType__ || _InputOtpModule)();
-  };
-  static ɵmod = ɵɵdefineNgModule({
-    type: _InputOtpModule,
-    declarations: [InputOtp],
-    imports: [CommonModule, SharedModule, InputTextModule, AutoFocusModule],
-    exports: [InputOtp, SharedModule]
-  });
-  static ɵinj = ɵɵdefineInjector({
-    imports: [CommonModule, SharedModule, InputTextModule, AutoFocusModule, SharedModule]
-  });
+var _InputOtpModule = class _InputOtpModule {
 };
+__publicField(_InputOtpModule, "ɵfac", function InputOtpModule_Factory(__ngFactoryType__) {
+  return new (__ngFactoryType__ || _InputOtpModule)();
+});
+__publicField(_InputOtpModule, "ɵmod", ɵɵdefineNgModule({
+  type: _InputOtpModule,
+  declarations: [InputOtp],
+  imports: [CommonModule, SharedModule, InputTextModule, AutoFocusModule],
+  exports: [InputOtp, SharedModule]
+}));
+__publicField(_InputOtpModule, "ɵinj", ɵɵdefineInjector({
+  imports: [CommonModule, SharedModule, InputTextModule, AutoFocusModule, SharedModule]
+}));
+var InputOtpModule = _InputOtpModule;
 (() => {
   (typeof ngDevMode === "undefined" || ngDevMode) && setClassMetadata(InputOtpModule, [{
     type: NgModule,

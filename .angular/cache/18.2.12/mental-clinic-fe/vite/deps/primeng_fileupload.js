@@ -1,54 +1,54 @@
 import {
   ProgressBar,
   ProgressBarModule
-} from "./chunk-NN3X3CIO.js";
+} from "./chunk-LY6UOHTJ.js";
 import {
   Messages,
   MessagesModule
-} from "./chunk-EPSRHASX.js";
-import "./chunk-R3MGDMAL.js";
+} from "./chunk-HYYZX53O.js";
+import "./chunk-K6X7NG43.js";
 import {
   PlusIcon
-} from "./chunk-OPPBAY66.js";
-import "./chunk-T5D2NQ3S.js";
-import "./chunk-E4M3NR5Z.js";
+} from "./chunk-6RCVZF7W.js";
+import "./chunk-A2QFKI6F.js";
+import "./chunk-OLOIW27Q.js";
 import {
   Button,
   ButtonDirective,
   ButtonModule
-} from "./chunk-7TN6NS6B.js";
-import "./chunk-PCVGMHYY.js";
+} from "./chunk-ZLJ4QAH5.js";
+import "./chunk-VYCWYYRS.js";
 import {
   TimesIcon
-} from "./chunk-MDBJZ6LU.js";
+} from "./chunk-AP6UZX4B.js";
 import {
   Ripple,
   RippleModule
-} from "./chunk-QN24C4B3.js";
-import "./chunk-32JR77BM.js";
-import {
-  DomSanitizer
-} from "./chunk-3E3YFUVD.js";
-import {
-  HttpClient,
-  HttpEventType
-} from "./chunk-DO2TVYAE.js";
+} from "./chunk-MUJBADSC.js";
+import "./chunk-LND2F6FW.js";
 import {
   BaseIcon
-} from "./chunk-PXWZN6FU.js";
+} from "./chunk-BJLZ3T2F.js";
 import {
   PrimeNGConfig,
   PrimeTemplate,
   SharedModule,
   TranslationKeys
-} from "./chunk-TQSVMJ6K.js";
+} from "./chunk-ZROJCIWL.js";
 import {
   UniqueComponentId
-} from "./chunk-3OF44R55.js";
-import "./chunk-OGB62SLM.js";
+} from "./chunk-U3NLM53U.js";
+import "./chunk-5S7AEMUZ.js";
+import {
+  DomSanitizer
+} from "./chunk-MWP4G2UW.js";
+import {
+  HttpClient,
+  HttpEventType
+} from "./chunk-RWZD3TDV.js";
 import {
   DomHandler
-} from "./chunk-BUGEQH7Q.js";
+} from "./chunk-LB42WWNC.js";
 import {
   CommonModule,
   DOCUMENT,
@@ -58,7 +58,7 @@ import {
   NgStyle,
   NgTemplateOutlet,
   isPlatformBrowser
-} from "./chunk-UBZYO7FG.js";
+} from "./chunk-KUZ63KOD.js";
 import {
   ChangeDetectionStrategy,
   ChangeDetectorRef,
@@ -118,54 +118,60 @@ import {
   ɵɵtext,
   ɵɵtextInterpolate,
   ɵɵviewQuery
-} from "./chunk-ZI2Q76R4.js";
-import "./chunk-5OPE3T2R.js";
+} from "./chunk-R75KKECJ.js";
 import "./chunk-4N4GOYJH.js";
+import "./chunk-5OPE3T2R.js";
 import "./chunk-FHTVLBLO.js";
-import "./chunk-3OV72XIM.js";
+import {
+  __publicField
+} from "./chunk-IJZFAMY6.js";
 
 // node_modules/primeng/fesm2022/primeng-icons-upload.mjs
-var UploadIcon = class _UploadIcon extends BaseIcon {
-  pathId;
+var _UploadIcon = class _UploadIcon extends BaseIcon {
+  constructor() {
+    super(...arguments);
+    __publicField(this, "pathId");
+  }
   ngOnInit() {
     this.pathId = "url(#" + UniqueComponentId() + ")";
   }
-  static ɵfac = /* @__PURE__ */ (() => {
-    let ɵUploadIcon_BaseFactory;
-    return function UploadIcon_Factory(__ngFactoryType__) {
-      return (ɵUploadIcon_BaseFactory || (ɵUploadIcon_BaseFactory = ɵɵgetInheritedFactory(_UploadIcon)))(__ngFactoryType__ || _UploadIcon);
-    };
-  })();
-  static ɵcmp = ɵɵdefineComponent({
-    type: _UploadIcon,
-    selectors: [["UploadIcon"]],
-    standalone: true,
-    features: [ɵɵInheritDefinitionFeature, ɵɵStandaloneFeature],
-    decls: 6,
-    vars: 7,
-    consts: [["width", "14", "height", "14", "viewBox", "0 0 14 14", "fill", "none", "xmlns", "http://www.w3.org/2000/svg"], ["fill-rule", "evenodd", "clip-rule", "evenodd", "d", "M6.58942 9.82197C6.70165 9.93405 6.85328 9.99793 7.012 10C7.17071 9.99793 7.32234 9.93405 7.43458 9.82197C7.54681 9.7099 7.61079 9.55849 7.61286 9.4V2.04798L9.79204 4.22402C9.84752 4.28011 9.91365 4.32457 9.98657 4.35479C10.0595 4.38502 10.1377 4.40039 10.2167 4.40002C10.2956 4.40039 10.3738 4.38502 10.4467 4.35479C10.5197 4.32457 10.5858 4.28011 10.6413 4.22402C10.7538 4.11152 10.817 3.95902 10.817 3.80002C10.817 3.64102 10.7538 3.48852 10.6413 3.37602L7.45127 0.190618C7.44656 0.185584 7.44176 0.180622 7.43687 0.175736C7.32419 0.063214 7.17136 0 7.012 0C6.85264 0 6.69981 0.063214 6.58712 0.175736C6.58181 0.181045 6.5766 0.186443 6.5715 0.191927L3.38282 3.37602C3.27669 3.48976 3.2189 3.6402 3.22165 3.79564C3.2244 3.95108 3.28746 4.09939 3.39755 4.20932C3.50764 4.31925 3.65616 4.38222 3.81182 4.38496C3.96749 4.3877 4.11814 4.33001 4.23204 4.22402L6.41113 2.04807V9.4C6.41321 9.55849 6.47718 9.7099 6.58942 9.82197ZM11.9952 14H2.02883C1.751 13.9887 1.47813 13.9228 1.22584 13.8061C0.973545 13.6894 0.746779 13.5241 0.558517 13.3197C0.370254 13.1154 0.22419 12.876 0.128681 12.6152C0.0331723 12.3545 -0.00990605 12.0775 0.0019109 11.8V9.40005C0.0019109 9.24092 0.065216 9.08831 0.1779 8.97579C0.290584 8.86326 0.443416 8.80005 0.602775 8.80005C0.762134 8.80005 0.914966 8.86326 1.02765 8.97579C1.14033 9.08831 1.20364 9.24092 1.20364 9.40005V11.8C1.18295 12.0376 1.25463 12.274 1.40379 12.4602C1.55296 12.6463 1.76817 12.7681 2.00479 12.8H11.9952C12.2318 12.7681 12.447 12.6463 12.5962 12.4602C12.7453 12.274 12.817 12.0376 12.7963 11.8V9.40005C12.7963 9.24092 12.8596 9.08831 12.9723 8.97579C13.085 8.86326 13.2378 8.80005 13.3972 8.80005C13.5565 8.80005 13.7094 8.86326 13.8221 8.97579C13.9347 9.08831 13.998 9.24092 13.998 9.40005V11.8C14.022 12.3563 13.8251 12.8996 13.45 13.3116C13.0749 13.7236 12.552 13.971 11.9952 14Z", "fill", "currentColor"], [3, "id"], ["width", "14", "height", "14", "fill", "white"]],
-    template: function UploadIcon_Template(rf, ctx) {
-      if (rf & 1) {
-        ɵɵnamespaceSVG();
-        ɵɵelementStart(0, "svg", 0)(1, "g");
-        ɵɵelement(2, "path", 1);
-        ɵɵelementEnd();
-        ɵɵelementStart(3, "defs")(4, "clipPath", 2);
-        ɵɵelement(5, "rect", 3);
-        ɵɵelementEnd()()();
-      }
-      if (rf & 2) {
-        ɵɵclassMap(ctx.getClassNames());
-        ɵɵattribute("aria-label", ctx.ariaLabel)("aria-hidden", ctx.ariaHidden)("role", ctx.role);
-        ɵɵadvance();
-        ɵɵattribute("clip-path", ctx.pathId);
-        ɵɵadvance(3);
-        ɵɵproperty("id", ctx.pathId);
-      }
-    },
-    encapsulation: 2
-  });
 };
+__publicField(_UploadIcon, "ɵfac", /* @__PURE__ */ (() => {
+  let ɵUploadIcon_BaseFactory;
+  return function UploadIcon_Factory(__ngFactoryType__) {
+    return (ɵUploadIcon_BaseFactory || (ɵUploadIcon_BaseFactory = ɵɵgetInheritedFactory(_UploadIcon)))(__ngFactoryType__ || _UploadIcon);
+  };
+})());
+__publicField(_UploadIcon, "ɵcmp", ɵɵdefineComponent({
+  type: _UploadIcon,
+  selectors: [["UploadIcon"]],
+  standalone: true,
+  features: [ɵɵInheritDefinitionFeature, ɵɵStandaloneFeature],
+  decls: 6,
+  vars: 7,
+  consts: [["width", "14", "height", "14", "viewBox", "0 0 14 14", "fill", "none", "xmlns", "http://www.w3.org/2000/svg"], ["fill-rule", "evenodd", "clip-rule", "evenodd", "d", "M6.58942 9.82197C6.70165 9.93405 6.85328 9.99793 7.012 10C7.17071 9.99793 7.32234 9.93405 7.43458 9.82197C7.54681 9.7099 7.61079 9.55849 7.61286 9.4V2.04798L9.79204 4.22402C9.84752 4.28011 9.91365 4.32457 9.98657 4.35479C10.0595 4.38502 10.1377 4.40039 10.2167 4.40002C10.2956 4.40039 10.3738 4.38502 10.4467 4.35479C10.5197 4.32457 10.5858 4.28011 10.6413 4.22402C10.7538 4.11152 10.817 3.95902 10.817 3.80002C10.817 3.64102 10.7538 3.48852 10.6413 3.37602L7.45127 0.190618C7.44656 0.185584 7.44176 0.180622 7.43687 0.175736C7.32419 0.063214 7.17136 0 7.012 0C6.85264 0 6.69981 0.063214 6.58712 0.175736C6.58181 0.181045 6.5766 0.186443 6.5715 0.191927L3.38282 3.37602C3.27669 3.48976 3.2189 3.6402 3.22165 3.79564C3.2244 3.95108 3.28746 4.09939 3.39755 4.20932C3.50764 4.31925 3.65616 4.38222 3.81182 4.38496C3.96749 4.3877 4.11814 4.33001 4.23204 4.22402L6.41113 2.04807V9.4C6.41321 9.55849 6.47718 9.7099 6.58942 9.82197ZM11.9952 14H2.02883C1.751 13.9887 1.47813 13.9228 1.22584 13.8061C0.973545 13.6894 0.746779 13.5241 0.558517 13.3197C0.370254 13.1154 0.22419 12.876 0.128681 12.6152C0.0331723 12.3545 -0.00990605 12.0775 0.0019109 11.8V9.40005C0.0019109 9.24092 0.065216 9.08831 0.1779 8.97579C0.290584 8.86326 0.443416 8.80005 0.602775 8.80005C0.762134 8.80005 0.914966 8.86326 1.02765 8.97579C1.14033 9.08831 1.20364 9.24092 1.20364 9.40005V11.8C1.18295 12.0376 1.25463 12.274 1.40379 12.4602C1.55296 12.6463 1.76817 12.7681 2.00479 12.8H11.9952C12.2318 12.7681 12.447 12.6463 12.5962 12.4602C12.7453 12.274 12.817 12.0376 12.7963 11.8V9.40005C12.7963 9.24092 12.8596 9.08831 12.9723 8.97579C13.085 8.86326 13.2378 8.80005 13.3972 8.80005C13.5565 8.80005 13.7094 8.86326 13.8221 8.97579C13.9347 9.08831 13.998 9.24092 13.998 9.40005V11.8C14.022 12.3563 13.8251 12.8996 13.45 13.3116C13.0749 13.7236 12.552 13.971 11.9952 14Z", "fill", "currentColor"], [3, "id"], ["width", "14", "height", "14", "fill", "white"]],
+  template: function UploadIcon_Template(rf, ctx) {
+    if (rf & 1) {
+      ɵɵnamespaceSVG();
+      ɵɵelementStart(0, "svg", 0)(1, "g");
+      ɵɵelement(2, "path", 1);
+      ɵɵelementEnd();
+      ɵɵelementStart(3, "defs")(4, "clipPath", 2);
+      ɵɵelement(5, "rect", 3);
+      ɵɵelementEnd()()();
+    }
+    if (rf & 2) {
+      ɵɵclassMap(ctx.getClassNames());
+      ɵɵattribute("aria-label", ctx.ariaLabel)("aria-hidden", ctx.ariaHidden)("role", ctx.role);
+      ɵɵadvance();
+      ɵɵattribute("clip-path", ctx.pathId);
+      ɵɵadvance(3);
+      ɵɵproperty("id", ctx.pathId);
+    }
+  },
+  encapsulation: 2
+}));
+var UploadIcon = _UploadIcon;
 (() => {
   (typeof ngDevMode === "undefined" || ngDevMode) && setClassMetadata(UploadIcon, [{
     type: Component,
@@ -173,23 +179,7 @@ var UploadIcon = class _UploadIcon extends BaseIcon {
       selector: "UploadIcon",
       standalone: true,
       imports: [BaseIcon],
-      template: `
-        <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg" [attr.aria-label]="ariaLabel" [attr.aria-hidden]="ariaHidden" [attr.role]="role" [class]="getClassNames()">
-            <g [attr.clip-path]="pathId">
-                <path
-                    fill-rule="evenodd"
-                    clip-rule="evenodd"
-                    d="M6.58942 9.82197C6.70165 9.93405 6.85328 9.99793 7.012 10C7.17071 9.99793 7.32234 9.93405 7.43458 9.82197C7.54681 9.7099 7.61079 9.55849 7.61286 9.4V2.04798L9.79204 4.22402C9.84752 4.28011 9.91365 4.32457 9.98657 4.35479C10.0595 4.38502 10.1377 4.40039 10.2167 4.40002C10.2956 4.40039 10.3738 4.38502 10.4467 4.35479C10.5197 4.32457 10.5858 4.28011 10.6413 4.22402C10.7538 4.11152 10.817 3.95902 10.817 3.80002C10.817 3.64102 10.7538 3.48852 10.6413 3.37602L7.45127 0.190618C7.44656 0.185584 7.44176 0.180622 7.43687 0.175736C7.32419 0.063214 7.17136 0 7.012 0C6.85264 0 6.69981 0.063214 6.58712 0.175736C6.58181 0.181045 6.5766 0.186443 6.5715 0.191927L3.38282 3.37602C3.27669 3.48976 3.2189 3.6402 3.22165 3.79564C3.2244 3.95108 3.28746 4.09939 3.39755 4.20932C3.50764 4.31925 3.65616 4.38222 3.81182 4.38496C3.96749 4.3877 4.11814 4.33001 4.23204 4.22402L6.41113 2.04807V9.4C6.41321 9.55849 6.47718 9.7099 6.58942 9.82197ZM11.9952 14H2.02883C1.751 13.9887 1.47813 13.9228 1.22584 13.8061C0.973545 13.6894 0.746779 13.5241 0.558517 13.3197C0.370254 13.1154 0.22419 12.876 0.128681 12.6152C0.0331723 12.3545 -0.00990605 12.0775 0.0019109 11.8V9.40005C0.0019109 9.24092 0.065216 9.08831 0.1779 8.97579C0.290584 8.86326 0.443416 8.80005 0.602775 8.80005C0.762134 8.80005 0.914966 8.86326 1.02765 8.97579C1.14033 9.08831 1.20364 9.24092 1.20364 9.40005V11.8C1.18295 12.0376 1.25463 12.274 1.40379 12.4602C1.55296 12.6463 1.76817 12.7681 2.00479 12.8H11.9952C12.2318 12.7681 12.447 12.6463 12.5962 12.4602C12.7453 12.274 12.817 12.0376 12.7963 11.8V9.40005C12.7963 9.24092 12.8596 9.08831 12.9723 8.97579C13.085 8.86326 13.2378 8.80005 13.3972 8.80005C13.5565 8.80005 13.7094 8.86326 13.8221 8.97579C13.9347 9.08831 13.998 9.24092 13.998 9.40005V11.8C14.022 12.3563 13.8251 12.8996 13.45 13.3116C13.0749 13.7236 12.552 13.971 11.9952 14Z"
-                    fill="currentColor"
-                />
-            </g>
-            <defs>
-                <clipPath [id]="pathId">
-                    <rect width="14" height="14" fill="white" />
-                </clipPath>
-            </defs>
-        </svg>
-    `
+      template: '\n        <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg" [attr.aria-label]="ariaLabel" [attr.aria-hidden]="ariaHidden" [attr.role]="role" [class]="getClassNames()">\n            <g [attr.clip-path]="pathId">\n                <path\n                    fill-rule="evenodd"\n                    clip-rule="evenodd"\n                    d="M6.58942 9.82197C6.70165 9.93405 6.85328 9.99793 7.012 10C7.17071 9.99793 7.32234 9.93405 7.43458 9.82197C7.54681 9.7099 7.61079 9.55849 7.61286 9.4V2.04798L9.79204 4.22402C9.84752 4.28011 9.91365 4.32457 9.98657 4.35479C10.0595 4.38502 10.1377 4.40039 10.2167 4.40002C10.2956 4.40039 10.3738 4.38502 10.4467 4.35479C10.5197 4.32457 10.5858 4.28011 10.6413 4.22402C10.7538 4.11152 10.817 3.95902 10.817 3.80002C10.817 3.64102 10.7538 3.48852 10.6413 3.37602L7.45127 0.190618C7.44656 0.185584 7.44176 0.180622 7.43687 0.175736C7.32419 0.063214 7.17136 0 7.012 0C6.85264 0 6.69981 0.063214 6.58712 0.175736C6.58181 0.181045 6.5766 0.186443 6.5715 0.191927L3.38282 3.37602C3.27669 3.48976 3.2189 3.6402 3.22165 3.79564C3.2244 3.95108 3.28746 4.09939 3.39755 4.20932C3.50764 4.31925 3.65616 4.38222 3.81182 4.38496C3.96749 4.3877 4.11814 4.33001 4.23204 4.22402L6.41113 2.04807V9.4C6.41321 9.55849 6.47718 9.7099 6.58942 9.82197ZM11.9952 14H2.02883C1.751 13.9887 1.47813 13.9228 1.22584 13.8061C0.973545 13.6894 0.746779 13.5241 0.558517 13.3197C0.370254 13.1154 0.22419 12.876 0.128681 12.6152C0.0331723 12.3545 -0.00990605 12.0775 0.0019109 11.8V9.40005C0.0019109 9.24092 0.065216 9.08831 0.1779 8.97579C0.290584 8.86326 0.443416 8.80005 0.602775 8.80005C0.762134 8.80005 0.914966 8.86326 1.02765 8.97579C1.14033 9.08831 1.20364 9.24092 1.20364 9.40005V11.8C1.18295 12.0376 1.25463 12.274 1.40379 12.4602C1.55296 12.6463 1.76817 12.7681 2.00479 12.8H11.9952C12.2318 12.7681 12.447 12.6463 12.5962 12.4602C12.7453 12.274 12.817 12.0376 12.7963 11.8V9.40005C12.7963 9.24092 12.8596 9.08831 12.9723 8.97579C13.085 8.86326 13.2378 8.80005 13.3972 8.80005C13.5565 8.80005 13.7094 8.86326 13.8221 8.97579C13.9347 9.08831 13.998 9.24092 13.998 9.40005V11.8C14.022 12.3563 13.8251 12.8996 13.45 13.3116C13.0749 13.7236 12.552 13.971 11.9952 14Z"\n                    fill="currentColor"\n                />\n            </g>\n            <defs>\n                <clipPath [id]="pathId">\n                    <rect width="14" height="14" fill="white" />\n                </clipPath>\n            </defs>\n        </svg>\n    '
     }]
   }], null, null);
 })();
@@ -898,257 +888,294 @@ function FileUpload_div_1_Template(rf, ctx) {
     ɵɵproperty("ngIf", !ctx_r1.hasFiles());
   }
 }
-var FileUpload = class _FileUpload {
-  document;
-  platformId;
-  locale;
-  renderer;
-  el;
-  sanitizer;
-  zone;
-  http;
-  cd;
-  config;
-  /**
-   * Name of the request parameter to identify the files at backend.
-   * @group Props
-   */
-  name;
-  /**
-   * Remote url to upload the files.
-   * @group Props
-   */
-  url;
-  /**
-   * HTTP method to send the files to the url such as "post" and "put".
-   * @group Props
-   */
-  method = "post";
-  /**
-   * Used to select multiple files at once from file dialog.
-   * @group Props
-   */
-  multiple;
-  /**
-   * Comma-separated list of pattern to restrict the allowed file types. Can be any combination of either the MIME types (such as "image/*") or the file extensions (such as ".jpg").
-   * @group Props
-   */
-  accept;
-  /**
-   * Disables the upload functionality.
-   * @group Props
-   */
-  disabled;
-  /**
-   * When enabled, upload begins automatically after selection is completed.
-   * @group Props
-   */
-  auto;
-  /**
-   * Cross-site Access-Control requests should be made using credentials such as cookies, authorization headers or TLS client certificates.
-   * @group Props
-   */
-  withCredentials;
-  /**
-   * Maximum file size allowed in bytes.
-   * @group Props
-   */
-  maxFileSize;
-  /**
-   * Summary message of the invalid file size.
-   * @group Props
-   */
-  invalidFileSizeMessageSummary = "{0}: Invalid file size, ";
-  /**
-   * Detail message of the invalid file size.
-   * @group Props
-   */
-  invalidFileSizeMessageDetail = "maximum upload size is {0}.";
-  /**
-   * Summary message of the invalid file type.
-   * @group Props
-   */
-  invalidFileTypeMessageSummary = "{0}: Invalid file type, ";
-  /**
-   * Detail message of the invalid file type.
-   * @group Props
-   */
-  invalidFileTypeMessageDetail = "allowed file types: {0}.";
-  /**
-   * Detail message of the invalid file type.
-   * @group Props
-   */
-  invalidFileLimitMessageDetail = "limit is {0} at most.";
-  /**
-   * Summary message of the invalid file type.
-   * @group Props
-   */
-  invalidFileLimitMessageSummary = "Maximum number of files exceeded, ";
-  /**
-   * Inline style of the element.
-   * @group Props
-   */
-  style;
-  /**
-   * Class of the element.
-   * @group Props
-   */
-  styleClass;
-  /**
-   * Width of the image thumbnail in pixels.
-   * @group Props
-   */
-  previewWidth = 50;
-  /**
-   * Label of the choose button. Defaults to PrimeNG Locale configuration.
-   * @group Props
-   */
-  chooseLabel;
-  /**
-   * Label of the upload button. Defaults to PrimeNG Locale configuration.
-   * @group Props
-   */
-  uploadLabel;
-  /**
-   * Label of the cancel button. Defaults to PrimeNG Locale configuration.
-   * @group Props
-   */
-  cancelLabel;
-  /**
-   * Icon of the choose button.
-   * @group Props
-   */
-  chooseIcon;
-  /**
-   * Icon of the upload button.
-   * @group Props
-   */
-  uploadIcon;
-  /**
-   * Icon of the cancel button.
-   * @group Props
-   */
-  cancelIcon;
-  /**
-   * Whether to show the upload button.
-   * @group Props
-   */
-  showUploadButton = true;
-  /**
-   * Whether to show the cancel button.
-   * @group Props
-   */
-  showCancelButton = true;
-  /**
-   * Defines the UI of the component.
-   * @group Props
-   */
-  mode = "advanced";
-  /**
-   * HttpHeaders class represents the header configuration options for an HTTP request.
-   * @group Props
-   */
-  headers;
-  /**
-   * Whether to use the default upload or a manual implementation defined in uploadHandler callback. Defaults to PrimeNG Locale configuration.
-   * @group Props
-   */
-  customUpload;
-  /**
-   * Maximum number of files that can be uploaded.
-   * @group Props
-   */
-  fileLimit;
-  /**
-   * Style class of the upload button.
-   * @group Props
-   */
-  uploadStyleClass;
-  /**
-   * Style class of the cancel button.
-   * @group Props
-   */
-  cancelStyleClass;
-  /**
-   * Style class of the remove button.
-   * @group Props
-   */
-  removeStyleClass;
-  /**
-   * Style class of the choose button.
-   * @group Props
-   */
-  chooseStyleClass;
-  /**
-   * Callback to invoke before file upload is initialized.
-   * @param {FileBeforeUploadEvent} event - Custom upload event.
-   * @group Emits
-   */
-  onBeforeUpload = new EventEmitter();
-  /**
-   * An event indicating that the request was sent to the server. Useful when a request may be retried multiple times, to distinguish between retries on the final event stream.
-   * @param {FileSendEvent} event - Custom send event.
-   * @group Emits
-   */
-  onSend = new EventEmitter();
-  /**
-   * Callback to invoke when file upload is complete.
-   * @param {FileUploadEvent} event - Custom upload event.
-   * @group Emits
-   */
-  onUpload = new EventEmitter();
-  /**
-   * Callback to invoke if file upload fails.
-   * @param {FileUploadErrorEvent} event - Custom error event.
-   * @group Emits
-   */
-  onError = new EventEmitter();
-  /**
-   * Callback to invoke when files in queue are removed without uploading using clear all button.
-   * @param {Event} event - Browser event.
-   * @group Emits
-   */
-  onClear = new EventEmitter();
-  /**
-   * Callback to invoke when a file is removed without uploading using clear button of a file.
-   * @param {FileRemoveEvent} event - Remove event.
-   * @group Emits
-   */
-  onRemove = new EventEmitter();
-  /**
-   * Callback to invoke when files are selected.
-   * @param {FileSelectEvent} event - Select event.
-   * @group Emits
-   */
-  onSelect = new EventEmitter();
-  /**
-   * Callback to invoke when files are being uploaded.
-   * @param {FileProgressEvent} event - Progress event.
-   * @group Emits
-   */
-  onProgress = new EventEmitter();
-  /**
-   * Callback to invoke in custom upload mode to upload the files manually.
-   * @param {FileUploadHandlerEvent} event - Upload handler event.
-   * @group Emits
-   */
-  uploadHandler = new EventEmitter();
-  /**
-   * This event is triggered if an error occurs while loading an image file.
-   * @param {Event} event - Browser event.
-   * @group Emits
-   */
-  onImageError = new EventEmitter();
-  /**
-   * This event is triggered if an error occurs while removing an uploaded file.
-   * @param {RemoveUploadedFileEvent} event - Remove event.
-   * @group Emits
-   */
-  onRemoveUploadedFile = new EventEmitter();
-  templates;
-  advancedFileInput;
-  basicFileInput;
-  content;
+var _FileUpload = class _FileUpload {
+  constructor(document, platformId, locale, renderer, el, sanitizer, zone, http, cd, config) {
+    __publicField(this, "document");
+    __publicField(this, "platformId");
+    __publicField(this, "locale");
+    __publicField(this, "renderer");
+    __publicField(this, "el");
+    __publicField(this, "sanitizer");
+    __publicField(this, "zone");
+    __publicField(this, "http");
+    __publicField(this, "cd");
+    __publicField(this, "config");
+    /**
+     * Name of the request parameter to identify the files at backend.
+     * @group Props
+     */
+    __publicField(this, "name");
+    /**
+     * Remote url to upload the files.
+     * @group Props
+     */
+    __publicField(this, "url");
+    /**
+     * HTTP method to send the files to the url such as "post" and "put".
+     * @group Props
+     */
+    __publicField(this, "method", "post");
+    /**
+     * Used to select multiple files at once from file dialog.
+     * @group Props
+     */
+    __publicField(this, "multiple");
+    /**
+     * Comma-separated list of pattern to restrict the allowed file types. Can be any combination of either the MIME types (such as "image/*") or the file extensions (such as ".jpg").
+     * @group Props
+     */
+    __publicField(this, "accept");
+    /**
+     * Disables the upload functionality.
+     * @group Props
+     */
+    __publicField(this, "disabled");
+    /**
+     * When enabled, upload begins automatically after selection is completed.
+     * @group Props
+     */
+    __publicField(this, "auto");
+    /**
+     * Cross-site Access-Control requests should be made using credentials such as cookies, authorization headers or TLS client certificates.
+     * @group Props
+     */
+    __publicField(this, "withCredentials");
+    /**
+     * Maximum file size allowed in bytes.
+     * @group Props
+     */
+    __publicField(this, "maxFileSize");
+    /**
+     * Summary message of the invalid file size.
+     * @group Props
+     */
+    __publicField(this, "invalidFileSizeMessageSummary", "{0}: Invalid file size, ");
+    /**
+     * Detail message of the invalid file size.
+     * @group Props
+     */
+    __publicField(this, "invalidFileSizeMessageDetail", "maximum upload size is {0}.");
+    /**
+     * Summary message of the invalid file type.
+     * @group Props
+     */
+    __publicField(this, "invalidFileTypeMessageSummary", "{0}: Invalid file type, ");
+    /**
+     * Detail message of the invalid file type.
+     * @group Props
+     */
+    __publicField(this, "invalidFileTypeMessageDetail", "allowed file types: {0}.");
+    /**
+     * Detail message of the invalid file type.
+     * @group Props
+     */
+    __publicField(this, "invalidFileLimitMessageDetail", "limit is {0} at most.");
+    /**
+     * Summary message of the invalid file type.
+     * @group Props
+     */
+    __publicField(this, "invalidFileLimitMessageSummary", "Maximum number of files exceeded, ");
+    /**
+     * Inline style of the element.
+     * @group Props
+     */
+    __publicField(this, "style");
+    /**
+     * Class of the element.
+     * @group Props
+     */
+    __publicField(this, "styleClass");
+    /**
+     * Width of the image thumbnail in pixels.
+     * @group Props
+     */
+    __publicField(this, "previewWidth", 50);
+    /**
+     * Label of the choose button. Defaults to PrimeNG Locale configuration.
+     * @group Props
+     */
+    __publicField(this, "chooseLabel");
+    /**
+     * Label of the upload button. Defaults to PrimeNG Locale configuration.
+     * @group Props
+     */
+    __publicField(this, "uploadLabel");
+    /**
+     * Label of the cancel button. Defaults to PrimeNG Locale configuration.
+     * @group Props
+     */
+    __publicField(this, "cancelLabel");
+    /**
+     * Icon of the choose button.
+     * @group Props
+     */
+    __publicField(this, "chooseIcon");
+    /**
+     * Icon of the upload button.
+     * @group Props
+     */
+    __publicField(this, "uploadIcon");
+    /**
+     * Icon of the cancel button.
+     * @group Props
+     */
+    __publicField(this, "cancelIcon");
+    /**
+     * Whether to show the upload button.
+     * @group Props
+     */
+    __publicField(this, "showUploadButton", true);
+    /**
+     * Whether to show the cancel button.
+     * @group Props
+     */
+    __publicField(this, "showCancelButton", true);
+    /**
+     * Defines the UI of the component.
+     * @group Props
+     */
+    __publicField(this, "mode", "advanced");
+    /**
+     * HttpHeaders class represents the header configuration options for an HTTP request.
+     * @group Props
+     */
+    __publicField(this, "headers");
+    /**
+     * Whether to use the default upload or a manual implementation defined in uploadHandler callback. Defaults to PrimeNG Locale configuration.
+     * @group Props
+     */
+    __publicField(this, "customUpload");
+    /**
+     * Maximum number of files that can be uploaded.
+     * @group Props
+     */
+    __publicField(this, "fileLimit");
+    /**
+     * Style class of the upload button.
+     * @group Props
+     */
+    __publicField(this, "uploadStyleClass");
+    /**
+     * Style class of the cancel button.
+     * @group Props
+     */
+    __publicField(this, "cancelStyleClass");
+    /**
+     * Style class of the remove button.
+     * @group Props
+     */
+    __publicField(this, "removeStyleClass");
+    /**
+     * Style class of the choose button.
+     * @group Props
+     */
+    __publicField(this, "chooseStyleClass");
+    /**
+     * Callback to invoke before file upload is initialized.
+     * @param {FileBeforeUploadEvent} event - Custom upload event.
+     * @group Emits
+     */
+    __publicField(this, "onBeforeUpload", new EventEmitter());
+    /**
+     * An event indicating that the request was sent to the server. Useful when a request may be retried multiple times, to distinguish between retries on the final event stream.
+     * @param {FileSendEvent} event - Custom send event.
+     * @group Emits
+     */
+    __publicField(this, "onSend", new EventEmitter());
+    /**
+     * Callback to invoke when file upload is complete.
+     * @param {FileUploadEvent} event - Custom upload event.
+     * @group Emits
+     */
+    __publicField(this, "onUpload", new EventEmitter());
+    /**
+     * Callback to invoke if file upload fails.
+     * @param {FileUploadErrorEvent} event - Custom error event.
+     * @group Emits
+     */
+    __publicField(this, "onError", new EventEmitter());
+    /**
+     * Callback to invoke when files in queue are removed without uploading using clear all button.
+     * @param {Event} event - Browser event.
+     * @group Emits
+     */
+    __publicField(this, "onClear", new EventEmitter());
+    /**
+     * Callback to invoke when a file is removed without uploading using clear button of a file.
+     * @param {FileRemoveEvent} event - Remove event.
+     * @group Emits
+     */
+    __publicField(this, "onRemove", new EventEmitter());
+    /**
+     * Callback to invoke when files are selected.
+     * @param {FileSelectEvent} event - Select event.
+     * @group Emits
+     */
+    __publicField(this, "onSelect", new EventEmitter());
+    /**
+     * Callback to invoke when files are being uploaded.
+     * @param {FileProgressEvent} event - Progress event.
+     * @group Emits
+     */
+    __publicField(this, "onProgress", new EventEmitter());
+    /**
+     * Callback to invoke in custom upload mode to upload the files manually.
+     * @param {FileUploadHandlerEvent} event - Upload handler event.
+     * @group Emits
+     */
+    __publicField(this, "uploadHandler", new EventEmitter());
+    /**
+     * This event is triggered if an error occurs while loading an image file.
+     * @param {Event} event - Browser event.
+     * @group Emits
+     */
+    __publicField(this, "onImageError", new EventEmitter());
+    /**
+     * This event is triggered if an error occurs while removing an uploaded file.
+     * @param {RemoveUploadedFileEvent} event - Remove event.
+     * @group Emits
+     */
+    __publicField(this, "onRemoveUploadedFile", new EventEmitter());
+    __publicField(this, "templates");
+    __publicField(this, "advancedFileInput");
+    __publicField(this, "basicFileInput");
+    __publicField(this, "content");
+    __publicField(this, "_files", []);
+    __publicField(this, "progress", 0);
+    __publicField(this, "dragHighlight");
+    __publicField(this, "msgs");
+    __publicField(this, "fileTemplate");
+    __publicField(this, "headerTemplate");
+    __publicField(this, "contentTemplate");
+    __publicField(this, "toolbarTemplate");
+    __publicField(this, "chooseIconTemplate");
+    __publicField(this, "uploadIconTemplate");
+    __publicField(this, "cancelIconTemplate");
+    __publicField(this, "emptyTemplate");
+    __publicField(this, "uploadedFileCount", 0);
+    __publicField(this, "focus");
+    __publicField(this, "uploading");
+    __publicField(this, "duplicateIEEvent");
+    // flag to recognize duplicate onchange event for file input
+    __publicField(this, "translationSubscription");
+    __publicField(this, "dragOverListener");
+    __publicField(this, "uploadedFiles", []);
+    __publicField(this, "fileUploadSubcription");
+    __publicField(this, "formatter");
+    this.document = document;
+    this.platformId = platformId;
+    this.locale = locale;
+    this.renderer = renderer;
+    this.el = el;
+    this.sanitizer = sanitizer;
+    this.zone = zone;
+    this.http = http;
+    this.cd = cd;
+    this.config = config;
+    this.formatter = new Intl.NumberFormat(this.locale, {
+      maximumFractionDigits: 3
+    });
+  }
   set files(files) {
     this._files = [];
     for (let i = 0; i < files.length; i++) {
@@ -1165,50 +1192,15 @@ var FileUpload = class _FileUpload {
     return this._files;
   }
   get basicButtonLabel() {
+    var _a;
     if (this.auto || !this.hasFiles()) {
       return this.chooseLabel;
     }
-    return this.uploadLabel ?? this.files[0].name;
-  }
-  _files = [];
-  progress = 0;
-  dragHighlight;
-  msgs;
-  fileTemplate;
-  headerTemplate;
-  contentTemplate;
-  toolbarTemplate;
-  chooseIconTemplate;
-  uploadIconTemplate;
-  cancelIconTemplate;
-  emptyTemplate;
-  uploadedFileCount = 0;
-  focus;
-  uploading;
-  duplicateIEEvent;
-  // flag to recognize duplicate onchange event for file input
-  translationSubscription;
-  dragOverListener;
-  uploadedFiles = [];
-  fileUploadSubcription;
-  formatter;
-  constructor(document, platformId, locale, renderer, el, sanitizer, zone, http, cd, config) {
-    this.document = document;
-    this.platformId = platformId;
-    this.locale = locale;
-    this.renderer = renderer;
-    this.el = el;
-    this.sanitizer = sanitizer;
-    this.zone = zone;
-    this.http = http;
-    this.cd = cd;
-    this.config = config;
-    this.formatter = new Intl.NumberFormat(this.locale, {
-      maximumFractionDigits: 3
-    });
+    return (_a = this.uploadLabel) != null ? _a : this.files[0].name;
   }
   ngAfterContentInit() {
-    this.templates?.forEach((item) => {
+    var _a;
+    (_a = this.templates) == null ? void 0 : _a.forEach((item) => {
       switch (item.getType()) {
         case "header":
           this.headerTemplate = item.template;
@@ -1260,7 +1252,8 @@ var FileUpload = class _FileUpload {
     return this.config.getTranslation(option);
   }
   choose() {
-    this.advancedFileInput?.nativeElement.click();
+    var _a;
+    (_a = this.advancedFileInput) == null ? void 0 : _a.nativeElement.click();
   }
   onFileSelect(event) {
     if (event.type !== "drop" && this.isIE11() && this.duplicateIEEvent) {
@@ -1332,7 +1325,8 @@ var FileUpload = class _FileUpload {
     return true;
   }
   isFileTypeValid(file) {
-    let acceptableTypes = this.accept?.split(",").map((type) => type.trim());
+    var _a;
+    let acceptableTypes = (_a = this.accept) == null ? void 0 : _a.split(",").map((type) => type.trim());
     for (let type of acceptableTypes) {
       let acceptable = this.isWildcard(type) ? this.getTypeClass(file.type) === this.getTypeClass(type) : file.type == type || this.getFileExtension(file).toLowerCase() === type.toLowerCase();
       if (acceptable) {
@@ -1500,7 +1494,8 @@ var FileUpload = class _FileUpload {
     }
   }
   checkFileLimit(files) {
-    this.msgs ??= [];
+    var _a;
+    (_a = this.msgs) != null ? _a : this.msgs = [];
     const hasExistingValidationMessages = this.msgs.length > 0 && this.fileLimit < files.length;
     if (this.isFileLimitExceeded() || hasExistingValidationMessages) {
       this.msgs.push({
@@ -1537,21 +1532,24 @@ var FileUpload = class _FileUpload {
     }
   }
   onDragOver(e) {
+    var _a;
     if (!this.disabled) {
-      DomHandler.addClass(this.content?.nativeElement, "p-fileupload-highlight");
+      DomHandler.addClass((_a = this.content) == null ? void 0 : _a.nativeElement, "p-fileupload-highlight");
       this.dragHighlight = true;
       e.stopPropagation();
       e.preventDefault();
     }
   }
   onDragLeave(event) {
+    var _a;
     if (!this.disabled) {
-      DomHandler.removeClass(this.content?.nativeElement, "p-fileupload-highlight");
+      DomHandler.removeClass((_a = this.content) == null ? void 0 : _a.nativeElement, "p-fileupload-highlight");
     }
   }
   onDrop(event) {
+    var _a;
     if (!this.disabled) {
-      DomHandler.removeClass(this.content?.nativeElement, "p-fileupload-highlight");
+      DomHandler.removeClass((_a = this.content) == null ? void 0 : _a.nativeElement, "p-fileupload-highlight");
       event.stopPropagation();
       event.preventDefault();
       let files = event.dataTransfer ? event.dataTransfer.files : event.target.files;
@@ -1571,15 +1569,16 @@ var FileUpload = class _FileUpload {
     const k = 1024;
     const sizes = this.getTranslation(TranslationKeys.FILE_SIZE_TYPES);
     if (bytes === 0) {
-      return `0 ${sizes[0]}`;
+      return "0 ".concat(sizes[0]);
     }
     const i = Math.floor(Math.log(bytes) / Math.log(k));
     const formattedSize = this.formatter.format(bytes / Math.pow(k, i));
-    return `${formattedSize} ${sizes[i]}`;
+    return "".concat(formattedSize, " ").concat(sizes[i]);
   }
   onBasicUploaderClick() {
+    var _a;
     if (this.hasFiles()) this.upload();
-    else this.basicFileInput?.nativeElement.click();
+    else (_a = this.basicFileInput) == null ? void 0 : _a.nativeElement.click();
   }
   onBasicKeydown(event) {
     switch (event.code) {
@@ -1619,271 +1618,112 @@ var FileUpload = class _FileUpload {
       this.translationSubscription.unsubscribe();
     }
   }
-  static ɵfac = function FileUpload_Factory(__ngFactoryType__) {
-    return new (__ngFactoryType__ || _FileUpload)(ɵɵdirectiveInject(DOCUMENT), ɵɵdirectiveInject(PLATFORM_ID), ɵɵdirectiveInject(LOCALE_ID), ɵɵdirectiveInject(Renderer2), ɵɵdirectiveInject(ElementRef), ɵɵdirectiveInject(DomSanitizer), ɵɵdirectiveInject(NgZone), ɵɵdirectiveInject(HttpClient), ɵɵdirectiveInject(ChangeDetectorRef), ɵɵdirectiveInject(PrimeNGConfig));
-  };
-  static ɵcmp = ɵɵdefineComponent({
-    type: _FileUpload,
-    selectors: [["p-fileUpload"]],
-    contentQueries: function FileUpload_ContentQueries(rf, ctx, dirIndex) {
-      if (rf & 1) {
-        ɵɵcontentQuery(dirIndex, PrimeTemplate, 4);
-      }
-      if (rf & 2) {
-        let _t;
-        ɵɵqueryRefresh(_t = ɵɵloadQuery()) && (ctx.templates = _t);
-      }
-    },
-    viewQuery: function FileUpload_Query(rf, ctx) {
-      if (rf & 1) {
-        ɵɵviewQuery(_c0, 5);
-        ɵɵviewQuery(_c1, 5);
-        ɵɵviewQuery(_c2, 5);
-      }
-      if (rf & 2) {
-        let _t;
-        ɵɵqueryRefresh(_t = ɵɵloadQuery()) && (ctx.advancedFileInput = _t.first);
-        ɵɵqueryRefresh(_t = ɵɵloadQuery()) && (ctx.basicFileInput = _t.first);
-        ɵɵqueryRefresh(_t = ɵɵloadQuery()) && (ctx.content = _t.first);
-      }
-    },
-    hostAttrs: [1, "p-element"],
-    inputs: {
-      name: "name",
-      url: "url",
-      method: "method",
-      multiple: [2, "multiple", "multiple", booleanAttribute],
-      accept: "accept",
-      disabled: [2, "disabled", "disabled", booleanAttribute],
-      auto: [2, "auto", "auto", booleanAttribute],
-      withCredentials: [2, "withCredentials", "withCredentials", booleanAttribute],
-      maxFileSize: [2, "maxFileSize", "maxFileSize", numberAttribute],
-      invalidFileSizeMessageSummary: "invalidFileSizeMessageSummary",
-      invalidFileSizeMessageDetail: "invalidFileSizeMessageDetail",
-      invalidFileTypeMessageSummary: "invalidFileTypeMessageSummary",
-      invalidFileTypeMessageDetail: "invalidFileTypeMessageDetail",
-      invalidFileLimitMessageDetail: "invalidFileLimitMessageDetail",
-      invalidFileLimitMessageSummary: "invalidFileLimitMessageSummary",
-      style: "style",
-      styleClass: "styleClass",
-      previewWidth: [2, "previewWidth", "previewWidth", numberAttribute],
-      chooseLabel: "chooseLabel",
-      uploadLabel: "uploadLabel",
-      cancelLabel: "cancelLabel",
-      chooseIcon: "chooseIcon",
-      uploadIcon: "uploadIcon",
-      cancelIcon: "cancelIcon",
-      showUploadButton: [2, "showUploadButton", "showUploadButton", booleanAttribute],
-      showCancelButton: [2, "showCancelButton", "showCancelButton", booleanAttribute],
-      mode: "mode",
-      headers: "headers",
-      customUpload: [2, "customUpload", "customUpload", booleanAttribute],
-      fileLimit: [2, "fileLimit", "fileLimit", (value) => numberAttribute(value, null)],
-      uploadStyleClass: "uploadStyleClass",
-      cancelStyleClass: "cancelStyleClass",
-      removeStyleClass: "removeStyleClass",
-      chooseStyleClass: "chooseStyleClass",
-      files: "files"
-    },
-    outputs: {
-      onBeforeUpload: "onBeforeUpload",
-      onSend: "onSend",
-      onUpload: "onUpload",
-      onError: "onError",
-      onClear: "onClear",
-      onRemove: "onRemove",
-      onSelect: "onSelect",
-      onProgress: "onProgress",
-      uploadHandler: "uploadHandler",
-      onImageError: "onImageError",
-      onRemoveUploadedFile: "onRemoveUploadedFile"
-    },
-    features: [ɵɵInputTransformsFeature],
-    decls: 2,
-    vars: 2,
-    consts: [["advancedfileinput", ""], ["content", ""], ["chooseSection", ""], ["basicfileinput", ""], [3, "ngClass", "ngStyle", "class", 4, "ngIf"], ["class", "p-fileupload p-fileupload-basic p-component", 4, "ngIf"], [3, "ngClass", "ngStyle"], ["type", "file", 3, "change", "multiple", "accept", "disabled"], [1, "p-fileupload-buttonbar"], [4, "ngIf"], [4, "ngTemplateOutlet", "ngTemplateOutletContext"], [4, "ngTemplateOutlet"], [1, "p-fileupload-content", 3, "dragenter", "dragleave", "drop"], [3, "value", "showValue", 4, "ngIf"], [3, "value", "enableService"], ["class", "p-fileupload-files", 4, "ngIf"], ["class", "p-fileupload-empty", 4, "ngIf"], ["pRipple", "", "tabindex", "0", 1, "p-button", "p-component", "p-fileupload-choose", 3, "focus", "blur", "click", "keydown.enter", "ngClass"], [3, "ngClass", "class", 4, "ngIf"], [1, "p-button-label"], ["type", "button", 3, "label", "disabled", "styleClass", "onClick", 4, "ngIf"], [3, "ngClass"], [3, "styleClass", 4, "ngIf"], ["class", "p-button-icon p-button-icon-left", 4, "ngIf"], [3, "styleClass"], [1, "p-button-icon", "p-button-icon-left"], ["type", "button", 3, "onClick", "label", "disabled", "styleClass"], ["class", "p-button-icon p-button-icon-left", 3, "ngClass", 4, "ngIf"], [1, "p-button-icon", "p-button-icon-left", 3, "ngClass"], [3, "value", "showValue"], [1, "p-fileupload-files"], ["class", "p-fileupload-row", 4, "ngFor", "ngForOf"], [1, "p-fileupload-row"], [1, "p-fileupload-filename"], ["type", "button", "pButton", "", 1, "p-button-icon-only", 3, "click", "disabled"], [3, "error", "src", "width"], ["ngFor", "", 3, "ngForOf", "ngForTemplate"], [1, "p-fileupload-empty"], [1, "p-fileupload", "p-fileupload-basic", "p-component"], ["tabindex", "0", "pRipple", "", 3, "click", "keydown", "ngClass", "ngStyle"], [4, "ngIf", "ngIfElse"], ["class", "p-button-label", 4, "ngIf"], ["type", "file", 3, "accept", "multiple", "disabled", "change", "focus", "blur", 4, "ngIf"], ["class", "p-button-icon p-button-icon-left pi", 3, "ngClass", 4, "ngIf"], [1, "p-button-icon", "p-button-icon-left", "pi", 3, "ngClass"], ["class", "p-button-icon p-button-icon-left pi", 4, "ngIf"], [1, "p-button-icon", "p-button-icon-left", "pi"], ["type", "file", 3, "change", "focus", "blur", "accept", "multiple", "disabled"]],
-    template: function FileUpload_Template(rf, ctx) {
-      if (rf & 1) {
-        ɵɵtemplate(0, FileUpload_div_0_Template, 14, 42, "div", 4)(1, FileUpload_div_1_Template, 8, 17, "div", 5);
-      }
-      if (rf & 2) {
-        ɵɵproperty("ngIf", ctx.mode === "advanced");
-        ɵɵadvance();
-        ɵɵproperty("ngIf", ctx.mode === "basic");
-      }
-    },
-    dependencies: () => [NgClass, NgForOf, NgIf, NgTemplateOutlet, NgStyle, ButtonDirective, Button, ProgressBar, Messages, Ripple, PlusIcon, UploadIcon, TimesIcon],
-    styles: ["@layer primeng{.p-fileupload-content{position:relative}.p-fileupload-row{display:flex;align-items:center}.p-fileupload-row>div{flex:1 1 auto;width:25%}.p-fileupload-row>div:last-child{text-align:right}.p-fileupload-content .p-progressbar{width:100%;position:absolute;top:0;left:0}.p-button.p-fileupload-choose{position:relative;overflow:hidden}.p-button.p-fileupload-choose input[type=file],.p-fileupload-choose.p-fileupload-choose-selected input[type=file]{display:none}.p-fluid .p-fileupload .p-button{width:auto}.p-fileupload-filename{word-break:break-all}}\n"],
-    encapsulation: 2,
-    changeDetection: 0
-  });
 };
+__publicField(_FileUpload, "ɵfac", function FileUpload_Factory(__ngFactoryType__) {
+  return new (__ngFactoryType__ || _FileUpload)(ɵɵdirectiveInject(DOCUMENT), ɵɵdirectiveInject(PLATFORM_ID), ɵɵdirectiveInject(LOCALE_ID), ɵɵdirectiveInject(Renderer2), ɵɵdirectiveInject(ElementRef), ɵɵdirectiveInject(DomSanitizer), ɵɵdirectiveInject(NgZone), ɵɵdirectiveInject(HttpClient), ɵɵdirectiveInject(ChangeDetectorRef), ɵɵdirectiveInject(PrimeNGConfig));
+});
+__publicField(_FileUpload, "ɵcmp", ɵɵdefineComponent({
+  type: _FileUpload,
+  selectors: [["p-fileUpload"]],
+  contentQueries: function FileUpload_ContentQueries(rf, ctx, dirIndex) {
+    if (rf & 1) {
+      ɵɵcontentQuery(dirIndex, PrimeTemplate, 4);
+    }
+    if (rf & 2) {
+      let _t;
+      ɵɵqueryRefresh(_t = ɵɵloadQuery()) && (ctx.templates = _t);
+    }
+  },
+  viewQuery: function FileUpload_Query(rf, ctx) {
+    if (rf & 1) {
+      ɵɵviewQuery(_c0, 5);
+      ɵɵviewQuery(_c1, 5);
+      ɵɵviewQuery(_c2, 5);
+    }
+    if (rf & 2) {
+      let _t;
+      ɵɵqueryRefresh(_t = ɵɵloadQuery()) && (ctx.advancedFileInput = _t.first);
+      ɵɵqueryRefresh(_t = ɵɵloadQuery()) && (ctx.basicFileInput = _t.first);
+      ɵɵqueryRefresh(_t = ɵɵloadQuery()) && (ctx.content = _t.first);
+    }
+  },
+  hostAttrs: [1, "p-element"],
+  inputs: {
+    name: "name",
+    url: "url",
+    method: "method",
+    multiple: [2, "multiple", "multiple", booleanAttribute],
+    accept: "accept",
+    disabled: [2, "disabled", "disabled", booleanAttribute],
+    auto: [2, "auto", "auto", booleanAttribute],
+    withCredentials: [2, "withCredentials", "withCredentials", booleanAttribute],
+    maxFileSize: [2, "maxFileSize", "maxFileSize", numberAttribute],
+    invalidFileSizeMessageSummary: "invalidFileSizeMessageSummary",
+    invalidFileSizeMessageDetail: "invalidFileSizeMessageDetail",
+    invalidFileTypeMessageSummary: "invalidFileTypeMessageSummary",
+    invalidFileTypeMessageDetail: "invalidFileTypeMessageDetail",
+    invalidFileLimitMessageDetail: "invalidFileLimitMessageDetail",
+    invalidFileLimitMessageSummary: "invalidFileLimitMessageSummary",
+    style: "style",
+    styleClass: "styleClass",
+    previewWidth: [2, "previewWidth", "previewWidth", numberAttribute],
+    chooseLabel: "chooseLabel",
+    uploadLabel: "uploadLabel",
+    cancelLabel: "cancelLabel",
+    chooseIcon: "chooseIcon",
+    uploadIcon: "uploadIcon",
+    cancelIcon: "cancelIcon",
+    showUploadButton: [2, "showUploadButton", "showUploadButton", booleanAttribute],
+    showCancelButton: [2, "showCancelButton", "showCancelButton", booleanAttribute],
+    mode: "mode",
+    headers: "headers",
+    customUpload: [2, "customUpload", "customUpload", booleanAttribute],
+    fileLimit: [2, "fileLimit", "fileLimit", (value) => numberAttribute(value, null)],
+    uploadStyleClass: "uploadStyleClass",
+    cancelStyleClass: "cancelStyleClass",
+    removeStyleClass: "removeStyleClass",
+    chooseStyleClass: "chooseStyleClass",
+    files: "files"
+  },
+  outputs: {
+    onBeforeUpload: "onBeforeUpload",
+    onSend: "onSend",
+    onUpload: "onUpload",
+    onError: "onError",
+    onClear: "onClear",
+    onRemove: "onRemove",
+    onSelect: "onSelect",
+    onProgress: "onProgress",
+    uploadHandler: "uploadHandler",
+    onImageError: "onImageError",
+    onRemoveUploadedFile: "onRemoveUploadedFile"
+  },
+  features: [ɵɵInputTransformsFeature],
+  decls: 2,
+  vars: 2,
+  consts: [["advancedfileinput", ""], ["content", ""], ["chooseSection", ""], ["basicfileinput", ""], [3, "ngClass", "ngStyle", "class", 4, "ngIf"], ["class", "p-fileupload p-fileupload-basic p-component", 4, "ngIf"], [3, "ngClass", "ngStyle"], ["type", "file", 3, "change", "multiple", "accept", "disabled"], [1, "p-fileupload-buttonbar"], [4, "ngIf"], [4, "ngTemplateOutlet", "ngTemplateOutletContext"], [4, "ngTemplateOutlet"], [1, "p-fileupload-content", 3, "dragenter", "dragleave", "drop"], [3, "value", "showValue", 4, "ngIf"], [3, "value", "enableService"], ["class", "p-fileupload-files", 4, "ngIf"], ["class", "p-fileupload-empty", 4, "ngIf"], ["pRipple", "", "tabindex", "0", 1, "p-button", "p-component", "p-fileupload-choose", 3, "focus", "blur", "click", "keydown.enter", "ngClass"], [3, "ngClass", "class", 4, "ngIf"], [1, "p-button-label"], ["type", "button", 3, "label", "disabled", "styleClass", "onClick", 4, "ngIf"], [3, "ngClass"], [3, "styleClass", 4, "ngIf"], ["class", "p-button-icon p-button-icon-left", 4, "ngIf"], [3, "styleClass"], [1, "p-button-icon", "p-button-icon-left"], ["type", "button", 3, "onClick", "label", "disabled", "styleClass"], ["class", "p-button-icon p-button-icon-left", 3, "ngClass", 4, "ngIf"], [1, "p-button-icon", "p-button-icon-left", 3, "ngClass"], [3, "value", "showValue"], [1, "p-fileupload-files"], ["class", "p-fileupload-row", 4, "ngFor", "ngForOf"], [1, "p-fileupload-row"], [1, "p-fileupload-filename"], ["type", "button", "pButton", "", 1, "p-button-icon-only", 3, "click", "disabled"], [3, "error", "src", "width"], ["ngFor", "", 3, "ngForOf", "ngForTemplate"], [1, "p-fileupload-empty"], [1, "p-fileupload", "p-fileupload-basic", "p-component"], ["tabindex", "0", "pRipple", "", 3, "click", "keydown", "ngClass", "ngStyle"], [4, "ngIf", "ngIfElse"], ["class", "p-button-label", 4, "ngIf"], ["type", "file", 3, "accept", "multiple", "disabled", "change", "focus", "blur", 4, "ngIf"], ["class", "p-button-icon p-button-icon-left pi", 3, "ngClass", 4, "ngIf"], [1, "p-button-icon", "p-button-icon-left", "pi", 3, "ngClass"], ["class", "p-button-icon p-button-icon-left pi", 4, "ngIf"], [1, "p-button-icon", "p-button-icon-left", "pi"], ["type", "file", 3, "change", "focus", "blur", "accept", "multiple", "disabled"]],
+  template: function FileUpload_Template(rf, ctx) {
+    if (rf & 1) {
+      ɵɵtemplate(0, FileUpload_div_0_Template, 14, 42, "div", 4)(1, FileUpload_div_1_Template, 8, 17, "div", 5);
+    }
+    if (rf & 2) {
+      ɵɵproperty("ngIf", ctx.mode === "advanced");
+      ɵɵadvance();
+      ɵɵproperty("ngIf", ctx.mode === "basic");
+    }
+  },
+  dependencies: () => [NgClass, NgForOf, NgIf, NgTemplateOutlet, NgStyle, ButtonDirective, Button, ProgressBar, Messages, Ripple, PlusIcon, UploadIcon, TimesIcon],
+  styles: ["@layer primeng{.p-fileupload-content{position:relative}.p-fileupload-row{display:flex;align-items:center}.p-fileupload-row>div{flex:1 1 auto;width:25%}.p-fileupload-row>div:last-child{text-align:right}.p-fileupload-content .p-progressbar{width:100%;position:absolute;top:0;left:0}.p-button.p-fileupload-choose{position:relative;overflow:hidden}.p-button.p-fileupload-choose input[type=file],.p-fileupload-choose.p-fileupload-choose-selected input[type=file]{display:none}.p-fluid .p-fileupload .p-button{width:auto}.p-fileupload-filename{word-break:break-all}}\n"],
+  encapsulation: 2,
+  changeDetection: 0
+}));
+var FileUpload = _FileUpload;
 (() => {
   (typeof ngDevMode === "undefined" || ngDevMode) && setClassMetadata(FileUpload, [{
     type: Component,
     args: [{
       selector: "p-fileUpload",
-      template: `
-        <div [ngClass]="'p-fileupload p-fileupload-advanced p-component'" [ngStyle]="style" [class]="styleClass" *ngIf="mode === 'advanced'" [attr.data-pc-name]="'fileupload'" [attr.data-pc-section]="'root'">
-            <input
-                [attr.aria-label]="browseFilesLabel"
-                #advancedfileinput
-                type="file"
-                (change)="onFileSelect($event)"
-                [multiple]="multiple"
-                [accept]="accept"
-                [disabled]="disabled || isChooseDisabled()"
-                [attr.title]="''"
-                [attr.data-pc-section]="'input'"
-                [style.display]="'none'"
-            />
-            <div class="p-fileupload-buttonbar" [attr.data-pc-section]="'buttonbar'">
-                <ng-container *ngIf="!headerTemplate">
-                    <span
-                        class="p-button p-component p-fileupload-choose"
-                        [ngClass]="{ 'p-focus': focus, 'p-disabled': disabled || isChooseDisabled() }"
-                        (focus)="onFocus()"
-                        (blur)="onBlur()"
-                        pRipple
-                        (click)="choose()"
-                        (keydown.enter)="choose()"
-                        tabindex="0"
-                        [class]="chooseStyleClass"
-                        [attr.data-pc-section]="'choosebutton'"
-                    >
-                        <input
-                            [attr.aria-label]="browseFilesLabel"
-                            #advancedfileinput
-                            type="file"
-                            (change)="onFileSelect($event)"
-                            [multiple]="multiple"
-                            [accept]="accept"
-                            [disabled]="disabled || isChooseDisabled()"
-                            [attr.title]="''"
-                            [attr.data-pc-section]="'input'"
-                        />
-                        <span *ngIf="chooseIcon" [ngClass]="'p-button-icon p-button-icon-left'" [class]="chooseIcon" [attr.aria-label]="true" [attr.data-pc-section]="'chooseicon'"></span>
-                        <ng-container *ngIf="!chooseIcon">
-                            <PlusIcon *ngIf="!chooseIconTemplate" [styleClass]="'p-button-icon p-button-icon-left'" [attr.aria-label]="true" [attr.data-pc-section]="'chooseicon'" />
-                            <span *ngIf="chooseIconTemplate" class="p-button-icon p-button-icon-left" [attr.aria-label]="true" [attr.data-pc-section]="'chooseicon'">
-                                <ng-template *ngTemplateOutlet="chooseIconTemplate"></ng-template>
-                            </span>
-                        </ng-container>
-                        <span class="p-button-label" [attr.data-pc-section]="'choosebuttonlabel'">{{ chooseButtonLabel }}</span>
-                    </span>
-
-                    <p-button *ngIf="!auto && showUploadButton" type="button" [label]="uploadButtonLabel" (onClick)="upload()" [disabled]="!hasFiles() || isFileLimitExceeded()" [styleClass]="uploadStyleClass">
-                        <span *ngIf="uploadIcon" [ngClass]="uploadIcon" [attr.aria-hidden]="true" class="p-button-icon p-button-icon-left"></span>
-                        <ng-container *ngIf="!uploadIcon">
-                            <UploadIcon *ngIf="!uploadIconTemplate" [styleClass]="'p-button-icon p-button-icon-left'" />
-                            <span *ngIf="uploadIconTemplate" class="p-button-icon p-button-icon-left" [attr.aria-hidden]="true">
-                                <ng-template *ngTemplateOutlet="uploadIconTemplate"></ng-template>
-                            </span>
-                        </ng-container>
-                    </p-button>
-                    <p-button *ngIf="!auto && showCancelButton" type="button" [label]="cancelButtonLabel" (onClick)="clear()" [disabled]="!hasFiles() || uploading" [styleClass]="cancelStyleClass">
-                        <span *ngIf="cancelIcon" [ngClass]="cancelIcon" class="p-button-icon p-button-icon-left"></span>
-                        <ng-container *ngIf="!cancelIcon">
-                            <TimesIcon *ngIf="!cancelIconTemplate" [styleClass]="'p-button-icon p-button-icon-left'" [attr.aria-hidden]="true" />
-                            <span *ngIf="cancelIconTemplate" class="p-button-icon p-button-icon-left" [attr.aria-hidden]="true">
-                                <ng-template *ngTemplateOutlet="cancelIconTemplate"></ng-template>
-                            </span>
-                        </ng-container>
-                    </p-button>
-                </ng-container>
-                <ng-container *ngTemplateOutlet="headerTemplate; context: { $implicit: files, uploadedFiles: uploadedFiles, chooseCallback: choose.bind(this), clearCallback: clear.bind(this), uploadCallback: upload.bind(this) }"></ng-container>
-                <ng-container *ngTemplateOutlet="toolbarTemplate"></ng-container>
-            </div>
-            <div #content class="p-fileupload-content" (dragenter)="onDragEnter($event)" (dragleave)="onDragLeave($event)" (drop)="onDrop($event)" [attr.data-pc-section]="'content'">
-                <p-progressBar [value]="progress" [showValue]="false" *ngIf="hasFiles()"></p-progressBar>
-
-                <p-messages [value]="msgs" [enableService]="false"></p-messages>
-
-                <div class="p-fileupload-files" *ngIf="hasFiles()">
-                    <div *ngIf="!fileTemplate">
-                        <div class="p-fileupload-row" *ngFor="let file of files; let i = index">
-                            <div *ngIf="isImage(file)"><img [src]="file.objectURL" [width]="previewWidth" (error)="imageError($event)" /></div>
-                            <div class="p-fileupload-filename">{{ file.name }}</div>
-                            <div>{{ formatSize(file.size) }}</div>
-                            <div>
-                                <button type="button" pButton (click)="remove($event, i)" [disabled]="uploading" class="p-button-icon-only" [class]="removeStyleClass">
-                                    <TimesIcon *ngIf="!cancelIconTemplate" />
-                                    <ng-template *ngTemplateOutlet="cancelIconTemplate"></ng-template>
-                                </button>
-                            </div>
-                        </div>
-                    </div>
-                    <div *ngIf="fileTemplate">
-                        <ng-template ngFor [ngForOf]="files" [ngForTemplate]="fileTemplate"></ng-template>
-                    </div>
-                </div>
-                <ng-container
-                    *ngTemplateOutlet="
-                        contentTemplate;
-                        context: {
-                            $implicit: files,
-                            uploadedFiles: uploadedFiles,
-                            chooseCallback: choose.bind(this),
-                            clearCallback: clear.bind(this),
-                            removeUploadedFileCallback: removeUploadedFile.bind(this),
-                            removeFileCallback: remove.bind(this),
-                            progress: progress,
-                            messages: msgs
-                        }
-                    "
-                ></ng-container>
-                <div *ngIf="emptyTemplate && !hasFiles() && !hasUploadedFiles()" class="p-fileupload-empty">
-                    <ng-container *ngTemplateOutlet="emptyTemplate"></ng-container>
-                </div>
-            </div>
-        </div>
-        <div class="p-fileupload p-fileupload-basic p-component" *ngIf="mode === 'basic'" [attr.data-pc-name]="'fileupload'">
-            <p-messages [value]="msgs" [enableService]="false"></p-messages>
-            <span
-                [ngClass]="{ 'p-button p-component p-fileupload-choose': true, 'p-button-icon-only': !basicButtonLabel, 'p-fileupload-choose-selected': hasFiles(), 'p-focus': focus, 'p-disabled': disabled }"
-                [ngStyle]="style"
-                [class]="styleClass"
-                (click)="onBasicUploaderClick()"
-                (keydown)="onBasicKeydown($event)"
-                tabindex="0"
-                pRipple
-                [attr.data-pc-section]="'choosebutton'"
-            >
-                <ng-container *ngIf="hasFiles() && !auto; else chooseSection">
-                    <span *ngIf="uploadIcon" class="p-button-icon p-button-icon-left" [ngClass]="uploadIcon"></span>
-                    <ng-container *ngIf="!uploadIcon">
-                        <UploadIcon *ngIf="!uploadIconTemplate" [styleClass]="'p-button-icon p-button-icon-left'" />
-                        <span *ngIf="uploadIconTemplate" class="p-button-icon p-button-icon-left">
-                            <ng-template *ngTemplateOutlet="uploadIconTemplate"></ng-template>
-                        </span>
-                    </ng-container>
-                </ng-container>
-                <ng-template #chooseSection>
-                    <span *ngIf="chooseIcon" class="p-button-icon p-button-icon-left pi" [ngClass]="chooseIcon"></span>
-                    <ng-container *ngIf="!chooseIcon">
-                        <PlusIcon [styleClass]="'p-button-icon p-button-icon-left pi'" *ngIf="!chooseIconTemplate" [attr.aria-hidden]="true" [attr.data-pc-section]="'uploadicon'" />
-                        <span *ngIf="chooseIconTemplate" class="p-button-icon p-button-icon-left pi" [attr.aria-hidden]="true" [attr.data-pc-section]="'uploadicon'">
-                            <ng-template *ngTemplateOutlet="chooseIconTemplate"></ng-template>
-                        </span>
-                    </ng-container>
-                </ng-template>
-                <span *ngIf="basicButtonLabel" class="p-button-label" [attr.data-pc-section]="'label'">{{ basicButtonLabel }}</span>
-                <input
-                    [attr.aria-label]="browseFilesLabel"
-                    #basicfileinput
-                    type="file"
-                    [accept]="accept"
-                    [multiple]="multiple"
-                    [disabled]="disabled"
-                    (change)="onFileSelect($event)"
-                    *ngIf="!hasFiles()"
-                    (focus)="onFocus()"
-                    (blur)="onBlur()"
-                    [attr.data-pc-section]="'input'"
-                />
-            </span>
-        </div>
-    `,
+      template: '\n        <div [ngClass]="\'p-fileupload p-fileupload-advanced p-component\'" [ngStyle]="style" [class]="styleClass" *ngIf="mode === \'advanced\'" [attr.data-pc-name]="\'fileupload\'" [attr.data-pc-section]="\'root\'">\n            <input\n                [attr.aria-label]="browseFilesLabel"\n                #advancedfileinput\n                type="file"\n                (change)="onFileSelect($event)"\n                [multiple]="multiple"\n                [accept]="accept"\n                [disabled]="disabled || isChooseDisabled()"\n                [attr.title]="\'\'"\n                [attr.data-pc-section]="\'input\'"\n                [style.display]="\'none\'"\n            />\n            <div class="p-fileupload-buttonbar" [attr.data-pc-section]="\'buttonbar\'">\n                <ng-container *ngIf="!headerTemplate">\n                    <span\n                        class="p-button p-component p-fileupload-choose"\n                        [ngClass]="{ \'p-focus\': focus, \'p-disabled\': disabled || isChooseDisabled() }"\n                        (focus)="onFocus()"\n                        (blur)="onBlur()"\n                        pRipple\n                        (click)="choose()"\n                        (keydown.enter)="choose()"\n                        tabindex="0"\n                        [class]="chooseStyleClass"\n                        [attr.data-pc-section]="\'choosebutton\'"\n                    >\n                        <input\n                            [attr.aria-label]="browseFilesLabel"\n                            #advancedfileinput\n                            type="file"\n                            (change)="onFileSelect($event)"\n                            [multiple]="multiple"\n                            [accept]="accept"\n                            [disabled]="disabled || isChooseDisabled()"\n                            [attr.title]="\'\'"\n                            [attr.data-pc-section]="\'input\'"\n                        />\n                        <span *ngIf="chooseIcon" [ngClass]="\'p-button-icon p-button-icon-left\'" [class]="chooseIcon" [attr.aria-label]="true" [attr.data-pc-section]="\'chooseicon\'"></span>\n                        <ng-container *ngIf="!chooseIcon">\n                            <PlusIcon *ngIf="!chooseIconTemplate" [styleClass]="\'p-button-icon p-button-icon-left\'" [attr.aria-label]="true" [attr.data-pc-section]="\'chooseicon\'" />\n                            <span *ngIf="chooseIconTemplate" class="p-button-icon p-button-icon-left" [attr.aria-label]="true" [attr.data-pc-section]="\'chooseicon\'">\n                                <ng-template *ngTemplateOutlet="chooseIconTemplate"></ng-template>\n                            </span>\n                        </ng-container>\n                        <span class="p-button-label" [attr.data-pc-section]="\'choosebuttonlabel\'">{{ chooseButtonLabel }}</span>\n                    </span>\n\n                    <p-button *ngIf="!auto && showUploadButton" type="button" [label]="uploadButtonLabel" (onClick)="upload()" [disabled]="!hasFiles() || isFileLimitExceeded()" [styleClass]="uploadStyleClass">\n                        <span *ngIf="uploadIcon" [ngClass]="uploadIcon" [attr.aria-hidden]="true" class="p-button-icon p-button-icon-left"></span>\n                        <ng-container *ngIf="!uploadIcon">\n                            <UploadIcon *ngIf="!uploadIconTemplate" [styleClass]="\'p-button-icon p-button-icon-left\'" />\n                            <span *ngIf="uploadIconTemplate" class="p-button-icon p-button-icon-left" [attr.aria-hidden]="true">\n                                <ng-template *ngTemplateOutlet="uploadIconTemplate"></ng-template>\n                            </span>\n                        </ng-container>\n                    </p-button>\n                    <p-button *ngIf="!auto && showCancelButton" type="button" [label]="cancelButtonLabel" (onClick)="clear()" [disabled]="!hasFiles() || uploading" [styleClass]="cancelStyleClass">\n                        <span *ngIf="cancelIcon" [ngClass]="cancelIcon" class="p-button-icon p-button-icon-left"></span>\n                        <ng-container *ngIf="!cancelIcon">\n                            <TimesIcon *ngIf="!cancelIconTemplate" [styleClass]="\'p-button-icon p-button-icon-left\'" [attr.aria-hidden]="true" />\n                            <span *ngIf="cancelIconTemplate" class="p-button-icon p-button-icon-left" [attr.aria-hidden]="true">\n                                <ng-template *ngTemplateOutlet="cancelIconTemplate"></ng-template>\n                            </span>\n                        </ng-container>\n                    </p-button>\n                </ng-container>\n                <ng-container *ngTemplateOutlet="headerTemplate; context: { $implicit: files, uploadedFiles: uploadedFiles, chooseCallback: choose.bind(this), clearCallback: clear.bind(this), uploadCallback: upload.bind(this) }"></ng-container>\n                <ng-container *ngTemplateOutlet="toolbarTemplate"></ng-container>\n            </div>\n            <div #content class="p-fileupload-content" (dragenter)="onDragEnter($event)" (dragleave)="onDragLeave($event)" (drop)="onDrop($event)" [attr.data-pc-section]="\'content\'">\n                <p-progressBar [value]="progress" [showValue]="false" *ngIf="hasFiles()"></p-progressBar>\n\n                <p-messages [value]="msgs" [enableService]="false"></p-messages>\n\n                <div class="p-fileupload-files" *ngIf="hasFiles()">\n                    <div *ngIf="!fileTemplate">\n                        <div class="p-fileupload-row" *ngFor="let file of files; let i = index">\n                            <div *ngIf="isImage(file)"><img [src]="file.objectURL" [width]="previewWidth" (error)="imageError($event)" /></div>\n                            <div class="p-fileupload-filename">{{ file.name }}</div>\n                            <div>{{ formatSize(file.size) }}</div>\n                            <div>\n                                <button type="button" pButton (click)="remove($event, i)" [disabled]="uploading" class="p-button-icon-only" [class]="removeStyleClass">\n                                    <TimesIcon *ngIf="!cancelIconTemplate" />\n                                    <ng-template *ngTemplateOutlet="cancelIconTemplate"></ng-template>\n                                </button>\n                            </div>\n                        </div>\n                    </div>\n                    <div *ngIf="fileTemplate">\n                        <ng-template ngFor [ngForOf]="files" [ngForTemplate]="fileTemplate"></ng-template>\n                    </div>\n                </div>\n                <ng-container\n                    *ngTemplateOutlet="\n                        contentTemplate;\n                        context: {\n                            $implicit: files,\n                            uploadedFiles: uploadedFiles,\n                            chooseCallback: choose.bind(this),\n                            clearCallback: clear.bind(this),\n                            removeUploadedFileCallback: removeUploadedFile.bind(this),\n                            removeFileCallback: remove.bind(this),\n                            progress: progress,\n                            messages: msgs\n                        }\n                    "\n                ></ng-container>\n                <div *ngIf="emptyTemplate && !hasFiles() && !hasUploadedFiles()" class="p-fileupload-empty">\n                    <ng-container *ngTemplateOutlet="emptyTemplate"></ng-container>\n                </div>\n            </div>\n        </div>\n        <div class="p-fileupload p-fileupload-basic p-component" *ngIf="mode === \'basic\'" [attr.data-pc-name]="\'fileupload\'">\n            <p-messages [value]="msgs" [enableService]="false"></p-messages>\n            <span\n                [ngClass]="{ \'p-button p-component p-fileupload-choose\': true, \'p-button-icon-only\': !basicButtonLabel, \'p-fileupload-choose-selected\': hasFiles(), \'p-focus\': focus, \'p-disabled\': disabled }"\n                [ngStyle]="style"\n                [class]="styleClass"\n                (click)="onBasicUploaderClick()"\n                (keydown)="onBasicKeydown($event)"\n                tabindex="0"\n                pRipple\n                [attr.data-pc-section]="\'choosebutton\'"\n            >\n                <ng-container *ngIf="hasFiles() && !auto; else chooseSection">\n                    <span *ngIf="uploadIcon" class="p-button-icon p-button-icon-left" [ngClass]="uploadIcon"></span>\n                    <ng-container *ngIf="!uploadIcon">\n                        <UploadIcon *ngIf="!uploadIconTemplate" [styleClass]="\'p-button-icon p-button-icon-left\'" />\n                        <span *ngIf="uploadIconTemplate" class="p-button-icon p-button-icon-left">\n                            <ng-template *ngTemplateOutlet="uploadIconTemplate"></ng-template>\n                        </span>\n                    </ng-container>\n                </ng-container>\n                <ng-template #chooseSection>\n                    <span *ngIf="chooseIcon" class="p-button-icon p-button-icon-left pi" [ngClass]="chooseIcon"></span>\n                    <ng-container *ngIf="!chooseIcon">\n                        <PlusIcon [styleClass]="\'p-button-icon p-button-icon-left pi\'" *ngIf="!chooseIconTemplate" [attr.aria-hidden]="true" [attr.data-pc-section]="\'uploadicon\'" />\n                        <span *ngIf="chooseIconTemplate" class="p-button-icon p-button-icon-left pi" [attr.aria-hidden]="true" [attr.data-pc-section]="\'uploadicon\'">\n                            <ng-template *ngTemplateOutlet="chooseIconTemplate"></ng-template>\n                        </span>\n                    </ng-container>\n                </ng-template>\n                <span *ngIf="basicButtonLabel" class="p-button-label" [attr.data-pc-section]="\'label\'">{{ basicButtonLabel }}</span>\n                <input\n                    [attr.aria-label]="browseFilesLabel"\n                    #basicfileinput\n                    type="file"\n                    [accept]="accept"\n                    [multiple]="multiple"\n                    [disabled]="disabled"\n                    (change)="onFileSelect($event)"\n                    *ngIf="!hasFiles()"\n                    (focus)="onFocus()"\n                    (blur)="onBlur()"\n                    [attr.data-pc-section]="\'input\'"\n                />\n            </span>\n        </div>\n    ',
       changeDetection: ChangeDetectionStrategy.OnPush,
       encapsulation: ViewEncapsulation$1.None,
       host: {
@@ -2110,20 +1950,21 @@ var FileUpload = class _FileUpload {
     }]
   });
 })();
-var FileUploadModule = class _FileUploadModule {
-  static ɵfac = function FileUploadModule_Factory(__ngFactoryType__) {
-    return new (__ngFactoryType__ || _FileUploadModule)();
-  };
-  static ɵmod = ɵɵdefineNgModule({
-    type: _FileUploadModule,
-    declarations: [FileUpload],
-    imports: [CommonModule, SharedModule, ButtonModule, ProgressBarModule, MessagesModule, RippleModule, PlusIcon, UploadIcon, TimesIcon],
-    exports: [FileUpload, SharedModule, ButtonModule, ProgressBarModule, MessagesModule]
-  });
-  static ɵinj = ɵɵdefineInjector({
-    imports: [CommonModule, SharedModule, ButtonModule, ProgressBarModule, MessagesModule, RippleModule, PlusIcon, UploadIcon, TimesIcon, SharedModule, ButtonModule, ProgressBarModule, MessagesModule]
-  });
+var _FileUploadModule = class _FileUploadModule {
 };
+__publicField(_FileUploadModule, "ɵfac", function FileUploadModule_Factory(__ngFactoryType__) {
+  return new (__ngFactoryType__ || _FileUploadModule)();
+});
+__publicField(_FileUploadModule, "ɵmod", ɵɵdefineNgModule({
+  type: _FileUploadModule,
+  declarations: [FileUpload],
+  imports: [CommonModule, SharedModule, ButtonModule, ProgressBarModule, MessagesModule, RippleModule, PlusIcon, UploadIcon, TimesIcon],
+  exports: [FileUpload, SharedModule, ButtonModule, ProgressBarModule, MessagesModule]
+}));
+__publicField(_FileUploadModule, "ɵinj", ɵɵdefineInjector({
+  imports: [CommonModule, SharedModule, ButtonModule, ProgressBarModule, MessagesModule, RippleModule, PlusIcon, UploadIcon, TimesIcon, SharedModule, ButtonModule, ProgressBarModule, MessagesModule]
+}));
+var FileUploadModule = _FileUploadModule;
 (() => {
   (typeof ngDevMode === "undefined" || ngDevMode) && setClassMetadata(FileUploadModule, [{
     type: NgModule,

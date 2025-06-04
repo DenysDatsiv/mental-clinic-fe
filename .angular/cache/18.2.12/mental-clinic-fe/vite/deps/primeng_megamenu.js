@@ -1,37 +1,37 @@
 import {
   AngleDownIcon
-} from "./chunk-S2DODU67.js";
+} from "./chunk-GE47GKJX.js";
 import {
   Tooltip,
   TooltipModule
-} from "./chunk-STBFZVQ2.js";
+} from "./chunk-IC7NSP6U.js";
 import {
   AngleRightIcon
-} from "./chunk-KFVC45AI.js";
-import {
-  Ripple,
-  RippleModule
-} from "./chunk-QN24C4B3.js";
+} from "./chunk-BGJ2FQDY.js";
 import {
   RouterLink,
   RouterLinkActive,
   RouterModule
-} from "./chunk-AQMTG6B6.js";
-import "./chunk-3E3YFUVD.js";
-import "./chunk-DO2TVYAE.js";
-import "./chunk-PXWZN6FU.js";
+} from "./chunk-JBMGT7BE.js";
+import {
+  Ripple,
+  RippleModule
+} from "./chunk-MUJBADSC.js";
+import "./chunk-BJLZ3T2F.js";
 import {
   PrimeNGConfig,
   PrimeTemplate,
   SharedModule
-} from "./chunk-TQSVMJ6K.js";
+} from "./chunk-ZROJCIWL.js";
 import {
   ObjectUtils,
   UniqueComponentId
-} from "./chunk-3OF44R55.js";
+} from "./chunk-U3NLM53U.js";
+import "./chunk-MWP4G2UW.js";
+import "./chunk-RWZD3TDV.js";
 import {
   DomHandler
-} from "./chunk-BUGEQH7Q.js";
+} from "./chunk-LB42WWNC.js";
 import {
   CommonModule,
   DOCUMENT,
@@ -41,7 +41,7 @@ import {
   NgStyle,
   NgTemplateOutlet,
   isPlatformBrowser
-} from "./chunk-UBZYO7FG.js";
+} from "./chunk-KUZ63KOD.js";
 import {
   ChangeDetectionStrategy,
   ChangeDetectorRef,
@@ -100,14 +100,15 @@ import {
   ɵɵtextInterpolate,
   ɵɵtextInterpolate1,
   ɵɵviewQuery
-} from "./chunk-ZI2Q76R4.js";
-import "./chunk-5OPE3T2R.js";
+} from "./chunk-R75KKECJ.js";
 import "./chunk-4N4GOYJH.js";
+import "./chunk-5OPE3T2R.js";
 import "./chunk-FHTVLBLO.js";
 import {
+  __publicField,
   __spreadProps,
   __spreadValues
-} from "./chunk-3OV72XIM.js";
+} from "./chunk-IJZFAMY6.js";
 
 // node_modules/primeng/fesm2022/primeng-megamenu.mjs
 var _c0 = ["menubar"];
@@ -622,30 +623,30 @@ function MegaMenu_ng_template_5_Template(rf, ctx) {
     ɵɵelementEnd();
   }
 }
-var MegaMenuSub = class _MegaMenuSub {
-  el;
-  megaMenu;
-  id;
-  items;
-  itemTemplate;
-  menuId;
-  ariaLabel;
-  ariaLabelledBy;
-  level = 0;
-  focusedItemId;
-  disabled = false;
-  orientation;
-  activeItem;
-  submenu;
-  tabindex = 0;
-  root = false;
-  itemClick = new EventEmitter();
-  itemMouseEnter = new EventEmitter();
-  menuFocus = new EventEmitter();
-  menuBlur = new EventEmitter();
-  menuKeydown = new EventEmitter();
-  menubarViewChild;
+var _MegaMenuSub = class _MegaMenuSub {
   constructor(el, megaMenu) {
+    __publicField(this, "el");
+    __publicField(this, "megaMenu");
+    __publicField(this, "id");
+    __publicField(this, "items");
+    __publicField(this, "itemTemplate");
+    __publicField(this, "menuId");
+    __publicField(this, "ariaLabel");
+    __publicField(this, "ariaLabelledBy");
+    __publicField(this, "level", 0);
+    __publicField(this, "focusedItemId");
+    __publicField(this, "disabled", false);
+    __publicField(this, "orientation");
+    __publicField(this, "activeItem");
+    __publicField(this, "submenu");
+    __publicField(this, "tabindex", 0);
+    __publicField(this, "root", false);
+    __publicField(this, "itemClick", new EventEmitter());
+    __publicField(this, "itemMouseEnter", new EventEmitter());
+    __publicField(this, "menuFocus", new EventEmitter());
+    __publicField(this, "menuBlur", new EventEmitter());
+    __publicField(this, "menuKeydown", new EventEmitter());
+    __publicField(this, "menubarViewChild");
     this.el = el;
     this.megaMenu = megaMenu;
   }
@@ -664,10 +665,11 @@ var MegaMenuSub = class _MegaMenuSub {
     return processedItem && processedItem.item ? ObjectUtils.getItemValue(processedItem.item[name], params) : void 0;
   }
   getItemId(processedItem) {
-    return processedItem.item && processedItem.item?.id ? processedItem.item.id : `${this.menuId}_${processedItem.key}`;
+    var _a;
+    return processedItem.item && ((_a = processedItem.item) == null ? void 0 : _a.id) ? processedItem.item.id : "".concat(this.menuId, "_").concat(processedItem.key);
   }
   getSubListId(processedItem) {
-    return `${this.getItemId(processedItem)}_list`;
+    return "".concat(this.getItemId(processedItem), "_list");
   }
   getItemClass(processedItem) {
     return __spreadProps(__spreadValues({}, this.getItemProp(processedItem, "class")), {
@@ -751,217 +753,68 @@ var MegaMenuSub = class _MegaMenuSub {
       processedItem
     });
   }
-  static ɵfac = function MegaMenuSub_Factory(__ngFactoryType__) {
-    return new (__ngFactoryType__ || _MegaMenuSub)(ɵɵdirectiveInject(ElementRef), ɵɵdirectiveInject(forwardRef(() => MegaMenu)));
-  };
-  static ɵcmp = ɵɵdefineComponent({
-    type: _MegaMenuSub,
-    selectors: [["p-megaMenuSub"]],
-    viewQuery: function MegaMenuSub_Query(rf, ctx) {
-      if (rf & 1) {
-        ɵɵviewQuery(_c0, 7);
-      }
-      if (rf & 2) {
-        let _t;
-        ɵɵqueryRefresh(_t = ɵɵloadQuery()) && (ctx.menubarViewChild = _t.first);
-      }
-    },
-    hostAttrs: [1, "p-element"],
-    inputs: {
-      id: "id",
-      items: "items",
-      itemTemplate: "itemTemplate",
-      menuId: "menuId",
-      ariaLabel: "ariaLabel",
-      ariaLabelledBy: "ariaLabelledBy",
-      level: [2, "level", "level", numberAttribute],
-      focusedItemId: "focusedItemId",
-      disabled: [2, "disabled", "disabled", booleanAttribute],
-      orientation: "orientation",
-      activeItem: "activeItem",
-      submenu: "submenu",
-      tabindex: [2, "tabindex", "tabindex", numberAttribute],
-      root: [2, "root", "root", booleanAttribute]
-    },
-    outputs: {
-      itemClick: "itemClick",
-      itemMouseEnter: "itemMouseEnter",
-      menuFocus: "menuFocus",
-      menuBlur: "menuBlur",
-      menuKeydown: "menuKeydown"
-    },
-    features: [ɵɵInputTransformsFeature],
-    decls: 1,
-    vars: 1,
-    consts: [["menubar", ""], ["listItem", ""], ["htmlLabel", ""], ["htmlRouteLabel", ""], [3, "ngClass", "tabindex", "keydown", "focus", "blur", 4, "ngIf"], [3, "keydown", "focus", "blur", "ngClass", "tabindex"], ["role", "presentation", 3, "ngClass", "ngStyle", 4, "ngIf"], ["ngFor", "", 3, "ngForOf"], ["role", "presentation", 3, "ngClass", "ngStyle"], ["role", "separator", 3, "ngStyle", "ngClass", 4, "ngIf"], ["role", "menuitem", "pTooltip", "", 3, "ngStyle", "ngClass", "class", "tooltipOptions", 4, "ngIf"], ["role", "separator", 3, "ngStyle", "ngClass"], ["role", "menuitem", "pTooltip", "", 3, "ngStyle", "ngClass", "tooltipOptions"], [1, "p-menuitem-content", 3, "click", "mouseenter"], [4, "ngIf"], ["class", "p-megamenu-panel", 4, "ngIf"], ["pRipple", "", 3, "target", "ngClass", 4, "ngIf"], ["pRipple", "", 3, "routerLink", "queryParams", "routerLinkActive", "routerLinkActiveOptions", "target", "ngClass", "fragment", "queryParamsHandling", "preserveFragment", "skipLocationChange", "replaceUrl", "state", 4, "ngIf"], ["pRipple", "", 3, "target", "ngClass"], ["class", "p-menuitem-icon", 3, "ngClass", "ngStyle", 4, "ngIf"], ["class", "p-menuitem-text", 4, "ngIf", "ngIfElse"], ["class", "p-menuitem-badge", 3, "ngClass", 4, "ngIf"], [1, "p-menuitem-icon", 3, "ngClass", "ngStyle"], [1, "p-menuitem-text"], [1, "p-menuitem-text", 3, "innerHTML"], [1, "p-menuitem-badge", 3, "ngClass"], [4, "ngTemplateOutlet"], [3, "styleClass", 4, "ngIf"], [3, "styleClass"], [3, "data-pc-section"], ["pRipple", "", 3, "routerLink", "queryParams", "routerLinkActive", "routerLinkActiveOptions", "target", "ngClass", "fragment", "queryParamsHandling", "preserveFragment", "skipLocationChange", "replaceUrl", "state"], [4, "ngTemplateOutlet", "ngTemplateOutletContext"], [1, "p-megamenu-panel"], [1, "p-megamenu-grid"], [3, "ngClass", 4, "ngFor", "ngForOf"], [3, "ngClass"], [3, "id", "submenu", "items", "itemTemplate", "menuId", "focusedItemId", "level", "root", "itemClick", "itemMouseEnter", 4, "ngFor", "ngForOf"], [3, "itemClick", "itemMouseEnter", "id", "submenu", "items", "itemTemplate", "menuId", "focusedItemId", "level", "root"]],
-    template: function MegaMenuSub_Template(rf, ctx) {
-      if (rf & 1) {
-        ɵɵtemplate(0, MegaMenuSub_ul_0_Template, 4, 12, "ul", 4);
-      }
-      if (rf & 2) {
-        ɵɵproperty("ngIf", ctx.isSubmenuVisible(ctx.submenu));
-      }
-    },
-    dependencies: () => [NgClass, NgForOf, NgIf, NgTemplateOutlet, NgStyle, RouterLink, RouterLinkActive, Ripple, Tooltip, AngleDownIcon, AngleRightIcon, _MegaMenuSub],
-    encapsulation: 2
-  });
 };
+__publicField(_MegaMenuSub, "ɵfac", function MegaMenuSub_Factory(__ngFactoryType__) {
+  return new (__ngFactoryType__ || _MegaMenuSub)(ɵɵdirectiveInject(ElementRef), ɵɵdirectiveInject(forwardRef(() => MegaMenu)));
+});
+__publicField(_MegaMenuSub, "ɵcmp", ɵɵdefineComponent({
+  type: _MegaMenuSub,
+  selectors: [["p-megaMenuSub"]],
+  viewQuery: function MegaMenuSub_Query(rf, ctx) {
+    if (rf & 1) {
+      ɵɵviewQuery(_c0, 7);
+    }
+    if (rf & 2) {
+      let _t;
+      ɵɵqueryRefresh(_t = ɵɵloadQuery()) && (ctx.menubarViewChild = _t.first);
+    }
+  },
+  hostAttrs: [1, "p-element"],
+  inputs: {
+    id: "id",
+    items: "items",
+    itemTemplate: "itemTemplate",
+    menuId: "menuId",
+    ariaLabel: "ariaLabel",
+    ariaLabelledBy: "ariaLabelledBy",
+    level: [2, "level", "level", numberAttribute],
+    focusedItemId: "focusedItemId",
+    disabled: [2, "disabled", "disabled", booleanAttribute],
+    orientation: "orientation",
+    activeItem: "activeItem",
+    submenu: "submenu",
+    tabindex: [2, "tabindex", "tabindex", numberAttribute],
+    root: [2, "root", "root", booleanAttribute]
+  },
+  outputs: {
+    itemClick: "itemClick",
+    itemMouseEnter: "itemMouseEnter",
+    menuFocus: "menuFocus",
+    menuBlur: "menuBlur",
+    menuKeydown: "menuKeydown"
+  },
+  features: [ɵɵInputTransformsFeature],
+  decls: 1,
+  vars: 1,
+  consts: [["menubar", ""], ["listItem", ""], ["htmlLabel", ""], ["htmlRouteLabel", ""], [3, "ngClass", "tabindex", "keydown", "focus", "blur", 4, "ngIf"], [3, "keydown", "focus", "blur", "ngClass", "tabindex"], ["role", "presentation", 3, "ngClass", "ngStyle", 4, "ngIf"], ["ngFor", "", 3, "ngForOf"], ["role", "presentation", 3, "ngClass", "ngStyle"], ["role", "separator", 3, "ngStyle", "ngClass", 4, "ngIf"], ["role", "menuitem", "pTooltip", "", 3, "ngStyle", "ngClass", "class", "tooltipOptions", 4, "ngIf"], ["role", "separator", 3, "ngStyle", "ngClass"], ["role", "menuitem", "pTooltip", "", 3, "ngStyle", "ngClass", "tooltipOptions"], [1, "p-menuitem-content", 3, "click", "mouseenter"], [4, "ngIf"], ["class", "p-megamenu-panel", 4, "ngIf"], ["pRipple", "", 3, "target", "ngClass", 4, "ngIf"], ["pRipple", "", 3, "routerLink", "queryParams", "routerLinkActive", "routerLinkActiveOptions", "target", "ngClass", "fragment", "queryParamsHandling", "preserveFragment", "skipLocationChange", "replaceUrl", "state", 4, "ngIf"], ["pRipple", "", 3, "target", "ngClass"], ["class", "p-menuitem-icon", 3, "ngClass", "ngStyle", 4, "ngIf"], ["class", "p-menuitem-text", 4, "ngIf", "ngIfElse"], ["class", "p-menuitem-badge", 3, "ngClass", 4, "ngIf"], [1, "p-menuitem-icon", 3, "ngClass", "ngStyle"], [1, "p-menuitem-text"], [1, "p-menuitem-text", 3, "innerHTML"], [1, "p-menuitem-badge", 3, "ngClass"], [4, "ngTemplateOutlet"], [3, "styleClass", 4, "ngIf"], [3, "styleClass"], [3, "data-pc-section"], ["pRipple", "", 3, "routerLink", "queryParams", "routerLinkActive", "routerLinkActiveOptions", "target", "ngClass", "fragment", "queryParamsHandling", "preserveFragment", "skipLocationChange", "replaceUrl", "state"], [4, "ngTemplateOutlet", "ngTemplateOutletContext"], [1, "p-megamenu-panel"], [1, "p-megamenu-grid"], [3, "ngClass", 4, "ngFor", "ngForOf"], [3, "ngClass"], [3, "id", "submenu", "items", "itemTemplate", "menuId", "focusedItemId", "level", "root", "itemClick", "itemMouseEnter", 4, "ngFor", "ngForOf"], [3, "itemClick", "itemMouseEnter", "id", "submenu", "items", "itemTemplate", "menuId", "focusedItemId", "level", "root"]],
+  template: function MegaMenuSub_Template(rf, ctx) {
+    if (rf & 1) {
+      ɵɵtemplate(0, MegaMenuSub_ul_0_Template, 4, 12, "ul", 4);
+    }
+    if (rf & 2) {
+      ɵɵproperty("ngIf", ctx.isSubmenuVisible(ctx.submenu));
+    }
+  },
+  dependencies: () => [NgClass, NgForOf, NgIf, NgTemplateOutlet, NgStyle, RouterLink, RouterLinkActive, Ripple, Tooltip, AngleDownIcon, AngleRightIcon, _MegaMenuSub],
+  encapsulation: 2
+}));
+var MegaMenuSub = _MegaMenuSub;
 (() => {
   (typeof ngDevMode === "undefined" || ngDevMode) && setClassMetadata(MegaMenuSub, [{
     type: Component,
     args: [{
       selector: "p-megaMenuSub",
-      template: `
-        <ul
-            *ngIf="isSubmenuVisible(submenu)"
-            #menubar
-            [ngClass]="{ 'p-megamenu-root-list': root, 'p-submenu-list p-megamenu-submenu': !root }"
-            [attr.role]="root ? 'menubar' : 'menu'"
-            [attr.id]="id"
-            [attr.aria-orientation]="orientation"
-            [tabindex]="tabindex"
-            [attr.aria-activedescendant]="focusedItemId"
-            [attr.data-pc-section]="root ? 'root' : 'submenu'"
-            (keydown)="menuKeydown.emit($event)"
-            (focus)="menuFocus.emit($event)"
-            (blur)="menuBlur.emit($event)"
-        >
-            <li *ngIf="submenu" [ngClass]="getSubmenuHeaderClass(submenu)" [ngStyle]="getItemProp(submenu, 'style')" role="presentation">{{ getItemLabel(submenu) }}</li>
-            <ng-template ngFor let-processedItem [ngForOf]="items" let-index="index">
-                <li
-                    *ngIf="isItemVisible(processedItem) && getItemProp(processedItem, 'separator')"
-                    [attr.id]="getItemId(processedItem)"
-                    [ngStyle]="getItemProp(processedItem, 'style')"
-                    [ngClass]="getSeparatorItemClass(processedItem)"
-                    role="separator"
-                    [attr.data-pc-section]="'separator'"
-                ></li>
-                <li
-                    #listItem
-                    *ngIf="isItemVisible(processedItem) && !getItemProp(processedItem, 'separator')"
-                    role="menuitem"
-                    [attr.id]="getItemId(processedItem)"
-                    [attr.data-pc-section]="'menuitem'"
-                    [attr.data-p-highlight]="isItemActive(processedItem)"
-                    [attr.data-p-focused]="isItemFocused(processedItem)"
-                    [attr.data-p-disabled]="isItemDisabled(processedItem)"
-                    [attr.aria-label]="getItemLabel(processedItem)"
-                    [attr.aria-disabled]="isItemDisabled(processedItem) || undefined"
-                    [attr.aria-haspopup]="isItemGroup(processedItem) && !getItemProp(processedItem, 'to') ? 'menu' : undefined"
-                    [attr.aria-expanded]="isItemGroup(processedItem) ? isItemActive(processedItem) : undefined"
-                    [attr.aria-level]="level + 1"
-                    [attr.aria-setsize]="getAriaSetSize()"
-                    [attr.aria-posinset]="getAriaPosInset(index)"
-                    [ngStyle]="getItemProp(processedItem, 'style')"
-                    [ngClass]="getItemClass(processedItem)"
-                    [class]="getItemProp(processedItem, 'styleClass')"
-                    pTooltip
-                    [tooltipOptions]="getItemProp(processedItem, 'tooltipOptions')"
-                >
-                    <div class="p-menuitem-content" [attr.data-pc-section]="'content'" (click)="onItemClick($event, processedItem)" (mouseenter)="onItemMouseEnter({ $event, processedItem })">
-                        <ng-container *ngIf="!itemTemplate">
-                            <a
-                                *ngIf="!getItemProp(processedItem, 'routerLink')"
-                                [attr.href]="getItemProp(processedItem, 'url')"
-                                [attr.data-automationid]="getItemProp(processedItem, 'automationId')"
-                                [attr.data-pc-section]="'action'"
-                                [target]="getItemProp(processedItem, 'target')"
-                                [ngClass]="{ 'p-menuitem-link': true, 'p-disabled': getItemProp(processedItem, 'disabled') }"
-                                [attr.tabindex]="-1"
-                                pRipple
-                            >
-                                <span
-                                    *ngIf="getItemProp(processedItem, 'icon')"
-                                    class="p-menuitem-icon"
-                                    [ngClass]="getItemProp(processedItem, 'icon')"
-                                    [ngStyle]="getItemProp(processedItem, 'iconStyle')"
-                                    [attr.data-pc-section]="'icon'"
-                                    [attr.tabindex]="-1"
-                                >
-                                </span>
-                                <span *ngIf="getItemProp(processedItem, 'escape'); else htmlLabel" class="p-menuitem-text" [attr.data-pc-section]="'label'">
-                                    {{ getItemLabel(processedItem) }}
-                                </span>
-                                <ng-template #htmlLabel>
-                                    <span class="p-menuitem-text" [innerHTML]="getItemLabel(processedItem)" [attr.data-pc-section]="'label'"></span>
-                                </ng-template>
-                                <span class="p-menuitem-badge" *ngIf="getItemProp(processedItem, 'badge')" [ngClass]="getItemProp(processedItem, 'badgeStyleClass')">{{ getItemProp(processedItem, 'badge') }}</span>
-
-                                <ng-container *ngIf="isItemGroup(processedItem)">
-                                    <ng-container *ngIf="!megaMenu.submenuIconTemplate">
-                                        <AngleDownIcon [styleClass]="'p-submenu-icon'" [attr.data-pc-section]="'submenuicon'" *ngIf="orientation === 'horizontal'" />
-                                        <AngleRightIcon [styleClass]="'p-submenu-icon'" [attr.data-pc-section]="'submenuicon'" *ngIf="orientation === 'vertical'" />
-                                    </ng-container>
-                                    <ng-template *ngTemplateOutlet="megaMenu.submenuIconTemplate" [attr.data-pc-section]="'submenuicon'"></ng-template>
-                                </ng-container>
-                            </a>
-                            <a
-                                *ngIf="getItemProp(processedItem, 'routerLink')"
-                                [routerLink]="getItemProp(processedItem, 'routerLink')"
-                                [attr.data-automationid]="getItemProp(processedItem, 'automationId')"
-                                [attr.tabindex]="-1"
-                                [attr.data-pc-section]="'action'"
-                                [queryParams]="getItemProp(processedItem, 'queryParams')"
-                                [routerLinkActive]="'p-menuitem-link-active'"
-                                [routerLinkActiveOptions]="getItemProp(processedItem, 'routerLinkActiveOptions') || { exact: false }"
-                                [target]="getItemProp(processedItem, 'target')"
-                                [ngClass]="{ 'p-menuitem-link': true, 'p-disabled': getItemProp(processedItem, 'disabled') }"
-                                [fragment]="getItemProp(processedItem, 'fragment')"
-                                [queryParamsHandling]="getItemProp(processedItem, 'queryParamsHandling')"
-                                [preserveFragment]="getItemProp(processedItem, 'preserveFragment')"
-                                [skipLocationChange]="getItemProp(processedItem, 'skipLocationChange')"
-                                [replaceUrl]="getItemProp(processedItem, 'replaceUrl')"
-                                [state]="getItemProp(processedItem, 'state')"
-                                pRipple
-                            >
-                                <span
-                                    class="p-menuitem-icon"
-                                    *ngIf="getItemProp(processedItem, 'icon')"
-                                    [ngClass]="getItemProp(processedItem, 'icon')"
-                                    [ngStyle]="getItemProp(processedItem, 'iconStyle')"
-                                    [attr.data-pc-section]="'icon'"
-                                    [attr.tabindex]="-1"
-                                ></span>
-                                <span class="p-menuitem-text" *ngIf="getItemProp(processedItem, 'escape'); else htmlRouteLabel">{{ getItemLabel(processedItem) }}</span>
-                                <ng-template #htmlRouteLabel><span class="p-menuitem-text" [innerHTML]="getItemLabel(processedItem)" [attr.data-pc-section]="'label'"></span></ng-template>
-                                <span class="p-menuitem-badge" *ngIf="getItemProp(processedItem, 'badge')" [ngClass]="getItemProp(processedItem, 'badgeStyleClass')">{{ getItemProp(processedItem, 'badge') }}</span>
-                                <ng-container *ngIf="isItemGroup(processedItem)">
-                                    <ng-container *ngIf="!megaMenu.submenuIconTemplate">
-                                        <AngleDownIcon [styleClass]="'p-submenu-icon'" [attr.data-pc-section]="'submenuicon'" *ngIf="orientation === 'horizontal'" />
-                                        <AngleRightIcon [styleClass]="'p-submenu-icon'" [attr.data-pc-section]="'submenuicon'" *ngIf="orientation === 'vertical'" />
-                                    </ng-container>
-                                    <ng-template *ngTemplateOutlet="megaMenu.submenuIconTemplate" [attr.data-pc-section]="'submenuicon'"></ng-template>
-                                </ng-container>
-                            </a>
-                        </ng-container>
-                        <ng-container *ngIf="itemTemplate">
-                            <ng-template *ngTemplateOutlet="itemTemplate; context: { $implicit: processedItem.item }"></ng-template>
-                        </ng-container>
-                    </div>
-                    <div *ngIf="isItemVisible(processedItem) && isItemGroup(processedItem)" class="p-megamenu-panel" [attr.data-pc-section]="'panel'">
-                        <div class="p-megamenu-grid" [attr.data-pc-section]="'grid'">
-                            <div *ngFor="let col of processedItem.items" [ngClass]="getColumnClass(processedItem)">
-                                <p-megaMenuSub
-                                    *ngFor="let submenu of col"
-                                    [id]="getSubListId(submenu)"
-                                    [submenu]="submenu"
-                                    [items]="submenu.items"
-                                    [itemTemplate]="itemTemplate"
-                                    [menuId]="menuId"
-                                    [focusedItemId]="focusedItemId"
-                                    [level]="level + 1"
-                                    [root]="false"
-                                    (itemClick)="itemClick.emit($event)"
-                                    (itemMouseEnter)="onItemMouseEnter($event)"
-                                >
-                                </p-megaMenuSub>
-                            </div>
-                        </div>
-                    </div>
-                </li>
-            </ng-template>
-        </ul>
-    `,
+      template: '\n        <ul\n            *ngIf="isSubmenuVisible(submenu)"\n            #menubar\n            [ngClass]="{ \'p-megamenu-root-list\': root, \'p-submenu-list p-megamenu-submenu\': !root }"\n            [attr.role]="root ? \'menubar\' : \'menu\'"\n            [attr.id]="id"\n            [attr.aria-orientation]="orientation"\n            [tabindex]="tabindex"\n            [attr.aria-activedescendant]="focusedItemId"\n            [attr.data-pc-section]="root ? \'root\' : \'submenu\'"\n            (keydown)="menuKeydown.emit($event)"\n            (focus)="menuFocus.emit($event)"\n            (blur)="menuBlur.emit($event)"\n        >\n            <li *ngIf="submenu" [ngClass]="getSubmenuHeaderClass(submenu)" [ngStyle]="getItemProp(submenu, \'style\')" role="presentation">{{ getItemLabel(submenu) }}</li>\n            <ng-template ngFor let-processedItem [ngForOf]="items" let-index="index">\n                <li\n                    *ngIf="isItemVisible(processedItem) && getItemProp(processedItem, \'separator\')"\n                    [attr.id]="getItemId(processedItem)"\n                    [ngStyle]="getItemProp(processedItem, \'style\')"\n                    [ngClass]="getSeparatorItemClass(processedItem)"\n                    role="separator"\n                    [attr.data-pc-section]="\'separator\'"\n                ></li>\n                <li\n                    #listItem\n                    *ngIf="isItemVisible(processedItem) && !getItemProp(processedItem, \'separator\')"\n                    role="menuitem"\n                    [attr.id]="getItemId(processedItem)"\n                    [attr.data-pc-section]="\'menuitem\'"\n                    [attr.data-p-highlight]="isItemActive(processedItem)"\n                    [attr.data-p-focused]="isItemFocused(processedItem)"\n                    [attr.data-p-disabled]="isItemDisabled(processedItem)"\n                    [attr.aria-label]="getItemLabel(processedItem)"\n                    [attr.aria-disabled]="isItemDisabled(processedItem) || undefined"\n                    [attr.aria-haspopup]="isItemGroup(processedItem) && !getItemProp(processedItem, \'to\') ? \'menu\' : undefined"\n                    [attr.aria-expanded]="isItemGroup(processedItem) ? isItemActive(processedItem) : undefined"\n                    [attr.aria-level]="level + 1"\n                    [attr.aria-setsize]="getAriaSetSize()"\n                    [attr.aria-posinset]="getAriaPosInset(index)"\n                    [ngStyle]="getItemProp(processedItem, \'style\')"\n                    [ngClass]="getItemClass(processedItem)"\n                    [class]="getItemProp(processedItem, \'styleClass\')"\n                    pTooltip\n                    [tooltipOptions]="getItemProp(processedItem, \'tooltipOptions\')"\n                >\n                    <div class="p-menuitem-content" [attr.data-pc-section]="\'content\'" (click)="onItemClick($event, processedItem)" (mouseenter)="onItemMouseEnter({ $event, processedItem })">\n                        <ng-container *ngIf="!itemTemplate">\n                            <a\n                                *ngIf="!getItemProp(processedItem, \'routerLink\')"\n                                [attr.href]="getItemProp(processedItem, \'url\')"\n                                [attr.data-automationid]="getItemProp(processedItem, \'automationId\')"\n                                [attr.data-pc-section]="\'action\'"\n                                [target]="getItemProp(processedItem, \'target\')"\n                                [ngClass]="{ \'p-menuitem-link\': true, \'p-disabled\': getItemProp(processedItem, \'disabled\') }"\n                                [attr.tabindex]="-1"\n                                pRipple\n                            >\n                                <span\n                                    *ngIf="getItemProp(processedItem, \'icon\')"\n                                    class="p-menuitem-icon"\n                                    [ngClass]="getItemProp(processedItem, \'icon\')"\n                                    [ngStyle]="getItemProp(processedItem, \'iconStyle\')"\n                                    [attr.data-pc-section]="\'icon\'"\n                                    [attr.tabindex]="-1"\n                                >\n                                </span>\n                                <span *ngIf="getItemProp(processedItem, \'escape\'); else htmlLabel" class="p-menuitem-text" [attr.data-pc-section]="\'label\'">\n                                    {{ getItemLabel(processedItem) }}\n                                </span>\n                                <ng-template #htmlLabel>\n                                    <span class="p-menuitem-text" [innerHTML]="getItemLabel(processedItem)" [attr.data-pc-section]="\'label\'"></span>\n                                </ng-template>\n                                <span class="p-menuitem-badge" *ngIf="getItemProp(processedItem, \'badge\')" [ngClass]="getItemProp(processedItem, \'badgeStyleClass\')">{{ getItemProp(processedItem, \'badge\') }}</span>\n\n                                <ng-container *ngIf="isItemGroup(processedItem)">\n                                    <ng-container *ngIf="!megaMenu.submenuIconTemplate">\n                                        <AngleDownIcon [styleClass]="\'p-submenu-icon\'" [attr.data-pc-section]="\'submenuicon\'" *ngIf="orientation === \'horizontal\'" />\n                                        <AngleRightIcon [styleClass]="\'p-submenu-icon\'" [attr.data-pc-section]="\'submenuicon\'" *ngIf="orientation === \'vertical\'" />\n                                    </ng-container>\n                                    <ng-template *ngTemplateOutlet="megaMenu.submenuIconTemplate" [attr.data-pc-section]="\'submenuicon\'"></ng-template>\n                                </ng-container>\n                            </a>\n                            <a\n                                *ngIf="getItemProp(processedItem, \'routerLink\')"\n                                [routerLink]="getItemProp(processedItem, \'routerLink\')"\n                                [attr.data-automationid]="getItemProp(processedItem, \'automationId\')"\n                                [attr.tabindex]="-1"\n                                [attr.data-pc-section]="\'action\'"\n                                [queryParams]="getItemProp(processedItem, \'queryParams\')"\n                                [routerLinkActive]="\'p-menuitem-link-active\'"\n                                [routerLinkActiveOptions]="getItemProp(processedItem, \'routerLinkActiveOptions\') || { exact: false }"\n                                [target]="getItemProp(processedItem, \'target\')"\n                                [ngClass]="{ \'p-menuitem-link\': true, \'p-disabled\': getItemProp(processedItem, \'disabled\') }"\n                                [fragment]="getItemProp(processedItem, \'fragment\')"\n                                [queryParamsHandling]="getItemProp(processedItem, \'queryParamsHandling\')"\n                                [preserveFragment]="getItemProp(processedItem, \'preserveFragment\')"\n                                [skipLocationChange]="getItemProp(processedItem, \'skipLocationChange\')"\n                                [replaceUrl]="getItemProp(processedItem, \'replaceUrl\')"\n                                [state]="getItemProp(processedItem, \'state\')"\n                                pRipple\n                            >\n                                <span\n                                    class="p-menuitem-icon"\n                                    *ngIf="getItemProp(processedItem, \'icon\')"\n                                    [ngClass]="getItemProp(processedItem, \'icon\')"\n                                    [ngStyle]="getItemProp(processedItem, \'iconStyle\')"\n                                    [attr.data-pc-section]="\'icon\'"\n                                    [attr.tabindex]="-1"\n                                ></span>\n                                <span class="p-menuitem-text" *ngIf="getItemProp(processedItem, \'escape\'); else htmlRouteLabel">{{ getItemLabel(processedItem) }}</span>\n                                <ng-template #htmlRouteLabel><span class="p-menuitem-text" [innerHTML]="getItemLabel(processedItem)" [attr.data-pc-section]="\'label\'"></span></ng-template>\n                                <span class="p-menuitem-badge" *ngIf="getItemProp(processedItem, \'badge\')" [ngClass]="getItemProp(processedItem, \'badgeStyleClass\')">{{ getItemProp(processedItem, \'badge\') }}</span>\n                                <ng-container *ngIf="isItemGroup(processedItem)">\n                                    <ng-container *ngIf="!megaMenu.submenuIconTemplate">\n                                        <AngleDownIcon [styleClass]="\'p-submenu-icon\'" [attr.data-pc-section]="\'submenuicon\'" *ngIf="orientation === \'horizontal\'" />\n                                        <AngleRightIcon [styleClass]="\'p-submenu-icon\'" [attr.data-pc-section]="\'submenuicon\'" *ngIf="orientation === \'vertical\'" />\n                                    </ng-container>\n                                    <ng-template *ngTemplateOutlet="megaMenu.submenuIconTemplate" [attr.data-pc-section]="\'submenuicon\'"></ng-template>\n                                </ng-container>\n                            </a>\n                        </ng-container>\n                        <ng-container *ngIf="itemTemplate">\n                            <ng-template *ngTemplateOutlet="itemTemplate; context: { $implicit: processedItem.item }"></ng-template>\n                        </ng-container>\n                    </div>\n                    <div *ngIf="isItemVisible(processedItem) && isItemGroup(processedItem)" class="p-megamenu-panel" [attr.data-pc-section]="\'panel\'">\n                        <div class="p-megamenu-grid" [attr.data-pc-section]="\'grid\'">\n                            <div *ngFor="let col of processedItem.items" [ngClass]="getColumnClass(processedItem)">\n                                <p-megaMenuSub\n                                    *ngFor="let submenu of col"\n                                    [id]="getSubListId(submenu)"\n                                    [submenu]="submenu"\n                                    [items]="submenu.items"\n                                    [itemTemplate]="itemTemplate"\n                                    [menuId]="menuId"\n                                    [focusedItemId]="focusedItemId"\n                                    [level]="level + 1"\n                                    [root]="false"\n                                    (itemClick)="itemClick.emit($event)"\n                                    (itemMouseEnter)="onItemMouseEnter($event)"\n                                >\n                                </p-megaMenuSub>\n                            </div>\n                        </div>\n                    </div>\n                </li>\n            </ng-template>\n        </ul>\n    ',
       encapsulation: ViewEncapsulation$1.None,
       host: {
         class: "p-element"
@@ -1053,13 +906,94 @@ var MegaMenuSub = class _MegaMenuSub {
     }]
   });
 })();
-var MegaMenu = class _MegaMenu {
-  document;
-  platformId;
-  el;
-  renderer;
-  config;
-  cd;
+var _MegaMenu = class _MegaMenu {
+  constructor(document, platformId, el, renderer, config, cd) {
+    __publicField(this, "document");
+    __publicField(this, "platformId");
+    __publicField(this, "el");
+    __publicField(this, "renderer");
+    __publicField(this, "config");
+    __publicField(this, "cd");
+    /**
+     * Inline style of the element.
+     * @group Props
+     */
+    __publicField(this, "style");
+    /**
+     * Class of the element.
+     * @group Props
+     */
+    __publicField(this, "styleClass");
+    /**
+     * Defines the orientation.
+     * @group Props
+     */
+    __publicField(this, "orientation", "horizontal");
+    /**
+     * Current id state as a string.
+     * @group Props
+     */
+    __publicField(this, "id");
+    /**
+     * Defines a string value that labels an interactive element.
+     * @group Props
+     */
+    __publicField(this, "ariaLabel");
+    /**
+     * Identifier of the underlying input element.
+     * @group Props
+     */
+    __publicField(this, "ariaLabelledBy");
+    /**
+     * When present, it specifies that the component should be disabled.
+     * @group Props
+     */
+    __publicField(this, "disabled", false);
+    /**
+     * Index of the element in tabbing order.
+     * @group Props
+     */
+    __publicField(this, "tabindex", 0);
+    __publicField(this, "templates");
+    __publicField(this, "menubutton");
+    __publicField(this, "rootmenu");
+    __publicField(this, "startTemplate");
+    __publicField(this, "endTemplate");
+    __publicField(this, "menuIconTemplate");
+    __publicField(this, "submenuIconTemplate");
+    __publicField(this, "itemTemplate");
+    __publicField(this, "outsideClickListener");
+    __publicField(this, "resizeListener");
+    __publicField(this, "dirty", false);
+    __publicField(this, "focused", false);
+    __publicField(this, "activeItem", signal(null));
+    __publicField(this, "focusedItemInfo", signal({
+      index: -1,
+      level: 0,
+      parentKey: "",
+      item: null
+    }));
+    __publicField(this, "searchValue", "");
+    __publicField(this, "searchTimeout");
+    __publicField(this, "_processedItems");
+    __publicField(this, "_model");
+    this.document = document;
+    this.platformId = platformId;
+    this.el = el;
+    this.renderer = renderer;
+    this.config = config;
+    this.cd = cd;
+    effect(() => {
+      const activeItem = this.activeItem();
+      if (ObjectUtils.isNotEmpty(activeItem)) {
+        this.bindOutsideClickListener();
+        this.bindResizeListener();
+      } else {
+        this.unbindOutsideClickListener();
+        this.unbindResizeListener();
+      }
+    });
+  }
   /**
    * An array of menuitems.
    * @group Props
@@ -1071,69 +1005,6 @@ var MegaMenu = class _MegaMenu {
   get model() {
     return this._model;
   }
-  /**
-   * Inline style of the element.
-   * @group Props
-   */
-  style;
-  /**
-   * Class of the element.
-   * @group Props
-   */
-  styleClass;
-  /**
-   * Defines the orientation.
-   * @group Props
-   */
-  orientation = "horizontal";
-  /**
-   * Current id state as a string.
-   * @group Props
-   */
-  id;
-  /**
-   * Defines a string value that labels an interactive element.
-   * @group Props
-   */
-  ariaLabel;
-  /**
-   * Identifier of the underlying input element.
-   * @group Props
-   */
-  ariaLabelledBy;
-  /**
-   * When present, it specifies that the component should be disabled.
-   * @group Props
-   */
-  disabled = false;
-  /**
-   * Index of the element in tabbing order.
-   * @group Props
-   */
-  tabindex = 0;
-  templates;
-  menubutton;
-  rootmenu;
-  startTemplate;
-  endTemplate;
-  menuIconTemplate;
-  submenuIconTemplate;
-  itemTemplate;
-  outsideClickListener;
-  resizeListener;
-  dirty = false;
-  focused = false;
-  activeItem = signal(null);
-  focusedItemInfo = signal({
-    index: -1,
-    level: 0,
-    parentKey: "",
-    item: null
-  });
-  searchValue = "";
-  searchTimeout;
-  _processedItems;
-  _model;
   get visibleItems() {
     const processedItem = ObjectUtils.isNotEmpty(this.activeItem()) ? this.activeItem() : null;
     return processedItem ? processedItem.items.reduce((items, col) => {
@@ -1152,32 +1023,16 @@ var MegaMenu = class _MegaMenu {
     return this._processedItems;
   }
   get focusedItemId() {
+    var _a;
     const focusedItem = this.focusedItemInfo();
-    return focusedItem?.item && focusedItem.item?.id ? focusedItem.item.id : ObjectUtils.isNotEmpty(focusedItem.key) ? `${this.id}_${focusedItem.key}` : null;
-  }
-  constructor(document, platformId, el, renderer, config, cd) {
-    this.document = document;
-    this.platformId = platformId;
-    this.el = el;
-    this.renderer = renderer;
-    this.config = config;
-    this.cd = cd;
-    effect(() => {
-      const activeItem = this.activeItem();
-      if (ObjectUtils.isNotEmpty(activeItem)) {
-        this.bindOutsideClickListener();
-        this.bindResizeListener();
-      } else {
-        this.unbindOutsideClickListener();
-        this.unbindResizeListener();
-      }
-    });
+    return (focusedItem == null ? void 0 : focusedItem.item) && ((_a = focusedItem.item) == null ? void 0 : _a.id) ? focusedItem.item.id : ObjectUtils.isNotEmpty(focusedItem.key) ? "".concat(this.id, "_").concat(focusedItem.key) : null;
   }
   ngOnInit() {
     this.id = this.id || UniqueComponentId();
   }
   ngAfterContentInit() {
-    this.templates?.forEach((item) => {
+    var _a;
+    (_a = this.templates) == null ? void 0 : _a.forEach((item) => {
       switch (item.getType()) {
         case "start":
           this.startTemplate = item.template;
@@ -1222,6 +1077,7 @@ var MegaMenu = class _MegaMenu {
     return item ? ObjectUtils.getItemValue(item[name]) : void 0;
   }
   onItemClick(event) {
+    var _a, _b, _c, _d;
     const {
       originalEvent,
       processedItem
@@ -1244,7 +1100,7 @@ var MegaMenu = class _MegaMenu {
         item
       });
       this.dirty = !root;
-      DomHandler.focus(this.rootmenu?.menubarViewChild?.nativeElement);
+      DomHandler.focus((_b = (_a = this.rootmenu) == null ? void 0 : _a.menubarViewChild) == null ? void 0 : _b.nativeElement);
     } else {
       if (grouped) {
         this.onItemChange(event);
@@ -1252,7 +1108,7 @@ var MegaMenu = class _MegaMenu {
         const rootProcessedItem = root ? processedItem : this.activeItem();
         this.hide(originalEvent);
         this.changeFocusedItemInfo(originalEvent, rootProcessedItem ? rootProcessedItem.index : -1);
-        DomHandler.focus(this.rootmenu?.menubarViewChild?.nativeElement);
+        DomHandler.focus((_d = (_c = this.rootmenu) == null ? void 0 : _c.menubarViewChild) == null ? void 0 : _d.nativeElement);
       }
     }
   }
@@ -1262,8 +1118,9 @@ var MegaMenu = class _MegaMenu {
     }
   }
   scrollInView(index = -1) {
-    const id = index !== -1 ? `${this.id}_${index}` : this.focusedItemId;
-    const element = DomHandler.findSingle(this.rootmenu?.el.nativeElement, `li[id="${id}"]`);
+    var _a;
+    const id = index !== -1 ? "".concat(this.id, "_").concat(index) : this.focusedItemId;
+    const element = DomHandler.findSingle((_a = this.rootmenu) == null ? void 0 : _a.el.nativeElement, 'li[id="'.concat(id, '"]'));
     if (element) {
       element.scrollIntoView && element.scrollIntoView({
         block: "nearest",
@@ -1272,6 +1129,7 @@ var MegaMenu = class _MegaMenu {
     }
   }
   onItemChange(event) {
+    var _a, _b;
     const {
       processedItem,
       isFocus
@@ -1295,9 +1153,10 @@ var MegaMenu = class _MegaMenu {
       item
     });
     grouped && (this.dirty = true);
-    isFocus && DomHandler.focus(this.rootmenu?.menubarViewChild?.nativeElement);
+    isFocus && DomHandler.focus((_b = (_a = this.rootmenu) == null ? void 0 : _a.menubarViewChild) == null ? void 0 : _b.nativeElement);
   }
   hide(event, isFocus) {
+    var _a, _b;
     this.activeItem.set(null);
     this.focusedItemInfo.set({
       index: -1,
@@ -1305,7 +1164,7 @@ var MegaMenu = class _MegaMenu {
       parentKey: "",
       item: null
     });
-    isFocus && DomHandler.focus(this.rootmenu?.menubarViewChild?.nativeElement);
+    isFocus && DomHandler.focus((_b = (_a = this.rootmenu) == null ? void 0 : _a.menubarViewChild) == null ? void 0 : _b.nativeElement);
     this.dirty = false;
   }
   onMenuFocus(event) {
@@ -1628,8 +1487,9 @@ var MegaMenu = class _MegaMenu {
     this.hide();
   }
   onEnterKey(event) {
+    var _a, _b;
     if (this.focusedItemInfo().index !== -1) {
-      const element = DomHandler.findSingle(this.rootmenu?.el?.nativeElement, `li[id="${`${this.focusedItemId}`}"]`);
+      const element = DomHandler.findSingle((_b = (_a = this.rootmenu) == null ? void 0 : _a.el) == null ? void 0 : _b.nativeElement, 'li[id="'.concat("".concat(this.focusedItemId), '"]'));
       const anchorElement = element && DomHandler.findSingle(element, 'a[data-pc-section="action"]');
       anchorElement ? anchorElement.click() : element && element.click();
       const processedItem = this.visibleItems[this.focusedItemInfo().index];
@@ -1669,7 +1529,8 @@ var MegaMenu = class _MegaMenu {
     if (isPlatformBrowser(this.platformId)) {
       if (!this.outsideClickListener) {
         this.outsideClickListener = this.renderer.listen(this.document, "click", (event) => {
-          const isOutsideContainer = this.rootmenu?.el.nativeElement !== event.target && !this.rootmenu?.el.nativeElement.contains(event.target);
+          var _a, _b;
+          const isOutsideContainer = ((_a = this.rootmenu) == null ? void 0 : _a.el.nativeElement) !== event.target && !((_b = this.rootmenu) == null ? void 0 : _b.el.nativeElement.contains(event.target));
           if (isOutsideContainer) {
             this.hide();
           }
@@ -1693,144 +1554,103 @@ var MegaMenu = class _MegaMenu {
     this.unbindOutsideClickListener();
     this.unbindResizeListener();
   }
-  static ɵfac = function MegaMenu_Factory(__ngFactoryType__) {
-    return new (__ngFactoryType__ || _MegaMenu)(ɵɵdirectiveInject(DOCUMENT), ɵɵdirectiveInject(PLATFORM_ID), ɵɵdirectiveInject(ElementRef), ɵɵdirectiveInject(Renderer2), ɵɵdirectiveInject(PrimeNGConfig), ɵɵdirectiveInject(ChangeDetectorRef));
-  };
-  static ɵcmp = ɵɵdefineComponent({
-    type: _MegaMenu,
-    selectors: [["p-megaMenu"]],
-    contentQueries: function MegaMenu_ContentQueries(rf, ctx, dirIndex) {
-      if (rf & 1) {
-        ɵɵcontentQuery(dirIndex, PrimeTemplate, 4);
-      }
-      if (rf & 2) {
-        let _t;
-        ɵɵqueryRefresh(_t = ɵɵloadQuery()) && (ctx.templates = _t);
-      }
-    },
-    viewQuery: function MegaMenu_Query(rf, ctx) {
-      if (rf & 1) {
-        ɵɵviewQuery(_c5, 5);
-        ɵɵviewQuery(_c6, 5);
-      }
-      if (rf & 2) {
-        let _t;
-        ɵɵqueryRefresh(_t = ɵɵloadQuery()) && (ctx.menubutton = _t.first);
-        ɵɵqueryRefresh(_t = ɵɵloadQuery()) && (ctx.rootmenu = _t.first);
-      }
-    },
-    hostAttrs: [1, "p-element"],
-    inputs: {
-      model: "model",
-      style: "style",
-      styleClass: "styleClass",
-      orientation: "orientation",
-      id: "id",
-      ariaLabel: "ariaLabel",
-      ariaLabelledBy: "ariaLabelledBy",
-      disabled: [2, "disabled", "disabled", booleanAttribute],
-      tabindex: [2, "tabindex", "tabindex", numberAttribute]
-    },
-    features: [ɵɵInputTransformsFeature],
-    ngContentSelectors: _c7,
-    decls: 7,
-    vars: 26,
-    consts: [["rootmenu", ""], ["legacy", ""], [3, "ngClass", "ngStyle"], ["class", "p-megamenu-start", 4, "ngIf"], [3, "itemClick", "menuFocus", "menuBlur", "menuKeydown", "itemMouseEnter", "itemTemplate", "items", "menuId", "root", "orientation", "ariaLabel", "disabled", "tabindex", "activeItem", "level", "ariaLabelledBy", "focusedItemId"], ["class", "p-megamenu-end", 4, "ngIf", "ngIfElse"], [1, "p-megamenu-start"], [4, "ngTemplateOutlet"], [1, "p-megamenu-end"]],
-    template: function MegaMenu_Template(rf, ctx) {
-      if (rf & 1) {
-        const _r1 = ɵɵgetCurrentView();
-        ɵɵprojectionDef();
-        ɵɵelementStart(0, "div", 2);
-        ɵɵtemplate(1, MegaMenu_div_1_Template, 2, 1, "div", 3);
-        ɵɵelementStart(2, "p-megaMenuSub", 4, 0);
-        ɵɵlistener("itemClick", function MegaMenu_Template_p_megaMenuSub_itemClick_2_listener($event) {
-          ɵɵrestoreView(_r1);
-          return ɵɵresetView(ctx.onItemClick($event));
-        })("menuFocus", function MegaMenu_Template_p_megaMenuSub_menuFocus_2_listener($event) {
-          ɵɵrestoreView(_r1);
-          return ɵɵresetView(ctx.onMenuFocus($event));
-        })("menuBlur", function MegaMenu_Template_p_megaMenuSub_menuBlur_2_listener($event) {
-          ɵɵrestoreView(_r1);
-          return ɵɵresetView(ctx.onMenuBlur($event));
-        })("menuKeydown", function MegaMenu_Template_p_megaMenuSub_menuKeydown_2_listener($event) {
-          ɵɵrestoreView(_r1);
-          return ɵɵresetView(ctx.onKeyDown($event));
-        })("itemMouseEnter", function MegaMenu_Template_p_megaMenuSub_itemMouseEnter_2_listener($event) {
-          ɵɵrestoreView(_r1);
-          return ɵɵresetView(ctx.onItemMouseEnter($event));
-        });
-        ɵɵelementEnd();
-        ɵɵtemplate(4, MegaMenu_div_4_Template, 2, 1, "div", 5)(5, MegaMenu_ng_template_5_Template, 2, 0, "ng-template", null, 1, ɵɵtemplateRefExtractor);
-        ɵɵelementEnd();
-      }
-      if (rf & 2) {
-        const legacy_r3 = ɵɵreference(6);
-        ɵɵclassMap(ctx.styleClass);
-        ɵɵproperty("ngClass", ɵɵpureFunction2(23, _c8, ctx.orientation == "horizontal", ctx.orientation == "vertical"))("ngStyle", ctx.style);
-        ɵɵattribute("data-pc-section", "root")("data-pc-name", "megamenu")("id", ctx.id);
-        ɵɵadvance();
-        ɵɵproperty("ngIf", ctx.startTemplate);
-        ɵɵadvance();
-        ɵɵproperty("itemTemplate", ctx.itemTemplate)("items", ctx.processedItems)("menuId", ctx.id)("root", true)("orientation", ctx.orientation)("ariaLabel", ctx.ariaLabel)("disabled", ctx.disabled)("tabindex", !ctx.disabled ? ctx.tabindex : -1)("activeItem", ctx.activeItem())("level", 0)("ariaLabelledBy", ctx.ariaLabelledBy)("focusedItemId", ctx.focused ? ctx.focusedItemId : void 0);
-        ɵɵattribute("id", ctx.id + "_list");
-        ɵɵadvance(2);
-        ɵɵproperty("ngIf", ctx.endTemplate)("ngIfElse", legacy_r3);
-      }
-    },
-    dependencies: [NgClass, NgIf, NgTemplateOutlet, NgStyle, MegaMenuSub],
-    styles: ["@layer primeng{.p-megamenu-root-list{margin:0;padding:0;list-style:none}.p-megamenu-root-list>.p-menuitem{position:relative}.p-megamenu .p-menuitem-link{cursor:pointer;display:flex;align-items:center;text-decoration:none;overflow:hidden;position:relative}.p-megamenu .p-menuitem-text{line-height:1}.p-megamenu-panel{display:none;position:absolute;width:auto;z-index:1}.p-megamenu-root-list>.p-menuitem-active>.p-megamenu-panel{display:block}.p-megamenu-submenu{margin:0;padding:0;list-style:none}.p-megamenu-horizontal{align-items:center}.p-megamenu-horizontal .p-megamenu-root-list{display:flex;align-items:center;flex-wrap:wrap}.p-megamenu-horizontal .p-megamenu-end{margin-left:auto;align-self:center}.p-megamenu-vertical .p-megamenu-root-list{flex-direction:column}.p-megamenu-vertical .p-megamenu-root-list>.p-menuitem-active>.p-megamenu-panel{left:100%;top:0}.p-megamenu-vertical .p-megamenu-root-list>.p-menuitem>.p-menuitem-content>.p-menuitem-link>.p-submenu-icon:not(svg){margin-left:auto}.p-megamenu-vertical .p-megamenu-root-list>.p-menuitem>.p-menuitem-content>.p-menuitem-link>.p-icon-wrapper{margin-left:auto}.p-megamenu-grid{display:flex}.p-megamenu-col-2,.p-megamenu-col-3,.p-megamenu-col-4,.p-megamenu-col-6,.p-megamenu-col-12{flex:0 0 auto;padding:.5rem}.p-megamenu-col-2{width:16.6667%}.p-megamenu-col-3{width:25%}.p-megamenu-col-4{width:33.3333%}.p-megamenu-col-6{width:50%}.p-megamenu-col-12{width:100%}}\n"],
-    encapsulation: 2,
-    changeDetection: 0
-  });
 };
+__publicField(_MegaMenu, "ɵfac", function MegaMenu_Factory(__ngFactoryType__) {
+  return new (__ngFactoryType__ || _MegaMenu)(ɵɵdirectiveInject(DOCUMENT), ɵɵdirectiveInject(PLATFORM_ID), ɵɵdirectiveInject(ElementRef), ɵɵdirectiveInject(Renderer2), ɵɵdirectiveInject(PrimeNGConfig), ɵɵdirectiveInject(ChangeDetectorRef));
+});
+__publicField(_MegaMenu, "ɵcmp", ɵɵdefineComponent({
+  type: _MegaMenu,
+  selectors: [["p-megaMenu"]],
+  contentQueries: function MegaMenu_ContentQueries(rf, ctx, dirIndex) {
+    if (rf & 1) {
+      ɵɵcontentQuery(dirIndex, PrimeTemplate, 4);
+    }
+    if (rf & 2) {
+      let _t;
+      ɵɵqueryRefresh(_t = ɵɵloadQuery()) && (ctx.templates = _t);
+    }
+  },
+  viewQuery: function MegaMenu_Query(rf, ctx) {
+    if (rf & 1) {
+      ɵɵviewQuery(_c5, 5);
+      ɵɵviewQuery(_c6, 5);
+    }
+    if (rf & 2) {
+      let _t;
+      ɵɵqueryRefresh(_t = ɵɵloadQuery()) && (ctx.menubutton = _t.first);
+      ɵɵqueryRefresh(_t = ɵɵloadQuery()) && (ctx.rootmenu = _t.first);
+    }
+  },
+  hostAttrs: [1, "p-element"],
+  inputs: {
+    model: "model",
+    style: "style",
+    styleClass: "styleClass",
+    orientation: "orientation",
+    id: "id",
+    ariaLabel: "ariaLabel",
+    ariaLabelledBy: "ariaLabelledBy",
+    disabled: [2, "disabled", "disabled", booleanAttribute],
+    tabindex: [2, "tabindex", "tabindex", numberAttribute]
+  },
+  features: [ɵɵInputTransformsFeature],
+  ngContentSelectors: _c7,
+  decls: 7,
+  vars: 26,
+  consts: [["rootmenu", ""], ["legacy", ""], [3, "ngClass", "ngStyle"], ["class", "p-megamenu-start", 4, "ngIf"], [3, "itemClick", "menuFocus", "menuBlur", "menuKeydown", "itemMouseEnter", "itemTemplate", "items", "menuId", "root", "orientation", "ariaLabel", "disabled", "tabindex", "activeItem", "level", "ariaLabelledBy", "focusedItemId"], ["class", "p-megamenu-end", 4, "ngIf", "ngIfElse"], [1, "p-megamenu-start"], [4, "ngTemplateOutlet"], [1, "p-megamenu-end"]],
+  template: function MegaMenu_Template(rf, ctx) {
+    if (rf & 1) {
+      const _r1 = ɵɵgetCurrentView();
+      ɵɵprojectionDef();
+      ɵɵelementStart(0, "div", 2);
+      ɵɵtemplate(1, MegaMenu_div_1_Template, 2, 1, "div", 3);
+      ɵɵelementStart(2, "p-megaMenuSub", 4, 0);
+      ɵɵlistener("itemClick", function MegaMenu_Template_p_megaMenuSub_itemClick_2_listener($event) {
+        ɵɵrestoreView(_r1);
+        return ɵɵresetView(ctx.onItemClick($event));
+      })("menuFocus", function MegaMenu_Template_p_megaMenuSub_menuFocus_2_listener($event) {
+        ɵɵrestoreView(_r1);
+        return ɵɵresetView(ctx.onMenuFocus($event));
+      })("menuBlur", function MegaMenu_Template_p_megaMenuSub_menuBlur_2_listener($event) {
+        ɵɵrestoreView(_r1);
+        return ɵɵresetView(ctx.onMenuBlur($event));
+      })("menuKeydown", function MegaMenu_Template_p_megaMenuSub_menuKeydown_2_listener($event) {
+        ɵɵrestoreView(_r1);
+        return ɵɵresetView(ctx.onKeyDown($event));
+      })("itemMouseEnter", function MegaMenu_Template_p_megaMenuSub_itemMouseEnter_2_listener($event) {
+        ɵɵrestoreView(_r1);
+        return ɵɵresetView(ctx.onItemMouseEnter($event));
+      });
+      ɵɵelementEnd();
+      ɵɵtemplate(4, MegaMenu_div_4_Template, 2, 1, "div", 5)(5, MegaMenu_ng_template_5_Template, 2, 0, "ng-template", null, 1, ɵɵtemplateRefExtractor);
+      ɵɵelementEnd();
+    }
+    if (rf & 2) {
+      const legacy_r3 = ɵɵreference(6);
+      ɵɵclassMap(ctx.styleClass);
+      ɵɵproperty("ngClass", ɵɵpureFunction2(23, _c8, ctx.orientation == "horizontal", ctx.orientation == "vertical"))("ngStyle", ctx.style);
+      ɵɵattribute("data-pc-section", "root")("data-pc-name", "megamenu")("id", ctx.id);
+      ɵɵadvance();
+      ɵɵproperty("ngIf", ctx.startTemplate);
+      ɵɵadvance();
+      ɵɵproperty("itemTemplate", ctx.itemTemplate)("items", ctx.processedItems)("menuId", ctx.id)("root", true)("orientation", ctx.orientation)("ariaLabel", ctx.ariaLabel)("disabled", ctx.disabled)("tabindex", !ctx.disabled ? ctx.tabindex : -1)("activeItem", ctx.activeItem())("level", 0)("ariaLabelledBy", ctx.ariaLabelledBy)("focusedItemId", ctx.focused ? ctx.focusedItemId : void 0);
+      ɵɵattribute("id", ctx.id + "_list");
+      ɵɵadvance(2);
+      ɵɵproperty("ngIf", ctx.endTemplate)("ngIfElse", legacy_r3);
+    }
+  },
+  dependencies: [NgClass, NgIf, NgTemplateOutlet, NgStyle, MegaMenuSub],
+  styles: ["@layer primeng{.p-megamenu-root-list{margin:0;padding:0;list-style:none}.p-megamenu-root-list>.p-menuitem{position:relative}.p-megamenu .p-menuitem-link{cursor:pointer;display:flex;align-items:center;text-decoration:none;overflow:hidden;position:relative}.p-megamenu .p-menuitem-text{line-height:1}.p-megamenu-panel{display:none;position:absolute;width:auto;z-index:1}.p-megamenu-root-list>.p-menuitem-active>.p-megamenu-panel{display:block}.p-megamenu-submenu{margin:0;padding:0;list-style:none}.p-megamenu-horizontal{align-items:center}.p-megamenu-horizontal .p-megamenu-root-list{display:flex;align-items:center;flex-wrap:wrap}.p-megamenu-horizontal .p-megamenu-end{margin-left:auto;align-self:center}.p-megamenu-vertical .p-megamenu-root-list{flex-direction:column}.p-megamenu-vertical .p-megamenu-root-list>.p-menuitem-active>.p-megamenu-panel{left:100%;top:0}.p-megamenu-vertical .p-megamenu-root-list>.p-menuitem>.p-menuitem-content>.p-menuitem-link>.p-submenu-icon:not(svg){margin-left:auto}.p-megamenu-vertical .p-megamenu-root-list>.p-menuitem>.p-menuitem-content>.p-menuitem-link>.p-icon-wrapper{margin-left:auto}.p-megamenu-grid{display:flex}.p-megamenu-col-2,.p-megamenu-col-3,.p-megamenu-col-4,.p-megamenu-col-6,.p-megamenu-col-12{flex:0 0 auto;padding:.5rem}.p-megamenu-col-2{width:16.6667%}.p-megamenu-col-3{width:25%}.p-megamenu-col-4{width:33.3333%}.p-megamenu-col-6{width:50%}.p-megamenu-col-12{width:100%}}\n"],
+  encapsulation: 2,
+  changeDetection: 0
+}));
+var MegaMenu = _MegaMenu;
 (() => {
   (typeof ngDevMode === "undefined" || ngDevMode) && setClassMetadata(MegaMenu, [{
     type: Component,
     args: [{
       selector: "p-megaMenu",
-      template: `
-        <div
-            [ngClass]="{ 'p-megamenu p-component': true, 'p-megamenu-horizontal': orientation == 'horizontal', 'p-megamenu-vertical': orientation == 'vertical' }"
-            [class]="styleClass"
-            [ngStyle]="style"
-            [attr.data-pc-section]="'root'"
-            [attr.data-pc-name]="'megamenu'"
-            [attr.id]="id"
-        >
-            <div class="p-megamenu-start" *ngIf="startTemplate">
-                <ng-container *ngTemplateOutlet="startTemplate"></ng-container>
-            </div>
-            <p-megaMenuSub
-                #rootmenu
-                [itemTemplate]="itemTemplate"
-                [items]="processedItems"
-                [attr.id]="id + '_list'"
-                [menuId]="id"
-                [root]="true"
-                [orientation]="orientation"
-                [ariaLabel]="ariaLabel"
-                [disabled]="disabled"
-                [tabindex]="!disabled ? tabindex : -1"
-                [activeItem]="activeItem()"
-                [level]="0"
-                [ariaLabelledBy]="ariaLabelledBy"
-                [focusedItemId]="focused ? focusedItemId : undefined"
-                (itemClick)="onItemClick($event)"
-                (menuFocus)="onMenuFocus($event)"
-                (menuBlur)="onMenuBlur($event)"
-                (menuKeydown)="onKeyDown($event)"
-                (itemMouseEnter)="onItemMouseEnter($event)"
-            ></p-megaMenuSub>
-            <div class="p-megamenu-end" *ngIf="endTemplate; else legacy">
-                <ng-container *ngTemplateOutlet="endTemplate"></ng-container>
-            </div>
-            <ng-template #legacy>
-                <div class="p-megamenu-end">
-                    <ng-content></ng-content>
-                </div>
-            </ng-template>
-        </div>
-    `,
+      template: '\n        <div\n            [ngClass]="{ \'p-megamenu p-component\': true, \'p-megamenu-horizontal\': orientation == \'horizontal\', \'p-megamenu-vertical\': orientation == \'vertical\' }"\n            [class]="styleClass"\n            [ngStyle]="style"\n            [attr.data-pc-section]="\'root\'"\n            [attr.data-pc-name]="\'megamenu\'"\n            [attr.id]="id"\n        >\n            <div class="p-megamenu-start" *ngIf="startTemplate">\n                <ng-container *ngTemplateOutlet="startTemplate"></ng-container>\n            </div>\n            <p-megaMenuSub\n                #rootmenu\n                [itemTemplate]="itemTemplate"\n                [items]="processedItems"\n                [attr.id]="id + \'_list\'"\n                [menuId]="id"\n                [root]="true"\n                [orientation]="orientation"\n                [ariaLabel]="ariaLabel"\n                [disabled]="disabled"\n                [tabindex]="!disabled ? tabindex : -1"\n                [activeItem]="activeItem()"\n                [level]="0"\n                [ariaLabelledBy]="ariaLabelledBy"\n                [focusedItemId]="focused ? focusedItemId : undefined"\n                (itemClick)="onItemClick($event)"\n                (menuFocus)="onMenuFocus($event)"\n                (menuBlur)="onMenuBlur($event)"\n                (menuKeydown)="onKeyDown($event)"\n                (itemMouseEnter)="onItemMouseEnter($event)"\n            ></p-megaMenuSub>\n            <div class="p-megamenu-end" *ngIf="endTemplate; else legacy">\n                <ng-container *ngTemplateOutlet="endTemplate"></ng-container>\n            </div>\n            <ng-template #legacy>\n                <div class="p-megamenu-end">\n                    <ng-content></ng-content>\n                </div>\n            </ng-template>\n        </div>\n    ',
       changeDetection: ChangeDetectionStrategy.OnPush,
       encapsulation: ViewEncapsulation$1.None,
       host: {
@@ -1906,20 +1726,21 @@ var MegaMenu = class _MegaMenu {
     }]
   });
 })();
-var MegaMenuModule = class _MegaMenuModule {
-  static ɵfac = function MegaMenuModule_Factory(__ngFactoryType__) {
-    return new (__ngFactoryType__ || _MegaMenuModule)();
-  };
-  static ɵmod = ɵɵdefineNgModule({
-    type: _MegaMenuModule,
-    declarations: [MegaMenu, MegaMenuSub],
-    imports: [CommonModule, RouterModule, RippleModule, TooltipModule, SharedModule, AngleDownIcon, AngleRightIcon],
-    exports: [MegaMenu, RouterModule, TooltipModule, SharedModule]
-  });
-  static ɵinj = ɵɵdefineInjector({
-    imports: [CommonModule, RouterModule, RippleModule, TooltipModule, SharedModule, AngleDownIcon, AngleRightIcon, RouterModule, TooltipModule, SharedModule]
-  });
+var _MegaMenuModule = class _MegaMenuModule {
 };
+__publicField(_MegaMenuModule, "ɵfac", function MegaMenuModule_Factory(__ngFactoryType__) {
+  return new (__ngFactoryType__ || _MegaMenuModule)();
+});
+__publicField(_MegaMenuModule, "ɵmod", ɵɵdefineNgModule({
+  type: _MegaMenuModule,
+  declarations: [MegaMenu, MegaMenuSub],
+  imports: [CommonModule, RouterModule, RippleModule, TooltipModule, SharedModule, AngleDownIcon, AngleRightIcon],
+  exports: [MegaMenu, RouterModule, TooltipModule, SharedModule]
+}));
+__publicField(_MegaMenuModule, "ɵinj", ɵɵdefineInjector({
+  imports: [CommonModule, RouterModule, RippleModule, TooltipModule, SharedModule, AngleDownIcon, AngleRightIcon, RouterModule, TooltipModule, SharedModule]
+}));
+var MegaMenuModule = _MegaMenuModule;
 (() => {
   (typeof ngDevMode === "undefined" || ngDevMode) && setClassMetadata(MegaMenuModule, [{
     type: NgModule,

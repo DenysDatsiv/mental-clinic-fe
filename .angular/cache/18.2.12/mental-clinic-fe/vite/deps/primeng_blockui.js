@@ -1,13 +1,13 @@
 import {
   PrimeNGConfig,
   PrimeTemplate
-} from "./chunk-TQSVMJ6K.js";
+} from "./chunk-ZROJCIWL.js";
 import {
   zindexutils
-} from "./chunk-3OF44R55.js";
+} from "./chunk-U3NLM53U.js";
 import {
   DomHandler
-} from "./chunk-BUGEQH7Q.js";
+} from "./chunk-LB42WWNC.js";
 import {
   CommonModule,
   DOCUMENT,
@@ -15,7 +15,7 @@ import {
   NgStyle,
   NgTemplateOutlet,
   isPlatformBrowser
-} from "./chunk-UBZYO7FG.js";
+} from "./chunk-KUZ63KOD.js";
 import {
   ChangeDetectionStrategy,
   ChangeDetectorRef,
@@ -53,11 +53,13 @@ import {
   ɵɵqueryRefresh,
   ɵɵtemplate,
   ɵɵviewQuery
-} from "./chunk-ZI2Q76R4.js";
-import "./chunk-5OPE3T2R.js";
+} from "./chunk-R75KKECJ.js";
 import "./chunk-4N4GOYJH.js";
+import "./chunk-5OPE3T2R.js";
 import "./chunk-FHTVLBLO.js";
-import "./chunk-3OV72XIM.js";
+import {
+  __publicField
+} from "./chunk-IJZFAMY6.js";
 
 // node_modules/primeng/fesm2022/primeng-blockui.mjs
 var _c0 = ["mask"];
@@ -74,33 +76,46 @@ function BlockUI_ng_container_3_Template(rf, ctx) {
     ɵɵelementContainer(0);
   }
 }
-var BlockUI = class _BlockUI {
-  document;
-  el;
-  cd;
-  config;
-  renderer;
-  platformId;
-  /**
-   * Name of the local ng-template variable referring to another component.
-   * @group Props
-   */
-  target;
-  /**
-   * Whether to automatically manage layering.
-   * @group Props
-   */
-  autoZIndex = true;
-  /**
-   * Base zIndex value to use in layering.
-   * @group Props
-   */
-  baseZIndex = 0;
-  /**
-   * Class of the element.
-   * @group Props
-   */
-  styleClass;
+var _BlockUI = class _BlockUI {
+  constructor(document, el, cd, config, renderer, platformId) {
+    __publicField(this, "document");
+    __publicField(this, "el");
+    __publicField(this, "cd");
+    __publicField(this, "config");
+    __publicField(this, "renderer");
+    __publicField(this, "platformId");
+    /**
+     * Name of the local ng-template variable referring to another component.
+     * @group Props
+     */
+    __publicField(this, "target");
+    /**
+     * Whether to automatically manage layering.
+     * @group Props
+     */
+    __publicField(this, "autoZIndex", true);
+    /**
+     * Base zIndex value to use in layering.
+     * @group Props
+     */
+    __publicField(this, "baseZIndex", 0);
+    /**
+     * Class of the element.
+     * @group Props
+     */
+    __publicField(this, "styleClass");
+    __publicField(this, "templates");
+    __publicField(this, "mask");
+    __publicField(this, "_blocked", false);
+    __publicField(this, "animationEndListener");
+    __publicField(this, "contentTemplate");
+    this.document = document;
+    this.el = el;
+    this.cd = cd;
+    this.config = config;
+    this.renderer = renderer;
+    this.platformId = platformId;
+  }
   /**
    * Current blocked state as a boolean.
    * @group Props
@@ -115,19 +130,6 @@ var BlockUI = class _BlockUI {
     } else {
       this._blocked = val;
     }
-  }
-  templates;
-  mask;
-  _blocked = false;
-  animationEndListener;
-  contentTemplate;
-  constructor(document, el, cd, config, renderer, platformId) {
-    this.document = document;
-    this.el = el;
-    this.cd = cd;
-    this.config = config;
-    this.renderer = renderer;
-    this.platformId = platformId;
   }
   ngAfterViewInit() {
     if (this._blocked) this.block();
@@ -190,84 +192,72 @@ var BlockUI = class _BlockUI {
     this.unblock();
     this.destroyModal();
   }
-  static ɵfac = function BlockUI_Factory(__ngFactoryType__) {
-    return new (__ngFactoryType__ || _BlockUI)(ɵɵdirectiveInject(DOCUMENT), ɵɵdirectiveInject(ElementRef), ɵɵdirectiveInject(ChangeDetectorRef), ɵɵdirectiveInject(PrimeNGConfig), ɵɵdirectiveInject(Renderer2), ɵɵdirectiveInject(PLATFORM_ID));
-  };
-  static ɵcmp = ɵɵdefineComponent({
-    type: _BlockUI,
-    selectors: [["p-blockUI"]],
-    contentQueries: function BlockUI_ContentQueries(rf, ctx, dirIndex) {
-      if (rf & 1) {
-        ɵɵcontentQuery(dirIndex, PrimeTemplate, 4);
-      }
-      if (rf & 2) {
-        let _t;
-        ɵɵqueryRefresh(_t = ɵɵloadQuery()) && (ctx.templates = _t);
-      }
-    },
-    viewQuery: function BlockUI_Query(rf, ctx) {
-      if (rf & 1) {
-        ɵɵviewQuery(_c0, 5);
-      }
-      if (rf & 2) {
-        let _t;
-        ɵɵqueryRefresh(_t = ɵɵloadQuery()) && (ctx.mask = _t.first);
-      }
-    },
-    hostAttrs: [1, "p-element"],
-    inputs: {
-      target: "target",
-      autoZIndex: [2, "autoZIndex", "autoZIndex", booleanAttribute],
-      baseZIndex: [2, "baseZIndex", "baseZIndex", numberAttribute],
-      styleClass: "styleClass",
-      blocked: "blocked"
-    },
-    features: [ɵɵInputTransformsFeature],
-    ngContentSelectors: _c1,
-    decls: 4,
-    vars: 11,
-    consts: [["mask", ""], [3, "ngClass", "ngStyle"], [4, "ngTemplateOutlet"]],
-    template: function BlockUI_Template(rf, ctx) {
-      if (rf & 1) {
-        ɵɵprojectionDef();
-        ɵɵelementStart(0, "div", 1, 0);
-        ɵɵprojection(2);
-        ɵɵtemplate(3, BlockUI_ng_container_3_Template, 1, 0, "ng-container", 2);
-        ɵɵelementEnd();
-      }
-      if (rf & 2) {
-        ɵɵclassMap(ctx.styleClass);
-        ɵɵproperty("ngClass", ɵɵpureFunction1(8, _c2, !ctx.target))("ngStyle", ɵɵpureFunction0(10, _c3));
-        ɵɵattribute("aria-busy", ctx.blocked)("data-pc-name", "blockui")("data-pc-section", "root");
-        ɵɵadvance(3);
-        ɵɵproperty("ngTemplateOutlet", ctx.contentTemplate);
-      }
-    },
-    dependencies: [NgClass, NgTemplateOutlet, NgStyle],
-    styles: ["@layer primeng{.p-blockui{position:absolute;top:0;left:0;width:100%;height:100%;background-color:transparent;transition-property:background-color;display:flex;align-items:center;justify-content:center}.p-blockui.p-component-overlay{position:absolute}.p-blockui-document.p-component-overlay{position:fixed}.p-blockui-leave.p-component-overlay{background-color:transparent}}\n"],
-    encapsulation: 2,
-    changeDetection: 0
-  });
 };
+__publicField(_BlockUI, "ɵfac", function BlockUI_Factory(__ngFactoryType__) {
+  return new (__ngFactoryType__ || _BlockUI)(ɵɵdirectiveInject(DOCUMENT), ɵɵdirectiveInject(ElementRef), ɵɵdirectiveInject(ChangeDetectorRef), ɵɵdirectiveInject(PrimeNGConfig), ɵɵdirectiveInject(Renderer2), ɵɵdirectiveInject(PLATFORM_ID));
+});
+__publicField(_BlockUI, "ɵcmp", ɵɵdefineComponent({
+  type: _BlockUI,
+  selectors: [["p-blockUI"]],
+  contentQueries: function BlockUI_ContentQueries(rf, ctx, dirIndex) {
+    if (rf & 1) {
+      ɵɵcontentQuery(dirIndex, PrimeTemplate, 4);
+    }
+    if (rf & 2) {
+      let _t;
+      ɵɵqueryRefresh(_t = ɵɵloadQuery()) && (ctx.templates = _t);
+    }
+  },
+  viewQuery: function BlockUI_Query(rf, ctx) {
+    if (rf & 1) {
+      ɵɵviewQuery(_c0, 5);
+    }
+    if (rf & 2) {
+      let _t;
+      ɵɵqueryRefresh(_t = ɵɵloadQuery()) && (ctx.mask = _t.first);
+    }
+  },
+  hostAttrs: [1, "p-element"],
+  inputs: {
+    target: "target",
+    autoZIndex: [2, "autoZIndex", "autoZIndex", booleanAttribute],
+    baseZIndex: [2, "baseZIndex", "baseZIndex", numberAttribute],
+    styleClass: "styleClass",
+    blocked: "blocked"
+  },
+  features: [ɵɵInputTransformsFeature],
+  ngContentSelectors: _c1,
+  decls: 4,
+  vars: 11,
+  consts: [["mask", ""], [3, "ngClass", "ngStyle"], [4, "ngTemplateOutlet"]],
+  template: function BlockUI_Template(rf, ctx) {
+    if (rf & 1) {
+      ɵɵprojectionDef();
+      ɵɵelementStart(0, "div", 1, 0);
+      ɵɵprojection(2);
+      ɵɵtemplate(3, BlockUI_ng_container_3_Template, 1, 0, "ng-container", 2);
+      ɵɵelementEnd();
+    }
+    if (rf & 2) {
+      ɵɵclassMap(ctx.styleClass);
+      ɵɵproperty("ngClass", ɵɵpureFunction1(8, _c2, !ctx.target))("ngStyle", ɵɵpureFunction0(10, _c3));
+      ɵɵattribute("aria-busy", ctx.blocked)("data-pc-name", "blockui")("data-pc-section", "root");
+      ɵɵadvance(3);
+      ɵɵproperty("ngTemplateOutlet", ctx.contentTemplate);
+    }
+  },
+  dependencies: [NgClass, NgTemplateOutlet, NgStyle],
+  styles: ["@layer primeng{.p-blockui{position:absolute;top:0;left:0;width:100%;height:100%;background-color:transparent;transition-property:background-color;display:flex;align-items:center;justify-content:center}.p-blockui.p-component-overlay{position:absolute}.p-blockui-document.p-component-overlay{position:fixed}.p-blockui-leave.p-component-overlay{background-color:transparent}}\n"],
+  encapsulation: 2,
+  changeDetection: 0
+}));
+var BlockUI = _BlockUI;
 (() => {
   (typeof ngDevMode === "undefined" || ngDevMode) && setClassMetadata(BlockUI, [{
     type: Component,
     args: [{
       selector: "p-blockUI",
-      template: `
-        <div
-            #mask
-            [class]="styleClass"
-            [attr.aria-busy]="blocked"
-            [ngClass]="{ 'p-blockui-document': !target, 'p-blockui p-component-overlay p-component-overlay-enter': true }"
-            [ngStyle]="{ display: 'none' }"
-            [attr.data-pc-name]="'blockui'"
-            [attr.data-pc-section]="'root'"
-        >
-            <ng-content></ng-content>
-            <ng-container *ngTemplateOutlet="contentTemplate"></ng-container>
-        </div>
-    `,
+      template: '\n        <div\n            #mask\n            [class]="styleClass"\n            [attr.aria-busy]="blocked"\n            [ngClass]="{ \'p-blockui-document\': !target, \'p-blockui p-component-overlay p-component-overlay-enter\': true }"\n            [ngStyle]="{ display: \'none\' }"\n            [attr.data-pc-name]="\'blockui\'"\n            [attr.data-pc-section]="\'root\'"\n        >\n            <ng-content></ng-content>\n            <ng-container *ngTemplateOutlet="contentTemplate"></ng-container>\n        </div>\n    ',
       changeDetection: ChangeDetectionStrategy.OnPush,
       encapsulation: ViewEncapsulation$1.None,
       host: {
@@ -327,20 +317,21 @@ var BlockUI = class _BlockUI {
     }]
   });
 })();
-var BlockUIModule = class _BlockUIModule {
-  static ɵfac = function BlockUIModule_Factory(__ngFactoryType__) {
-    return new (__ngFactoryType__ || _BlockUIModule)();
-  };
-  static ɵmod = ɵɵdefineNgModule({
-    type: _BlockUIModule,
-    declarations: [BlockUI],
-    imports: [CommonModule],
-    exports: [BlockUI]
-  });
-  static ɵinj = ɵɵdefineInjector({
-    imports: [CommonModule]
-  });
+var _BlockUIModule = class _BlockUIModule {
 };
+__publicField(_BlockUIModule, "ɵfac", function BlockUIModule_Factory(__ngFactoryType__) {
+  return new (__ngFactoryType__ || _BlockUIModule)();
+});
+__publicField(_BlockUIModule, "ɵmod", ɵɵdefineNgModule({
+  type: _BlockUIModule,
+  declarations: [BlockUI],
+  imports: [CommonModule],
+  exports: [BlockUI]
+}));
+__publicField(_BlockUIModule, "ɵinj", ɵɵdefineInjector({
+  imports: [CommonModule]
+}));
+var BlockUIModule = _BlockUIModule;
 (() => {
   (typeof ngDevMode === "undefined" || ngDevMode) && setClassMetadata(BlockUIModule, [{
     type: NgModule,

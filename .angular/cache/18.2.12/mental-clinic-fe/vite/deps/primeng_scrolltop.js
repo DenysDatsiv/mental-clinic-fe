@@ -1,25 +1,25 @@
 import {
   ChevronUpIcon
-} from "./chunk-4WX4YYVC.js";
-import "./chunk-PXWZN6FU.js";
+} from "./chunk-GXJTW63O.js";
+import "./chunk-BJLZ3T2F.js";
 import {
   PrimeNGConfig,
   PrimeTemplate,
   SharedModule
-} from "./chunk-TQSVMJ6K.js";
+} from "./chunk-ZROJCIWL.js";
 import {
   zindexutils
-} from "./chunk-3OF44R55.js";
+} from "./chunk-U3NLM53U.js";
 import {
   animate,
   state,
   style,
   transition,
   trigger
-} from "./chunk-OGB62SLM.js";
+} from "./chunk-5S7AEMUZ.js";
 import {
   DomHandler
-} from "./chunk-BUGEQH7Q.js";
+} from "./chunk-LB42WWNC.js";
 import {
   CommonModule,
   DOCUMENT,
@@ -28,7 +28,7 @@ import {
   NgStyle,
   NgTemplateOutlet,
   isPlatformBrowser
-} from "./chunk-UBZYO7FG.js";
+} from "./chunk-KUZ63KOD.js";
 import {
   ChangeDetectionStrategy,
   ChangeDetectorRef,
@@ -69,11 +69,13 @@ import {
   ɵɵresetView,
   ɵɵrestoreView,
   ɵɵtemplate
-} from "./chunk-ZI2Q76R4.js";
-import "./chunk-5OPE3T2R.js";
+} from "./chunk-R75KKECJ.js";
 import "./chunk-4N4GOYJH.js";
+import "./chunk-5OPE3T2R.js";
 import "./chunk-FHTVLBLO.js";
-import "./chunk-3OV72XIM.js";
+import {
+  __publicField
+} from "./chunk-IJZFAMY6.js";
 
 // node_modules/primeng/fesm2022/primeng-scrolltop.mjs
 var _c0 = (a0, a1) => ({
@@ -165,66 +167,66 @@ function ScrollTop_button_0_Template(rf, ctx) {
     ɵɵproperty("ngTemplateOutlet", ctx_r1.iconTemplate)("ngTemplateOutletContext", ɵɵpureFunction0(14, _c2));
   }
 }
-var ScrollTop = class _ScrollTop {
-  document;
-  platformId;
-  renderer;
-  el;
-  cd;
-  config;
-  /**
-   * Class of the element.
-   * @group Props
-   */
-  styleClass;
-  /**
-   * Inline style of the element.
-   * @group Props
-   */
-  style;
-  /**
-   * Target of the ScrollTop.
-   * @group Props
-   */
-  target = "window";
-  /**
-   * Defines the threshold value of the vertical scroll position of the target to toggle the visibility.
-   * @group Props
-   */
-  threshold = 400;
-  /**
-   * Name of the icon or JSX.Element for icon.
-   * @group Props
-   */
-  icon;
-  /**
-   * Defines the scrolling behavior, "smooth" adds an animation and "auto" scrolls with a jump.
-   * @group Props
-   */
-  behavior = "smooth";
-  /**
-   * A string value used to determine the display transition options.
-   * @group Props
-   */
-  showTransitionOptions = ".15s";
-  /**
-   * A string value used to determine the hiding transition options.
-   * @group Props
-   */
-  hideTransitionOptions = ".15s";
-  /**
-   * Establishes a string value that labels the scroll-top button.
-   * @group Props
-   */
-  buttonAriaLabel;
-  templates;
-  iconTemplate;
-  documentScrollListener;
-  parentScrollListener;
-  visible = false;
-  overlay;
-  window;
+var _ScrollTop = class _ScrollTop {
   constructor(document, platformId, renderer, el, cd, config) {
+    __publicField(this, "document");
+    __publicField(this, "platformId");
+    __publicField(this, "renderer");
+    __publicField(this, "el");
+    __publicField(this, "cd");
+    __publicField(this, "config");
+    /**
+     * Class of the element.
+     * @group Props
+     */
+    __publicField(this, "styleClass");
+    /**
+     * Inline style of the element.
+     * @group Props
+     */
+    __publicField(this, "style");
+    /**
+     * Target of the ScrollTop.
+     * @group Props
+     */
+    __publicField(this, "target", "window");
+    /**
+     * Defines the threshold value of the vertical scroll position of the target to toggle the visibility.
+     * @group Props
+     */
+    __publicField(this, "threshold", 400);
+    /**
+     * Name of the icon or JSX.Element for icon.
+     * @group Props
+     */
+    __publicField(this, "icon");
+    /**
+     * Defines the scrolling behavior, "smooth" adds an animation and "auto" scrolls with a jump.
+     * @group Props
+     */
+    __publicField(this, "behavior", "smooth");
+    /**
+     * A string value used to determine the display transition options.
+     * @group Props
+     */
+    __publicField(this, "showTransitionOptions", ".15s");
+    /**
+     * A string value used to determine the hiding transition options.
+     * @group Props
+     */
+    __publicField(this, "hideTransitionOptions", ".15s");
+    /**
+     * Establishes a string value that labels the scroll-top button.
+     * @group Props
+     */
+    __publicField(this, "buttonAriaLabel");
+    __publicField(this, "templates");
+    __publicField(this, "iconTemplate");
+    __publicField(this, "documentScrollListener");
+    __publicField(this, "parentScrollListener");
+    __publicField(this, "visible", false);
+    __publicField(this, "overlay");
+    __publicField(this, "window");
     this.document = document;
     this.platformId = platformId;
     this.renderer = renderer;
@@ -316,83 +318,65 @@ var ScrollTop = class _ScrollTop {
       this.overlay = null;
     }
   }
-  static ɵfac = function ScrollTop_Factory(__ngFactoryType__) {
-    return new (__ngFactoryType__ || _ScrollTop)(ɵɵdirectiveInject(DOCUMENT), ɵɵdirectiveInject(PLATFORM_ID), ɵɵdirectiveInject(Renderer2), ɵɵdirectiveInject(ElementRef), ɵɵdirectiveInject(ChangeDetectorRef), ɵɵdirectiveInject(PrimeNGConfig));
-  };
-  static ɵcmp = ɵɵdefineComponent({
-    type: _ScrollTop,
-    selectors: [["p-scrollTop"]],
-    contentQueries: function ScrollTop_ContentQueries(rf, ctx, dirIndex) {
-      if (rf & 1) {
-        ɵɵcontentQuery(dirIndex, PrimeTemplate, 4);
-      }
-      if (rf & 2) {
-        let _t;
-        ɵɵqueryRefresh(_t = ɵɵloadQuery()) && (ctx.templates = _t);
-      }
-    },
-    hostAttrs: [1, "p-element"],
-    inputs: {
-      styleClass: "styleClass",
-      style: "style",
-      target: "target",
-      threshold: [2, "threshold", "threshold", numberAttribute],
-      icon: "icon",
-      behavior: "behavior",
-      showTransitionOptions: "showTransitionOptions",
-      hideTransitionOptions: "hideTransitionOptions",
-      buttonAriaLabel: "buttonAriaLabel"
-    },
-    features: [ɵɵInputTransformsFeature],
-    decls: 1,
-    vars: 1,
-    consts: [["type", "button", 3, "ngClass", "class", "ngStyle", "click", 4, "ngIf"], ["type", "button", 3, "click", "ngClass", "ngStyle"], [4, "ngIf"], [4, "ngTemplateOutlet", "ngTemplateOutletContext"], [3, "class", "ngClass", 4, "ngIf"], [3, "styleClass", "ngStyle", 4, "ngIf"], [3, "ngClass"], [3, "styleClass", "ngStyle"], [3, "ngIf"]],
-    template: function ScrollTop_Template(rf, ctx) {
-      if (rf & 1) {
-        ɵɵtemplate(0, ScrollTop_button_0_Template, 3, 15, "button", 0);
-      }
-      if (rf & 2) {
-        ɵɵproperty("ngIf", ctx.visible);
-      }
-    },
-    dependencies: () => [NgClass, NgIf, NgTemplateOutlet, NgStyle, ChevronUpIcon],
-    styles: ["@layer primeng{.p-scrolltop{position:fixed;bottom:20px;right:20px;display:flex;align-items:center;justify-content:center}.p-scrolltop-sticky{position:sticky}.p-scrolltop-sticky.p-link{margin-left:auto}}\n"],
-    encapsulation: 2,
-    data: {
-      animation: [trigger("animation", [state("void", style({
-        opacity: 0
-      })), state("open", style({
-        opacity: 1
-      })), transition("void => open", animate("{{showTransitionParams}}")), transition("open => void", animate("{{hideTransitionParams}}"))])]
-    },
-    changeDetection: 0
-  });
 };
+__publicField(_ScrollTop, "ɵfac", function ScrollTop_Factory(__ngFactoryType__) {
+  return new (__ngFactoryType__ || _ScrollTop)(ɵɵdirectiveInject(DOCUMENT), ɵɵdirectiveInject(PLATFORM_ID), ɵɵdirectiveInject(Renderer2), ɵɵdirectiveInject(ElementRef), ɵɵdirectiveInject(ChangeDetectorRef), ɵɵdirectiveInject(PrimeNGConfig));
+});
+__publicField(_ScrollTop, "ɵcmp", ɵɵdefineComponent({
+  type: _ScrollTop,
+  selectors: [["p-scrollTop"]],
+  contentQueries: function ScrollTop_ContentQueries(rf, ctx, dirIndex) {
+    if (rf & 1) {
+      ɵɵcontentQuery(dirIndex, PrimeTemplate, 4);
+    }
+    if (rf & 2) {
+      let _t;
+      ɵɵqueryRefresh(_t = ɵɵloadQuery()) && (ctx.templates = _t);
+    }
+  },
+  hostAttrs: [1, "p-element"],
+  inputs: {
+    styleClass: "styleClass",
+    style: "style",
+    target: "target",
+    threshold: [2, "threshold", "threshold", numberAttribute],
+    icon: "icon",
+    behavior: "behavior",
+    showTransitionOptions: "showTransitionOptions",
+    hideTransitionOptions: "hideTransitionOptions",
+    buttonAriaLabel: "buttonAriaLabel"
+  },
+  features: [ɵɵInputTransformsFeature],
+  decls: 1,
+  vars: 1,
+  consts: [["type", "button", 3, "ngClass", "class", "ngStyle", "click", 4, "ngIf"], ["type", "button", 3, "click", "ngClass", "ngStyle"], [4, "ngIf"], [4, "ngTemplateOutlet", "ngTemplateOutletContext"], [3, "class", "ngClass", 4, "ngIf"], [3, "styleClass", "ngStyle", 4, "ngIf"], [3, "ngClass"], [3, "styleClass", "ngStyle"], [3, "ngIf"]],
+  template: function ScrollTop_Template(rf, ctx) {
+    if (rf & 1) {
+      ɵɵtemplate(0, ScrollTop_button_0_Template, 3, 15, "button", 0);
+    }
+    if (rf & 2) {
+      ɵɵproperty("ngIf", ctx.visible);
+    }
+  },
+  dependencies: () => [NgClass, NgIf, NgTemplateOutlet, NgStyle, ChevronUpIcon],
+  styles: ["@layer primeng{.p-scrolltop{position:fixed;bottom:20px;right:20px;display:flex;align-items:center;justify-content:center}.p-scrolltop-sticky{position:sticky}.p-scrolltop-sticky.p-link{margin-left:auto}}\n"],
+  encapsulation: 2,
+  data: {
+    animation: [trigger("animation", [state("void", style({
+      opacity: 0
+    })), state("open", style({
+      opacity: 1
+    })), transition("void => open", animate("{{showTransitionParams}}")), transition("open => void", animate("{{hideTransitionParams}}"))])]
+  },
+  changeDetection: 0
+}));
+var ScrollTop = _ScrollTop;
 (() => {
   (typeof ngDevMode === "undefined" || ngDevMode) && setClassMetadata(ScrollTop, [{
     type: Component,
     args: [{
       selector: "p-scrollTop",
-      template: `
-        <button
-            *ngIf="visible"
-            [@animation]="{ value: 'open', params: { showTransitionParams: showTransitionOptions, hideTransitionParams: hideTransitionOptions } }"
-            (@animation.start)="onEnter($event)"
-            (@animation.done)="onLeave($event)"
-            [attr.aria-label]="buttonAriaLabel"
-            [ngClass]="containerClass()"
-            (click)="onClick()"
-            [class]="styleClass"
-            [ngStyle]="style"
-            type="button"
-        >
-            <ng-container *ngIf="!iconTemplate">
-                <span *ngIf="icon" [class]="icon" [ngClass]="'p-scrolltop-icon'"></span>
-                <ChevronUpIcon *ngIf="!icon" [styleClass]="'p-scrolltop-icon'" [ngStyle]="{ 'font-size': '1rem', scale: '1.5' }" />
-            </ng-container>
-            <ng-template [ngIf]="!icon" *ngTemplateOutlet="iconTemplate; context: { styleClass: 'p-scrolltop-icon' }"></ng-template>
-        </button>
-    `,
+      template: '\n        <button\n            *ngIf="visible"\n            [@animation]="{ value: \'open\', params: { showTransitionParams: showTransitionOptions, hideTransitionParams: hideTransitionOptions } }"\n            (@animation.start)="onEnter($event)"\n            (@animation.done)="onLeave($event)"\n            [attr.aria-label]="buttonAriaLabel"\n            [ngClass]="containerClass()"\n            (click)="onClick()"\n            [class]="styleClass"\n            [ngStyle]="style"\n            type="button"\n        >\n            <ng-container *ngIf="!iconTemplate">\n                <span *ngIf="icon" [class]="icon" [ngClass]="\'p-scrolltop-icon\'"></span>\n                <ChevronUpIcon *ngIf="!icon" [styleClass]="\'p-scrolltop-icon\'" [ngStyle]="{ \'font-size\': \'1rem\', scale: \'1.5\' }" />\n            </ng-container>\n            <ng-template [ngIf]="!icon" *ngTemplateOutlet="iconTemplate; context: { styleClass: \'p-scrolltop-icon\' }"></ng-template>\n        </button>\n    ',
       changeDetection: ChangeDetectionStrategy.OnPush,
       encapsulation: ViewEncapsulation$1.None,
       animations: [trigger("animation", [state("void", style({
@@ -462,20 +446,21 @@ var ScrollTop = class _ScrollTop {
     }]
   });
 })();
-var ScrollTopModule = class _ScrollTopModule {
-  static ɵfac = function ScrollTopModule_Factory(__ngFactoryType__) {
-    return new (__ngFactoryType__ || _ScrollTopModule)();
-  };
-  static ɵmod = ɵɵdefineNgModule({
-    type: _ScrollTopModule,
-    declarations: [ScrollTop],
-    imports: [CommonModule, ChevronUpIcon, SharedModule],
-    exports: [ScrollTop, SharedModule]
-  });
-  static ɵinj = ɵɵdefineInjector({
-    imports: [CommonModule, ChevronUpIcon, SharedModule, SharedModule]
-  });
+var _ScrollTopModule = class _ScrollTopModule {
 };
+__publicField(_ScrollTopModule, "ɵfac", function ScrollTopModule_Factory(__ngFactoryType__) {
+  return new (__ngFactoryType__ || _ScrollTopModule)();
+});
+__publicField(_ScrollTopModule, "ɵmod", ɵɵdefineNgModule({
+  type: _ScrollTopModule,
+  declarations: [ScrollTop],
+  imports: [CommonModule, ChevronUpIcon, SharedModule],
+  exports: [ScrollTop, SharedModule]
+}));
+__publicField(_ScrollTopModule, "ɵinj", ɵɵdefineInjector({
+  imports: [CommonModule, ChevronUpIcon, SharedModule, SharedModule]
+}));
+var ScrollTopModule = _ScrollTopModule;
 (() => {
   (typeof ngDevMode === "undefined" || ngDevMode) && setClassMetadata(ScrollTopModule, [{
     type: NgModule,

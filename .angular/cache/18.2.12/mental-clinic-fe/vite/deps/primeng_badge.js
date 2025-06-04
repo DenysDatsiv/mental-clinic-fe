@@ -1,19 +1,19 @@
 import {
   SharedModule
-} from "./chunk-TQSVMJ6K.js";
+} from "./chunk-ZROJCIWL.js";
 import {
   UniqueComponentId
-} from "./chunk-3OF44R55.js";
+} from "./chunk-U3NLM53U.js";
 import {
   DomHandler
-} from "./chunk-BUGEQH7Q.js";
+} from "./chunk-LB42WWNC.js";
 import {
   CommonModule,
   DOCUMENT,
   NgClass,
   NgIf,
   NgStyle
-} from "./chunk-UBZYO7FG.js";
+} from "./chunk-KUZ63KOD.js";
 import {
   ChangeDetectionStrategy,
   Component,
@@ -42,11 +42,13 @@ import {
   ɵɵtemplate,
   ɵɵtext,
   ɵɵtextInterpolate
-} from "./chunk-ZI2Q76R4.js";
-import "./chunk-5OPE3T2R.js";
+} from "./chunk-R75KKECJ.js";
 import "./chunk-4N4GOYJH.js";
+import "./chunk-5OPE3T2R.js";
 import "./chunk-FHTVLBLO.js";
-import "./chunk-3OV72XIM.js";
+import {
+  __publicField
+} from "./chunk-IJZFAMY6.js";
 
 // node_modules/primeng/fesm2022/primeng-badge.mjs
 function Badge_span_0_Template(rf, ctx) {
@@ -63,20 +65,48 @@ function Badge_span_0_Template(rf, ctx) {
     ɵɵtextInterpolate(ctx_r0.value);
   }
 }
-var BadgeDirective = class _BadgeDirective {
-  document;
-  el;
-  renderer;
-  /**
-   * When specified, disables the component.
-   * @group Props
-   */
-  disabled;
-  /**
-   * Size of the badge, valid options are "large" and "xlarge".
-   * @group Props
-   */
-  badgeSize;
+var _BadgeDirective = class _BadgeDirective {
+  constructor(document, el, renderer) {
+    __publicField(this, "document");
+    __publicField(this, "el");
+    __publicField(this, "renderer");
+    /**
+     * When specified, disables the component.
+     * @group Props
+     */
+    __publicField(this, "disabled");
+    /**
+     * Size of the badge, valid options are "large" and "xlarge".
+     * @group Props
+     */
+    __publicField(this, "badgeSize");
+    __publicField(this, "_size");
+    /**
+     * Severity type of the badge.
+     * @group Props
+     */
+    __publicField(this, "severity");
+    /**
+     * Value to display inside the badge.
+     * @group Props
+     */
+    __publicField(this, "value");
+    /**
+     * Inline style of the element.
+     * @group Props
+     */
+    __publicField(this, "badgeStyle");
+    /**
+     * Class of the element.
+     * @group Props
+     */
+    __publicField(this, "badgeStyleClass");
+    __publicField(this, "id");
+    __publicField(this, "badgeEl");
+    this.document = document;
+    this.el = el;
+    this.renderer = renderer;
+  }
   /**
    * Size of the badge, valid options are "large" and "xlarge".
    * @group Props
@@ -89,39 +119,11 @@ var BadgeDirective = class _BadgeDirective {
   get size() {
     return this._size;
   }
-  _size;
-  /**
-   * Severity type of the badge.
-   * @group Props
-   */
-  severity;
-  /**
-   * Value to display inside the badge.
-   * @group Props
-   */
-  value;
-  /**
-   * Inline style of the element.
-   * @group Props
-   */
-  badgeStyle;
-  /**
-   * Class of the element.
-   * @group Props
-   */
-  badgeStyleClass;
-  id;
-  badgeEl;
   get activeElement() {
     return this.el.nativeElement.nodeName.indexOf("-") != -1 ? this.el.nativeElement.firstChild : this.el.nativeElement;
   }
   get canUpdateBadge() {
     return this.id && !this.disabled;
-  }
-  constructor(document, el, renderer) {
-    this.document = document;
-    this.el = el;
-    this.renderer = renderer;
   }
   ngOnChanges({
     value,
@@ -155,7 +157,7 @@ var BadgeDirective = class _BadgeDirective {
     this.renderBadgeContent();
   }
   setValue(element) {
-    const badge = element ?? this.document.getElementById(this.id);
+    const badge = element != null ? element : this.document.getElementById(this.id);
     if (!badge) {
       return;
     }
@@ -179,7 +181,7 @@ var BadgeDirective = class _BadgeDirective {
     this.renderer.appendChild(badge, this.document.createTextNode(badgeValue));
   }
   setSizeClasses(element) {
-    const badge = element ?? this.document.getElementById(this.id);
+    const badge = element != null ? element : this.document.getElementById(this.id);
     if (!badge) {
       return;
     }
@@ -233,23 +235,24 @@ var BadgeDirective = class _BadgeDirective {
     }
   }
   setSeverity(oldSeverity, element) {
-    const badge = element ?? this.document.getElementById(this.id);
+    const badge = element != null ? element : this.document.getElementById(this.id);
     if (!badge) {
       return;
     }
     if (this.severity) {
-      DomHandler.addClass(badge, `p-badge-${this.severity}`);
+      DomHandler.addClass(badge, "p-badge-".concat(this.severity));
     }
     if (oldSeverity) {
-      DomHandler.removeClass(badge, `p-badge-${oldSeverity}`);
+      DomHandler.removeClass(badge, "p-badge-".concat(oldSeverity));
     }
   }
   toggleDisableState() {
+    var _a;
     if (!this.id) {
       return;
     }
     if (this.disabled) {
-      const badge = this.activeElement?.querySelector(`#${this.id}`);
+      const badge = (_a = this.activeElement) == null ? void 0 : _a.querySelector("#".concat(this.id));
       if (badge) {
         this.renderer.removeChild(this.activeElement, badge);
       }
@@ -257,25 +260,26 @@ var BadgeDirective = class _BadgeDirective {
       this.renderBadgeContent();
     }
   }
-  static ɵfac = function BadgeDirective_Factory(__ngFactoryType__) {
-    return new (__ngFactoryType__ || _BadgeDirective)(ɵɵdirectiveInject(DOCUMENT), ɵɵdirectiveInject(ElementRef), ɵɵdirectiveInject(Renderer2));
-  };
-  static ɵdir = ɵɵdefineDirective({
-    type: _BadgeDirective,
-    selectors: [["", "pBadge", ""]],
-    hostAttrs: [1, "p-element"],
-    inputs: {
-      disabled: [0, "badgeDisabled", "disabled"],
-      badgeSize: "badgeSize",
-      size: "size",
-      severity: "severity",
-      value: "value",
-      badgeStyle: "badgeStyle",
-      badgeStyleClass: "badgeStyleClass"
-    },
-    features: [ɵɵNgOnChangesFeature]
-  });
 };
+__publicField(_BadgeDirective, "ɵfac", function BadgeDirective_Factory(__ngFactoryType__) {
+  return new (__ngFactoryType__ || _BadgeDirective)(ɵɵdirectiveInject(DOCUMENT), ɵɵdirectiveInject(ElementRef), ɵɵdirectiveInject(Renderer2));
+});
+__publicField(_BadgeDirective, "ɵdir", ɵɵdefineDirective({
+  type: _BadgeDirective,
+  selectors: [["", "pBadge", ""]],
+  hostAttrs: [1, "p-element"],
+  inputs: {
+    disabled: [0, "badgeDisabled", "disabled"],
+    badgeSize: "badgeSize",
+    size: "size",
+    severity: "severity",
+    value: "value",
+    badgeStyle: "badgeStyle",
+    badgeStyleClass: "badgeStyleClass"
+  },
+  features: [ɵɵNgOnChangesFeature]
+}));
+var BadgeDirective = _BadgeDirective;
 (() => {
   (typeof ngDevMode === "undefined" || ngDevMode) && setClassMetadata(BadgeDirective, [{
     type: Directive,
@@ -320,37 +324,40 @@ var BadgeDirective = class _BadgeDirective {
     }]
   });
 })();
-var Badge = class _Badge {
-  /**
-   * Class of the element.
-   * @group Props
-   */
-  styleClass;
-  /**
-   * Inline style of the element.
-   * @group Props
-   */
-  style;
-  /**
-   * Size of the badge, valid options are "large" and "xlarge".
-   * @group Props
-   */
-  badgeSize;
-  /**
-   * Severity type of the badge.
-   * @group Props
-   */
-  severity;
-  /**
-   * Value to display inside the badge.
-   * @group Props
-   */
-  value;
-  /**
-   * When specified, disables the component.
-   * @group Props
-   */
-  badgeDisabled = false;
+var _Badge = class _Badge {
+  constructor() {
+    /**
+     * Class of the element.
+     * @group Props
+     */
+    __publicField(this, "styleClass");
+    /**
+     * Inline style of the element.
+     * @group Props
+     */
+    __publicField(this, "style");
+    /**
+     * Size of the badge, valid options are "large" and "xlarge".
+     * @group Props
+     */
+    __publicField(this, "badgeSize");
+    /**
+     * Severity type of the badge.
+     * @group Props
+     */
+    __publicField(this, "severity");
+    /**
+     * Value to display inside the badge.
+     * @group Props
+     */
+    __publicField(this, "value");
+    /**
+     * When specified, disables the component.
+     * @group Props
+     */
+    __publicField(this, "badgeDisabled", false);
+    __publicField(this, "_size");
+  }
   /**
    * Size of the badge, valid options are "large" and "xlarge".
    * @group Props
@@ -363,56 +370,56 @@ var Badge = class _Badge {
   get size() {
     return this._size;
   }
-  _size;
   containerClass() {
     return {
       "p-badge p-component": true,
       "p-badge-no-gutter": this.value != void 0 && String(this.value).length === 1,
       "p-badge-lg": this.badgeSize === "large" || this.size === "large",
       "p-badge-xl": this.badgeSize === "xlarge" || this.size === "xlarge",
-      [`p-badge-${this.severity}`]: this.severity
+      ["p-badge-".concat(this.severity)]: this.severity
     };
   }
-  static ɵfac = function Badge_Factory(__ngFactoryType__) {
-    return new (__ngFactoryType__ || _Badge)();
-  };
-  static ɵcmp = ɵɵdefineComponent({
-    type: _Badge,
-    selectors: [["p-badge"]],
-    hostAttrs: [1, "p-element"],
-    inputs: {
-      styleClass: "styleClass",
-      style: "style",
-      badgeSize: "badgeSize",
-      severity: "severity",
-      value: "value",
-      badgeDisabled: [2, "badgeDisabled", "badgeDisabled", booleanAttribute],
-      size: "size"
-    },
-    features: [ɵɵInputTransformsFeature],
-    decls: 1,
-    vars: 1,
-    consts: [[3, "ngClass", "class", "ngStyle", 4, "ngIf"], [3, "ngClass", "ngStyle"]],
-    template: function Badge_Template(rf, ctx) {
-      if (rf & 1) {
-        ɵɵtemplate(0, Badge_span_0_Template, 2, 5, "span", 0);
-      }
-      if (rf & 2) {
-        ɵɵproperty("ngIf", !ctx.badgeDisabled);
-      }
-    },
-    dependencies: [NgClass, NgIf, NgStyle],
-    styles: ["@layer primeng{.p-badge{display:inline-block;border-radius:10px;text-align:center;padding:0 .5rem}.p-overlay-badge{position:relative}.p-overlay-badge .p-badge{position:absolute;top:0;right:0;transform:translate(50%,-50%);transform-origin:100% 0;margin:0}.p-badge-dot{width:.5rem;min-width:.5rem;height:.5rem;border-radius:50%;padding:0}.p-badge-no-gutter{padding:0;border-radius:50%}}\n"],
-    encapsulation: 2,
-    changeDetection: 0
-  });
 };
+__publicField(_Badge, "ɵfac", function Badge_Factory(__ngFactoryType__) {
+  return new (__ngFactoryType__ || _Badge)();
+});
+__publicField(_Badge, "ɵcmp", ɵɵdefineComponent({
+  type: _Badge,
+  selectors: [["p-badge"]],
+  hostAttrs: [1, "p-element"],
+  inputs: {
+    styleClass: "styleClass",
+    style: "style",
+    badgeSize: "badgeSize",
+    severity: "severity",
+    value: "value",
+    badgeDisabled: [2, "badgeDisabled", "badgeDisabled", booleanAttribute],
+    size: "size"
+  },
+  features: [ɵɵInputTransformsFeature],
+  decls: 1,
+  vars: 1,
+  consts: [[3, "ngClass", "class", "ngStyle", 4, "ngIf"], [3, "ngClass", "ngStyle"]],
+  template: function Badge_Template(rf, ctx) {
+    if (rf & 1) {
+      ɵɵtemplate(0, Badge_span_0_Template, 2, 5, "span", 0);
+    }
+    if (rf & 2) {
+      ɵɵproperty("ngIf", !ctx.badgeDisabled);
+    }
+  },
+  dependencies: [NgClass, NgIf, NgStyle],
+  styles: ["@layer primeng{.p-badge{display:inline-block;border-radius:10px;text-align:center;padding:0 .5rem}.p-overlay-badge{position:relative}.p-overlay-badge .p-badge{position:absolute;top:0;right:0;transform:translate(50%,-50%);transform-origin:100% 0;margin:0}.p-badge-dot{width:.5rem;min-width:.5rem;height:.5rem;border-radius:50%;padding:0}.p-badge-no-gutter{padding:0;border-radius:50%}}\n"],
+  encapsulation: 2,
+  changeDetection: 0
+}));
+var Badge = _Badge;
 (() => {
   (typeof ngDevMode === "undefined" || ngDevMode) && setClassMetadata(Badge, [{
     type: Component,
     args: [{
       selector: "p-badge",
-      template: ` <span *ngIf="!badgeDisabled" [ngClass]="containerClass()" [class]="styleClass" [ngStyle]="style">{{ value }}</span> `,
+      template: ' <span *ngIf="!badgeDisabled" [ngClass]="containerClass()" [class]="styleClass" [ngStyle]="style">{{ value }}</span> ',
       changeDetection: ChangeDetectionStrategy.OnPush,
       encapsulation: ViewEncapsulation$1.None,
       host: {
@@ -447,20 +454,21 @@ var Badge = class _Badge {
     }]
   });
 })();
-var BadgeModule = class _BadgeModule {
-  static ɵfac = function BadgeModule_Factory(__ngFactoryType__) {
-    return new (__ngFactoryType__ || _BadgeModule)();
-  };
-  static ɵmod = ɵɵdefineNgModule({
-    type: _BadgeModule,
-    declarations: [Badge, BadgeDirective],
-    imports: [CommonModule],
-    exports: [Badge, BadgeDirective, SharedModule]
-  });
-  static ɵinj = ɵɵdefineInjector({
-    imports: [CommonModule, SharedModule]
-  });
+var _BadgeModule = class _BadgeModule {
 };
+__publicField(_BadgeModule, "ɵfac", function BadgeModule_Factory(__ngFactoryType__) {
+  return new (__ngFactoryType__ || _BadgeModule)();
+});
+__publicField(_BadgeModule, "ɵmod", ɵɵdefineNgModule({
+  type: _BadgeModule,
+  declarations: [Badge, BadgeDirective],
+  imports: [CommonModule],
+  exports: [Badge, BadgeDirective, SharedModule]
+}));
+__publicField(_BadgeModule, "ɵinj", ɵɵdefineInjector({
+  imports: [CommonModule, SharedModule]
+}));
+var BadgeModule = _BadgeModule;
 (() => {
   (typeof ngDevMode === "undefined" || ngDevMode) && setClassMetadata(BadgeModule, [{
     type: NgModule,

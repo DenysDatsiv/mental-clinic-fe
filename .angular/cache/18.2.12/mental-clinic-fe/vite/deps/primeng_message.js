@@ -1,21 +1,21 @@
 import {
   ExclamationTriangleIcon,
   InfoCircleIcon
-} from "./chunk-R3MGDMAL.js";
+} from "./chunk-K6X7NG43.js";
 import {
   CheckIcon
-} from "./chunk-T5D2NQ3S.js";
+} from "./chunk-A2QFKI6F.js";
 import {
   TimesCircleIcon
-} from "./chunk-E4M3NR5Z.js";
-import "./chunk-PXWZN6FU.js";
-import "./chunk-3OF44R55.js";
+} from "./chunk-OLOIW27Q.js";
+import "./chunk-BJLZ3T2F.js";
+import "./chunk-U3NLM53U.js";
 import {
   CommonModule,
   NgClass,
   NgIf,
   NgStyle
-} from "./chunk-UBZYO7FG.js";
+} from "./chunk-KUZ63KOD.js";
 import {
   ChangeDetectionStrategy,
   Component,
@@ -41,11 +41,13 @@ import {
   ɵɵtemplateRefExtractor,
   ɵɵtext,
   ɵɵtextInterpolate
-} from "./chunk-ZI2Q76R4.js";
-import "./chunk-5OPE3T2R.js";
+} from "./chunk-R75KKECJ.js";
 import "./chunk-4N4GOYJH.js";
+import "./chunk-5OPE3T2R.js";
 import "./chunk-FHTVLBLO.js";
-import "./chunk-3OV72XIM.js";
+import {
+  __publicField
+} from "./chunk-IJZFAMY6.js";
 
 // node_modules/primeng/fesm2022/primeng-message.mjs
 function UIMessage_CheckIcon_1_Template(rf, ctx) {
@@ -122,32 +124,34 @@ function UIMessage_ng_template_6_Template(rf, ctx) {
     ɵɵproperty("ngIf", ctx_r0.escape);
   }
 }
-var UIMessage = class _UIMessage {
-  /**
-   * Severity level of the message.
-   * @group Props
-   */
-  severity;
-  /**
-   * Text content.
-   * @group Props
-   */
-  text;
-  /**
-   * Whether displaying messages would be escaped or not.
-   * @group Props
-   */
-  escape = true;
-  /**
-   * Inline style of the component.
-   * @group Props
-   */
-  style;
-  /**
-   * Style class of the component.
-   * @group Props
-   */
-  styleClass;
+var _UIMessage = class _UIMessage {
+  constructor() {
+    /**
+     * Severity level of the message.
+     * @group Props
+     */
+    __publicField(this, "severity");
+    /**
+     * Text content.
+     * @group Props
+     */
+    __publicField(this, "text");
+    /**
+     * Whether displaying messages would be escaped or not.
+     * @group Props
+     */
+    __publicField(this, "escape", true);
+    /**
+     * Inline style of the component.
+     * @group Props
+     */
+    __publicField(this, "style");
+    /**
+     * Style class of the component.
+     * @group Props
+     */
+    __publicField(this, "styleClass");
+  }
   get icon() {
     if (this.severity) {
       return this.severity;
@@ -157,75 +161,63 @@ var UIMessage = class _UIMessage {
   }
   get containerClass() {
     return {
-      [`p-inline-message-${this.severity}`]: this.severity,
+      ["p-inline-message-".concat(this.severity)]: this.severity,
       "p-inline-message-icon-only": this.text == null
     };
   }
-  static ɵfac = function UIMessage_Factory(__ngFactoryType__) {
-    return new (__ngFactoryType__ || _UIMessage)();
-  };
-  static ɵcmp = ɵɵdefineComponent({
-    type: _UIMessage,
-    selectors: [["p-message"]],
-    hostAttrs: [1, "p-element"],
-    inputs: {
-      severity: "severity",
-      text: "text",
-      escape: [2, "escape", "escape", booleanAttribute],
-      style: "style",
-      styleClass: "styleClass"
-    },
-    features: [ɵɵInputTransformsFeature],
-    decls: 8,
-    vars: 10,
-    consts: [["escapeOut", ""], ["aria-live", "polite", 1, "p-inline-message", "p-component", "p-inline-message", 3, "ngStyle", "ngClass"], [3, "styleClass", 4, "ngIf"], [4, "ngIf", "ngIfElse"], [3, "styleClass"], ["class", "p-inline-message-text", 3, "innerHTML", 4, "ngIf"], [1, "p-inline-message-text", 3, "innerHTML"], ["class", "p-inline-message-text", 4, "ngIf"], [1, "p-inline-message-text"]],
-    template: function UIMessage_Template(rf, ctx) {
-      if (rf & 1) {
-        ɵɵelementStart(0, "div", 1);
-        ɵɵtemplate(1, UIMessage_CheckIcon_1_Template, 1, 1, "CheckIcon", 2)(2, UIMessage_InfoCircleIcon_2_Template, 1, 1, "InfoCircleIcon", 2)(3, UIMessage_TimesCircleIcon_3_Template, 1, 1, "TimesCircleIcon", 2)(4, UIMessage_ExclamationTriangleIcon_4_Template, 1, 1, "ExclamationTriangleIcon", 2)(5, UIMessage_div_5_Template, 2, 1, "div", 3)(6, UIMessage_ng_template_6_Template, 1, 1, "ng-template", null, 0, ɵɵtemplateRefExtractor);
-        ɵɵelementEnd();
-      }
-      if (rf & 2) {
-        const escapeOut_r2 = ɵɵreference(7);
-        ɵɵclassMap(ctx.styleClass);
-        ɵɵproperty("ngStyle", ctx.style)("ngClass", ctx.containerClass);
-        ɵɵadvance();
-        ɵɵproperty("ngIf", ctx.icon === "success");
-        ɵɵadvance();
-        ɵɵproperty("ngIf", ctx.icon === "info");
-        ɵɵadvance();
-        ɵɵproperty("ngIf", ctx.icon === "error");
-        ɵɵadvance();
-        ɵɵproperty("ngIf", ctx.icon === "warn");
-        ɵɵadvance();
-        ɵɵproperty("ngIf", !ctx.escape)("ngIfElse", escapeOut_r2);
-      }
-    },
-    dependencies: () => [NgClass, NgIf, NgStyle, CheckIcon, InfoCircleIcon, TimesCircleIcon, ExclamationTriangleIcon],
-    styles: ["@layer primeng{.p-inline-message{display:inline-flex;align-items:center;justify-content:center;vertical-align:top}.p-inline-message-icon-only .p-inline-message-text{visibility:hidden;width:0}.p-fluid .p-inline-message{display:flex}}\n"],
-    encapsulation: 2,
-    changeDetection: 0
-  });
 };
+__publicField(_UIMessage, "ɵfac", function UIMessage_Factory(__ngFactoryType__) {
+  return new (__ngFactoryType__ || _UIMessage)();
+});
+__publicField(_UIMessage, "ɵcmp", ɵɵdefineComponent({
+  type: _UIMessage,
+  selectors: [["p-message"]],
+  hostAttrs: [1, "p-element"],
+  inputs: {
+    severity: "severity",
+    text: "text",
+    escape: [2, "escape", "escape", booleanAttribute],
+    style: "style",
+    styleClass: "styleClass"
+  },
+  features: [ɵɵInputTransformsFeature],
+  decls: 8,
+  vars: 10,
+  consts: [["escapeOut", ""], ["aria-live", "polite", 1, "p-inline-message", "p-component", "p-inline-message", 3, "ngStyle", "ngClass"], [3, "styleClass", 4, "ngIf"], [4, "ngIf", "ngIfElse"], [3, "styleClass"], ["class", "p-inline-message-text", 3, "innerHTML", 4, "ngIf"], [1, "p-inline-message-text", 3, "innerHTML"], ["class", "p-inline-message-text", 4, "ngIf"], [1, "p-inline-message-text"]],
+  template: function UIMessage_Template(rf, ctx) {
+    if (rf & 1) {
+      ɵɵelementStart(0, "div", 1);
+      ɵɵtemplate(1, UIMessage_CheckIcon_1_Template, 1, 1, "CheckIcon", 2)(2, UIMessage_InfoCircleIcon_2_Template, 1, 1, "InfoCircleIcon", 2)(3, UIMessage_TimesCircleIcon_3_Template, 1, 1, "TimesCircleIcon", 2)(4, UIMessage_ExclamationTriangleIcon_4_Template, 1, 1, "ExclamationTriangleIcon", 2)(5, UIMessage_div_5_Template, 2, 1, "div", 3)(6, UIMessage_ng_template_6_Template, 1, 1, "ng-template", null, 0, ɵɵtemplateRefExtractor);
+      ɵɵelementEnd();
+    }
+    if (rf & 2) {
+      const escapeOut_r2 = ɵɵreference(7);
+      ɵɵclassMap(ctx.styleClass);
+      ɵɵproperty("ngStyle", ctx.style)("ngClass", ctx.containerClass);
+      ɵɵadvance();
+      ɵɵproperty("ngIf", ctx.icon === "success");
+      ɵɵadvance();
+      ɵɵproperty("ngIf", ctx.icon === "info");
+      ɵɵadvance();
+      ɵɵproperty("ngIf", ctx.icon === "error");
+      ɵɵadvance();
+      ɵɵproperty("ngIf", ctx.icon === "warn");
+      ɵɵadvance();
+      ɵɵproperty("ngIf", !ctx.escape)("ngIfElse", escapeOut_r2);
+    }
+  },
+  dependencies: () => [NgClass, NgIf, NgStyle, CheckIcon, InfoCircleIcon, TimesCircleIcon, ExclamationTriangleIcon],
+  styles: ["@layer primeng{.p-inline-message{display:inline-flex;align-items:center;justify-content:center;vertical-align:top}.p-inline-message-icon-only .p-inline-message-text{visibility:hidden;width:0}.p-fluid .p-inline-message{display:flex}}\n"],
+  encapsulation: 2,
+  changeDetection: 0
+}));
+var UIMessage = _UIMessage;
 (() => {
   (typeof ngDevMode === "undefined" || ngDevMode) && setClassMetadata(UIMessage, [{
     type: Component,
     args: [{
       selector: "p-message",
-      template: `
-        <div aria-live="polite" class="p-inline-message p-component p-inline-message" [ngStyle]="style" [class]="styleClass" [ngClass]="containerClass">
-            <CheckIcon *ngIf="icon === 'success'" [styleClass]="'p-inline-message-icon'" />
-            <InfoCircleIcon *ngIf="icon === 'info'" [styleClass]="'p-inline-message-icon'" />
-            <TimesCircleIcon *ngIf="icon === 'error'" [styleClass]="'p-inline-message-icon'" />
-            <ExclamationTriangleIcon *ngIf="icon === 'warn'" [styleClass]="'p-inline-message-icon'" />
-            <div *ngIf="!escape; else escapeOut">
-                <span *ngIf="!escape" class="p-inline-message-text" [innerHTML]="text"></span>
-            </div>
-            <ng-template #escapeOut>
-                <span *ngIf="escape" class="p-inline-message-text">{{ text }}</span>
-            </ng-template>
-        </div>
-    `,
+      template: '\n        <div aria-live="polite" class="p-inline-message p-component p-inline-message" [ngStyle]="style" [class]="styleClass" [ngClass]="containerClass">\n            <CheckIcon *ngIf="icon === \'success\'" [styleClass]="\'p-inline-message-icon\'" />\n            <InfoCircleIcon *ngIf="icon === \'info\'" [styleClass]="\'p-inline-message-icon\'" />\n            <TimesCircleIcon *ngIf="icon === \'error\'" [styleClass]="\'p-inline-message-icon\'" />\n            <ExclamationTriangleIcon *ngIf="icon === \'warn\'" [styleClass]="\'p-inline-message-icon\'" />\n            <div *ngIf="!escape; else escapeOut">\n                <span *ngIf="!escape" class="p-inline-message-text" [innerHTML]="text"></span>\n            </div>\n            <ng-template #escapeOut>\n                <span *ngIf="escape" class="p-inline-message-text">{{ text }}</span>\n            </ng-template>\n        </div>\n    ',
       changeDetection: ChangeDetectionStrategy.OnPush,
       encapsulation: ViewEncapsulation$1.None,
       host: {
@@ -254,20 +246,21 @@ var UIMessage = class _UIMessage {
     }]
   });
 })();
-var MessageModule = class _MessageModule {
-  static ɵfac = function MessageModule_Factory(__ngFactoryType__) {
-    return new (__ngFactoryType__ || _MessageModule)();
-  };
-  static ɵmod = ɵɵdefineNgModule({
-    type: _MessageModule,
-    declarations: [UIMessage],
-    imports: [CommonModule, CheckIcon, InfoCircleIcon, TimesCircleIcon, ExclamationTriangleIcon],
-    exports: [UIMessage]
-  });
-  static ɵinj = ɵɵdefineInjector({
-    imports: [CommonModule, CheckIcon, InfoCircleIcon, TimesCircleIcon, ExclamationTriangleIcon]
-  });
+var _MessageModule = class _MessageModule {
 };
+__publicField(_MessageModule, "ɵfac", function MessageModule_Factory(__ngFactoryType__) {
+  return new (__ngFactoryType__ || _MessageModule)();
+});
+__publicField(_MessageModule, "ɵmod", ɵɵdefineNgModule({
+  type: _MessageModule,
+  declarations: [UIMessage],
+  imports: [CommonModule, CheckIcon, InfoCircleIcon, TimesCircleIcon, ExclamationTriangleIcon],
+  exports: [UIMessage]
+}));
+__publicField(_MessageModule, "ɵinj", ɵɵdefineInjector({
+  imports: [CommonModule, CheckIcon, InfoCircleIcon, TimesCircleIcon, ExclamationTriangleIcon]
+}));
+var MessageModule = _MessageModule;
 (() => {
   (typeof ngDevMode === "undefined" || ngDevMode) && setClassMetadata(MessageModule, [{
     type: NgModule,

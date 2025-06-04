@@ -1,13 +1,13 @@
 import {
   AutoFocus,
   AutoFocusModule
-} from "./chunk-32JR77BM.js";
+} from "./chunk-LND2F6FW.js";
 import {
   NG_VALUE_ACCESSOR
-} from "./chunk-B7GQUK3J.js";
+} from "./chunk-ZOG4HQFG.js";
 import {
   DomHandler
-} from "./chunk-BUGEQH7Q.js";
+} from "./chunk-LB42WWNC.js";
 import {
   CommonModule,
   DOCUMENT,
@@ -15,7 +15,7 @@ import {
   NgIf,
   NgStyle,
   isPlatformBrowser
-} from "./chunk-UBZYO7FG.js";
+} from "./chunk-KUZ63KOD.js";
 import {
   ChangeDetectionStrategy,
   ChangeDetectorRef,
@@ -61,11 +61,13 @@ import {
   ɵɵstyleProp,
   ɵɵtemplate,
   ɵɵviewQuery
-} from "./chunk-ZI2Q76R4.js";
-import "./chunk-5OPE3T2R.js";
+} from "./chunk-R75KKECJ.js";
 import "./chunk-4N4GOYJH.js";
+import "./chunk-5OPE3T2R.js";
 import "./chunk-FHTVLBLO.js";
-import "./chunk-3OV72XIM.js";
+import {
+  __publicField
+} from "./chunk-IJZFAMY6.js";
 
 // node_modules/primeng/fesm2022/primeng-slider.mjs
 var _c0 = ["sliderHandle"];
@@ -246,117 +248,117 @@ var SLIDER_VALUE_ACCESSOR = {
   useExisting: forwardRef(() => Slider),
   multi: true
 };
-var Slider = class _Slider {
-  document;
-  platformId;
-  el;
-  renderer;
-  ngZone;
-  cd;
-  /**
-   * When enabled, displays an animation on click of the slider bar.
-   * @group Props
-   */
-  animate;
-  /**
-   * When present, it specifies that the element should be disabled.
-   * @group Props
-   */
-  disabled;
-  /**
-   * Mininum boundary value.
-   * @group Props
-   */
-  min = 0;
-  /**
-   * Maximum boundary value.
-   * @group Props
-   */
-  max = 100;
-  /**
-   * Orientation of the slider.
-   * @group Props
-   */
-  orientation = "horizontal";
-  /**
-   * Step factor to increment/decrement the value.
-   * @group Props
-   */
-  step;
-  /**
-   * When specified, allows two boundary values to be picked.
-   * @group Props
-   */
-  range;
-  /**
-   * Inline style of the component.
-   * @group Props
-   */
-  style;
-  /**
-   * Style class of the component.
-   * @group Props
-   */
-  styleClass;
-  /**
-   * Defines a string that labels the input for accessibility.
-   * @group Props
-   */
-  ariaLabel;
-  /**
-   * Establishes relationships between the component and label(s) where its value should be one or more element IDs.
-   * @group Props
-   */
-  ariaLabelledBy;
-  /**
-   * Index of the element in tabbing order.
-   * @group Props
-   */
-  tabindex = 0;
-  /**
-   * When present, it specifies that the component should automatically get focus on load.
-   * @group Props
-   */
-  autofocus;
-  /**
-   * Callback to invoke on value change.
-   * @param {SliderChangeEvent} event - Custom value change event.
-   * @group Emits
-   */
-  onChange = new EventEmitter();
-  /**
-   * Callback to invoke when slide ended.
-   * @param {SliderSlideEndEvent} event - Custom slide end event.
-   * @group Emits
-   */
-  onSlideEnd = new EventEmitter();
-  sliderHandle;
-  sliderHandleStart;
-  sliderHandleEnd;
-  value;
-  values;
-  handleValue;
-  handleValues = [];
-  diff;
-  offset;
-  bottom;
-  onModelChange = () => {
-  };
-  onModelTouched = () => {
-  };
-  dragging;
-  dragListener;
-  mouseupListener;
-  initX;
-  initY;
-  barWidth;
-  barHeight;
-  sliderHandleClick;
-  handleIndex = 0;
-  startHandleValue;
-  startx;
-  starty;
+var _Slider = class _Slider {
   constructor(document, platformId, el, renderer, ngZone, cd) {
+    __publicField(this, "document");
+    __publicField(this, "platformId");
+    __publicField(this, "el");
+    __publicField(this, "renderer");
+    __publicField(this, "ngZone");
+    __publicField(this, "cd");
+    /**
+     * When enabled, displays an animation on click of the slider bar.
+     * @group Props
+     */
+    __publicField(this, "animate");
+    /**
+     * When present, it specifies that the element should be disabled.
+     * @group Props
+     */
+    __publicField(this, "disabled");
+    /**
+     * Mininum boundary value.
+     * @group Props
+     */
+    __publicField(this, "min", 0);
+    /**
+     * Maximum boundary value.
+     * @group Props
+     */
+    __publicField(this, "max", 100);
+    /**
+     * Orientation of the slider.
+     * @group Props
+     */
+    __publicField(this, "orientation", "horizontal");
+    /**
+     * Step factor to increment/decrement the value.
+     * @group Props
+     */
+    __publicField(this, "step");
+    /**
+     * When specified, allows two boundary values to be picked.
+     * @group Props
+     */
+    __publicField(this, "range");
+    /**
+     * Inline style of the component.
+     * @group Props
+     */
+    __publicField(this, "style");
+    /**
+     * Style class of the component.
+     * @group Props
+     */
+    __publicField(this, "styleClass");
+    /**
+     * Defines a string that labels the input for accessibility.
+     * @group Props
+     */
+    __publicField(this, "ariaLabel");
+    /**
+     * Establishes relationships between the component and label(s) where its value should be one or more element IDs.
+     * @group Props
+     */
+    __publicField(this, "ariaLabelledBy");
+    /**
+     * Index of the element in tabbing order.
+     * @group Props
+     */
+    __publicField(this, "tabindex", 0);
+    /**
+     * When present, it specifies that the component should automatically get focus on load.
+     * @group Props
+     */
+    __publicField(this, "autofocus");
+    /**
+     * Callback to invoke on value change.
+     * @param {SliderChangeEvent} event - Custom value change event.
+     * @group Emits
+     */
+    __publicField(this, "onChange", new EventEmitter());
+    /**
+     * Callback to invoke when slide ended.
+     * @param {SliderSlideEndEvent} event - Custom slide end event.
+     * @group Emits
+     */
+    __publicField(this, "onSlideEnd", new EventEmitter());
+    __publicField(this, "sliderHandle");
+    __publicField(this, "sliderHandleStart");
+    __publicField(this, "sliderHandleEnd");
+    __publicField(this, "value");
+    __publicField(this, "values");
+    __publicField(this, "handleValue");
+    __publicField(this, "handleValues", []);
+    __publicField(this, "diff");
+    __publicField(this, "offset");
+    __publicField(this, "bottom");
+    __publicField(this, "onModelChange", () => {
+    });
+    __publicField(this, "onModelTouched", () => {
+    });
+    __publicField(this, "dragging");
+    __publicField(this, "dragListener");
+    __publicField(this, "mouseupListener");
+    __publicField(this, "initX");
+    __publicField(this, "initY");
+    __publicField(this, "barWidth");
+    __publicField(this, "barHeight");
+    __publicField(this, "sliderHandleClick");
+    __publicField(this, "handleIndex", 0);
+    __publicField(this, "startHandleValue");
+    __publicField(this, "startx");
+    __publicField(this, "starty");
     this.document = document;
     this.platformId = platformId;
     this.el = el;
@@ -666,6 +668,7 @@ var Slider = class _Slider {
     return Math.min(this.handleValues[0], this.handleValues[1]);
   }
   updateValue(val, event) {
+    var _a, _b, _c;
     if (this.range) {
       let value = val;
       if (this.handleIndex == 0) {
@@ -678,7 +681,7 @@ var Slider = class _Slider {
             this.handleValues[0] = 100;
           }
         }
-        this.sliderHandleStart?.nativeElement.focus();
+        (_a = this.sliderHandleStart) == null ? void 0 : _a.nativeElement.focus();
       } else {
         if (value > this.max) {
           value = this.max;
@@ -690,7 +693,7 @@ var Slider = class _Slider {
         } else if (value < this.values[0]) {
           this.offset = this.handleValues[1];
         }
-        this.sliderHandleEnd?.nativeElement.focus();
+        (_b = this.sliderHandleEnd) == null ? void 0 : _b.nativeElement.focus();
       }
       if (this.step) {
         this.updateHandleValue();
@@ -718,7 +721,7 @@ var Slider = class _Slider {
         event,
         value: this.value
       });
-      this.sliderHandle?.nativeElement.focus();
+      (_c = this.sliderHandle) == null ? void 0 : _c.nativeElement.focus();
     }
     this.updateHandleValue();
   }
@@ -746,183 +749,91 @@ var Slider = class _Slider {
   get maxVal() {
     return Math.max(this.values[1], this.values[0]);
   }
-  static ɵfac = function Slider_Factory(__ngFactoryType__) {
-    return new (__ngFactoryType__ || _Slider)(ɵɵdirectiveInject(DOCUMENT), ɵɵdirectiveInject(PLATFORM_ID), ɵɵdirectiveInject(ElementRef), ɵɵdirectiveInject(Renderer2), ɵɵdirectiveInject(NgZone), ɵɵdirectiveInject(ChangeDetectorRef));
-  };
-  static ɵcmp = ɵɵdefineComponent({
-    type: _Slider,
-    selectors: [["p-slider"]],
-    viewQuery: function Slider_Query(rf, ctx) {
-      if (rf & 1) {
-        ɵɵviewQuery(_c0, 5);
-        ɵɵviewQuery(_c1, 5);
-        ɵɵviewQuery(_c2, 5);
-      }
-      if (rf & 2) {
-        let _t;
-        ɵɵqueryRefresh(_t = ɵɵloadQuery()) && (ctx.sliderHandle = _t.first);
-        ɵɵqueryRefresh(_t = ɵɵloadQuery()) && (ctx.sliderHandleStart = _t.first);
-        ɵɵqueryRefresh(_t = ɵɵloadQuery()) && (ctx.sliderHandleEnd = _t.first);
-      }
-    },
-    hostAttrs: [1, "p-element"],
-    inputs: {
-      animate: [2, "animate", "animate", booleanAttribute],
-      disabled: [2, "disabled", "disabled", booleanAttribute],
-      min: [2, "min", "min", numberAttribute],
-      max: [2, "max", "max", numberAttribute],
-      orientation: "orientation",
-      step: [2, "step", "step", numberAttribute],
-      range: [2, "range", "range", booleanAttribute],
-      style: "style",
-      styleClass: "styleClass",
-      ariaLabel: "ariaLabel",
-      ariaLabelledBy: "ariaLabelledBy",
-      tabindex: [2, "tabindex", "tabindex", numberAttribute],
-      autofocus: [2, "autofocus", "autofocus", booleanAttribute]
-    },
-    outputs: {
-      onChange: "onChange",
-      onSlideEnd: "onSlideEnd"
-    },
-    features: [ɵɵProvidersFeature([SLIDER_VALUE_ACCESSOR]), ɵɵInputTransformsFeature],
-    decls: 8,
-    vars: 18,
-    consts: [["sliderHandle", ""], ["sliderHandleStart", ""], ["sliderHandleEnd", ""], [3, "click", "ngStyle", "ngClass"], ["class", "p-slider-range", 3, "ngStyle", 4, "ngIf"], ["class", "p-slider-handle", "role", "slider", "pAutoFocus", "", 3, "transition", "ngStyle", "autofocus", "touchstart", "touchmove", "touchend", "mousedown", "keydown", 4, "ngIf"], ["class", "p-slider-handle", "role", "slider", "pAutoFocus", "", 3, "transition", "ngStyle", "ngClass", "autofocus", "keydown", "mousedown", "touchstart", "touchmove", "touchend", 4, "ngIf"], ["class", "p-slider-handle", "role", "slider", 3, "transition", "ngStyle", "ngClass", "keydown", "mousedown", "touchstart", "touchmove", "touchend", 4, "ngIf"], [1, "p-slider-range", 3, "ngStyle"], ["role", "slider", "pAutoFocus", "", 1, "p-slider-handle", 3, "touchstart", "touchmove", "touchend", "mousedown", "keydown", "ngStyle", "autofocus"], ["role", "slider", "pAutoFocus", "", 1, "p-slider-handle", 3, "keydown", "mousedown", "touchstart", "touchmove", "touchend", "ngStyle", "ngClass", "autofocus"], ["role", "slider", 1, "p-slider-handle", 3, "keydown", "mousedown", "touchstart", "touchmove", "touchend", "ngStyle", "ngClass"]],
-    template: function Slider_Template(rf, ctx) {
-      if (rf & 1) {
-        ɵɵelementStart(0, "div", 3);
-        ɵɵlistener("click", function Slider_Template_div_click_0_listener($event) {
-          return ctx.onBarClick($event);
-        });
-        ɵɵtemplate(1, Slider_span_1_Template, 1, 5, "span", 4)(2, Slider_span_2_Template, 1, 5, "span", 4)(3, Slider_span_3_Template, 1, 4, "span", 4)(4, Slider_span_4_Template, 1, 4, "span", 4)(5, Slider_span_5_Template, 2, 15, "span", 5)(6, Slider_span_6_Template, 2, 18, "span", 6)(7, Slider_span_7_Template, 2, 17, "span", 7);
-        ɵɵelementEnd();
-      }
-      if (rf & 2) {
-        ɵɵclassMap(ctx.styleClass);
-        ɵɵproperty("ngStyle", ctx.style)("ngClass", ɵɵpureFunction4(13, _c3, ctx.disabled, ctx.orientation == "horizontal", ctx.orientation == "vertical", ctx.animate));
-        ɵɵattribute("data-pc-name", "slider")("data-pc-section", "root");
-        ɵɵadvance();
-        ɵɵproperty("ngIf", ctx.range && ctx.orientation == "horizontal");
-        ɵɵadvance();
-        ɵɵproperty("ngIf", ctx.range && ctx.orientation == "vertical");
-        ɵɵadvance();
-        ɵɵproperty("ngIf", !ctx.range && ctx.orientation == "vertical");
-        ɵɵadvance();
-        ɵɵproperty("ngIf", !ctx.range && ctx.orientation == "horizontal");
-        ɵɵadvance();
-        ɵɵproperty("ngIf", !ctx.range);
-        ɵɵadvance();
-        ɵɵproperty("ngIf", ctx.range);
-        ɵɵadvance();
-        ɵɵproperty("ngIf", ctx.range);
-      }
-    },
-    dependencies: [NgClass, NgIf, NgStyle, AutoFocus],
-    styles: ["@layer primeng{.p-slider{position:relative}.p-slider .p-slider-handle{position:absolute;cursor:grab;touch-action:none;display:block}.p-slider-range{position:absolute;display:block}.p-slider-horizontal .p-slider-range{top:0;left:0;height:100%}.p-slider-horizontal .p-slider-handle{top:50%}.p-slider-vertical{height:100px}.p-slider-vertical .p-slider-handle{left:50%}.p-slider-vertical .p-slider-range{bottom:0;left:0;width:100%}}\n"],
-    encapsulation: 2,
-    changeDetection: 0
-  });
 };
+__publicField(_Slider, "ɵfac", function Slider_Factory(__ngFactoryType__) {
+  return new (__ngFactoryType__ || _Slider)(ɵɵdirectiveInject(DOCUMENT), ɵɵdirectiveInject(PLATFORM_ID), ɵɵdirectiveInject(ElementRef), ɵɵdirectiveInject(Renderer2), ɵɵdirectiveInject(NgZone), ɵɵdirectiveInject(ChangeDetectorRef));
+});
+__publicField(_Slider, "ɵcmp", ɵɵdefineComponent({
+  type: _Slider,
+  selectors: [["p-slider"]],
+  viewQuery: function Slider_Query(rf, ctx) {
+    if (rf & 1) {
+      ɵɵviewQuery(_c0, 5);
+      ɵɵviewQuery(_c1, 5);
+      ɵɵviewQuery(_c2, 5);
+    }
+    if (rf & 2) {
+      let _t;
+      ɵɵqueryRefresh(_t = ɵɵloadQuery()) && (ctx.sliderHandle = _t.first);
+      ɵɵqueryRefresh(_t = ɵɵloadQuery()) && (ctx.sliderHandleStart = _t.first);
+      ɵɵqueryRefresh(_t = ɵɵloadQuery()) && (ctx.sliderHandleEnd = _t.first);
+    }
+  },
+  hostAttrs: [1, "p-element"],
+  inputs: {
+    animate: [2, "animate", "animate", booleanAttribute],
+    disabled: [2, "disabled", "disabled", booleanAttribute],
+    min: [2, "min", "min", numberAttribute],
+    max: [2, "max", "max", numberAttribute],
+    orientation: "orientation",
+    step: [2, "step", "step", numberAttribute],
+    range: [2, "range", "range", booleanAttribute],
+    style: "style",
+    styleClass: "styleClass",
+    ariaLabel: "ariaLabel",
+    ariaLabelledBy: "ariaLabelledBy",
+    tabindex: [2, "tabindex", "tabindex", numberAttribute],
+    autofocus: [2, "autofocus", "autofocus", booleanAttribute]
+  },
+  outputs: {
+    onChange: "onChange",
+    onSlideEnd: "onSlideEnd"
+  },
+  features: [ɵɵProvidersFeature([SLIDER_VALUE_ACCESSOR]), ɵɵInputTransformsFeature],
+  decls: 8,
+  vars: 18,
+  consts: [["sliderHandle", ""], ["sliderHandleStart", ""], ["sliderHandleEnd", ""], [3, "click", "ngStyle", "ngClass"], ["class", "p-slider-range", 3, "ngStyle", 4, "ngIf"], ["class", "p-slider-handle", "role", "slider", "pAutoFocus", "", 3, "transition", "ngStyle", "autofocus", "touchstart", "touchmove", "touchend", "mousedown", "keydown", 4, "ngIf"], ["class", "p-slider-handle", "role", "slider", "pAutoFocus", "", 3, "transition", "ngStyle", "ngClass", "autofocus", "keydown", "mousedown", "touchstart", "touchmove", "touchend", 4, "ngIf"], ["class", "p-slider-handle", "role", "slider", 3, "transition", "ngStyle", "ngClass", "keydown", "mousedown", "touchstart", "touchmove", "touchend", 4, "ngIf"], [1, "p-slider-range", 3, "ngStyle"], ["role", "slider", "pAutoFocus", "", 1, "p-slider-handle", 3, "touchstart", "touchmove", "touchend", "mousedown", "keydown", "ngStyle", "autofocus"], ["role", "slider", "pAutoFocus", "", 1, "p-slider-handle", 3, "keydown", "mousedown", "touchstart", "touchmove", "touchend", "ngStyle", "ngClass", "autofocus"], ["role", "slider", 1, "p-slider-handle", 3, "keydown", "mousedown", "touchstart", "touchmove", "touchend", "ngStyle", "ngClass"]],
+  template: function Slider_Template(rf, ctx) {
+    if (rf & 1) {
+      ɵɵelementStart(0, "div", 3);
+      ɵɵlistener("click", function Slider_Template_div_click_0_listener($event) {
+        return ctx.onBarClick($event);
+      });
+      ɵɵtemplate(1, Slider_span_1_Template, 1, 5, "span", 4)(2, Slider_span_2_Template, 1, 5, "span", 4)(3, Slider_span_3_Template, 1, 4, "span", 4)(4, Slider_span_4_Template, 1, 4, "span", 4)(5, Slider_span_5_Template, 2, 15, "span", 5)(6, Slider_span_6_Template, 2, 18, "span", 6)(7, Slider_span_7_Template, 2, 17, "span", 7);
+      ɵɵelementEnd();
+    }
+    if (rf & 2) {
+      ɵɵclassMap(ctx.styleClass);
+      ɵɵproperty("ngStyle", ctx.style)("ngClass", ɵɵpureFunction4(13, _c3, ctx.disabled, ctx.orientation == "horizontal", ctx.orientation == "vertical", ctx.animate));
+      ɵɵattribute("data-pc-name", "slider")("data-pc-section", "root");
+      ɵɵadvance();
+      ɵɵproperty("ngIf", ctx.range && ctx.orientation == "horizontal");
+      ɵɵadvance();
+      ɵɵproperty("ngIf", ctx.range && ctx.orientation == "vertical");
+      ɵɵadvance();
+      ɵɵproperty("ngIf", !ctx.range && ctx.orientation == "vertical");
+      ɵɵadvance();
+      ɵɵproperty("ngIf", !ctx.range && ctx.orientation == "horizontal");
+      ɵɵadvance();
+      ɵɵproperty("ngIf", !ctx.range);
+      ɵɵadvance();
+      ɵɵproperty("ngIf", ctx.range);
+      ɵɵadvance();
+      ɵɵproperty("ngIf", ctx.range);
+    }
+  },
+  dependencies: [NgClass, NgIf, NgStyle, AutoFocus],
+  styles: ["@layer primeng{.p-slider{position:relative}.p-slider .p-slider-handle{position:absolute;cursor:grab;touch-action:none;display:block}.p-slider-range{position:absolute;display:block}.p-slider-horizontal .p-slider-range{top:0;left:0;height:100%}.p-slider-horizontal .p-slider-handle{top:50%}.p-slider-vertical{height:100px}.p-slider-vertical .p-slider-handle{left:50%}.p-slider-vertical .p-slider-range{bottom:0;left:0;width:100%}}\n"],
+  encapsulation: 2,
+  changeDetection: 0
+}));
+var Slider = _Slider;
 (() => {
   (typeof ngDevMode === "undefined" || ngDevMode) && setClassMetadata(Slider, [{
     type: Component,
     args: [{
       selector: "p-slider",
-      template: `
-        <div
-            [ngStyle]="style"
-            [class]="styleClass"
-            [ngClass]="{ 'p-slider p-component': true, 'p-disabled': disabled, 'p-slider-horizontal': orientation == 'horizontal', 'p-slider-vertical': orientation == 'vertical', 'p-slider-animate': animate }"
-            (click)="onBarClick($event)"
-            [attr.data-pc-name]="'slider'"
-            [attr.data-pc-section]="'root'"
-        >
-            <span
-                *ngIf="range && orientation == 'horizontal'"
-                class="p-slider-range"
-                [ngStyle]="{ left: offset !== null && offset !== undefined ? offset + '%' : handleValues[0] + '%', width: diff ? diff + '%' : handleValues[1] - handleValues[0] + '%' }"
-                [attr.data-pc-section]="'range'"
-            ></span>
-            <span
-                *ngIf="range && orientation == 'vertical'"
-                class="p-slider-range"
-                [ngStyle]="{ bottom: offset !== null && offset !== undefined ? offset + '%' : handleValues[0] + '%', height: diff ? diff + '%' : handleValues[1] - handleValues[0] + '%' }"
-                [attr.data-pc-section]="'range'"
-            ></span>
-            <span *ngIf="!range && orientation == 'vertical'" class="p-slider-range" [attr.data-pc-section]="'range'" [ngStyle]="{ height: handleValue + '%' }"></span>
-            <span *ngIf="!range && orientation == 'horizontal'" class="p-slider-range" [attr.data-pc-section]="'range'" [ngStyle]="{ width: handleValue + '%' }"></span>
-            <span
-                *ngIf="!range"
-                #sliderHandle
-                class="p-slider-handle"
-                [style.transition]="dragging ? 'none' : null"
-                [ngStyle]="{ left: orientation == 'horizontal' ? handleValue + '%' : null, bottom: orientation == 'vertical' ? handleValue + '%' : null }"
-                (touchstart)="onDragStart($event)"
-                (touchmove)="onDrag($event)"
-                (touchend)="onDragEnd($event)"
-                (mousedown)="onMouseDown($event)"
-                (keydown)="onKeyDown($event)"
-                [attr.tabindex]="disabled ? null : tabindex"
-                role="slider"
-                [attr.aria-valuemin]="min"
-                [attr.aria-valuenow]="value"
-                [attr.aria-valuemax]="max"
-                [attr.aria-labelledby]="ariaLabelledBy"
-                [attr.aria-label]="ariaLabel"
-                [attr.aria-orientation]="orientation"
-                [attr.data-pc-section]="'handle'"
-                pAutoFocus
-                [autofocus]="autofocus"
-            ></span>
-            <span
-                *ngIf="range"
-                #sliderHandleStart
-                [style.transition]="dragging ? 'none' : null"
-                class="p-slider-handle"
-                [ngStyle]="{ left: rangeStartLeft, bottom: rangeStartBottom }"
-                [ngClass]="{ 'p-slider-handle-active': handleIndex == 0 }"
-                (keydown)="onKeyDown($event, 0)"
-                (mousedown)="onMouseDown($event, 0)"
-                (touchstart)="onDragStart($event, 0)"
-                (touchmove)="onDrag($event, 0)"
-                (touchend)="onDragEnd($event)"
-                [attr.tabindex]="disabled ? null : tabindex"
-                role="slider"
-                [attr.aria-valuemin]="min"
-                [attr.aria-valuenow]="value ? value[0] : null"
-                [attr.aria-valuemax]="max"
-                [attr.aria-labelledby]="ariaLabelledBy"
-                [attr.aria-label]="ariaLabel"
-                [attr.aria-orientation]="orientation"
-                [attr.data-pc-section]="'startHandler'"
-                pAutoFocus
-                [autofocus]="autofocus"
-            ></span>
-            <span
-                *ngIf="range"
-                #sliderHandleEnd
-                [style.transition]="dragging ? 'none' : null"
-                class="p-slider-handle"
-                [ngStyle]="{ left: rangeEndLeft, bottom: rangeEndBottom }"
-                [ngClass]="{ 'p-slider-handle-active': handleIndex == 1 }"
-                (keydown)="onKeyDown($event, 1)"
-                (mousedown)="onMouseDown($event, 1)"
-                (touchstart)="onDragStart($event, 1)"
-                (touchmove)="onDrag($event, 1)"
-                (touchend)="onDragEnd($event)"
-                [attr.tabindex]="disabled ? null : tabindex"
-                role="slider"
-                [attr.aria-valuemin]="min"
-                [attr.aria-valuenow]="value ? value[1] : null"
-                [attr.aria-valuemax]="max"
-                [attr.aria-labelledby]="ariaLabelledBy"
-                [attr.aria-label]="ariaLabel"
-                [attr.aria-orientation]="orientation"
-                [attr.data-pc-section]="'endHandler'"
-            ></span>
-        </div>
-    `,
+      template: '\n        <div\n            [ngStyle]="style"\n            [class]="styleClass"\n            [ngClass]="{ \'p-slider p-component\': true, \'p-disabled\': disabled, \'p-slider-horizontal\': orientation == \'horizontal\', \'p-slider-vertical\': orientation == \'vertical\', \'p-slider-animate\': animate }"\n            (click)="onBarClick($event)"\n            [attr.data-pc-name]="\'slider\'"\n            [attr.data-pc-section]="\'root\'"\n        >\n            <span\n                *ngIf="range && orientation == \'horizontal\'"\n                class="p-slider-range"\n                [ngStyle]="{ left: offset !== null && offset !== undefined ? offset + \'%\' : handleValues[0] + \'%\', width: diff ? diff + \'%\' : handleValues[1] - handleValues[0] + \'%\' }"\n                [attr.data-pc-section]="\'range\'"\n            ></span>\n            <span\n                *ngIf="range && orientation == \'vertical\'"\n                class="p-slider-range"\n                [ngStyle]="{ bottom: offset !== null && offset !== undefined ? offset + \'%\' : handleValues[0] + \'%\', height: diff ? diff + \'%\' : handleValues[1] - handleValues[0] + \'%\' }"\n                [attr.data-pc-section]="\'range\'"\n            ></span>\n            <span *ngIf="!range && orientation == \'vertical\'" class="p-slider-range" [attr.data-pc-section]="\'range\'" [ngStyle]="{ height: handleValue + \'%\' }"></span>\n            <span *ngIf="!range && orientation == \'horizontal\'" class="p-slider-range" [attr.data-pc-section]="\'range\'" [ngStyle]="{ width: handleValue + \'%\' }"></span>\n            <span\n                *ngIf="!range"\n                #sliderHandle\n                class="p-slider-handle"\n                [style.transition]="dragging ? \'none\' : null"\n                [ngStyle]="{ left: orientation == \'horizontal\' ? handleValue + \'%\' : null, bottom: orientation == \'vertical\' ? handleValue + \'%\' : null }"\n                (touchstart)="onDragStart($event)"\n                (touchmove)="onDrag($event)"\n                (touchend)="onDragEnd($event)"\n                (mousedown)="onMouseDown($event)"\n                (keydown)="onKeyDown($event)"\n                [attr.tabindex]="disabled ? null : tabindex"\n                role="slider"\n                [attr.aria-valuemin]="min"\n                [attr.aria-valuenow]="value"\n                [attr.aria-valuemax]="max"\n                [attr.aria-labelledby]="ariaLabelledBy"\n                [attr.aria-label]="ariaLabel"\n                [attr.aria-orientation]="orientation"\n                [attr.data-pc-section]="\'handle\'"\n                pAutoFocus\n                [autofocus]="autofocus"\n            ></span>\n            <span\n                *ngIf="range"\n                #sliderHandleStart\n                [style.transition]="dragging ? \'none\' : null"\n                class="p-slider-handle"\n                [ngStyle]="{ left: rangeStartLeft, bottom: rangeStartBottom }"\n                [ngClass]="{ \'p-slider-handle-active\': handleIndex == 0 }"\n                (keydown)="onKeyDown($event, 0)"\n                (mousedown)="onMouseDown($event, 0)"\n                (touchstart)="onDragStart($event, 0)"\n                (touchmove)="onDrag($event, 0)"\n                (touchend)="onDragEnd($event)"\n                [attr.tabindex]="disabled ? null : tabindex"\n                role="slider"\n                [attr.aria-valuemin]="min"\n                [attr.aria-valuenow]="value ? value[0] : null"\n                [attr.aria-valuemax]="max"\n                [attr.aria-labelledby]="ariaLabelledBy"\n                [attr.aria-label]="ariaLabel"\n                [attr.aria-orientation]="orientation"\n                [attr.data-pc-section]="\'startHandler\'"\n                pAutoFocus\n                [autofocus]="autofocus"\n            ></span>\n            <span\n                *ngIf="range"\n                #sliderHandleEnd\n                [style.transition]="dragging ? \'none\' : null"\n                class="p-slider-handle"\n                [ngStyle]="{ left: rangeEndLeft, bottom: rangeEndBottom }"\n                [ngClass]="{ \'p-slider-handle-active\': handleIndex == 1 }"\n                (keydown)="onKeyDown($event, 1)"\n                (mousedown)="onMouseDown($event, 1)"\n                (touchstart)="onDragStart($event, 1)"\n                (touchmove)="onDrag($event, 1)"\n                (touchend)="onDragEnd($event)"\n                [attr.tabindex]="disabled ? null : tabindex"\n                role="slider"\n                [attr.aria-valuemin]="min"\n                [attr.aria-valuenow]="value ? value[1] : null"\n                [attr.aria-valuemax]="max"\n                [attr.aria-labelledby]="ariaLabelledBy"\n                [attr.aria-label]="ariaLabel"\n                [attr.aria-orientation]="orientation"\n                [attr.data-pc-section]="\'endHandler\'"\n            ></span>\n        </div>\n    ',
       providers: [SLIDER_VALUE_ACCESSOR],
       changeDetection: ChangeDetectionStrategy.OnPush,
       encapsulation: ViewEncapsulation$1.None,
@@ -1035,20 +946,21 @@ var Slider = class _Slider {
     }]
   });
 })();
-var SliderModule = class _SliderModule {
-  static ɵfac = function SliderModule_Factory(__ngFactoryType__) {
-    return new (__ngFactoryType__ || _SliderModule)();
-  };
-  static ɵmod = ɵɵdefineNgModule({
-    type: _SliderModule,
-    declarations: [Slider],
-    imports: [CommonModule, AutoFocusModule],
-    exports: [Slider]
-  });
-  static ɵinj = ɵɵdefineInjector({
-    imports: [CommonModule, AutoFocusModule]
-  });
+var _SliderModule = class _SliderModule {
 };
+__publicField(_SliderModule, "ɵfac", function SliderModule_Factory(__ngFactoryType__) {
+  return new (__ngFactoryType__ || _SliderModule)();
+});
+__publicField(_SliderModule, "ɵmod", ɵɵdefineNgModule({
+  type: _SliderModule,
+  declarations: [Slider],
+  imports: [CommonModule, AutoFocusModule],
+  exports: [Slider]
+}));
+__publicField(_SliderModule, "ɵinj", ɵɵdefineInjector({
+  imports: [CommonModule, AutoFocusModule]
+}));
+var SliderModule = _SliderModule;
 (() => {
   (typeof ngDevMode === "undefined" || ngDevMode) && setClassMetadata(SliderModule, [{
     type: NgModule,

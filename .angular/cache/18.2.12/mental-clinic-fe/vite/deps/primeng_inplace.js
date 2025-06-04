@@ -1,27 +1,27 @@
 import {
   ButtonDirective,
   ButtonModule
-} from "./chunk-7TN6NS6B.js";
-import "./chunk-PCVGMHYY.js";
+} from "./chunk-ZLJ4QAH5.js";
+import "./chunk-VYCWYYRS.js";
 import {
   TimesIcon
-} from "./chunk-MDBJZ6LU.js";
-import "./chunk-QN24C4B3.js";
-import "./chunk-32JR77BM.js";
-import "./chunk-PXWZN6FU.js";
+} from "./chunk-AP6UZX4B.js";
+import "./chunk-MUJBADSC.js";
+import "./chunk-LND2F6FW.js";
+import "./chunk-BJLZ3T2F.js";
 import {
   PrimeTemplate,
   SharedModule
-} from "./chunk-TQSVMJ6K.js";
-import "./chunk-3OF44R55.js";
-import "./chunk-BUGEQH7Q.js";
+} from "./chunk-ZROJCIWL.js";
+import "./chunk-U3NLM53U.js";
+import "./chunk-LB42WWNC.js";
 import {
   CommonModule,
   NgClass,
   NgIf,
   NgStyle,
   NgTemplateOutlet
-} from "./chunk-UBZYO7FG.js";
+} from "./chunk-KUZ63KOD.js";
 import {
   ChangeDetectionStrategy,
   ChangeDetectorRef,
@@ -61,11 +61,13 @@ import {
   ɵɵresetView,
   ɵɵrestoreView,
   ɵɵtemplate
-} from "./chunk-ZI2Q76R4.js";
-import "./chunk-5OPE3T2R.js";
+} from "./chunk-R75KKECJ.js";
 import "./chunk-4N4GOYJH.js";
+import "./chunk-5OPE3T2R.js";
 import "./chunk-FHTVLBLO.js";
-import "./chunk-3OV72XIM.js";
+import {
+  __publicField
+} from "./chunk-IJZFAMY6.js";
 
 // node_modules/primeng/fesm2022/primeng-inplace.mjs
 var _c0 = ["*"];
@@ -192,26 +194,27 @@ function Inplace_div_2_Template(rf, ctx) {
     ɵɵproperty("ngIf", ctx_r1.closable);
   }
 }
-var InplaceDisplay = class _InplaceDisplay {
-  static ɵfac = function InplaceDisplay_Factory(__ngFactoryType__) {
-    return new (__ngFactoryType__ || _InplaceDisplay)();
-  };
-  static ɵcmp = ɵɵdefineComponent({
-    type: _InplaceDisplay,
-    selectors: [["p-inplaceDisplay"]],
-    hostAttrs: [1, "p-element"],
-    ngContentSelectors: _c0,
-    decls: 1,
-    vars: 0,
-    template: function InplaceDisplay_Template(rf, ctx) {
-      if (rf & 1) {
-        ɵɵprojectionDef();
-        ɵɵprojection(0);
-      }
-    },
-    encapsulation: 2
-  });
+var _InplaceDisplay = class _InplaceDisplay {
 };
+__publicField(_InplaceDisplay, "ɵfac", function InplaceDisplay_Factory(__ngFactoryType__) {
+  return new (__ngFactoryType__ || _InplaceDisplay)();
+});
+__publicField(_InplaceDisplay, "ɵcmp", ɵɵdefineComponent({
+  type: _InplaceDisplay,
+  selectors: [["p-inplaceDisplay"]],
+  hostAttrs: [1, "p-element"],
+  ngContentSelectors: _c0,
+  decls: 1,
+  vars: 0,
+  template: function InplaceDisplay_Template(rf, ctx) {
+    if (rf & 1) {
+      ɵɵprojectionDef();
+      ɵɵprojection(0);
+    }
+  },
+  encapsulation: 2
+}));
+var InplaceDisplay = _InplaceDisplay;
 (() => {
   (typeof ngDevMode === "undefined" || ngDevMode) && setClassMetadata(InplaceDisplay, [{
     type: Component,
@@ -224,26 +227,27 @@ var InplaceDisplay = class _InplaceDisplay {
     }]
   }], null, null);
 })();
-var InplaceContent = class _InplaceContent {
-  static ɵfac = function InplaceContent_Factory(__ngFactoryType__) {
-    return new (__ngFactoryType__ || _InplaceContent)();
-  };
-  static ɵcmp = ɵɵdefineComponent({
-    type: _InplaceContent,
-    selectors: [["p-inplaceContent"]],
-    hostAttrs: [1, "p-element"],
-    ngContentSelectors: _c0,
-    decls: 1,
-    vars: 0,
-    template: function InplaceContent_Template(rf, ctx) {
-      if (rf & 1) {
-        ɵɵprojectionDef();
-        ɵɵprojection(0);
-      }
-    },
-    encapsulation: 2
-  });
+var _InplaceContent = class _InplaceContent {
 };
+__publicField(_InplaceContent, "ɵfac", function InplaceContent_Factory(__ngFactoryType__) {
+  return new (__ngFactoryType__ || _InplaceContent)();
+});
+__publicField(_InplaceContent, "ɵcmp", ɵɵdefineComponent({
+  type: _InplaceContent,
+  selectors: [["p-inplaceContent"]],
+  hostAttrs: [1, "p-element"],
+  ngContentSelectors: _c0,
+  decls: 1,
+  vars: 0,
+  template: function InplaceContent_Template(rf, ctx) {
+    if (rf & 1) {
+      ɵɵprojectionDef();
+      ɵɵprojection(0);
+    }
+  },
+  encapsulation: 2
+}));
+var InplaceContent = _InplaceContent;
 (() => {
   (typeof ngDevMode === "undefined" || ngDevMode) && setClassMetadata(InplaceContent, [{
     type: Component,
@@ -256,70 +260,71 @@ var InplaceContent = class _InplaceContent {
     }]
   }], null, null);
 })();
-var Inplace = class _Inplace {
-  cd;
-  /**
-   * Whether the content is displayed or not.
-   * @group Props
-   */
-  active = false;
-  /**
-   * Displays a button to switch back to display mode.
-   * @group Props
-   */
-  closable = false;
-  /**
-   * When present, it specifies that the element should be disabled.
-   * @group Props
-   */
-  disabled = false;
-  /**
-   * Allows to prevent clicking.
-   * @group Props
-   */
-  preventClick;
-  /**
-   * Inline style of the element.
-   * @group Props
-   */
-  style;
-  /**
-   * Class of the element.
-   * @group Props
-   */
-  styleClass;
-  /**
-   * Icon to display in the close button.
-   * @group Props
-   */
-  closeIcon;
-  /**
-   * Establishes a string value that labels the close button.
-   * @group Props
-   */
-  closeAriaLabel;
-  /**
-   * Callback to invoke when inplace is opened.
-   * @param {Event} event - Browser event.
-   * @group Emits
-   */
-  onActivate = new EventEmitter();
-  /**
-   * Callback to invoke when inplace is closed.
-   * @param {Event} event - Browser event.
-   * @group Emits
-   */
-  onDeactivate = new EventEmitter();
-  templates;
-  hover;
-  displayTemplate;
-  contentTemplate;
-  closeIconTemplate;
+var _Inplace = class _Inplace {
   constructor(cd) {
+    __publicField(this, "cd");
+    /**
+     * Whether the content is displayed or not.
+     * @group Props
+     */
+    __publicField(this, "active", false);
+    /**
+     * Displays a button to switch back to display mode.
+     * @group Props
+     */
+    __publicField(this, "closable", false);
+    /**
+     * When present, it specifies that the element should be disabled.
+     * @group Props
+     */
+    __publicField(this, "disabled", false);
+    /**
+     * Allows to prevent clicking.
+     * @group Props
+     */
+    __publicField(this, "preventClick");
+    /**
+     * Inline style of the element.
+     * @group Props
+     */
+    __publicField(this, "style");
+    /**
+     * Class of the element.
+     * @group Props
+     */
+    __publicField(this, "styleClass");
+    /**
+     * Icon to display in the close button.
+     * @group Props
+     */
+    __publicField(this, "closeIcon");
+    /**
+     * Establishes a string value that labels the close button.
+     * @group Props
+     */
+    __publicField(this, "closeAriaLabel");
+    /**
+     * Callback to invoke when inplace is opened.
+     * @param {Event} event - Browser event.
+     * @group Emits
+     */
+    __publicField(this, "onActivate", new EventEmitter());
+    /**
+     * Callback to invoke when inplace is closed.
+     * @param {Event} event - Browser event.
+     * @group Emits
+     */
+    __publicField(this, "onDeactivate", new EventEmitter());
+    __publicField(this, "templates");
+    __publicField(this, "hover");
+    __publicField(this, "displayTemplate");
+    __publicField(this, "contentTemplate");
+    __publicField(this, "closeIconTemplate");
     this.cd = cd;
   }
   ngAfterContentInit() {
-    this.templates?.forEach((item) => {
+    var _a;
+    (_a = this.templates) == null ? void 0 : _a.forEach((item) => {
       switch (item.getType()) {
         case "display":
           this.displayTemplate = item.template;
@@ -370,89 +375,71 @@ var Inplace = class _Inplace {
       event.preventDefault();
     }
   }
-  static ɵfac = function Inplace_Factory(__ngFactoryType__) {
-    return new (__ngFactoryType__ || _Inplace)(ɵɵdirectiveInject(ChangeDetectorRef));
-  };
-  static ɵcmp = ɵɵdefineComponent({
-    type: _Inplace,
-    selectors: [["p-inplace"]],
-    contentQueries: function Inplace_ContentQueries(rf, ctx, dirIndex) {
-      if (rf & 1) {
-        ɵɵcontentQuery(dirIndex, PrimeTemplate, 4);
-      }
-      if (rf & 2) {
-        let _t;
-        ɵɵqueryRefresh(_t = ɵɵloadQuery()) && (ctx.templates = _t);
-      }
-    },
-    hostAttrs: [1, "p-element"],
-    inputs: {
-      active: [2, "active", "active", booleanAttribute],
-      closable: [2, "closable", "closable", booleanAttribute],
-      disabled: [2, "disabled", "disabled", booleanAttribute],
-      preventClick: [2, "preventClick", "preventClick", booleanAttribute],
-      style: "style",
-      styleClass: "styleClass",
-      closeIcon: "closeIcon",
-      closeAriaLabel: "closeAriaLabel"
-    },
-    outputs: {
-      onActivate: "onActivate",
-      onDeactivate: "onDeactivate"
-    },
-    features: [ɵɵInputTransformsFeature],
-    ngContentSelectors: _c2,
-    decls: 3,
-    vars: 9,
-    consts: [[3, "ngClass", "ngStyle"], ["class", "p-inplace-display", "tabindex", "0", "role", "button", 3, "ngClass", "click", "keydown", 4, "ngIf"], ["class", "p-inplace-content", 4, "ngIf"], ["tabindex", "0", "role", "button", 1, "p-inplace-display", 3, "click", "keydown", "ngClass"], [4, "ngTemplateOutlet"], [1, "p-inplace-content"], [4, "ngIf"], ["type", "button", "pButton", "", 3, "icon", "click", 4, "ngIf"], ["type", "button", "pButton", "", 3, "ngClass", "click", 4, "ngIf"], ["type", "button", "pButton", "", 3, "click", "icon"], ["type", "button", "pButton", "", 3, "click", "ngClass"]],
-    template: function Inplace_Template(rf, ctx) {
-      if (rf & 1) {
-        ɵɵprojectionDef(_c1);
-        ɵɵelementStart(0, "div", 0);
-        ɵɵtemplate(1, Inplace_div_1_Template, 3, 4, "div", 1)(2, Inplace_div_2_Template, 4, 2, "div", 2);
-        ɵɵelementEnd();
-      }
-      if (rf & 2) {
-        ɵɵclassMap(ctx.styleClass);
-        ɵɵproperty("ngClass", ɵɵpureFunction1(7, _c3, ctx.closable))("ngStyle", ctx.style);
-        ɵɵattribute("aria-live", "polite");
-        ɵɵadvance();
-        ɵɵproperty("ngIf", !ctx.active);
-        ɵɵadvance();
-        ɵɵproperty("ngIf", ctx.active);
-      }
-    },
-    dependencies: () => [NgClass, NgIf, NgTemplateOutlet, NgStyle, ButtonDirective, TimesIcon],
-    styles: ["@layer primeng{.p-inplace .p-inplace-display{display:inline;cursor:pointer}.p-inplace .p-inplace-content{display:inline}.p-fluid .p-inplace.p-inplace-closable .p-inplace-content{display:flex}.p-fluid .p-inplace.p-inplace-closable .p-inplace-content>.p-inputtext{flex:1 1 auto;width:1%}}\n"],
-    encapsulation: 2,
-    changeDetection: 0
-  });
 };
+__publicField(_Inplace, "ɵfac", function Inplace_Factory(__ngFactoryType__) {
+  return new (__ngFactoryType__ || _Inplace)(ɵɵdirectiveInject(ChangeDetectorRef));
+});
+__publicField(_Inplace, "ɵcmp", ɵɵdefineComponent({
+  type: _Inplace,
+  selectors: [["p-inplace"]],
+  contentQueries: function Inplace_ContentQueries(rf, ctx, dirIndex) {
+    if (rf & 1) {
+      ɵɵcontentQuery(dirIndex, PrimeTemplate, 4);
+    }
+    if (rf & 2) {
+      let _t;
+      ɵɵqueryRefresh(_t = ɵɵloadQuery()) && (ctx.templates = _t);
+    }
+  },
+  hostAttrs: [1, "p-element"],
+  inputs: {
+    active: [2, "active", "active", booleanAttribute],
+    closable: [2, "closable", "closable", booleanAttribute],
+    disabled: [2, "disabled", "disabled", booleanAttribute],
+    preventClick: [2, "preventClick", "preventClick", booleanAttribute],
+    style: "style",
+    styleClass: "styleClass",
+    closeIcon: "closeIcon",
+    closeAriaLabel: "closeAriaLabel"
+  },
+  outputs: {
+    onActivate: "onActivate",
+    onDeactivate: "onDeactivate"
+  },
+  features: [ɵɵInputTransformsFeature],
+  ngContentSelectors: _c2,
+  decls: 3,
+  vars: 9,
+  consts: [[3, "ngClass", "ngStyle"], ["class", "p-inplace-display", "tabindex", "0", "role", "button", 3, "ngClass", "click", "keydown", 4, "ngIf"], ["class", "p-inplace-content", 4, "ngIf"], ["tabindex", "0", "role", "button", 1, "p-inplace-display", 3, "click", "keydown", "ngClass"], [4, "ngTemplateOutlet"], [1, "p-inplace-content"], [4, "ngIf"], ["type", "button", "pButton", "", 3, "icon", "click", 4, "ngIf"], ["type", "button", "pButton", "", 3, "ngClass", "click", 4, "ngIf"], ["type", "button", "pButton", "", 3, "click", "icon"], ["type", "button", "pButton", "", 3, "click", "ngClass"]],
+  template: function Inplace_Template(rf, ctx) {
+    if (rf & 1) {
+      ɵɵprojectionDef(_c1);
+      ɵɵelementStart(0, "div", 0);
+      ɵɵtemplate(1, Inplace_div_1_Template, 3, 4, "div", 1)(2, Inplace_div_2_Template, 4, 2, "div", 2);
+      ɵɵelementEnd();
+    }
+    if (rf & 2) {
+      ɵɵclassMap(ctx.styleClass);
+      ɵɵproperty("ngClass", ɵɵpureFunction1(7, _c3, ctx.closable))("ngStyle", ctx.style);
+      ɵɵattribute("aria-live", "polite");
+      ɵɵadvance();
+      ɵɵproperty("ngIf", !ctx.active);
+      ɵɵadvance();
+      ɵɵproperty("ngIf", ctx.active);
+    }
+  },
+  dependencies: () => [NgClass, NgIf, NgTemplateOutlet, NgStyle, ButtonDirective, TimesIcon],
+  styles: ["@layer primeng{.p-inplace .p-inplace-display{display:inline;cursor:pointer}.p-inplace .p-inplace-content{display:inline}.p-fluid .p-inplace.p-inplace-closable .p-inplace-content{display:flex}.p-fluid .p-inplace.p-inplace-closable .p-inplace-content>.p-inputtext{flex:1 1 auto;width:1%}}\n"],
+  encapsulation: 2,
+  changeDetection: 0
+}));
+var Inplace = _Inplace;
 (() => {
   (typeof ngDevMode === "undefined" || ngDevMode) && setClassMetadata(Inplace, [{
     type: Component,
     args: [{
       selector: "p-inplace",
-      template: `
-        <div [ngClass]="{ 'p-inplace p-component': true, 'p-inplace-closable': closable }" [ngStyle]="style" [class]="styleClass" [attr.aria-live]="'polite'">
-            <div class="p-inplace-display" (click)="onActivateClick($event)" tabindex="0" role="button" (keydown)="onKeydown($event)" [ngClass]="{ 'p-disabled': disabled }" *ngIf="!active">
-                <ng-content select="[pInplaceDisplay]"></ng-content>
-                <ng-container *ngTemplateOutlet="displayTemplate"></ng-container>
-            </div>
-            <div class="p-inplace-content" *ngIf="active">
-                <ng-content select="[pInplaceContent]"></ng-content>
-                <ng-container *ngTemplateOutlet="contentTemplate"></ng-container>
-
-                <ng-container *ngIf="closable">
-                    <button *ngIf="closeIcon" type="button" [icon]="closeIcon" pButton (click)="onDeactivateClick($event)" [attr.aria-label]="closeAriaLabel"></button>
-                    <button *ngIf="!closeIcon" type="button" pButton [ngClass]="'p-button-icon-only'" (click)="onDeactivateClick($event)" [attr.aria-label]="closeAriaLabel">
-                        <TimesIcon *ngIf="!closeIconTemplate" />
-                        <ng-template *ngTemplateOutlet="closeIconTemplate"></ng-template>
-                    </button>
-                </ng-container>
-            </div>
-        </div>
-    `,
+      template: '\n        <div [ngClass]="{ \'p-inplace p-component\': true, \'p-inplace-closable\': closable }" [ngStyle]="style" [class]="styleClass" [attr.aria-live]="\'polite\'">\n            <div class="p-inplace-display" (click)="onActivateClick($event)" tabindex="0" role="button" (keydown)="onKeydown($event)" [ngClass]="{ \'p-disabled\': disabled }" *ngIf="!active">\n                <ng-content select="[pInplaceDisplay]"></ng-content>\n                <ng-container *ngTemplateOutlet="displayTemplate"></ng-container>\n            </div>\n            <div class="p-inplace-content" *ngIf="active">\n                <ng-content select="[pInplaceContent]"></ng-content>\n                <ng-container *ngTemplateOutlet="contentTemplate"></ng-container>\n\n                <ng-container *ngIf="closable">\n                    <button *ngIf="closeIcon" type="button" [icon]="closeIcon" pButton (click)="onDeactivateClick($event)" [attr.aria-label]="closeAriaLabel"></button>\n                    <button *ngIf="!closeIcon" type="button" pButton [ngClass]="\'p-button-icon-only\'" (click)="onDeactivateClick($event)" [attr.aria-label]="closeAriaLabel">\n                        <TimesIcon *ngIf="!closeIconTemplate" />\n                        <ng-template *ngTemplateOutlet="closeIconTemplate"></ng-template>\n                    </button>\n                </ng-container>\n            </div>\n        </div>\n    ',
       changeDetection: ChangeDetectionStrategy.OnPush,
       encapsulation: ViewEncapsulation$1.None,
       host: {
@@ -511,20 +498,21 @@ var Inplace = class _Inplace {
     }]
   });
 })();
-var InplaceModule = class _InplaceModule {
-  static ɵfac = function InplaceModule_Factory(__ngFactoryType__) {
-    return new (__ngFactoryType__ || _InplaceModule)();
-  };
-  static ɵmod = ɵɵdefineNgModule({
-    type: _InplaceModule,
-    declarations: [Inplace, InplaceDisplay, InplaceContent],
-    imports: [CommonModule, ButtonModule, SharedModule, TimesIcon],
-    exports: [Inplace, InplaceDisplay, InplaceContent, ButtonModule, SharedModule]
-  });
-  static ɵinj = ɵɵdefineInjector({
-    imports: [CommonModule, ButtonModule, SharedModule, TimesIcon, ButtonModule, SharedModule]
-  });
+var _InplaceModule = class _InplaceModule {
 };
+__publicField(_InplaceModule, "ɵfac", function InplaceModule_Factory(__ngFactoryType__) {
+  return new (__ngFactoryType__ || _InplaceModule)();
+});
+__publicField(_InplaceModule, "ɵmod", ɵɵdefineNgModule({
+  type: _InplaceModule,
+  declarations: [Inplace, InplaceDisplay, InplaceContent],
+  imports: [CommonModule, ButtonModule, SharedModule, TimesIcon],
+  exports: [Inplace, InplaceDisplay, InplaceContent, ButtonModule, SharedModule]
+}));
+__publicField(_InplaceModule, "ɵinj", ɵɵdefineInjector({
+  imports: [CommonModule, ButtonModule, SharedModule, TimesIcon, ButtonModule, SharedModule]
+}));
+var InplaceModule = _InplaceModule;
 (() => {
   (typeof ngDevMode === "undefined" || ngDevMode) && setClassMetadata(InplaceModule, [{
     type: NgModule,

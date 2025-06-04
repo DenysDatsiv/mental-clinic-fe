@@ -1,12 +1,12 @@
 import {
   PrimeTemplate
-} from "./chunk-TQSVMJ6K.js";
+} from "./chunk-ZROJCIWL.js";
 import {
   UniqueComponentId
-} from "./chunk-3OF44R55.js";
+} from "./chunk-U3NLM53U.js";
 import {
   DomHandler
-} from "./chunk-BUGEQH7Q.js";
+} from "./chunk-LB42WWNC.js";
 import {
   CommonModule,
   DOCUMENT,
@@ -14,7 +14,7 @@ import {
   NgStyle,
   NgTemplateOutlet,
   isPlatformBrowser
-} from "./chunk-UBZYO7FG.js";
+} from "./chunk-KUZ63KOD.js";
 import {
   ChangeDetectionStrategy,
   ChangeDetectorRef,
@@ -54,11 +54,13 @@ import {
   ɵɵrestoreView,
   ɵɵtemplate,
   ɵɵviewQuery
-} from "./chunk-ZI2Q76R4.js";
-import "./chunk-5OPE3T2R.js";
+} from "./chunk-R75KKECJ.js";
 import "./chunk-4N4GOYJH.js";
+import "./chunk-5OPE3T2R.js";
 import "./chunk-FHTVLBLO.js";
-import "./chunk-3OV72XIM.js";
+import {
+  __publicField
+} from "./chunk-IJZFAMY6.js";
 
 // node_modules/primeng/fesm2022/primeng-scrollpanel.mjs
 var _c0 = ["container"];
@@ -71,55 +73,55 @@ function ScrollPanel_ng_container_6_Template(rf, ctx) {
     ɵɵelementContainer(0);
   }
 }
-var ScrollPanel = class _ScrollPanel {
-  platformId;
-  el;
-  zone;
-  cd;
-  document;
-  renderer;
-  /**
-   * Inline style of the component.
-   * @group Props
-   */
-  style;
-  /**
-   * Style class of the component.
-   * @group Props
-   */
-  styleClass;
-  /**
-   * Step factor to scroll the content while pressing the arrow keys.
-   * @group Props
-   */
-  step = 5;
-  containerViewChild;
-  contentViewChild;
-  xBarViewChild;
-  yBarViewChild;
-  templates;
-  scrollYRatio;
-  scrollXRatio;
-  timeoutFrame = (fn) => setTimeout(fn, 0);
-  initialized = false;
-  lastPageY;
-  lastPageX;
-  isXBarClicked = false;
-  isYBarClicked = false;
-  contentTemplate;
-  lastScrollLeft = 0;
-  lastScrollTop = 0;
-  orientation = "vertical";
-  timer;
-  contentId;
-  windowResizeListener;
-  contentScrollListener;
-  mouseEnterListener;
-  xBarMouseDownListener;
-  yBarMouseDownListener;
-  documentMouseMoveListener;
-  documentMouseUpListener;
+var _ScrollPanel = class _ScrollPanel {
   constructor(platformId, el, zone, cd, document2, renderer) {
+    __publicField(this, "platformId");
+    __publicField(this, "el");
+    __publicField(this, "zone");
+    __publicField(this, "cd");
+    __publicField(this, "document");
+    __publicField(this, "renderer");
+    /**
+     * Inline style of the component.
+     * @group Props
+     */
+    __publicField(this, "style");
+    /**
+     * Style class of the component.
+     * @group Props
+     */
+    __publicField(this, "styleClass");
+    /**
+     * Step factor to scroll the content while pressing the arrow keys.
+     * @group Props
+     */
+    __publicField(this, "step", 5);
+    __publicField(this, "containerViewChild");
+    __publicField(this, "contentViewChild");
+    __publicField(this, "xBarViewChild");
+    __publicField(this, "yBarViewChild");
+    __publicField(this, "templates");
+    __publicField(this, "scrollYRatio");
+    __publicField(this, "scrollXRatio");
+    __publicField(this, "timeoutFrame", (fn) => setTimeout(fn, 0));
+    __publicField(this, "initialized", false);
+    __publicField(this, "lastPageY");
+    __publicField(this, "lastPageX");
+    __publicField(this, "isXBarClicked", false);
+    __publicField(this, "isYBarClicked", false);
+    __publicField(this, "contentTemplate");
+    __publicField(this, "lastScrollLeft", 0);
+    __publicField(this, "lastScrollTop", 0);
+    __publicField(this, "orientation", "vertical");
+    __publicField(this, "timer");
+    __publicField(this, "contentId");
+    __publicField(this, "windowResizeListener");
+    __publicField(this, "contentScrollListener");
+    __publicField(this, "mouseEnterListener");
+    __publicField(this, "xBarMouseDownListener");
+    __publicField(this, "yBarMouseDownListener");
+    __publicField(this, "documentMouseMoveListener");
+    __publicField(this, "documentMouseUpListener");
     this.platformId = platformId;
     this.el = el;
     this.zone = zone;
@@ -440,162 +442,125 @@ var ScrollPanel = class _ScrollPanel {
   refresh() {
     this.moveBar();
   }
-  static ɵfac = function ScrollPanel_Factory(__ngFactoryType__) {
-    return new (__ngFactoryType__ || _ScrollPanel)(ɵɵdirectiveInject(PLATFORM_ID), ɵɵdirectiveInject(ElementRef), ɵɵdirectiveInject(NgZone), ɵɵdirectiveInject(ChangeDetectorRef), ɵɵdirectiveInject(DOCUMENT), ɵɵdirectiveInject(Renderer2));
-  };
-  static ɵcmp = ɵɵdefineComponent({
-    type: _ScrollPanel,
-    selectors: [["p-scrollPanel"]],
-    contentQueries: function ScrollPanel_ContentQueries(rf, ctx, dirIndex) {
-      if (rf & 1) {
-        ɵɵcontentQuery(dirIndex, PrimeTemplate, 4);
-      }
-      if (rf & 2) {
-        let _t;
-        ɵɵqueryRefresh(_t = ɵɵloadQuery()) && (ctx.templates = _t);
-      }
-    },
-    viewQuery: function ScrollPanel_Query(rf, ctx) {
-      if (rf & 1) {
-        ɵɵviewQuery(_c0, 5);
-        ɵɵviewQuery(_c1, 5);
-        ɵɵviewQuery(_c2, 5);
-        ɵɵviewQuery(_c3, 5);
-      }
-      if (rf & 2) {
-        let _t;
-        ɵɵqueryRefresh(_t = ɵɵloadQuery()) && (ctx.containerViewChild = _t.first);
-        ɵɵqueryRefresh(_t = ɵɵloadQuery()) && (ctx.contentViewChild = _t.first);
-        ɵɵqueryRefresh(_t = ɵɵloadQuery()) && (ctx.xBarViewChild = _t.first);
-        ɵɵqueryRefresh(_t = ɵɵloadQuery()) && (ctx.yBarViewChild = _t.first);
-      }
-    },
-    hostAttrs: [1, "p-element"],
-    inputs: {
-      style: "style",
-      styleClass: "styleClass",
-      step: [2, "step", "step", numberAttribute]
-    },
-    features: [ɵɵInputTransformsFeature],
-    ngContentSelectors: _c4,
-    decls: 11,
-    vars: 16,
-    consts: [["container", ""], ["content", ""], ["xBar", ""], ["yBar", ""], [3, "ngClass", "ngStyle"], [1, "p-scrollpanel-wrapper"], [1, "p-scrollpanel-content", 3, "mouseenter", "scroll"], [4, "ngTemplateOutlet"], ["tabindex", "0", "role", "scrollbar", 1, "p-scrollpanel-bar", "p-scrollpanel-bar-x", 3, "mousedown", "keydown", "keyup", "focus", "blur"], ["tabindex", "0", "role", "scrollbar", 1, "p-scrollpanel-bar", "p-scrollpanel-bar-y", 3, "mousedown", "keydown", "keyup", "focus"]],
-    template: function ScrollPanel_Template(rf, ctx) {
-      if (rf & 1) {
-        const _r1 = ɵɵgetCurrentView();
-        ɵɵprojectionDef();
-        ɵɵelementStart(0, "div", 4, 0)(2, "div", 5)(3, "div", 6, 1);
-        ɵɵlistener("mouseenter", function ScrollPanel_Template_div_mouseenter_3_listener() {
-          ɵɵrestoreView(_r1);
-          return ɵɵresetView(ctx.moveBar());
-        })("scroll", function ScrollPanel_Template_div_scroll_3_listener($event) {
-          ɵɵrestoreView(_r1);
-          return ɵɵresetView(ctx.onScroll($event));
-        });
-        ɵɵprojection(5);
-        ɵɵtemplate(6, ScrollPanel_ng_container_6_Template, 1, 0, "ng-container", 7);
-        ɵɵelementEnd()();
-        ɵɵelementStart(7, "div", 8, 2);
-        ɵɵlistener("mousedown", function ScrollPanel_Template_div_mousedown_7_listener($event) {
-          ɵɵrestoreView(_r1);
-          return ɵɵresetView(ctx.onXBarMouseDown($event));
-        })("keydown", function ScrollPanel_Template_div_keydown_7_listener($event) {
-          ɵɵrestoreView(_r1);
-          return ɵɵresetView(ctx.onKeyDown($event));
-        })("keyup", function ScrollPanel_Template_div_keyup_7_listener() {
-          ɵɵrestoreView(_r1);
-          return ɵɵresetView(ctx.onKeyUp());
-        })("focus", function ScrollPanel_Template_div_focus_7_listener($event) {
-          ɵɵrestoreView(_r1);
-          return ɵɵresetView(ctx.onFocus($event));
-        })("blur", function ScrollPanel_Template_div_blur_7_listener() {
-          ɵɵrestoreView(_r1);
-          return ɵɵresetView(ctx.onBlur());
-        });
-        ɵɵelementEnd();
-        ɵɵelementStart(9, "div", 9, 3);
-        ɵɵlistener("mousedown", function ScrollPanel_Template_div_mousedown_9_listener($event) {
-          ɵɵrestoreView(_r1);
-          return ɵɵresetView(ctx.onYBarMouseDown($event));
-        })("keydown", function ScrollPanel_Template_div_keydown_9_listener($event) {
-          ɵɵrestoreView(_r1);
-          return ɵɵresetView(ctx.onKeyDown($event));
-        })("keyup", function ScrollPanel_Template_div_keyup_9_listener() {
-          ɵɵrestoreView(_r1);
-          return ɵɵresetView(ctx.onKeyUp());
-        })("focus", function ScrollPanel_Template_div_focus_9_listener($event) {
-          ɵɵrestoreView(_r1);
-          return ɵɵresetView(ctx.onFocus($event));
-        });
-        ɵɵelementEnd()();
-      }
-      if (rf & 2) {
-        ɵɵclassMap(ctx.styleClass);
-        ɵɵproperty("ngClass", "p-scrollpanel p-component")("ngStyle", ctx.style);
-        ɵɵattribute("data-pc-name", "scrollpanel");
-        ɵɵadvance(2);
-        ɵɵattribute("data-pc-section", "wrapper");
-        ɵɵadvance();
-        ɵɵattribute("data-pc-section", "content");
-        ɵɵadvance(3);
-        ɵɵproperty("ngTemplateOutlet", ctx.contentTemplate);
-        ɵɵadvance();
-        ɵɵattribute("aria-orientation", "horizontal")("aria-valuenow", ctx.lastScrollLeft)("data-pc-section", "barx")("aria-controls", ctx.contentId);
-        ɵɵadvance(2);
-        ɵɵattribute("aria-orientation", "vertical")("aria-valuenow", ctx.lastScrollTop)("data-pc-section", "bary")("aria-controls", ctx.contentId);
-      }
-    },
-    dependencies: [NgClass, NgTemplateOutlet, NgStyle],
-    styles: ["@layer primeng{.p-scrollpanel-wrapper{overflow:hidden;width:100%;height:100%;position:relative;float:left}.p-scrollpanel-content{height:calc(100% + 18px);width:calc(100% + 18px);padding:0 18px 18px 0;position:relative;overflow:auto;box-sizing:border-box}.p-scrollpanel-bar{position:relative;background:#c1c1c1;border-radius:3px;cursor:pointer;opacity:0;transition:opacity .25s linear}.p-scrollpanel-bar-y{width:9px;top:0}.p-scrollpanel-bar-x{height:9px;bottom:0}.p-scrollpanel-hidden{visibility:hidden}.p-scrollpanel:hover .p-scrollpanel-bar,.p-scrollpanel:active .p-scrollpanel-bar{opacity:1}.p-scrollpanel-grabbed{-webkit-user-select:none;user-select:none}}\n"],
-    encapsulation: 2,
-    changeDetection: 0
-  });
 };
+__publicField(_ScrollPanel, "ɵfac", function ScrollPanel_Factory(__ngFactoryType__) {
+  return new (__ngFactoryType__ || _ScrollPanel)(ɵɵdirectiveInject(PLATFORM_ID), ɵɵdirectiveInject(ElementRef), ɵɵdirectiveInject(NgZone), ɵɵdirectiveInject(ChangeDetectorRef), ɵɵdirectiveInject(DOCUMENT), ɵɵdirectiveInject(Renderer2));
+});
+__publicField(_ScrollPanel, "ɵcmp", ɵɵdefineComponent({
+  type: _ScrollPanel,
+  selectors: [["p-scrollPanel"]],
+  contentQueries: function ScrollPanel_ContentQueries(rf, ctx, dirIndex) {
+    if (rf & 1) {
+      ɵɵcontentQuery(dirIndex, PrimeTemplate, 4);
+    }
+    if (rf & 2) {
+      let _t;
+      ɵɵqueryRefresh(_t = ɵɵloadQuery()) && (ctx.templates = _t);
+    }
+  },
+  viewQuery: function ScrollPanel_Query(rf, ctx) {
+    if (rf & 1) {
+      ɵɵviewQuery(_c0, 5);
+      ɵɵviewQuery(_c1, 5);
+      ɵɵviewQuery(_c2, 5);
+      ɵɵviewQuery(_c3, 5);
+    }
+    if (rf & 2) {
+      let _t;
+      ɵɵqueryRefresh(_t = ɵɵloadQuery()) && (ctx.containerViewChild = _t.first);
+      ɵɵqueryRefresh(_t = ɵɵloadQuery()) && (ctx.contentViewChild = _t.first);
+      ɵɵqueryRefresh(_t = ɵɵloadQuery()) && (ctx.xBarViewChild = _t.first);
+      ɵɵqueryRefresh(_t = ɵɵloadQuery()) && (ctx.yBarViewChild = _t.first);
+    }
+  },
+  hostAttrs: [1, "p-element"],
+  inputs: {
+    style: "style",
+    styleClass: "styleClass",
+    step: [2, "step", "step", numberAttribute]
+  },
+  features: [ɵɵInputTransformsFeature],
+  ngContentSelectors: _c4,
+  decls: 11,
+  vars: 16,
+  consts: [["container", ""], ["content", ""], ["xBar", ""], ["yBar", ""], [3, "ngClass", "ngStyle"], [1, "p-scrollpanel-wrapper"], [1, "p-scrollpanel-content", 3, "mouseenter", "scroll"], [4, "ngTemplateOutlet"], ["tabindex", "0", "role", "scrollbar", 1, "p-scrollpanel-bar", "p-scrollpanel-bar-x", 3, "mousedown", "keydown", "keyup", "focus", "blur"], ["tabindex", "0", "role", "scrollbar", 1, "p-scrollpanel-bar", "p-scrollpanel-bar-y", 3, "mousedown", "keydown", "keyup", "focus"]],
+  template: function ScrollPanel_Template(rf, ctx) {
+    if (rf & 1) {
+      const _r1 = ɵɵgetCurrentView();
+      ɵɵprojectionDef();
+      ɵɵelementStart(0, "div", 4, 0)(2, "div", 5)(3, "div", 6, 1);
+      ɵɵlistener("mouseenter", function ScrollPanel_Template_div_mouseenter_3_listener() {
+        ɵɵrestoreView(_r1);
+        return ɵɵresetView(ctx.moveBar());
+      })("scroll", function ScrollPanel_Template_div_scroll_3_listener($event) {
+        ɵɵrestoreView(_r1);
+        return ɵɵresetView(ctx.onScroll($event));
+      });
+      ɵɵprojection(5);
+      ɵɵtemplate(6, ScrollPanel_ng_container_6_Template, 1, 0, "ng-container", 7);
+      ɵɵelementEnd()();
+      ɵɵelementStart(7, "div", 8, 2);
+      ɵɵlistener("mousedown", function ScrollPanel_Template_div_mousedown_7_listener($event) {
+        ɵɵrestoreView(_r1);
+        return ɵɵresetView(ctx.onXBarMouseDown($event));
+      })("keydown", function ScrollPanel_Template_div_keydown_7_listener($event) {
+        ɵɵrestoreView(_r1);
+        return ɵɵresetView(ctx.onKeyDown($event));
+      })("keyup", function ScrollPanel_Template_div_keyup_7_listener() {
+        ɵɵrestoreView(_r1);
+        return ɵɵresetView(ctx.onKeyUp());
+      })("focus", function ScrollPanel_Template_div_focus_7_listener($event) {
+        ɵɵrestoreView(_r1);
+        return ɵɵresetView(ctx.onFocus($event));
+      })("blur", function ScrollPanel_Template_div_blur_7_listener() {
+        ɵɵrestoreView(_r1);
+        return ɵɵresetView(ctx.onBlur());
+      });
+      ɵɵelementEnd();
+      ɵɵelementStart(9, "div", 9, 3);
+      ɵɵlistener("mousedown", function ScrollPanel_Template_div_mousedown_9_listener($event) {
+        ɵɵrestoreView(_r1);
+        return ɵɵresetView(ctx.onYBarMouseDown($event));
+      })("keydown", function ScrollPanel_Template_div_keydown_9_listener($event) {
+        ɵɵrestoreView(_r1);
+        return ɵɵresetView(ctx.onKeyDown($event));
+      })("keyup", function ScrollPanel_Template_div_keyup_9_listener() {
+        ɵɵrestoreView(_r1);
+        return ɵɵresetView(ctx.onKeyUp());
+      })("focus", function ScrollPanel_Template_div_focus_9_listener($event) {
+        ɵɵrestoreView(_r1);
+        return ɵɵresetView(ctx.onFocus($event));
+      });
+      ɵɵelementEnd()();
+    }
+    if (rf & 2) {
+      ɵɵclassMap(ctx.styleClass);
+      ɵɵproperty("ngClass", "p-scrollpanel p-component")("ngStyle", ctx.style);
+      ɵɵattribute("data-pc-name", "scrollpanel");
+      ɵɵadvance(2);
+      ɵɵattribute("data-pc-section", "wrapper");
+      ɵɵadvance();
+      ɵɵattribute("data-pc-section", "content");
+      ɵɵadvance(3);
+      ɵɵproperty("ngTemplateOutlet", ctx.contentTemplate);
+      ɵɵadvance();
+      ɵɵattribute("aria-orientation", "horizontal")("aria-valuenow", ctx.lastScrollLeft)("data-pc-section", "barx")("aria-controls", ctx.contentId);
+      ɵɵadvance(2);
+      ɵɵattribute("aria-orientation", "vertical")("aria-valuenow", ctx.lastScrollTop)("data-pc-section", "bary")("aria-controls", ctx.contentId);
+    }
+  },
+  dependencies: [NgClass, NgTemplateOutlet, NgStyle],
+  styles: ["@layer primeng{.p-scrollpanel-wrapper{overflow:hidden;width:100%;height:100%;position:relative;float:left}.p-scrollpanel-content{height:calc(100% + 18px);width:calc(100% + 18px);padding:0 18px 18px 0;position:relative;overflow:auto;box-sizing:border-box}.p-scrollpanel-bar{position:relative;background:#c1c1c1;border-radius:3px;cursor:pointer;opacity:0;transition:opacity .25s linear}.p-scrollpanel-bar-y{width:9px;top:0}.p-scrollpanel-bar-x{height:9px;bottom:0}.p-scrollpanel-hidden{visibility:hidden}.p-scrollpanel:hover .p-scrollpanel-bar,.p-scrollpanel:active .p-scrollpanel-bar{opacity:1}.p-scrollpanel-grabbed{-webkit-user-select:none;user-select:none}}\n"],
+  encapsulation: 2,
+  changeDetection: 0
+}));
+var ScrollPanel = _ScrollPanel;
 (() => {
   (typeof ngDevMode === "undefined" || ngDevMode) && setClassMetadata(ScrollPanel, [{
     type: Component,
     args: [{
       selector: "p-scrollPanel",
-      template: `
-        <div #container [ngClass]="'p-scrollpanel p-component'" [ngStyle]="style" [class]="styleClass" [attr.data-pc-name]="'scrollpanel'">
-            <div class="p-scrollpanel-wrapper" [attr.data-pc-section]="'wrapper'">
-                <div #content class="p-scrollpanel-content" [attr.data-pc-section]="'content'" (mouseenter)="moveBar()" (scroll)="onScroll($event)">
-                    <ng-content></ng-content>
-                    <ng-container *ngTemplateOutlet="contentTemplate"></ng-container>
-                </div>
-            </div>
-            <div
-                #xBar
-                class="p-scrollpanel-bar p-scrollpanel-bar-x"
-                tabindex="0"
-                role="scrollbar"
-                [attr.aria-orientation]="'horizontal'"
-                [attr.aria-valuenow]="lastScrollLeft"
-                [attr.data-pc-section]="'barx'"
-                [attr.aria-controls]="contentId"
-                (mousedown)="onXBarMouseDown($event)"
-                (keydown)="onKeyDown($event)"
-                (keyup)="onKeyUp()"
-                (focus)="onFocus($event)"
-                (blur)="onBlur()"
-            ></div>
-            <div
-                #yBar
-                class="p-scrollpanel-bar p-scrollpanel-bar-y"
-                tabindex="0"
-                role="scrollbar"
-                [attr.aria-orientation]="'vertical'"
-                [attr.aria-valuenow]="lastScrollTop"
-                [attr.data-pc-section]="'bary'"
-                [attr.aria-controls]="contentId"
-                (mousedown)="onYBarMouseDown($event)"
-                (keydown)="onKeyDown($event)"
-                (keyup)="onKeyUp()"
-                (focus)="onFocus($event)"
-            ></div>
-        </div>
-    `,
+      template: '\n        <div #container [ngClass]="\'p-scrollpanel p-component\'" [ngStyle]="style" [class]="styleClass" [attr.data-pc-name]="\'scrollpanel\'">\n            <div class="p-scrollpanel-wrapper" [attr.data-pc-section]="\'wrapper\'">\n                <div #content class="p-scrollpanel-content" [attr.data-pc-section]="\'content\'" (mouseenter)="moveBar()" (scroll)="onScroll($event)">\n                    <ng-content></ng-content>\n                    <ng-container *ngTemplateOutlet="contentTemplate"></ng-container>\n                </div>\n            </div>\n            <div\n                #xBar\n                class="p-scrollpanel-bar p-scrollpanel-bar-x"\n                tabindex="0"\n                role="scrollbar"\n                [attr.aria-orientation]="\'horizontal\'"\n                [attr.aria-valuenow]="lastScrollLeft"\n                [attr.data-pc-section]="\'barx\'"\n                [attr.aria-controls]="contentId"\n                (mousedown)="onXBarMouseDown($event)"\n                (keydown)="onKeyDown($event)"\n                (keyup)="onKeyUp()"\n                (focus)="onFocus($event)"\n                (blur)="onBlur()"\n            ></div>\n            <div\n                #yBar\n                class="p-scrollpanel-bar p-scrollpanel-bar-y"\n                tabindex="0"\n                role="scrollbar"\n                [attr.aria-orientation]="\'vertical\'"\n                [attr.aria-valuenow]="lastScrollTop"\n                [attr.data-pc-section]="\'bary\'"\n                [attr.aria-controls]="contentId"\n                (mousedown)="onYBarMouseDown($event)"\n                (keydown)="onKeyDown($event)"\n                (keyup)="onKeyUp()"\n                (focus)="onFocus($event)"\n            ></div>\n        </div>\n    ',
       changeDetection: ChangeDetectionStrategy.OnPush,
       encapsulation: ViewEncapsulation$1.None,
       host: {
@@ -658,20 +623,21 @@ var ScrollPanel = class _ScrollPanel {
     }]
   });
 })();
-var ScrollPanelModule = class _ScrollPanelModule {
-  static ɵfac = function ScrollPanelModule_Factory(__ngFactoryType__) {
-    return new (__ngFactoryType__ || _ScrollPanelModule)();
-  };
-  static ɵmod = ɵɵdefineNgModule({
-    type: _ScrollPanelModule,
-    declarations: [ScrollPanel],
-    imports: [CommonModule],
-    exports: [ScrollPanel]
-  });
-  static ɵinj = ɵɵdefineInjector({
-    imports: [CommonModule]
-  });
+var _ScrollPanelModule = class _ScrollPanelModule {
 };
+__publicField(_ScrollPanelModule, "ɵfac", function ScrollPanelModule_Factory(__ngFactoryType__) {
+  return new (__ngFactoryType__ || _ScrollPanelModule)();
+});
+__publicField(_ScrollPanelModule, "ɵmod", ɵɵdefineNgModule({
+  type: _ScrollPanelModule,
+  declarations: [ScrollPanel],
+  imports: [CommonModule],
+  exports: [ScrollPanel]
+}));
+__publicField(_ScrollPanelModule, "ɵinj", ɵɵdefineInjector({
+  imports: [CommonModule]
+}));
+var ScrollPanelModule = _ScrollPanelModule;
 (() => {
   (typeof ngDevMode === "undefined" || ngDevMode) && setClassMetadata(ScrollPanelModule, [{
     type: NgModule,

@@ -1,19 +1,19 @@
 import {
   TimesIcon
-} from "./chunk-MDBJZ6LU.js";
+} from "./chunk-AP6UZX4B.js";
 import {
   Ripple,
   RippleModule
-} from "./chunk-QN24C4B3.js";
-import "./chunk-PXWZN6FU.js";
+} from "./chunk-MUJBADSC.js";
+import "./chunk-BJLZ3T2F.js";
 import {
   PrimeNGConfig,
   PrimeTemplate,
   SharedModule
-} from "./chunk-TQSVMJ6K.js";
+} from "./chunk-ZROJCIWL.js";
 import {
   zindexutils
-} from "./chunk-3OF44R55.js";
+} from "./chunk-U3NLM53U.js";
 import {
   animate,
   animation,
@@ -21,10 +21,10 @@ import {
   transition,
   trigger,
   useAnimation
-} from "./chunk-OGB62SLM.js";
+} from "./chunk-5S7AEMUZ.js";
 import {
   DomHandler
-} from "./chunk-BUGEQH7Q.js";
+} from "./chunk-LB42WWNC.js";
 import {
   CommonModule,
   DOCUMENT,
@@ -32,7 +32,7 @@ import {
   NgIf,
   NgStyle,
   NgTemplateOutlet
-} from "./chunk-UBZYO7FG.js";
+} from "./chunk-KUZ63KOD.js";
 import {
   ChangeDetectionStrategy,
   ChangeDetectorRef,
@@ -80,11 +80,13 @@ import {
   ɵɵrestoreView,
   ɵɵtemplate,
   ɵɵtemplateRefExtractor
-} from "./chunk-ZI2Q76R4.js";
-import "./chunk-5OPE3T2R.js";
+} from "./chunk-R75KKECJ.js";
 import "./chunk-4N4GOYJH.js";
+import "./chunk-5OPE3T2R.js";
 import "./chunk-FHTVLBLO.js";
-import "./chunk-3OV72XIM.js";
+import {
+  __publicField
+} from "./chunk-IJZFAMY6.js";
 
 // node_modules/primeng/fesm2022/primeng-sidebar.mjs
 var _c0 = ["*"];
@@ -271,72 +273,111 @@ var hideAnimation = animation([animate("{{transition}}", style({
   transform: "{{transform}}",
   opacity: 0
 }))]);
-var Sidebar = class _Sidebar {
-  document;
-  el;
-  renderer;
-  cd;
-  config;
-  /**
-   *  Target element to attach the dialog, valid values are "body" or a local ng-template variable of another element (note: use binding with brackets for template variables, e.g. [appendTo]="mydiv" for a div element having #mydiv as variable name).
-   * @group Props
-   */
-  appendTo;
-  /**
-   * Whether to block scrolling of the document when sidebar is active.
-   * @group Props
-   */
-  blockScroll = false;
-  /**
-   * Inline style of the component.
-   * @group Props
-   */
-  style;
-  /**
-   * Style class of the component.
-   * @group Props
-   */
-  styleClass;
-  /**
-   * Aria label of the close icon.
-   * @group Props
-   */
-  ariaCloseLabel;
-  /**
-   * Whether to automatically manage layering.
-   * @group Props
-   */
-  autoZIndex = true;
-  /**
-   * Base zIndex value to use in layering.
-   * @group Props
-   */
-  baseZIndex = 0;
-  /**
-   * Whether an overlay mask is displayed behind the sidebar.
-   * @group Props
-   */
-  modal = true;
-  /**
-   * Whether to dismiss sidebar on click of the mask.
-   * @group Props
-   */
-  dismissible = true;
-  /**
-   * Whether to display the close icon.
-   * @group Props
-   */
-  showCloseIcon = true;
-  /**
-   * Specifies if pressing escape key should hide the sidebar.
-   * @group Props
-   */
-  closeOnEscape = true;
-  /**
-   * Transition options of the animation.
-   * @group Props
-   */
-  transitionOptions = "150ms cubic-bezier(0, 0, 0.2, 1)";
+var _Sidebar = class _Sidebar {
+  constructor(document, el, renderer, cd, config) {
+    __publicField(this, "document");
+    __publicField(this, "el");
+    __publicField(this, "renderer");
+    __publicField(this, "cd");
+    __publicField(this, "config");
+    /**
+     *  Target element to attach the dialog, valid values are "body" or a local ng-template variable of another element (note: use binding with brackets for template variables, e.g. [appendTo]="mydiv" for a div element having #mydiv as variable name).
+     * @group Props
+     */
+    __publicField(this, "appendTo");
+    /**
+     * Whether to block scrolling of the document when sidebar is active.
+     * @group Props
+     */
+    __publicField(this, "blockScroll", false);
+    /**
+     * Inline style of the component.
+     * @group Props
+     */
+    __publicField(this, "style");
+    /**
+     * Style class of the component.
+     * @group Props
+     */
+    __publicField(this, "styleClass");
+    /**
+     * Aria label of the close icon.
+     * @group Props
+     */
+    __publicField(this, "ariaCloseLabel");
+    /**
+     * Whether to automatically manage layering.
+     * @group Props
+     */
+    __publicField(this, "autoZIndex", true);
+    /**
+     * Base zIndex value to use in layering.
+     * @group Props
+     */
+    __publicField(this, "baseZIndex", 0);
+    /**
+     * Whether an overlay mask is displayed behind the sidebar.
+     * @group Props
+     */
+    __publicField(this, "modal", true);
+    /**
+     * Whether to dismiss sidebar on click of the mask.
+     * @group Props
+     */
+    __publicField(this, "dismissible", true);
+    /**
+     * Whether to display the close icon.
+     * @group Props
+     */
+    __publicField(this, "showCloseIcon", true);
+    /**
+     * Specifies if pressing escape key should hide the sidebar.
+     * @group Props
+     */
+    __publicField(this, "closeOnEscape", true);
+    /**
+     * Transition options of the animation.
+     * @group Props
+     */
+    __publicField(this, "transitionOptions", "150ms cubic-bezier(0, 0, 0.2, 1)");
+    __publicField(this, "templates");
+    /**
+     * Callback to invoke when dialog is shown.
+     * @group Emits
+     */
+    __publicField(this, "onShow", new EventEmitter());
+    /**
+     * Callback to invoke when dialog is hidden.
+     * @group Emits
+     */
+    __publicField(this, "onHide", new EventEmitter());
+    /**
+     * Callback to invoke when dialog visibility is changed.
+     * @param {boolean} value - Visible value.
+     * @group Emits
+     */
+    __publicField(this, "visibleChange", new EventEmitter());
+    __publicField(this, "initialized");
+    __publicField(this, "_visible");
+    __publicField(this, "_position", "left");
+    __publicField(this, "_fullScreen", false);
+    __publicField(this, "container");
+    __publicField(this, "transformOptions", "translate3d(-100%, 0px, 0px)");
+    __publicField(this, "mask");
+    __publicField(this, "maskClickListener");
+    __publicField(this, "documentEscapeListener");
+    __publicField(this, "animationEndListener");
+    __publicField(this, "contentTemplate");
+    __publicField(this, "headerTemplate");
+    __publicField(this, "footerTemplate");
+    __publicField(this, "closeIconTemplate");
+    __publicField(this, "headlessTemplate");
+    this.document = document;
+    this.el = el;
+    this.renderer = renderer;
+    this.cd = cd;
+    this.config = config;
+  }
   /**
    * Specifies the visibility of the dialog.
    * @group Props
@@ -382,50 +423,12 @@ var Sidebar = class _Sidebar {
     this._fullScreen = value;
     if (value) this.transformOptions = "none";
   }
-  templates;
-  /**
-   * Callback to invoke when dialog is shown.
-   * @group Emits
-   */
-  onShow = new EventEmitter();
-  /**
-   * Callback to invoke when dialog is hidden.
-   * @group Emits
-   */
-  onHide = new EventEmitter();
-  /**
-   * Callback to invoke when dialog visibility is changed.
-   * @param {boolean} value - Visible value.
-   * @group Emits
-   */
-  visibleChange = new EventEmitter();
-  initialized;
-  _visible;
-  _position = "left";
-  _fullScreen = false;
-  container;
-  transformOptions = "translate3d(-100%, 0px, 0px)";
-  mask;
-  maskClickListener;
-  documentEscapeListener;
-  animationEndListener;
-  contentTemplate;
-  headerTemplate;
-  footerTemplate;
-  closeIconTemplate;
-  headlessTemplate;
-  constructor(document, el, renderer, cd, config) {
-    this.document = document;
-    this.el = el;
-    this.renderer = renderer;
-    this.cd = cd;
-    this.config = config;
-  }
   ngAfterViewInit() {
     this.initialized = true;
   }
   ngAfterContentInit() {
-    this.templates?.forEach((item) => {
+    var _a;
+    (_a = this.templates) == null ? void 0 : _a.forEach((item) => {
       switch (item.getType()) {
         case "content":
           this.contentTemplate = item.template;
@@ -588,130 +591,74 @@ var Sidebar = class _Sidebar {
     this.unbindGlobalListeners();
     this.unbindAnimationEndListener();
   }
-  static ɵfac = function Sidebar_Factory(__ngFactoryType__) {
-    return new (__ngFactoryType__ || _Sidebar)(ɵɵdirectiveInject(DOCUMENT), ɵɵdirectiveInject(ElementRef), ɵɵdirectiveInject(Renderer2), ɵɵdirectiveInject(ChangeDetectorRef), ɵɵdirectiveInject(PrimeNGConfig));
-  };
-  static ɵcmp = ɵɵdefineComponent({
-    type: _Sidebar,
-    selectors: [["p-sidebar"]],
-    contentQueries: function Sidebar_ContentQueries(rf, ctx, dirIndex) {
-      if (rf & 1) {
-        ɵɵcontentQuery(dirIndex, PrimeTemplate, 4);
-      }
-      if (rf & 2) {
-        let _t;
-        ɵɵqueryRefresh(_t = ɵɵloadQuery()) && (ctx.templates = _t);
-      }
-    },
-    hostAttrs: [1, "p-element"],
-    inputs: {
-      appendTo: "appendTo",
-      blockScroll: [2, "blockScroll", "blockScroll", booleanAttribute],
-      style: "style",
-      styleClass: "styleClass",
-      ariaCloseLabel: "ariaCloseLabel",
-      autoZIndex: [2, "autoZIndex", "autoZIndex", booleanAttribute],
-      baseZIndex: [2, "baseZIndex", "baseZIndex", numberAttribute],
-      modal: [2, "modal", "modal", booleanAttribute],
-      dismissible: [2, "dismissible", "dismissible", booleanAttribute],
-      showCloseIcon: [2, "showCloseIcon", "showCloseIcon", booleanAttribute],
-      closeOnEscape: [2, "closeOnEscape", "closeOnEscape", booleanAttribute],
-      transitionOptions: "transitionOptions",
-      visible: "visible",
-      position: "position",
-      fullScreen: "fullScreen"
-    },
-    outputs: {
-      onShow: "onShow",
-      onHide: "onHide",
-      visibleChange: "visibleChange"
-    },
-    features: [ɵɵInputTransformsFeature],
-    ngContentSelectors: _c0,
-    decls: 1,
-    vars: 1,
-    consts: [["container", ""], ["notHeadless", ""], ["role", "complementary", 3, "ngClass", "ngStyle", "class", "keydown", 4, "ngIf"], ["role", "complementary", 3, "keydown", "ngClass", "ngStyle"], [4, "ngIf", "ngIfElse"], [4, "ngTemplateOutlet"], [1, "p-sidebar-header"], ["type", "button", "class", "p-sidebar-close p-sidebar-icon p-link", "pRipple", "", 3, "click", "keydown.enter", 4, "ngIf"], [1, "p-sidebar-content"], [4, "ngIf"], ["type", "button", "pRipple", "", 1, "p-sidebar-close", "p-sidebar-icon", "p-link", 3, "click", "keydown.enter"], [3, "styleClass", 4, "ngIf"], ["class", "p-sidebar-close-icon", 4, "ngIf"], [3, "styleClass"], [1, "p-sidebar-close-icon"], [1, "p-sidebar-footer"]],
-    template: function Sidebar_Template(rf, ctx) {
-      if (rf & 1) {
-        ɵɵprojectionDef();
-        ɵɵtemplate(0, Sidebar_div_0_Template, 5, 21, "div", 2);
-      }
-      if (rf & 2) {
-        ɵɵproperty("ngIf", ctx.visible);
-      }
-    },
-    dependencies: () => [NgClass, NgIf, NgTemplateOutlet, NgStyle, Ripple, TimesIcon],
-    styles: ["@layer primeng{.p-sidebar{position:fixed;transition:transform .3s;display:flex;flex-direction:column}.p-sidebar-content{position:relative;overflow-y:auto;flex-grow:1}.p-sidebar-header{display:flex;align-items:center}.p-sidebar-footer{margin-top:auto}.p-sidebar-icon{display:flex;align-items:center;justify-content:center;margin-left:auto}.p-sidebar-left{top:0;left:0;width:20rem;height:100%}.p-sidebar-right{top:0;right:0;width:20rem;height:100%}.p-sidebar-top{top:0;left:0;width:100%;height:10rem}.p-sidebar-bottom{bottom:0;left:0;width:100%;height:10rem}.p-sidebar-full{width:100%;height:100%;top:0;left:0;-webkit-transition:none;transition:none}.p-sidebar-left.p-sidebar-sm,.p-sidebar-right.p-sidebar-sm{width:20rem}.p-sidebar-left.p-sidebar-md,.p-sidebar-right.p-sidebar-md{width:40rem}.p-sidebar-left.p-sidebar-lg,.p-sidebar-right.p-sidebar-lg{width:60rem}.p-sidebar-top.p-sidebar-sm,.p-sidebar-bottom.p-sidebar-sm{height:10rem}.p-sidebar-top.p-sidebar-md,.p-sidebar-bottom.p-sidebar-md{height:20rem}.p-sidebar-top.p-sidebar-lg,.p-sidebar-bottom.p-sidebar-lg{height:30rem}@media screen and (max-width: 64em){.p-sidebar-left.p-sidebar-lg,.p-sidebar-left.p-sidebar-md,.p-sidebar-right.p-sidebar-lg,.p-sidebar-right.p-sidebar-md{width:20rem}}}\n"],
-    encapsulation: 2,
-    data: {
-      animation: [trigger("panelState", [transition("void => visible", [useAnimation(showAnimation)]), transition("visible => void", [useAnimation(hideAnimation)])])]
-    },
-    changeDetection: 0
-  });
 };
+__publicField(_Sidebar, "ɵfac", function Sidebar_Factory(__ngFactoryType__) {
+  return new (__ngFactoryType__ || _Sidebar)(ɵɵdirectiveInject(DOCUMENT), ɵɵdirectiveInject(ElementRef), ɵɵdirectiveInject(Renderer2), ɵɵdirectiveInject(ChangeDetectorRef), ɵɵdirectiveInject(PrimeNGConfig));
+});
+__publicField(_Sidebar, "ɵcmp", ɵɵdefineComponent({
+  type: _Sidebar,
+  selectors: [["p-sidebar"]],
+  contentQueries: function Sidebar_ContentQueries(rf, ctx, dirIndex) {
+    if (rf & 1) {
+      ɵɵcontentQuery(dirIndex, PrimeTemplate, 4);
+    }
+    if (rf & 2) {
+      let _t;
+      ɵɵqueryRefresh(_t = ɵɵloadQuery()) && (ctx.templates = _t);
+    }
+  },
+  hostAttrs: [1, "p-element"],
+  inputs: {
+    appendTo: "appendTo",
+    blockScroll: [2, "blockScroll", "blockScroll", booleanAttribute],
+    style: "style",
+    styleClass: "styleClass",
+    ariaCloseLabel: "ariaCloseLabel",
+    autoZIndex: [2, "autoZIndex", "autoZIndex", booleanAttribute],
+    baseZIndex: [2, "baseZIndex", "baseZIndex", numberAttribute],
+    modal: [2, "modal", "modal", booleanAttribute],
+    dismissible: [2, "dismissible", "dismissible", booleanAttribute],
+    showCloseIcon: [2, "showCloseIcon", "showCloseIcon", booleanAttribute],
+    closeOnEscape: [2, "closeOnEscape", "closeOnEscape", booleanAttribute],
+    transitionOptions: "transitionOptions",
+    visible: "visible",
+    position: "position",
+    fullScreen: "fullScreen"
+  },
+  outputs: {
+    onShow: "onShow",
+    onHide: "onHide",
+    visibleChange: "visibleChange"
+  },
+  features: [ɵɵInputTransformsFeature],
+  ngContentSelectors: _c0,
+  decls: 1,
+  vars: 1,
+  consts: [["container", ""], ["notHeadless", ""], ["role", "complementary", 3, "ngClass", "ngStyle", "class", "keydown", 4, "ngIf"], ["role", "complementary", 3, "keydown", "ngClass", "ngStyle"], [4, "ngIf", "ngIfElse"], [4, "ngTemplateOutlet"], [1, "p-sidebar-header"], ["type", "button", "class", "p-sidebar-close p-sidebar-icon p-link", "pRipple", "", 3, "click", "keydown.enter", 4, "ngIf"], [1, "p-sidebar-content"], [4, "ngIf"], ["type", "button", "pRipple", "", 1, "p-sidebar-close", "p-sidebar-icon", "p-link", 3, "click", "keydown.enter"], [3, "styleClass", 4, "ngIf"], ["class", "p-sidebar-close-icon", 4, "ngIf"], [3, "styleClass"], [1, "p-sidebar-close-icon"], [1, "p-sidebar-footer"]],
+  template: function Sidebar_Template(rf, ctx) {
+    if (rf & 1) {
+      ɵɵprojectionDef();
+      ɵɵtemplate(0, Sidebar_div_0_Template, 5, 21, "div", 2);
+    }
+    if (rf & 2) {
+      ɵɵproperty("ngIf", ctx.visible);
+    }
+  },
+  dependencies: () => [NgClass, NgIf, NgTemplateOutlet, NgStyle, Ripple, TimesIcon],
+  styles: ["@layer primeng{.p-sidebar{position:fixed;transition:transform .3s;display:flex;flex-direction:column}.p-sidebar-content{position:relative;overflow-y:auto;flex-grow:1}.p-sidebar-header{display:flex;align-items:center}.p-sidebar-footer{margin-top:auto}.p-sidebar-icon{display:flex;align-items:center;justify-content:center;margin-left:auto}.p-sidebar-left{top:0;left:0;width:20rem;height:100%}.p-sidebar-right{top:0;right:0;width:20rem;height:100%}.p-sidebar-top{top:0;left:0;width:100%;height:10rem}.p-sidebar-bottom{bottom:0;left:0;width:100%;height:10rem}.p-sidebar-full{width:100%;height:100%;top:0;left:0;-webkit-transition:none;transition:none}.p-sidebar-left.p-sidebar-sm,.p-sidebar-right.p-sidebar-sm{width:20rem}.p-sidebar-left.p-sidebar-md,.p-sidebar-right.p-sidebar-md{width:40rem}.p-sidebar-left.p-sidebar-lg,.p-sidebar-right.p-sidebar-lg{width:60rem}.p-sidebar-top.p-sidebar-sm,.p-sidebar-bottom.p-sidebar-sm{height:10rem}.p-sidebar-top.p-sidebar-md,.p-sidebar-bottom.p-sidebar-md{height:20rem}.p-sidebar-top.p-sidebar-lg,.p-sidebar-bottom.p-sidebar-lg{height:30rem}@media screen and (max-width: 64em){.p-sidebar-left.p-sidebar-lg,.p-sidebar-left.p-sidebar-md,.p-sidebar-right.p-sidebar-lg,.p-sidebar-right.p-sidebar-md{width:20rem}}}\n"],
+  encapsulation: 2,
+  data: {
+    animation: [trigger("panelState", [transition("void => visible", [useAnimation(showAnimation)]), transition("visible => void", [useAnimation(hideAnimation)])])]
+  },
+  changeDetection: 0
+}));
+var Sidebar = _Sidebar;
 (() => {
   (typeof ngDevMode === "undefined" || ngDevMode) && setClassMetadata(Sidebar, [{
     type: Component,
     args: [{
       selector: "p-sidebar",
-      template: `
-        <div
-            #container
-            [ngClass]="{
-                'p-sidebar': true,
-                'p-sidebar-active': visible,
-                'p-sidebar-left': position === 'left' && !fullScreen,
-                'p-sidebar-right': position === 'right' && !fullScreen,
-                'p-sidebar-top': position === 'top' && !fullScreen,
-                'p-sidebar-bottom': position === 'bottom' && !fullScreen,
-                'p-sidebar-full': fullScreen
-            }"
-            *ngIf="visible"
-            [@panelState]="{ value: 'visible', params: { transform: transformOptions, transition: transitionOptions } }"
-            (@panelState.start)="onAnimationStart($event)"
-            (@panelState.done)="onAnimationEnd($event)"
-            [ngStyle]="style"
-            [class]="styleClass"
-            role="complementary"
-            [attr.data-pc-name]="'sidebar'"
-            [attr.data-pc-section]="'root'"
-            (keydown)="onKeyDown($event)"
-        >
-            <ng-container *ngIf="headlessTemplate; else notHeadless">
-                <ng-container *ngTemplateOutlet="headlessTemplate"></ng-container>
-            </ng-container>
-            <ng-template #notHeadless>
-                <div class="p-sidebar-header" [attr.data-pc-section]="'header'">
-                    <ng-container *ngTemplateOutlet="headerTemplate"></ng-container>
-                    <button
-                        type="button"
-                        class="p-sidebar-close p-sidebar-icon p-link"
-                        (click)="close($event)"
-                        (keydown.enter)="close($event)"
-                        [attr.aria-label]="ariaCloseLabel"
-                        *ngIf="showCloseIcon"
-                        pRipple
-                        [attr.data-pc-section]="'closebutton'"
-                        [attr.data-pc-group-section]="'iconcontainer'"
-                    >
-                        <TimesIcon *ngIf="!closeIconTemplate" [styleClass]="'p-sidebar-close-icon'" [attr.data-pc-section]="'closeicon'" />
-                        <span *ngIf="closeIconTemplate" class="p-sidebar-close-icon" [attr.data-pc-section]="'closeicon'">
-                            <ng-template *ngTemplateOutlet="closeIconTemplate"></ng-template>
-                        </span>
-                    </button>
-                </div>
-                <div class="p-sidebar-content" [attr.data-pc-section]="'content'">
-                    <ng-content></ng-content>
-                    <ng-container *ngTemplateOutlet="contentTemplate"></ng-container>
-                </div>
-                <ng-container *ngIf="footerTemplate">
-                    <div class="p-sidebar-footer" [attr.data-pc-section]="'footer'">
-                        <ng-container *ngTemplateOutlet="footerTemplate"></ng-container>
-                    </div>
-                </ng-container>
-            </ng-template>
-        </div>
-    `,
+      template: '\n        <div\n            #container\n            [ngClass]="{\n                \'p-sidebar\': true,\n                \'p-sidebar-active\': visible,\n                \'p-sidebar-left\': position === \'left\' && !fullScreen,\n                \'p-sidebar-right\': position === \'right\' && !fullScreen,\n                \'p-sidebar-top\': position === \'top\' && !fullScreen,\n                \'p-sidebar-bottom\': position === \'bottom\' && !fullScreen,\n                \'p-sidebar-full\': fullScreen\n            }"\n            *ngIf="visible"\n            [@panelState]="{ value: \'visible\', params: { transform: transformOptions, transition: transitionOptions } }"\n            (@panelState.start)="onAnimationStart($event)"\n            (@panelState.done)="onAnimationEnd($event)"\n            [ngStyle]="style"\n            [class]="styleClass"\n            role="complementary"\n            [attr.data-pc-name]="\'sidebar\'"\n            [attr.data-pc-section]="\'root\'"\n            (keydown)="onKeyDown($event)"\n        >\n            <ng-container *ngIf="headlessTemplate; else notHeadless">\n                <ng-container *ngTemplateOutlet="headlessTemplate"></ng-container>\n            </ng-container>\n            <ng-template #notHeadless>\n                <div class="p-sidebar-header" [attr.data-pc-section]="\'header\'">\n                    <ng-container *ngTemplateOutlet="headerTemplate"></ng-container>\n                    <button\n                        type="button"\n                        class="p-sidebar-close p-sidebar-icon p-link"\n                        (click)="close($event)"\n                        (keydown.enter)="close($event)"\n                        [attr.aria-label]="ariaCloseLabel"\n                        *ngIf="showCloseIcon"\n                        pRipple\n                        [attr.data-pc-section]="\'closebutton\'"\n                        [attr.data-pc-group-section]="\'iconcontainer\'"\n                    >\n                        <TimesIcon *ngIf="!closeIconTemplate" [styleClass]="\'p-sidebar-close-icon\'" [attr.data-pc-section]="\'closeicon\'" />\n                        <span *ngIf="closeIconTemplate" class="p-sidebar-close-icon" [attr.data-pc-section]="\'closeicon\'">\n                            <ng-template *ngTemplateOutlet="closeIconTemplate"></ng-template>\n                        </span>\n                    </button>\n                </div>\n                <div class="p-sidebar-content" [attr.data-pc-section]="\'content\'">\n                    <ng-content></ng-content>\n                    <ng-container *ngTemplateOutlet="contentTemplate"></ng-container>\n                </div>\n                <ng-container *ngIf="footerTemplate">\n                    <div class="p-sidebar-footer" [attr.data-pc-section]="\'footer\'">\n                        <ng-container *ngTemplateOutlet="footerTemplate"></ng-container>\n                    </div>\n                </ng-container>\n            </ng-template>\n        </div>\n    ',
       animations: [trigger("panelState", [transition("void => visible", [useAnimation(showAnimation)]), transition("visible => void", [useAnimation(hideAnimation)])])],
       changeDetection: ChangeDetectionStrategy.OnPush,
       encapsulation: ViewEncapsulation$1.None,
@@ -816,20 +763,21 @@ var Sidebar = class _Sidebar {
     }]
   });
 })();
-var SidebarModule = class _SidebarModule {
-  static ɵfac = function SidebarModule_Factory(__ngFactoryType__) {
-    return new (__ngFactoryType__ || _SidebarModule)();
-  };
-  static ɵmod = ɵɵdefineNgModule({
-    type: _SidebarModule,
-    declarations: [Sidebar],
-    imports: [CommonModule, RippleModule, SharedModule, TimesIcon],
-    exports: [Sidebar, SharedModule]
-  });
-  static ɵinj = ɵɵdefineInjector({
-    imports: [CommonModule, RippleModule, SharedModule, TimesIcon, SharedModule]
-  });
+var _SidebarModule = class _SidebarModule {
 };
+__publicField(_SidebarModule, "ɵfac", function SidebarModule_Factory(__ngFactoryType__) {
+  return new (__ngFactoryType__ || _SidebarModule)();
+});
+__publicField(_SidebarModule, "ɵmod", ɵɵdefineNgModule({
+  type: _SidebarModule,
+  declarations: [Sidebar],
+  imports: [CommonModule, RippleModule, SharedModule, TimesIcon],
+  exports: [Sidebar, SharedModule]
+}));
+__publicField(_SidebarModule, "ɵinj", ɵɵdefineInjector({
+  imports: [CommonModule, RippleModule, SharedModule, TimesIcon, SharedModule]
+}));
+var SidebarModule = _SidebarModule;
 (() => {
   (typeof ngDevMode === "undefined" || ngDevMode) && setClassMetadata(SidebarModule, [{
     type: NgModule,

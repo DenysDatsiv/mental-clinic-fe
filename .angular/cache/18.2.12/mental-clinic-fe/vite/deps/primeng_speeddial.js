@@ -1,37 +1,37 @@
 import {
   PlusIcon
-} from "./chunk-OPPBAY66.js";
+} from "./chunk-6RCVZF7W.js";
 import {
   Tooltip,
   TooltipModule
-} from "./chunk-STBFZVQ2.js";
-import {
-  ButtonDirective,
-  ButtonModule
-} from "./chunk-7TN6NS6B.js";
-import "./chunk-PCVGMHYY.js";
-import {
-  Ripple,
-  RippleModule
-} from "./chunk-QN24C4B3.js";
-import "./chunk-32JR77BM.js";
+} from "./chunk-IC7NSP6U.js";
 import {
   RouterLink,
   RouterModule
-} from "./chunk-AQMTG6B6.js";
-import "./chunk-3E3YFUVD.js";
-import "./chunk-DO2TVYAE.js";
-import "./chunk-PXWZN6FU.js";
+} from "./chunk-JBMGT7BE.js";
+import {
+  ButtonDirective,
+  ButtonModule
+} from "./chunk-ZLJ4QAH5.js";
+import "./chunk-VYCWYYRS.js";
+import {
+  Ripple,
+  RippleModule
+} from "./chunk-MUJBADSC.js";
+import "./chunk-LND2F6FW.js";
+import "./chunk-BJLZ3T2F.js";
 import {
   PrimeTemplate,
   SharedModule
-} from "./chunk-TQSVMJ6K.js";
+} from "./chunk-ZROJCIWL.js";
 import {
   UniqueComponentId
-} from "./chunk-3OF44R55.js";
+} from "./chunk-U3NLM53U.js";
+import "./chunk-MWP4G2UW.js";
+import "./chunk-RWZD3TDV.js";
 import {
   DomHandler
-} from "./chunk-BUGEQH7Q.js";
+} from "./chunk-LB42WWNC.js";
 import {
   CommonModule,
   DOCUMENT,
@@ -41,7 +41,7 @@ import {
   NgStyle,
   NgTemplateOutlet,
   isPlatformBrowser
-} from "./chunk-UBZYO7FG.js";
+} from "./chunk-KUZ63KOD.js";
 import {
   ChangeDetectionStrategy,
   ChangeDetectorRef,
@@ -92,15 +92,16 @@ import {
   ɵɵtemplate,
   ɵɵtemplateRefExtractor,
   ɵɵviewQuery
-} from "./chunk-ZI2Q76R4.js";
-import "./chunk-5OPE3T2R.js";
+} from "./chunk-R75KKECJ.js";
 import {
   asapScheduler
 } from "./chunk-4N4GOYJH.js";
+import "./chunk-5OPE3T2R.js";
 import "./chunk-FHTVLBLO.js";
 import {
+  __publicField,
   __spreadValues
-} from "./chunk-3OV72XIM.js";
+} from "./chunk-IJZFAMY6.js";
 
 // node_modules/primeng/fesm2022/primeng-speeddial.mjs
 var _c0 = ["container"];
@@ -285,22 +286,159 @@ function SpeedDial_div_8_Template(rf, ctx) {
     ɵɵproperty("ngClass", ɵɵpureFunction1(4, _c6, ctx_r1.visible))("ngStyle", ctx_r1.maskStyle);
   }
 }
-var SpeedDial = class _SpeedDial {
-  platformId;
-  el;
-  cd;
-  document;
-  renderer;
-  /**
-   * List of items id.
-   * @group Props
-   */
-  id;
-  /**
-   * MenuModel instance to define the action items.
-   * @group Props
-   */
-  model = null;
+var _SpeedDial = class _SpeedDial {
+  constructor(platformId, el, cd, document, renderer) {
+    __publicField(this, "platformId");
+    __publicField(this, "el");
+    __publicField(this, "cd");
+    __publicField(this, "document");
+    __publicField(this, "renderer");
+    /**
+     * List of items id.
+     * @group Props
+     */
+    __publicField(this, "id");
+    /**
+     * MenuModel instance to define the action items.
+     * @group Props
+     */
+    __publicField(this, "model", null);
+    /**
+     * Inline style of the element.
+     * @group Props
+     */
+    __publicField(this, "style");
+    /**
+     * Style class of the element.
+     * @group Props
+     */
+    __publicField(this, "className");
+    /**
+     * Specifies the opening direction of actions.
+     * @gruop Props
+     */
+    __publicField(this, "direction", "up");
+    /**
+     * Transition delay step for each action item.
+     * @group Props
+     */
+    __publicField(this, "transitionDelay", 30);
+    /**
+     * Specifies the opening type of actions.
+     * @group Props
+     */
+    __publicField(this, "type", "linear");
+    /**
+     * Radius for *circle types.
+     * @group Props
+     */
+    __publicField(this, "radius", 0);
+    /**
+     * Whether to show a mask element behind the speeddial.
+     * @group Props
+     */
+    __publicField(this, "mask", false);
+    /**
+     * Whether the component is disabled.
+     * @group Props
+     */
+    __publicField(this, "disabled", false);
+    /**
+     * Whether the actions close when clicked outside.
+     * @group Props
+     */
+    __publicField(this, "hideOnClickOutside", true);
+    /**
+     * Inline style of the button element.
+     * @group Props
+     */
+    __publicField(this, "buttonStyle");
+    /**
+     * Style class of the button element.
+     * @group Props
+     */
+    __publicField(this, "buttonClassName");
+    /**
+     * Inline style of the mask element.
+     * @group Props
+     */
+    __publicField(this, "maskStyle");
+    /**
+     * Style class of the mask element.
+     * @group Props
+     */
+    __publicField(this, "maskClassName");
+    /**
+     * Show icon of the button element.
+     * @group Props
+     */
+    __publicField(this, "showIcon");
+    /**
+     * Hide icon of the button element.
+     * @group Props
+     */
+    __publicField(this, "hideIcon");
+    /**
+     * Defined to rotate showIcon when hideIcon is not present.
+     * @group Props
+     */
+    __publicField(this, "rotateAnimation", true);
+    /**
+     * Defines a string value that labels an interactive element.
+     * @group Props
+     */
+    __publicField(this, "ariaLabel");
+    /**
+     * Identifier of the underlying input element.
+     * @group Props
+     */
+    __publicField(this, "ariaLabelledBy");
+    /**
+     * Fired when the visibility of element changed.
+     * @param {boolean} boolean - Visibility value.
+     * @group Emits
+     */
+    __publicField(this, "onVisibleChange", new EventEmitter());
+    /**
+     * Fired when the visibility of element changed.
+     * @param {boolean} boolean - Visibility value.
+     * @group Emits
+     */
+    __publicField(this, "visibleChange", new EventEmitter());
+    /**
+     * Fired when the button element clicked.
+     * @param {MouseEvent} event - Mouse event.
+     * @group Emits
+     */
+    __publicField(this, "onClick", new EventEmitter());
+    /**
+     * Fired when the actions are visible.
+     * @param {Event} event - Browser event.
+     * @group Emits
+     */
+    __publicField(this, "onShow", new EventEmitter());
+    /**
+     * Fired when the actions are hidden.
+     * @param {Event} event - Browser event.
+     * @group Emits
+     */
+    __publicField(this, "onHide", new EventEmitter());
+    __publicField(this, "container");
+    __publicField(this, "list");
+    __publicField(this, "templates");
+    __publicField(this, "buttonTemplate");
+    __publicField(this, "itemTemplate");
+    __publicField(this, "isItemClicked", false);
+    __publicField(this, "_visible", false);
+    __publicField(this, "documentClickListener");
+    __publicField(this, "focusedOptionIndex", signal(null));
+    __publicField(this, "focused", false);
+    this.platformId = platformId;
+    this.el = el;
+    this.cd = cd;
+    this.document = document;
+    this.renderer = renderer;
+  }
   /**
    * Specifies the visibility of the overlay.
    * @defaultValue false
@@ -317,165 +455,30 @@ var SpeedDial = class _SpeedDial {
       this.unbindDocumentClickListener();
     }
   }
-  /**
-   * Inline style of the element.
-   * @group Props
-   */
-  style;
-  /**
-   * Style class of the element.
-   * @group Props
-   */
-  className;
-  /**
-   * Specifies the opening direction of actions.
-   * @gruop Props
-   */
-  direction = "up";
-  /**
-   * Transition delay step for each action item.
-   * @group Props
-   */
-  transitionDelay = 30;
-  /**
-   * Specifies the opening type of actions.
-   * @group Props
-   */
-  type = "linear";
-  /**
-   * Radius for *circle types.
-   * @group Props
-   */
-  radius = 0;
-  /**
-   * Whether to show a mask element behind the speeddial.
-   * @group Props
-   */
-  mask = false;
-  /**
-   * Whether the component is disabled.
-   * @group Props
-   */
-  disabled = false;
-  /**
-   * Whether the actions close when clicked outside.
-   * @group Props
-   */
-  hideOnClickOutside = true;
-  /**
-   * Inline style of the button element.
-   * @group Props
-   */
-  buttonStyle;
-  /**
-   * Style class of the button element.
-   * @group Props
-   */
-  buttonClassName;
-  /**
-   * Inline style of the mask element.
-   * @group Props
-   */
-  maskStyle;
-  /**
-   * Style class of the mask element.
-   * @group Props
-   */
-  maskClassName;
-  /**
-   * Show icon of the button element.
-   * @group Props
-   */
-  showIcon;
-  /**
-   * Hide icon of the button element.
-   * @group Props
-   */
-  hideIcon;
-  /**
-   * Defined to rotate showIcon when hideIcon is not present.
-   * @group Props
-   */
-  rotateAnimation = true;
-  /**
-   * Defines a string value that labels an interactive element.
-   * @group Props
-   */
-  ariaLabel;
-  /**
-   * Identifier of the underlying input element.
-   * @group Props
-   */
-  ariaLabelledBy;
-  /**
-   * Fired when the visibility of element changed.
-   * @param {boolean} boolean - Visibility value.
-   * @group Emits
-   */
-  onVisibleChange = new EventEmitter();
-  /**
-   * Fired when the visibility of element changed.
-   * @param {boolean} boolean - Visibility value.
-   * @group Emits
-   */
-  visibleChange = new EventEmitter();
-  /**
-   * Fired when the button element clicked.
-   * @param {MouseEvent} event - Mouse event.
-   * @group Emits
-   */
-  onClick = new EventEmitter();
-  /**
-   * Fired when the actions are visible.
-   * @param {Event} event - Browser event.
-   * @group Emits
-   */
-  onShow = new EventEmitter();
-  /**
-   * Fired when the actions are hidden.
-   * @param {Event} event - Browser event.
-   * @group Emits
-   */
-  onHide = new EventEmitter();
-  container;
-  list;
-  templates;
-  buttonTemplate;
-  itemTemplate;
-  isItemClicked = false;
-  _visible = false;
-  documentClickListener;
-  focusedOptionIndex = signal(null);
-  focused = false;
   get focusedOptionId() {
     return this.focusedOptionIndex() !== -1 ? this.focusedOptionIndex() : null;
-  }
-  constructor(platformId, el, cd, document, renderer) {
-    this.platformId = platformId;
-    this.el = el;
-    this.cd = cd;
-    this.document = document;
-    this.renderer = renderer;
   }
   ngOnInit() {
     this.id = this.id || UniqueComponentId();
   }
   ngAfterViewInit() {
+    var _a, _b, _c, _d;
     if (isPlatformBrowser(this.platformId)) {
       if (this.type !== "linear") {
-        const button = DomHandler.findSingle(this.container?.nativeElement, ".p-speeddial-button");
-        const firstItem = DomHandler.findSingle(this.list?.nativeElement, ".p-speeddial-item");
+        const button = DomHandler.findSingle((_a = this.container) == null ? void 0 : _a.nativeElement, ".p-speeddial-button");
+        const firstItem = DomHandler.findSingle((_b = this.list) == null ? void 0 : _b.nativeElement, ".p-speeddial-item");
         if (button && firstItem) {
           const wDiff = Math.abs(button.offsetWidth - firstItem.offsetWidth);
           const hDiff = Math.abs(button.offsetHeight - firstItem.offsetHeight);
-          this.list?.nativeElement.style.setProperty("--item-diff-x", `${wDiff / 2}px`);
-          this.list?.nativeElement.style.setProperty("--item-diff-y", `${hDiff / 2}px`);
+          (_c = this.list) == null ? void 0 : _c.nativeElement.style.setProperty("--item-diff-x", "".concat(wDiff / 2, "px"));
+          (_d = this.list) == null ? void 0 : _d.nativeElement.style.setProperty("--item-diff-y", "".concat(hDiff / 2, "px"));
         }
       }
     }
   }
   ngAfterContentInit() {
-    this.templates?.forEach((item) => {
+    var _a;
+    (_a = this.templates) == null ? void 0 : _a.forEach((item) => {
       switch (item.getType()) {
         case "button":
           this.buttonTemplate = item.template;
@@ -690,14 +693,14 @@ var SpeedDial = class _SpeedDial {
       if (type === "circle") {
         const step = 2 * Math.PI / length;
         return {
-          left: `calc(${radius * Math.cos(step * index)}px + var(--item-diff-x, 0px))`,
-          top: `calc(${radius * Math.sin(step * index)}px + var(--item-diff-y, 0px))`
+          left: "calc(".concat(radius * Math.cos(step * index), "px + var(--item-diff-x, 0px))"),
+          top: "calc(".concat(radius * Math.sin(step * index), "px + var(--item-diff-y, 0px))")
         };
       } else if (type === "semi-circle") {
         const direction = this.direction;
         const step = Math.PI / (length - 1);
-        const x = `calc(${radius * Math.cos(step * index)}px + var(--item-diff-x, 0px))`;
-        const y = `calc(${radius * Math.sin(step * index)}px + var(--item-diff-y, 0px))`;
+        const x = "calc(".concat(radius * Math.cos(step * index), "px + var(--item-diff-x, 0px))");
+        const y = "calc(".concat(radius * Math.sin(step * index), "px + var(--item-diff-y, 0px))");
         if (direction === "up") {
           return {
             left: x,
@@ -722,8 +725,8 @@ var SpeedDial = class _SpeedDial {
       } else if (type === "quarter-circle") {
         const direction = this.direction;
         const step = Math.PI / (2 * (length - 1));
-        const x = `calc(${radius * Math.cos(step * index)}px + var(--item-diff-x, 0px))`;
-        const y = `calc(${radius * Math.sin(step * index)}px + var(--item-diff-y, 0px))`;
+        const x = "calc(".concat(radius * Math.cos(step * index), "px + var(--item-diff-x, 0px))");
+        const y = "calc(".concat(radius * Math.sin(step * index), "px + var(--item-diff-y, 0px))");
         if (direction === "up-left") {
           return {
             right: x,
@@ -755,8 +758,8 @@ var SpeedDial = class _SpeedDial {
   }
   containerClass() {
     return {
-      [`p-speeddial p-component p-speeddial-${this.type}`]: true,
-      [`p-speeddial-direction-${this.direction}`]: this.type !== "circle",
+      ["p-speeddial p-component" + " p-speeddial-".concat(this.type)]: true,
+      ["p-speeddial-direction-".concat(this.direction)]: this.type !== "circle",
       "p-speeddial-opened": this.visible,
       "p-disabled": this.disabled
     };
@@ -775,7 +778,7 @@ var SpeedDial = class _SpeedDial {
     const transitionDelay = this.calculateTransitionDelay(index);
     const pointStyle = this.calculatePointStyle(index);
     return __spreadValues({
-      transitionDelay: `${transitionDelay}ms`
+      transitionDelay: "".concat(transitionDelay, "ms")
     }, pointStyle);
   }
   isClickableRouterLink(item) {
@@ -805,225 +808,128 @@ var SpeedDial = class _SpeedDial {
   ngOnDestroy() {
     this.unbindDocumentClickListener();
   }
-  static ɵfac = function SpeedDial_Factory(__ngFactoryType__) {
-    return new (__ngFactoryType__ || _SpeedDial)(ɵɵdirectiveInject(PLATFORM_ID), ɵɵdirectiveInject(ElementRef), ɵɵdirectiveInject(ChangeDetectorRef), ɵɵdirectiveInject(DOCUMENT), ɵɵdirectiveInject(Renderer2));
-  };
-  static ɵcmp = ɵɵdefineComponent({
-    type: _SpeedDial,
-    selectors: [["p-speedDial"]],
-    contentQueries: function SpeedDial_ContentQueries(rf, ctx, dirIndex) {
-      if (rf & 1) {
-        ɵɵcontentQuery(dirIndex, PrimeTemplate, 4);
-      }
-      if (rf & 2) {
-        let _t;
-        ɵɵqueryRefresh(_t = ɵɵloadQuery()) && (ctx.templates = _t);
-      }
-    },
-    viewQuery: function SpeedDial_Query(rf, ctx) {
-      if (rf & 1) {
-        ɵɵviewQuery(_c0, 5);
-        ɵɵviewQuery(_c1, 5);
-      }
-      if (rf & 2) {
-        let _t;
-        ɵɵqueryRefresh(_t = ɵɵloadQuery()) && (ctx.container = _t.first);
-        ɵɵqueryRefresh(_t = ɵɵloadQuery()) && (ctx.list = _t.first);
-      }
-    },
-    hostAttrs: [1, "p-element"],
-    inputs: {
-      id: "id",
-      model: "model",
-      visible: "visible",
-      style: "style",
-      className: "className",
-      direction: "direction",
-      transitionDelay: [2, "transitionDelay", "transitionDelay", numberAttribute],
-      type: "type",
-      radius: [2, "radius", "radius", numberAttribute],
-      mask: [2, "mask", "mask", booleanAttribute],
-      disabled: [2, "disabled", "disabled", booleanAttribute],
-      hideOnClickOutside: [2, "hideOnClickOutside", "hideOnClickOutside", booleanAttribute],
-      buttonStyle: "buttonStyle",
-      buttonClassName: "buttonClassName",
-      maskStyle: "maskStyle",
-      maskClassName: "maskClassName",
-      showIcon: "showIcon",
-      hideIcon: "hideIcon",
-      rotateAnimation: [2, "rotateAnimation", "rotateAnimation", booleanAttribute],
-      ariaLabel: "ariaLabel",
-      ariaLabelledBy: "ariaLabelledBy"
-    },
-    outputs: {
-      onVisibleChange: "onVisibleChange",
-      visibleChange: "visibleChange",
-      onClick: "onClick",
-      onShow: "onShow",
-      onHide: "onHide"
-    },
-    features: [ɵɵInputTransformsFeature],
-    decls: 9,
-    vars: 24,
-    consts: [["container", ""], ["list", ""], ["elseBlock", ""], [3, "ngClass", "ngStyle"], ["pRipple", "", "pButton", "", 1, "p-button-icon-only", 3, "click", "keydown", "ngStyle", "icon", "ngClass", "disabled"], [4, "ngIf"], ["role", "menu", 1, "p-speeddial-list", 3, "focus", "focusout", "keydown", "id", "tabindex"], ["class", "p-speeddial-item", "pTooltip", "", "role", "menuitem", 3, "ngStyle", "tooltipOptions", "ngClass", "id", 4, "ngFor", "ngForOf"], [3, "ngClass", "class", "ngStyle", 4, "ngIf"], [4, "ngTemplateOutlet"], ["pTooltip", "", "role", "menuitem", 1, "p-speeddial-item", 3, "ngStyle", "tooltipOptions", "ngClass", "id"], [4, "ngTemplateOutlet", "ngTemplateOutletContext"], ["pRipple", "", "class", "p-speeddial-action", "role", "menuitem", 3, "routerLink", "queryParams", "ngClass", "routerLinkActiveOptions", "fragment", "queryParamsHandling", "preserveFragment", "skipLocationChange", "replaceUrl", "state", "click", "keydown.enter", 4, "ngIf", "ngIfElse"], ["pRipple", "", "role", "menuitem", 1, "p-speeddial-action", 3, "click", "keydown.enter", "routerLink", "queryParams", "ngClass", "routerLinkActiveOptions", "fragment", "queryParamsHandling", "preserveFragment", "skipLocationChange", "replaceUrl", "state"], ["class", "p-speeddial-action-icon", 3, "ngClass", 4, "ngIf"], [1, "p-speeddial-action-icon", 3, "ngClass"], ["role", "menuitem", "pRipple", "", 1, "p-speeddial-action", 3, "click", "keydown.enter", "ngClass"]],
-    template: function SpeedDial_Template(rf, ctx) {
-      if (rf & 1) {
-        const _r1 = ɵɵgetCurrentView();
-        ɵɵelementStart(0, "div", 3, 0)(2, "button", 4);
-        ɵɵlistener("click", function SpeedDial_Template_button_click_2_listener($event) {
-          ɵɵrestoreView(_r1);
-          return ɵɵresetView(ctx.onButtonClick($event));
-        })("keydown", function SpeedDial_Template_button_keydown_2_listener($event) {
-          ɵɵrestoreView(_r1);
-          return ɵɵresetView(ctx.onTogglerKeydown($event));
-        });
-        ɵɵtemplate(3, SpeedDial_PlusIcon_3_Template, 1, 0, "PlusIcon", 5)(4, SpeedDial_ng_container_4_Template, 2, 1, "ng-container", 5);
-        ɵɵelementEnd();
-        ɵɵelementStart(5, "ul", 6, 1);
-        ɵɵlistener("focus", function SpeedDial_Template_ul_focus_5_listener($event) {
-          ɵɵrestoreView(_r1);
-          return ɵɵresetView(ctx.onFocus($event));
-        })("focusout", function SpeedDial_Template_ul_focusout_5_listener($event) {
-          ɵɵrestoreView(_r1);
-          return ɵɵresetView(ctx.onBlur($event));
-        })("keydown", function SpeedDial_Template_ul_keydown_5_listener($event) {
-          ɵɵrestoreView(_r1);
-          return ɵɵresetView(ctx.onKeyDown($event));
-        });
-        ɵɵtemplate(7, SpeedDial_li_7_Template, 3, 11, "li", 7);
-        ɵɵelementEnd()();
-        ɵɵtemplate(8, SpeedDial_div_8_Template, 1, 6, "div", 8);
-      }
-      if (rf & 2) {
-        ɵɵclassMap(ctx.className);
-        ɵɵproperty("ngClass", ctx.containerClass())("ngStyle", ctx.style);
-        ɵɵattribute("data-pc-name", "speeddial")("data-pc-section", "root");
-        ɵɵadvance(2);
-        ɵɵproperty("ngStyle", ctx.buttonStyle)("icon", ctx.buttonIconClass)("ngClass", ctx.buttonClass())("disabled", ctx.disabled);
-        ɵɵattribute("aria-expanded", ctx.visible)("aria-haspopup", true)("aria-controls", ctx.id + "_list")("aria-label", ctx.ariaLabel)("aria-labelledby", ctx.ariaLabelledBy)("data-pc-name", "button");
-        ɵɵadvance();
-        ɵɵproperty("ngIf", !ctx.showIcon && !ctx.buttonTemplate);
-        ɵɵadvance();
-        ɵɵproperty("ngIf", ctx.buttonTemplate);
-        ɵɵadvance();
-        ɵɵproperty("id", ctx.id + "_list")("tabindex", -1);
-        ɵɵattribute("aria-activedescendant", ctx.focused ? ctx.focusedOptionId : void 0)("data-pc-section", "menu");
-        ɵɵadvance(2);
-        ɵɵproperty("ngForOf", ctx.model);
-        ɵɵadvance();
-        ɵɵproperty("ngIf", ctx.mask && ctx.visible);
-      }
-    },
-    dependencies: () => [NgClass, NgForOf, NgIf, NgTemplateOutlet, NgStyle, ButtonDirective, Ripple, Tooltip, RouterLink, PlusIcon],
-    styles: ["@layer primeng{.p-speeddial{position:absolute;display:flex;z-index:1}.p-speeddial:not(.p-speeddial-opened){pointer-events:none}.p-speeddial:not(.p-speeddial-opened) .p-speeddial-button{pointer-events:auto}.p-speeddial-list{margin:0;padding:0;list-style:none;display:flex;align-items:center;justify-content:center;transition:top 0s linear .2s;pointer-events:none}.p-speeddial-item{transform:scale(0);opacity:0;transition:transform .2s cubic-bezier(.4,0,.2,1) 0ms,opacity .8s;will-change:transform}.p-speeddial-action{display:flex;align-items:center;justify-content:center;border-radius:50%;position:relative;overflow:hidden;cursor:pointer}.p-speeddial-circle .p-speeddial-item,.p-speeddial-semi-circle .p-speeddial-item,.p-speeddial-quarter-circle .p-speeddial-item{position:absolute}.p-speeddial-rotate{transition:transform .25s cubic-bezier(.4,0,.2,1) 0ms;will-change:transform}.p-speeddial-mask{position:absolute;left:0;top:0;width:100%;height:100%;opacity:0;transition:opacity .25s cubic-bezier(.25,.8,.25,1)}.p-speeddial-mask-visible{pointer-events:none;opacity:1;transition:opacity .4s cubic-bezier(.25,.8,.25,1)}.p-speeddial-opened .p-speeddial-list{pointer-events:auto}.p-speeddial-opened .p-speeddial-item{transform:scale(1);opacity:1}.p-speeddial-opened .p-speeddial-rotate{transform:rotate(45deg)}.p-speeddial-direction-up{align-items:center;flex-direction:column-reverse}.p-speeddial-direction-up .p-speeddial-list{flex-direction:column-reverse}.p-speeddial-direction-down{align-items:center;flex-direction:column}.p-speeddial-direction-down .p-speeddial-list{flex-direction:column}.p-speeddial-direction-left{justify-content:center;flex-direction:row-reverse}.p-speeddial-direction-left .p-speeddial-list{flex-direction:row-reverse}.p-speeddial-direction-right{justify-content:center;flex-direction:row}.p-speeddial-direction-right .p-speeddial-list{flex-direction:row}}\n"],
-    encapsulation: 2,
-    changeDetection: 0
-  });
 };
+__publicField(_SpeedDial, "ɵfac", function SpeedDial_Factory(__ngFactoryType__) {
+  return new (__ngFactoryType__ || _SpeedDial)(ɵɵdirectiveInject(PLATFORM_ID), ɵɵdirectiveInject(ElementRef), ɵɵdirectiveInject(ChangeDetectorRef), ɵɵdirectiveInject(DOCUMENT), ɵɵdirectiveInject(Renderer2));
+});
+__publicField(_SpeedDial, "ɵcmp", ɵɵdefineComponent({
+  type: _SpeedDial,
+  selectors: [["p-speedDial"]],
+  contentQueries: function SpeedDial_ContentQueries(rf, ctx, dirIndex) {
+    if (rf & 1) {
+      ɵɵcontentQuery(dirIndex, PrimeTemplate, 4);
+    }
+    if (rf & 2) {
+      let _t;
+      ɵɵqueryRefresh(_t = ɵɵloadQuery()) && (ctx.templates = _t);
+    }
+  },
+  viewQuery: function SpeedDial_Query(rf, ctx) {
+    if (rf & 1) {
+      ɵɵviewQuery(_c0, 5);
+      ɵɵviewQuery(_c1, 5);
+    }
+    if (rf & 2) {
+      let _t;
+      ɵɵqueryRefresh(_t = ɵɵloadQuery()) && (ctx.container = _t.first);
+      ɵɵqueryRefresh(_t = ɵɵloadQuery()) && (ctx.list = _t.first);
+    }
+  },
+  hostAttrs: [1, "p-element"],
+  inputs: {
+    id: "id",
+    model: "model",
+    visible: "visible",
+    style: "style",
+    className: "className",
+    direction: "direction",
+    transitionDelay: [2, "transitionDelay", "transitionDelay", numberAttribute],
+    type: "type",
+    radius: [2, "radius", "radius", numberAttribute],
+    mask: [2, "mask", "mask", booleanAttribute],
+    disabled: [2, "disabled", "disabled", booleanAttribute],
+    hideOnClickOutside: [2, "hideOnClickOutside", "hideOnClickOutside", booleanAttribute],
+    buttonStyle: "buttonStyle",
+    buttonClassName: "buttonClassName",
+    maskStyle: "maskStyle",
+    maskClassName: "maskClassName",
+    showIcon: "showIcon",
+    hideIcon: "hideIcon",
+    rotateAnimation: [2, "rotateAnimation", "rotateAnimation", booleanAttribute],
+    ariaLabel: "ariaLabel",
+    ariaLabelledBy: "ariaLabelledBy"
+  },
+  outputs: {
+    onVisibleChange: "onVisibleChange",
+    visibleChange: "visibleChange",
+    onClick: "onClick",
+    onShow: "onShow",
+    onHide: "onHide"
+  },
+  features: [ɵɵInputTransformsFeature],
+  decls: 9,
+  vars: 24,
+  consts: [["container", ""], ["list", ""], ["elseBlock", ""], [3, "ngClass", "ngStyle"], ["pRipple", "", "pButton", "", 1, "p-button-icon-only", 3, "click", "keydown", "ngStyle", "icon", "ngClass", "disabled"], [4, "ngIf"], ["role", "menu", 1, "p-speeddial-list", 3, "focus", "focusout", "keydown", "id", "tabindex"], ["class", "p-speeddial-item", "pTooltip", "", "role", "menuitem", 3, "ngStyle", "tooltipOptions", "ngClass", "id", 4, "ngFor", "ngForOf"], [3, "ngClass", "class", "ngStyle", 4, "ngIf"], [4, "ngTemplateOutlet"], ["pTooltip", "", "role", "menuitem", 1, "p-speeddial-item", 3, "ngStyle", "tooltipOptions", "ngClass", "id"], [4, "ngTemplateOutlet", "ngTemplateOutletContext"], ["pRipple", "", "class", "p-speeddial-action", "role", "menuitem", 3, "routerLink", "queryParams", "ngClass", "routerLinkActiveOptions", "fragment", "queryParamsHandling", "preserveFragment", "skipLocationChange", "replaceUrl", "state", "click", "keydown.enter", 4, "ngIf", "ngIfElse"], ["pRipple", "", "role", "menuitem", 1, "p-speeddial-action", 3, "click", "keydown.enter", "routerLink", "queryParams", "ngClass", "routerLinkActiveOptions", "fragment", "queryParamsHandling", "preserveFragment", "skipLocationChange", "replaceUrl", "state"], ["class", "p-speeddial-action-icon", 3, "ngClass", 4, "ngIf"], [1, "p-speeddial-action-icon", 3, "ngClass"], ["role", "menuitem", "pRipple", "", 1, "p-speeddial-action", 3, "click", "keydown.enter", "ngClass"]],
+  template: function SpeedDial_Template(rf, ctx) {
+    if (rf & 1) {
+      const _r1 = ɵɵgetCurrentView();
+      ɵɵelementStart(0, "div", 3, 0)(2, "button", 4);
+      ɵɵlistener("click", function SpeedDial_Template_button_click_2_listener($event) {
+        ɵɵrestoreView(_r1);
+        return ɵɵresetView(ctx.onButtonClick($event));
+      })("keydown", function SpeedDial_Template_button_keydown_2_listener($event) {
+        ɵɵrestoreView(_r1);
+        return ɵɵresetView(ctx.onTogglerKeydown($event));
+      });
+      ɵɵtemplate(3, SpeedDial_PlusIcon_3_Template, 1, 0, "PlusIcon", 5)(4, SpeedDial_ng_container_4_Template, 2, 1, "ng-container", 5);
+      ɵɵelementEnd();
+      ɵɵelementStart(5, "ul", 6, 1);
+      ɵɵlistener("focus", function SpeedDial_Template_ul_focus_5_listener($event) {
+        ɵɵrestoreView(_r1);
+        return ɵɵresetView(ctx.onFocus($event));
+      })("focusout", function SpeedDial_Template_ul_focusout_5_listener($event) {
+        ɵɵrestoreView(_r1);
+        return ɵɵresetView(ctx.onBlur($event));
+      })("keydown", function SpeedDial_Template_ul_keydown_5_listener($event) {
+        ɵɵrestoreView(_r1);
+        return ɵɵresetView(ctx.onKeyDown($event));
+      });
+      ɵɵtemplate(7, SpeedDial_li_7_Template, 3, 11, "li", 7);
+      ɵɵelementEnd()();
+      ɵɵtemplate(8, SpeedDial_div_8_Template, 1, 6, "div", 8);
+    }
+    if (rf & 2) {
+      ɵɵclassMap(ctx.className);
+      ɵɵproperty("ngClass", ctx.containerClass())("ngStyle", ctx.style);
+      ɵɵattribute("data-pc-name", "speeddial")("data-pc-section", "root");
+      ɵɵadvance(2);
+      ɵɵproperty("ngStyle", ctx.buttonStyle)("icon", ctx.buttonIconClass)("ngClass", ctx.buttonClass())("disabled", ctx.disabled);
+      ɵɵattribute("aria-expanded", ctx.visible)("aria-haspopup", true)("aria-controls", ctx.id + "_list")("aria-label", ctx.ariaLabel)("aria-labelledby", ctx.ariaLabelledBy)("data-pc-name", "button");
+      ɵɵadvance();
+      ɵɵproperty("ngIf", !ctx.showIcon && !ctx.buttonTemplate);
+      ɵɵadvance();
+      ɵɵproperty("ngIf", ctx.buttonTemplate);
+      ɵɵadvance();
+      ɵɵproperty("id", ctx.id + "_list")("tabindex", -1);
+      ɵɵattribute("aria-activedescendant", ctx.focused ? ctx.focusedOptionId : void 0)("data-pc-section", "menu");
+      ɵɵadvance(2);
+      ɵɵproperty("ngForOf", ctx.model);
+      ɵɵadvance();
+      ɵɵproperty("ngIf", ctx.mask && ctx.visible);
+    }
+  },
+  dependencies: () => [NgClass, NgForOf, NgIf, NgTemplateOutlet, NgStyle, ButtonDirective, Ripple, Tooltip, RouterLink, PlusIcon],
+  styles: ["@layer primeng{.p-speeddial{position:absolute;display:flex;z-index:1}.p-speeddial:not(.p-speeddial-opened){pointer-events:none}.p-speeddial:not(.p-speeddial-opened) .p-speeddial-button{pointer-events:auto}.p-speeddial-list{margin:0;padding:0;list-style:none;display:flex;align-items:center;justify-content:center;transition:top 0s linear .2s;pointer-events:none}.p-speeddial-item{transform:scale(0);opacity:0;transition:transform .2s cubic-bezier(.4,0,.2,1) 0ms,opacity .8s;will-change:transform}.p-speeddial-action{display:flex;align-items:center;justify-content:center;border-radius:50%;position:relative;overflow:hidden;cursor:pointer}.p-speeddial-circle .p-speeddial-item,.p-speeddial-semi-circle .p-speeddial-item,.p-speeddial-quarter-circle .p-speeddial-item{position:absolute}.p-speeddial-rotate{transition:transform .25s cubic-bezier(.4,0,.2,1) 0ms;will-change:transform}.p-speeddial-mask{position:absolute;left:0;top:0;width:100%;height:100%;opacity:0;transition:opacity .25s cubic-bezier(.25,.8,.25,1)}.p-speeddial-mask-visible{pointer-events:none;opacity:1;transition:opacity .4s cubic-bezier(.25,.8,.25,1)}.p-speeddial-opened .p-speeddial-list{pointer-events:auto}.p-speeddial-opened .p-speeddial-item{transform:scale(1);opacity:1}.p-speeddial-opened .p-speeddial-rotate{transform:rotate(45deg)}.p-speeddial-direction-up{align-items:center;flex-direction:column-reverse}.p-speeddial-direction-up .p-speeddial-list{flex-direction:column-reverse}.p-speeddial-direction-down{align-items:center;flex-direction:column}.p-speeddial-direction-down .p-speeddial-list{flex-direction:column}.p-speeddial-direction-left{justify-content:center;flex-direction:row-reverse}.p-speeddial-direction-left .p-speeddial-list{flex-direction:row-reverse}.p-speeddial-direction-right{justify-content:center;flex-direction:row}.p-speeddial-direction-right .p-speeddial-list{flex-direction:row}}\n"],
+  encapsulation: 2,
+  changeDetection: 0
+}));
+var SpeedDial = _SpeedDial;
 (() => {
   (typeof ngDevMode === "undefined" || ngDevMode) && setClassMetadata(SpeedDial, [{
     type: Component,
     args: [{
       selector: "p-speedDial",
-      template: `
-        <div #container [ngClass]="containerClass()" [class]="className" [ngStyle]="style" [attr.data-pc-name]="'speeddial'" [attr.data-pc-section]="'root'">
-            <button
-                pRipple
-                pButton
-                class="p-button-icon-only"
-                [ngStyle]="buttonStyle"
-                [icon]="buttonIconClass"
-                [ngClass]="buttonClass()"
-                [disabled]="disabled"
-                [attr.aria-expanded]="visible"
-                [attr.aria-haspopup]="true"
-                [attr.aria-controls]="id + '_list'"
-                [attr.aria-label]="ariaLabel"
-                [attr.aria-labelledby]="ariaLabelledBy"
-                (click)="onButtonClick($event)"
-                (keydown)="onTogglerKeydown($event)"
-                [attr.data-pc-name]="'button'"
-            >
-                <PlusIcon *ngIf="!showIcon && !buttonTemplate" />
-                <ng-container *ngIf="buttonTemplate">
-                    <ng-container *ngTemplateOutlet="buttonTemplate"></ng-container>
-                </ng-container>
-            </button>
-            <ul
-                #list
-                class="p-speeddial-list"
-                role="menu"
-                [id]="id + '_list'"
-                (focus)="onFocus($event)"
-                (focusout)="onBlur($event)"
-                (keydown)="onKeyDown($event)"
-                [attr.aria-activedescendant]="focused ? focusedOptionId : undefined"
-                [tabindex]="-1"
-                [attr.data-pc-section]="'menu'"
-            >
-                <li
-                    *ngFor="let item of model; let i = index"
-                    [ngStyle]="getItemStyle(i)"
-                    class="p-speeddial-item"
-                    pTooltip
-                    [tooltipOptions]="item.tooltipOptions"
-                    [ngClass]="{ 'p-hidden': item.visible === false, 'p-focus': focusedOptionId == id + '_' + i }"
-                    [id]="id + '_' + i"
-                    [attr.aria-controls]="id + '_item'"
-                    role="menuitem"
-                    [attr.data-pc-section]="'menuitem'"
-                >
-                    <ng-container *ngIf="itemTemplate">
-                        <ng-container *ngTemplateOutlet="itemTemplate; context: { $implicit: item, index: i }"></ng-container>
-                    </ng-container>
-                    <ng-container *ngIf="!itemTemplate">
-                        <a
-                            *ngIf="isClickableRouterLink(item); else elseBlock"
-                            pRipple
-                            [routerLink]="item.routerLink"
-                            [queryParams]="item.queryParams"
-                            class="p-speeddial-action"
-                            [ngClass]="{ 'p-disabled': item.disabled }"
-                            role="menuitem"
-                            [routerLinkActiveOptions]="item.routerLinkActiveOptions || { exact: false }"
-                            (click)="onItemClick($event, item)"
-                            (keydown.enter)="onItemClick($event, item, i)"
-                            [attr.target]="item.target"
-                            [attr.tabindex]="item.disabled || readonly || !visible ? null : item.tabindex ? item.tabindex : '0'"
-                            [fragment]="item.fragment"
-                            [queryParamsHandling]="item.queryParamsHandling"
-                            [preserveFragment]="item.preserveFragment"
-                            [skipLocationChange]="item.skipLocationChange"
-                            [replaceUrl]="item.replaceUrl"
-                            [state]="item.state"
-                            [attr.aria-label]="item.label"
-                            [attr.data-pc-section]="'action'"
-                        >
-                            <span class="p-speeddial-action-icon" *ngIf="item.icon" [ngClass]="item.icon"></span>
-                        </a>
-                        <ng-template #elseBlock>
-                            <a
-                                [attr.href]="item.url || null"
-                                class="p-speeddial-action"
-                                role="menuitem"
-                                pRipple
-                                (click)="onItemClick($event, item)"
-                                [ngClass]="{ 'p-disabled': item.disabled }"
-                                (keydown.enter)="onItemClick($event, item, i)"
-                                [attr.target]="item.target"
-                                [attr.data-pc-section]="'action'"
-                                [attr.aria-label]="item.label"
-                                [attr.tabindex]="item.disabled || (i !== activeIndex && readonly) || !visible ? null : item.tabindex ? item.tabindex : '0'"
-                            >
-                                <span class="p-speeddial-action-icon" *ngIf="item.icon" [ngClass]="item.icon"></span>
-                            </a>
-                        </ng-template>
-                    </ng-container>
-                </li>
-            </ul>
-        </div>
-        <div *ngIf="mask && visible" [ngClass]="{ 'p-speeddial-mask': true, 'p-speeddial-mask-visible': visible }" [class]="maskClassName" [ngStyle]="maskStyle"></div>
-    `,
+      template: '\n        <div #container [ngClass]="containerClass()" [class]="className" [ngStyle]="style" [attr.data-pc-name]="\'speeddial\'" [attr.data-pc-section]="\'root\'">\n            <button\n                pRipple\n                pButton\n                class="p-button-icon-only"\n                [ngStyle]="buttonStyle"\n                [icon]="buttonIconClass"\n                [ngClass]="buttonClass()"\n                [disabled]="disabled"\n                [attr.aria-expanded]="visible"\n                [attr.aria-haspopup]="true"\n                [attr.aria-controls]="id + \'_list\'"\n                [attr.aria-label]="ariaLabel"\n                [attr.aria-labelledby]="ariaLabelledBy"\n                (click)="onButtonClick($event)"\n                (keydown)="onTogglerKeydown($event)"\n                [attr.data-pc-name]="\'button\'"\n            >\n                <PlusIcon *ngIf="!showIcon && !buttonTemplate" />\n                <ng-container *ngIf="buttonTemplate">\n                    <ng-container *ngTemplateOutlet="buttonTemplate"></ng-container>\n                </ng-container>\n            </button>\n            <ul\n                #list\n                class="p-speeddial-list"\n                role="menu"\n                [id]="id + \'_list\'"\n                (focus)="onFocus($event)"\n                (focusout)="onBlur($event)"\n                (keydown)="onKeyDown($event)"\n                [attr.aria-activedescendant]="focused ? focusedOptionId : undefined"\n                [tabindex]="-1"\n                [attr.data-pc-section]="\'menu\'"\n            >\n                <li\n                    *ngFor="let item of model; let i = index"\n                    [ngStyle]="getItemStyle(i)"\n                    class="p-speeddial-item"\n                    pTooltip\n                    [tooltipOptions]="item.tooltipOptions"\n                    [ngClass]="{ \'p-hidden\': item.visible === false, \'p-focus\': focusedOptionId == id + \'_\' + i }"\n                    [id]="id + \'_\' + i"\n                    [attr.aria-controls]="id + \'_item\'"\n                    role="menuitem"\n                    [attr.data-pc-section]="\'menuitem\'"\n                >\n                    <ng-container *ngIf="itemTemplate">\n                        <ng-container *ngTemplateOutlet="itemTemplate; context: { $implicit: item, index: i }"></ng-container>\n                    </ng-container>\n                    <ng-container *ngIf="!itemTemplate">\n                        <a\n                            *ngIf="isClickableRouterLink(item); else elseBlock"\n                            pRipple\n                            [routerLink]="item.routerLink"\n                            [queryParams]="item.queryParams"\n                            class="p-speeddial-action"\n                            [ngClass]="{ \'p-disabled\': item.disabled }"\n                            role="menuitem"\n                            [routerLinkActiveOptions]="item.routerLinkActiveOptions || { exact: false }"\n                            (click)="onItemClick($event, item)"\n                            (keydown.enter)="onItemClick($event, item, i)"\n                            [attr.target]="item.target"\n                            [attr.tabindex]="item.disabled || readonly || !visible ? null : item.tabindex ? item.tabindex : \'0\'"\n                            [fragment]="item.fragment"\n                            [queryParamsHandling]="item.queryParamsHandling"\n                            [preserveFragment]="item.preserveFragment"\n                            [skipLocationChange]="item.skipLocationChange"\n                            [replaceUrl]="item.replaceUrl"\n                            [state]="item.state"\n                            [attr.aria-label]="item.label"\n                            [attr.data-pc-section]="\'action\'"\n                        >\n                            <span class="p-speeddial-action-icon" *ngIf="item.icon" [ngClass]="item.icon"></span>\n                        </a>\n                        <ng-template #elseBlock>\n                            <a\n                                [attr.href]="item.url || null"\n                                class="p-speeddial-action"\n                                role="menuitem"\n                                pRipple\n                                (click)="onItemClick($event, item)"\n                                [ngClass]="{ \'p-disabled\': item.disabled }"\n                                (keydown.enter)="onItemClick($event, item, i)"\n                                [attr.target]="item.target"\n                                [attr.data-pc-section]="\'action\'"\n                                [attr.aria-label]="item.label"\n                                [attr.tabindex]="item.disabled || (i !== activeIndex && readonly) || !visible ? null : item.tabindex ? item.tabindex : \'0\'"\n                            >\n                                <span class="p-speeddial-action-icon" *ngIf="item.icon" [ngClass]="item.icon"></span>\n                            </a>\n                        </ng-template>\n                    </ng-container>\n                </li>\n            </ul>\n        </div>\n        <div *ngIf="mask && visible" [ngClass]="{ \'p-speeddial-mask\': true, \'p-speeddial-mask-visible\': visible }" [class]="maskClassName" [ngStyle]="maskStyle"></div>\n    ',
       changeDetection: ChangeDetectionStrategy.OnPush,
       encapsulation: ViewEncapsulation$1.None,
       host: {
@@ -1160,20 +1066,21 @@ var SpeedDial = class _SpeedDial {
     }]
   });
 })();
-var SpeedDialModule = class _SpeedDialModule {
-  static ɵfac = function SpeedDialModule_Factory(__ngFactoryType__) {
-    return new (__ngFactoryType__ || _SpeedDialModule)();
-  };
-  static ɵmod = ɵɵdefineNgModule({
-    type: _SpeedDialModule,
-    declarations: [SpeedDial],
-    imports: [CommonModule, ButtonModule, RippleModule, TooltipModule, RouterModule, PlusIcon],
-    exports: [SpeedDial, SharedModule, ButtonModule, TooltipModule, RouterModule]
-  });
-  static ɵinj = ɵɵdefineInjector({
-    imports: [CommonModule, ButtonModule, RippleModule, TooltipModule, RouterModule, PlusIcon, SharedModule, ButtonModule, TooltipModule, RouterModule]
-  });
+var _SpeedDialModule = class _SpeedDialModule {
 };
+__publicField(_SpeedDialModule, "ɵfac", function SpeedDialModule_Factory(__ngFactoryType__) {
+  return new (__ngFactoryType__ || _SpeedDialModule)();
+});
+__publicField(_SpeedDialModule, "ɵmod", ɵɵdefineNgModule({
+  type: _SpeedDialModule,
+  declarations: [SpeedDial],
+  imports: [CommonModule, ButtonModule, RippleModule, TooltipModule, RouterModule, PlusIcon],
+  exports: [SpeedDial, SharedModule, ButtonModule, TooltipModule, RouterModule]
+}));
+__publicField(_SpeedDialModule, "ɵinj", ɵɵdefineInjector({
+  imports: [CommonModule, ButtonModule, RippleModule, TooltipModule, RouterModule, PlusIcon, SharedModule, ButtonModule, TooltipModule, RouterModule]
+}));
+var SpeedDialModule = _SpeedDialModule;
 (() => {
   (typeof ngDevMode === "undefined" || ngDevMode) && setClassMetadata(SpeedDialModule, [{
     type: NgModule,

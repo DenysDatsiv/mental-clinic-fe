@@ -1,28 +1,28 @@
 import {
   HomeIcon
-} from "./chunk-G7TYVBBV.js";
+} from "./chunk-MW4R55KO.js";
 import {
   Tooltip,
   TooltipModule
-} from "./chunk-STBFZVQ2.js";
+} from "./chunk-IC7NSP6U.js";
 import {
   Router,
   RouterLink,
   RouterLinkActive,
   RouterModule
-} from "./chunk-AQMTG6B6.js";
-import "./chunk-3E3YFUVD.js";
-import "./chunk-DO2TVYAE.js";
+} from "./chunk-JBMGT7BE.js";
 import {
   ChevronRightIcon
-} from "./chunk-EYQJO2JR.js";
-import "./chunk-PXWZN6FU.js";
+} from "./chunk-CDDPLBF3.js";
+import "./chunk-BJLZ3T2F.js";
 import {
   PrimeTemplate,
   SharedModule
-} from "./chunk-TQSVMJ6K.js";
-import "./chunk-3OF44R55.js";
-import "./chunk-BUGEQH7Q.js";
+} from "./chunk-ZROJCIWL.js";
+import "./chunk-U3NLM53U.js";
+import "./chunk-MWP4G2UW.js";
+import "./chunk-RWZD3TDV.js";
+import "./chunk-LB42WWNC.js";
 import {
   CommonModule,
   NgClass,
@@ -30,7 +30,7 @@ import {
   NgIf,
   NgStyle,
   NgTemplateOutlet
-} from "./chunk-UBZYO7FG.js";
+} from "./chunk-KUZ63KOD.js";
 import {
   ChangeDetectionStrategy,
   Component,
@@ -71,11 +71,13 @@ import {
   ɵɵtemplateRefExtractor,
   ɵɵtext,
   ɵɵtextInterpolate
-} from "./chunk-ZI2Q76R4.js";
-import "./chunk-5OPE3T2R.js";
+} from "./chunk-R75KKECJ.js";
 import "./chunk-4N4GOYJH.js";
+import "./chunk-5OPE3T2R.js";
 import "./chunk-FHTVLBLO.js";
-import "./chunk-3OV72XIM.js";
+import {
+  __publicField
+} from "./chunk-IJZFAMY6.js";
 
 // node_modules/primeng/fesm2022/primeng-breadcrumb.mjs
 var _c0 = (a0) => ({
@@ -535,43 +537,43 @@ function Breadcrumb_ng_template_4_Template(rf, ctx) {
     ɵɵproperty("ngIf", !end_r11);
   }
 }
-var Breadcrumb = class _Breadcrumb {
-  router;
-  /**
-   * An array of menuitems.
-   * @group Props
-   */
-  model;
-  /**
-   * Inline style of the component.
-   * @group Props
-   */
-  style;
-  /**
-   * Style class of the component.
-   * @group Props
-   */
-  styleClass;
-  /**
-   * MenuItem configuration for the home icon.
-   * @group Props
-   */
-  home;
-  /**
-   * Defines a string that labels the home icon for accessibility.
-   * @group Props
-   */
-  homeAriaLabel;
-  /**
-   * Fired when an item is selected.
-   * @param {BreadcrumbItemClickEvent} event - custom click event.
-   * @group Emits
-   */
-  onItemClick = new EventEmitter();
-  templates;
-  separatorTemplate;
-  itemTemplate;
+var _Breadcrumb = class _Breadcrumb {
   constructor(router) {
+    __publicField(this, "router");
+    /**
+     * An array of menuitems.
+     * @group Props
+     */
+    __publicField(this, "model");
+    /**
+     * Inline style of the component.
+     * @group Props
+     */
+    __publicField(this, "style");
+    /**
+     * Style class of the component.
+     * @group Props
+     */
+    __publicField(this, "styleClass");
+    /**
+     * MenuItem configuration for the home icon.
+     * @group Props
+     */
+    __publicField(this, "home");
+    /**
+     * Defines a string that labels the home icon for accessibility.
+     * @group Props
+     */
+    __publicField(this, "homeAriaLabel");
+    /**
+     * Fired when an item is selected.
+     * @param {BreadcrumbItemClickEvent} event - custom click event.
+     * @group Emits
+     */
+    __publicField(this, "onItemClick", new EventEmitter());
+    __publicField(this, "templates");
+    __publicField(this, "separatorTemplate");
+    __publicField(this, "itemTemplate");
     this.router = router;
   }
   onClick(event, item) {
@@ -599,7 +601,8 @@ var Breadcrumb = class _Breadcrumb {
     }
   }
   ngAfterContentInit() {
-    this.templates?.forEach((item) => {
+    var _a;
+    (_a = this.templates) == null ? void 0 : _a.forEach((item) => {
       switch (item.getType()) {
         case "separator":
           this.separatorTemplate = item.template;
@@ -620,201 +623,68 @@ var Breadcrumb = class _Breadcrumb {
     const lastPath = this.router ? this.router.url : "";
     return routerLink === lastPath ? "page" : void 0;
   }
-  static ɵfac = function Breadcrumb_Factory(__ngFactoryType__) {
-    return new (__ngFactoryType__ || _Breadcrumb)(ɵɵdirectiveInject(Router));
-  };
-  static ɵcmp = ɵɵdefineComponent({
-    type: _Breadcrumb,
-    selectors: [["p-breadcrumb"]],
-    contentQueries: function Breadcrumb_ContentQueries(rf, ctx, dirIndex) {
-      if (rf & 1) {
-        ɵɵcontentQuery(dirIndex, PrimeTemplate, 4);
-      }
-      if (rf & 2) {
-        let _t;
-        ɵɵqueryRefresh(_t = ɵɵloadQuery()) && (ctx.templates = _t);
-      }
-    },
-    hostAttrs: [1, "p-element"],
-    inputs: {
-      model: "model",
-      style: "style",
-      styleClass: "styleClass",
-      home: "home",
-      homeAriaLabel: "homeAriaLabel"
-    },
-    outputs: {
-      onItemClick: "onItemClick"
-    },
-    decls: 5,
-    vars: 10,
-    consts: [["htmlHomeLabel", ""], ["htmlHomeRouteLabel", ""], ["htmlLabel", ""], ["htmlRouteLabel", ""], [3, "ngStyle", "ngClass"], [1, "p-breadcrumb-list"], ["pTooltip", "", 3, "class", "ngClass", "ngStyle", "tooltipOptions", 4, "ngIf"], ["class", "p-menuitem-separator", 4, "ngIf"], ["ngFor", "", 3, "ngForOf"], ["pTooltip", "", 3, "ngClass", "ngStyle", "tooltipOptions"], ["class", "p-menuitem-link", 3, "href", "target", "click", 4, "ngIf"], ["class", "p-menuitem-link", 3, "routerLink", "queryParams", "routerLinkActive", "routerLinkActiveOptions", "target", "fragment", "queryParamsHandling", "preserveFragment", "skipLocationChange", "replaceUrl", "state", "click", 4, "ngIf"], [1, "p-menuitem-link", 3, "click", "href", "target"], ["class", "p-menuitem-icon", 3, "ngClass", "ngStyle", 4, "ngIf"], [3, "styleClass", 4, "ngIf"], [4, "ngIf"], [1, "p-menuitem-icon", 3, "ngClass", "ngStyle"], [3, "styleClass"], ["class", "p-menuitem-text", 4, "ngIf", "ngIfElse"], [1, "p-menuitem-text"], [1, "p-menuitem-text", 3, "innerHTML"], [1, "p-menuitem-link", 3, "click", "routerLink", "queryParams", "routerLinkActive", "routerLinkActiveOptions", "target", "fragment", "queryParamsHandling", "preserveFragment", "skipLocationChange", "replaceUrl", "state"], [1, "p-menuitem-separator"], [4, "ngTemplateOutlet"], ["pTooltip", "", 3, "ngStyle", "ngClass", "tooltipOptions"], ["class", "p-menuitem-link", 3, "target", "click", 4, "ngIf"], [1, "p-menuitem-link", 3, "click", "target"], [4, "ngTemplateOutlet", "ngTemplateOutletContext"]],
-    template: function Breadcrumb_Template(rf, ctx) {
-      if (rf & 1) {
-        ɵɵelementStart(0, "nav", 4)(1, "ol", 5);
-        ɵɵtemplate(2, Breadcrumb_li_2_Template, 3, 12, "li", 6)(3, Breadcrumb_li_3_Template, 3, 3, "li", 7)(4, Breadcrumb_ng_template_4_Template, 4, 13, "ng-template", 8);
-        ɵɵelementEnd()();
-      }
-      if (rf & 2) {
-        ɵɵclassMap(ctx.styleClass);
-        ɵɵproperty("ngStyle", ctx.style)("ngClass", "p-breadcrumb p-component");
-        ɵɵattribute("data-pc-name", "breadcrumb")("data-pc-section", "root");
-        ɵɵadvance();
-        ɵɵattribute("data-pc-section", "menu");
-        ɵɵadvance();
-        ɵɵproperty("ngIf", ctx.home);
-        ɵɵadvance();
-        ɵɵproperty("ngIf", ctx.model && ctx.home);
-        ɵɵadvance();
-        ɵɵproperty("ngForOf", ctx.model);
-      }
-    },
-    dependencies: () => [NgClass, NgForOf, NgIf, NgTemplateOutlet, NgStyle, RouterLink, RouterLinkActive, Tooltip, ChevronRightIcon, HomeIcon],
-    styles: ["@layer primeng{.p-breadcrumb{overflow-x:auto}.p-breadcrumb .p-breadcrumb-list{margin:0;padding:0;list-style-type:none;display:flex;align-items:center;flex-wrap:nowrap}.p-breadcrumb .p-menuitem-text{line-height:1}.p-breadcrumb .p-menuitem-link{text-decoration:none;display:flex;align-items:center}.p-breadcrumb .p-menuitem-separator{display:flex;align-items:center}.p-breadcrumb::-webkit-scrollbar{display:none}}\n"],
-    encapsulation: 2,
-    changeDetection: 0
-  });
 };
+__publicField(_Breadcrumb, "ɵfac", function Breadcrumb_Factory(__ngFactoryType__) {
+  return new (__ngFactoryType__ || _Breadcrumb)(ɵɵdirectiveInject(Router));
+});
+__publicField(_Breadcrumb, "ɵcmp", ɵɵdefineComponent({
+  type: _Breadcrumb,
+  selectors: [["p-breadcrumb"]],
+  contentQueries: function Breadcrumb_ContentQueries(rf, ctx, dirIndex) {
+    if (rf & 1) {
+      ɵɵcontentQuery(dirIndex, PrimeTemplate, 4);
+    }
+    if (rf & 2) {
+      let _t;
+      ɵɵqueryRefresh(_t = ɵɵloadQuery()) && (ctx.templates = _t);
+    }
+  },
+  hostAttrs: [1, "p-element"],
+  inputs: {
+    model: "model",
+    style: "style",
+    styleClass: "styleClass",
+    home: "home",
+    homeAriaLabel: "homeAriaLabel"
+  },
+  outputs: {
+    onItemClick: "onItemClick"
+  },
+  decls: 5,
+  vars: 10,
+  consts: [["htmlHomeLabel", ""], ["htmlHomeRouteLabel", ""], ["htmlLabel", ""], ["htmlRouteLabel", ""], [3, "ngStyle", "ngClass"], [1, "p-breadcrumb-list"], ["pTooltip", "", 3, "class", "ngClass", "ngStyle", "tooltipOptions", 4, "ngIf"], ["class", "p-menuitem-separator", 4, "ngIf"], ["ngFor", "", 3, "ngForOf"], ["pTooltip", "", 3, "ngClass", "ngStyle", "tooltipOptions"], ["class", "p-menuitem-link", 3, "href", "target", "click", 4, "ngIf"], ["class", "p-menuitem-link", 3, "routerLink", "queryParams", "routerLinkActive", "routerLinkActiveOptions", "target", "fragment", "queryParamsHandling", "preserveFragment", "skipLocationChange", "replaceUrl", "state", "click", 4, "ngIf"], [1, "p-menuitem-link", 3, "click", "href", "target"], ["class", "p-menuitem-icon", 3, "ngClass", "ngStyle", 4, "ngIf"], [3, "styleClass", 4, "ngIf"], [4, "ngIf"], [1, "p-menuitem-icon", 3, "ngClass", "ngStyle"], [3, "styleClass"], ["class", "p-menuitem-text", 4, "ngIf", "ngIfElse"], [1, "p-menuitem-text"], [1, "p-menuitem-text", 3, "innerHTML"], [1, "p-menuitem-link", 3, "click", "routerLink", "queryParams", "routerLinkActive", "routerLinkActiveOptions", "target", "fragment", "queryParamsHandling", "preserveFragment", "skipLocationChange", "replaceUrl", "state"], [1, "p-menuitem-separator"], [4, "ngTemplateOutlet"], ["pTooltip", "", 3, "ngStyle", "ngClass", "tooltipOptions"], ["class", "p-menuitem-link", 3, "target", "click", 4, "ngIf"], [1, "p-menuitem-link", 3, "click", "target"], [4, "ngTemplateOutlet", "ngTemplateOutletContext"]],
+  template: function Breadcrumb_Template(rf, ctx) {
+    if (rf & 1) {
+      ɵɵelementStart(0, "nav", 4)(1, "ol", 5);
+      ɵɵtemplate(2, Breadcrumb_li_2_Template, 3, 12, "li", 6)(3, Breadcrumb_li_3_Template, 3, 3, "li", 7)(4, Breadcrumb_ng_template_4_Template, 4, 13, "ng-template", 8);
+      ɵɵelementEnd()();
+    }
+    if (rf & 2) {
+      ɵɵclassMap(ctx.styleClass);
+      ɵɵproperty("ngStyle", ctx.style)("ngClass", "p-breadcrumb p-component");
+      ɵɵattribute("data-pc-name", "breadcrumb")("data-pc-section", "root");
+      ɵɵadvance();
+      ɵɵattribute("data-pc-section", "menu");
+      ɵɵadvance();
+      ɵɵproperty("ngIf", ctx.home);
+      ɵɵadvance();
+      ɵɵproperty("ngIf", ctx.model && ctx.home);
+      ɵɵadvance();
+      ɵɵproperty("ngForOf", ctx.model);
+    }
+  },
+  dependencies: () => [NgClass, NgForOf, NgIf, NgTemplateOutlet, NgStyle, RouterLink, RouterLinkActive, Tooltip, ChevronRightIcon, HomeIcon],
+  styles: ["@layer primeng{.p-breadcrumb{overflow-x:auto}.p-breadcrumb .p-breadcrumb-list{margin:0;padding:0;list-style-type:none;display:flex;align-items:center;flex-wrap:nowrap}.p-breadcrumb .p-menuitem-text{line-height:1}.p-breadcrumb .p-menuitem-link{text-decoration:none;display:flex;align-items:center}.p-breadcrumb .p-menuitem-separator{display:flex;align-items:center}.p-breadcrumb::-webkit-scrollbar{display:none}}\n"],
+  encapsulation: 2,
+  changeDetection: 0
+}));
+var Breadcrumb = _Breadcrumb;
 (() => {
   (typeof ngDevMode === "undefined" || ngDevMode) && setClassMetadata(Breadcrumb, [{
     type: Component,
     args: [{
       selector: "p-breadcrumb",
-      template: `
-        <nav [class]="styleClass" [ngStyle]="style" [ngClass]="'p-breadcrumb p-component'" [attr.data-pc-name]="'breadcrumb'" [attr.data-pc-section]="'root'">
-            <ol [attr.data-pc-section]="'menu'" class="p-breadcrumb-list">
-                <li
-                    [class]="home.styleClass"
-                    [attr.id]="home.id"
-                    [ngClass]="{ 'p-breadcrumb-home': true, 'p-disabled': home.disabled }"
-                    [ngStyle]="home.style"
-                    *ngIf="home"
-                    pTooltip
-                    [tooltipOptions]="home.tooltipOptions"
-                    [attr.data-pc-section]="'home'"
-                    [attr.aria-disabled]="home.disabled"
-                >
-                    <a
-                        [href]="home.url ? home.url : null"
-                        *ngIf="!home.routerLink"
-                        [attr.aria-label]="homeAriaLabel"
-                        class="p-menuitem-link"
-                        (click)="onClick($event, home)"
-                        [target]="home.target"
-                        [attr.title]="home.title"
-                        [attr.tabindex]="home.disabled ? '-1' : home.tabindex || '0'"
-                        [attr.ariaCurrentWhenActive]="isCurrentUrl(home)"
-                    >
-                        <span *ngIf="home.icon" class="p-menuitem-icon" [ngClass]="home.icon" [ngStyle]="home.iprivateyle"></span>
-                        <HomeIcon *ngIf="!home.icon" [styleClass]="'p-menuitem-icon'" />
-                        <ng-container *ngIf="home.label">
-                            <span *ngIf="home.escape !== false; else htmlHomeLabel" class="p-menuitem-text">{{ home.label }}</span>
-                            <ng-template #htmlHomeLabel><span class="p-menuitem-text" [innerHTML]="home.label"></span></ng-template>
-                        </ng-container>
-                    </a>
-                    <a
-                        *ngIf="home.routerLink"
-                        [routerLink]="home.routerLink"
-                        [attr.aria-label]="homeAriaLabel"
-                        [queryParams]="home.queryParams"
-                        [routerLinkActive]="'p-menuitem-link-active'"
-                        [routerLinkActiveOptions]="home.routerLinkActiveOptions || { exact: false }"
-                        class="p-menuitem-link"
-                        (click)="onClick($event, home)"
-                        [target]="home.target"
-                        [attr.title]="home.title"
-                        [attr.tabindex]="home.disabled ? '-1' : home.tabindex || '0'"
-                        [attr.ariaCurrentWhenActive]="isCurrentUrl(home)"
-                        [fragment]="home.fragment"
-                        [queryParamsHandling]="home.queryParamsHandling"
-                        [preserveFragment]="home.preserveFragment"
-                        [skipLocationChange]="home.skipLocationChange"
-                        [replaceUrl]="home.replaceUrl"
-                        [state]="home.state"
-                    >
-                        <span *ngIf="home.icon" class="p-menuitem-icon" [ngClass]="home.icon" [ngStyle]="home.iconStyle"></span>
-                        <HomeIcon *ngIf="!home.icon" [styleClass]="'p-menuitem-icon'" />
-                        <ng-container *ngIf="home.label">
-                            <span *ngIf="home.escape !== false; else htmlHomeRouteLabel" class="p-menuitem-text">{{ home.label }}</span>
-                            <ng-template #htmlHomeRouteLabel><span class="p-menuitem-text" [innerHTML]="home.label"></span></ng-template>
-                        </ng-container>
-                    </a>
-                </li>
-                <li *ngIf="model && home" class="p-menuitem-separator" [attr.data-pc-section]="'separator'">
-                    <ChevronRightIcon *ngIf="!separatorTemplate" />
-                    <ng-template *ngTemplateOutlet="separatorTemplate"></ng-template>
-                </li>
-                <ng-template ngFor let-item let-end="last" [ngForOf]="model">
-                    <li
-                        [class]="item.styleClass"
-                        [attr.id]="item.id"
-                        [attr.aria-disabled]="item.disabled"
-                        [ngStyle]="item.style"
-                        [ngClass]="{ 'p-disabled': item.disabled }"
-                        pTooltip
-                        [tooltipOptions]="item.tooltipOptions"
-                        [attr.data-pc-section]="'menuitem'"
-                    >
-                        <a
-                            *ngIf="!item.routerLink"
-                            [attr.href]="item.url ? item.url : null"
-                            class="p-menuitem-link"
-                            (click)="onClick($event, item)"
-                            [target]="item.target"
-                            [attr.title]="item.title"
-                            [attr.tabindex]="item.disabled ? '-1' : item.tabindex || '0'"
-                            [attr.ariaCurrentWhenActive]="isCurrentUrl(item)"
-                        >
-                            <ng-container *ngIf="!itemTemplate">
-                                <span *ngIf="item.icon" class="p-menuitem-icon" [ngClass]="item.icon" [ngStyle]="item.iconStyle"></span>
-                                <ng-container *ngIf="item.label">
-                                    <span *ngIf="item.escape !== false; else htmlLabel" class="p-menuitem-text">{{ item.label }}</span>
-                                    <ng-template #htmlLabel><span class="p-menuitem-text" [innerHTML]="item.label"></span></ng-template>
-                                </ng-container>
-                            </ng-container>
-                            <ng-container *ngIf="itemTemplate">
-                                <ng-template *ngTemplateOutlet="itemTemplate; context: { $implicit: item }"></ng-template>
-                            </ng-container>
-                        </a>
-                        <a
-                            *ngIf="item.routerLink"
-                            [routerLink]="item.routerLink"
-                            [queryParams]="item.queryParams"
-                            [routerLinkActive]="'p-menuitem-link-active'"
-                            [routerLinkActiveOptions]="item.routerLinkActiveOptions || { exact: false }"
-                            class="p-menuitem-link"
-                            (click)="onClick($event, item)"
-                            [target]="item.target"
-                            [attr.title]="item.title"
-                            [attr.tabindex]="item.disabled ? '-1' : item.tabindex || '0'"
-                            [fragment]="item.fragment"
-                            [queryParamsHandling]="item.queryParamsHandling"
-                            [preserveFragment]="item.preserveFragment"
-                            [skipLocationChange]="item.skipLocationChange"
-                            [replaceUrl]="item.replaceUrl"
-                            [state]="item.state"
-                            [attr.ariaCurrentWhenActive]="isCurrentUrl(item)"
-                        >
-                            <ng-container *ngIf="!itemTemplate">
-                                <span *ngIf="item.icon" class="p-menuitem-icon" [ngClass]="item.icon" [ngStyle]="item.iconStyle"></span>
-                                <ng-container *ngIf="item.label">
-                                    <span *ngIf="item.escape !== false; else htmlRouteLabel" class="p-menuitem-text">{{ item.label }}</span>
-                                    <ng-template #htmlRouteLabel><span class="p-menuitem-text" [innerHTML]="item.label"></span></ng-template>
-                                </ng-container>
-                            </ng-container>
-                            <ng-container *ngIf="itemTemplate">
-                                <ng-template *ngTemplateOutlet="itemTemplate; context: { $implicit: item }"></ng-template>
-                            </ng-container>
-                        </a>
-                    </li>
-                    <li *ngIf="!end" class="p-menuitem-separator" [attr.data-pc-section]="'separator'">
-                        <ChevronRightIcon *ngIf="!separatorTemplate" />
-                        <ng-template *ngTemplateOutlet="separatorTemplate"></ng-template>
-                    </li>
-                </ng-template>
-            </ol>
-        </nav>
-    `,
+      template: '\n        <nav [class]="styleClass" [ngStyle]="style" [ngClass]="\'p-breadcrumb p-component\'" [attr.data-pc-name]="\'breadcrumb\'" [attr.data-pc-section]="\'root\'">\n            <ol [attr.data-pc-section]="\'menu\'" class="p-breadcrumb-list">\n                <li\n                    [class]="home.styleClass"\n                    [attr.id]="home.id"\n                    [ngClass]="{ \'p-breadcrumb-home\': true, \'p-disabled\': home.disabled }"\n                    [ngStyle]="home.style"\n                    *ngIf="home"\n                    pTooltip\n                    [tooltipOptions]="home.tooltipOptions"\n                    [attr.data-pc-section]="\'home\'"\n                    [attr.aria-disabled]="home.disabled"\n                >\n                    <a\n                        [href]="home.url ? home.url : null"\n                        *ngIf="!home.routerLink"\n                        [attr.aria-label]="homeAriaLabel"\n                        class="p-menuitem-link"\n                        (click)="onClick($event, home)"\n                        [target]="home.target"\n                        [attr.title]="home.title"\n                        [attr.tabindex]="home.disabled ? \'-1\' : home.tabindex || \'0\'"\n                        [attr.ariaCurrentWhenActive]="isCurrentUrl(home)"\n                    >\n                        <span *ngIf="home.icon" class="p-menuitem-icon" [ngClass]="home.icon" [ngStyle]="home.iprivateyle"></span>\n                        <HomeIcon *ngIf="!home.icon" [styleClass]="\'p-menuitem-icon\'" />\n                        <ng-container *ngIf="home.label">\n                            <span *ngIf="home.escape !== false; else htmlHomeLabel" class="p-menuitem-text">{{ home.label }}</span>\n                            <ng-template #htmlHomeLabel><span class="p-menuitem-text" [innerHTML]="home.label"></span></ng-template>\n                        </ng-container>\n                    </a>\n                    <a\n                        *ngIf="home.routerLink"\n                        [routerLink]="home.routerLink"\n                        [attr.aria-label]="homeAriaLabel"\n                        [queryParams]="home.queryParams"\n                        [routerLinkActive]="\'p-menuitem-link-active\'"\n                        [routerLinkActiveOptions]="home.routerLinkActiveOptions || { exact: false }"\n                        class="p-menuitem-link"\n                        (click)="onClick($event, home)"\n                        [target]="home.target"\n                        [attr.title]="home.title"\n                        [attr.tabindex]="home.disabled ? \'-1\' : home.tabindex || \'0\'"\n                        [attr.ariaCurrentWhenActive]="isCurrentUrl(home)"\n                        [fragment]="home.fragment"\n                        [queryParamsHandling]="home.queryParamsHandling"\n                        [preserveFragment]="home.preserveFragment"\n                        [skipLocationChange]="home.skipLocationChange"\n                        [replaceUrl]="home.replaceUrl"\n                        [state]="home.state"\n                    >\n                        <span *ngIf="home.icon" class="p-menuitem-icon" [ngClass]="home.icon" [ngStyle]="home.iconStyle"></span>\n                        <HomeIcon *ngIf="!home.icon" [styleClass]="\'p-menuitem-icon\'" />\n                        <ng-container *ngIf="home.label">\n                            <span *ngIf="home.escape !== false; else htmlHomeRouteLabel" class="p-menuitem-text">{{ home.label }}</span>\n                            <ng-template #htmlHomeRouteLabel><span class="p-menuitem-text" [innerHTML]="home.label"></span></ng-template>\n                        </ng-container>\n                    </a>\n                </li>\n                <li *ngIf="model && home" class="p-menuitem-separator" [attr.data-pc-section]="\'separator\'">\n                    <ChevronRightIcon *ngIf="!separatorTemplate" />\n                    <ng-template *ngTemplateOutlet="separatorTemplate"></ng-template>\n                </li>\n                <ng-template ngFor let-item let-end="last" [ngForOf]="model">\n                    <li\n                        [class]="item.styleClass"\n                        [attr.id]="item.id"\n                        [attr.aria-disabled]="item.disabled"\n                        [ngStyle]="item.style"\n                        [ngClass]="{ \'p-disabled\': item.disabled }"\n                        pTooltip\n                        [tooltipOptions]="item.tooltipOptions"\n                        [attr.data-pc-section]="\'menuitem\'"\n                    >\n                        <a\n                            *ngIf="!item.routerLink"\n                            [attr.href]="item.url ? item.url : null"\n                            class="p-menuitem-link"\n                            (click)="onClick($event, item)"\n                            [target]="item.target"\n                            [attr.title]="item.title"\n                            [attr.tabindex]="item.disabled ? \'-1\' : item.tabindex || \'0\'"\n                            [attr.ariaCurrentWhenActive]="isCurrentUrl(item)"\n                        >\n                            <ng-container *ngIf="!itemTemplate">\n                                <span *ngIf="item.icon" class="p-menuitem-icon" [ngClass]="item.icon" [ngStyle]="item.iconStyle"></span>\n                                <ng-container *ngIf="item.label">\n                                    <span *ngIf="item.escape !== false; else htmlLabel" class="p-menuitem-text">{{ item.label }}</span>\n                                    <ng-template #htmlLabel><span class="p-menuitem-text" [innerHTML]="item.label"></span></ng-template>\n                                </ng-container>\n                            </ng-container>\n                            <ng-container *ngIf="itemTemplate">\n                                <ng-template *ngTemplateOutlet="itemTemplate; context: { $implicit: item }"></ng-template>\n                            </ng-container>\n                        </a>\n                        <a\n                            *ngIf="item.routerLink"\n                            [routerLink]="item.routerLink"\n                            [queryParams]="item.queryParams"\n                            [routerLinkActive]="\'p-menuitem-link-active\'"\n                            [routerLinkActiveOptions]="item.routerLinkActiveOptions || { exact: false }"\n                            class="p-menuitem-link"\n                            (click)="onClick($event, item)"\n                            [target]="item.target"\n                            [attr.title]="item.title"\n                            [attr.tabindex]="item.disabled ? \'-1\' : item.tabindex || \'0\'"\n                            [fragment]="item.fragment"\n                            [queryParamsHandling]="item.queryParamsHandling"\n                            [preserveFragment]="item.preserveFragment"\n                            [skipLocationChange]="item.skipLocationChange"\n                            [replaceUrl]="item.replaceUrl"\n                            [state]="item.state"\n                            [attr.ariaCurrentWhenActive]="isCurrentUrl(item)"\n                        >\n                            <ng-container *ngIf="!itemTemplate">\n                                <span *ngIf="item.icon" class="p-menuitem-icon" [ngClass]="item.icon" [ngStyle]="item.iconStyle"></span>\n                                <ng-container *ngIf="item.label">\n                                    <span *ngIf="item.escape !== false; else htmlRouteLabel" class="p-menuitem-text">{{ item.label }}</span>\n                                    <ng-template #htmlRouteLabel><span class="p-menuitem-text" [innerHTML]="item.label"></span></ng-template>\n                                </ng-container>\n                            </ng-container>\n                            <ng-container *ngIf="itemTemplate">\n                                <ng-template *ngTemplateOutlet="itemTemplate; context: { $implicit: item }"></ng-template>\n                            </ng-container>\n                        </a>\n                    </li>\n                    <li *ngIf="!end" class="p-menuitem-separator" [attr.data-pc-section]="\'separator\'">\n                        <ChevronRightIcon *ngIf="!separatorTemplate" />\n                        <ng-template *ngTemplateOutlet="separatorTemplate"></ng-template>\n                    </li>\n                </ng-template>\n            </ol>\n        </nav>\n    ',
       changeDetection: ChangeDetectionStrategy.OnPush,
       encapsulation: ViewEncapsulation$1.None,
       host: {
@@ -849,20 +719,21 @@ var Breadcrumb = class _Breadcrumb {
     }]
   });
 })();
-var BreadcrumbModule = class _BreadcrumbModule {
-  static ɵfac = function BreadcrumbModule_Factory(__ngFactoryType__) {
-    return new (__ngFactoryType__ || _BreadcrumbModule)();
-  };
-  static ɵmod = ɵɵdefineNgModule({
-    type: _BreadcrumbModule,
-    declarations: [Breadcrumb],
-    imports: [CommonModule, RouterModule, TooltipModule, ChevronRightIcon, HomeIcon, SharedModule],
-    exports: [Breadcrumb, RouterModule, TooltipModule, SharedModule]
-  });
-  static ɵinj = ɵɵdefineInjector({
-    imports: [CommonModule, RouterModule, TooltipModule, ChevronRightIcon, HomeIcon, SharedModule, RouterModule, TooltipModule, SharedModule]
-  });
+var _BreadcrumbModule = class _BreadcrumbModule {
 };
+__publicField(_BreadcrumbModule, "ɵfac", function BreadcrumbModule_Factory(__ngFactoryType__) {
+  return new (__ngFactoryType__ || _BreadcrumbModule)();
+});
+__publicField(_BreadcrumbModule, "ɵmod", ɵɵdefineNgModule({
+  type: _BreadcrumbModule,
+  declarations: [Breadcrumb],
+  imports: [CommonModule, RouterModule, TooltipModule, ChevronRightIcon, HomeIcon, SharedModule],
+  exports: [Breadcrumb, RouterModule, TooltipModule, SharedModule]
+}));
+__publicField(_BreadcrumbModule, "ɵinj", ɵɵdefineInjector({
+  imports: [CommonModule, RouterModule, TooltipModule, ChevronRightIcon, HomeIcon, SharedModule, RouterModule, TooltipModule, SharedModule]
+}));
+var BreadcrumbModule = _BreadcrumbModule;
 (() => {
   (typeof ngDevMode === "undefined" || ngDevMode) && setClassMetadata(BreadcrumbModule, [{
     type: NgModule,

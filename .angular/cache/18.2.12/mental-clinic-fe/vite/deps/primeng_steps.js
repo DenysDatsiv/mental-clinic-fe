@@ -1,28 +1,28 @@
 import {
   Tooltip,
   TooltipModule
-} from "./chunk-STBFZVQ2.js";
+} from "./chunk-IC7NSP6U.js";
 import {
   ActivatedRoute,
   Router,
   RouterLink,
   RouterLinkActive,
   RouterModule
-} from "./chunk-AQMTG6B6.js";
-import "./chunk-3E3YFUVD.js";
-import "./chunk-DO2TVYAE.js";
-import "./chunk-TQSVMJ6K.js";
-import "./chunk-3OF44R55.js";
+} from "./chunk-JBMGT7BE.js";
+import "./chunk-ZROJCIWL.js";
+import "./chunk-U3NLM53U.js";
+import "./chunk-MWP4G2UW.js";
+import "./chunk-RWZD3TDV.js";
 import {
   DomHandler
-} from "./chunk-BUGEQH7Q.js";
+} from "./chunk-LB42WWNC.js";
 import {
   CommonModule,
   NgClass,
   NgForOf,
   NgIf,
   NgStyle
-} from "./chunk-UBZYO7FG.js";
+} from "./chunk-KUZ63KOD.js";
 import {
   ChangeDetectionStrategy,
   ChangeDetectorRef,
@@ -67,11 +67,13 @@ import {
   ɵɵtextInterpolate,
   ɵɵtextInterpolate1,
   ɵɵviewQuery
-} from "./chunk-ZI2Q76R4.js";
-import "./chunk-5OPE3T2R.js";
+} from "./chunk-R75KKECJ.js";
 import "./chunk-4N4GOYJH.js";
+import "./chunk-5OPE3T2R.js";
 import "./chunk-FHTVLBLO.js";
-import "./chunk-3OV72XIM.js";
+import {
+  __publicField
+} from "./chunk-IJZFAMY6.js";
 
 // node_modules/primeng/fesm2022/primeng-steps.mjs
 var _c0 = ["list"];
@@ -224,53 +226,53 @@ function Steps_li_3_Template(rf, ctx) {
     ɵɵproperty("ngIf", ctx_r4.isClickableRouterLink(item_r3))("ngIfElse", elseBlock_r9);
   }
 }
-var Steps = class _Steps {
-  router;
-  route;
-  cd;
-  /**
-   * Index of the active item.
-   * @group Props
-   */
-  activeIndex = 0;
-  /**
-   * An array of menu items.
-   * @group Props
-   */
-  model;
-  /**
-   * Whether the items are clickable or not.
-   * @group Props
-   */
-  readonly = true;
-  /**
-   * Inline style of the component.
-   * @group Props
-   */
-  style;
-  /**
-   * Style class of the component.
-   * @group Props
-   */
-  styleClass;
-  /**
-   * Whether to apply 'router-link-active-exact' class if route exactly matches the item path.
-   * @group Props
-   */
-  exact = true;
-  /**
-   * Callback to invoke when the new step is selected.
-   * @param {number} number - current index.
-   * @group Emits
-   */
-  activeIndexChange = new EventEmitter();
-  listViewChild;
+var _Steps = class _Steps {
   constructor(router, route, cd) {
+    __publicField(this, "router");
+    __publicField(this, "route");
+    __publicField(this, "cd");
+    /**
+     * Index of the active item.
+     * @group Props
+     */
+    __publicField(this, "activeIndex", 0);
+    /**
+     * An array of menu items.
+     * @group Props
+     */
+    __publicField(this, "model");
+    /**
+     * Whether the items are clickable or not.
+     * @group Props
+     */
+    __publicField(this, "readonly", true);
+    /**
+     * Inline style of the component.
+     * @group Props
+     */
+    __publicField(this, "style");
+    /**
+     * Style class of the component.
+     * @group Props
+     */
+    __publicField(this, "styleClass");
+    /**
+     * Whether to apply 'router-link-active-exact' class if route exactly matches the item path.
+     * @group Props
+     */
+    __publicField(this, "exact", true);
+    /**
+     * Callback to invoke when the new step is selected.
+     * @param {number} number - current index.
+     * @group Emits
+     */
+    __publicField(this, "activeIndexChange", new EventEmitter());
+    __publicField(this, "listViewChild");
+    __publicField(this, "subscription");
     this.router = router;
     this.route = route;
     this.cd = cd;
   }
-  subscription;
   ngOnInit() {
     this.subscription = this.router.events.subscribe(() => this.cd.markForCheck());
   }
@@ -380,139 +382,80 @@ var Steps = class _Steps {
     return index === this.activeIndex;
   }
   getItemTabIndex(item, index) {
+    var _a;
     if (item.disabled) {
       return "-1";
     }
     if (!item.disabled && this.activeIndex === index) {
       return item.tabindex || "0";
     }
-    return item.tabindex ?? "-1";
+    return (_a = item.tabindex) != null ? _a : "-1";
   }
   ngOnDestroy() {
     if (this.subscription) {
       this.subscription.unsubscribe();
     }
   }
-  static ɵfac = function Steps_Factory(__ngFactoryType__) {
-    return new (__ngFactoryType__ || _Steps)(ɵɵdirectiveInject(Router), ɵɵdirectiveInject(ActivatedRoute), ɵɵdirectiveInject(ChangeDetectorRef));
-  };
-  static ɵcmp = ɵɵdefineComponent({
-    type: _Steps,
-    selectors: [["p-steps"]],
-    viewQuery: function Steps_Query(rf, ctx) {
-      if (rf & 1) {
-        ɵɵviewQuery(_c0, 5);
-      }
-      if (rf & 2) {
-        let _t;
-        ɵɵqueryRefresh(_t = ɵɵloadQuery()) && (ctx.listViewChild = _t.first);
-      }
-    },
-    hostAttrs: [1, "p-element"],
-    inputs: {
-      activeIndex: [2, "activeIndex", "activeIndex", numberAttribute],
-      model: "model",
-      readonly: [2, "readonly", "readonly", booleanAttribute],
-      style: "style",
-      styleClass: "styleClass",
-      exact: [2, "exact", "exact", booleanAttribute]
-    },
-    outputs: {
-      activeIndexChange: "activeIndexChange"
-    },
-    features: [ɵɵInputTransformsFeature],
-    decls: 4,
-    vars: 9,
-    consts: [["list", ""], ["menuitem", ""], ["elseBlock", ""], ["htmlLabel", ""], ["htmlRouteLabel", ""], [3, "ngClass", "ngStyle"], ["class", "p-steps-item", "pTooltip", "", 3, "ngStyle", "class", "tooltipOptions", "ngClass", 4, "ngFor", "ngForOf"], ["pTooltip", "", 1, "p-steps-item", 3, "ngStyle", "tooltipOptions", "ngClass"], ["role", "link", "class", "p-menuitem-link", 3, "routerLink", "queryParams", "routerLinkActive", "routerLinkActiveOptions", "target", "fragment", "queryParamsHandling", "preserveFragment", "skipLocationChange", "replaceUrl", "state", "click", "keydown", 4, "ngIf", "ngIfElse"], ["role", "link", 1, "p-menuitem-link", 3, "click", "keydown", "routerLink", "queryParams", "routerLinkActive", "routerLinkActiveOptions", "target", "fragment", "queryParamsHandling", "preserveFragment", "skipLocationChange", "replaceUrl", "state"], [1, "p-steps-number"], ["class", "p-steps-title", 4, "ngIf", "ngIfElse"], [1, "p-steps-title"], [1, "p-steps-title", 3, "innerHTML"], ["role", "link", 1, "p-menuitem-link", 3, "click", "keydown", "target"]],
-    template: function Steps_Template(rf, ctx) {
-      if (rf & 1) {
-        ɵɵelementStart(0, "nav", 5)(1, "ul", null, 0);
-        ɵɵtemplate(3, Steps_li_3_Template, 5, 13, "li", 6);
-        ɵɵelementEnd()();
-      }
-      if (rf & 2) {
-        ɵɵclassMap(ctx.styleClass);
-        ɵɵproperty("ngClass", ɵɵpureFunction1(7, _c1, ctx.readonly))("ngStyle", ctx.style);
-        ɵɵattribute("data-pc-name", "steps");
-        ɵɵadvance();
-        ɵɵattribute("data-pc-section", "menu");
-        ɵɵadvance(2);
-        ɵɵproperty("ngForOf", ctx.model);
-      }
-    },
-    dependencies: [NgClass, NgForOf, NgIf, NgStyle, RouterLink, RouterLinkActive, Tooltip],
-    styles: ["@layer primeng{.p-steps{position:relative}.p-steps ul{padding:0;margin:0;list-style-type:none;display:flex}.p-steps-item{position:relative;display:flex;justify-content:center;flex:1 1 auto}.p-steps-item .p-menuitem-link{display:inline-flex;flex-direction:column;align-items:center;overflow:hidden;text-decoration:none}.p-steps.p-steps-readonly .p-steps-item{cursor:auto}.p-steps-item.p-steps-current .p-menuitem-link{cursor:default}.p-steps-title{white-space:nowrap}.p-steps-number{display:flex;align-items:center;justify-content:center}.p-steps-title{display:block}}\n"],
-    encapsulation: 2,
-    changeDetection: 0
-  });
 };
+__publicField(_Steps, "ɵfac", function Steps_Factory(__ngFactoryType__) {
+  return new (__ngFactoryType__ || _Steps)(ɵɵdirectiveInject(Router), ɵɵdirectiveInject(ActivatedRoute), ɵɵdirectiveInject(ChangeDetectorRef));
+});
+__publicField(_Steps, "ɵcmp", ɵɵdefineComponent({
+  type: _Steps,
+  selectors: [["p-steps"]],
+  viewQuery: function Steps_Query(rf, ctx) {
+    if (rf & 1) {
+      ɵɵviewQuery(_c0, 5);
+    }
+    if (rf & 2) {
+      let _t;
+      ɵɵqueryRefresh(_t = ɵɵloadQuery()) && (ctx.listViewChild = _t.first);
+    }
+  },
+  hostAttrs: [1, "p-element"],
+  inputs: {
+    activeIndex: [2, "activeIndex", "activeIndex", numberAttribute],
+    model: "model",
+    readonly: [2, "readonly", "readonly", booleanAttribute],
+    style: "style",
+    styleClass: "styleClass",
+    exact: [2, "exact", "exact", booleanAttribute]
+  },
+  outputs: {
+    activeIndexChange: "activeIndexChange"
+  },
+  features: [ɵɵInputTransformsFeature],
+  decls: 4,
+  vars: 9,
+  consts: [["list", ""], ["menuitem", ""], ["elseBlock", ""], ["htmlLabel", ""], ["htmlRouteLabel", ""], [3, "ngClass", "ngStyle"], ["class", "p-steps-item", "pTooltip", "", 3, "ngStyle", "class", "tooltipOptions", "ngClass", 4, "ngFor", "ngForOf"], ["pTooltip", "", 1, "p-steps-item", 3, "ngStyle", "tooltipOptions", "ngClass"], ["role", "link", "class", "p-menuitem-link", 3, "routerLink", "queryParams", "routerLinkActive", "routerLinkActiveOptions", "target", "fragment", "queryParamsHandling", "preserveFragment", "skipLocationChange", "replaceUrl", "state", "click", "keydown", 4, "ngIf", "ngIfElse"], ["role", "link", 1, "p-menuitem-link", 3, "click", "keydown", "routerLink", "queryParams", "routerLinkActive", "routerLinkActiveOptions", "target", "fragment", "queryParamsHandling", "preserveFragment", "skipLocationChange", "replaceUrl", "state"], [1, "p-steps-number"], ["class", "p-steps-title", 4, "ngIf", "ngIfElse"], [1, "p-steps-title"], [1, "p-steps-title", 3, "innerHTML"], ["role", "link", 1, "p-menuitem-link", 3, "click", "keydown", "target"]],
+  template: function Steps_Template(rf, ctx) {
+    if (rf & 1) {
+      ɵɵelementStart(0, "nav", 5)(1, "ul", null, 0);
+      ɵɵtemplate(3, Steps_li_3_Template, 5, 13, "li", 6);
+      ɵɵelementEnd()();
+    }
+    if (rf & 2) {
+      ɵɵclassMap(ctx.styleClass);
+      ɵɵproperty("ngClass", ɵɵpureFunction1(7, _c1, ctx.readonly))("ngStyle", ctx.style);
+      ɵɵattribute("data-pc-name", "steps");
+      ɵɵadvance();
+      ɵɵattribute("data-pc-section", "menu");
+      ɵɵadvance(2);
+      ɵɵproperty("ngForOf", ctx.model);
+    }
+  },
+  dependencies: [NgClass, NgForOf, NgIf, NgStyle, RouterLink, RouterLinkActive, Tooltip],
+  styles: ["@layer primeng{.p-steps{position:relative}.p-steps ul{padding:0;margin:0;list-style-type:none;display:flex}.p-steps-item{position:relative;display:flex;justify-content:center;flex:1 1 auto}.p-steps-item .p-menuitem-link{display:inline-flex;flex-direction:column;align-items:center;overflow:hidden;text-decoration:none}.p-steps.p-steps-readonly .p-steps-item{cursor:auto}.p-steps-item.p-steps-current .p-menuitem-link{cursor:default}.p-steps-title{white-space:nowrap}.p-steps-number{display:flex;align-items:center;justify-content:center}.p-steps-title{display:block}}\n"],
+  encapsulation: 2,
+  changeDetection: 0
+}));
+var Steps = _Steps;
 (() => {
   (typeof ngDevMode === "undefined" || ngDevMode) && setClassMetadata(Steps, [{
     type: Component,
     args: [{
       selector: "p-steps",
-      template: `
-        <nav [ngClass]="{ 'p-steps p-component': true, 'p-readonly': readonly }" [ngStyle]="style" [class]="styleClass" [attr.data-pc-name]="'steps'">
-            <ul #list [attr.data-pc-section]="'menu'">
-                <li
-                    *ngFor="let item of model; let i = index"
-                    class="p-steps-item"
-                    #menuitem
-                    [ngStyle]="item.style"
-                    [class]="item.styleClass"
-                    [attr.aria-current]="isActive(item, i) ? 'step' : undefined"
-                    [attr.id]="item.id"
-                    pTooltip
-                    [tooltipOptions]="item.tooltipOptions"
-                    [ngClass]="{ 'p-highlight p-steps-current': isActive(item, i), 'p-disabled': item.disabled || (readonly && !isActive(item, i)) }"
-                    [attr.data-pc-section]="'menuitem'"
-                >
-                    <a
-                        role="link"
-                        *ngIf="isClickableRouterLink(item); else elseBlock"
-                        [routerLink]="item.routerLink"
-                        [queryParams]="item.queryParams"
-                        [routerLinkActive]="'p-menuitem-link-active'"
-                        [routerLinkActiveOptions]="item.routerLinkActiveOptions || { exact: false }"
-                        class="p-menuitem-link"
-                        (click)="onItemClick($event, item, i)"
-                        (keydown)="onItemKeydown($event, item, i)"
-                        [target]="item.target"
-                        [attr.tabindex]="getItemTabIndex(item, i)"
-                        [attr.aria-disabled]="item.disabled || (readonly && i !== activeIndex)"
-                        [fragment]="item.fragment"
-                        [queryParamsHandling]="item.queryParamsHandling"
-                        [preserveFragment]="item.preserveFragment"
-                        [skipLocationChange]="item.skipLocationChange"
-                        [replaceUrl]="item.replaceUrl"
-                        [state]="item.state"
-                        [attr.aria-current]="i === activeIndex ? 'step' : null"
-                    >
-                        <span class="p-steps-number">{{ i + 1 }}</span>
-                        <span class="p-steps-title" *ngIf="item.escape !== false; else htmlLabel"> {{ item.label }}</span>
-                        <ng-template #htmlLabel><span class="p-steps-title" [innerHTML]="item.label"></span></ng-template>
-                    </a>
-                    <ng-template #elseBlock>
-                        <a
-                            role="link"
-                            [attr.href]="item.url"
-                            class="p-menuitem-link"
-                            (click)="onItemClick($event, item, i)"
-                            (keydown)="onItemKeydown($event, item, i)"
-                            [target]="item.target"
-                            [attr.tabindex]="getItemTabIndex(item, i)"
-                            [attr.aria-disabled]="item.disabled || (readonly && i !== activeIndex)"
-                            [attr.aria-current]="i === activeIndex ? 'step' : null"
-                        >
-                            <span class="p-steps-number">{{ i + 1 }} </span>
-                            <span class="p-steps-title" *ngIf="item.escape !== false; else htmlRouteLabel">{{ item.label }}</span>
-                            <ng-template #htmlRouteLabel><span class="p-steps-title" [innerHTML]="item.label"></span></ng-template>
-                        </a>
-                    </ng-template>
-                </li>
-            </ul>
-        </nav>
-    `,
+      template: '\n        <nav [ngClass]="{ \'p-steps p-component\': true, \'p-readonly\': readonly }" [ngStyle]="style" [class]="styleClass" [attr.data-pc-name]="\'steps\'">\n            <ul #list [attr.data-pc-section]="\'menu\'">\n                <li\n                    *ngFor="let item of model; let i = index"\n                    class="p-steps-item"\n                    #menuitem\n                    [ngStyle]="item.style"\n                    [class]="item.styleClass"\n                    [attr.aria-current]="isActive(item, i) ? \'step\' : undefined"\n                    [attr.id]="item.id"\n                    pTooltip\n                    [tooltipOptions]="item.tooltipOptions"\n                    [ngClass]="{ \'p-highlight p-steps-current\': isActive(item, i), \'p-disabled\': item.disabled || (readonly && !isActive(item, i)) }"\n                    [attr.data-pc-section]="\'menuitem\'"\n                >\n                    <a\n                        role="link"\n                        *ngIf="isClickableRouterLink(item); else elseBlock"\n                        [routerLink]="item.routerLink"\n                        [queryParams]="item.queryParams"\n                        [routerLinkActive]="\'p-menuitem-link-active\'"\n                        [routerLinkActiveOptions]="item.routerLinkActiveOptions || { exact: false }"\n                        class="p-menuitem-link"\n                        (click)="onItemClick($event, item, i)"\n                        (keydown)="onItemKeydown($event, item, i)"\n                        [target]="item.target"\n                        [attr.tabindex]="getItemTabIndex(item, i)"\n                        [attr.aria-disabled]="item.disabled || (readonly && i !== activeIndex)"\n                        [fragment]="item.fragment"\n                        [queryParamsHandling]="item.queryParamsHandling"\n                        [preserveFragment]="item.preserveFragment"\n                        [skipLocationChange]="item.skipLocationChange"\n                        [replaceUrl]="item.replaceUrl"\n                        [state]="item.state"\n                        [attr.aria-current]="i === activeIndex ? \'step\' : null"\n                    >\n                        <span class="p-steps-number">{{ i + 1 }}</span>\n                        <span class="p-steps-title" *ngIf="item.escape !== false; else htmlLabel"> {{ item.label }}</span>\n                        <ng-template #htmlLabel><span class="p-steps-title" [innerHTML]="item.label"></span></ng-template>\n                    </a>\n                    <ng-template #elseBlock>\n                        <a\n                            role="link"\n                            [attr.href]="item.url"\n                            class="p-menuitem-link"\n                            (click)="onItemClick($event, item, i)"\n                            (keydown)="onItemKeydown($event, item, i)"\n                            [target]="item.target"\n                            [attr.tabindex]="getItemTabIndex(item, i)"\n                            [attr.aria-disabled]="item.disabled || (readonly && i !== activeIndex)"\n                            [attr.aria-current]="i === activeIndex ? \'step\' : null"\n                        >\n                            <span class="p-steps-number">{{ i + 1 }} </span>\n                            <span class="p-steps-title" *ngIf="item.escape !== false; else htmlRouteLabel">{{ item.label }}</span>\n                            <ng-template #htmlRouteLabel><span class="p-steps-title" [innerHTML]="item.label"></span></ng-template>\n                        </a>\n                    </ng-template>\n                </li>\n            </ul>\n        </nav>\n    ',
       changeDetection: ChangeDetectionStrategy.OnPush,
       encapsulation: ViewEncapsulation$1.None,
       host: {
@@ -565,20 +508,21 @@ var Steps = class _Steps {
     }]
   });
 })();
-var StepsModule = class _StepsModule {
-  static ɵfac = function StepsModule_Factory(__ngFactoryType__) {
-    return new (__ngFactoryType__ || _StepsModule)();
-  };
-  static ɵmod = ɵɵdefineNgModule({
-    type: _StepsModule,
-    declarations: [Steps],
-    imports: [CommonModule, RouterModule, TooltipModule],
-    exports: [Steps, RouterModule, TooltipModule]
-  });
-  static ɵinj = ɵɵdefineInjector({
-    imports: [CommonModule, RouterModule, TooltipModule, RouterModule, TooltipModule]
-  });
+var _StepsModule = class _StepsModule {
 };
+__publicField(_StepsModule, "ɵfac", function StepsModule_Factory(__ngFactoryType__) {
+  return new (__ngFactoryType__ || _StepsModule)();
+});
+__publicField(_StepsModule, "ɵmod", ɵɵdefineNgModule({
+  type: _StepsModule,
+  declarations: [Steps],
+  imports: [CommonModule, RouterModule, TooltipModule],
+  exports: [Steps, RouterModule, TooltipModule]
+}));
+__publicField(_StepsModule, "ɵinj", ɵɵdefineInjector({
+  imports: [CommonModule, RouterModule, TooltipModule, RouterModule, TooltipModule]
+}));
+var StepsModule = _StepsModule;
 (() => {
   (typeof ngDevMode === "undefined" || ngDevMode) && setClassMetadata(StepsModule, [{
     type: NgModule,

@@ -1,11 +1,11 @@
 import {
   PrimeTemplate,
   SharedModule
-} from "./chunk-TQSVMJ6K.js";
-import "./chunk-3OF44R55.js";
+} from "./chunk-ZROJCIWL.js";
+import "./chunk-U3NLM53U.js";
 import {
   DomHandler
-} from "./chunk-BUGEQH7Q.js";
+} from "./chunk-LB42WWNC.js";
 import {
   CommonModule,
   NgClass,
@@ -13,7 +13,7 @@ import {
   NgIf,
   NgStyle,
   NgTemplateOutlet
-} from "./chunk-UBZYO7FG.js";
+} from "./chunk-KUZ63KOD.js";
 import {
   ChangeDetectionStrategy,
   Component,
@@ -53,11 +53,13 @@ import {
   ɵɵtext,
   ɵɵtextInterpolate2,
   ɵɵviewQuery
-} from "./chunk-ZI2Q76R4.js";
-import "./chunk-5OPE3T2R.js";
+} from "./chunk-R75KKECJ.js";
 import "./chunk-4N4GOYJH.js";
+import "./chunk-5OPE3T2R.js";
 import "./chunk-FHTVLBLO.js";
-import "./chunk-3OV72XIM.js";
+import {
+  __publicField
+} from "./chunk-IJZFAMY6.js";
 
 // node_modules/primeng/fesm2022/primeng-metergroup.mjs
 var _c0 = (a0, a1) => ({
@@ -238,14 +240,17 @@ function MeterGroup_Conditional_7_Template(rf, ctx) {
     ɵɵproperty("ngTemplateOutlet", ctx_r0.labelTemplate)("ngTemplateOutletContext", ɵɵpureFunction3(3, _c5, ctx_r0.value, ctx_r0.totalPercent(), ctx_r0.percentages()));
   }
 }
-var MeterGroupLabel = class _MeterGroupLabel {
-  value = null;
-  labelPosition = "end";
-  labelOrientation = "horizontal";
-  min;
-  max;
-  iconTemplate;
-  templates;
+var _MeterGroupLabel = class _MeterGroupLabel {
+  constructor() {
+    __publicField(this, "value", null);
+    __publicField(this, "labelPosition", "end");
+    __publicField(this, "labelOrientation", "horizontal");
+    __publicField(this, "min");
+    __publicField(this, "max");
+    __publicField(this, "iconTemplate");
+    __publicField(this, "templates");
+    __publicField(this, "parentInstance", inject(forwardRef(() => MeterGroup)));
+  }
   get labelClass() {
     return {
       "p-metergroup-labels p-component": true,
@@ -253,66 +258,55 @@ var MeterGroupLabel = class _MeterGroupLabel {
       "p-metergroup-labels-horizontal": this.labelOrientation === "horizontal"
     };
   }
-  parentInstance = inject(forwardRef(() => MeterGroup));
-  static ɵfac = function MeterGroupLabel_Factory(__ngFactoryType__) {
-    return new (__ngFactoryType__ || _MeterGroupLabel)();
-  };
-  static ɵcmp = ɵɵdefineComponent({
-    type: _MeterGroupLabel,
-    selectors: [["p-meterGroupLabel"]],
-    contentQueries: function MeterGroupLabel_ContentQueries(rf, ctx, dirIndex) {
-      if (rf & 1) {
-        ɵɵcontentQuery(dirIndex, PrimeTemplate, 4);
-      }
-      if (rf & 2) {
-        let _t;
-        ɵɵqueryRefresh(_t = ɵɵloadQuery()) && (ctx.templates = _t);
-      }
-    },
-    inputs: {
-      value: "value",
-      labelPosition: "labelPosition",
-      labelOrientation: "labelOrientation",
-      min: "min",
-      max: "max",
-      iconTemplate: "iconTemplate"
-    },
-    decls: 2,
-    vars: 3,
-    consts: [[3, "ngClass"], ["class", "p-metergroup-label", 4, "ngFor", "ngForOf", "ngForTrackBy"], [1, "p-metergroup-label"], [4, "ngIf"], [4, "ngTemplateOutlet", "ngTemplateOutletContext"], [1, "p-metergroup-label-text"], [3, "class", "ngClass", "ngStyle", 4, "ngIf"], ["class", "p-metergroup-label-marker", 3, "ngStyle", 4, "ngIf"], [3, "ngClass", "ngStyle"], [1, "p-metergroup-label-marker", 3, "ngStyle"]],
-    template: function MeterGroupLabel_Template(rf, ctx) {
-      if (rf & 1) {
-        ɵɵelementStart(0, "ol", 0);
-        ɵɵtemplate(1, MeterGroupLabel_li_1_Template, 5, 8, "li", 1);
-        ɵɵelementEnd();
-      }
-      if (rf & 2) {
-        ɵɵproperty("ngClass", ctx.labelClass);
-        ɵɵadvance();
-        ɵɵproperty("ngForOf", ctx.value)("ngForTrackBy", ctx.parentInstance.trackByFn);
-      }
-    },
-    dependencies: [NgClass, NgForOf, NgIf, NgTemplateOutlet, NgStyle],
-    encapsulation: 2
-  });
 };
+__publicField(_MeterGroupLabel, "ɵfac", function MeterGroupLabel_Factory(__ngFactoryType__) {
+  return new (__ngFactoryType__ || _MeterGroupLabel)();
+});
+__publicField(_MeterGroupLabel, "ɵcmp", ɵɵdefineComponent({
+  type: _MeterGroupLabel,
+  selectors: [["p-meterGroupLabel"]],
+  contentQueries: function MeterGroupLabel_ContentQueries(rf, ctx, dirIndex) {
+    if (rf & 1) {
+      ɵɵcontentQuery(dirIndex, PrimeTemplate, 4);
+    }
+    if (rf & 2) {
+      let _t;
+      ɵɵqueryRefresh(_t = ɵɵloadQuery()) && (ctx.templates = _t);
+    }
+  },
+  inputs: {
+    value: "value",
+    labelPosition: "labelPosition",
+    labelOrientation: "labelOrientation",
+    min: "min",
+    max: "max",
+    iconTemplate: "iconTemplate"
+  },
+  decls: 2,
+  vars: 3,
+  consts: [[3, "ngClass"], ["class", "p-metergroup-label", 4, "ngFor", "ngForOf", "ngForTrackBy"], [1, "p-metergroup-label"], [4, "ngIf"], [4, "ngTemplateOutlet", "ngTemplateOutletContext"], [1, "p-metergroup-label-text"], [3, "class", "ngClass", "ngStyle", 4, "ngIf"], ["class", "p-metergroup-label-marker", 3, "ngStyle", 4, "ngIf"], [3, "ngClass", "ngStyle"], [1, "p-metergroup-label-marker", 3, "ngStyle"]],
+  template: function MeterGroupLabel_Template(rf, ctx) {
+    if (rf & 1) {
+      ɵɵelementStart(0, "ol", 0);
+      ɵɵtemplate(1, MeterGroupLabel_li_1_Template, 5, 8, "li", 1);
+      ɵɵelementEnd();
+    }
+    if (rf & 2) {
+      ɵɵproperty("ngClass", ctx.labelClass);
+      ɵɵadvance();
+      ɵɵproperty("ngForOf", ctx.value)("ngForTrackBy", ctx.parentInstance.trackByFn);
+    }
+  },
+  dependencies: [NgClass, NgForOf, NgIf, NgTemplateOutlet, NgStyle],
+  encapsulation: 2
+}));
+var MeterGroupLabel = _MeterGroupLabel;
 (() => {
   (typeof ngDevMode === "undefined" || ngDevMode) && setClassMetadata(MeterGroupLabel, [{
     type: Component,
     args: [{
       selector: "p-meterGroupLabel",
-      template: `
-        <ol [ngClass]="labelClass">
-            <li *ngFor="let labelItem of value; let index = index; trackBy: parentInstance.trackByFn" class="p-metergroup-label">
-                <ng-container *ngIf="!iconTemplate">
-                    <i *ngIf="labelItem.icon" [class]="labelItem.icon" [ngClass]="{ 'p-metergroup-label-icon': true }" [ngStyle]="{ color: labelItem.color }"></i>
-                    <span *ngIf="!labelItem.icon" class="p-metergroup-label-marker" [ngStyle]="{ backgroundColor: labelItem.color }"></span>
-                </ng-container>
-                <ng-container *ngTemplateOutlet="iconTemplate; context: { $implicit: labelItem, icon: labelItem.icon }"></ng-container>
-                <span class="p-metergroup-label-text">{{ labelItem.label }} ({{ parentInstance?.percentValue(labelItem.value) }})</span>
-            </li>
-        </ol>
-    `
+      template: '\n        <ol [ngClass]="labelClass">\n            <li *ngFor="let labelItem of value; let index = index; trackBy: parentInstance.trackByFn" class="p-metergroup-label">\n                <ng-container *ngIf="!iconTemplate">\n                    <i *ngIf="labelItem.icon" [class]="labelItem.icon" [ngClass]="{ \'p-metergroup-label-icon\': true }" [ngStyle]="{ color: labelItem.color }"></i>\n                    <span *ngIf="!labelItem.icon" class="p-metergroup-label-marker" [ngStyle]="{ backgroundColor: labelItem.color }"></span>\n                </ng-container>\n                <ng-container *ngTemplateOutlet="iconTemplate; context: { $implicit: labelItem, icon: labelItem.icon }"></ng-container>\n                <span class="p-metergroup-label-text">{{ labelItem.label }} ({{ parentInstance?.percentValue(labelItem.value) }})</span>\n            </li>\n        </ol>\n    '
     }]
   }], null, {
     value: [{
@@ -339,48 +333,56 @@ var MeterGroupLabel = class _MeterGroupLabel {
     }]
   });
 })();
-var MeterGroup = class _MeterGroup {
-  /**
-   * Current value of the metergroup.
-   * @group Props
-   */
-  value;
-  /**
-   * Mininum boundary value.
-   * @group Props
-   */
-  min = 0;
-  /**
-   * Maximum boundary value.
-   * @group Props
-   */
-  max = 100;
-  /**
-   * Specifies the layout of the component, valid values are 'horizontal' and 'vertical'.
-   * @group Props
-   */
-  orientation = "horizontal";
-  /**
-   * Specifies the label position of the component, valid values are 'start' and 'end'.
-   * @group Props
-   */
-  labelPosition = "end";
-  /**
-   * Specifies the label orientation of the component, valid values are 'horizontal' and 'vertical'.
-   * @group Props
-   */
-  labelOrientation = "horizontal";
-  /**
-   * Inline style of the element.
-   * @group Props
-   */
-  style;
-  /**
-   * Style class of the element.
-   * @group Props
-   */
-  styleClass;
-  templates;
+var _MeterGroup = class _MeterGroup {
+  constructor() {
+    /**
+     * Current value of the metergroup.
+     * @group Props
+     */
+    __publicField(this, "value");
+    /**
+     * Mininum boundary value.
+     * @group Props
+     */
+    __publicField(this, "min", 0);
+    /**
+     * Maximum boundary value.
+     * @group Props
+     */
+    __publicField(this, "max", 100);
+    /**
+     * Specifies the layout of the component, valid values are 'horizontal' and 'vertical'.
+     * @group Props
+     */
+    __publicField(this, "orientation", "horizontal");
+    /**
+     * Specifies the label position of the component, valid values are 'start' and 'end'.
+     * @group Props
+     */
+    __publicField(this, "labelPosition", "end");
+    /**
+     * Specifies the label orientation of the component, valid values are 'horizontal' and 'vertical'.
+     * @group Props
+     */
+    __publicField(this, "labelOrientation", "horizontal");
+    /**
+     * Inline style of the element.
+     * @group Props
+     */
+    __publicField(this, "style");
+    /**
+     * Style class of the element.
+     * @group Props
+     */
+    __publicField(this, "styleClass");
+    __publicField(this, "templates");
+    __publicField(this, "labelTemplate");
+    __publicField(this, "meterTemplate");
+    __publicField(this, "endTemplate");
+    __publicField(this, "startTemplate");
+    __publicField(this, "iconTemplate");
+    __publicField(this, "container");
+  }
   get vertical() {
     return this.orientation === "vertical";
   }
@@ -391,19 +393,14 @@ var MeterGroup = class _MeterGroup {
       "p-metergroup-vertical": this.orientation === "vertical"
     };
   }
-  labelTemplate;
-  meterTemplate;
-  endTemplate;
-  startTemplate;
-  iconTemplate;
-  container;
   ngAfterViewInit() {
     const _container = this.container.nativeElement;
     const height = DomHandler.getOuterHeight(_container);
     this.vertical && (_container.style.height = height + "px");
   }
   ngAfterContentInit() {
-    this.templates?.forEach((item) => {
+    var _a;
+    (_a = this.templates) == null ? void 0 : _a.forEach((item) => {
       switch (item.getType()) {
         case "label":
           this.labelTemplate = item.template;
@@ -454,102 +451,81 @@ var MeterGroup = class _MeterGroup {
   trackByFn(index) {
     return index;
   }
-  static ɵfac = function MeterGroup_Factory(__ngFactoryType__) {
-    return new (__ngFactoryType__ || _MeterGroup)();
-  };
-  static ɵcmp = ɵɵdefineComponent({
-    type: _MeterGroup,
-    selectors: [["p-meterGroup"]],
-    contentQueries: function MeterGroup_ContentQueries(rf, ctx, dirIndex) {
-      if (rf & 1) {
-        ɵɵcontentQuery(dirIndex, PrimeTemplate, 4);
-      }
-      if (rf & 2) {
-        let _t;
-        ɵɵqueryRefresh(_t = ɵɵloadQuery()) && (ctx.templates = _t);
-      }
-    },
-    viewQuery: function MeterGroup_Query(rf, ctx) {
-      if (rf & 1) {
-        ɵɵviewQuery(_c4, 5, ElementRef);
-      }
-      if (rf & 2) {
-        let _t;
-        ɵɵqueryRefresh(_t = ɵɵloadQuery()) && (ctx.container = _t.first);
-      }
-    },
-    inputs: {
-      value: "value",
-      min: "min",
-      max: "max",
-      orientation: "orientation",
-      labelPosition: "labelPosition",
-      labelOrientation: "labelOrientation",
-      style: "style",
-      styleClass: "styleClass"
-    },
-    decls: 8,
-    vars: 23,
-    consts: [["container", ""], ["role", "meter", 3, "ngClass", "ngStyle"], [4, "ngTemplateOutlet", "ngTemplateOutletContext"], [1, "p-metergroup-meters"], [4, "ngFor", "ngForOf", "ngForTrackBy"], [3, "value", "labelPosition", "labelOrientation", "min", "max", "iconTemplate", 4, "ngIf"], [3, "value", "labelPosition", "labelOrientation", "min", "max", "iconTemplate"], [4, "ngIf"], [1, "p-metergroup-meter", 3, "ngStyle"]],
-    template: function MeterGroup_Template(rf, ctx) {
-      if (rf & 1) {
-        ɵɵelementStart(0, "div", 1, 0);
-        ɵɵtemplate(2, MeterGroup_Conditional_2_Template, 2, 7)(3, MeterGroup_ng_container_3_Template, 1, 0, "ng-container", 2);
-        ɵɵelementStart(4, "div", 3);
-        ɵɵtemplate(5, MeterGroup_ng_container_5_Template, 3, 9, "ng-container", 4);
-        ɵɵelementEnd();
-        ɵɵtemplate(6, MeterGroup_ng_container_6_Template, 1, 0, "ng-container", 2)(7, MeterGroup_Conditional_7_Template, 2, 7);
-        ɵɵelementEnd();
-      }
-      if (rf & 2) {
-        ɵɵclassMap(ctx.styleClass);
-        ɵɵproperty("ngClass", ctx.containerClass)("ngStyle", ctx.style);
-        ɵɵattribute("aria-valuemin", ctx.min)("aria-valuemax", ctx.max)("aria-valuenow", ctx.totalPercent());
-        ɵɵadvance(2);
-        ɵɵconditional(ctx.labelPosition === "start" ? 2 : -1);
-        ɵɵadvance();
-        ɵɵproperty("ngTemplateOutlet", ctx.startTemplate)("ngTemplateOutletContext", ɵɵpureFunction3(15, _c5, ctx.value, ctx.totalPercent(), ctx.percentages()));
-        ɵɵadvance(2);
-        ɵɵproperty("ngForOf", ctx.value)("ngForTrackBy", ctx.trackByFn);
-        ɵɵadvance();
-        ɵɵproperty("ngTemplateOutlet", ctx.endTemplate)("ngTemplateOutletContext", ɵɵpureFunction3(19, _c5, ctx.value, ctx.totalPercent(), ctx.percentages()));
-        ɵɵadvance();
-        ɵɵconditional(ctx.labelPosition === "end" ? 7 : -1);
-      }
-    },
-    dependencies: [NgClass, NgForOf, NgIf, NgTemplateOutlet, NgStyle, MeterGroupLabel],
-    encapsulation: 2,
-    changeDetection: 0
-  });
 };
+__publicField(_MeterGroup, "ɵfac", function MeterGroup_Factory(__ngFactoryType__) {
+  return new (__ngFactoryType__ || _MeterGroup)();
+});
+__publicField(_MeterGroup, "ɵcmp", ɵɵdefineComponent({
+  type: _MeterGroup,
+  selectors: [["p-meterGroup"]],
+  contentQueries: function MeterGroup_ContentQueries(rf, ctx, dirIndex) {
+    if (rf & 1) {
+      ɵɵcontentQuery(dirIndex, PrimeTemplate, 4);
+    }
+    if (rf & 2) {
+      let _t;
+      ɵɵqueryRefresh(_t = ɵɵloadQuery()) && (ctx.templates = _t);
+    }
+  },
+  viewQuery: function MeterGroup_Query(rf, ctx) {
+    if (rf & 1) {
+      ɵɵviewQuery(_c4, 5, ElementRef);
+    }
+    if (rf & 2) {
+      let _t;
+      ɵɵqueryRefresh(_t = ɵɵloadQuery()) && (ctx.container = _t.first);
+    }
+  },
+  inputs: {
+    value: "value",
+    min: "min",
+    max: "max",
+    orientation: "orientation",
+    labelPosition: "labelPosition",
+    labelOrientation: "labelOrientation",
+    style: "style",
+    styleClass: "styleClass"
+  },
+  decls: 8,
+  vars: 23,
+  consts: [["container", ""], ["role", "meter", 3, "ngClass", "ngStyle"], [4, "ngTemplateOutlet", "ngTemplateOutletContext"], [1, "p-metergroup-meters"], [4, "ngFor", "ngForOf", "ngForTrackBy"], [3, "value", "labelPosition", "labelOrientation", "min", "max", "iconTemplate", 4, "ngIf"], [3, "value", "labelPosition", "labelOrientation", "min", "max", "iconTemplate"], [4, "ngIf"], [1, "p-metergroup-meter", 3, "ngStyle"]],
+  template: function MeterGroup_Template(rf, ctx) {
+    if (rf & 1) {
+      ɵɵelementStart(0, "div", 1, 0);
+      ɵɵtemplate(2, MeterGroup_Conditional_2_Template, 2, 7)(3, MeterGroup_ng_container_3_Template, 1, 0, "ng-container", 2);
+      ɵɵelementStart(4, "div", 3);
+      ɵɵtemplate(5, MeterGroup_ng_container_5_Template, 3, 9, "ng-container", 4);
+      ɵɵelementEnd();
+      ɵɵtemplate(6, MeterGroup_ng_container_6_Template, 1, 0, "ng-container", 2)(7, MeterGroup_Conditional_7_Template, 2, 7);
+      ɵɵelementEnd();
+    }
+    if (rf & 2) {
+      ɵɵclassMap(ctx.styleClass);
+      ɵɵproperty("ngClass", ctx.containerClass)("ngStyle", ctx.style);
+      ɵɵattribute("aria-valuemin", ctx.min)("aria-valuemax", ctx.max)("aria-valuenow", ctx.totalPercent());
+      ɵɵadvance(2);
+      ɵɵconditional(ctx.labelPosition === "start" ? 2 : -1);
+      ɵɵadvance();
+      ɵɵproperty("ngTemplateOutlet", ctx.startTemplate)("ngTemplateOutletContext", ɵɵpureFunction3(15, _c5, ctx.value, ctx.totalPercent(), ctx.percentages()));
+      ɵɵadvance(2);
+      ɵɵproperty("ngForOf", ctx.value)("ngForTrackBy", ctx.trackByFn);
+      ɵɵadvance();
+      ɵɵproperty("ngTemplateOutlet", ctx.endTemplate)("ngTemplateOutletContext", ɵɵpureFunction3(19, _c5, ctx.value, ctx.totalPercent(), ctx.percentages()));
+      ɵɵadvance();
+      ɵɵconditional(ctx.labelPosition === "end" ? 7 : -1);
+    }
+  },
+  dependencies: [NgClass, NgForOf, NgIf, NgTemplateOutlet, NgStyle, MeterGroupLabel],
+  encapsulation: 2,
+  changeDetection: 0
+}));
+var MeterGroup = _MeterGroup;
 (() => {
   (typeof ngDevMode === "undefined" || ngDevMode) && setClassMetadata(MeterGroup, [{
     type: Component,
     args: [{
       selector: "p-meterGroup",
-      template: `
-        <div #container [ngClass]="containerClass" role="meter" [attr.aria-valuemin]="min" [attr.aria-valuemax]="max" [attr.aria-valuenow]="totalPercent()" [ngStyle]="style" [class]="styleClass">
-            @if (labelPosition === 'start') {
-                <p-meterGroupLabel *ngIf="!labelTemplate" [value]="value" [labelPosition]="labelPosition" [labelOrientation]="labelOrientation" [min]="min" [max]="max" [iconTemplate]="iconTemplate" />
-                <ng-container *ngTemplateOutlet="labelTemplate; context: { $implicit: value, totalPercent: totalPercent(), percentages: percentages() }"></ng-container>
-            }
-            <ng-container *ngTemplateOutlet="startTemplate; context: { $implicit: value, totalPercent: totalPercent(), percentages: percentages() }"></ng-container>
-            <div class="p-metergroup-meters">
-                <ng-container *ngFor="let meterItem of value; let index = index; trackBy: trackByFn">
-                    <ng-container *ngTemplateOutlet="meterTemplate; context: { $implicit: meterItem, index: index, orientation: this.orientation, class: 'p-metergroup-meter', size: percentValue(meterItem.value), totalPercent: totalPercent() }">
-                    </ng-container>
-                    <ng-container *ngIf="!meterTemplate && meterItem.value > 0">
-                        <span class="p-metergroup-meter" [ngStyle]="meterStyle(meterItem)"></span>
-                    </ng-container>
-                </ng-container>
-            </div>
-            <ng-container *ngTemplateOutlet="endTemplate; context: { $implicit: value, totalPercent: totalPercent(), percentages: percentages() }"></ng-container>
-            @if (labelPosition === 'end') {
-                <p-meterGroupLabel *ngIf="!labelTemplate" [value]="value" [labelPosition]="labelPosition" [labelOrientation]="labelOrientation" [min]="min" [max]="max" [iconTemplate]="iconTemplate" />
-                <ng-container *ngTemplateOutlet="labelTemplate; context: { $implicit: value, totalPercent: totalPercent(), percentages: percentages() }"></ng-container>
-            }
-        </div>
-    `,
+      template: '\n        <div #container [ngClass]="containerClass" role="meter" [attr.aria-valuemin]="min" [attr.aria-valuemax]="max" [attr.aria-valuenow]="totalPercent()" [ngStyle]="style" [class]="styleClass">\n            @if (labelPosition === \'start\') {\n                <p-meterGroupLabel *ngIf="!labelTemplate" [value]="value" [labelPosition]="labelPosition" [labelOrientation]="labelOrientation" [min]="min" [max]="max" [iconTemplate]="iconTemplate" />\n                <ng-container *ngTemplateOutlet="labelTemplate; context: { $implicit: value, totalPercent: totalPercent(), percentages: percentages() }"></ng-container>\n            }\n            <ng-container *ngTemplateOutlet="startTemplate; context: { $implicit: value, totalPercent: totalPercent(), percentages: percentages() }"></ng-container>\n            <div class="p-metergroup-meters">\n                <ng-container *ngFor="let meterItem of value; let index = index; trackBy: trackByFn">\n                    <ng-container *ngTemplateOutlet="meterTemplate; context: { $implicit: meterItem, index: index, orientation: this.orientation, class: \'p-metergroup-meter\', size: percentValue(meterItem.value), totalPercent: totalPercent() }">\n                    </ng-container>\n                    <ng-container *ngIf="!meterTemplate && meterItem.value > 0">\n                        <span class="p-metergroup-meter" [ngStyle]="meterStyle(meterItem)"></span>\n                    </ng-container>\n                </ng-container>\n            </div>\n            <ng-container *ngTemplateOutlet="endTemplate; context: { $implicit: value, totalPercent: totalPercent(), percentages: percentages() }"></ng-container>\n            @if (labelPosition === \'end\') {\n                <p-meterGroupLabel *ngIf="!labelTemplate" [value]="value" [labelPosition]="labelPosition" [labelOrientation]="labelOrientation" [min]="min" [max]="max" [iconTemplate]="iconTemplate" />\n                <ng-container *ngTemplateOutlet="labelTemplate; context: { $implicit: value, totalPercent: totalPercent(), percentages: percentages() }"></ng-container>\n            }\n        </div>\n    ',
       changeDetection: ChangeDetectionStrategy.OnPush,
       encapsulation: ViewEncapsulation$1.None
     }]
@@ -590,20 +566,21 @@ var MeterGroup = class _MeterGroup {
     }]
   });
 })();
-var MeterGroupModule = class _MeterGroupModule {
-  static ɵfac = function MeterGroupModule_Factory(__ngFactoryType__) {
-    return new (__ngFactoryType__ || _MeterGroupModule)();
-  };
-  static ɵmod = ɵɵdefineNgModule({
-    type: _MeterGroupModule,
-    declarations: [MeterGroup, MeterGroupLabel],
-    imports: [CommonModule, SharedModule],
-    exports: [MeterGroup, SharedModule]
-  });
-  static ɵinj = ɵɵdefineInjector({
-    imports: [CommonModule, SharedModule, SharedModule]
-  });
+var _MeterGroupModule = class _MeterGroupModule {
 };
+__publicField(_MeterGroupModule, "ɵfac", function MeterGroupModule_Factory(__ngFactoryType__) {
+  return new (__ngFactoryType__ || _MeterGroupModule)();
+});
+__publicField(_MeterGroupModule, "ɵmod", ɵɵdefineNgModule({
+  type: _MeterGroupModule,
+  declarations: [MeterGroup, MeterGroupLabel],
+  imports: [CommonModule, SharedModule],
+  exports: [MeterGroup, SharedModule]
+}));
+__publicField(_MeterGroupModule, "ɵinj", ɵɵdefineInjector({
+  imports: [CommonModule, SharedModule, SharedModule]
+}));
+var MeterGroupModule = _MeterGroupModule;
 (() => {
   (typeof ngDevMode === "undefined" || ngDevMode) && setClassMetadata(MeterGroupModule, [{
     type: NgModule,

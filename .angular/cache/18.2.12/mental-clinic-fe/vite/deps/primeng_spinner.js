@@ -1,16 +1,16 @@
 import {
   InputTextModule
-} from "./chunk-QU6QLMWV.js";
+} from "./chunk-SJTFEDMT.js";
 import {
   NG_VALUE_ACCESSOR
-} from "./chunk-B7GQUK3J.js";
-import "./chunk-TQSVMJ6K.js";
-import "./chunk-3OF44R55.js";
+} from "./chunk-ZOG4HQFG.js";
+import "./chunk-ZROJCIWL.js";
+import "./chunk-U3NLM53U.js";
 import {
   CommonModule,
   NgClass,
   NgStyle
-} from "./chunk-UBZYO7FG.js";
+} from "./chunk-KUZ63KOD.js";
 import {
   ChangeDetectionStrategy,
   ChangeDetectorRef,
@@ -48,11 +48,13 @@ import {
   ɵɵresetView,
   ɵɵrestoreView,
   ɵɵviewQuery
-} from "./chunk-ZI2Q76R4.js";
-import "./chunk-5OPE3T2R.js";
+} from "./chunk-R75KKECJ.js";
 import "./chunk-4N4GOYJH.js";
+import "./chunk-5OPE3T2R.js";
 import "./chunk-FHTVLBLO.js";
-import "./chunk-3OV72XIM.js";
+import {
+  __publicField
+} from "./chunk-IJZFAMY6.js";
 
 // node_modules/primeng/fesm2022/primeng-spinner.mjs
 var _c0 = ["inputfield"];
@@ -69,47 +71,51 @@ var SPINNER_VALUE_ACCESSOR = {
   useExisting: forwardRef(() => Spinner),
   multi: true
 };
-var Spinner = class _Spinner {
-  el;
-  cd;
-  onChange = new EventEmitter();
-  onFocus = new EventEmitter();
-  onBlur = new EventEmitter();
-  min;
-  max;
-  maxlength;
-  size;
-  placeholder;
-  inputId;
-  disabled;
-  readonly;
-  tabindex;
-  required;
-  name;
-  ariaLabelledBy;
-  inputStyle;
-  inputStyleClass;
-  formatInput;
-  decimalSeparator;
-  thousandSeparator;
-  precision;
-  value;
-  _step = 1;
-  formattedValue;
-  onModelChange = () => {
-  };
-  onModelTouched = () => {
-  };
-  keyPattern = /[0-9\+\-]/;
-  timer;
-  focus;
-  filled;
-  negativeSeparator = "-";
-  localeDecimalSeparator;
-  localeThousandSeparator;
-  thousandRegExp;
-  calculatedPrecision;
-  inputfieldViewChild;
+var _Spinner = class _Spinner {
+  constructor(el, cd) {
+    __publicField(this, "el");
+    __publicField(this, "cd");
+    __publicField(this, "onChange", new EventEmitter());
+    __publicField(this, "onFocus", new EventEmitter());
+    __publicField(this, "onBlur", new EventEmitter());
+    __publicField(this, "min");
+    __publicField(this, "max");
+    __publicField(this, "maxlength");
+    __publicField(this, "size");
+    __publicField(this, "placeholder");
+    __publicField(this, "inputId");
+    __publicField(this, "disabled");
+    __publicField(this, "readonly");
+    __publicField(this, "tabindex");
+    __publicField(this, "required");
+    __publicField(this, "name");
+    __publicField(this, "ariaLabelledBy");
+    __publicField(this, "inputStyle");
+    __publicField(this, "inputStyleClass");
+    __publicField(this, "formatInput");
+    __publicField(this, "decimalSeparator");
+    __publicField(this, "thousandSeparator");
+    __publicField(this, "precision");
+    __publicField(this, "value");
+    __publicField(this, "_step", 1);
+    __publicField(this, "formattedValue");
+    __publicField(this, "onModelChange", () => {
+    });
+    __publicField(this, "onModelTouched", () => {
+    });
+    __publicField(this, "keyPattern", /[0-9\+\-]/);
+    __publicField(this, "timer");
+    __publicField(this, "focus");
+    __publicField(this, "filled");
+    __publicField(this, "negativeSeparator", "-");
+    __publicField(this, "localeDecimalSeparator");
+    __publicField(this, "localeThousandSeparator");
+    __publicField(this, "thousandRegExp");
+    __publicField(this, "calculatedPrecision");
+    __publicField(this, "inputfieldViewChild");
+    this.el = el;
+    this.cd = cd;
+  }
   get step() {
     return this._step;
   }
@@ -120,15 +126,11 @@ var Spinner = class _Spinner {
       this.calculatedPrecision = tokens[1] ? tokens[1].length : void 0;
     }
   }
-  constructor(el, cd) {
-    this.el = el;
-    this.cd = cd;
-  }
   ngOnInit() {
     if (this.formatInput) {
       this.localeDecimalSeparator = 1.1.toLocaleString().substring(1, 2);
       this.localeThousandSeparator = 1e3.toLocaleString().substring(1, 2);
-      this.thousandRegExp = new RegExp(`[${this.thousandSeparator || this.localeThousandSeparator}]`, "gim");
+      this.thousandRegExp = new RegExp("[".concat(this.thousandSeparator || this.localeThousandSeparator, "]"), "gim");
       if (this.decimalSeparator && this.thousandSeparator && this.decimalSeparator === this.thousandSeparator) {
         console.warn("thousandSeparator and decimalSeparator cannot have the same value.");
       }
@@ -275,7 +277,7 @@ var Spinner = class _Spinner {
             value[1] = (this.decimalSeparator || this.localeDecimalSeparator) + value[1];
           }
           if (this.thousandSeparator && value[0].length > 3) {
-            value[0] = value[0].replace(new RegExp(`[${this.localeThousandSeparator}]`, "gim"), this.thousandSeparator);
+            value[0] = value[0].replace(new RegExp("[".concat(this.localeThousandSeparator, "]"), "gim"), this.thousandSeparator);
           }
           value = value.join("");
         }
@@ -312,184 +314,132 @@ var Spinner = class _Spinner {
   updateFilledState() {
     this.filled = this.value !== void 0 && this.value != null;
   }
-  static ɵfac = function Spinner_Factory(__ngFactoryType__) {
-    return new (__ngFactoryType__ || _Spinner)(ɵɵdirectiveInject(ElementRef), ɵɵdirectiveInject(ChangeDetectorRef));
-  };
-  static ɵcmp = ɵɵdefineComponent({
-    type: _Spinner,
-    selectors: [["p-spinner"]],
-    viewQuery: function Spinner_Query(rf, ctx) {
-      if (rf & 1) {
-        ɵɵviewQuery(_c0, 5);
-      }
-      if (rf & 2) {
-        let _t;
-        ɵɵqueryRefresh(_t = ɵɵloadQuery()) && (ctx.inputfieldViewChild = _t.first);
-      }
-    },
-    hostAttrs: [1, "p-element"],
-    hostVars: 4,
-    hostBindings: function Spinner_HostBindings(rf, ctx) {
-      if (rf & 2) {
-        ɵɵclassProp("ui-inputwrapper-filled", ctx.filled)("ui-inputwrapper-focus", ctx.focus);
-      }
-    },
-    inputs: {
-      min: [2, "min", "min", numberAttribute],
-      max: [2, "max", "max", numberAttribute],
-      maxlength: [2, "maxlength", "maxlength", numberAttribute],
-      size: [2, "size", "size", numberAttribute],
-      placeholder: "placeholder",
-      inputId: "inputId",
-      disabled: [2, "disabled", "disabled", booleanAttribute],
-      readonly: [2, "readonly", "readonly", booleanAttribute],
-      tabindex: [2, "tabindex", "tabindex", numberAttribute],
-      required: [2, "required", "required", booleanAttribute],
-      name: "name",
-      ariaLabelledBy: "ariaLabelledBy",
-      inputStyle: "inputStyle",
-      inputStyleClass: "inputStyleClass",
-      formatInput: [2, "formatInput", "formatInput", booleanAttribute],
-      decimalSeparator: "decimalSeparator",
-      thousandSeparator: "thousandSeparator",
-      precision: [2, "precision", "precision", numberAttribute],
-      step: "step"
-    },
-    outputs: {
-      onChange: "onChange",
-      onFocus: "onFocus",
-      onBlur: "onBlur"
-    },
-    features: [ɵɵProvidersFeature([SPINNER_VALUE_ACCESSOR]), ɵɵInputTransformsFeature],
-    decls: 7,
-    vars: 28,
-    consts: [["inputfield", ""], [1, "ui-spinner", "ui-widget", "ui-corner-all"], ["type", "text", 3, "keydown", "blur", "input", "change", "focus", "value", "disabled", "readonly", "ngStyle", "ngClass"], ["type", "button", "tabindex", "-1", 3, "mouseleave", "mousedown", "mouseup", "ngClass", "disabled"], [1, "ui-spinner-button-icon", "pi", "pi-caret-up", "ui-clickable"], [1, "ui-spinner-button-icon", "pi", "pi-caret-down", "ui-clickable"]],
-    template: function Spinner_Template(rf, ctx) {
-      if (rf & 1) {
-        const _r1 = ɵɵgetCurrentView();
-        ɵɵelementStart(0, "span", 1)(1, "input", 2, 0);
-        ɵɵlistener("keydown", function Spinner_Template_input_keydown_1_listener($event) {
-          ɵɵrestoreView(_r1);
-          return ɵɵresetView(ctx.onInputKeydown($event));
-        })("blur", function Spinner_Template_input_blur_1_listener($event) {
-          ɵɵrestoreView(_r1);
-          return ɵɵresetView(ctx.onInputBlur($event));
-        })("input", function Spinner_Template_input_input_1_listener($event) {
-          ɵɵrestoreView(_r1);
-          return ɵɵresetView(ctx.onInput($event));
-        })("change", function Spinner_Template_input_change_1_listener($event) {
-          ɵɵrestoreView(_r1);
-          return ɵɵresetView(ctx.onInputChange($event));
-        })("focus", function Spinner_Template_input_focus_1_listener($event) {
-          ɵɵrestoreView(_r1);
-          return ɵɵresetView(ctx.onInputFocus($event));
-        });
-        ɵɵelementEnd();
-        ɵɵelementStart(3, "button", 3);
-        ɵɵlistener("mouseleave", function Spinner_Template_button_mouseleave_3_listener($event) {
-          ɵɵrestoreView(_r1);
-          return ɵɵresetView(ctx.onUpButtonMouseleave($event));
-        })("mousedown", function Spinner_Template_button_mousedown_3_listener($event) {
-          ɵɵrestoreView(_r1);
-          return ɵɵresetView(ctx.onUpButtonMousedown($event));
-        })("mouseup", function Spinner_Template_button_mouseup_3_listener($event) {
-          ɵɵrestoreView(_r1);
-          return ɵɵresetView(ctx.onUpButtonMouseup($event));
-        });
-        ɵɵelement(4, "span", 4);
-        ɵɵelementEnd();
-        ɵɵelementStart(5, "button", 3);
-        ɵɵlistener("mouseleave", function Spinner_Template_button_mouseleave_5_listener($event) {
-          ɵɵrestoreView(_r1);
-          return ɵɵresetView(ctx.onDownButtonMouseleave($event));
-        })("mousedown", function Spinner_Template_button_mousedown_5_listener($event) {
-          ɵɵrestoreView(_r1);
-          return ɵɵresetView(ctx.onDownButtonMousedown($event));
-        })("mouseup", function Spinner_Template_button_mouseup_5_listener($event) {
-          ɵɵrestoreView(_r1);
-          return ɵɵresetView(ctx.onDownButtonMouseup($event));
-        });
-        ɵɵelement(6, "span", 5);
-        ɵɵelementEnd()();
-      }
-      if (rf & 2) {
-        ɵɵadvance();
-        ɵɵclassMap(ctx.inputStyleClass);
-        ɵɵproperty("value", ctx.formattedValue || null)("disabled", ctx.disabled)("readonly", ctx.readonly)("ngStyle", ctx.inputStyle)("ngClass", "ui-spinner-input ui-inputtext ui-widget ui-state-default ui-corner-all");
-        ɵɵattribute("id", ctx.inputId)("name", ctx.name)("aria-valumin", ctx.min)("aria-valuemax", ctx.max)("aria-valuenow", ctx.value)("aria-labelledby", ctx.ariaLabelledBy)("size", ctx.size)("maxlength", ctx.maxlength)("tabindex", ctx.tabindex)("placeholder", ctx.placeholder)("required", ctx.required);
-        ɵɵadvance(2);
-        ɵɵproperty("ngClass", ɵɵpureFunction1(24, _c1, ctx.disabled))("disabled", ctx.disabled || ctx.readonly);
-        ɵɵattribute("readonly", ctx.readonly);
-        ɵɵadvance(2);
-        ɵɵproperty("ngClass", ɵɵpureFunction1(26, _c2, ctx.disabled))("disabled", ctx.disabled || ctx.readonly);
-        ɵɵattribute("readonly", ctx.readonly);
-      }
-    },
-    dependencies: [NgClass, NgStyle],
-    styles: ["@layer primeng{.ui-spinner{display:inline-block;overflow:visible;padding:0;position:relative;vertical-align:middle}.ui-spinner-input{vertical-align:middle;padding-right:1.5em}.ui-spinner-button{cursor:default;display:block;height:50%;margin:0;overflow:hidden;padding:0;position:absolute;right:0;text-align:center;vertical-align:middle;width:1.5em}.ui-spinner .ui-spinner-button-icon{position:absolute;top:50%;left:50%;margin-top:-.5em;margin-left:-.5em;width:1em}.ui-spinner-up{top:0}.ui-spinner-down{bottom:0}.ui-fluid .ui-spinner{width:100%}.ui-fluid .ui-spinner .ui-spinner-input{padding-right:2em;width:100%}.ui-fluid .ui-spinner .ui-spinner-button{width:1.5em}.ui-fluid .ui-spinner .ui-spinner-button .ui-spinner-button-icon{left:.7em}}\n"],
-    encapsulation: 2,
-    changeDetection: 0
-  });
 };
+__publicField(_Spinner, "ɵfac", function Spinner_Factory(__ngFactoryType__) {
+  return new (__ngFactoryType__ || _Spinner)(ɵɵdirectiveInject(ElementRef), ɵɵdirectiveInject(ChangeDetectorRef));
+});
+__publicField(_Spinner, "ɵcmp", ɵɵdefineComponent({
+  type: _Spinner,
+  selectors: [["p-spinner"]],
+  viewQuery: function Spinner_Query(rf, ctx) {
+    if (rf & 1) {
+      ɵɵviewQuery(_c0, 5);
+    }
+    if (rf & 2) {
+      let _t;
+      ɵɵqueryRefresh(_t = ɵɵloadQuery()) && (ctx.inputfieldViewChild = _t.first);
+    }
+  },
+  hostAttrs: [1, "p-element"],
+  hostVars: 4,
+  hostBindings: function Spinner_HostBindings(rf, ctx) {
+    if (rf & 2) {
+      ɵɵclassProp("ui-inputwrapper-filled", ctx.filled)("ui-inputwrapper-focus", ctx.focus);
+    }
+  },
+  inputs: {
+    min: [2, "min", "min", numberAttribute],
+    max: [2, "max", "max", numberAttribute],
+    maxlength: [2, "maxlength", "maxlength", numberAttribute],
+    size: [2, "size", "size", numberAttribute],
+    placeholder: "placeholder",
+    inputId: "inputId",
+    disabled: [2, "disabled", "disabled", booleanAttribute],
+    readonly: [2, "readonly", "readonly", booleanAttribute],
+    tabindex: [2, "tabindex", "tabindex", numberAttribute],
+    required: [2, "required", "required", booleanAttribute],
+    name: "name",
+    ariaLabelledBy: "ariaLabelledBy",
+    inputStyle: "inputStyle",
+    inputStyleClass: "inputStyleClass",
+    formatInput: [2, "formatInput", "formatInput", booleanAttribute],
+    decimalSeparator: "decimalSeparator",
+    thousandSeparator: "thousandSeparator",
+    precision: [2, "precision", "precision", numberAttribute],
+    step: "step"
+  },
+  outputs: {
+    onChange: "onChange",
+    onFocus: "onFocus",
+    onBlur: "onBlur"
+  },
+  features: [ɵɵProvidersFeature([SPINNER_VALUE_ACCESSOR]), ɵɵInputTransformsFeature],
+  decls: 7,
+  vars: 28,
+  consts: [["inputfield", ""], [1, "ui-spinner", "ui-widget", "ui-corner-all"], ["type", "text", 3, "keydown", "blur", "input", "change", "focus", "value", "disabled", "readonly", "ngStyle", "ngClass"], ["type", "button", "tabindex", "-1", 3, "mouseleave", "mousedown", "mouseup", "ngClass", "disabled"], [1, "ui-spinner-button-icon", "pi", "pi-caret-up", "ui-clickable"], [1, "ui-spinner-button-icon", "pi", "pi-caret-down", "ui-clickable"]],
+  template: function Spinner_Template(rf, ctx) {
+    if (rf & 1) {
+      const _r1 = ɵɵgetCurrentView();
+      ɵɵelementStart(0, "span", 1)(1, "input", 2, 0);
+      ɵɵlistener("keydown", function Spinner_Template_input_keydown_1_listener($event) {
+        ɵɵrestoreView(_r1);
+        return ɵɵresetView(ctx.onInputKeydown($event));
+      })("blur", function Spinner_Template_input_blur_1_listener($event) {
+        ɵɵrestoreView(_r1);
+        return ɵɵresetView(ctx.onInputBlur($event));
+      })("input", function Spinner_Template_input_input_1_listener($event) {
+        ɵɵrestoreView(_r1);
+        return ɵɵresetView(ctx.onInput($event));
+      })("change", function Spinner_Template_input_change_1_listener($event) {
+        ɵɵrestoreView(_r1);
+        return ɵɵresetView(ctx.onInputChange($event));
+      })("focus", function Spinner_Template_input_focus_1_listener($event) {
+        ɵɵrestoreView(_r1);
+        return ɵɵresetView(ctx.onInputFocus($event));
+      });
+      ɵɵelementEnd();
+      ɵɵelementStart(3, "button", 3);
+      ɵɵlistener("mouseleave", function Spinner_Template_button_mouseleave_3_listener($event) {
+        ɵɵrestoreView(_r1);
+        return ɵɵresetView(ctx.onUpButtonMouseleave($event));
+      })("mousedown", function Spinner_Template_button_mousedown_3_listener($event) {
+        ɵɵrestoreView(_r1);
+        return ɵɵresetView(ctx.onUpButtonMousedown($event));
+      })("mouseup", function Spinner_Template_button_mouseup_3_listener($event) {
+        ɵɵrestoreView(_r1);
+        return ɵɵresetView(ctx.onUpButtonMouseup($event));
+      });
+      ɵɵelement(4, "span", 4);
+      ɵɵelementEnd();
+      ɵɵelementStart(5, "button", 3);
+      ɵɵlistener("mouseleave", function Spinner_Template_button_mouseleave_5_listener($event) {
+        ɵɵrestoreView(_r1);
+        return ɵɵresetView(ctx.onDownButtonMouseleave($event));
+      })("mousedown", function Spinner_Template_button_mousedown_5_listener($event) {
+        ɵɵrestoreView(_r1);
+        return ɵɵresetView(ctx.onDownButtonMousedown($event));
+      })("mouseup", function Spinner_Template_button_mouseup_5_listener($event) {
+        ɵɵrestoreView(_r1);
+        return ɵɵresetView(ctx.onDownButtonMouseup($event));
+      });
+      ɵɵelement(6, "span", 5);
+      ɵɵelementEnd()();
+    }
+    if (rf & 2) {
+      ɵɵadvance();
+      ɵɵclassMap(ctx.inputStyleClass);
+      ɵɵproperty("value", ctx.formattedValue || null)("disabled", ctx.disabled)("readonly", ctx.readonly)("ngStyle", ctx.inputStyle)("ngClass", "ui-spinner-input ui-inputtext ui-widget ui-state-default ui-corner-all");
+      ɵɵattribute("id", ctx.inputId)("name", ctx.name)("aria-valumin", ctx.min)("aria-valuemax", ctx.max)("aria-valuenow", ctx.value)("aria-labelledby", ctx.ariaLabelledBy)("size", ctx.size)("maxlength", ctx.maxlength)("tabindex", ctx.tabindex)("placeholder", ctx.placeholder)("required", ctx.required);
+      ɵɵadvance(2);
+      ɵɵproperty("ngClass", ɵɵpureFunction1(24, _c1, ctx.disabled))("disabled", ctx.disabled || ctx.readonly);
+      ɵɵattribute("readonly", ctx.readonly);
+      ɵɵadvance(2);
+      ɵɵproperty("ngClass", ɵɵpureFunction1(26, _c2, ctx.disabled))("disabled", ctx.disabled || ctx.readonly);
+      ɵɵattribute("readonly", ctx.readonly);
+    }
+  },
+  dependencies: [NgClass, NgStyle],
+  styles: ["@layer primeng{.ui-spinner{display:inline-block;overflow:visible;padding:0;position:relative;vertical-align:middle}.ui-spinner-input{vertical-align:middle;padding-right:1.5em}.ui-spinner-button{cursor:default;display:block;height:50%;margin:0;overflow:hidden;padding:0;position:absolute;right:0;text-align:center;vertical-align:middle;width:1.5em}.ui-spinner .ui-spinner-button-icon{position:absolute;top:50%;left:50%;margin-top:-.5em;margin-left:-.5em;width:1em}.ui-spinner-up{top:0}.ui-spinner-down{bottom:0}.ui-fluid .ui-spinner{width:100%}.ui-fluid .ui-spinner .ui-spinner-input{padding-right:2em;width:100%}.ui-fluid .ui-spinner .ui-spinner-button{width:1.5em}.ui-fluid .ui-spinner .ui-spinner-button .ui-spinner-button-icon{left:.7em}}\n"],
+  encapsulation: 2,
+  changeDetection: 0
+}));
+var Spinner = _Spinner;
 (() => {
   (typeof ngDevMode === "undefined" || ngDevMode) && setClassMetadata(Spinner, [{
     type: Component,
     args: [{
       selector: "p-spinner",
-      template: `
-        <span class="ui-spinner ui-widget ui-corner-all">
-            <input
-                #inputfield
-                type="text"
-                [attr.id]="inputId"
-                [value]="formattedValue || null"
-                [attr.name]="name"
-                [attr.aria-valumin]="min"
-                [attr.aria-valuemax]="max"
-                [attr.aria-valuenow]="value"
-                [attr.aria-labelledby]="ariaLabelledBy"
-                [attr.size]="size"
-                [attr.maxlength]="maxlength"
-                [attr.tabindex]="tabindex"
-                [attr.placeholder]="placeholder"
-                [disabled]="disabled"
-                [readonly]="readonly"
-                [attr.required]="required"
-                (keydown)="onInputKeydown($event)"
-                (blur)="onInputBlur($event)"
-                (input)="onInput($event)"
-                (change)="onInputChange($event)"
-                (focus)="onInputFocus($event)"
-                [ngStyle]="inputStyle"
-                [class]="inputStyleClass"
-                [ngClass]="'ui-spinner-input ui-inputtext ui-widget ui-state-default ui-corner-all'"
-            />
-            <button
-                type="button"
-                [ngClass]="{ 'ui-spinner-button ui-spinner-up ui-corner-tr ui-button ui-widget ui-state-default': true, 'ui-state-disabled': disabled }"
-                [disabled]="disabled || readonly"
-                tabindex="-1"
-                [attr.readonly]="readonly"
-                (mouseleave)="onUpButtonMouseleave($event)"
-                (mousedown)="onUpButtonMousedown($event)"
-                (mouseup)="onUpButtonMouseup($event)"
-            >
-                <span class="ui-spinner-button-icon pi pi-caret-up ui-clickable"></span>
-            </button>
-            <button
-                type="button"
-                [ngClass]="{ 'ui-spinner-button ui-spinner-down ui-corner-br ui-button ui-widget ui-state-default': true, 'ui-state-disabled': disabled }"
-                [disabled]="disabled || readonly"
-                tabindex="-1"
-                [attr.readonly]="readonly"
-                (mouseleave)="onDownButtonMouseleave($event)"
-                (mousedown)="onDownButtonMousedown($event)"
-                (mouseup)="onDownButtonMouseup($event)"
-            >
-                <span class="ui-spinner-button-icon pi pi-caret-down ui-clickable"></span>
-            </button>
-        </span>
-    `,
+      template: '\n        <span class="ui-spinner ui-widget ui-corner-all">\n            <input\n                #inputfield\n                type="text"\n                [attr.id]="inputId"\n                [value]="formattedValue || null"\n                [attr.name]="name"\n                [attr.aria-valumin]="min"\n                [attr.aria-valuemax]="max"\n                [attr.aria-valuenow]="value"\n                [attr.aria-labelledby]="ariaLabelledBy"\n                [attr.size]="size"\n                [attr.maxlength]="maxlength"\n                [attr.tabindex]="tabindex"\n                [attr.placeholder]="placeholder"\n                [disabled]="disabled"\n                [readonly]="readonly"\n                [attr.required]="required"\n                (keydown)="onInputKeydown($event)"\n                (blur)="onInputBlur($event)"\n                (input)="onInput($event)"\n                (change)="onInputChange($event)"\n                (focus)="onInputFocus($event)"\n                [ngStyle]="inputStyle"\n                [class]="inputStyleClass"\n                [ngClass]="\'ui-spinner-input ui-inputtext ui-widget ui-state-default ui-corner-all\'"\n            />\n            <button\n                type="button"\n                [ngClass]="{ \'ui-spinner-button ui-spinner-up ui-corner-tr ui-button ui-widget ui-state-default\': true, \'ui-state-disabled\': disabled }"\n                [disabled]="disabled || readonly"\n                tabindex="-1"\n                [attr.readonly]="readonly"\n                (mouseleave)="onUpButtonMouseleave($event)"\n                (mousedown)="onUpButtonMousedown($event)"\n                (mouseup)="onUpButtonMouseup($event)"\n            >\n                <span class="ui-spinner-button-icon pi pi-caret-up ui-clickable"></span>\n            </button>\n            <button\n                type="button"\n                [ngClass]="{ \'ui-spinner-button ui-spinner-down ui-corner-br ui-button ui-widget ui-state-default\': true, \'ui-state-disabled\': disabled }"\n                [disabled]="disabled || readonly"\n                tabindex="-1"\n                [attr.readonly]="readonly"\n                (mouseleave)="onDownButtonMouseleave($event)"\n                (mousedown)="onDownButtonMousedown($event)"\n                (mouseup)="onDownButtonMouseup($event)"\n            >\n                <span class="ui-spinner-button-icon pi pi-caret-down ui-clickable"></span>\n            </button>\n        </span>\n    ',
       host: {
         class: "p-element",
         "[class.ui-inputwrapper-filled]": "filled",
@@ -607,20 +557,21 @@ var Spinner = class _Spinner {
     }]
   });
 })();
-var SpinnerModule = class _SpinnerModule {
-  static ɵfac = function SpinnerModule_Factory(__ngFactoryType__) {
-    return new (__ngFactoryType__ || _SpinnerModule)();
-  };
-  static ɵmod = ɵɵdefineNgModule({
-    type: _SpinnerModule,
-    declarations: [Spinner],
-    imports: [CommonModule, InputTextModule],
-    exports: [Spinner]
-  });
-  static ɵinj = ɵɵdefineInjector({
-    imports: [CommonModule, InputTextModule]
-  });
+var _SpinnerModule = class _SpinnerModule {
 };
+__publicField(_SpinnerModule, "ɵfac", function SpinnerModule_Factory(__ngFactoryType__) {
+  return new (__ngFactoryType__ || _SpinnerModule)();
+});
+__publicField(_SpinnerModule, "ɵmod", ɵɵdefineNgModule({
+  type: _SpinnerModule,
+  declarations: [Spinner],
+  imports: [CommonModule, InputTextModule],
+  exports: [Spinner]
+}));
+__publicField(_SpinnerModule, "ɵinj", ɵɵdefineInjector({
+  imports: [CommonModule, InputTextModule]
+}));
+var SpinnerModule = _SpinnerModule;
 (() => {
   (typeof ngDevMode === "undefined" || ngDevMode) && setClassMetadata(SpinnerModule, [{
     type: NgModule,

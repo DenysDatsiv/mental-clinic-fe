@@ -2,7 +2,7 @@ import {
   CommonModule,
   NgStyle,
   isPlatformBrowser
-} from "./chunk-UBZYO7FG.js";
+} from "./chunk-KUZ63KOD.js";
 import {
   ChangeDetectionStrategy,
   Component,
@@ -29,14 +29,15 @@ import {
   ɵɵlistener,
   ɵɵproperty,
   ɵɵpureFunction2
-} from "./chunk-ZI2Q76R4.js";
-import "./chunk-5OPE3T2R.js";
+} from "./chunk-R75KKECJ.js";
 import "./chunk-4N4GOYJH.js";
+import "./chunk-5OPE3T2R.js";
 import "./chunk-FHTVLBLO.js";
 import {
+  __publicField,
   __spreadProps,
   __spreadValues
-} from "./chunk-3OV72XIM.js";
+} from "./chunk-IJZFAMY6.js";
 
 // node_modules/chart.js/dist/chunks/helpers.segment.mjs
 function noop() {
@@ -775,7 +776,7 @@ function hslString(v) {
   const h = a[0];
   const s = n2p(a[1]);
   const l = n2p(a[2]);
-  return v.a < 255 ? `hsla(${h}, ${s}%, ${l}%, ${b2n(v.a)})` : `hsl(${h}, ${s}%, ${l}%)`;
+  return v.a < 255 ? "hsla(".concat(h, ", ").concat(s, "%, ").concat(l, "%, ").concat(b2n(v.a), ")") : "hsl(".concat(h, ", ").concat(s, "%, ").concat(l, "%)");
 }
 var map = {
   x: "dark",
@@ -1012,7 +1013,7 @@ function rgbParse(str) {
   };
 }
 function rgbString(v) {
-  return v && (v.a < 255 ? `rgba(${v.r}, ${v.g}, ${v.b}, ${b2n(v.a)})` : `rgb(${v.r}, ${v.g}, ${v.b})`);
+  return v && (v.a < 255 ? "rgba(".concat(v.r, ", ").concat(v.g, ", ").concat(v.b, ", ").concat(b2n(v.a), ")") : "rgb(".concat(v.r, ", ").concat(v.g, ", ").concat(v.b, ")"));
 }
 var to = (v) => v <= 31308e-7 ? v * 12.92 : Math.pow(v, 1 / 2.4) * 1.055 - 0.055;
 var from = (v) => v <= 0.04045 ? v / 12.92 : Math.pow((v + 0.055) / 1.055, 2.4);
@@ -2046,13 +2047,13 @@ function monotoneCompute(points, mK, indexAxis = "x") {
     const vPixel = pointCurrent[valueAxis];
     if (pointBefore) {
       delta = (iPixel - pointBefore[indexAxis]) / 3;
-      pointCurrent[`cp1${indexAxis}`] = iPixel - delta;
-      pointCurrent[`cp1${valueAxis}`] = vPixel - delta * mK[i];
+      pointCurrent["cp1".concat(indexAxis)] = iPixel - delta;
+      pointCurrent["cp1".concat(valueAxis)] = vPixel - delta * mK[i];
     }
     if (pointAfter) {
       delta = (pointAfter[indexAxis] - iPixel) / 3;
-      pointCurrent[`cp2${indexAxis}`] = iPixel + delta;
-      pointCurrent[`cp2${valueAxis}`] = vPixel + delta * mK[i];
+      pointCurrent["cp2".concat(indexAxis)] = iPixel + delta;
+      pointCurrent["cp2".concat(valueAxis)] = vPixel + delta * mK[i];
     }
   }
 }
@@ -2283,8 +2284,8 @@ function retinaScale(chart, forceRatio, forceStyle) {
   chart.width = deviceWidth / pixelRatio;
   const canvas = chart.canvas;
   if (canvas.style && (forceStyle || !canvas.style.height && !canvas.style.width)) {
-    canvas.style.height = `${chart.height}px`;
-    canvas.style.width = `${chart.width}px`;
+    canvas.style.height = "".concat(chart.height, "px");
+    canvas.style.width = "".concat(chart.width, "px");
   }
   if (chart.currentDevicePixelRatio !== pixelRatio || canvas.height !== deviceHeight || canvas.width !== deviceWidth) {
     chart.currentDevicePixelRatio = pixelRatio;
@@ -3232,7 +3233,7 @@ function isStacked(scale, meta) {
   return stacked || stacked === void 0 && meta.stack !== void 0;
 }
 function getStackKey(indexScale, valueScale, meta) {
-  return `${indexScale.id}.${valueScale.id}.${meta.stack || meta.type}`;
+  return "".concat(indexScale.id, ".").concat(valueScale.id, ".").concat(meta.stack || meta.type);
 }
 function getUserBounds(scale) {
   const {
@@ -3732,7 +3733,7 @@ var DatasetController = class {
     }
     const config = this.chart.config;
     const scopeKeys = config.datasetElementScopeKeys(this._type, elementType);
-    const prefixes = active ? [`${elementType}Hover`, "hover", elementType, ""] : [elementType, ""];
+    const prefixes = active ? ["".concat(elementType, "Hover"), "hover", elementType, ""] : [elementType, ""];
     const scopes = config.getOptionScopes(this.getDataset(), scopeKeys);
     const names2 = Object.keys(defaults.elements[elementType]);
     const context = () => this.getContext(index2, active);
@@ -3746,7 +3747,7 @@ var DatasetController = class {
   _resolveAnimations(index2, transition, active) {
     const chart = this.chart;
     const cache = this._cachedDataOpts;
-    const cacheKey = `animation-${transition}`;
+    const cacheKey = "animation-".concat(transition);
     const cached = cache[cacheKey];
     if (cached) {
       return cached;
@@ -8210,10 +8211,10 @@ function mergeScaleConfig(config, options) {
   Object.keys(configScales).forEach((id) => {
     const scaleConf = configScales[id];
     if (!isObject(scaleConf)) {
-      return console.error(`Invalid scale configuration for scale: ${id}`);
+      return console.error("Invalid scale configuration for scale: ".concat(id));
     }
     if (scaleConf._proxy) {
-      return console.warn(`Ignoring resolver passed as options for scale: ${id}`);
+      return console.warn("Ignoring resolver passed as options for scale: ".concat(id));
     }
     const axis = determineAxis(id, scaleConf);
     const defaultId = getDefaultScaleIDFromAxis(axis, chartIndexAxis);
@@ -8317,18 +8318,18 @@ var Config = class {
     this._resolverCache.clear();
   }
   datasetScopeKeys(datasetType) {
-    return cachedKeys(datasetType, () => [[`datasets.${datasetType}`, ""]]);
+    return cachedKeys(datasetType, () => [["datasets.".concat(datasetType), ""]]);
   }
   datasetAnimationScopeKeys(datasetType, transition) {
-    return cachedKeys(`${datasetType}.transition.${transition}`, () => [[`datasets.${datasetType}.transitions.${transition}`, `transitions.${transition}`], [`datasets.${datasetType}`, ""]]);
+    return cachedKeys("".concat(datasetType, ".transition.").concat(transition), () => [["datasets.".concat(datasetType, ".transitions.").concat(transition), "transitions.".concat(transition)], ["datasets.".concat(datasetType), ""]]);
   }
   datasetElementScopeKeys(datasetType, elementType) {
-    return cachedKeys(`${datasetType}-${elementType}`, () => [[`datasets.${datasetType}.elements.${elementType}`, `datasets.${datasetType}`, `elements.${elementType}`, ""]]);
+    return cachedKeys("".concat(datasetType, "-").concat(elementType), () => [["datasets.".concat(datasetType, ".elements.").concat(elementType), "datasets.".concat(datasetType), "elements.".concat(elementType), ""]]);
   }
   pluginScopeKeys(plugin) {
     const id = plugin.id;
     const type = this.type;
-    return cachedKeys(`${type}-plugin-${id}`, () => [[`plugins.${id}`, ...plugin.additionalOptionScopes || []]]);
+    return cachedKeys("".concat(type, "-plugin-").concat(id), () => [["plugins.".concat(id), ...plugin.additionalOptionScopes || []]]);
   }
   _cachedScopes(mainScope, resetCache) {
     const _scopeCache = this._scopeCache;
@@ -10467,7 +10468,7 @@ var plugin_decimation = {
           decimated = minMaxDecimation(data, start, count, availableWidth);
           break;
         default:
-          throw new Error(`Unsupported decimation algorithm '${options.algorithm}'`);
+          throw new Error("Unsupported decimation algorithm '".concat(options.algorithm, "'"));
       }
       dataset._decimated = decimated;
     });
@@ -13237,7 +13238,7 @@ var LinearScaleBase = class extends Scale {
     if (stepSize) {
       maxTicks = Math.ceil(this.max / stepSize) - Math.floor(this.min / stepSize) + 1;
       if (maxTicks > 1e3) {
-        console.warn(`scales.${this.id}.ticks.stepSize: ${stepSize} would result generating up to ${maxTicks} ticks. Limiting to 1000.`);
+        console.warn("scales.".concat(this.id, ".ticks.stepSize: ").concat(stepSize, " would result generating up to ").concat(maxTicks, " ticks. Limiting to 1000."));
         maxTicks = 1e3;
       }
     } else {
@@ -14511,45 +14512,60 @@ var _c1 = (a0, a1) => ({
   width: a0,
   height: a1
 });
-var UIChart = class _UIChart {
-  platformId;
-  el;
-  zone;
-  /**
-   * Type of the chart.
-   * @group Props
-   */
-  type;
-  /**
-   * Array of per-chart plugins to customize the chart behaviour.
-   * @group Props
-   */
-  plugins = [];
-  /**
-   * Width of the chart.
-   * @group Props
-   */
-  width;
-  /**
-   * Height of the chart.
-   * @group Props
-   */
-  height;
-  /**
-   * Whether the chart is redrawn on screen size change.
-   * @group Props
-   */
-  responsive = true;
-  /**
-   * Used to define a string that autocomplete attribute the current element.
-   * @group Props
-   */
-  ariaLabel;
-  /**
-   * Establishes relationships between the component and label(s) where its value should be one or more element IDs.
-   * @group Props
-   */
-  ariaLabelledBy;
+var _UIChart = class _UIChart {
+  constructor(platformId, el, zone) {
+    __publicField(this, "platformId");
+    __publicField(this, "el");
+    __publicField(this, "zone");
+    /**
+     * Type of the chart.
+     * @group Props
+     */
+    __publicField(this, "type");
+    /**
+     * Array of per-chart plugins to customize the chart behaviour.
+     * @group Props
+     */
+    __publicField(this, "plugins", []);
+    /**
+     * Width of the chart.
+     * @group Props
+     */
+    __publicField(this, "width");
+    /**
+     * Height of the chart.
+     * @group Props
+     */
+    __publicField(this, "height");
+    /**
+     * Whether the chart is redrawn on screen size change.
+     * @group Props
+     */
+    __publicField(this, "responsive", true);
+    /**
+     * Used to define a string that autocomplete attribute the current element.
+     * @group Props
+     */
+    __publicField(this, "ariaLabel");
+    /**
+     * Establishes relationships between the component and label(s) where its value should be one or more element IDs.
+     * @group Props
+     */
+    __publicField(this, "ariaLabelledBy");
+    /**
+     * Callback to execute when an element on chart is clicked.
+     * @group Emits
+     */
+    __publicField(this, "onDataSelect", new EventEmitter());
+    __publicField(this, "isBrowser", false);
+    __publicField(this, "initialized");
+    __publicField(this, "_data");
+    __publicField(this, "_options", {});
+    __publicField(this, "chart");
+    this.platformId = platformId;
+    this.el = el;
+    this.zone = zone;
+  }
   /**
    * Data to display.
    * @group Props
@@ -14571,21 +14587,6 @@ var UIChart = class _UIChart {
   set options(val) {
     this._options = val;
     this.reinit();
-  }
-  /**
-   * Callback to execute when an element on chart is clicked.
-   * @group Emits
-   */
-  onDataSelect = new EventEmitter();
-  isBrowser = false;
-  initialized;
-  _data;
-  _options = {};
-  chart;
-  constructor(platformId, el, zone) {
-    this.platformId = platformId;
-    this.el = el;
-    this.zone = zone;
   }
   ngAfterViewInit() {
     this.initChart();
@@ -14654,76 +14655,58 @@ var UIChart = class _UIChart {
       this.chart = null;
     }
   }
-  static ɵfac = function UIChart_Factory(__ngFactoryType__) {
-    return new (__ngFactoryType__ || _UIChart)(ɵɵdirectiveInject(PLATFORM_ID), ɵɵdirectiveInject(ElementRef), ɵɵdirectiveInject(NgZone));
-  };
-  static ɵcmp = ɵɵdefineComponent({
-    type: _UIChart,
-    selectors: [["p-chart"]],
-    hostAttrs: [1, "p-element"],
-    inputs: {
-      type: "type",
-      plugins: "plugins",
-      width: "width",
-      height: "height",
-      responsive: [2, "responsive", "responsive", booleanAttribute],
-      ariaLabel: "ariaLabel",
-      ariaLabelledBy: "ariaLabelledBy",
-      data: "data",
-      options: "options"
-    },
-    outputs: {
-      onDataSelect: "onDataSelect"
-    },
-    features: [ɵɵInputTransformsFeature],
-    decls: 2,
-    vars: 10,
-    consts: [[3, "ngStyle"], ["role", "img", 3, "click", "ngStyle"]],
-    template: function UIChart_Template(rf, ctx) {
-      if (rf & 1) {
-        ɵɵelementStart(0, "div", 0)(1, "canvas", 1);
-        ɵɵlistener("click", function UIChart_Template_canvas_click_1_listener($event) {
-          return ctx.onCanvasClick($event);
-        });
-        ɵɵelementEnd()();
-      }
-      if (rf & 2) {
-        ɵɵproperty("ngStyle", ɵɵpureFunction2(4, _c0, ctx.responsive && !ctx.width ? null : ctx.width, ctx.responsive && !ctx.height ? null : ctx.height));
-        ɵɵadvance();
-        ɵɵproperty("ngStyle", ɵɵpureFunction2(7, _c1, ctx.responsive && !ctx.width ? null : ctx.width, ctx.responsive && !ctx.height ? null : ctx.height));
-        ɵɵattribute("aria-label", ctx.ariaLabel)("aria-labelledby", ctx.ariaLabelledBy);
-      }
-    },
-    dependencies: [NgStyle],
-    encapsulation: 2,
-    changeDetection: 0
-  });
 };
+__publicField(_UIChart, "ɵfac", function UIChart_Factory(__ngFactoryType__) {
+  return new (__ngFactoryType__ || _UIChart)(ɵɵdirectiveInject(PLATFORM_ID), ɵɵdirectiveInject(ElementRef), ɵɵdirectiveInject(NgZone));
+});
+__publicField(_UIChart, "ɵcmp", ɵɵdefineComponent({
+  type: _UIChart,
+  selectors: [["p-chart"]],
+  hostAttrs: [1, "p-element"],
+  inputs: {
+    type: "type",
+    plugins: "plugins",
+    width: "width",
+    height: "height",
+    responsive: [2, "responsive", "responsive", booleanAttribute],
+    ariaLabel: "ariaLabel",
+    ariaLabelledBy: "ariaLabelledBy",
+    data: "data",
+    options: "options"
+  },
+  outputs: {
+    onDataSelect: "onDataSelect"
+  },
+  features: [ɵɵInputTransformsFeature],
+  decls: 2,
+  vars: 10,
+  consts: [[3, "ngStyle"], ["role", "img", 3, "click", "ngStyle"]],
+  template: function UIChart_Template(rf, ctx) {
+    if (rf & 1) {
+      ɵɵelementStart(0, "div", 0)(1, "canvas", 1);
+      ɵɵlistener("click", function UIChart_Template_canvas_click_1_listener($event) {
+        return ctx.onCanvasClick($event);
+      });
+      ɵɵelementEnd()();
+    }
+    if (rf & 2) {
+      ɵɵproperty("ngStyle", ɵɵpureFunction2(4, _c0, ctx.responsive && !ctx.width ? null : ctx.width, ctx.responsive && !ctx.height ? null : ctx.height));
+      ɵɵadvance();
+      ɵɵproperty("ngStyle", ɵɵpureFunction2(7, _c1, ctx.responsive && !ctx.width ? null : ctx.width, ctx.responsive && !ctx.height ? null : ctx.height));
+      ɵɵattribute("aria-label", ctx.ariaLabel)("aria-labelledby", ctx.ariaLabelledBy);
+    }
+  },
+  dependencies: [NgStyle],
+  encapsulation: 2,
+  changeDetection: 0
+}));
+var UIChart = _UIChart;
 (() => {
   (typeof ngDevMode === "undefined" || ngDevMode) && setClassMetadata(UIChart, [{
     type: Component,
     args: [{
       selector: "p-chart",
-      template: `
-        <div
-            [ngStyle]="{
-                position: 'relative',
-                width: responsive && !width ? null : width,
-                height: responsive && !height ? null : height
-            }"
-        >
-            <canvas
-                role="img"
-                [attr.aria-label]="ariaLabel"
-                [attr.aria-labelledby]="ariaLabelledBy"
-                [ngStyle]="{
-                    width: responsive && !width ? null : width,
-                    height: responsive && !height ? null : height
-                }"
-                (click)="onCanvasClick($event)"
-            ></canvas>
-        </div>
-    `,
+      template: '\n        <div\n            [ngStyle]="{\n                position: \'relative\',\n                width: responsive && !width ? null : width,\n                height: responsive && !height ? null : height\n            }"\n        >\n            <canvas\n                role="img"\n                [attr.aria-label]="ariaLabel"\n                [attr.aria-labelledby]="ariaLabelledBy"\n                [ngStyle]="{\n                    width: responsive && !width ? null : width,\n                    height: responsive && !height ? null : height\n                }"\n                (click)="onCanvasClick($event)"\n            ></canvas>\n        </div>\n    ',
       changeDetection: ChangeDetectionStrategy.OnPush,
       encapsulation: ViewEncapsulation$1.None,
       host: {
@@ -14776,20 +14759,21 @@ var UIChart = class _UIChart {
     }]
   });
 })();
-var ChartModule = class _ChartModule {
-  static ɵfac = function ChartModule_Factory(__ngFactoryType__) {
-    return new (__ngFactoryType__ || _ChartModule)();
-  };
-  static ɵmod = ɵɵdefineNgModule({
-    type: _ChartModule,
-    declarations: [UIChart],
-    imports: [CommonModule],
-    exports: [UIChart]
-  });
-  static ɵinj = ɵɵdefineInjector({
-    imports: [CommonModule]
-  });
+var _ChartModule = class _ChartModule {
 };
+__publicField(_ChartModule, "ɵfac", function ChartModule_Factory(__ngFactoryType__) {
+  return new (__ngFactoryType__ || _ChartModule)();
+});
+__publicField(_ChartModule, "ɵmod", ɵɵdefineNgModule({
+  type: _ChartModule,
+  declarations: [UIChart],
+  imports: [CommonModule],
+  exports: [UIChart]
+}));
+__publicField(_ChartModule, "ɵinj", ɵɵdefineInjector({
+  imports: [CommonModule]
+}));
+var ChartModule = _ChartModule;
 (() => {
   (typeof ngDevMode === "undefined" || ngDevMode) && setClassMetadata(ChartModule, [{
     type: NgModule,

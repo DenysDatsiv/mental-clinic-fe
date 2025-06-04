@@ -1,22 +1,22 @@
 import {
   AutoFocus,
   AutoFocusModule
-} from "./chunk-32JR77BM.js";
+} from "./chunk-LND2F6FW.js";
 import {
   NG_VALUE_ACCESSOR,
   NgControl
-} from "./chunk-B7GQUK3J.js";
+} from "./chunk-ZOG4HQFG.js";
 import {
   PrimeNGConfig
-} from "./chunk-TQSVMJ6K.js";
-import "./chunk-3OF44R55.js";
-import "./chunk-BUGEQH7Q.js";
+} from "./chunk-ZROJCIWL.js";
+import "./chunk-U3NLM53U.js";
+import "./chunk-LB42WWNC.js";
 import {
   CommonModule,
   NgClass,
   NgIf,
   NgStyle
-} from "./chunk-UBZYO7FG.js";
+} from "./chunk-KUZ63KOD.js";
 import {
   ChangeDetectionStrategy,
   ChangeDetectorRef,
@@ -60,11 +60,13 @@ import {
   ɵɵtext,
   ɵɵtextInterpolate,
   ɵɵviewQuery
-} from "./chunk-ZI2Q76R4.js";
-import "./chunk-5OPE3T2R.js";
+} from "./chunk-R75KKECJ.js";
 import "./chunk-4N4GOYJH.js";
+import "./chunk-5OPE3T2R.js";
 import "./chunk-FHTVLBLO.js";
-import "./chunk-3OV72XIM.js";
+import {
+  __publicField
+} from "./chunk-IJZFAMY6.js";
 
 // node_modules/primeng/fesm2022/primeng-radiobutton.mjs
 var _c0 = ["input"];
@@ -114,8 +116,10 @@ var RADIO_VALUE_ACCESSOR = {
   useExisting: forwardRef(() => RadioButton),
   multi: true
 };
-var RadioControlRegistry = class _RadioControlRegistry {
-  accessors = [];
+var _RadioControlRegistry = class _RadioControlRegistry {
+  constructor() {
+    __publicField(this, "accessors", []);
+  }
   add(control, accessor) {
     this.accessors.push([control, accessor]);
   }
@@ -137,15 +141,16 @@ var RadioControlRegistry = class _RadioControlRegistry {
     }
     return controlPair[0].control.root === accessor.control.control.root && controlPair[1].name === accessor.name;
   }
-  static ɵfac = function RadioControlRegistry_Factory(__ngFactoryType__) {
-    return new (__ngFactoryType__ || _RadioControlRegistry)();
-  };
-  static ɵprov = ɵɵdefineInjectable({
-    token: _RadioControlRegistry,
-    factory: _RadioControlRegistry.ɵfac,
-    providedIn: "root"
-  });
 };
+__publicField(_RadioControlRegistry, "ɵfac", function RadioControlRegistry_Factory(__ngFactoryType__) {
+  return new (__ngFactoryType__ || _RadioControlRegistry)();
+});
+__publicField(_RadioControlRegistry, "ɵprov", ɵɵdefineInjectable({
+  token: _RadioControlRegistry,
+  factory: _RadioControlRegistry.ɵfac,
+  providedIn: "root"
+}));
+var RadioControlRegistry = _RadioControlRegistry;
 (() => {
   (typeof ngDevMode === "undefined" || ngDevMode) && setClassMetadata(RadioControlRegistry, [{
     type: Injectable,
@@ -154,108 +159,108 @@ var RadioControlRegistry = class _RadioControlRegistry {
     }]
   }], null, null);
 })();
-var RadioButton = class _RadioButton {
-  cd;
-  injector;
-  registry;
-  config;
-  /**
-   * Value of the radiobutton.
-   * @group Props
-   */
-  value;
-  /**
-   * The name of the form control.
-   * @group Props
-   */
-  formControlName;
-  /**
-   * Name of the radiobutton group.
-   * @group Props
-   */
-  name;
-  /**
-   * When present, it specifies that the element should be disabled.
-   * @group Props
-   */
-  disabled;
-  /**
-   * Label of the radiobutton.
-   * @group Props
-   */
-  label;
-  /**
-   * Specifies the input variant of the component.
-   * @group Props
-   */
-  variant = "outlined";
-  /**
-   * Index of the element in tabbing order.
-   * @group Props
-   */
-  tabindex;
-  /**
-   * Identifier of the focus input to match a label defined for the component.
-   * @group Props
-   */
-  inputId;
-  /**
-   * Establishes relationships between the component and label(s) where its value should be one or more element IDs.
-   * @group Props
-   */
-  ariaLabelledBy;
-  /**
-   * Used to define a string that labels the input element.
-   * @group Props
-   */
-  ariaLabel;
-  /**
-   * Inline style of the component.
-   * @group Props
-   */
-  style;
-  /**
-   * Style class of the component.
-   * @group Props
-   */
-  styleClass;
-  /**
-   * Style class of the label.
-   * @group Props
-   */
-  labelStyleClass;
-  /**
-   * When present, it specifies that the component should automatically get focus on load.
-   * @group Props
-   */
-  autofocus;
-  /**
-   * Callback to invoke on radio button click.
-   * @param {RadioButtonClickEvent} event - Custom click event.
-   * @group Emits
-   */
-  onClick = new EventEmitter();
-  /**
-   * Callback to invoke when the receives focus.
-   * @param {Event} event - Browser event.
-   * @group Emits
-   */
-  onFocus = new EventEmitter();
-  /**
-   * Callback to invoke when the loses focus.
-   * @param {Event} event - Browser event.
-   * @group Emits
-   */
-  onBlur = new EventEmitter();
-  inputViewChild;
-  onModelChange = () => {
-  };
-  onModelTouched = () => {
-  };
-  checked;
-  focused;
-  control;
+var _RadioButton = class _RadioButton {
   constructor(cd, injector, registry, config) {
+    __publicField(this, "cd");
+    __publicField(this, "injector");
+    __publicField(this, "registry");
+    __publicField(this, "config");
+    /**
+     * Value of the radiobutton.
+     * @group Props
+     */
+    __publicField(this, "value");
+    /**
+     * The name of the form control.
+     * @group Props
+     */
+    __publicField(this, "formControlName");
+    /**
+     * Name of the radiobutton group.
+     * @group Props
+     */
+    __publicField(this, "name");
+    /**
+     * When present, it specifies that the element should be disabled.
+     * @group Props
+     */
+    __publicField(this, "disabled");
+    /**
+     * Label of the radiobutton.
+     * @group Props
+     */
+    __publicField(this, "label");
+    /**
+     * Specifies the input variant of the component.
+     * @group Props
+     */
+    __publicField(this, "variant", "outlined");
+    /**
+     * Index of the element in tabbing order.
+     * @group Props
+     */
+    __publicField(this, "tabindex");
+    /**
+     * Identifier of the focus input to match a label defined for the component.
+     * @group Props
+     */
+    __publicField(this, "inputId");
+    /**
+     * Establishes relationships between the component and label(s) where its value should be one or more element IDs.
+     * @group Props
+     */
+    __publicField(this, "ariaLabelledBy");
+    /**
+     * Used to define a string that labels the input element.
+     * @group Props
+     */
+    __publicField(this, "ariaLabel");
+    /**
+     * Inline style of the component.
+     * @group Props
+     */
+    __publicField(this, "style");
+    /**
+     * Style class of the component.
+     * @group Props
+     */
+    __publicField(this, "styleClass");
+    /**
+     * Style class of the label.
+     * @group Props
+     */
+    __publicField(this, "labelStyleClass");
+    /**
+     * When present, it specifies that the component should automatically get focus on load.
+     * @group Props
+     */
+    __publicField(this, "autofocus");
+    /**
+     * Callback to invoke on radio button click.
+     * @param {RadioButtonClickEvent} event - Custom click event.
+     * @group Emits
+     */
+    __publicField(this, "onClick", new EventEmitter());
+    /**
+     * Callback to invoke when the receives focus.
+     * @param {Event} event - Browser event.
+     * @group Emits
+     */
+    __publicField(this, "onFocus", new EventEmitter());
+    /**
+     * Callback to invoke when the loses focus.
+     * @param {Event} event - Browser event.
+     * @group Emits
+     */
+    __publicField(this, "onBlur", new EventEmitter());
+    __publicField(this, "inputViewChild");
+    __publicField(this, "onModelChange", () => {
+    });
+    __publicField(this, "onModelTouched", () => {
+    });
+    __publicField(this, "checked");
+    __publicField(this, "focused");
+    __publicField(this, "control");
     this.cd = cd;
     this.injector = injector;
     this.registry = registry;
@@ -332,151 +337,102 @@ var RadioButton = class _RadioButton {
     }
   }
   throwNameError() {
-    throw new Error(`
-          If you define both a name and a formControlName attribute on your radio button, their values
-          must match. Ex: <p-radioButton formControlName="food" name="food"></p-radioButton>
-        `);
+    throw new Error('\n          If you define both a name and a formControlName attribute on your radio button, their values\n          must match. Ex: <p-radioButton formControlName="food" name="food"></p-radioButton>\n        ');
   }
-  static ɵfac = function RadioButton_Factory(__ngFactoryType__) {
-    return new (__ngFactoryType__ || _RadioButton)(ɵɵdirectiveInject(ChangeDetectorRef), ɵɵdirectiveInject(Injector), ɵɵdirectiveInject(RadioControlRegistry), ɵɵdirectiveInject(PrimeNGConfig));
-  };
-  static ɵcmp = ɵɵdefineComponent({
-    type: _RadioButton,
-    selectors: [["p-radioButton"]],
-    viewQuery: function RadioButton_Query(rf, ctx) {
-      if (rf & 1) {
-        ɵɵviewQuery(_c0, 5);
-      }
-      if (rf & 2) {
-        let _t;
-        ɵɵqueryRefresh(_t = ɵɵloadQuery()) && (ctx.inputViewChild = _t.first);
-      }
-    },
-    hostAttrs: [1, "p-element"],
-    inputs: {
-      value: "value",
-      formControlName: "formControlName",
-      name: "name",
-      disabled: [2, "disabled", "disabled", booleanAttribute],
-      label: "label",
-      variant: "variant",
-      tabindex: [2, "tabindex", "tabindex", numberAttribute],
-      inputId: "inputId",
-      ariaLabelledBy: "ariaLabelledBy",
-      ariaLabel: "ariaLabel",
-      style: "style",
-      styleClass: "styleClass",
-      labelStyleClass: "labelStyleClass",
-      autofocus: [2, "autofocus", "autofocus", booleanAttribute]
-    },
-    outputs: {
-      onClick: "onClick",
-      onFocus: "onFocus",
-      onBlur: "onBlur"
-    },
-    features: [ɵɵProvidersFeature([RADIO_VALUE_ACCESSOR]), ɵɵInputTransformsFeature],
-    decls: 7,
-    vars: 30,
-    consts: [["input", ""], [3, "click", "ngStyle", "ngClass"], [1, "p-hidden-accessible"], ["type", "radio", "pAutoFocus", "", 3, "focus", "blur", "checked", "disabled", "value", "autofocus"], [3, "ngClass"], [1, "p-radiobutton-icon"], [3, "class", "ngClass", "click", 4, "ngIf"], [3, "click", "ngClass"]],
-    template: function RadioButton_Template(rf, ctx) {
-      if (rf & 1) {
-        const _r1 = ɵɵgetCurrentView();
-        ɵɵelementStart(0, "div", 1);
-        ɵɵlistener("click", function RadioButton_Template_div_click_0_listener($event) {
-          ɵɵrestoreView(_r1);
-          const input_r2 = ɵɵreference(3);
-          return ɵɵresetView(ctx.handleClick($event, input_r2, true));
-        });
-        ɵɵelementStart(1, "div", 2)(2, "input", 3, 0);
-        ɵɵlistener("focus", function RadioButton_Template_input_focus_2_listener($event) {
-          ɵɵrestoreView(_r1);
-          return ɵɵresetView(ctx.onInputFocus($event));
-        })("blur", function RadioButton_Template_input_blur_2_listener($event) {
-          ɵɵrestoreView(_r1);
-          return ɵɵresetView(ctx.onInputBlur($event));
-        });
-        ɵɵelementEnd()();
-        ɵɵelementStart(4, "div", 4);
-        ɵɵelement(5, "span", 5);
-        ɵɵelementEnd()();
-        ɵɵtemplate(6, RadioButton_label_6_Template, 2, 10, "label", 6);
-      }
-      if (rf & 2) {
-        ɵɵclassMap(ctx.styleClass);
-        ɵɵproperty("ngStyle", ctx.style)("ngClass", ɵɵpureFunction4(21, _c1, ctx.checked, ctx.disabled, ctx.focused, ctx.variant === "filled" || ctx.config.inputStyle() === "filled"));
-        ɵɵattribute("data-pc-name", "radiobutton")("data-pc-section", "root");
-        ɵɵadvance();
-        ɵɵattribute("data-pc-section", "hiddenInputWrapper");
-        ɵɵadvance();
-        ɵɵproperty("checked", ctx.checked)("disabled", ctx.disabled)("value", ctx.value)("autofocus", ctx.autofocus);
-        ɵɵattribute("id", ctx.inputId)("name", ctx.name)("aria-labelledby", ctx.ariaLabelledBy)("aria-label", ctx.ariaLabel)("tabindex", ctx.tabindex)("data-pc-section", "hiddenInput");
-        ɵɵadvance(2);
-        ɵɵproperty("ngClass", ɵɵpureFunction3(26, _c2, ctx.checked, ctx.disabled, ctx.focused));
-        ɵɵattribute("data-pc-section", "input");
-        ɵɵadvance();
-        ɵɵattribute("data-pc-section", "icon");
-        ɵɵadvance();
-        ɵɵproperty("ngIf", ctx.label);
-      }
-    },
-    dependencies: [NgClass, NgIf, NgStyle, AutoFocus],
-    encapsulation: 2,
-    changeDetection: 0
-  });
 };
+__publicField(_RadioButton, "ɵfac", function RadioButton_Factory(__ngFactoryType__) {
+  return new (__ngFactoryType__ || _RadioButton)(ɵɵdirectiveInject(ChangeDetectorRef), ɵɵdirectiveInject(Injector), ɵɵdirectiveInject(RadioControlRegistry), ɵɵdirectiveInject(PrimeNGConfig));
+});
+__publicField(_RadioButton, "ɵcmp", ɵɵdefineComponent({
+  type: _RadioButton,
+  selectors: [["p-radioButton"]],
+  viewQuery: function RadioButton_Query(rf, ctx) {
+    if (rf & 1) {
+      ɵɵviewQuery(_c0, 5);
+    }
+    if (rf & 2) {
+      let _t;
+      ɵɵqueryRefresh(_t = ɵɵloadQuery()) && (ctx.inputViewChild = _t.first);
+    }
+  },
+  hostAttrs: [1, "p-element"],
+  inputs: {
+    value: "value",
+    formControlName: "formControlName",
+    name: "name",
+    disabled: [2, "disabled", "disabled", booleanAttribute],
+    label: "label",
+    variant: "variant",
+    tabindex: [2, "tabindex", "tabindex", numberAttribute],
+    inputId: "inputId",
+    ariaLabelledBy: "ariaLabelledBy",
+    ariaLabel: "ariaLabel",
+    style: "style",
+    styleClass: "styleClass",
+    labelStyleClass: "labelStyleClass",
+    autofocus: [2, "autofocus", "autofocus", booleanAttribute]
+  },
+  outputs: {
+    onClick: "onClick",
+    onFocus: "onFocus",
+    onBlur: "onBlur"
+  },
+  features: [ɵɵProvidersFeature([RADIO_VALUE_ACCESSOR]), ɵɵInputTransformsFeature],
+  decls: 7,
+  vars: 30,
+  consts: [["input", ""], [3, "click", "ngStyle", "ngClass"], [1, "p-hidden-accessible"], ["type", "radio", "pAutoFocus", "", 3, "focus", "blur", "checked", "disabled", "value", "autofocus"], [3, "ngClass"], [1, "p-radiobutton-icon"], [3, "class", "ngClass", "click", 4, "ngIf"], [3, "click", "ngClass"]],
+  template: function RadioButton_Template(rf, ctx) {
+    if (rf & 1) {
+      const _r1 = ɵɵgetCurrentView();
+      ɵɵelementStart(0, "div", 1);
+      ɵɵlistener("click", function RadioButton_Template_div_click_0_listener($event) {
+        ɵɵrestoreView(_r1);
+        const input_r2 = ɵɵreference(3);
+        return ɵɵresetView(ctx.handleClick($event, input_r2, true));
+      });
+      ɵɵelementStart(1, "div", 2)(2, "input", 3, 0);
+      ɵɵlistener("focus", function RadioButton_Template_input_focus_2_listener($event) {
+        ɵɵrestoreView(_r1);
+        return ɵɵresetView(ctx.onInputFocus($event));
+      })("blur", function RadioButton_Template_input_blur_2_listener($event) {
+        ɵɵrestoreView(_r1);
+        return ɵɵresetView(ctx.onInputBlur($event));
+      });
+      ɵɵelementEnd()();
+      ɵɵelementStart(4, "div", 4);
+      ɵɵelement(5, "span", 5);
+      ɵɵelementEnd()();
+      ɵɵtemplate(6, RadioButton_label_6_Template, 2, 10, "label", 6);
+    }
+    if (rf & 2) {
+      ɵɵclassMap(ctx.styleClass);
+      ɵɵproperty("ngStyle", ctx.style)("ngClass", ɵɵpureFunction4(21, _c1, ctx.checked, ctx.disabled, ctx.focused, ctx.variant === "filled" || ctx.config.inputStyle() === "filled"));
+      ɵɵattribute("data-pc-name", "radiobutton")("data-pc-section", "root");
+      ɵɵadvance();
+      ɵɵattribute("data-pc-section", "hiddenInputWrapper");
+      ɵɵadvance();
+      ɵɵproperty("checked", ctx.checked)("disabled", ctx.disabled)("value", ctx.value)("autofocus", ctx.autofocus);
+      ɵɵattribute("id", ctx.inputId)("name", ctx.name)("aria-labelledby", ctx.ariaLabelledBy)("aria-label", ctx.ariaLabel)("tabindex", ctx.tabindex)("data-pc-section", "hiddenInput");
+      ɵɵadvance(2);
+      ɵɵproperty("ngClass", ɵɵpureFunction3(26, _c2, ctx.checked, ctx.disabled, ctx.focused));
+      ɵɵattribute("data-pc-section", "input");
+      ɵɵadvance();
+      ɵɵattribute("data-pc-section", "icon");
+      ɵɵadvance();
+      ɵɵproperty("ngIf", ctx.label);
+    }
+  },
+  dependencies: [NgClass, NgIf, NgStyle, AutoFocus],
+  encapsulation: 2,
+  changeDetection: 0
+}));
+var RadioButton = _RadioButton;
 (() => {
   (typeof ngDevMode === "undefined" || ngDevMode) && setClassMetadata(RadioButton, [{
     type: Component,
     args: [{
       selector: "p-radioButton",
-      template: `
-        <div
-            [ngStyle]="style"
-            [ngClass]="{
-                'p-radiobutton p-component': true,
-                'p-radiobutton-checked': checked,
-                'p-radiobutton-disabled': disabled,
-                'p-radiobutton-focused': focused,
-                'p-variant-filled': variant === 'filled' || config.inputStyle() === 'filled'
-            }"
-            [class]="styleClass"
-            [attr.data-pc-name]="'radiobutton'"
-            [attr.data-pc-section]="'root'"
-            (click)="handleClick($event, input, true)"
-        >
-            <div class="p-hidden-accessible" [attr.data-pc-section]="'hiddenInputWrapper'">
-                <input
-                    #input
-                    [attr.id]="inputId"
-                    type="radio"
-                    [attr.name]="name"
-                    [checked]="checked"
-                    [disabled]="disabled"
-                    [value]="value"
-                    [attr.aria-labelledby]="ariaLabelledBy"
-                    [attr.aria-label]="ariaLabel"
-                    [attr.tabindex]="tabindex"
-                    (focus)="onInputFocus($event)"
-                    (blur)="onInputBlur($event)"
-                    [attr.data-pc-section]="'hiddenInput'"
-                    pAutoFocus
-                    [autofocus]="autofocus"
-                />
-            </div>
-            <div [ngClass]="{ 'p-radiobutton-box': true, 'p-highlight': checked, 'p-disabled': disabled, 'p-focus': focused }" [attr.data-pc-section]="'input'">
-                <span class="p-radiobutton-icon" [attr.data-pc-section]="'icon'"></span>
-            </div>
-        </div>
-        <label
-            (click)="select($event)"
-            [class]="labelStyleClass"
-            [ngClass]="{ 'p-radiobutton-label': true, 'p-radiobutton-label-active': input.checked, 'p-disabled': disabled, 'p-radiobutton-label-focus': focused }"
-            *ngIf="label"
-            [attr.for]="inputId"
-            [attr.data-pc-section]="'label'"
-            >{{ label }}</label
-        >
-    `,
+      template: '\n        <div\n            [ngStyle]="style"\n            [ngClass]="{\n                \'p-radiobutton p-component\': true,\n                \'p-radiobutton-checked\': checked,\n                \'p-radiobutton-disabled\': disabled,\n                \'p-radiobutton-focused\': focused,\n                \'p-variant-filled\': variant === \'filled\' || config.inputStyle() === \'filled\'\n            }"\n            [class]="styleClass"\n            [attr.data-pc-name]="\'radiobutton\'"\n            [attr.data-pc-section]="\'root\'"\n            (click)="handleClick($event, input, true)"\n        >\n            <div class="p-hidden-accessible" [attr.data-pc-section]="\'hiddenInputWrapper\'">\n                <input\n                    #input\n                    [attr.id]="inputId"\n                    type="radio"\n                    [attr.name]="name"\n                    [checked]="checked"\n                    [disabled]="disabled"\n                    [value]="value"\n                    [attr.aria-labelledby]="ariaLabelledBy"\n                    [attr.aria-label]="ariaLabel"\n                    [attr.tabindex]="tabindex"\n                    (focus)="onInputFocus($event)"\n                    (blur)="onInputBlur($event)"\n                    [attr.data-pc-section]="\'hiddenInput\'"\n                    pAutoFocus\n                    [autofocus]="autofocus"\n                />\n            </div>\n            <div [ngClass]="{ \'p-radiobutton-box\': true, \'p-highlight\': checked, \'p-disabled\': disabled, \'p-focus\': focused }" [attr.data-pc-section]="\'input\'">\n                <span class="p-radiobutton-icon" [attr.data-pc-section]="\'icon\'"></span>\n            </div>\n        </div>\n        <label\n            (click)="select($event)"\n            [class]="labelStyleClass"\n            [ngClass]="{ \'p-radiobutton-label\': true, \'p-radiobutton-label-active\': input.checked, \'p-disabled\': disabled, \'p-radiobutton-label-focus\': focused }"\n            *ngIf="label"\n            [attr.for]="inputId"\n            [attr.data-pc-section]="\'label\'"\n            >{{ label }}</label\n        >\n    ',
       providers: [RADIO_VALUE_ACCESSOR],
       changeDetection: ChangeDetectionStrategy.OnPush,
       host: {
@@ -558,20 +514,21 @@ var RadioButton = class _RadioButton {
     }]
   });
 })();
-var RadioButtonModule = class _RadioButtonModule {
-  static ɵfac = function RadioButtonModule_Factory(__ngFactoryType__) {
-    return new (__ngFactoryType__ || _RadioButtonModule)();
-  };
-  static ɵmod = ɵɵdefineNgModule({
-    type: _RadioButtonModule,
-    declarations: [RadioButton],
-    imports: [CommonModule, AutoFocusModule],
-    exports: [RadioButton]
-  });
-  static ɵinj = ɵɵdefineInjector({
-    imports: [CommonModule, AutoFocusModule]
-  });
+var _RadioButtonModule = class _RadioButtonModule {
 };
+__publicField(_RadioButtonModule, "ɵfac", function RadioButtonModule_Factory(__ngFactoryType__) {
+  return new (__ngFactoryType__ || _RadioButtonModule)();
+});
+__publicField(_RadioButtonModule, "ɵmod", ɵɵdefineNgModule({
+  type: _RadioButtonModule,
+  declarations: [RadioButton],
+  imports: [CommonModule, AutoFocusModule],
+  exports: [RadioButton]
+}));
+__publicField(_RadioButtonModule, "ɵinj", ɵɵdefineInjector({
+  imports: [CommonModule, AutoFocusModule]
+}));
+var RadioButtonModule = _RadioButtonModule;
 (() => {
   (typeof ngDevMode === "undefined" || ngDevMode) && setClassMetadata(RadioButtonModule, [{
     type: NgModule,

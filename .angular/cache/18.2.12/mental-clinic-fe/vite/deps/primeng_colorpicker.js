@@ -1,28 +1,28 @@
 import {
   AutoFocus,
   AutoFocusModule
-} from "./chunk-32JR77BM.js";
+} from "./chunk-LND2F6FW.js";
 import {
   NG_VALUE_ACCESSOR
-} from "./chunk-B7GQUK3J.js";
+} from "./chunk-ZOG4HQFG.js";
 import {
   OverlayService,
   PrimeNGConfig,
   TranslationKeys
-} from "./chunk-TQSVMJ6K.js";
+} from "./chunk-ZROJCIWL.js";
 import {
   zindexutils
-} from "./chunk-3OF44R55.js";
+} from "./chunk-U3NLM53U.js";
 import {
   animate,
   style,
   transition,
   trigger
-} from "./chunk-OGB62SLM.js";
+} from "./chunk-5S7AEMUZ.js";
 import {
   ConnectedOverlayScrollHandler,
   DomHandler
-} from "./chunk-BUGEQH7Q.js";
+} from "./chunk-LB42WWNC.js";
 import {
   CommonModule,
   DOCUMENT,
@@ -30,7 +30,7 @@ import {
   NgIf,
   NgStyle,
   isPlatformBrowser
-} from "./chunk-UBZYO7FG.js";
+} from "./chunk-KUZ63KOD.js";
 import {
   ChangeDetectionStrategy,
   ChangeDetectorRef,
@@ -74,11 +74,13 @@ import {
   ɵɵstyleProp,
   ɵɵtemplate,
   ɵɵviewQuery
-} from "./chunk-ZI2Q76R4.js";
-import "./chunk-5OPE3T2R.js";
+} from "./chunk-R75KKECJ.js";
 import "./chunk-4N4GOYJH.js";
+import "./chunk-5OPE3T2R.js";
 import "./chunk-FHTVLBLO.js";
-import "./chunk-3OV72XIM.js";
+import {
+  __publicField
+} from "./chunk-IJZFAMY6.js";
 
 // node_modules/primeng/fesm2022/primeng-colorpicker.mjs
 var _c0 = ["container"];
@@ -216,126 +218,126 @@ var COLORPICKER_VALUE_ACCESSOR = {
   useExisting: forwardRef(() => ColorPicker),
   multi: true
 };
-var ColorPicker = class _ColorPicker {
-  document;
-  platformId;
-  el;
-  renderer;
-  cd;
-  config;
-  overlayService;
-  /**
-   * Inline style of the component.
-   * @group Props
-   */
-  style;
-  /**
-   * Style class of the component.
-   * @group Props
-   */
-  styleClass;
-  /**
-   * Whether to display as an overlay or not.
-   * @group Props
-   */
-  inline;
-  /**
-   * Format to use in value binding.
-   * @group Props
-   */
-  format = "hex";
-  /**
-   * Target element to attach the overlay, valid values are "body" or a local ng-template variable of another element (note: use binding with brackets for template variables, e.g. [appendTo]="mydiv" for a div element having #mydiv as variable name).
-   * @group Props
-   */
-  appendTo;
-  /**
-   * When present, it specifies that the component should be disabled.
-   * @group Props
-   */
-  disabled;
-  /**
-   * Index of the element in tabbing order.
-   * @group Props
-   */
-  tabindex;
-  /**
-   * Identifier of the focus input to match a label defined for the dropdown.
-   * @group Props
-   */
-  inputId;
-  /**
-   * Whether to automatically manage layering.
-   * @group Props
-   */
-  autoZIndex = true;
-  /**
-   * Base zIndex value to use in layering.
-   * @group Props
-   */
-  baseZIndex = 0;
-  /**
-   * Transition options of the show animation.
-   * @group Props
-   */
-  showTransitionOptions = ".12s cubic-bezier(0, 0, 0.2, 1)";
-  /**
-   * Transition options of the hide animation.
-   * @group Props
-   */
-  hideTransitionOptions = ".1s linear";
-  /**
-   * When present, it specifies that the component should automatically get focus on load.
-   * @group Props
-   */
-  autofocus;
-  /**
-   * Callback to invoke on value change.
-   * @param {ColorPickerChangeEvent} event - Custom value change event.
-   * @group Emits
-   */
-  onChange = new EventEmitter();
-  /**
-   * Callback to invoke on panel is shown.
-   * @group Emits
-   */
-  onShow = new EventEmitter();
-  /**
-   * Callback to invoke on panel is hidden.
-   * @group Emits
-   */
-  onHide = new EventEmitter();
-  containerViewChild;
-  inputViewChild;
-  value = {
-    h: 0,
-    s: 100,
-    b: 100
-  };
-  inputBgColor;
-  shown;
-  overlayVisible;
-  defaultColor = "ff0000";
-  onModelChange = () => {
-  };
-  onModelTouched = () => {
-  };
-  documentClickListener;
-  documentResizeListener;
-  documentMousemoveListener;
-  documentMouseupListener;
-  documentHueMoveListener;
-  scrollHandler;
-  selfClick;
-  colorDragging;
-  hueDragging;
-  overlay;
-  colorSelectorViewChild;
-  colorHandleViewChild;
-  hueViewChild;
-  hueHandleViewChild;
-  window;
+var _ColorPicker = class _ColorPicker {
   constructor(document, platformId, el, renderer, cd, config, overlayService) {
+    __publicField(this, "document");
+    __publicField(this, "platformId");
+    __publicField(this, "el");
+    __publicField(this, "renderer");
+    __publicField(this, "cd");
+    __publicField(this, "config");
+    __publicField(this, "overlayService");
+    /**
+     * Inline style of the component.
+     * @group Props
+     */
+    __publicField(this, "style");
+    /**
+     * Style class of the component.
+     * @group Props
+     */
+    __publicField(this, "styleClass");
+    /**
+     * Whether to display as an overlay or not.
+     * @group Props
+     */
+    __publicField(this, "inline");
+    /**
+     * Format to use in value binding.
+     * @group Props
+     */
+    __publicField(this, "format", "hex");
+    /**
+     * Target element to attach the overlay, valid values are "body" or a local ng-template variable of another element (note: use binding with brackets for template variables, e.g. [appendTo]="mydiv" for a div element having #mydiv as variable name).
+     * @group Props
+     */
+    __publicField(this, "appendTo");
+    /**
+     * When present, it specifies that the component should be disabled.
+     * @group Props
+     */
+    __publicField(this, "disabled");
+    /**
+     * Index of the element in tabbing order.
+     * @group Props
+     */
+    __publicField(this, "tabindex");
+    /**
+     * Identifier of the focus input to match a label defined for the dropdown.
+     * @group Props
+     */
+    __publicField(this, "inputId");
+    /**
+     * Whether to automatically manage layering.
+     * @group Props
+     */
+    __publicField(this, "autoZIndex", true);
+    /**
+     * Base zIndex value to use in layering.
+     * @group Props
+     */
+    __publicField(this, "baseZIndex", 0);
+    /**
+     * Transition options of the show animation.
+     * @group Props
+     */
+    __publicField(this, "showTransitionOptions", ".12s cubic-bezier(0, 0, 0.2, 1)");
+    /**
+     * Transition options of the hide animation.
+     * @group Props
+     */
+    __publicField(this, "hideTransitionOptions", ".1s linear");
+    /**
+     * When present, it specifies that the component should automatically get focus on load.
+     * @group Props
+     */
+    __publicField(this, "autofocus");
+    /**
+     * Callback to invoke on value change.
+     * @param {ColorPickerChangeEvent} event - Custom value change event.
+     * @group Emits
+     */
+    __publicField(this, "onChange", new EventEmitter());
+    /**
+     * Callback to invoke on panel is shown.
+     * @group Emits
+     */
+    __publicField(this, "onShow", new EventEmitter());
+    /**
+     * Callback to invoke on panel is hidden.
+     * @group Emits
+     */
+    __publicField(this, "onHide", new EventEmitter());
+    __publicField(this, "containerViewChild");
+    __publicField(this, "inputViewChild");
+    __publicField(this, "value", {
+      h: 0,
+      s: 100,
+      b: 100
+    });
+    __publicField(this, "inputBgColor");
+    __publicField(this, "shown");
+    __publicField(this, "overlayVisible");
+    __publicField(this, "defaultColor", "ff0000");
+    __publicField(this, "onModelChange", () => {
+    });
+    __publicField(this, "onModelTouched", () => {
+    });
+    __publicField(this, "documentClickListener");
+    __publicField(this, "documentResizeListener");
+    __publicField(this, "documentMousemoveListener");
+    __publicField(this, "documentMouseupListener");
+    __publicField(this, "documentHueMoveListener");
+    __publicField(this, "scrollHandler");
+    __publicField(this, "selfClick");
+    __publicField(this, "colorDragging");
+    __publicField(this, "hueDragging");
+    __publicField(this, "overlay");
+    __publicField(this, "colorSelectorViewChild");
+    __publicField(this, "colorHandleViewChild");
+    __publicField(this, "hueViewChild");
+    __publicField(this, "hueHandleViewChild");
+    __publicField(this, "window");
     this.document = document;
     this.platformId = platformId;
     this.el = el;
@@ -358,7 +360,8 @@ var ColorPicker = class _ColorPicker {
     this.hueHandleViewChild = element;
   }
   get ariaLabel() {
-    return this.config?.getTranslation(TranslationKeys.ARIA)[TranslationKeys.SELECT_COLOR];
+    var _a;
+    return (_a = this.config) == null ? void 0 : _a.getTranslation(TranslationKeys.ARIA)[TranslationKeys.SELECT_COLOR];
   }
   onHueMousedown(event) {
     if (this.disabled) {
@@ -384,8 +387,9 @@ var ColorPicker = class _ColorPicker {
     this.pickColor(event, event.changedTouches[0]);
   }
   pickHue(event, position) {
+    var _a;
     let pageY = position ? position.pageY : event.pageY;
-    let top = this.hueViewChild?.nativeElement.getBoundingClientRect().top + (this.document.defaultView.pageYOffset || this.document.documentElement.scrollTop || this.document.body.scrollTop || 0);
+    let top = ((_a = this.hueViewChild) == null ? void 0 : _a.nativeElement.getBoundingClientRect().top) + (this.document.defaultView.pageYOffset || this.document.documentElement.scrollTop || this.document.body.scrollTop || 0);
     this.value = this.validateHSB({
       h: Math.floor(360 * (150 - Math.max(0, Math.min(150, pageY - top))) / 150),
       s: this.value.s,
@@ -425,9 +429,10 @@ var ColorPicker = class _ColorPicker {
     this.unbindDocumentMouseupListener();
   }
   pickColor(event, position) {
+    var _a;
     let pageX = position ? position.pageX : event.pageX;
     let pageY = position ? position.pageY : event.pageY;
-    let rect = this.colorSelectorViewChild?.nativeElement.getBoundingClientRect();
+    let rect = (_a = this.colorSelectorViewChild) == null ? void 0 : _a.nativeElement.getBoundingClientRect();
     let top = rect.top + (this.document.defaultView.pageYOffset || this.document.documentElement.scrollTop || this.document.body.scrollTop || 0);
     let left = rect.left + this.document.body.scrollLeft;
     let saturation = Math.floor(100 * Math.max(0, Math.min(150, pageX - left)) / 150);
@@ -495,7 +500,8 @@ var ColorPicker = class _ColorPicker {
     }
   }
   updateUI() {
-    if (this.colorHandleViewChild && this.hueHandleViewChild?.nativeElement) {
+    var _a;
+    if (this.colorHandleViewChild && ((_a = this.hueHandleViewChild) == null ? void 0 : _a.nativeElement)) {
       this.colorHandleViewChild.nativeElement.style.left = Math.floor(150 * this.value.s / 100) + "px";
       this.colorHandleViewChild.nativeElement.style.top = Math.floor(150 * (100 - this.value.b) / 100) + "px";
       this.hueHandleViewChild.nativeElement.style.top = Math.floor(150 - 150 * this.value.h / 360) + "px";
@@ -558,8 +564,9 @@ var ColorPicker = class _ColorPicker {
     }
   }
   alignOverlay() {
-    if (this.appendTo) DomHandler.absolutePosition(this.overlay, this.inputViewChild?.nativeElement);
-    else DomHandler.relativePosition(this.overlay, this.inputViewChild?.nativeElement);
+    var _a, _b;
+    if (this.appendTo) DomHandler.absolutePosition(this.overlay, (_a = this.inputViewChild) == null ? void 0 : _a.nativeElement);
+    else DomHandler.relativePosition(this.overlay, (_b = this.inputViewChild) == null ? void 0 : _b.nativeElement);
   }
   hide() {
     this.overlayVisible = false;
@@ -676,8 +683,9 @@ var ColorPicker = class _ColorPicker {
     }
   }
   bindScrollListener() {
+    var _a;
     if (!this.scrollHandler) {
-      this.scrollHandler = new ConnectedOverlayScrollHandler(this.containerViewChild?.nativeElement, () => {
+      this.scrollHandler = new ConnectedOverlayScrollHandler((_a = this.containerViewChild) == null ? void 0 : _a.nativeElement, () => {
         if (this.overlayVisible) {
           this.hide();
         }
@@ -842,142 +850,93 @@ var ColorPicker = class _ColorPicker {
     this.restoreOverlayAppend();
     this.onOverlayHide();
   }
-  static ɵfac = function ColorPicker_Factory(__ngFactoryType__) {
-    return new (__ngFactoryType__ || _ColorPicker)(ɵɵdirectiveInject(DOCUMENT), ɵɵdirectiveInject(PLATFORM_ID), ɵɵdirectiveInject(ElementRef), ɵɵdirectiveInject(Renderer2), ɵɵdirectiveInject(ChangeDetectorRef), ɵɵdirectiveInject(PrimeNGConfig), ɵɵdirectiveInject(OverlayService));
-  };
-  static ɵcmp = ɵɵdefineComponent({
-    type: _ColorPicker,
-    selectors: [["p-colorPicker"]],
-    viewQuery: function ColorPicker_Query(rf, ctx) {
-      if (rf & 1) {
-        ɵɵviewQuery(_c0, 5);
-        ɵɵviewQuery(_c1, 5);
-        ɵɵviewQuery(_c2, 5);
-        ɵɵviewQuery(_c3, 5);
-        ɵɵviewQuery(_c4, 5);
-        ɵɵviewQuery(_c5, 5);
-      }
-      if (rf & 2) {
-        let _t;
-        ɵɵqueryRefresh(_t = ɵɵloadQuery()) && (ctx.containerViewChild = _t.first);
-        ɵɵqueryRefresh(_t = ɵɵloadQuery()) && (ctx.inputViewChild = _t.first);
-        ɵɵqueryRefresh(_t = ɵɵloadQuery()) && (ctx.colorSelector = _t.first);
-        ɵɵqueryRefresh(_t = ɵɵloadQuery()) && (ctx.colorHandle = _t.first);
-        ɵɵqueryRefresh(_t = ɵɵloadQuery()) && (ctx.hue = _t.first);
-        ɵɵqueryRefresh(_t = ɵɵloadQuery()) && (ctx.hueHandle = _t.first);
-      }
-    },
-    hostAttrs: [1, "p-element"],
-    inputs: {
-      style: "style",
-      styleClass: "styleClass",
-      inline: [2, "inline", "inline", booleanAttribute],
-      format: "format",
-      appendTo: "appendTo",
-      disabled: [2, "disabled", "disabled", booleanAttribute],
-      tabindex: "tabindex",
-      inputId: "inputId",
-      autoZIndex: [2, "autoZIndex", "autoZIndex", booleanAttribute],
-      baseZIndex: [2, "baseZIndex", "baseZIndex", numberAttribute],
-      showTransitionOptions: "showTransitionOptions",
-      hideTransitionOptions: "hideTransitionOptions",
-      autofocus: [2, "autofocus", "autofocus", booleanAttribute]
-    },
-    outputs: {
-      onChange: "onChange",
-      onShow: "onShow",
-      onHide: "onHide"
-    },
-    features: [ɵɵProvidersFeature([COLORPICKER_VALUE_ACCESSOR]), ɵɵInputTransformsFeature],
-    decls: 4,
-    vars: 11,
-    consts: [["container", ""], ["input", ""], ["colorSelector", ""], ["colorHandle", ""], ["hue", ""], ["hueHandle", ""], [3, "ngStyle", "ngClass"], ["type", "text", "class", "p-colorpicker-preview p-inputtext", "readonly", "readonly", "pAutoFocus", "", 3, "ngClass", "disabled", "backgroundColor", "autofocus", "click", "keydown", "focus", 4, "ngIf"], [3, "ngClass", "click", 4, "ngIf"], ["type", "text", "readonly", "readonly", "pAutoFocus", "", 1, "p-colorpicker-preview", "p-inputtext", 3, "click", "keydown", "focus", "ngClass", "disabled", "autofocus"], [3, "click", "ngClass"], [1, "p-colorpicker-content"], [1, "p-colorpicker-color-selector", 3, "touchstart", "touchmove", "touchend", "mousedown"], [1, "p-colorpicker-color"], [1, "p-colorpicker-color-handle"], [1, "p-colorpicker-hue", 3, "mousedown", "touchstart", "touchmove", "touchend"], [1, "p-colorpicker-hue-handle"]],
-    template: function ColorPicker_Template(rf, ctx) {
-      if (rf & 1) {
-        ɵɵelementStart(0, "div", 6, 0);
-        ɵɵtemplate(2, ColorPicker_input_2_Template, 2, 11, "input", 7)(3, ColorPicker_div_3_Template, 11, 18, "div", 8);
-        ɵɵelementEnd();
-      }
-      if (rf & 2) {
-        ɵɵclassMap(ctx.styleClass);
-        ɵɵproperty("ngStyle", ctx.style)("ngClass", ɵɵpureFunction2(8, _c6, !ctx.inline, ctx.colorDragging || ctx.hueDragging));
-        ɵɵattribute("data-pc-name", "colorpicker")("data-pc-section", "root");
-        ɵɵadvance(2);
-        ɵɵproperty("ngIf", !ctx.inline);
-        ɵɵadvance();
-        ɵɵproperty("ngIf", ctx.inline || ctx.overlayVisible);
-      }
-    },
-    dependencies: [NgClass, NgIf, NgStyle, AutoFocus],
-    styles: ["@layer primeng{.p-colorpicker{display:inline-block}.p-colorpicker-dragging{cursor:pointer}.p-colorpicker-overlay{position:relative}.p-colorpicker-panel{position:relative;width:193px;height:166px}.p-colorpicker-overlay-panel{position:absolute;top:0;left:0}.p-colorpicker-preview{cursor:pointer}.p-colorpicker-panel .p-colorpicker-content{position:relative}.p-colorpicker-panel .p-colorpicker-color-selector{width:150px;height:150px;top:8px;left:8px;position:absolute}.p-colorpicker-panel .p-colorpicker-color{width:150px;height:150px}.p-colorpicker-panel .p-colorpicker-color-handle{position:absolute;top:0;left:150px;border-radius:100%;width:10px;height:10px;border-width:1px;border-style:solid;margin:-5px 0 0 -5px;cursor:pointer;opacity:.85}.p-colorpicker-panel .p-colorpicker-hue{width:17px;height:150px;top:8px;left:167px;position:absolute;opacity:.85}.p-colorpicker-panel .p-colorpicker-hue-handle{position:absolute;top:150px;left:0;width:21px;margin-left:-2px;margin-top:-5px;height:10px;border-width:2px;border-style:solid;opacity:.85;cursor:pointer}}\n"],
-    encapsulation: 2,
-    data: {
-      animation: [trigger("overlayAnimation", [transition(":enter", [style({
-        opacity: 0,
-        transform: "scaleY(0.8)"
-      }), animate("{{showTransitionParams}}")]), transition(":leave", [animate("{{hideTransitionParams}}", style({
-        opacity: 0
-      }))])])]
-    },
-    changeDetection: 0
-  });
 };
+__publicField(_ColorPicker, "ɵfac", function ColorPicker_Factory(__ngFactoryType__) {
+  return new (__ngFactoryType__ || _ColorPicker)(ɵɵdirectiveInject(DOCUMENT), ɵɵdirectiveInject(PLATFORM_ID), ɵɵdirectiveInject(ElementRef), ɵɵdirectiveInject(Renderer2), ɵɵdirectiveInject(ChangeDetectorRef), ɵɵdirectiveInject(PrimeNGConfig), ɵɵdirectiveInject(OverlayService));
+});
+__publicField(_ColorPicker, "ɵcmp", ɵɵdefineComponent({
+  type: _ColorPicker,
+  selectors: [["p-colorPicker"]],
+  viewQuery: function ColorPicker_Query(rf, ctx) {
+    if (rf & 1) {
+      ɵɵviewQuery(_c0, 5);
+      ɵɵviewQuery(_c1, 5);
+      ɵɵviewQuery(_c2, 5);
+      ɵɵviewQuery(_c3, 5);
+      ɵɵviewQuery(_c4, 5);
+      ɵɵviewQuery(_c5, 5);
+    }
+    if (rf & 2) {
+      let _t;
+      ɵɵqueryRefresh(_t = ɵɵloadQuery()) && (ctx.containerViewChild = _t.first);
+      ɵɵqueryRefresh(_t = ɵɵloadQuery()) && (ctx.inputViewChild = _t.first);
+      ɵɵqueryRefresh(_t = ɵɵloadQuery()) && (ctx.colorSelector = _t.first);
+      ɵɵqueryRefresh(_t = ɵɵloadQuery()) && (ctx.colorHandle = _t.first);
+      ɵɵqueryRefresh(_t = ɵɵloadQuery()) && (ctx.hue = _t.first);
+      ɵɵqueryRefresh(_t = ɵɵloadQuery()) && (ctx.hueHandle = _t.first);
+    }
+  },
+  hostAttrs: [1, "p-element"],
+  inputs: {
+    style: "style",
+    styleClass: "styleClass",
+    inline: [2, "inline", "inline", booleanAttribute],
+    format: "format",
+    appendTo: "appendTo",
+    disabled: [2, "disabled", "disabled", booleanAttribute],
+    tabindex: "tabindex",
+    inputId: "inputId",
+    autoZIndex: [2, "autoZIndex", "autoZIndex", booleanAttribute],
+    baseZIndex: [2, "baseZIndex", "baseZIndex", numberAttribute],
+    showTransitionOptions: "showTransitionOptions",
+    hideTransitionOptions: "hideTransitionOptions",
+    autofocus: [2, "autofocus", "autofocus", booleanAttribute]
+  },
+  outputs: {
+    onChange: "onChange",
+    onShow: "onShow",
+    onHide: "onHide"
+  },
+  features: [ɵɵProvidersFeature([COLORPICKER_VALUE_ACCESSOR]), ɵɵInputTransformsFeature],
+  decls: 4,
+  vars: 11,
+  consts: [["container", ""], ["input", ""], ["colorSelector", ""], ["colorHandle", ""], ["hue", ""], ["hueHandle", ""], [3, "ngStyle", "ngClass"], ["type", "text", "class", "p-colorpicker-preview p-inputtext", "readonly", "readonly", "pAutoFocus", "", 3, "ngClass", "disabled", "backgroundColor", "autofocus", "click", "keydown", "focus", 4, "ngIf"], [3, "ngClass", "click", 4, "ngIf"], ["type", "text", "readonly", "readonly", "pAutoFocus", "", 1, "p-colorpicker-preview", "p-inputtext", 3, "click", "keydown", "focus", "ngClass", "disabled", "autofocus"], [3, "click", "ngClass"], [1, "p-colorpicker-content"], [1, "p-colorpicker-color-selector", 3, "touchstart", "touchmove", "touchend", "mousedown"], [1, "p-colorpicker-color"], [1, "p-colorpicker-color-handle"], [1, "p-colorpicker-hue", 3, "mousedown", "touchstart", "touchmove", "touchend"], [1, "p-colorpicker-hue-handle"]],
+  template: function ColorPicker_Template(rf, ctx) {
+    if (rf & 1) {
+      ɵɵelementStart(0, "div", 6, 0);
+      ɵɵtemplate(2, ColorPicker_input_2_Template, 2, 11, "input", 7)(3, ColorPicker_div_3_Template, 11, 18, "div", 8);
+      ɵɵelementEnd();
+    }
+    if (rf & 2) {
+      ɵɵclassMap(ctx.styleClass);
+      ɵɵproperty("ngStyle", ctx.style)("ngClass", ɵɵpureFunction2(8, _c6, !ctx.inline, ctx.colorDragging || ctx.hueDragging));
+      ɵɵattribute("data-pc-name", "colorpicker")("data-pc-section", "root");
+      ɵɵadvance(2);
+      ɵɵproperty("ngIf", !ctx.inline);
+      ɵɵadvance();
+      ɵɵproperty("ngIf", ctx.inline || ctx.overlayVisible);
+    }
+  },
+  dependencies: [NgClass, NgIf, NgStyle, AutoFocus],
+  styles: ["@layer primeng{.p-colorpicker{display:inline-block}.p-colorpicker-dragging{cursor:pointer}.p-colorpicker-overlay{position:relative}.p-colorpicker-panel{position:relative;width:193px;height:166px}.p-colorpicker-overlay-panel{position:absolute;top:0;left:0}.p-colorpicker-preview{cursor:pointer}.p-colorpicker-panel .p-colorpicker-content{position:relative}.p-colorpicker-panel .p-colorpicker-color-selector{width:150px;height:150px;top:8px;left:8px;position:absolute}.p-colorpicker-panel .p-colorpicker-color{width:150px;height:150px}.p-colorpicker-panel .p-colorpicker-color-handle{position:absolute;top:0;left:150px;border-radius:100%;width:10px;height:10px;border-width:1px;border-style:solid;margin:-5px 0 0 -5px;cursor:pointer;opacity:.85}.p-colorpicker-panel .p-colorpicker-hue{width:17px;height:150px;top:8px;left:167px;position:absolute;opacity:.85}.p-colorpicker-panel .p-colorpicker-hue-handle{position:absolute;top:150px;left:0;width:21px;margin-left:-2px;margin-top:-5px;height:10px;border-width:2px;border-style:solid;opacity:.85;cursor:pointer}}\n"],
+  encapsulation: 2,
+  data: {
+    animation: [trigger("overlayAnimation", [transition(":enter", [style({
+      opacity: 0,
+      transform: "scaleY(0.8)"
+    }), animate("{{showTransitionParams}}")]), transition(":leave", [animate("{{hideTransitionParams}}", style({
+      opacity: 0
+    }))])])]
+  },
+  changeDetection: 0
+}));
+var ColorPicker = _ColorPicker;
 (() => {
   (typeof ngDevMode === "undefined" || ngDevMode) && setClassMetadata(ColorPicker, [{
     type: Component,
     args: [{
       selector: "p-colorPicker",
-      template: `
-        <div
-            #container
-            [ngStyle]="style"
-            [class]="styleClass"
-            [ngClass]="{ 'p-colorpicker p-component': true, 'p-colorpicker-overlay': !inline, 'p-colorpicker-dragging': colorDragging || hueDragging }"
-            [attr.data-pc-name]="'colorpicker'"
-            [attr.data-pc-section]="'root'"
-        >
-            <input
-                *ngIf="!inline"
-                #input
-                type="text"
-                class="p-colorpicker-preview p-inputtext"
-                [ngClass]="{ 'p-disabled': disabled }"
-                readonly="readonly"
-                [attr.tabindex]="tabindex"
-                [disabled]="disabled"
-                (click)="onInputClick()"
-                (keydown)="onInputKeydown($event)"
-                (focus)="onInputFocus()"
-                [attr.id]="inputId"
-                [style.backgroundColor]="inputBgColor"
-                [attr.data-pc-section]="'input'"
-                [attr.aria-label]="ariaLabel"
-                pAutoFocus
-                [autofocus]="autofocus"
-            />
-            <div
-                *ngIf="inline || overlayVisible"
-                [ngClass]="{ 'p-colorpicker-panel': true, 'p-colorpicker-overlay-panel': !inline, 'p-disabled': disabled }"
-                (click)="onOverlayClick($event)"
-                [@overlayAnimation]="{ value: 'visible', params: { showTransitionParams: showTransitionOptions, hideTransitionParams: hideTransitionOptions } }"
-                [@.disabled]="inline === true"
-                (@overlayAnimation.start)="onOverlayAnimationStart($event)"
-                (@overlayAnimation.done)="onOverlayAnimationEnd($event)"
-                [attr.data-pc-section]="'panel'"
-            >
-                <div class="p-colorpicker-content" [attr.data-pc-section]="'content'">
-                    <div #colorSelector class="p-colorpicker-color-selector" (touchstart)="onColorDragStart($event)" (touchmove)="onDrag($event)" (touchend)="onDragEnd()" (mousedown)="onColorMousedown($event)" [attr.data-pc-section]="'selector'">
-                        <div class="p-colorpicker-color" [attr.data-pc-section]="'color'">
-                            <div #colorHandle class="p-colorpicker-color-handle" [attr.data-pc-section]="'colorHandle'"></div>
-                        </div>
-                    </div>
-                    <div #hue class="p-colorpicker-hue" (mousedown)="onHueMousedown($event)" (touchstart)="onHueDragStart($event)" (touchmove)="onDrag($event)" (touchend)="onDragEnd()" [attr.data-pc-section]="'hue'">
-                        <div #hueHandle class="p-colorpicker-hue-handle" [attr.data-pc-section]="'hueHandle'"></div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    `,
+      template: '\n        <div\n            #container\n            [ngStyle]="style"\n            [class]="styleClass"\n            [ngClass]="{ \'p-colorpicker p-component\': true, \'p-colorpicker-overlay\': !inline, \'p-colorpicker-dragging\': colorDragging || hueDragging }"\n            [attr.data-pc-name]="\'colorpicker\'"\n            [attr.data-pc-section]="\'root\'"\n        >\n            <input\n                *ngIf="!inline"\n                #input\n                type="text"\n                class="p-colorpicker-preview p-inputtext"\n                [ngClass]="{ \'p-disabled\': disabled }"\n                readonly="readonly"\n                [attr.tabindex]="tabindex"\n                [disabled]="disabled"\n                (click)="onInputClick()"\n                (keydown)="onInputKeydown($event)"\n                (focus)="onInputFocus()"\n                [attr.id]="inputId"\n                [style.backgroundColor]="inputBgColor"\n                [attr.data-pc-section]="\'input\'"\n                [attr.aria-label]="ariaLabel"\n                pAutoFocus\n                [autofocus]="autofocus"\n            />\n            <div\n                *ngIf="inline || overlayVisible"\n                [ngClass]="{ \'p-colorpicker-panel\': true, \'p-colorpicker-overlay-panel\': !inline, \'p-disabled\': disabled }"\n                (click)="onOverlayClick($event)"\n                [@overlayAnimation]="{ value: \'visible\', params: { showTransitionParams: showTransitionOptions, hideTransitionParams: hideTransitionOptions } }"\n                [@.disabled]="inline === true"\n                (@overlayAnimation.start)="onOverlayAnimationStart($event)"\n                (@overlayAnimation.done)="onOverlayAnimationEnd($event)"\n                [attr.data-pc-section]="\'panel\'"\n            >\n                <div class="p-colorpicker-content" [attr.data-pc-section]="\'content\'">\n                    <div #colorSelector class="p-colorpicker-color-selector" (touchstart)="onColorDragStart($event)" (touchmove)="onDrag($event)" (touchend)="onDragEnd()" (mousedown)="onColorMousedown($event)" [attr.data-pc-section]="\'selector\'">\n                        <div class="p-colorpicker-color" [attr.data-pc-section]="\'color\'">\n                            <div #colorHandle class="p-colorpicker-color-handle" [attr.data-pc-section]="\'colorHandle\'"></div>\n                        </div>\n                    </div>\n                    <div #hue class="p-colorpicker-hue" (mousedown)="onHueMousedown($event)" (touchstart)="onHueDragStart($event)" (touchmove)="onDrag($event)" (touchend)="onDragEnd()" [attr.data-pc-section]="\'hue\'">\n                        <div #hueHandle class="p-colorpicker-hue-handle" [attr.data-pc-section]="\'hueHandle\'"></div>\n                    </div>\n                </div>\n            </div>\n        </div>\n    ',
       animations: [trigger("overlayAnimation", [transition(":enter", [style({
         opacity: 0,
         transform: "scaleY(0.8)"
@@ -1104,20 +1063,21 @@ var ColorPicker = class _ColorPicker {
     }]
   });
 })();
-var ColorPickerModule = class _ColorPickerModule {
-  static ɵfac = function ColorPickerModule_Factory(__ngFactoryType__) {
-    return new (__ngFactoryType__ || _ColorPickerModule)();
-  };
-  static ɵmod = ɵɵdefineNgModule({
-    type: _ColorPickerModule,
-    declarations: [ColorPicker],
-    imports: [CommonModule, AutoFocusModule],
-    exports: [ColorPicker]
-  });
-  static ɵinj = ɵɵdefineInjector({
-    imports: [CommonModule, AutoFocusModule]
-  });
+var _ColorPickerModule = class _ColorPickerModule {
 };
+__publicField(_ColorPickerModule, "ɵfac", function ColorPickerModule_Factory(__ngFactoryType__) {
+  return new (__ngFactoryType__ || _ColorPickerModule)();
+});
+__publicField(_ColorPickerModule, "ɵmod", ɵɵdefineNgModule({
+  type: _ColorPickerModule,
+  declarations: [ColorPicker],
+  imports: [CommonModule, AutoFocusModule],
+  exports: [ColorPicker]
+}));
+__publicField(_ColorPickerModule, "ɵinj", ɵɵdefineInjector({
+  imports: [CommonModule, AutoFocusModule]
+}));
+var ColorPickerModule = _ColorPickerModule;
 (() => {
   (typeof ngDevMode === "undefined" || ngDevMode) && setClassMetadata(ColorPickerModule, [{
     type: NgModule,

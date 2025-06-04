@@ -1,9 +1,4 @@
 import {
-  BrowserModule,
-  DomRendererFactory2
-} from "./chunk-3E3YFUVD.js";
-import "./chunk-DO2TVYAE.js";
-import {
   AUTO_STYLE,
   AnimationGroupPlayer,
   AnimationMetadataType,
@@ -11,10 +6,15 @@ import {
   sequence,
   style,
   ɵPRE_STYLE
-} from "./chunk-OGB62SLM.js";
+} from "./chunk-5S7AEMUZ.js";
+import {
+  BrowserModule,
+  DomRendererFactory2
+} from "./chunk-MWP4G2UW.js";
+import "./chunk-RWZD3TDV.js";
 import {
   DOCUMENT
-} from "./chunk-UBZYO7FG.js";
+} from "./chunk-KUZ63KOD.js";
 import {
   ANIMATION_MODULE_TYPE,
   Inject,
@@ -29,19 +29,19 @@ import {
   ɵɵdefineInjector,
   ɵɵdefineNgModule,
   ɵɵinject
-} from "./chunk-ZI2Q76R4.js";
-import "./chunk-5OPE3T2R.js";
+} from "./chunk-R75KKECJ.js";
 import "./chunk-4N4GOYJH.js";
+import "./chunk-5OPE3T2R.js";
 import "./chunk-FHTVLBLO.js";
 import {
   __objRest,
   __spreadValues
-} from "./chunk-3OV72XIM.js";
+} from "./chunk-IJZFAMY6.js";
 
 // node_modules/@angular/animations/fesm2022/browser.mjs
 var LINE_START = "\n - ";
 function invalidTimingValue(exp) {
-  return new RuntimeError(3e3, ngDevMode && `The provided timing value "${exp}" is invalid.`);
+  return new RuntimeError(3e3, ngDevMode && 'The provided timing value "'.concat(exp, '" is invalid.'));
 }
 function negativeStepValue() {
   return new RuntimeError(3100, ngDevMode && "Duration values below 0 are not allowed for this animation step.");
@@ -50,16 +50,16 @@ function negativeDelayValue() {
   return new RuntimeError(3101, ngDevMode && "Delay values below 0 are not allowed for this animation step.");
 }
 function invalidStyleParams(varName) {
-  return new RuntimeError(3001, ngDevMode && `Unable to resolve the local animation param ${varName} in the given list of values`);
+  return new RuntimeError(3001, ngDevMode && "Unable to resolve the local animation param ".concat(varName, " in the given list of values"));
 }
 function invalidParamValue(varName) {
-  return new RuntimeError(3003, ngDevMode && `Please provide a value for the animation param ${varName}`);
+  return new RuntimeError(3003, ngDevMode && "Please provide a value for the animation param ".concat(varName));
 }
 function invalidNodeType(nodeType) {
-  return new RuntimeError(3004, ngDevMode && `Unable to resolve animation metadata node #${nodeType}`);
+  return new RuntimeError(3004, ngDevMode && "Unable to resolve animation metadata node #".concat(nodeType));
 }
 function invalidCssUnitValue(userProvidedProperty, value) {
-  return new RuntimeError(3005, ngDevMode && `Please provide a CSS unit value for ${userProvidedProperty}:${value}`);
+  return new RuntimeError(3005, ngDevMode && "Please provide a CSS unit value for ".concat(userProvidedProperty, ":").concat(value));
 }
 function invalidTrigger() {
   return new RuntimeError(3006, ngDevMode && "animation triggers cannot be prefixed with an `@` sign (e.g. trigger('@foo', [...]))");
@@ -68,76 +68,73 @@ function invalidDefinition() {
   return new RuntimeError(3007, ngDevMode && "only state() and transition() definitions can sit inside of a trigger()");
 }
 function invalidState(metadataName, missingSubs) {
-  return new RuntimeError(3008, ngDevMode && `state("${metadataName}", ...) must define default values for all the following style substitutions: ${missingSubs.join(", ")}`);
+  return new RuntimeError(3008, ngDevMode && 'state("'.concat(metadataName, '", ...) must define default values for all the following style substitutions: ').concat(missingSubs.join(", ")));
 }
 function invalidStyleValue(value) {
-  return new RuntimeError(3002, ngDevMode && `The provided style string value ${value} is not allowed.`);
+  return new RuntimeError(3002, ngDevMode && "The provided style string value ".concat(value, " is not allowed."));
 }
 function invalidParallelAnimation(prop, firstStart, firstEnd, secondStart, secondEnd) {
-  return new RuntimeError(3010, ngDevMode && `The CSS property "${prop}" that exists between the times of "${firstStart}ms" and "${firstEnd}ms" is also being animated in a parallel animation between the times of "${secondStart}ms" and "${secondEnd}ms"`);
+  return new RuntimeError(3010, ngDevMode && 'The CSS property "'.concat(prop, '" that exists between the times of "').concat(firstStart, 'ms" and "').concat(firstEnd, 'ms" is also being animated in a parallel animation between the times of "').concat(secondStart, 'ms" and "').concat(secondEnd, 'ms"'));
 }
 function invalidKeyframes() {
-  return new RuntimeError(3011, ngDevMode && `keyframes() must be placed inside of a call to animate()`);
+  return new RuntimeError(3011, ngDevMode && "keyframes() must be placed inside of a call to animate()");
 }
 function invalidOffset() {
-  return new RuntimeError(3012, ngDevMode && `Please ensure that all keyframe offsets are between 0 and 1`);
+  return new RuntimeError(3012, ngDevMode && "Please ensure that all keyframe offsets are between 0 and 1");
 }
 function keyframeOffsetsOutOfOrder() {
-  return new RuntimeError(3200, ngDevMode && `Please ensure that all keyframe offsets are in order`);
+  return new RuntimeError(3200, ngDevMode && "Please ensure that all keyframe offsets are in order");
 }
 function keyframesMissingOffsets() {
-  return new RuntimeError(3202, ngDevMode && `Not all style() steps within the declared keyframes() contain offsets`);
+  return new RuntimeError(3202, ngDevMode && "Not all style() steps within the declared keyframes() contain offsets");
 }
 function invalidStagger() {
-  return new RuntimeError(3013, ngDevMode && `stagger() can only be used inside of query()`);
+  return new RuntimeError(3013, ngDevMode && "stagger() can only be used inside of query()");
 }
 function invalidQuery(selector) {
-  return new RuntimeError(3014, ngDevMode && `\`query("${selector}")\` returned zero elements. (Use \`query("${selector}", { optional: true })\` if you wish to allow this.)`);
+  return new RuntimeError(3014, ngDevMode && '`query("'.concat(selector, '")` returned zero elements. (Use `query("').concat(selector, '", { optional: true })` if you wish to allow this.)'));
 }
 function invalidExpression(expr) {
-  return new RuntimeError(3015, ngDevMode && `The provided transition expression "${expr}" is not supported`);
+  return new RuntimeError(3015, ngDevMode && 'The provided transition expression "'.concat(expr, '" is not supported'));
 }
 function invalidTransitionAlias(alias) {
-  return new RuntimeError(3016, ngDevMode && `The transition alias value "${alias}" is not supported`);
+  return new RuntimeError(3016, ngDevMode && 'The transition alias value "'.concat(alias, '" is not supported'));
 }
 function triggerBuildFailed(name, errors) {
-  return new RuntimeError(3404, ngDevMode && `The animation trigger "${name}" has failed to build due to the following errors:
- - ${errors.map((err) => err.message).join("\n - ")}`);
+  return new RuntimeError(3404, ngDevMode && 'The animation trigger "'.concat(name, '" has failed to build due to the following errors:\n - ').concat(errors.map((err) => err.message).join("\n - ")));
 }
 function animationFailed(errors) {
-  return new RuntimeError(3502, ngDevMode && `Unable to animate due to the following errors:${LINE_START}${errors.map((err) => err.message).join(LINE_START)}`);
+  return new RuntimeError(3502, ngDevMode && "Unable to animate due to the following errors:".concat(LINE_START).concat(errors.map((err) => err.message).join(LINE_START)));
 }
 function registerFailed(errors) {
-  return new RuntimeError(3503, ngDevMode && `Unable to build the animation due to the following errors: ${errors.map((err) => err.message).join("\n")}`);
+  return new RuntimeError(3503, ngDevMode && "Unable to build the animation due to the following errors: ".concat(errors.map((err) => err.message).join("\n")));
 }
 function missingOrDestroyedAnimation() {
   return new RuntimeError(3300, ngDevMode && "The requested animation doesn't exist or has already been destroyed");
 }
 function createAnimationFailed(errors) {
-  return new RuntimeError(3504, ngDevMode && `Unable to create the animation due to the following errors:${errors.map((err) => err.message).join("\n")}`);
+  return new RuntimeError(3504, ngDevMode && "Unable to create the animation due to the following errors:".concat(errors.map((err) => err.message).join("\n")));
 }
 function missingPlayer(id) {
-  return new RuntimeError(3301, ngDevMode && `Unable to find the timeline player referenced by ${id}`);
+  return new RuntimeError(3301, ngDevMode && "Unable to find the timeline player referenced by ".concat(id));
 }
 function missingTrigger(phase, name) {
-  return new RuntimeError(3302, ngDevMode && `Unable to listen on the animation trigger event "${phase}" because the animation trigger "${name}" doesn't exist!`);
+  return new RuntimeError(3302, ngDevMode && 'Unable to listen on the animation trigger event "'.concat(phase, '" because the animation trigger "').concat(name, "\" doesn't exist!"));
 }
 function missingEvent(name) {
-  return new RuntimeError(3303, ngDevMode && `Unable to listen on the animation trigger "${name}" because the provided event is undefined!`);
+  return new RuntimeError(3303, ngDevMode && 'Unable to listen on the animation trigger "'.concat(name, '" because the provided event is undefined!'));
 }
 function unsupportedTriggerEvent(phase, name) {
-  return new RuntimeError(3400, ngDevMode && `The provided animation trigger event "${phase}" for the animation trigger "${name}" is not supported!`);
+  return new RuntimeError(3400, ngDevMode && 'The provided animation trigger event "'.concat(phase, '" for the animation trigger "').concat(name, '" is not supported!'));
 }
 function unregisteredTrigger(name) {
-  return new RuntimeError(3401, ngDevMode && `The provided animation trigger "${name}" has not been registered!`);
+  return new RuntimeError(3401, ngDevMode && 'The provided animation trigger "'.concat(name, '" has not been registered!'));
 }
 function triggerTransitionsFailed(errors) {
-  return new RuntimeError(3402, ngDevMode && `Unable to process animations due to the following failed trigger transitions
- ${errors.map((err) => err.message).join("\n")}`);
+  return new RuntimeError(3402, ngDevMode && "Unable to process animations due to the following failed trigger transitions\n ".concat(errors.map((err) => err.message).join("\n")));
 }
 function transitionFailed(name, errors) {
-  return new RuntimeError(3505, ngDevMode && `@${name} has failed due to:
- ${errors.map((err) => err.message).join("\n- ")}`);
+  return new RuntimeError(3505, ngDevMode && "@".concat(name, " has failed due to:\n ").concat(errors.map((err) => err.message).join("\n- ")));
 }
 var ANIMATABLE_PROP_SET = /* @__PURE__ */ new Set(["-moz-outline-radius", "-moz-outline-radius-bottomleft", "-moz-outline-radius-bottomright", "-moz-outline-radius-topleft", "-moz-outline-radius-topright", "-ms-grid-columns", "-ms-grid-rows", "-webkit-line-clamp", "-webkit-text-fill-color", "-webkit-text-stroke", "-webkit-text-stroke-color", "accent-color", "all", "backdrop-filter", "background", "background-color", "background-position", "background-size", "block-size", "border", "border-block-end", "border-block-end-color", "border-block-end-width", "border-block-start", "border-block-start-color", "border-block-start-width", "border-bottom", "border-bottom-color", "border-bottom-left-radius", "border-bottom-right-radius", "border-bottom-width", "border-color", "border-end-end-radius", "border-end-start-radius", "border-image-outset", "border-image-slice", "border-image-width", "border-inline-end", "border-inline-end-color", "border-inline-end-width", "border-inline-start", "border-inline-start-color", "border-inline-start-width", "border-left", "border-left-color", "border-left-width", "border-radius", "border-right", "border-right-color", "border-right-width", "border-start-end-radius", "border-start-start-radius", "border-top", "border-top-color", "border-top-left-radius", "border-top-right-radius", "border-top-width", "border-width", "bottom", "box-shadow", "caret-color", "clip", "clip-path", "color", "column-count", "column-gap", "column-rule", "column-rule-color", "column-rule-width", "column-width", "columns", "filter", "flex", "flex-basis", "flex-grow", "flex-shrink", "font", "font-size", "font-size-adjust", "font-stretch", "font-variation-settings", "font-weight", "gap", "grid-column-gap", "grid-gap", "grid-row-gap", "grid-template-columns", "grid-template-rows", "height", "inline-size", "input-security", "inset", "inset-block", "inset-block-end", "inset-block-start", "inset-inline", "inset-inline-end", "inset-inline-start", "left", "letter-spacing", "line-clamp", "line-height", "margin", "margin-block-end", "margin-block-start", "margin-bottom", "margin-inline-end", "margin-inline-start", "margin-left", "margin-right", "margin-top", "mask", "mask-border", "mask-position", "mask-size", "max-block-size", "max-height", "max-inline-size", "max-lines", "max-width", "min-block-size", "min-height", "min-inline-size", "min-width", "object-position", "offset", "offset-anchor", "offset-distance", "offset-path", "offset-position", "offset-rotate", "opacity", "order", "outline", "outline-color", "outline-offset", "outline-width", "padding", "padding-block-end", "padding-block-start", "padding-bottom", "padding-inline-end", "padding-inline-start", "padding-left", "padding-right", "padding-top", "perspective", "perspective-origin", "right", "rotate", "row-gap", "scale", "scroll-margin", "scroll-margin-block", "scroll-margin-block-end", "scroll-margin-block-start", "scroll-margin-bottom", "scroll-margin-inline", "scroll-margin-inline-end", "scroll-margin-inline-start", "scroll-margin-left", "scroll-margin-right", "scroll-margin-top", "scroll-padding", "scroll-padding-block", "scroll-padding-block-end", "scroll-padding-block-start", "scroll-padding-bottom", "scroll-padding-inline", "scroll-padding-inline-end", "scroll-padding-inline-start", "scroll-padding-left", "scroll-padding-right", "scroll-padding-top", "scroll-snap-coordinate", "scroll-snap-destination", "scrollbar-color", "shape-image-threshold", "shape-margin", "shape-outside", "tab-size", "text-decoration", "text-decoration-color", "text-decoration-thickness", "text-emphasis", "text-emphasis-color", "text-indent", "text-shadow", "text-underline-offset", "top", "transform", "transform-origin", "translate", "vertical-align", "visibility", "width", "word-spacing", "z-index", "zoom"]);
 function optimizeGroupPlayer(players) {
@@ -289,7 +286,7 @@ function invokeQuery(element, selector, multi) {
   const elem = element.querySelector(selector);
   return elem ? [elem] : [];
 }
-var NoopAnimationDriver = class _NoopAnimationDriver {
+var _NoopAnimationDriver = class _NoopAnimationDriver {
   /**
    * @returns Whether `prop` is a valid CSS property
    */
@@ -328,28 +325,24 @@ var NoopAnimationDriver = class _NoopAnimationDriver {
   animate(element, keyframes, duration, delay, easing, previousPlayers = [], scrubberAccessRequested) {
     return new NoopAnimationPlayer(duration, delay);
   }
-  static {
-    this.ɵfac = function NoopAnimationDriver_Factory(__ngFactoryType__) {
-      return new (__ngFactoryType__ || _NoopAnimationDriver)();
-    };
-  }
-  static {
-    this.ɵprov = ɵɵdefineInjectable({
-      token: _NoopAnimationDriver,
-      factory: _NoopAnimationDriver.ɵfac
-    });
-  }
 };
+_NoopAnimationDriver.ɵfac = function NoopAnimationDriver_Factory(__ngFactoryType__) {
+  return new (__ngFactoryType__ || _NoopAnimationDriver)();
+};
+_NoopAnimationDriver.ɵprov = ɵɵdefineInjectable({
+  token: _NoopAnimationDriver,
+  factory: _NoopAnimationDriver.ɵfac
+});
+var NoopAnimationDriver = _NoopAnimationDriver;
 (() => {
   (typeof ngDevMode === "undefined" || ngDevMode) && setClassMetadata(NoopAnimationDriver, [{
     type: Injectable
   }], null, null);
 })();
-var AnimationDriver = class {
-  static {
-    this.NOOP = new NoopAnimationDriver();
-  }
+var _AnimationDriver = class _AnimationDriver {
 };
+_AnimationDriver.NOOP = new NoopAnimationDriver();
+var AnimationDriver = _AnimationDriver;
 var AnimationStyleNormalizer = class {
 };
 var ONE_SECOND = 1e3;
@@ -468,7 +461,7 @@ function validateStyleParams(value, options, errors) {
     });
   }
 }
-var PARAM_REGEX = new RegExp(`${SUBSTITUTION_EXPR_START}\\s*(.+?)\\s*${SUBSTITUTION_EXPR_END}`, "g");
+var PARAM_REGEX = new RegExp("".concat(SUBSTITUTION_EXPR_START, "\\s*(.+?)\\s*").concat(SUBSTITUTION_EXPR_END), "g");
 function extractStyleParams(value) {
   let params = [];
   if (typeof value === "string") {
@@ -481,7 +474,7 @@ function extractStyleParams(value) {
   return params;
 }
 function interpolateParams(value, params, errors) {
-  const original = `${value}`;
+  const original = "".concat(value);
   const str = original.replace(PARAM_REGEX, (_, varName) => {
     let localVal = params[varName];
     if (localVal == null) {
@@ -579,17 +572,17 @@ var WebAnimationsStyleNormalizer = class extends AnimationStyleNormalizer {
 };
 function createListOfWarnings(warnings) {
   const LINE_START2 = "\n - ";
-  return `${LINE_START2}${warnings.filter(Boolean).map((warning) => warning).join(LINE_START2)}`;
+  return "".concat(LINE_START2).concat(warnings.filter(Boolean).map((warning) => warning).join(LINE_START2));
 }
 function warnTriggerBuild(name, warnings) {
-  (typeof ngDevMode === "undefined" || ngDevMode) && console.warn(`The animation trigger "${name}" has built with the following warnings:${createListOfWarnings(warnings)}`);
+  (typeof ngDevMode === "undefined" || ngDevMode) && console.warn('The animation trigger "'.concat(name, '" has built with the following warnings:').concat(createListOfWarnings(warnings)));
 }
 function warnRegister(warnings) {
-  (typeof ngDevMode === "undefined" || ngDevMode) && console.warn(`Animation built with the following warnings:${createListOfWarnings(warnings)}`);
+  (typeof ngDevMode === "undefined" || ngDevMode) && console.warn("Animation built with the following warnings:".concat(createListOfWarnings(warnings)));
 }
 function pushUnrecognizedPropertiesWarning(warnings, props) {
   if (props.length) {
-    warnings.push(`The following provided properties are not recognized: ${props.join(", ")}`);
+    warnings.push("The following provided properties are not recognized: ".concat(props.join(", ")));
   }
 }
 var ANY_STATE = "*";
@@ -659,7 +652,7 @@ function makeLambdaFromStates(lhs, rhs) {
   };
 }
 var SELF_TOKEN = ":self";
-var SELF_TOKEN_REGEX = new RegExp(`s*${SELF_TOKEN}s*,?`, "g");
+var SELF_TOKEN_REGEX = new RegExp("s*".concat(SELF_TOKEN, "s*,?"), "g");
 function buildAnimationAst(driver, metadata, errors, warnings) {
   return new AnimationAstBuilderVisitor(driver).build(metadata, errors, warnings);
 }
@@ -1199,10 +1192,11 @@ var AnimationTimelineBuilderVisitor = class {
     context.previousNode = ast;
   }
   _applyAnimationRefDelays(animationsRefsOptions, context, innerContext) {
+    var _a;
     for (const animationRefOptions of animationsRefsOptions) {
-      const animationDelay = animationRefOptions?.delay;
+      const animationDelay = animationRefOptions == null ? void 0 : animationRefOptions.delay;
       if (animationDelay) {
-        const animationDelayValue = typeof animationDelay === "number" ? animationDelay : resolveTimingValue(interpolateParams(animationDelay, animationRefOptions?.params ?? {}, context.errors));
+        const animationDelayValue = typeof animationDelay === "number" ? animationDelay : resolveTimingValue(interpolateParams(animationDelay, (_a = animationRefOptions == null ? void 0 : animationRefOptions.params) != null ? _a : {}, context.errors));
         innerContext.delayNextStep(animationDelayValue);
       }
     }
@@ -1606,6 +1600,7 @@ var TimelineBuilder = class _TimelineBuilder {
     this._currentEmptyStepKeyframe = this._currentKeyframe;
   }
   setStyles(input, easing, errors, options) {
+    var _a;
     if (easing) {
       this._previousKeyframe.set("easing", easing);
     }
@@ -1615,7 +1610,7 @@ var TimelineBuilder = class _TimelineBuilder {
       const val = interpolateParams(value, params, errors);
       this._pendingStyles.set(prop, val);
       if (!this._localTimelineStyles.has(prop)) {
-        this._backFill.set(prop, this._globalTimelineStyles.get(prop) ?? AUTO_STYLE);
+        this._backFill.set(prop, (_a = this._globalTimelineStyles.get(prop)) != null ? _a : AUTO_STYLE);
       }
       this._updateStyle(prop, val);
     }
@@ -1746,7 +1741,7 @@ function flattenStyles(input, allStyles) {
   let allProperties;
   input.forEach((token) => {
     if (token === "*") {
-      allProperties ??= allStyles.keys();
+      allProperties != null ? allProperties : allProperties = allStyles.keys();
       for (let prop of allProperties) {
         styles.set(prop, AUTO_STYLE);
       }
@@ -1789,11 +1784,12 @@ var AnimationTransitionFactory = class {
   buildStyles(stateName, params, errors) {
     let styler = this._stateStyles.get("*");
     if (stateName !== void 0) {
-      styler = this._stateStyles.get(stateName?.toString()) || styler;
+      styler = this._stateStyles.get(stateName == null ? void 0 : stateName.toString()) || styler;
     }
     return styler ? styler.buildStyles(params, errors) : /* @__PURE__ */ new Map();
   }
   build(driver, element, currentState, nextState, enterClassName, leaveClassName, currentOptions, nextOptions, subInstructions, skipAstBuild) {
+    var _a;
     const errors = [];
     const transitionAnimationParams = this.ast.options && this.ast.options.params || EMPTY_OBJECT;
     const currentAnimationParams = currentOptions && currentOptions.params || EMPTY_OBJECT;
@@ -1806,7 +1802,7 @@ var AnimationTransitionFactory = class {
     const isRemoval = nextState === "void";
     const animationOptions = {
       params: applyParamDefaults(nextAnimationParams, transitionAnimationParams),
-      delay: this.ast.options?.delay
+      delay: (_a = this.ast.options) == null ? void 0 : _a.delay
     };
     const timelines = skipAstBuild ? [] : buildAnimationTimelines(driver, element, this.ast.animation, enterClassName, leaveClassName, currentStateStyles, nextStateStyles, animationOptions, subInstructions, errors);
     let totalTime = 0;
@@ -1865,7 +1861,7 @@ function checkNonAnimatableInTimelines(timelines, triggerName, driver) {
     });
   });
   if (invalidNonAnimatableProps.size > 0) {
-    console.warn(`Warning: The animation trigger "${triggerName}" is attempting to animate the following not animatable properties: ` + Array.from(invalidNonAnimatableProps).join(", ") + "\n(to check the list of all animatable properties visit https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_animated_properties)");
+    console.warn('Warning: The animation trigger "'.concat(triggerName, '" is attempting to animate the following') + " not animatable properties: " + Array.from(invalidNonAnimatableProps).join(", ") + "\n(to check the list of all animatable properties visit https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_animated_properties)");
   }
 }
 function oneOrMoreTransitionsMatch(matchFns, currentState, nextState, element, params) {
@@ -2681,6 +2677,7 @@ var TransitionAnimationEngine = class {
     });
   }
   processLeaveNode(element) {
+    var _a;
     const details = element[REMOVAL_FLAG];
     if (details && details.setForRemoval) {
       element[REMOVAL_FLAG] = NULL_REMOVAL_STATE;
@@ -2693,7 +2690,7 @@ var TransitionAnimationEngine = class {
       }
       this._onRemovalComplete(element, details.setForRemoval);
     }
-    if (element.classList?.contains(DISABLED_CLASSNAME)) {
+    if ((_a = element.classList) == null ? void 0 : _a.contains(DISABLED_CLASSNAME)) {
       this.markElementAsDisabled(element, false);
     }
     this.driver.query(element, DISABLED_SELECTOR, true).forEach((node) => {
@@ -2927,9 +2924,10 @@ var TransitionAnimationEngine = class {
       cloakAndComputeStyles(preStylesMap, this.driver, new Set(nodes), allPreStyleElements, ɵPRE_STYLE);
     });
     replaceNodes.forEach((node) => {
+      var _a, _b;
       const post = postStylesMap.get(node);
       const pre = preStylesMap.get(node);
-      postStylesMap.set(node, new Map([...post?.entries() ?? [], ...pre?.entries() ?? []]));
+      postStylesMap.set(node, new Map([...(_a = post == null ? void 0 : post.entries()) != null ? _a : [], ...(_b = pre == null ? void 0 : pre.entries()) != null ? _b : []]));
     });
     const rootPlayers = [];
     const subPlayers = [];
@@ -3320,10 +3318,12 @@ function buildRootMap(roots, nodes) {
   return rootMap;
 }
 function addClass(element, className) {
-  element.classList?.add(className);
+  var _a;
+  (_a = element.classList) == null ? void 0 : _a.add(className);
 }
 function removeClass(element, className) {
-  element.classList?.remove(className);
+  var _a;
+  (_a = element.classList) == null ? void 0 : _a.remove(className);
 }
 function removeNodesAfterAnimationDone(engine, element, players) {
   optimizeGroupPlayer(players).onDone(() => engine.processLeaveNode(element));
@@ -3451,10 +3451,7 @@ function packageNonAnimatableStyles(element, styles) {
   }
   return startStyles || endStyles ? new SpecialCasedStyles(element, startStyles, endStyles) : null;
 }
-var SpecialCasedStyles = class _SpecialCasedStyles {
-  static {
-    this.initialStylesByElement = /* @__PURE__ */ new WeakMap();
-  }
+var _SpecialCasedStyles = class _SpecialCasedStyles {
   constructor(_element, _startStyles, _endStyles) {
     this._element = _element;
     this._startStyles = _startStyles;
@@ -3502,6 +3499,8 @@ var SpecialCasedStyles = class _SpecialCasedStyles {
     }
   }
 };
+_SpecialCasedStyles.initialStylesByElement = /* @__PURE__ */ new WeakMap();
+var SpecialCasedStyles = _SpecialCasedStyles;
 function filterNonAnimatableStyles(styles) {
   let result = null;
   styles.forEach((val, prop) => {
@@ -3652,7 +3651,8 @@ var WebAnimationsPlayer = class {
     this.domPlayer.currentTime = p * this.time;
   }
   getPosition() {
-    return +(this.domPlayer.currentTime ?? 0) / this.time;
+    var _a;
+    return +((_a = this.domPlayer.currentTime) != null ? _a : 0) / this.time;
   }
   get totalTime() {
     return this._delay + this._duration;
@@ -3739,16 +3739,18 @@ var BaseAnimationRenderer = class {
     return this.delegate.data;
   }
   destroyNode(node) {
-    this.delegate.destroyNode?.(node);
+    var _a, _b;
+    (_b = (_a = this.delegate).destroyNode) == null ? void 0 : _b.call(_a, node);
   }
   destroy() {
+    var _a;
     this.engine.destroy(this.namespaceId, this.delegate);
     this.engine.afterFlushAnimationsDone(() => {
       queueMicrotask(() => {
         this.delegate.destroy();
       });
     });
-    this._onDestroy?.();
+    (_a = this._onDestroy) == null ? void 0 : _a.call(this);
   }
   createElement(name, namespace) {
     return this.delegate.createElement(name, namespace);
@@ -3879,13 +3881,14 @@ var AnimationRendererFactory = class {
     this._rendererCache = /* @__PURE__ */ new Map();
     this._cdRecurDepth = 0;
     engine.onRemovalComplete = (element, delegate2) => {
-      delegate2?.removeChild(null, element);
+      delegate2 == null ? void 0 : delegate2.removeChild(null, element);
     };
   }
   createRenderer(hostElement, type) {
+    var _a;
     const EMPTY_NAMESPACE_ID = "";
     const delegate = this.delegate.createRenderer(hostElement, type);
-    if (!hostElement || !type?.data?.["animation"]) {
+    if (!hostElement || !((_a = type == null ? void 0 : type.data) == null ? void 0 : _a["animation"])) {
       const cache = this._rendererCache;
       let renderer = cache.get(delegate);
       if (!renderer) {
@@ -3959,7 +3962,7 @@ var AnimationRendererFactory = class {
 };
 
 // node_modules/@angular/platform-browser/fesm2022/animations.mjs
-var InjectableAnimationEngine = class _InjectableAnimationEngine extends AnimationEngine {
+var _InjectableAnimationEngine = class _InjectableAnimationEngine extends AnimationEngine {
   // The `ApplicationRef` is injected here explicitly to force the dependency ordering.
   // Since the `ApplicationRef` should be created earlier before the `AnimationEngine`, they
   // both have `ngOnDestroy` hooks and `flush()` must be called after all views are destroyed.
@@ -3969,18 +3972,15 @@ var InjectableAnimationEngine = class _InjectableAnimationEngine extends Animati
   ngOnDestroy() {
     this.flush();
   }
-  static {
-    this.ɵfac = function InjectableAnimationEngine_Factory(__ngFactoryType__) {
-      return new (__ngFactoryType__ || _InjectableAnimationEngine)(ɵɵinject(DOCUMENT), ɵɵinject(AnimationDriver), ɵɵinject(AnimationStyleNormalizer));
-    };
-  }
-  static {
-    this.ɵprov = ɵɵdefineInjectable({
-      token: _InjectableAnimationEngine,
-      factory: _InjectableAnimationEngine.ɵfac
-    });
-  }
 };
+_InjectableAnimationEngine.ɵfac = function InjectableAnimationEngine_Factory(__ngFactoryType__) {
+  return new (__ngFactoryType__ || _InjectableAnimationEngine)(ɵɵinject(DOCUMENT), ɵɵinject(AnimationDriver), ɵɵinject(AnimationStyleNormalizer));
+};
+_InjectableAnimationEngine.ɵprov = ɵɵdefineInjectable({
+  token: _InjectableAnimationEngine,
+  factory: _InjectableAnimationEngine.ɵfac
+});
+var InjectableAnimationEngine = _InjectableAnimationEngine;
 (() => {
   (typeof ngDevMode === "undefined" || ngDevMode) && setClassMetadata(InjectableAnimationEngine, [{
     type: Injectable
@@ -4027,7 +4027,7 @@ var BROWSER_NOOP_ANIMATIONS_PROVIDERS = [{
   provide: ANIMATION_MODULE_TYPE,
   useValue: "NoopAnimations"
 }, ...SHARED_ANIMATION_PROVIDERS];
-var BrowserAnimationsModule = class _BrowserAnimationsModule {
+var _BrowserAnimationsModule = class _BrowserAnimationsModule {
   /**
    * Configures the module based on the specified object.
    *
@@ -4050,24 +4050,19 @@ var BrowserAnimationsModule = class _BrowserAnimationsModule {
       providers: config.disableAnimations ? BROWSER_NOOP_ANIMATIONS_PROVIDERS : BROWSER_ANIMATIONS_PROVIDERS
     };
   }
-  static {
-    this.ɵfac = function BrowserAnimationsModule_Factory(__ngFactoryType__) {
-      return new (__ngFactoryType__ || _BrowserAnimationsModule)();
-    };
-  }
-  static {
-    this.ɵmod = ɵɵdefineNgModule({
-      type: _BrowserAnimationsModule,
-      exports: [BrowserModule]
-    });
-  }
-  static {
-    this.ɵinj = ɵɵdefineInjector({
-      providers: BROWSER_ANIMATIONS_PROVIDERS,
-      imports: [BrowserModule]
-    });
-  }
 };
+_BrowserAnimationsModule.ɵfac = function BrowserAnimationsModule_Factory(__ngFactoryType__) {
+  return new (__ngFactoryType__ || _BrowserAnimationsModule)();
+};
+_BrowserAnimationsModule.ɵmod = ɵɵdefineNgModule({
+  type: _BrowserAnimationsModule,
+  exports: [BrowserModule]
+});
+_BrowserAnimationsModule.ɵinj = ɵɵdefineInjector({
+  providers: BROWSER_ANIMATIONS_PROVIDERS,
+  imports: [BrowserModule]
+});
+var BrowserAnimationsModule = _BrowserAnimationsModule;
 (() => {
   (typeof ngDevMode === "undefined" || ngDevMode) && setClassMetadata(BrowserAnimationsModule, [{
     type: NgModule,
@@ -4081,25 +4076,20 @@ function provideAnimations() {
   performanceMarkFeature("NgEagerAnimations");
   return [...BROWSER_ANIMATIONS_PROVIDERS];
 }
-var NoopAnimationsModule = class _NoopAnimationsModule {
-  static {
-    this.ɵfac = function NoopAnimationsModule_Factory(__ngFactoryType__) {
-      return new (__ngFactoryType__ || _NoopAnimationsModule)();
-    };
-  }
-  static {
-    this.ɵmod = ɵɵdefineNgModule({
-      type: _NoopAnimationsModule,
-      exports: [BrowserModule]
-    });
-  }
-  static {
-    this.ɵinj = ɵɵdefineInjector({
-      providers: BROWSER_NOOP_ANIMATIONS_PROVIDERS,
-      imports: [BrowserModule]
-    });
-  }
+var _NoopAnimationsModule = class _NoopAnimationsModule {
 };
+_NoopAnimationsModule.ɵfac = function NoopAnimationsModule_Factory(__ngFactoryType__) {
+  return new (__ngFactoryType__ || _NoopAnimationsModule)();
+};
+_NoopAnimationsModule.ɵmod = ɵɵdefineNgModule({
+  type: _NoopAnimationsModule,
+  exports: [BrowserModule]
+});
+_NoopAnimationsModule.ɵinj = ɵɵdefineInjector({
+  providers: BROWSER_NOOP_ANIMATIONS_PROVIDERS,
+  imports: [BrowserModule]
+});
+var NoopAnimationsModule = _NoopAnimationsModule;
 (() => {
   (typeof ngDevMode === "undefined" || ngDevMode) && setClassMetadata(NoopAnimationsModule, [{
     type: NgModule,

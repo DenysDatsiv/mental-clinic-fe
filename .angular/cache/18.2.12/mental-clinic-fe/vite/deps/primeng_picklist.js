@@ -8,51 +8,51 @@ import {
   DragDropModule,
   moveItemInArray,
   transferArrayItem
-} from "./chunk-57IZJZDH.js";
+} from "./chunk-IEZ2XQR2.js";
 import {
   AngleDoubleLeftIcon,
   AngleDoubleRightIcon,
   AngleLeftIcon
-} from "./chunk-CHTNHP53.js";
+} from "./chunk-S6JNWQPB.js";
 import {
   AngleUpIcon
-} from "./chunk-F7LFBQGX.js";
+} from "./chunk-74FYITZT.js";
 import {
   AngleDownIcon
-} from "./chunk-S2DODU67.js";
+} from "./chunk-GE47GKJX.js";
 import {
   SearchIcon
-} from "./chunk-26A77ZYK.js";
+} from "./chunk-ZVYGKXDY.js";
 import {
   HomeIcon
-} from "./chunk-G7TYVBBV.js";
+} from "./chunk-MW4R55KO.js";
 import {
   AngleRightIcon
-} from "./chunk-KFVC45AI.js";
+} from "./chunk-BGJ2FQDY.js";
 import {
   ButtonDirective,
   ButtonModule
-} from "./chunk-7TN6NS6B.js";
-import "./chunk-PCVGMHYY.js";
+} from "./chunk-ZLJ4QAH5.js";
+import "./chunk-VYCWYYRS.js";
 import {
   Ripple,
   RippleModule
-} from "./chunk-QN24C4B3.js";
-import "./chunk-32JR77BM.js";
-import "./chunk-PXWZN6FU.js";
+} from "./chunk-MUJBADSC.js";
+import "./chunk-LND2F6FW.js";
+import "./chunk-BJLZ3T2F.js";
 import {
   FilterService,
   PrimeNGConfig,
   PrimeTemplate,
   SharedModule
-} from "./chunk-TQSVMJ6K.js";
+} from "./chunk-ZROJCIWL.js";
 import {
   ObjectUtils,
   UniqueComponentId
-} from "./chunk-3OF44R55.js";
+} from "./chunk-U3NLM53U.js";
 import {
   DomHandler
-} from "./chunk-BUGEQH7Q.js";
+} from "./chunk-LB42WWNC.js";
 import {
   CommonModule,
   DOCUMENT,
@@ -62,7 +62,7 @@ import {
   NgStyle,
   NgTemplateOutlet,
   isPlatformBrowser
-} from "./chunk-UBZYO7FG.js";
+} from "./chunk-KUZ63KOD.js";
 import {
   ChangeDetectionStrategy,
   ChangeDetectorRef,
@@ -112,11 +112,13 @@ import {
   ɵɵtext,
   ɵɵtextInterpolate,
   ɵɵviewQuery
-} from "./chunk-ZI2Q76R4.js";
-import "./chunk-5OPE3T2R.js";
+} from "./chunk-R75KKECJ.js";
 import "./chunk-4N4GOYJH.js";
+import "./chunk-5OPE3T2R.js";
 import "./chunk-FHTVLBLO.js";
-import "./chunk-3OV72XIM.js";
+import {
+  __publicField
+} from "./chunk-IJZFAMY6.js";
 
 // node_modules/primeng/fesm2022/primeng-picklist.mjs
 var _c0 = ["sourcelist"];
@@ -995,199 +997,333 @@ function PickList_div_29_Template(rf, ctx) {
     ɵɵproperty("ngTemplateOutlet", ctx_r2.moveBottomIconTemplate);
   }
 }
-var PickList = class _PickList {
-  document;
-  platformId;
-  renderer;
-  el;
-  cd;
-  filterService;
-  config;
-  /**
-   * An array of objects for the source list.
-   * @group Props
-   */
-  source;
-  /**
-   * An array of objects for the target list.
-   * @group Props
-   */
-  target;
-  /**
-   * Text for the source list caption
-   * @group Props
-   */
-  sourceHeader;
-  /**
-   * Index of the element in tabbing order.
-   * @group Props
-   */
-  tabindex = 0;
-  /**
-   * Defines a string that labels the move to right button for accessibility.
-   * @group Props
-   */
-  rightButtonAriaLabel;
-  /**
-   * Defines a string that labels the move to left button for accessibility.
-   * @group Props
-   */
-  leftButtonAriaLabel;
-  /**
-   * Defines a string that labels the move to all right button for accessibility.
-   * @group Props
-   */
-  allRightButtonAriaLabel;
-  /**
-   * Defines a string that labels the move to all left button for accessibility.
-   * @group Props
-   */
-  allLeftButtonAriaLabel;
-  /**
-   * Defines a string that labels the move to up button for accessibility.
-   * @group Props
-   */
-  upButtonAriaLabel;
-  /**
-   * Defines a string that labels the move to down button for accessibility.
-   * @group Props
-   */
-  downButtonAriaLabel;
-  /**
-   * Defines a string that labels the move to top button for accessibility.
-   * @group Props
-   */
-  topButtonAriaLabel;
-  /**
-   * Defines a string that labels the move to bottom button for accessibility.
-   * @group Props
-   */
-  bottomButtonAriaLabel;
-  /**
-   * Text for the target list caption
-   * @group Props
-   */
-  targetHeader;
-  /**
-   * When enabled orderlist adjusts its controls based on screen size.
-   * @group Props
-   */
-  responsive;
-  /**
-   * When specified displays an input field to filter the items on keyup and decides which field to search (Accepts multiple fields with a comma).
-   * @group Props
-   */
-  filterBy;
-  /**
-   * Locale to use in filtering. The default locale is the host environment's current locale.
-   * @group Props
-   */
-  filterLocale;
-  /**
-   * Function to optimize the dom operations by delegating to ngForTrackBy, default algorithm checks for object identity. Use sourceTrackBy or targetTrackBy in case different algorithms are needed per list.
-   * @group Props
-   */
-  trackBy = (index, item) => item;
-  /**
-   * Function to optimize the dom operations by delegating to ngForTrackBy in source list, default algorithm checks for object identity.
-   * @group Props
-   */
-  sourceTrackBy;
-  /**
-   * Function to optimize the dom operations by delegating to ngForTrackBy in target list, default algorithm checks for object identity.
-   * @group Props
-   */
-  targetTrackBy;
-  /**
-   * Whether to show filter input for source list when filterBy is enabled.
-   * @group Props
-   */
-  showSourceFilter = true;
-  /**
-   * Whether to show filter input for target list when filterBy is enabled.
-   * @group Props
-   */
-  showTargetFilter = true;
-  /**
-   * Defines how multiple items can be selected, when true metaKey needs to be pressed to select or unselect an item and when set to false selection of each item can be toggled individually. On touch enabled devices, metaKeySelection is turned off automatically.
-   * @group Props
-   */
-  metaKeySelection = false;
-  /**
-   * Whether to enable dragdrop based reordering.
-   * @group Props
-   */
-  dragdrop = false;
-  /**
-   * Inline style of the component.
-   * @group Props
-   */
-  style;
-  /**
-   * Style class of the component.
-   * @group Props
-   */
-  styleClass;
-  /**
-   * Inline style of the source list element.
-   * @group Props
-   */
-  sourceStyle;
-  /**
-   * Inline style of the target list element.
-   * @group Props
-   */
-  targetStyle;
-  /**
-   * Whether to show buttons of source list.
-   * @group Props
-   */
-  showSourceControls = true;
-  /**
-   * Whether to show buttons of target list.
-   * @group Props
-   */
-  showTargetControls = true;
-  /**
-   * Placeholder text on source filter input.
-   * @group Props
-   */
-  sourceFilterPlaceholder;
-  /**
-   * Placeholder text on target filter input.
-   * @group Props
-   */
-  targetFilterPlaceholder;
-  /**
-   * When present, it specifies that the component should be disabled.
-   * @group Props
-   */
-  disabled = false;
-  /**
-   * Defines a string that labels the filter input of source list.
-   * @group Props
-   */
-  ariaSourceFilterLabel;
-  /**
-   * Defines a string that labels the filter input of target list.
-   * @group Props
-   */
-  ariaTargetFilterLabel;
-  /**
-   * Defines how the items are filtered.
-   * @group Props
-   */
-  filterMatchMode = "contains";
-  /**
-   * Whether to displays rows with alternating colors.
-   * @group Props
-   */
-  stripedRows;
-  /**
-   * Keeps selection on the transfer list.
-   * @group Props
-   */
-  keepSelection = false;
+var _PickList = class _PickList {
+  constructor(document, platformId, renderer, el, cd, filterService, config) {
+    __publicField(this, "document");
+    __publicField(this, "platformId");
+    __publicField(this, "renderer");
+    __publicField(this, "el");
+    __publicField(this, "cd");
+    __publicField(this, "filterService");
+    __publicField(this, "config");
+    /**
+     * An array of objects for the source list.
+     * @group Props
+     */
+    __publicField(this, "source");
+    /**
+     * An array of objects for the target list.
+     * @group Props
+     */
+    __publicField(this, "target");
+    /**
+     * Text for the source list caption
+     * @group Props
+     */
+    __publicField(this, "sourceHeader");
+    /**
+     * Index of the element in tabbing order.
+     * @group Props
+     */
+    __publicField(this, "tabindex", 0);
+    /**
+     * Defines a string that labels the move to right button for accessibility.
+     * @group Props
+     */
+    __publicField(this, "rightButtonAriaLabel");
+    /**
+     * Defines a string that labels the move to left button for accessibility.
+     * @group Props
+     */
+    __publicField(this, "leftButtonAriaLabel");
+    /**
+     * Defines a string that labels the move to all right button for accessibility.
+     * @group Props
+     */
+    __publicField(this, "allRightButtonAriaLabel");
+    /**
+     * Defines a string that labels the move to all left button for accessibility.
+     * @group Props
+     */
+    __publicField(this, "allLeftButtonAriaLabel");
+    /**
+     * Defines a string that labels the move to up button for accessibility.
+     * @group Props
+     */
+    __publicField(this, "upButtonAriaLabel");
+    /**
+     * Defines a string that labels the move to down button for accessibility.
+     * @group Props
+     */
+    __publicField(this, "downButtonAriaLabel");
+    /**
+     * Defines a string that labels the move to top button for accessibility.
+     * @group Props
+     */
+    __publicField(this, "topButtonAriaLabel");
+    /**
+     * Defines a string that labels the move to bottom button for accessibility.
+     * @group Props
+     */
+    __publicField(this, "bottomButtonAriaLabel");
+    /**
+     * Text for the target list caption
+     * @group Props
+     */
+    __publicField(this, "targetHeader");
+    /**
+     * When enabled orderlist adjusts its controls based on screen size.
+     * @group Props
+     */
+    __publicField(this, "responsive");
+    /**
+     * When specified displays an input field to filter the items on keyup and decides which field to search (Accepts multiple fields with a comma).
+     * @group Props
+     */
+    __publicField(this, "filterBy");
+    /**
+     * Locale to use in filtering. The default locale is the host environment's current locale.
+     * @group Props
+     */
+    __publicField(this, "filterLocale");
+    /**
+     * Function to optimize the dom operations by delegating to ngForTrackBy, default algorithm checks for object identity. Use sourceTrackBy or targetTrackBy in case different algorithms are needed per list.
+     * @group Props
+     */
+    __publicField(this, "trackBy", (index, item) => item);
+    /**
+     * Function to optimize the dom operations by delegating to ngForTrackBy in source list, default algorithm checks for object identity.
+     * @group Props
+     */
+    __publicField(this, "sourceTrackBy");
+    /**
+     * Function to optimize the dom operations by delegating to ngForTrackBy in target list, default algorithm checks for object identity.
+     * @group Props
+     */
+    __publicField(this, "targetTrackBy");
+    /**
+     * Whether to show filter input for source list when filterBy is enabled.
+     * @group Props
+     */
+    __publicField(this, "showSourceFilter", true);
+    /**
+     * Whether to show filter input for target list when filterBy is enabled.
+     * @group Props
+     */
+    __publicField(this, "showTargetFilter", true);
+    /**
+     * Defines how multiple items can be selected, when true metaKey needs to be pressed to select or unselect an item and when set to false selection of each item can be toggled individually. On touch enabled devices, metaKeySelection is turned off automatically.
+     * @group Props
+     */
+    __publicField(this, "metaKeySelection", false);
+    /**
+     * Whether to enable dragdrop based reordering.
+     * @group Props
+     */
+    __publicField(this, "dragdrop", false);
+    /**
+     * Inline style of the component.
+     * @group Props
+     */
+    __publicField(this, "style");
+    /**
+     * Style class of the component.
+     * @group Props
+     */
+    __publicField(this, "styleClass");
+    /**
+     * Inline style of the source list element.
+     * @group Props
+     */
+    __publicField(this, "sourceStyle");
+    /**
+     * Inline style of the target list element.
+     * @group Props
+     */
+    __publicField(this, "targetStyle");
+    /**
+     * Whether to show buttons of source list.
+     * @group Props
+     */
+    __publicField(this, "showSourceControls", true);
+    /**
+     * Whether to show buttons of target list.
+     * @group Props
+     */
+    __publicField(this, "showTargetControls", true);
+    /**
+     * Placeholder text on source filter input.
+     * @group Props
+     */
+    __publicField(this, "sourceFilterPlaceholder");
+    /**
+     * Placeholder text on target filter input.
+     * @group Props
+     */
+    __publicField(this, "targetFilterPlaceholder");
+    /**
+     * When present, it specifies that the component should be disabled.
+     * @group Props
+     */
+    __publicField(this, "disabled", false);
+    /**
+     * Defines a string that labels the filter input of source list.
+     * @group Props
+     */
+    __publicField(this, "ariaSourceFilterLabel");
+    /**
+     * Defines a string that labels the filter input of target list.
+     * @group Props
+     */
+    __publicField(this, "ariaTargetFilterLabel");
+    /**
+     * Defines how the items are filtered.
+     * @group Props
+     */
+    __publicField(this, "filterMatchMode", "contains");
+    /**
+     * Whether to displays rows with alternating colors.
+     * @group Props
+     */
+    __publicField(this, "stripedRows");
+    /**
+     * Keeps selection on the transfer list.
+     * @group Props
+     */
+    __publicField(this, "keepSelection", false);
+    /**
+     * Callback to invoke when items are moved from target to source.
+     * @param {PickListMoveToSourceEvent} event - Custom move to source event.
+     * @group Emits
+     */
+    __publicField(this, "onMoveToSource", new EventEmitter());
+    /**
+     * Callback to invoke when all items are moved from target to source.
+     * @param {PickListMoveAllToSourceEvent} event - Custom move all to source event.
+     * @group Emits
+     */
+    __publicField(this, "onMoveAllToSource", new EventEmitter());
+    /**
+     * Callback to invoke when all items are moved from source to target.
+     * @param {PickListMoveAllToTargetEvent} event - Custom move all to target event.
+     * @group Emits
+     */
+    __publicField(this, "onMoveAllToTarget", new EventEmitter());
+    /**
+     * Callback to invoke when items are moved from source to target.
+     * @param {PickListMoveToTargetEvent} event - Custom move to target event.
+     * @group Emits
+     */
+    __publicField(this, "onMoveToTarget", new EventEmitter());
+    /**
+     * Callback to invoke when items are reordered within source list.
+     * @param {PickListSourceReorderEvent} event - Custom source reorder event.
+     * @group Emits
+     */
+    __publicField(this, "onSourceReorder", new EventEmitter());
+    /**
+     * Callback to invoke when items are reordered within target list.
+     * @param {PickListTargetReorderEvent} event - Custom target reorder event.
+     * @group Emits
+     */
+    __publicField(this, "onTargetReorder", new EventEmitter());
+    /**
+     * Callback to invoke when items are selected within source list.
+     * @param {PickListSourceSelectEvent} event - Custom source select event.
+     * @group Emits
+     */
+    __publicField(this, "onSourceSelect", new EventEmitter());
+    /**
+     * Callback to invoke when items are selected within target list.
+     * @param {PickListTargetSelectEvent} event - Custom target select event.
+     * @group Emits
+     */
+    __publicField(this, "onTargetSelect", new EventEmitter());
+    /**
+     * Callback to invoke when the source list is filtered
+     * @param {PickListSourceFilterEvent} event - Custom source filter event.
+     * @group Emits
+     */
+    __publicField(this, "onSourceFilter", new EventEmitter());
+    /**
+     * Callback to invoke when the target list is filtered
+     * @param {PickListTargetFilterEvent} event - Custom target filter event.
+     * @group Emits
+     */
+    __publicField(this, "onTargetFilter", new EventEmitter());
+    /**
+     * Callback to invoke when the list is focused
+     * @param {Event} event - Browser event.
+     * @group Emits
+     */
+    __publicField(this, "onFocus", new EventEmitter());
+    /**
+     * Callback to invoke when the list is blurred
+     * @param {Event} event - Browser event.
+     * @group Emits
+     */
+    __publicField(this, "onBlur", new EventEmitter());
+    __publicField(this, "listViewSourceChild");
+    __publicField(this, "listViewTargetChild");
+    __publicField(this, "sourceFilterViewChild");
+    __publicField(this, "targetFilterViewChild");
+    __publicField(this, "templates");
+    __publicField(this, "_breakpoint", "960px");
+    __publicField(this, "itemTemplate");
+    __publicField(this, "moveTopIconTemplate");
+    __publicField(this, "moveUpIconTemplate");
+    __publicField(this, "moveDownIconTemplate");
+    __publicField(this, "moveBottomIconTemplate");
+    __publicField(this, "moveToTargetIconTemplate");
+    __publicField(this, "moveAllToTargetIconTemplate");
+    __publicField(this, "moveToSourceIconTemplate");
+    __publicField(this, "moveAllToSourceIconTemplate");
+    __publicField(this, "targetFilterIconTemplate");
+    __publicField(this, "sourceFilterIconTemplate");
+    __publicField(this, "visibleOptionsSource");
+    __publicField(this, "visibleOptionsTarget");
+    __publicField(this, "selectedItemsSource", []);
+    __publicField(this, "selectedItemsTarget", []);
+    __publicField(this, "reorderedListElement");
+    __publicField(this, "movedUp");
+    __publicField(this, "movedDown");
+    __publicField(this, "itemTouched");
+    __publicField(this, "styleElement");
+    __publicField(this, "id", UniqueComponentId());
+    __publicField(this, "filterValueSource");
+    __publicField(this, "filterValueTarget");
+    __publicField(this, "fromListType");
+    __publicField(this, "emptyMessageSourceTemplate");
+    __publicField(this, "emptyFilterMessageSourceTemplate");
+    __publicField(this, "emptyMessageTargetTemplate");
+    __publicField(this, "emptyFilterMessageTargetTemplate");
+    __publicField(this, "sourceHeaderTemplate");
+    __publicField(this, "targetHeaderTemplate");
+    __publicField(this, "sourceFilterTemplate");
+    __publicField(this, "targetFilterTemplate");
+    __publicField(this, "sourceFilterOptions");
+    __publicField(this, "targetFilterOptions");
+    __publicField(this, "SOURCE_LIST", -1);
+    __publicField(this, "TARGET_LIST", 1);
+    __publicField(this, "window");
+    __publicField(this, "media");
+    __publicField(this, "viewChanged");
+    __publicField(this, "focusedOptionIndex", -1);
+    __publicField(this, "focusedOption");
+    __publicField(this, "focused", {
+      sourceList: false,
+      targetList: false
+    });
+    __publicField(this, "mediaChangeListener");
+    this.document = document;
+    this.platformId = platformId;
+    this.renderer = renderer;
+    this.el = el;
+    this.cd = cd;
+    this.filterService = filterService;
+    this.config = config;
+    this.window = this.document.defaultView;
+  }
   /**
    * Indicates the width of the screen at which the component should change its behavior.
    * @group Props
@@ -1204,83 +1340,6 @@ var PickList = class _PickList {
       }
     }
   }
-  /**
-   * Callback to invoke when items are moved from target to source.
-   * @param {PickListMoveToSourceEvent} event - Custom move to source event.
-   * @group Emits
-   */
-  onMoveToSource = new EventEmitter();
-  /**
-   * Callback to invoke when all items are moved from target to source.
-   * @param {PickListMoveAllToSourceEvent} event - Custom move all to source event.
-   * @group Emits
-   */
-  onMoveAllToSource = new EventEmitter();
-  /**
-   * Callback to invoke when all items are moved from source to target.
-   * @param {PickListMoveAllToTargetEvent} event - Custom move all to target event.
-   * @group Emits
-   */
-  onMoveAllToTarget = new EventEmitter();
-  /**
-   * Callback to invoke when items are moved from source to target.
-   * @param {PickListMoveToTargetEvent} event - Custom move to target event.
-   * @group Emits
-   */
-  onMoveToTarget = new EventEmitter();
-  /**
-   * Callback to invoke when items are reordered within source list.
-   * @param {PickListSourceReorderEvent} event - Custom source reorder event.
-   * @group Emits
-   */
-  onSourceReorder = new EventEmitter();
-  /**
-   * Callback to invoke when items are reordered within target list.
-   * @param {PickListTargetReorderEvent} event - Custom target reorder event.
-   * @group Emits
-   */
-  onTargetReorder = new EventEmitter();
-  /**
-   * Callback to invoke when items are selected within source list.
-   * @param {PickListSourceSelectEvent} event - Custom source select event.
-   * @group Emits
-   */
-  onSourceSelect = new EventEmitter();
-  /**
-   * Callback to invoke when items are selected within target list.
-   * @param {PickListTargetSelectEvent} event - Custom target select event.
-   * @group Emits
-   */
-  onTargetSelect = new EventEmitter();
-  /**
-   * Callback to invoke when the source list is filtered
-   * @param {PickListSourceFilterEvent} event - Custom source filter event.
-   * @group Emits
-   */
-  onSourceFilter = new EventEmitter();
-  /**
-   * Callback to invoke when the target list is filtered
-   * @param {PickListTargetFilterEvent} event - Custom target filter event.
-   * @group Emits
-   */
-  onTargetFilter = new EventEmitter();
-  /**
-   * Callback to invoke when the list is focused
-   * @param {Event} event - Browser event.
-   * @group Emits
-   */
-  onFocus = new EventEmitter();
-  /**
-   * Callback to invoke when the list is blurred
-   * @param {Event} event - Browser event.
-   * @group Emits
-   */
-  onBlur = new EventEmitter();
-  listViewSourceChild;
-  listViewTargetChild;
-  sourceFilterViewChild;
-  targetFilterViewChild;
-  templates;
   get moveUpAriaLabel() {
     return this.upButtonAriaLabel ? this.upButtonAriaLabel : this.config.translation.aria ? this.config.translation.aria.moveUp : void 0;
   }
@@ -1313,63 +1372,6 @@ var PickList = class _PickList {
   }
   get focusedOptionId() {
     return this.focusedOptionIndex !== -1 ? this.focusedOptionIndex : null;
-  }
-  _breakpoint = "960px";
-  itemTemplate;
-  moveTopIconTemplate;
-  moveUpIconTemplate;
-  moveDownIconTemplate;
-  moveBottomIconTemplate;
-  moveToTargetIconTemplate;
-  moveAllToTargetIconTemplate;
-  moveToSourceIconTemplate;
-  moveAllToSourceIconTemplate;
-  targetFilterIconTemplate;
-  sourceFilterIconTemplate;
-  visibleOptionsSource;
-  visibleOptionsTarget;
-  selectedItemsSource = [];
-  selectedItemsTarget = [];
-  reorderedListElement;
-  movedUp;
-  movedDown;
-  itemTouched;
-  styleElement;
-  id = UniqueComponentId();
-  filterValueSource;
-  filterValueTarget;
-  fromListType;
-  emptyMessageSourceTemplate;
-  emptyFilterMessageSourceTemplate;
-  emptyMessageTargetTemplate;
-  emptyFilterMessageTargetTemplate;
-  sourceHeaderTemplate;
-  targetHeaderTemplate;
-  sourceFilterTemplate;
-  targetFilterTemplate;
-  sourceFilterOptions;
-  targetFilterOptions;
-  SOURCE_LIST = -1;
-  TARGET_LIST = 1;
-  window;
-  media;
-  viewChanged;
-  focusedOptionIndex = -1;
-  focusedOption;
-  focused = {
-    sourceList: false,
-    targetList: false
-  };
-  mediaChangeListener;
-  constructor(document, platformId, renderer, el, cd, filterService, config) {
-    this.document = document;
-    this.platformId = platformId;
-    this.renderer = renderer;
-    this.el = el;
-    this.cd = cd;
-    this.filterService = filterService;
-    this.config = config;
-    this.window = this.document.defaultView;
   }
   ngOnInit() {
     if (this.responsive) {
@@ -1657,6 +1659,7 @@ var PickList = class _PickList {
     }
   }
   moveRight() {
+    var _a, _b, _c;
     if (this.selectedItemsSource && this.selectedItemsSource.length) {
       const selectedItemsCopy = [...this.selectedItemsSource];
       for (let i = 0; i < selectedItemsCopy.length; i++) {
@@ -1664,9 +1667,9 @@ var PickList = class _PickList {
         if (ObjectUtils.findIndexInList(selectedItem, this.target) == -1) {
           let indexInSource = ObjectUtils.findIndexInList(selectedItem, this.source);
           if (indexInSource !== -1) {
-            this.target?.push(this.source?.splice(indexInSource, 1)[0]);
+            (_b = this.target) == null ? void 0 : _b.push((_a = this.source) == null ? void 0 : _a.splice(indexInSource, 1)[0]);
           }
-          if (this.visibleOptionsSource?.includes(selectedItem)) {
+          if ((_c = this.visibleOptionsSource) == null ? void 0 : _c.includes(selectedItem)) {
             this.visibleOptionsSource.splice(ObjectUtils.findIndexInList(selectedItem, this.visibleOptionsSource), 1);
           }
         }
@@ -1684,12 +1687,13 @@ var PickList = class _PickList {
     }
   }
   moveAllRight() {
+    var _a;
     if (this.source) {
       let movedItems = [];
       for (let i = 0; i < this.source.length; i++) {
         if (this.isItemVisible(this.source[i], this.SOURCE_LIST)) {
           let removedItem = this.source.splice(i, 1)[0];
-          this.target?.push(removedItem);
+          (_a = this.target) == null ? void 0 : _a.push(removedItem);
           movedItems.push(removedItem);
           i--;
         }
@@ -1708,6 +1712,7 @@ var PickList = class _PickList {
     }
   }
   moveLeft() {
+    var _a, _b, _c;
     if (this.selectedItemsTarget && this.selectedItemsTarget.length) {
       const selectedItemsCopy = [...this.selectedItemsTarget];
       for (let i = 0; i < selectedItemsCopy.length; i++) {
@@ -1715,9 +1720,9 @@ var PickList = class _PickList {
         if (ObjectUtils.findIndexInList(selectedItem, this.source) == -1) {
           let indexInTarget = ObjectUtils.findIndexInList(selectedItem, this.target);
           if (indexInTarget !== -1) {
-            this.source?.push(this.target?.splice(indexInTarget, 1)[0]);
+            (_b = this.source) == null ? void 0 : _b.push((_a = this.target) == null ? void 0 : _a.splice(indexInTarget, 1)[0]);
           }
-          if (this.visibleOptionsTarget?.includes(selectedItem)) {
+          if ((_c = this.visibleOptionsTarget) == null ? void 0 : _c.includes(selectedItem)) {
             this.visibleOptionsTarget.splice(ObjectUtils.findIndexInList(selectedItem, this.visibleOptionsTarget), 1)[0];
           }
         }
@@ -1735,12 +1740,13 @@ var PickList = class _PickList {
     }
   }
   moveAllLeft() {
+    var _a;
     if (this.target) {
       let movedItems = [];
       for (let i = 0; i < this.target.length; i++) {
         if (this.isItemVisible(this.target[i], this.TARGET_LIST)) {
           let removedItem = this.target.splice(i, 1)[0];
-          this.source?.push(removedItem);
+          (_a = this.source) == null ? void 0 : _a.push(removedItem);
           movedItems.push(removedItem);
           i--;
         }
@@ -1840,7 +1846,8 @@ var PickList = class _PickList {
     this.onBlur.emit(event);
   }
   getListElement(listType) {
-    return listType === this.SOURCE_LIST ? this.listViewSourceChild?.nativeElement : this.listViewTargetChild?.nativeElement;
+    var _a, _b;
+    return listType === this.SOURCE_LIST ? (_a = this.listViewSourceChild) == null ? void 0 : _a.nativeElement : (_b = this.listViewTargetChild) == null ? void 0 : _b.nativeElement;
   }
   getListItems(listType) {
     let listElemet = this.getListElement(listType);
@@ -1914,7 +1921,7 @@ var PickList = class _PickList {
   }
   changeFocusedOptionIndex(index, listType) {
     const items = this.getListItems(listType);
-    if (items?.length > 0) {
+    if ((items == null ? void 0 : items.length) > 0) {
       let order = index >= items.length ? items.length - 1 : index < 0 ? 0 : index;
       this.focusedOptionIndex = items[order].getAttribute("id");
       this.focusedOption = this.getFocusedOption(order, listType);
@@ -1922,7 +1929,7 @@ var PickList = class _PickList {
     }
   }
   scrollInView(id, listType) {
-    const element = DomHandler.findSingle(this.getListElement(listType), `li[id="${id}"]`);
+    const element = DomHandler.findSingle(this.getListElement(listType), 'li[id="'.concat(id, '"]'));
     if (element) {
       element.scrollIntoView && element.scrollIntoView({
         block: "nearest",
@@ -2045,7 +2052,7 @@ var PickList = class _PickList {
   }
   initMedia() {
     if (isPlatformBrowser(this.platformId)) {
-      this.media = this.window.matchMedia(`(max-width: ${this.breakpoint})`);
+      this.media = this.window.matchMedia("(max-width: ".concat(this.breakpoint, ")"));
       this.viewChanged = this.media.matches;
       this.bindMediaChangeListener();
     }
@@ -2068,33 +2075,15 @@ var PickList = class _PickList {
     }
   }
   createStyle() {
+    var _a, _b;
     if (isPlatformBrowser(this.platformId)) {
       if (!this.styleElement) {
         this.renderer.setAttribute(this.el.nativeElement.children[0], this.id, "");
         this.styleElement = this.renderer.createElement("style");
         this.renderer.setAttribute(this.styleElement, "type", "text/css");
-        DomHandler.setAttribute(this.styleElement, "nonce", this.config?.csp()?.nonce);
+        DomHandler.setAttribute(this.styleElement, "nonce", (_b = (_a = this.config) == null ? void 0 : _a.csp()) == null ? void 0 : _b.nonce);
         this.renderer.appendChild(this.document.head, this.styleElement);
-        let innerHTML = `
-                @media screen and (max-width: ${this.breakpoint}) {
-                    .p-picklist[${this.id}] {
-                        flex-direction: column;
-                    }
-
-                    .p-picklist[${this.id}] .p-picklist-buttons {
-                        padding: var(--content-padding);
-                        flex-direction: row;
-                    }
-
-                    .p-picklist[${this.id}] .p-picklist-buttons .p-button {
-                        margin-right: var(--inline-spacing);
-                        margin-bottom: 0;
-                    }
-
-                    .p-picklist[${this.id}] .p-picklist-buttons .p-button:last-child {
-                        margin-right: 0;
-                    }
-                }`;
+        let innerHTML = "\n                @media screen and (max-width: ".concat(this.breakpoint, ") {\n                    .p-picklist[").concat(this.id, "] {\n                        flex-direction: column;\n                    }\n\n                    .p-picklist[").concat(this.id, "] .p-picklist-buttons {\n                        padding: var(--content-padding);\n                        flex-direction: row;\n                    }\n\n                    .p-picklist[").concat(this.id, "] .p-picklist-buttons .p-button {\n                        margin-right: var(--inline-spacing);\n                        margin-bottom: 0;\n                    }\n\n                    .p-picklist[").concat(this.id, "] .p-picklist-buttons .p-button:last-child {\n                        margin-right: 0;\n                    }\n                }");
         this.renderer.setProperty(this.styleElement, "innerHTML", innerHTML);
       }
     }
@@ -2125,550 +2114,253 @@ var PickList = class _PickList {
     if (this.styleElement) {
       this.renderer.removeChild(this.document.head, this.styleElement);
       this.styleElement = null;
-      ``;
+      "";
     }
   }
   ngOnDestroy() {
     this.destroyStyle();
     this.destroyMedia();
   }
-  static ɵfac = function PickList_Factory(__ngFactoryType__) {
-    return new (__ngFactoryType__ || _PickList)(ɵɵdirectiveInject(DOCUMENT), ɵɵdirectiveInject(PLATFORM_ID), ɵɵdirectiveInject(Renderer2), ɵɵdirectiveInject(ElementRef), ɵɵdirectiveInject(ChangeDetectorRef), ɵɵdirectiveInject(FilterService), ɵɵdirectiveInject(PrimeNGConfig));
-  };
-  static ɵcmp = ɵɵdefineComponent({
-    type: _PickList,
-    selectors: [["p-pickList"]],
-    contentQueries: function PickList_ContentQueries(rf, ctx, dirIndex) {
-      if (rf & 1) {
-        ɵɵcontentQuery(dirIndex, PrimeTemplate, 4);
-      }
-      if (rf & 2) {
-        let _t;
-        ɵɵqueryRefresh(_t = ɵɵloadQuery()) && (ctx.templates = _t);
-      }
-    },
-    viewQuery: function PickList_Query(rf, ctx) {
-      if (rf & 1) {
-        ɵɵviewQuery(_c0, 5);
-        ɵɵviewQuery(_c1, 5);
-        ɵɵviewQuery(_c2, 5);
-        ɵɵviewQuery(_c3, 5);
-      }
-      if (rf & 2) {
-        let _t;
-        ɵɵqueryRefresh(_t = ɵɵloadQuery()) && (ctx.listViewSourceChild = _t.first);
-        ɵɵqueryRefresh(_t = ɵɵloadQuery()) && (ctx.listViewTargetChild = _t.first);
-        ɵɵqueryRefresh(_t = ɵɵloadQuery()) && (ctx.sourceFilterViewChild = _t.first);
-        ɵɵqueryRefresh(_t = ɵɵloadQuery()) && (ctx.targetFilterViewChild = _t.first);
-      }
-    },
-    hostAttrs: [1, "p-element"],
-    inputs: {
-      source: "source",
-      target: "target",
-      sourceHeader: "sourceHeader",
-      tabindex: [2, "tabindex", "tabindex", numberAttribute],
-      rightButtonAriaLabel: "rightButtonAriaLabel",
-      leftButtonAriaLabel: "leftButtonAriaLabel",
-      allRightButtonAriaLabel: "allRightButtonAriaLabel",
-      allLeftButtonAriaLabel: "allLeftButtonAriaLabel",
-      upButtonAriaLabel: "upButtonAriaLabel",
-      downButtonAriaLabel: "downButtonAriaLabel",
-      topButtonAriaLabel: "topButtonAriaLabel",
-      bottomButtonAriaLabel: "bottomButtonAriaLabel",
-      targetHeader: "targetHeader",
-      responsive: [2, "responsive", "responsive", booleanAttribute],
-      filterBy: "filterBy",
-      filterLocale: "filterLocale",
-      trackBy: "trackBy",
-      sourceTrackBy: "sourceTrackBy",
-      targetTrackBy: "targetTrackBy",
-      showSourceFilter: [2, "showSourceFilter", "showSourceFilter", booleanAttribute],
-      showTargetFilter: [2, "showTargetFilter", "showTargetFilter", booleanAttribute],
-      metaKeySelection: [2, "metaKeySelection", "metaKeySelection", booleanAttribute],
-      dragdrop: [2, "dragdrop", "dragdrop", booleanAttribute],
-      style: "style",
-      styleClass: "styleClass",
-      sourceStyle: "sourceStyle",
-      targetStyle: "targetStyle",
-      showSourceControls: [2, "showSourceControls", "showSourceControls", booleanAttribute],
-      showTargetControls: [2, "showTargetControls", "showTargetControls", booleanAttribute],
-      sourceFilterPlaceholder: "sourceFilterPlaceholder",
-      targetFilterPlaceholder: "targetFilterPlaceholder",
-      disabled: [2, "disabled", "disabled", booleanAttribute],
-      ariaSourceFilterLabel: "ariaSourceFilterLabel",
-      ariaTargetFilterLabel: "ariaTargetFilterLabel",
-      filterMatchMode: "filterMatchMode",
-      stripedRows: [2, "stripedRows", "stripedRows", booleanAttribute],
-      keepSelection: [2, "keepSelection", "keepSelection", booleanAttribute],
-      breakpoint: "breakpoint"
-    },
-    outputs: {
-      onMoveToSource: "onMoveToSource",
-      onMoveAllToSource: "onMoveAllToSource",
-      onMoveAllToTarget: "onMoveAllToTarget",
-      onMoveToTarget: "onMoveToTarget",
-      onSourceReorder: "onSourceReorder",
-      onTargetReorder: "onTargetReorder",
-      onSourceSelect: "onSourceSelect",
-      onTargetSelect: "onTargetSelect",
-      onSourceFilter: "onSourceFilter",
-      onTargetFilter: "onTargetFilter",
-      onFocus: "onFocus",
-      onBlur: "onBlur"
-    },
-    features: [ɵɵInputTransformsFeature],
-    decls: 30,
-    vars: 74,
-    consts: [["sourcelist", ""], ["targetlist", ""], ["builtInSourceElement", ""], ["sourceFilter", ""], ["builtInTargetElement", ""], ["targetFilter", ""], ["cdkDropListGroup", "", 3, "ngStyle", "ngClass"], ["class", "p-picklist-buttons p-picklist-source-controls", 4, "ngIf"], [1, "p-picklist-list-wrapper", "p-picklist-source-wrapper"], ["class", "p-picklist-header", 3, "id", 4, "ngIf"], ["class", "p-picklist-filter-container", 4, "ngIf"], ["cdkDropList", "", "role", "listbox", "aria-multiselectable", "true", 1, "p-picklist-list", "p-picklist-source", 3, "keydown", "focus", "blur", "cdkDropListDropped", "id", "cdkDropListData", "ngStyle"], ["ngFor", "", 3, "ngForOf", "ngForTrackBy"], [4, "ngIf"], [1, "p-picklist-buttons", "p-picklist-transfer-buttons"], ["type", "button", "pButton", "", "pRipple", "", 1, "p-button-icon-only", 3, "click", "disabled"], [4, "ngTemplateOutlet", "ngTemplateOutletContext"], [1, "p-picklist-list-wrapper", "p-picklist-target-wrapper"], ["cdkDropList", "", "role", "listbox", "aria-multiselectable", "true", 1, "p-picklist-list", "p-picklist-target", 3, "keydown", "focus", "blur", "cdkDropListDropped", "id", "cdkDropListData", "ngStyle"], ["class", "p-picklist-buttons p-picklist-target-controls", 4, "ngIf"], [1, "p-picklist-buttons", "p-picklist-source-controls"], [4, "ngTemplateOutlet"], [1, "p-picklist-header", 3, "id"], ["class", "p-picklist-title", 4, "ngIf"], [1, "p-picklist-title"], [1, "p-picklist-filter-container"], [4, "ngIf", "ngIfElse"], [1, "p-picklist-filter"], ["type", "text", "role", "textbox", 1, "p-picklist-filter-input", "p-inputtext", "p-component", 3, "keyup", "disabled"], [3, "styleClass", 4, "ngIf"], ["class", "p-picklist-filter-icon", 4, "ngIf"], [3, "styleClass"], [1, "p-picklist-filter-icon"], ["pRipple", "", "cdkDrag", "", "role", "option", 3, "id", "ngClass", "cdkDragData", "cdkDragDisabled", "click", "mousedown", "dblclick", "touchend", 4, "ngIf"], ["pRipple", "", "cdkDrag", "", "role", "option", 3, "click", "mousedown", "dblclick", "touchend", "id", "ngClass", "cdkDragData", "cdkDragDisabled"], ["class", "p-picklist-empty-message", 4, "ngIf"], [1, "p-picklist-empty-message"], [1, "p-picklist-buttons", "p-picklist-target-controls"]],
-    template: function PickList_Template(rf, ctx) {
-      if (rf & 1) {
-        const _r1 = ɵɵgetCurrentView();
-        ɵɵelementStart(0, "div", 6);
-        ɵɵtemplate(1, PickList_div_1_Template, 13, 22, "div", 7);
-        ɵɵelementStart(2, "div", 8);
-        ɵɵtemplate(3, PickList_div_3_Template, 3, 5, "div", 9)(4, PickList_div_4_Template, 4, 3, "div", 10);
-        ɵɵelementStart(5, "ul", 11, 0);
-        ɵɵlistener("keydown", function PickList_Template_ul_keydown_5_listener($event) {
-          ɵɵrestoreView(_r1);
-          return ɵɵresetView(ctx.onItemKeyDown($event, ctx.selectedItemsSource, ctx.onSourceSelect, ctx.SOURCE_LIST));
-        })("focus", function PickList_Template_ul_focus_5_listener($event) {
-          ɵɵrestoreView(_r1);
-          return ɵɵresetView(ctx.onListFocus($event, ctx.SOURCE_LIST));
-        })("blur", function PickList_Template_ul_blur_5_listener($event) {
-          ɵɵrestoreView(_r1);
-          return ɵɵresetView(ctx.onListBlur($event, ctx.SOURCE_LIST));
-        })("cdkDropListDropped", function PickList_Template_ul_cdkDropListDropped_5_listener($event) {
-          ɵɵrestoreView(_r1);
-          return ɵɵresetView(ctx.onDrop($event, ctx.SOURCE_LIST));
-        });
-        ɵɵtemplate(7, PickList_ng_template_7_Template, 1, 1, "ng-template", 12)(8, PickList_ng_container_8_Template, 3, 2, "ng-container", 13);
-        ɵɵelementEnd()();
-        ɵɵelementStart(9, "div", 14)(10, "button", 15);
-        ɵɵlistener("click", function PickList_Template_button_click_10_listener() {
-          ɵɵrestoreView(_r1);
-          return ɵɵresetView(ctx.moveRight());
-        });
-        ɵɵtemplate(11, PickList_ng_container_11_Template, 3, 2, "ng-container", 13)(12, PickList_12_Template, 1, 0, null, 16);
-        ɵɵelementEnd();
-        ɵɵelementStart(13, "button", 15);
-        ɵɵlistener("click", function PickList_Template_button_click_13_listener() {
-          ɵɵrestoreView(_r1);
-          return ɵɵresetView(ctx.moveAllRight());
-        });
-        ɵɵtemplate(14, PickList_ng_container_14_Template, 3, 2, "ng-container", 13)(15, PickList_15_Template, 1, 0, null, 16);
-        ɵɵelementEnd();
-        ɵɵelementStart(16, "button", 15);
-        ɵɵlistener("click", function PickList_Template_button_click_16_listener() {
-          ɵɵrestoreView(_r1);
-          return ɵɵresetView(ctx.moveLeft());
-        });
-        ɵɵtemplate(17, PickList_ng_container_17_Template, 3, 2, "ng-container", 13)(18, PickList_18_Template, 1, 0, null, 16);
-        ɵɵelementEnd();
-        ɵɵelementStart(19, "button", 15);
-        ɵɵlistener("click", function PickList_Template_button_click_19_listener() {
-          ɵɵrestoreView(_r1);
-          return ɵɵresetView(ctx.moveAllLeft());
-        });
-        ɵɵtemplate(20, PickList_ng_container_20_Template, 3, 2, "ng-container", 13)(21, PickList_21_Template, 1, 0, null, 16);
-        ɵɵelementEnd()();
-        ɵɵelementStart(22, "div", 17);
-        ɵɵtemplate(23, PickList_div_23_Template, 3, 5, "div", 9)(24, PickList_div_24_Template, 4, 3, "div", 10);
-        ɵɵelementStart(25, "ul", 18, 1);
-        ɵɵlistener("keydown", function PickList_Template_ul_keydown_25_listener($event) {
-          ɵɵrestoreView(_r1);
-          return ɵɵresetView(ctx.onItemKeyDown($event, ctx.selectedItemsTarget, ctx.onTargetSelect, ctx.TARGET_LIST));
-        })("focus", function PickList_Template_ul_focus_25_listener($event) {
-          ɵɵrestoreView(_r1);
-          return ɵɵresetView(ctx.onListFocus($event, ctx.TARGET_LIST));
-        })("blur", function PickList_Template_ul_blur_25_listener($event) {
-          ɵɵrestoreView(_r1);
-          return ɵɵresetView(ctx.onListBlur($event, ctx.TARGET_LIST));
-        })("cdkDropListDropped", function PickList_Template_ul_cdkDropListDropped_25_listener($event) {
-          ɵɵrestoreView(_r1);
-          return ɵɵresetView(ctx.onDrop($event, ctx.TARGET_LIST));
-        });
-        ɵɵtemplate(27, PickList_ng_template_27_Template, 1, 1, "ng-template", 12)(28, PickList_ng_container_28_Template, 3, 2, "ng-container", 13);
-        ɵɵelementEnd()();
-        ɵɵtemplate(29, PickList_div_29_Template, 13, 22, "div", 19);
-        ɵɵelementEnd();
-      }
-      if (rf & 2) {
-        ɵɵclassMap(ctx.styleClass);
-        ɵɵproperty("ngStyle", ctx.style)("ngClass", ɵɵpureFunction1(64, _c4, ctx.stripedRows));
-        ɵɵattribute("data-pc-name", "picklist")("data-pc-section", "root");
-        ɵɵadvance();
-        ɵɵproperty("ngIf", ctx.showSourceControls);
-        ɵɵadvance();
-        ɵɵattribute("data-pc-section", "sourceWrapper")("data-pc-group-section", "listWrapper");
-        ɵɵadvance();
-        ɵɵproperty("ngIf", ctx.sourceHeader || ctx.sourceHeaderTemplate);
-        ɵɵadvance();
-        ɵɵproperty("ngIf", ctx.filterBy && ctx.showSourceFilter !== false);
-        ɵɵadvance();
-        ɵɵproperty("id", ctx.idSource + "_list")("cdkDropListData", ctx.source)("ngStyle", ctx.sourceStyle);
-        ɵɵattribute("aria-labelledby", ctx.idSource + "_header")("aria-activedescendant", ctx.focused["sourceList"] ? ctx.focusedOptionId : void 0)("tabindex", ctx.source && ctx.source.length > 0 ? ctx.tabindex : -1)("data-pc-section", "sourceList")("data-pc-group-section", "list");
-        ɵɵadvance(2);
-        ɵɵproperty("ngForOf", ctx.source)("ngForTrackBy", ctx.sourceTrackBy || ctx.trackBy);
-        ɵɵadvance();
-        ɵɵproperty("ngIf", ctx.isEmpty(ctx.SOURCE_LIST) && (ctx.emptyMessageSourceTemplate || ctx.emptyFilterMessageSourceTemplate));
-        ɵɵadvance();
-        ɵɵattribute("data-pc-section", "buttons")("data-pc-group-section", "controls");
-        ɵɵadvance();
-        ɵɵproperty("disabled", ctx.moveRightDisabled());
-        ɵɵattribute("aria-label", ctx.moveToTargetAriaLabel)("data-pc-section", "moveToTargetButton");
-        ɵɵadvance();
-        ɵɵproperty("ngIf", !ctx.moveToTargetIconTemplate);
-        ɵɵadvance();
-        ɵɵproperty("ngTemplateOutlet", ctx.moveToTargetIconTemplate)("ngTemplateOutletContext", ɵɵpureFunction1(66, _c5, ctx.viewChanged));
-        ɵɵadvance();
-        ɵɵproperty("disabled", ctx.moveAllRightDisabled());
-        ɵɵattribute("aria-label", ctx.moveAllToTargetAriaLabel)("data-pc-section", "moveAllToTargetButton");
-        ɵɵadvance();
-        ɵɵproperty("ngIf", !ctx.moveAllToTargetIconTemplate);
-        ɵɵadvance();
-        ɵɵproperty("ngTemplateOutlet", ctx.moveAllToTargetIconTemplate)("ngTemplateOutletContext", ɵɵpureFunction1(68, _c5, ctx.viewChanged));
-        ɵɵadvance();
-        ɵɵproperty("disabled", ctx.moveLeftDisabled());
-        ɵɵattribute("aria-label", ctx.moveToSourceAriaLabel)("data-pc-section", "moveToSourceButton");
-        ɵɵadvance();
-        ɵɵproperty("ngIf", !ctx.moveToSourceIconTemplate);
-        ɵɵadvance();
-        ɵɵproperty("ngTemplateOutlet", ctx.moveToSourceIconTemplate)("ngTemplateOutletContext", ɵɵpureFunction1(70, _c5, ctx.viewChanged));
-        ɵɵadvance();
-        ɵɵproperty("disabled", ctx.moveAllLeftDisabled());
-        ɵɵattribute("aria-label", ctx.moveAllToSourceAriaLabel)("data-pc-section", "moveAllToSourceButton");
-        ɵɵadvance();
-        ɵɵproperty("ngIf", !ctx.moveAllToSourceIconTemplate);
-        ɵɵadvance();
-        ɵɵproperty("ngTemplateOutlet", ctx.moveAllToSourceIconTemplate)("ngTemplateOutletContext", ɵɵpureFunction1(72, _c5, ctx.viewChanged));
-        ɵɵadvance();
-        ɵɵattribute("data-pc-section", "targetWrapper")("data-pc-group-section", "listwrapper");
-        ɵɵadvance();
-        ɵɵproperty("ngIf", ctx.targetHeader || ctx.targetHeaderTemplate);
-        ɵɵadvance();
-        ɵɵproperty("ngIf", ctx.filterBy && ctx.showTargetFilter !== false);
-        ɵɵadvance();
-        ɵɵproperty("id", ctx.idTarget + "_list")("cdkDropListData", ctx.target)("ngStyle", ctx.targetStyle);
-        ɵɵattribute("aria-labelledby", ctx.idTarget + "_header")("aria-activedescendant", ctx.focused["targetList"] ? ctx.focusedOptionId : void 0)("tabindex", ctx.target && ctx.target.length > 0 ? ctx.tabindex : -1)("data-pc-section", "targetList")("data-pc-group-section", "list");
-        ɵɵadvance(2);
-        ɵɵproperty("ngForOf", ctx.target)("ngForTrackBy", ctx.targetTrackBy || ctx.trackBy);
-        ɵɵadvance();
-        ɵɵproperty("ngIf", ctx.isEmpty(ctx.TARGET_LIST) && (ctx.emptyMessageTargetTemplate || ctx.emptyFilterMessageTargetTemplate));
-        ɵɵadvance();
-        ɵɵproperty("ngIf", ctx.showTargetControls);
-      }
-    },
-    dependencies: () => [NgClass, NgForOf, NgIf, NgTemplateOutlet, NgStyle, ButtonDirective, Ripple, CdkDropList, CdkDropListGroup, CdkDrag, AngleDoubleDownIcon, AngleDoubleLeftIcon, AngleDoubleRightIcon, AngleDoubleUpIcon, AngleDownIcon, AngleLeftIcon, AngleRightIcon, AngleUpIcon, SearchIcon],
-    styles: ["@layer primeng{.p-picklist{display:flex}.p-picklist-buttons{display:flex;flex-direction:column;justify-content:center}.p-picklist-list-wrapper{flex:1 1 50%}.p-picklist-list{list-style-type:none;margin:0;padding:0;overflow:auto;min-height:12rem}.p-picklist-item{display:block;cursor:pointer;overflow:hidden;position:relative}.p-picklist-item:not(.cdk-drag-disabled){cursor:move}.p-picklist-item.cdk-drag-placeholder{opacity:0}.p-picklist-item.cdk-drag-animating{transition:transform .25s cubic-bezier(0,0,.2,1)}.p-picklist-filter{position:relative}.p-picklist-filter-icon{position:absolute;top:50%;margin-top:-.5rem}.p-picklist-filter-input{width:100%}.p-picklist-list.cdk-drop-list-dragging .p-picklist-item:not(.cdk-drag-placeholder){transition:transform .25s cubic-bezier(0,0,.2,1)}}\n"],
-    encapsulation: 2,
-    changeDetection: 0
-  });
 };
+__publicField(_PickList, "ɵfac", function PickList_Factory(__ngFactoryType__) {
+  return new (__ngFactoryType__ || _PickList)(ɵɵdirectiveInject(DOCUMENT), ɵɵdirectiveInject(PLATFORM_ID), ɵɵdirectiveInject(Renderer2), ɵɵdirectiveInject(ElementRef), ɵɵdirectiveInject(ChangeDetectorRef), ɵɵdirectiveInject(FilterService), ɵɵdirectiveInject(PrimeNGConfig));
+});
+__publicField(_PickList, "ɵcmp", ɵɵdefineComponent({
+  type: _PickList,
+  selectors: [["p-pickList"]],
+  contentQueries: function PickList_ContentQueries(rf, ctx, dirIndex) {
+    if (rf & 1) {
+      ɵɵcontentQuery(dirIndex, PrimeTemplate, 4);
+    }
+    if (rf & 2) {
+      let _t;
+      ɵɵqueryRefresh(_t = ɵɵloadQuery()) && (ctx.templates = _t);
+    }
+  },
+  viewQuery: function PickList_Query(rf, ctx) {
+    if (rf & 1) {
+      ɵɵviewQuery(_c0, 5);
+      ɵɵviewQuery(_c1, 5);
+      ɵɵviewQuery(_c2, 5);
+      ɵɵviewQuery(_c3, 5);
+    }
+    if (rf & 2) {
+      let _t;
+      ɵɵqueryRefresh(_t = ɵɵloadQuery()) && (ctx.listViewSourceChild = _t.first);
+      ɵɵqueryRefresh(_t = ɵɵloadQuery()) && (ctx.listViewTargetChild = _t.first);
+      ɵɵqueryRefresh(_t = ɵɵloadQuery()) && (ctx.sourceFilterViewChild = _t.first);
+      ɵɵqueryRefresh(_t = ɵɵloadQuery()) && (ctx.targetFilterViewChild = _t.first);
+    }
+  },
+  hostAttrs: [1, "p-element"],
+  inputs: {
+    source: "source",
+    target: "target",
+    sourceHeader: "sourceHeader",
+    tabindex: [2, "tabindex", "tabindex", numberAttribute],
+    rightButtonAriaLabel: "rightButtonAriaLabel",
+    leftButtonAriaLabel: "leftButtonAriaLabel",
+    allRightButtonAriaLabel: "allRightButtonAriaLabel",
+    allLeftButtonAriaLabel: "allLeftButtonAriaLabel",
+    upButtonAriaLabel: "upButtonAriaLabel",
+    downButtonAriaLabel: "downButtonAriaLabel",
+    topButtonAriaLabel: "topButtonAriaLabel",
+    bottomButtonAriaLabel: "bottomButtonAriaLabel",
+    targetHeader: "targetHeader",
+    responsive: [2, "responsive", "responsive", booleanAttribute],
+    filterBy: "filterBy",
+    filterLocale: "filterLocale",
+    trackBy: "trackBy",
+    sourceTrackBy: "sourceTrackBy",
+    targetTrackBy: "targetTrackBy",
+    showSourceFilter: [2, "showSourceFilter", "showSourceFilter", booleanAttribute],
+    showTargetFilter: [2, "showTargetFilter", "showTargetFilter", booleanAttribute],
+    metaKeySelection: [2, "metaKeySelection", "metaKeySelection", booleanAttribute],
+    dragdrop: [2, "dragdrop", "dragdrop", booleanAttribute],
+    style: "style",
+    styleClass: "styleClass",
+    sourceStyle: "sourceStyle",
+    targetStyle: "targetStyle",
+    showSourceControls: [2, "showSourceControls", "showSourceControls", booleanAttribute],
+    showTargetControls: [2, "showTargetControls", "showTargetControls", booleanAttribute],
+    sourceFilterPlaceholder: "sourceFilterPlaceholder",
+    targetFilterPlaceholder: "targetFilterPlaceholder",
+    disabled: [2, "disabled", "disabled", booleanAttribute],
+    ariaSourceFilterLabel: "ariaSourceFilterLabel",
+    ariaTargetFilterLabel: "ariaTargetFilterLabel",
+    filterMatchMode: "filterMatchMode",
+    stripedRows: [2, "stripedRows", "stripedRows", booleanAttribute],
+    keepSelection: [2, "keepSelection", "keepSelection", booleanAttribute],
+    breakpoint: "breakpoint"
+  },
+  outputs: {
+    onMoveToSource: "onMoveToSource",
+    onMoveAllToSource: "onMoveAllToSource",
+    onMoveAllToTarget: "onMoveAllToTarget",
+    onMoveToTarget: "onMoveToTarget",
+    onSourceReorder: "onSourceReorder",
+    onTargetReorder: "onTargetReorder",
+    onSourceSelect: "onSourceSelect",
+    onTargetSelect: "onTargetSelect",
+    onSourceFilter: "onSourceFilter",
+    onTargetFilter: "onTargetFilter",
+    onFocus: "onFocus",
+    onBlur: "onBlur"
+  },
+  features: [ɵɵInputTransformsFeature],
+  decls: 30,
+  vars: 74,
+  consts: [["sourcelist", ""], ["targetlist", ""], ["builtInSourceElement", ""], ["sourceFilter", ""], ["builtInTargetElement", ""], ["targetFilter", ""], ["cdkDropListGroup", "", 3, "ngStyle", "ngClass"], ["class", "p-picklist-buttons p-picklist-source-controls", 4, "ngIf"], [1, "p-picklist-list-wrapper", "p-picklist-source-wrapper"], ["class", "p-picklist-header", 3, "id", 4, "ngIf"], ["class", "p-picklist-filter-container", 4, "ngIf"], ["cdkDropList", "", "role", "listbox", "aria-multiselectable", "true", 1, "p-picklist-list", "p-picklist-source", 3, "keydown", "focus", "blur", "cdkDropListDropped", "id", "cdkDropListData", "ngStyle"], ["ngFor", "", 3, "ngForOf", "ngForTrackBy"], [4, "ngIf"], [1, "p-picklist-buttons", "p-picklist-transfer-buttons"], ["type", "button", "pButton", "", "pRipple", "", 1, "p-button-icon-only", 3, "click", "disabled"], [4, "ngTemplateOutlet", "ngTemplateOutletContext"], [1, "p-picklist-list-wrapper", "p-picklist-target-wrapper"], ["cdkDropList", "", "role", "listbox", "aria-multiselectable", "true", 1, "p-picklist-list", "p-picklist-target", 3, "keydown", "focus", "blur", "cdkDropListDropped", "id", "cdkDropListData", "ngStyle"], ["class", "p-picklist-buttons p-picklist-target-controls", 4, "ngIf"], [1, "p-picklist-buttons", "p-picklist-source-controls"], [4, "ngTemplateOutlet"], [1, "p-picklist-header", 3, "id"], ["class", "p-picklist-title", 4, "ngIf"], [1, "p-picklist-title"], [1, "p-picklist-filter-container"], [4, "ngIf", "ngIfElse"], [1, "p-picklist-filter"], ["type", "text", "role", "textbox", 1, "p-picklist-filter-input", "p-inputtext", "p-component", 3, "keyup", "disabled"], [3, "styleClass", 4, "ngIf"], ["class", "p-picklist-filter-icon", 4, "ngIf"], [3, "styleClass"], [1, "p-picklist-filter-icon"], ["pRipple", "", "cdkDrag", "", "role", "option", 3, "id", "ngClass", "cdkDragData", "cdkDragDisabled", "click", "mousedown", "dblclick", "touchend", 4, "ngIf"], ["pRipple", "", "cdkDrag", "", "role", "option", 3, "click", "mousedown", "dblclick", "touchend", "id", "ngClass", "cdkDragData", "cdkDragDisabled"], ["class", "p-picklist-empty-message", 4, "ngIf"], [1, "p-picklist-empty-message"], [1, "p-picklist-buttons", "p-picklist-target-controls"]],
+  template: function PickList_Template(rf, ctx) {
+    if (rf & 1) {
+      const _r1 = ɵɵgetCurrentView();
+      ɵɵelementStart(0, "div", 6);
+      ɵɵtemplate(1, PickList_div_1_Template, 13, 22, "div", 7);
+      ɵɵelementStart(2, "div", 8);
+      ɵɵtemplate(3, PickList_div_3_Template, 3, 5, "div", 9)(4, PickList_div_4_Template, 4, 3, "div", 10);
+      ɵɵelementStart(5, "ul", 11, 0);
+      ɵɵlistener("keydown", function PickList_Template_ul_keydown_5_listener($event) {
+        ɵɵrestoreView(_r1);
+        return ɵɵresetView(ctx.onItemKeyDown($event, ctx.selectedItemsSource, ctx.onSourceSelect, ctx.SOURCE_LIST));
+      })("focus", function PickList_Template_ul_focus_5_listener($event) {
+        ɵɵrestoreView(_r1);
+        return ɵɵresetView(ctx.onListFocus($event, ctx.SOURCE_LIST));
+      })("blur", function PickList_Template_ul_blur_5_listener($event) {
+        ɵɵrestoreView(_r1);
+        return ɵɵresetView(ctx.onListBlur($event, ctx.SOURCE_LIST));
+      })("cdkDropListDropped", function PickList_Template_ul_cdkDropListDropped_5_listener($event) {
+        ɵɵrestoreView(_r1);
+        return ɵɵresetView(ctx.onDrop($event, ctx.SOURCE_LIST));
+      });
+      ɵɵtemplate(7, PickList_ng_template_7_Template, 1, 1, "ng-template", 12)(8, PickList_ng_container_8_Template, 3, 2, "ng-container", 13);
+      ɵɵelementEnd()();
+      ɵɵelementStart(9, "div", 14)(10, "button", 15);
+      ɵɵlistener("click", function PickList_Template_button_click_10_listener() {
+        ɵɵrestoreView(_r1);
+        return ɵɵresetView(ctx.moveRight());
+      });
+      ɵɵtemplate(11, PickList_ng_container_11_Template, 3, 2, "ng-container", 13)(12, PickList_12_Template, 1, 0, null, 16);
+      ɵɵelementEnd();
+      ɵɵelementStart(13, "button", 15);
+      ɵɵlistener("click", function PickList_Template_button_click_13_listener() {
+        ɵɵrestoreView(_r1);
+        return ɵɵresetView(ctx.moveAllRight());
+      });
+      ɵɵtemplate(14, PickList_ng_container_14_Template, 3, 2, "ng-container", 13)(15, PickList_15_Template, 1, 0, null, 16);
+      ɵɵelementEnd();
+      ɵɵelementStart(16, "button", 15);
+      ɵɵlistener("click", function PickList_Template_button_click_16_listener() {
+        ɵɵrestoreView(_r1);
+        return ɵɵresetView(ctx.moveLeft());
+      });
+      ɵɵtemplate(17, PickList_ng_container_17_Template, 3, 2, "ng-container", 13)(18, PickList_18_Template, 1, 0, null, 16);
+      ɵɵelementEnd();
+      ɵɵelementStart(19, "button", 15);
+      ɵɵlistener("click", function PickList_Template_button_click_19_listener() {
+        ɵɵrestoreView(_r1);
+        return ɵɵresetView(ctx.moveAllLeft());
+      });
+      ɵɵtemplate(20, PickList_ng_container_20_Template, 3, 2, "ng-container", 13)(21, PickList_21_Template, 1, 0, null, 16);
+      ɵɵelementEnd()();
+      ɵɵelementStart(22, "div", 17);
+      ɵɵtemplate(23, PickList_div_23_Template, 3, 5, "div", 9)(24, PickList_div_24_Template, 4, 3, "div", 10);
+      ɵɵelementStart(25, "ul", 18, 1);
+      ɵɵlistener("keydown", function PickList_Template_ul_keydown_25_listener($event) {
+        ɵɵrestoreView(_r1);
+        return ɵɵresetView(ctx.onItemKeyDown($event, ctx.selectedItemsTarget, ctx.onTargetSelect, ctx.TARGET_LIST));
+      })("focus", function PickList_Template_ul_focus_25_listener($event) {
+        ɵɵrestoreView(_r1);
+        return ɵɵresetView(ctx.onListFocus($event, ctx.TARGET_LIST));
+      })("blur", function PickList_Template_ul_blur_25_listener($event) {
+        ɵɵrestoreView(_r1);
+        return ɵɵresetView(ctx.onListBlur($event, ctx.TARGET_LIST));
+      })("cdkDropListDropped", function PickList_Template_ul_cdkDropListDropped_25_listener($event) {
+        ɵɵrestoreView(_r1);
+        return ɵɵresetView(ctx.onDrop($event, ctx.TARGET_LIST));
+      });
+      ɵɵtemplate(27, PickList_ng_template_27_Template, 1, 1, "ng-template", 12)(28, PickList_ng_container_28_Template, 3, 2, "ng-container", 13);
+      ɵɵelementEnd()();
+      ɵɵtemplate(29, PickList_div_29_Template, 13, 22, "div", 19);
+      ɵɵelementEnd();
+    }
+    if (rf & 2) {
+      ɵɵclassMap(ctx.styleClass);
+      ɵɵproperty("ngStyle", ctx.style)("ngClass", ɵɵpureFunction1(64, _c4, ctx.stripedRows));
+      ɵɵattribute("data-pc-name", "picklist")("data-pc-section", "root");
+      ɵɵadvance();
+      ɵɵproperty("ngIf", ctx.showSourceControls);
+      ɵɵadvance();
+      ɵɵattribute("data-pc-section", "sourceWrapper")("data-pc-group-section", "listWrapper");
+      ɵɵadvance();
+      ɵɵproperty("ngIf", ctx.sourceHeader || ctx.sourceHeaderTemplate);
+      ɵɵadvance();
+      ɵɵproperty("ngIf", ctx.filterBy && ctx.showSourceFilter !== false);
+      ɵɵadvance();
+      ɵɵproperty("id", ctx.idSource + "_list")("cdkDropListData", ctx.source)("ngStyle", ctx.sourceStyle);
+      ɵɵattribute("aria-labelledby", ctx.idSource + "_header")("aria-activedescendant", ctx.focused["sourceList"] ? ctx.focusedOptionId : void 0)("tabindex", ctx.source && ctx.source.length > 0 ? ctx.tabindex : -1)("data-pc-section", "sourceList")("data-pc-group-section", "list");
+      ɵɵadvance(2);
+      ɵɵproperty("ngForOf", ctx.source)("ngForTrackBy", ctx.sourceTrackBy || ctx.trackBy);
+      ɵɵadvance();
+      ɵɵproperty("ngIf", ctx.isEmpty(ctx.SOURCE_LIST) && (ctx.emptyMessageSourceTemplate || ctx.emptyFilterMessageSourceTemplate));
+      ɵɵadvance();
+      ɵɵattribute("data-pc-section", "buttons")("data-pc-group-section", "controls");
+      ɵɵadvance();
+      ɵɵproperty("disabled", ctx.moveRightDisabled());
+      ɵɵattribute("aria-label", ctx.moveToTargetAriaLabel)("data-pc-section", "moveToTargetButton");
+      ɵɵadvance();
+      ɵɵproperty("ngIf", !ctx.moveToTargetIconTemplate);
+      ɵɵadvance();
+      ɵɵproperty("ngTemplateOutlet", ctx.moveToTargetIconTemplate)("ngTemplateOutletContext", ɵɵpureFunction1(66, _c5, ctx.viewChanged));
+      ɵɵadvance();
+      ɵɵproperty("disabled", ctx.moveAllRightDisabled());
+      ɵɵattribute("aria-label", ctx.moveAllToTargetAriaLabel)("data-pc-section", "moveAllToTargetButton");
+      ɵɵadvance();
+      ɵɵproperty("ngIf", !ctx.moveAllToTargetIconTemplate);
+      ɵɵadvance();
+      ɵɵproperty("ngTemplateOutlet", ctx.moveAllToTargetIconTemplate)("ngTemplateOutletContext", ɵɵpureFunction1(68, _c5, ctx.viewChanged));
+      ɵɵadvance();
+      ɵɵproperty("disabled", ctx.moveLeftDisabled());
+      ɵɵattribute("aria-label", ctx.moveToSourceAriaLabel)("data-pc-section", "moveToSourceButton");
+      ɵɵadvance();
+      ɵɵproperty("ngIf", !ctx.moveToSourceIconTemplate);
+      ɵɵadvance();
+      ɵɵproperty("ngTemplateOutlet", ctx.moveToSourceIconTemplate)("ngTemplateOutletContext", ɵɵpureFunction1(70, _c5, ctx.viewChanged));
+      ɵɵadvance();
+      ɵɵproperty("disabled", ctx.moveAllLeftDisabled());
+      ɵɵattribute("aria-label", ctx.moveAllToSourceAriaLabel)("data-pc-section", "moveAllToSourceButton");
+      ɵɵadvance();
+      ɵɵproperty("ngIf", !ctx.moveAllToSourceIconTemplate);
+      ɵɵadvance();
+      ɵɵproperty("ngTemplateOutlet", ctx.moveAllToSourceIconTemplate)("ngTemplateOutletContext", ɵɵpureFunction1(72, _c5, ctx.viewChanged));
+      ɵɵadvance();
+      ɵɵattribute("data-pc-section", "targetWrapper")("data-pc-group-section", "listwrapper");
+      ɵɵadvance();
+      ɵɵproperty("ngIf", ctx.targetHeader || ctx.targetHeaderTemplate);
+      ɵɵadvance();
+      ɵɵproperty("ngIf", ctx.filterBy && ctx.showTargetFilter !== false);
+      ɵɵadvance();
+      ɵɵproperty("id", ctx.idTarget + "_list")("cdkDropListData", ctx.target)("ngStyle", ctx.targetStyle);
+      ɵɵattribute("aria-labelledby", ctx.idTarget + "_header")("aria-activedescendant", ctx.focused["targetList"] ? ctx.focusedOptionId : void 0)("tabindex", ctx.target && ctx.target.length > 0 ? ctx.tabindex : -1)("data-pc-section", "targetList")("data-pc-group-section", "list");
+      ɵɵadvance(2);
+      ɵɵproperty("ngForOf", ctx.target)("ngForTrackBy", ctx.targetTrackBy || ctx.trackBy);
+      ɵɵadvance();
+      ɵɵproperty("ngIf", ctx.isEmpty(ctx.TARGET_LIST) && (ctx.emptyMessageTargetTemplate || ctx.emptyFilterMessageTargetTemplate));
+      ɵɵadvance();
+      ɵɵproperty("ngIf", ctx.showTargetControls);
+    }
+  },
+  dependencies: () => [NgClass, NgForOf, NgIf, NgTemplateOutlet, NgStyle, ButtonDirective, Ripple, CdkDropList, CdkDropListGroup, CdkDrag, AngleDoubleDownIcon, AngleDoubleLeftIcon, AngleDoubleRightIcon, AngleDoubleUpIcon, AngleDownIcon, AngleLeftIcon, AngleRightIcon, AngleUpIcon, SearchIcon],
+  styles: ["@layer primeng{.p-picklist{display:flex}.p-picklist-buttons{display:flex;flex-direction:column;justify-content:center}.p-picklist-list-wrapper{flex:1 1 50%}.p-picklist-list{list-style-type:none;margin:0;padding:0;overflow:auto;min-height:12rem}.p-picklist-item{display:block;cursor:pointer;overflow:hidden;position:relative}.p-picklist-item:not(.cdk-drag-disabled){cursor:move}.p-picklist-item.cdk-drag-placeholder{opacity:0}.p-picklist-item.cdk-drag-animating{transition:transform .25s cubic-bezier(0,0,.2,1)}.p-picklist-filter{position:relative}.p-picklist-filter-icon{position:absolute;top:50%;margin-top:-.5rem}.p-picklist-filter-input{width:100%}.p-picklist-list.cdk-drop-list-dragging .p-picklist-item:not(.cdk-drag-placeholder){transition:transform .25s cubic-bezier(0,0,.2,1)}}\n"],
+  encapsulation: 2,
+  changeDetection: 0
+}));
+var PickList = _PickList;
 (() => {
   (typeof ngDevMode === "undefined" || ngDevMode) && setClassMetadata(PickList, [{
     type: Component,
     args: [{
       selector: "p-pickList",
-      template: `
-        <div [class]="styleClass" [ngStyle]="style" [ngClass]="{ 'p-picklist p-component': true, 'p-picklist-striped': stripedRows }" cdkDropListGroup [attr.data-pc-name]="'picklist'" [attr.data-pc-section]="'root'">
-            <div class="p-picklist-buttons p-picklist-source-controls" *ngIf="showSourceControls" [attr.data-pc-section]="'sourceControls'" [attr.data-pc-group-section]="'controls'">
-                <button
-                    type="button"
-                    [attr.aria-label]="moveUpAriaLabel"
-                    pButton
-                    pRipple
-                    class="p-button-icon-only"
-                    [disabled]="sourceMoveDisabled()"
-                    (click)="moveUp(sourcelist, source, selectedItemsSource, onSourceReorder, SOURCE_LIST)"
-                    [attr.data-pc-section]="'sourceMoveUpButton'"
-                >
-                    <AngleUpIcon *ngIf="!moveUpIconTemplate" [attr.data-pc-section]="'moveupicon'" />
-                    <ng-template *ngTemplateOutlet="moveUpIconTemplate"></ng-template>
-                </button>
-                <button
-                    type="button"
-                    [attr.aria-label]="moveTopAriaLabel"
-                    pButton
-                    pRipple
-                    class="p-button-icon-only"
-                    [disabled]="sourceMoveDisabled()"
-                    (click)="moveTop(sourcelist, source, selectedItemsSource, onSourceReorder, SOURCE_LIST)"
-                    [attr.data-pc-section]="'sourceMoveTopButton'"
-                >
-                    <AngleDoubleUpIcon *ngIf="!moveTopIconTemplate" [attr.data-pc-section]="'movetopicon'" />
-                    <ng-template *ngTemplateOutlet="moveTopIconTemplate"></ng-template>
-                </button>
-                <button
-                    type="button"
-                    [attr.aria-label]="moveDownAriaLabel"
-                    pButton
-                    pRipple
-                    class="p-button-icon-only"
-                    [disabled]="sourceMoveDisabled()"
-                    (click)="moveDown(sourcelist, source, selectedItemsSource, onSourceReorder, SOURCE_LIST)"
-                    [attr.data-pc-section]="'sourceMoveDownButton'"
-                >
-                    <AngleDownIcon *ngIf="!moveDownIconTemplate" [attr.data-pc-section]="'movedownicon'" />
-                    <ng-template *ngTemplateOutlet="moveDownIconTemplate"></ng-template>
-                </button>
-                <button
-                    type="button"
-                    [attr.aria-label]="moveBottomAriaLabel"
-                    pButton
-                    pRipple
-                    class="p-button-icon-only"
-                    [disabled]="sourceMoveDisabled()"
-                    (click)="moveBottom(sourcelist, source, selectedItemsSource, onSourceReorder, SOURCE_LIST)"
-                    [attr.data-pc-section]="'sourceMoveBottomButton'"
-                >
-                    <AngleDoubleDownIcon *ngIf="!moveBottomIconTemplate" [attr.data-pc-section]="'movebottomicon'" />
-                    <ng-template *ngTemplateOutlet="moveBottomIconTemplate"></ng-template>
-                </button>
-            </div>
-            <div class="p-picklist-list-wrapper p-picklist-source-wrapper" [attr.data-pc-section]="'sourceWrapper'" [attr.data-pc-group-section]="'listWrapper'">
-                <div [id]="idSource + '_header'" class="p-picklist-header" *ngIf="sourceHeader || sourceHeaderTemplate" [attr.data-pc-section]="'sourceHeader'" [attr.data-pc-group-section]="'header'">
-                    <div class="p-picklist-title" *ngIf="!sourceHeaderTemplate">{{ sourceHeader }}</div>
-                    <ng-container *ngTemplateOutlet="sourceHeaderTemplate"></ng-container>
-                </div>
-                <div class="p-picklist-filter-container" *ngIf="filterBy && showSourceFilter !== false" [attr.data-pc-section]="'sourceFilterContainer'">
-                    <ng-container *ngIf="sourceFilterTemplate; else builtInSourceElement">
-                        <ng-container *ngTemplateOutlet="sourceFilterTemplate; context: { options: sourceFilterOptions }"></ng-container>
-                    </ng-container>
-                    <ng-template #builtInSourceElement>
-                        <div class="p-picklist-filter" [attr.data-pc-section]="'sourceFilter'">
-                            <input
-                                #sourceFilter
-                                type="text"
-                                role="textbox"
-                                (keyup)="onFilter($event, SOURCE_LIST)"
-                                class="p-picklist-filter-input p-inputtext p-component"
-                                [disabled]="disabled"
-                                [attr.placeholder]="sourceFilterPlaceholder"
-                                [attr.aria-label]="ariaSourceFilterLabel"
-                                [attr.data-pc-section]="'sourceFilterInput'"
-                            />
-                            <SearchIcon *ngIf="!sourceFilterIconTemplate" [styleClass]="'p-picklist-filter-icon'" [attr.data-pc-section]="'sourcefilterIcon'" />
-                            <span class="p-picklist-filter-icon" *ngIf="sourceFilterIconTemplate" [attr.data-pc-section]="'sourcefilterIcon'">
-                                <ng-template *ngTemplateOutlet="sourceFilterIconTemplate"></ng-template>
-                            </span>
-                        </div>
-                    </ng-template>
-                </div>
-
-                <ul
-                    #sourcelist
-                    class="p-picklist-list p-picklist-source"
-                    [id]="idSource + '_list'"
-                    [attr.aria-labelledby]="idSource + '_header'"
-                    (keydown)="onItemKeyDown($event, selectedItemsSource, onSourceSelect, SOURCE_LIST)"
-                    (focus)="onListFocus($event, SOURCE_LIST)"
-                    (blur)="onListBlur($event, SOURCE_LIST)"
-                    cdkDropList
-                    [cdkDropListData]="source"
-                    (cdkDropListDropped)="onDrop($event, SOURCE_LIST)"
-                    [ngStyle]="sourceStyle"
-                    role="listbox"
-                    aria-multiselectable="true"
-                    [attr.aria-activedescendant]="focused['sourceList'] ? focusedOptionId : undefined"
-                    [attr.tabindex]="source && source.length > 0 ? tabindex : -1"
-                    [attr.data-pc-section]="'sourceList'"
-                    [attr.data-pc-group-section]="'list'"
-                >
-                    <ng-template ngFor let-item [ngForOf]="source" [ngForTrackBy]="sourceTrackBy || trackBy" let-i="index" let-l="last">
-                        <li
-                            pRipple
-                            cdkDrag
-                            [id]="idSource + '_' + i"
-                            [ngClass]="itemClass(item, idSource + '_' + i, selectedItemsSource)"
-                            [cdkDragData]="item"
-                            [cdkDragDisabled]="!dragdrop"
-                            (click)="onItemClick($event, item, selectedItemsSource, SOURCE_LIST, onSourceSelect, idSource + '_' + i)"
-                            (mousedown)="onOptionMouseDown(i, SOURCE_LIST)"
-                            (dblclick)="onSourceItemDblClick()"
-                            (touchend)="onItemTouchEnd()"
-                            *ngIf="isItemVisible(item, SOURCE_LIST)"
-                            role="option"
-                            [attr.data-pc-section]="'item'"
-                            [attr.aria-selected]="isSelected(item, selectedItemsSource)"
-                        >
-                            <ng-container *ngTemplateOutlet="itemTemplate; context: { $implicit: item, index: i }"></ng-container>
-                        </li>
-                    </ng-template>
-                    <ng-container *ngIf="isEmpty(SOURCE_LIST) && (emptyMessageSourceTemplate || emptyFilterMessageSourceTemplate)">
-                        <li class="p-picklist-empty-message" *ngIf="!filterValueSource || !emptyFilterMessageSourceTemplate" [attr.data-pc-section]="'sourceEmptyMessage'">
-                            <ng-container *ngTemplateOutlet="emptyMessageSourceTemplate"></ng-container>
-                        </li>
-                        <li class="p-picklist-empty-message" *ngIf="filterValueSource" [attr.data-pc-section]="'sourceEmptyMessage'">
-                            <ng-container *ngTemplateOutlet="emptyFilterMessageSourceTemplate"></ng-container>
-                        </li>
-                    </ng-container>
-                </ul>
-            </div>
-            <div class="p-picklist-buttons p-picklist-transfer-buttons" [attr.data-pc-section]="'buttons'" [attr.data-pc-group-section]="'controls'">
-                <button type="button" [attr.aria-label]="moveToTargetAriaLabel" pButton pRipple class="p-button-icon-only" [disabled]="moveRightDisabled()" (click)="moveRight()" [attr.data-pc-section]="'moveToTargetButton'">
-                    <ng-container *ngIf="!moveToTargetIconTemplate">
-                        <AngleRightIcon *ngIf="!viewChanged" [attr.data-pc-section]="'movetotargeticon'" />
-                        <AngleDownIcon *ngIf="viewChanged" [attr.data-pc-section]="'movetotargeticon'" />
-                    </ng-container>
-                    <ng-template *ngTemplateOutlet="moveToTargetIconTemplate; context: { $implicit: viewChanged }"></ng-template>
-                </button>
-                <button type="button" [attr.aria-label]="moveAllToTargetAriaLabel" pButton pRipple class="p-button-icon-only" [disabled]="moveAllRightDisabled()" (click)="moveAllRight()" [attr.data-pc-section]="'moveAllToTargetButton'">
-                    <ng-container *ngIf="!moveAllToTargetIconTemplate">
-                        <AngleDoubleRightIcon *ngIf="!viewChanged" [attr.data-pc-section]="'movealltotargeticon'" />
-                        <AngleDoubleDownIcon *ngIf="viewChanged" [attr.data-pc-section]="'movealltotargeticon'" />
-                    </ng-container>
-                    <ng-template *ngTemplateOutlet="moveAllToTargetIconTemplate; context: { $implicit: viewChanged }"></ng-template>
-                </button>
-                <button type="button" [attr.aria-label]="moveToSourceAriaLabel" pButton pRipple class="p-button-icon-only" [disabled]="moveLeftDisabled()" (click)="moveLeft()" [attr.data-pc-section]="'moveToSourceButton'">
-                    <ng-container *ngIf="!moveToSourceIconTemplate">
-                        <AngleLeftIcon *ngIf="!viewChanged" [attr.data-pc-section]="'movedownsourceticon'" />
-                        <AngleUpIcon *ngIf="viewChanged" [attr.data-pc-section]="'movedownsourceticon'" />
-                    </ng-container>
-                    <ng-template *ngTemplateOutlet="moveToSourceIconTemplate; context: { $implicit: viewChanged }"></ng-template>
-                </button>
-                <button type="button" [attr.aria-label]="moveAllToSourceAriaLabel" pButton pRipple class="p-button-icon-only" [disabled]="moveAllLeftDisabled()" (click)="moveAllLeft()" [attr.data-pc-section]="'moveAllToSourceButton'">
-                    <ng-container *ngIf="!moveAllToSourceIconTemplate">
-                        <AngleDoubleLeftIcon *ngIf="!viewChanged" [attr.data-pc-section]="'movealltosourceticon'" />
-                        <AngleDoubleUpIcon *ngIf="viewChanged" [attr.data-pc-section]="'movealltosourceticon'" />
-                    </ng-container>
-                    <ng-template *ngTemplateOutlet="moveAllToSourceIconTemplate; context: { $implicit: viewChanged }"></ng-template>
-                </button>
-            </div>
-            <div class="p-picklist-list-wrapper p-picklist-target-wrapper" [attr.data-pc-section]="'targetWrapper'" [attr.data-pc-group-section]="'listwrapper'">
-                <div [id]="idTarget + '_header'" class="p-picklist-header" *ngIf="targetHeader || targetHeaderTemplate" [attr.data-pc-section]="'targetHead'" [attr.data-pc-group-section]="'header'">
-                    <div class="p-picklist-title" *ngIf="!targetHeaderTemplate">{{ targetHeader }}</div>
-                    <ng-container *ngTemplateOutlet="targetHeaderTemplate"></ng-container>
-                </div>
-                <div class="p-picklist-filter-container" *ngIf="filterBy && showTargetFilter !== false" [attr.data-pc-section]="'targetFilterContainer'">
-                    <ng-container *ngIf="targetFilterTemplate; else builtInTargetElement">
-                        <ng-container *ngTemplateOutlet="targetFilterTemplate; context: { options: targetFilterOptions }"></ng-container>
-                    </ng-container>
-                    <ng-template #builtInTargetElement>
-                        <div class="p-picklist-filter" [attr.data-pc-section]="'targetFilter'">
-                            <input
-                                #targetFilter
-                                type="text"
-                                role="textbox"
-                                (keyup)="onFilter($event, TARGET_LIST)"
-                                class="p-picklist-filter-input p-inputtext p-component"
-                                [disabled]="disabled"
-                                [attr.placeholder]="targetFilterPlaceholder"
-                                [attr.aria-label]="ariaTargetFilterLabel"
-                                [attr.data-pc-section]="'targetFilterInput'"
-                            />
-                            <SearchIcon *ngIf="!targetFilterIconTemplate" [styleClass]="'p-picklist-filter-icon'" [attr.data-pc-section]="'targetfiltericon'" />
-                            <span class="p-picklist-filter-icon" *ngIf="targetFilterIconTemplate" [attr.data-pc-section]="'targetfiltericon'">
-                                <ng-template *ngTemplateOutlet="targetFilterIconTemplate"></ng-template>
-                            </span>
-                        </div>
-                    </ng-template>
-                </div>
-                <ul
-                    #targetlist
-                    class="p-picklist-list p-picklist-target"
-                    [id]="idTarget + '_list'"
-                    [attr.aria-labelledby]="idTarget + '_header'"
-                    (keydown)="onItemKeyDown($event, selectedItemsTarget, onTargetSelect, TARGET_LIST)"
-                    (focus)="onListFocus($event, TARGET_LIST)"
-                    (blur)="onListBlur($event, TARGET_LIST)"
-                    cdkDropList
-                    [cdkDropListData]="target"
-                    (cdkDropListDropped)="onDrop($event, TARGET_LIST)"
-                    [ngStyle]="targetStyle"
-                    role="listbox"
-                    aria-multiselectable="true"
-                    [attr.aria-activedescendant]="focused['targetList'] ? focusedOptionId : undefined"
-                    [attr.tabindex]="target && target.length > 0 ? tabindex : -1"
-                    [attr.data-pc-section]="'targetList'"
-                    [attr.data-pc-group-section]="'list'"
-                >
-                    <ng-template ngFor let-item [ngForOf]="target" [ngForTrackBy]="targetTrackBy || trackBy" let-i="index" let-l="last">
-                        <li
-                            pRipple
-                            cdkDrag
-                            [id]="idTarget + '_' + i"
-                            [ngClass]="itemClass(item, idTarget + '_' + i, selectedItemsTarget)"
-                            [cdkDragData]="item"
-                            [cdkDragDisabled]="!dragdrop"
-                            (click)="onItemClick($event, item, selectedItemsTarget, TARGET_LIST, onTargetSelect, idTarget + '_' + i)"
-                            (mousedown)="onOptionMouseDown(i, TARGET_LIST)"
-                            (dblclick)="onTargetItemDblClick()"
-                            (touchend)="onItemTouchEnd()"
-                            *ngIf="isItemVisible(item, TARGET_LIST)"
-                            role="option"
-                            [attr.data-pc-section]="'item'"
-                            [attr.aria-selected]="isSelected(item, selectedItemsTarget)"
-                        >
-                            <ng-container *ngTemplateOutlet="itemTemplate; context: { $implicit: item, index: i }"></ng-container>
-                        </li>
-                    </ng-template>
-                    <ng-container *ngIf="isEmpty(TARGET_LIST) && (emptyMessageTargetTemplate || emptyFilterMessageTargetTemplate)">
-                        <li class="p-picklist-empty-message" *ngIf="!filterValueTarget || !emptyFilterMessageTargetTemplate" [attr.data-pc-section]="'targetEmptyMessage'">
-                            <ng-container *ngTemplateOutlet="emptyMessageTargetTemplate"></ng-container>
-                        </li>
-                        <li class="p-picklist-empty-message" *ngIf="filterValueTarget" [attr.data-pc-section]="'targetEmptyMessage'">
-                            <ng-container *ngTemplateOutlet="emptyFilterMessageTargetTemplate"></ng-container>
-                        </li>
-                    </ng-container>
-                </ul>
-            </div>
-            <div class="p-picklist-buttons p-picklist-target-controls" *ngIf="showTargetControls" [attr.data-pc-section]="'targetControls'" [attr.data-pc-group-section]="'controls'">
-                <button
-                    type="button"
-                    [attr.aria-label]="moveUpAriaLabel"
-                    pButton
-                    pRipple
-                    class="p-button-icon-only"
-                    [disabled]="targetMoveDisabled()"
-                    (click)="moveUp(targetlist, target, selectedItemsTarget, onTargetReorder, TARGET_LIST)"
-                    [attr.data-pc-section]="'targetMoveUpButton'"
-                >
-                    <AngleUpIcon *ngIf="!moveUpIconTemplate" [attr.data-pc-section]="'moveupicon'" />
-                    <ng-template *ngTemplateOutlet="moveUpIconTemplate"></ng-template>
-                </button>
-                <button
-                    type="button"
-                    [attr.aria-label]="moveTopAriaLabel"
-                    pButton
-                    pRipple
-                    class="p-button-icon-only"
-                    [disabled]="targetMoveDisabled()"
-                    (click)="moveTop(targetlist, target, selectedItemsTarget, onTargetReorder, TARGET_LIST)"
-                    [attr.data-pc-section]="'targetMoveTopButton'"
-                >
-                    <AngleDoubleUpIcon *ngIf="!moveTopIconTemplate" [attr.data-pc-section]="'movetopicon'" />
-                    <ng-template *ngTemplateOutlet="moveTopIconTemplate"></ng-template>
-                </button>
-                <button
-                    type="button"
-                    [attr.aria-label]="moveDownAriaLabel"
-                    pButton
-                    pRipple
-                    class="p-button-icon-only"
-                    [disabled]="targetMoveDisabled()"
-                    (click)="moveDown(targetlist, target, selectedItemsTarget, onTargetReorder, TARGET_LIST)"
-                    [attr.data-pc-section]="'targetMoveDownButton'"
-                >
-                    <AngleDownIcon *ngIf="!moveDownIconTemplate" [attr.data-pc-section]="'movedownicon'" />
-                    <ng-template *ngTemplateOutlet="moveDownIconTemplate"></ng-template>
-                </button>
-                <button
-                    type="button"
-                    [attr.aria-label]="moveBottomAriaLabel"
-                    pButton
-                    pRipple
-                    class="p-button-icon-only"
-                    [disabled]="targetMoveDisabled()"
-                    (click)="moveBottom(targetlist, target, selectedItemsTarget, onTargetReorder, TARGET_LIST)"
-                    [attr.data-pc-section]="'targetMoveBottomButton'"
-                >
-                    <AngleDoubleDownIcon *ngIf="!moveBottomIconTemplate" [attr.data-pc-section]="'movebottomicon'" />
-                    <ng-template *ngTemplateOutlet="moveBottomIconTemplate"></ng-template>
-                </button>
-            </div>
-        </div>
-    `,
+      template: '\n        <div [class]="styleClass" [ngStyle]="style" [ngClass]="{ \'p-picklist p-component\': true, \'p-picklist-striped\': stripedRows }" cdkDropListGroup [attr.data-pc-name]="\'picklist\'" [attr.data-pc-section]="\'root\'">\n            <div class="p-picklist-buttons p-picklist-source-controls" *ngIf="showSourceControls" [attr.data-pc-section]="\'sourceControls\'" [attr.data-pc-group-section]="\'controls\'">\n                <button\n                    type="button"\n                    [attr.aria-label]="moveUpAriaLabel"\n                    pButton\n                    pRipple\n                    class="p-button-icon-only"\n                    [disabled]="sourceMoveDisabled()"\n                    (click)="moveUp(sourcelist, source, selectedItemsSource, onSourceReorder, SOURCE_LIST)"\n                    [attr.data-pc-section]="\'sourceMoveUpButton\'"\n                >\n                    <AngleUpIcon *ngIf="!moveUpIconTemplate" [attr.data-pc-section]="\'moveupicon\'" />\n                    <ng-template *ngTemplateOutlet="moveUpIconTemplate"></ng-template>\n                </button>\n                <button\n                    type="button"\n                    [attr.aria-label]="moveTopAriaLabel"\n                    pButton\n                    pRipple\n                    class="p-button-icon-only"\n                    [disabled]="sourceMoveDisabled()"\n                    (click)="moveTop(sourcelist, source, selectedItemsSource, onSourceReorder, SOURCE_LIST)"\n                    [attr.data-pc-section]="\'sourceMoveTopButton\'"\n                >\n                    <AngleDoubleUpIcon *ngIf="!moveTopIconTemplate" [attr.data-pc-section]="\'movetopicon\'" />\n                    <ng-template *ngTemplateOutlet="moveTopIconTemplate"></ng-template>\n                </button>\n                <button\n                    type="button"\n                    [attr.aria-label]="moveDownAriaLabel"\n                    pButton\n                    pRipple\n                    class="p-button-icon-only"\n                    [disabled]="sourceMoveDisabled()"\n                    (click)="moveDown(sourcelist, source, selectedItemsSource, onSourceReorder, SOURCE_LIST)"\n                    [attr.data-pc-section]="\'sourceMoveDownButton\'"\n                >\n                    <AngleDownIcon *ngIf="!moveDownIconTemplate" [attr.data-pc-section]="\'movedownicon\'" />\n                    <ng-template *ngTemplateOutlet="moveDownIconTemplate"></ng-template>\n                </button>\n                <button\n                    type="button"\n                    [attr.aria-label]="moveBottomAriaLabel"\n                    pButton\n                    pRipple\n                    class="p-button-icon-only"\n                    [disabled]="sourceMoveDisabled()"\n                    (click)="moveBottom(sourcelist, source, selectedItemsSource, onSourceReorder, SOURCE_LIST)"\n                    [attr.data-pc-section]="\'sourceMoveBottomButton\'"\n                >\n                    <AngleDoubleDownIcon *ngIf="!moveBottomIconTemplate" [attr.data-pc-section]="\'movebottomicon\'" />\n                    <ng-template *ngTemplateOutlet="moveBottomIconTemplate"></ng-template>\n                </button>\n            </div>\n            <div class="p-picklist-list-wrapper p-picklist-source-wrapper" [attr.data-pc-section]="\'sourceWrapper\'" [attr.data-pc-group-section]="\'listWrapper\'">\n                <div [id]="idSource + \'_header\'" class="p-picklist-header" *ngIf="sourceHeader || sourceHeaderTemplate" [attr.data-pc-section]="\'sourceHeader\'" [attr.data-pc-group-section]="\'header\'">\n                    <div class="p-picklist-title" *ngIf="!sourceHeaderTemplate">{{ sourceHeader }}</div>\n                    <ng-container *ngTemplateOutlet="sourceHeaderTemplate"></ng-container>\n                </div>\n                <div class="p-picklist-filter-container" *ngIf="filterBy && showSourceFilter !== false" [attr.data-pc-section]="\'sourceFilterContainer\'">\n                    <ng-container *ngIf="sourceFilterTemplate; else builtInSourceElement">\n                        <ng-container *ngTemplateOutlet="sourceFilterTemplate; context: { options: sourceFilterOptions }"></ng-container>\n                    </ng-container>\n                    <ng-template #builtInSourceElement>\n                        <div class="p-picklist-filter" [attr.data-pc-section]="\'sourceFilter\'">\n                            <input\n                                #sourceFilter\n                                type="text"\n                                role="textbox"\n                                (keyup)="onFilter($event, SOURCE_LIST)"\n                                class="p-picklist-filter-input p-inputtext p-component"\n                                [disabled]="disabled"\n                                [attr.placeholder]="sourceFilterPlaceholder"\n                                [attr.aria-label]="ariaSourceFilterLabel"\n                                [attr.data-pc-section]="\'sourceFilterInput\'"\n                            />\n                            <SearchIcon *ngIf="!sourceFilterIconTemplate" [styleClass]="\'p-picklist-filter-icon\'" [attr.data-pc-section]="\'sourcefilterIcon\'" />\n                            <span class="p-picklist-filter-icon" *ngIf="sourceFilterIconTemplate" [attr.data-pc-section]="\'sourcefilterIcon\'">\n                                <ng-template *ngTemplateOutlet="sourceFilterIconTemplate"></ng-template>\n                            </span>\n                        </div>\n                    </ng-template>\n                </div>\n\n                <ul\n                    #sourcelist\n                    class="p-picklist-list p-picklist-source"\n                    [id]="idSource + \'_list\'"\n                    [attr.aria-labelledby]="idSource + \'_header\'"\n                    (keydown)="onItemKeyDown($event, selectedItemsSource, onSourceSelect, SOURCE_LIST)"\n                    (focus)="onListFocus($event, SOURCE_LIST)"\n                    (blur)="onListBlur($event, SOURCE_LIST)"\n                    cdkDropList\n                    [cdkDropListData]="source"\n                    (cdkDropListDropped)="onDrop($event, SOURCE_LIST)"\n                    [ngStyle]="sourceStyle"\n                    role="listbox"\n                    aria-multiselectable="true"\n                    [attr.aria-activedescendant]="focused[\'sourceList\'] ? focusedOptionId : undefined"\n                    [attr.tabindex]="source && source.length > 0 ? tabindex : -1"\n                    [attr.data-pc-section]="\'sourceList\'"\n                    [attr.data-pc-group-section]="\'list\'"\n                >\n                    <ng-template ngFor let-item [ngForOf]="source" [ngForTrackBy]="sourceTrackBy || trackBy" let-i="index" let-l="last">\n                        <li\n                            pRipple\n                            cdkDrag\n                            [id]="idSource + \'_\' + i"\n                            [ngClass]="itemClass(item, idSource + \'_\' + i, selectedItemsSource)"\n                            [cdkDragData]="item"\n                            [cdkDragDisabled]="!dragdrop"\n                            (click)="onItemClick($event, item, selectedItemsSource, SOURCE_LIST, onSourceSelect, idSource + \'_\' + i)"\n                            (mousedown)="onOptionMouseDown(i, SOURCE_LIST)"\n                            (dblclick)="onSourceItemDblClick()"\n                            (touchend)="onItemTouchEnd()"\n                            *ngIf="isItemVisible(item, SOURCE_LIST)"\n                            role="option"\n                            [attr.data-pc-section]="\'item\'"\n                            [attr.aria-selected]="isSelected(item, selectedItemsSource)"\n                        >\n                            <ng-container *ngTemplateOutlet="itemTemplate; context: { $implicit: item, index: i }"></ng-container>\n                        </li>\n                    </ng-template>\n                    <ng-container *ngIf="isEmpty(SOURCE_LIST) && (emptyMessageSourceTemplate || emptyFilterMessageSourceTemplate)">\n                        <li class="p-picklist-empty-message" *ngIf="!filterValueSource || !emptyFilterMessageSourceTemplate" [attr.data-pc-section]="\'sourceEmptyMessage\'">\n                            <ng-container *ngTemplateOutlet="emptyMessageSourceTemplate"></ng-container>\n                        </li>\n                        <li class="p-picklist-empty-message" *ngIf="filterValueSource" [attr.data-pc-section]="\'sourceEmptyMessage\'">\n                            <ng-container *ngTemplateOutlet="emptyFilterMessageSourceTemplate"></ng-container>\n                        </li>\n                    </ng-container>\n                </ul>\n            </div>\n            <div class="p-picklist-buttons p-picklist-transfer-buttons" [attr.data-pc-section]="\'buttons\'" [attr.data-pc-group-section]="\'controls\'">\n                <button type="button" [attr.aria-label]="moveToTargetAriaLabel" pButton pRipple class="p-button-icon-only" [disabled]="moveRightDisabled()" (click)="moveRight()" [attr.data-pc-section]="\'moveToTargetButton\'">\n                    <ng-container *ngIf="!moveToTargetIconTemplate">\n                        <AngleRightIcon *ngIf="!viewChanged" [attr.data-pc-section]="\'movetotargeticon\'" />\n                        <AngleDownIcon *ngIf="viewChanged" [attr.data-pc-section]="\'movetotargeticon\'" />\n                    </ng-container>\n                    <ng-template *ngTemplateOutlet="moveToTargetIconTemplate; context: { $implicit: viewChanged }"></ng-template>\n                </button>\n                <button type="button" [attr.aria-label]="moveAllToTargetAriaLabel" pButton pRipple class="p-button-icon-only" [disabled]="moveAllRightDisabled()" (click)="moveAllRight()" [attr.data-pc-section]="\'moveAllToTargetButton\'">\n                    <ng-container *ngIf="!moveAllToTargetIconTemplate">\n                        <AngleDoubleRightIcon *ngIf="!viewChanged" [attr.data-pc-section]="\'movealltotargeticon\'" />\n                        <AngleDoubleDownIcon *ngIf="viewChanged" [attr.data-pc-section]="\'movealltotargeticon\'" />\n                    </ng-container>\n                    <ng-template *ngTemplateOutlet="moveAllToTargetIconTemplate; context: { $implicit: viewChanged }"></ng-template>\n                </button>\n                <button type="button" [attr.aria-label]="moveToSourceAriaLabel" pButton pRipple class="p-button-icon-only" [disabled]="moveLeftDisabled()" (click)="moveLeft()" [attr.data-pc-section]="\'moveToSourceButton\'">\n                    <ng-container *ngIf="!moveToSourceIconTemplate">\n                        <AngleLeftIcon *ngIf="!viewChanged" [attr.data-pc-section]="\'movedownsourceticon\'" />\n                        <AngleUpIcon *ngIf="viewChanged" [attr.data-pc-section]="\'movedownsourceticon\'" />\n                    </ng-container>\n                    <ng-template *ngTemplateOutlet="moveToSourceIconTemplate; context: { $implicit: viewChanged }"></ng-template>\n                </button>\n                <button type="button" [attr.aria-label]="moveAllToSourceAriaLabel" pButton pRipple class="p-button-icon-only" [disabled]="moveAllLeftDisabled()" (click)="moveAllLeft()" [attr.data-pc-section]="\'moveAllToSourceButton\'">\n                    <ng-container *ngIf="!moveAllToSourceIconTemplate">\n                        <AngleDoubleLeftIcon *ngIf="!viewChanged" [attr.data-pc-section]="\'movealltosourceticon\'" />\n                        <AngleDoubleUpIcon *ngIf="viewChanged" [attr.data-pc-section]="\'movealltosourceticon\'" />\n                    </ng-container>\n                    <ng-template *ngTemplateOutlet="moveAllToSourceIconTemplate; context: { $implicit: viewChanged }"></ng-template>\n                </button>\n            </div>\n            <div class="p-picklist-list-wrapper p-picklist-target-wrapper" [attr.data-pc-section]="\'targetWrapper\'" [attr.data-pc-group-section]="\'listwrapper\'">\n                <div [id]="idTarget + \'_header\'" class="p-picklist-header" *ngIf="targetHeader || targetHeaderTemplate" [attr.data-pc-section]="\'targetHead\'" [attr.data-pc-group-section]="\'header\'">\n                    <div class="p-picklist-title" *ngIf="!targetHeaderTemplate">{{ targetHeader }}</div>\n                    <ng-container *ngTemplateOutlet="targetHeaderTemplate"></ng-container>\n                </div>\n                <div class="p-picklist-filter-container" *ngIf="filterBy && showTargetFilter !== false" [attr.data-pc-section]="\'targetFilterContainer\'">\n                    <ng-container *ngIf="targetFilterTemplate; else builtInTargetElement">\n                        <ng-container *ngTemplateOutlet="targetFilterTemplate; context: { options: targetFilterOptions }"></ng-container>\n                    </ng-container>\n                    <ng-template #builtInTargetElement>\n                        <div class="p-picklist-filter" [attr.data-pc-section]="\'targetFilter\'">\n                            <input\n                                #targetFilter\n                                type="text"\n                                role="textbox"\n                                (keyup)="onFilter($event, TARGET_LIST)"\n                                class="p-picklist-filter-input p-inputtext p-component"\n                                [disabled]="disabled"\n                                [attr.placeholder]="targetFilterPlaceholder"\n                                [attr.aria-label]="ariaTargetFilterLabel"\n                                [attr.data-pc-section]="\'targetFilterInput\'"\n                            />\n                            <SearchIcon *ngIf="!targetFilterIconTemplate" [styleClass]="\'p-picklist-filter-icon\'" [attr.data-pc-section]="\'targetfiltericon\'" />\n                            <span class="p-picklist-filter-icon" *ngIf="targetFilterIconTemplate" [attr.data-pc-section]="\'targetfiltericon\'">\n                                <ng-template *ngTemplateOutlet="targetFilterIconTemplate"></ng-template>\n                            </span>\n                        </div>\n                    </ng-template>\n                </div>\n                <ul\n                    #targetlist\n                    class="p-picklist-list p-picklist-target"\n                    [id]="idTarget + \'_list\'"\n                    [attr.aria-labelledby]="idTarget + \'_header\'"\n                    (keydown)="onItemKeyDown($event, selectedItemsTarget, onTargetSelect, TARGET_LIST)"\n                    (focus)="onListFocus($event, TARGET_LIST)"\n                    (blur)="onListBlur($event, TARGET_LIST)"\n                    cdkDropList\n                    [cdkDropListData]="target"\n                    (cdkDropListDropped)="onDrop($event, TARGET_LIST)"\n                    [ngStyle]="targetStyle"\n                    role="listbox"\n                    aria-multiselectable="true"\n                    [attr.aria-activedescendant]="focused[\'targetList\'] ? focusedOptionId : undefined"\n                    [attr.tabindex]="target && target.length > 0 ? tabindex : -1"\n                    [attr.data-pc-section]="\'targetList\'"\n                    [attr.data-pc-group-section]="\'list\'"\n                >\n                    <ng-template ngFor let-item [ngForOf]="target" [ngForTrackBy]="targetTrackBy || trackBy" let-i="index" let-l="last">\n                        <li\n                            pRipple\n                            cdkDrag\n                            [id]="idTarget + \'_\' + i"\n                            [ngClass]="itemClass(item, idTarget + \'_\' + i, selectedItemsTarget)"\n                            [cdkDragData]="item"\n                            [cdkDragDisabled]="!dragdrop"\n                            (click)="onItemClick($event, item, selectedItemsTarget, TARGET_LIST, onTargetSelect, idTarget + \'_\' + i)"\n                            (mousedown)="onOptionMouseDown(i, TARGET_LIST)"\n                            (dblclick)="onTargetItemDblClick()"\n                            (touchend)="onItemTouchEnd()"\n                            *ngIf="isItemVisible(item, TARGET_LIST)"\n                            role="option"\n                            [attr.data-pc-section]="\'item\'"\n                            [attr.aria-selected]="isSelected(item, selectedItemsTarget)"\n                        >\n                            <ng-container *ngTemplateOutlet="itemTemplate; context: { $implicit: item, index: i }"></ng-container>\n                        </li>\n                    </ng-template>\n                    <ng-container *ngIf="isEmpty(TARGET_LIST) && (emptyMessageTargetTemplate || emptyFilterMessageTargetTemplate)">\n                        <li class="p-picklist-empty-message" *ngIf="!filterValueTarget || !emptyFilterMessageTargetTemplate" [attr.data-pc-section]="\'targetEmptyMessage\'">\n                            <ng-container *ngTemplateOutlet="emptyMessageTargetTemplate"></ng-container>\n                        </li>\n                        <li class="p-picklist-empty-message" *ngIf="filterValueTarget" [attr.data-pc-section]="\'targetEmptyMessage\'">\n                            <ng-container *ngTemplateOutlet="emptyFilterMessageTargetTemplate"></ng-container>\n                        </li>\n                    </ng-container>\n                </ul>\n            </div>\n            <div class="p-picklist-buttons p-picklist-target-controls" *ngIf="showTargetControls" [attr.data-pc-section]="\'targetControls\'" [attr.data-pc-group-section]="\'controls\'">\n                <button\n                    type="button"\n                    [attr.aria-label]="moveUpAriaLabel"\n                    pButton\n                    pRipple\n                    class="p-button-icon-only"\n                    [disabled]="targetMoveDisabled()"\n                    (click)="moveUp(targetlist, target, selectedItemsTarget, onTargetReorder, TARGET_LIST)"\n                    [attr.data-pc-section]="\'targetMoveUpButton\'"\n                >\n                    <AngleUpIcon *ngIf="!moveUpIconTemplate" [attr.data-pc-section]="\'moveupicon\'" />\n                    <ng-template *ngTemplateOutlet="moveUpIconTemplate"></ng-template>\n                </button>\n                <button\n                    type="button"\n                    [attr.aria-label]="moveTopAriaLabel"\n                    pButton\n                    pRipple\n                    class="p-button-icon-only"\n                    [disabled]="targetMoveDisabled()"\n                    (click)="moveTop(targetlist, target, selectedItemsTarget, onTargetReorder, TARGET_LIST)"\n                    [attr.data-pc-section]="\'targetMoveTopButton\'"\n                >\n                    <AngleDoubleUpIcon *ngIf="!moveTopIconTemplate" [attr.data-pc-section]="\'movetopicon\'" />\n                    <ng-template *ngTemplateOutlet="moveTopIconTemplate"></ng-template>\n                </button>\n                <button\n                    type="button"\n                    [attr.aria-label]="moveDownAriaLabel"\n                    pButton\n                    pRipple\n                    class="p-button-icon-only"\n                    [disabled]="targetMoveDisabled()"\n                    (click)="moveDown(targetlist, target, selectedItemsTarget, onTargetReorder, TARGET_LIST)"\n                    [attr.data-pc-section]="\'targetMoveDownButton\'"\n                >\n                    <AngleDownIcon *ngIf="!moveDownIconTemplate" [attr.data-pc-section]="\'movedownicon\'" />\n                    <ng-template *ngTemplateOutlet="moveDownIconTemplate"></ng-template>\n                </button>\n                <button\n                    type="button"\n                    [attr.aria-label]="moveBottomAriaLabel"\n                    pButton\n                    pRipple\n                    class="p-button-icon-only"\n                    [disabled]="targetMoveDisabled()"\n                    (click)="moveBottom(targetlist, target, selectedItemsTarget, onTargetReorder, TARGET_LIST)"\n                    [attr.data-pc-section]="\'targetMoveBottomButton\'"\n                >\n                    <AngleDoubleDownIcon *ngIf="!moveBottomIconTemplate" [attr.data-pc-section]="\'movebottomicon\'" />\n                    <ng-template *ngTemplateOutlet="moveBottomIconTemplate"></ng-template>\n                </button>\n            </div>\n        </div>\n    ',
       changeDetection: ChangeDetectionStrategy.OnPush,
       encapsulation: ViewEncapsulation$1.None,
       host: {
@@ -2907,24 +2599,25 @@ var PickList = class _PickList {
 var DragConfig = {
   zIndex: 1200
 };
-var PickListModule = class _PickListModule {
-  static ɵfac = function PickListModule_Factory(__ngFactoryType__) {
-    return new (__ngFactoryType__ || _PickListModule)();
-  };
-  static ɵmod = ɵɵdefineNgModule({
-    type: _PickListModule,
-    declarations: [PickList],
-    imports: [CommonModule, ButtonModule, SharedModule, RippleModule, DragDropModule, AngleDoubleDownIcon, AngleDoubleLeftIcon, AngleDoubleRightIcon, AngleDoubleUpIcon, AngleDownIcon, AngleLeftIcon, AngleRightIcon, AngleUpIcon, SearchIcon, HomeIcon],
-    exports: [PickList, SharedModule, DragDropModule]
-  });
-  static ɵinj = ɵɵdefineInjector({
-    providers: [{
-      provide: CDK_DRAG_CONFIG,
-      useValue: DragConfig
-    }],
-    imports: [CommonModule, ButtonModule, SharedModule, RippleModule, DragDropModule, AngleDoubleDownIcon, AngleDoubleLeftIcon, AngleDoubleRightIcon, AngleDoubleUpIcon, AngleDownIcon, AngleLeftIcon, AngleRightIcon, AngleUpIcon, SearchIcon, HomeIcon, SharedModule, DragDropModule]
-  });
+var _PickListModule = class _PickListModule {
 };
+__publicField(_PickListModule, "ɵfac", function PickListModule_Factory(__ngFactoryType__) {
+  return new (__ngFactoryType__ || _PickListModule)();
+});
+__publicField(_PickListModule, "ɵmod", ɵɵdefineNgModule({
+  type: _PickListModule,
+  declarations: [PickList],
+  imports: [CommonModule, ButtonModule, SharedModule, RippleModule, DragDropModule, AngleDoubleDownIcon, AngleDoubleLeftIcon, AngleDoubleRightIcon, AngleDoubleUpIcon, AngleDownIcon, AngleLeftIcon, AngleRightIcon, AngleUpIcon, SearchIcon, HomeIcon],
+  exports: [PickList, SharedModule, DragDropModule]
+}));
+__publicField(_PickListModule, "ɵinj", ɵɵdefineInjector({
+  providers: [{
+    provide: CDK_DRAG_CONFIG,
+    useValue: DragConfig
+  }],
+  imports: [CommonModule, ButtonModule, SharedModule, RippleModule, DragDropModule, AngleDoubleDownIcon, AngleDoubleLeftIcon, AngleDoubleRightIcon, AngleDoubleUpIcon, AngleDownIcon, AngleLeftIcon, AngleRightIcon, AngleUpIcon, SearchIcon, HomeIcon, SharedModule, DragDropModule]
+}));
+var PickListModule = _PickListModule;
 (() => {
   (typeof ngDevMode === "undefined" || ngDevMode) && setClassMetadata(PickListModule, [{
     type: NgModule,

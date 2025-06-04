@@ -11,6 +11,7 @@ import { GoogleAnalyticsService } from '../../../ga/service/google-analytics.ser
 import {ClearObservable} from "../../../ shared/unsubscribtion/ClearObservable";
 import {TEST_ROUTES} from "../../../ shared/constants/routes";
 
+
 @Component({
   selector: 'app-detail-page',
   templateUrl: './detail-page.component.html',
@@ -32,6 +33,11 @@ export class DetailPageComponent extends ClearObservable implements OnInit {
   hadsDepressionScore: number = 0;
   hadsAnxietyResult: string = '';
   hadsDepressionResult: string = '';
+
+  // RBQ-2A spectra sums (added)
+  rbqSpectraScores: { [key: string]: number } = {};
+  rbqTotalScore: number = 0;  // Store the general sum for RBQ-2A
+
 
   protected readonly Object = Object;
   protected readonly specializedTests = specializedTests;
@@ -124,19 +130,45 @@ export class DetailPageComponent extends ClearObservable implements OnInit {
       this.hadsAnxietyResult = anxietyInterpretation ? anxietyInterpretation.result : 'Невизначено';
       this.hadsDepressionResult = depressionInterpretation ? depressionInterpretation.result : 'Невизначено';
 
-    } else if (this.data.specialTest !== specializedTests.SMI) {
-      // For general tests (non-SMI and non-HADS)
-      this.totalScore = Object.keys(this.answers)
-          .map(key => this.answers[key])
-          .reduce((sum, value) => sum + Number(value), 0);
+    }
+    // RBQ-2A: sum according to each spectra’s "questions" array
+    else if (this.data.specialTest === this.specializedTests.RBQ2A) {
+      this.rbqSpectraScores = {};
+      this.rbqTotalScore = 0;  // Reset the general sum
 
-      const interpretation = this.data.resultInterpretation.find(({ range: [min, max] }) =>
-          this.totalScore >= min && (max === null || this.totalScore <= max)
-      );
+      // Iterate over each factor (spectra) to sum the answers for each factor
+      this.data.factor?.forEach(s => {
+        let sumForFactor = 0;
 
-      this.resultMessage = interpretation ? interpretation.result : 'Не вдалося визначити рівень.';
-    } else {
-      // SMI specialized test branch remains unchanged
+        // Iterate over questions of the spectra
+        s.questions.forEach(qNumber => {
+          const idx = qNumber - 1;  // Convert 1-based to 0-based index
+          const questionObj = this.data.questions[idx];
+
+          if (questionObj) {
+            const questionId = questionObj._id;
+            const answerVal = this.answers[questionId];
+
+            if (answerVal !== undefined) {
+              sumForFactor += Number(answerVal);
+            }
+          }
+        });
+
+        this.rbqSpectraScores[s.name] = sumForFactor;
+        this.rbqTotalScore += sumForFactor;  // Add to the general total score
+      });
+
+      // Find the highest-scoring spectra
+      const keys = Object.keys(this.rbqSpectraScores);
+      if (keys.length) {
+        this.highestSchema = keys.reduce((a, b) =>
+            this.rbqSpectraScores[a] > this.rbqSpectraScores[b] ? a : b
+        );
+      }
+    }
+    // SMI specialized test branch remains unchanged
+    else if (this.data.specialTest === specializedTests.SMI) {
       this.schemaScores = {};
       this.data.resultInterpretation.forEach(({ name, questionIndex }) => {
         let schemaTotal = 0;
@@ -155,8 +187,20 @@ export class DetailPageComponent extends ClearObservable implements OnInit {
       this.highestSchema = Object.keys(this.schemaScores).reduce((a, b) =>
           this.schemaScores[a] > this.schemaScores[b] ? a : b
       );
-      this.resultMessage = `Ваш домінуючий психологічний шаблон: ${this.highestSchema}`;
     }
+    // For general tests (non-SMI, non-HADS, non-RBQ2A)
+    else {
+      this.totalScore = Object.keys(this.answers)
+          .map(key => this.answers[key])
+          .reduce((sum, value) => sum + Number(value), 0);
+
+      const interpretation = this.data.resultInterpretation.find(({ range: [min, max] }) =>
+          this.totalScore >= min && (max === null || this.totalScore <= max)
+      );
+
+      this.resultMessage = interpretation ? interpretation.result : 'Не вдалося визначити рівень.';
+    }
+
     this.isTestCompleted = true;
   }
 
@@ -200,8 +244,7 @@ export class DetailPageComponent extends ClearObservable implements OnInit {
     this.totalScore = 0;
     this.schemaScores = {};
     this.highestSchema = '';
-    this.resultMessage = '';
-    // Reset HADS-related properties as well
+    this.rbqSpectraScores = {};      // reset RBQ-2A sums
     this.hadsAnxietyScore = 0;
     this.hadsDepressionScore = 0;
     this.hadsAnxietyResult = '';
