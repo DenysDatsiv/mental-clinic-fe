@@ -67,7 +67,7 @@ export class DetailPageComponent extends ClearObservable implements OnInit {
   }
 
   updatePageTitle(testName: string): void {
-    this.titleService.setTitle(`${testName} | Клініка ментального здоров'я Євгена`);
+    this.titleService.setTitle(`${testName} | Платформа ментального здоров'я Євгена`);
   }
 
   nextQuestion(): void {
@@ -272,7 +272,7 @@ export class DetailPageComponent extends ClearObservable implements OnInit {
   }
 
   updateSEO(title: string, description: string): void {
-    this.titleService.setTitle(`${title} | Клініка ментального здоров'я`);
+    this.titleService.setTitle(`${title} | Платформа ментального здоров'я`);
     this.metaService.updateTag({ name: 'description', content: description });
     this.metaService.updateTag({ name: 'keywords', content: `ментальне здоров'я, ${title}, тест на психічний стан` });
   }
