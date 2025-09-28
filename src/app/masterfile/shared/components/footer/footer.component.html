@@ -48,7 +48,11 @@
                 <div class="link-column">
                     <h4>Для клієнтів</h4>
                     <ul>
-                        <li><a href="/contract" (click)="trackLinkClick('Публічний договір', '/contract')">ПУБЛІЧНИЙ ДОГОВІР ( ВАЖЛИВО )</a></li>
+                        <li>
+                            <a href="/contract" (click)="trackLinkClick('Публічний договір', '/contract')">
+                                ПУБЛІЧНИЙ ДОГОВІР (<span style="color: red;">ВАЖЛИВО</span>)
+                            </a>
+                        </li>
                         <li><a href="/visit" (click)="trackLinkClick('Правила відвідування', '/visit')">Правила відвідування</a></li>
                         <li><a href="" (click)="trackLinkClick('Часті питання', '/faq')">Часті питання</a></li>
                     </ul>
