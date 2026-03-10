@@ -1,8 +1,10 @@
-export const TELEGRAM_BANNER ={
-
-    PSYCHOLOGISTS_COMMUNITY_LABEL : {name:'Чат-підтримки ( відповіді психіатрів ) ',link:'https://t.me/+arTvl6C3HeQ2ZjVi'},
-    DOCTORS_COMMUNITY_LABEL : {name:'Чат-підтримки ( відповіді психологів )',link:'https://t.me/+EzLZPYezLm03NTNi'}
-}
-
-
-
+export const TELEGRAM_BANNER = {
+    PSYCHIATRIST_CHAT: {
+        name: "Психіатри онлайн — чат підтримки",
+        link: "https://t.me/+arTvl6C3HeQ2ZjVi",
+    },
+    PSYCHOLOGIST_CHAT: {
+        name: "Психологи онлайн — чат підтримки",
+        link: "https://t.me/+EzLZPYezLm03NTNi",
+    },
+};
