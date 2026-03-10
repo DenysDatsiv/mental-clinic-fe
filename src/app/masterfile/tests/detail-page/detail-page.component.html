@@ -10,19 +10,23 @@
     </div>
 
     <div *ngIf="!isTestCompleted" class="page-container">
+
         <div class="instruction-container">
             <div class="pb-2">
                 <h2 class="section-title">📌 Інструкція</h2>
                 <p [innerHTML]="data?.instructions" class="section-text"></p>
             </div>
+
             <div class="mb-0">
                 <h3 class="section-subtitle">🔍 Для чого це тестування?</h3>
                 <p class="section-text mb-0">{{ data?.whyTest }}</p>
             </div>
+
             <p-divider class="mx-1"></p-divider>
         </div>
 
         <div class="sm:w-full ld:mt-1 flex lg:align-items-center lg:justify-content-between flex-column lg:flex-row">
+
             <div class="d-flex">
                 <div class="w-full flex align-items-center sm:justify-content-center">
                     <button
@@ -36,57 +40,70 @@
                     </button>
                 </div>
             </div>
+
             <div>
                 <div class="flex flex-column lg:flex-row lg:align-items-center mt-1 lg:mt-0 text-center">
                     <p>Оптимальний час для проходження:</p>
                     <p-chip class="lg:ml-2" [label]="data?.duration" icon="pi pi-clock"></p-chip>
                 </div>
             </div>
+
         </div>
 
         <div class="quiz-container pt-3">
+
             <form>
-                <div>
-                    <p *ngIf="data.questions[currentQuestionIndex]?.question" class="quiz-question">
-                        {{ currentQuestionIndex + 1 }}. {{ data.questions[currentQuestionIndex]?.question }}
-                    </p>
+                <p class="quiz-question">
+                    {{ currentQuestionIndex + 1 }}.
+                    {{ data.questions[currentQuestionIndex]?.question }}
+                </p>
 
-                    <div *ngIf="data.questions[currentQuestionIndex]?.example" class="pb-2">
-                        <span>{{ data.questions[currentQuestionIndex]?.example }}</span>
+                <div *ngIf="data.questions[currentQuestionIndex]?.example" class="pb-2">
+                    <span>{{ data.questions[currentQuestionIndex]?.example }}</span>
+                </div>
+
+                <div [ngClass]="{ 'quiz-options': true, 'error-border': showError }">
+
+                    <div
+                            *ngFor="let label of data.questions[currentQuestionIndex]?.labelText; let i = index"
+                            class="quiz-option"
+                            (click)="selectAnswer(data.questions[currentQuestionIndex]?._id, data.questions[currentQuestionIndex]?.value[i])">
+
+                        <p-radioButton
+                                [(ngModel)]="answers[data.questions[currentQuestionIndex]?._id]"
+                                [name]="'question_' + data.questions[currentQuestionIndex]?._id"
+                                [value]="data.questions[currentQuestionIndex]?.value[i]"
+                                [ngModelOptions]="{ standalone: true }"
+                                (onChange)="clearError()"
+                                class="mr-3">
+                        </p-radioButton>
+
+                        <span>{{ label }}</span>
                     </div>
 
-                    <div [ngClass]="{'quiz-options': true, 'error-border': showError}">
-                        <div
-                                (click)="selectAnswer(data.questions[currentQuestionIndex]?._id, data.questions[currentQuestionIndex]?.value[i])"
-                                *ngFor="let label of data.questions[currentQuestionIndex]?.labelText; let i = index"
-                                class="quiz-option">
+                </div>
 
-                            <p-radioButton
-                                    (onChange)="clearError()"
-                                    [(ngModel)]="answers[data.questions[currentQuestionIndex]?._id]"
-                                    [name]="'question_' + data.questions[currentQuestionIndex]?._id"
-                                    [ngModelOptions]="{ standalone: true }"
-                                    [value]="data.questions[currentQuestionIndex]?.value[i]"
-                                    class="mr-3">
-                            </p-radioButton>
-
-                            <span>{{ label }}</span>
-                        </div>
-                    </div>
-                    <div class="mt-2">
-                        <p-message *ngIf="showError" severity="error"
-                                   text="Будь ласка, оберіть варіант відповіді перед тим, як перейти далі."></p-message>
-                    </div>
+                <div class="mt-2">
+                    <p-message
+                            *ngIf="showError"
+                            severity="error"
+                            text="Будь ласка, оберіть варіант відповіді перед тим, як перейти далі.">
+                    </p-message>
                 </div>
             </form>
+
         </div>
 
         <div
-                [ngClass]="{'justify-content-end': currentQuestionIndex === 0, 'justify-content-between': currentQuestionIndex > 0}"
-                class="flex my-5">
+                class="flex my-5"
+                [ngClass]="{
+                'justify-content-end': currentQuestionIndex === 0,
+                'justify-content-between': currentQuestionIndex > 0
+            }">
+
             <button
-                    (click)="previousQuestion()"
                     *ngIf="currentQuestionIndex > 0"
+                    (click)="previousQuestion()"
                     class="p-button-secondary"
                     pButton
                     type="button">
@@ -100,27 +117,37 @@
                     type="button">
                 {{ currentQuestionIndex < data.questions.length - 1 ? 'Далі' : 'Завершити' }}
             </button>
+
         </div>
+
     </div>
 
-    <!-- Result container -->
+    <!-- ================= RESULTS ================= -->
+
+    <!-- ================= RESULTS ================= -->
+
     <div *ngIf="isTestCompleted" class="result-container">
 
-        <!-- 1) RBQ-2A specialized test branch -->
-        <ng-container *ngIf="data?.specialTest === specializedTests.RBQ2A; else nextBranch">
+        <!-- RBQ -->
+        <ng-container *ngIf="data?.specialTest === specializedTests.RBQ2A; else SMIblock">
+
             <div class="ysq-container">
-                <h2 class="text-center text-blue-600 font-bold text-3xl">📊 Результати RBQ-2A</h2>
+
+                <h2 class="text-center text-blue-600 font-bold text-3xl">
+                    📊 Результати RBQ-2A
+                </h2>
+
                 <p-divider class="divider-max-width justify-content-center mx-auto"></p-divider>
-                <!-- Show the general sum for RBQ-2A -->
+
                 <div class="score-box text-center my-4">
                     <p class="score-text text-white text-lg">Загальна сума балів:</p>
                     <p class="score-value text-white text-4xl font-bold">{{ rbqTotalScore }}</p>
                 </div>
 
-                <!-- Show each spectra name and its sum -->
-                <div class="schema-results w-full grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 p-4">
+                <div class="schema-results">
                     <div *ngFor="let key of Object.keys(rbqSpectraScores)" class="schema-container">
                         <div class="schema-name">{{ key }}</div>
+
                         <div class="schema-info">
                             <span class="schema-sum">Сума балів:</span>
                             {{ rbqSpectraScores[key] }}
@@ -128,90 +155,174 @@
                     </div>
                 </div>
 
-                <!-- Optionally: show highest-scoring spectra name -->
-                <div *ngIf="highestSchema" class="mt-4 text-center">
-                    <p class="text-lg font-semibold">
-                        Домінуючий показник: <span class="text-blue-700">{{ highestSchema }}</span>
-                    </p>
-                </div>
-
-                <div class="button-group flex flex-column justify-content-center mt-5 gap-3">
-                    <div class="flex justify-content-center mt-5 gap-3">
-                        <p-button (click)="restartTest()" label="Пройти знову"></p-button>
-                        <p-button (click)="goToAllTests()" label="До всіх тестів"></p-button>
-                    </div>
-                    <p-button (click)="openContacts()" label="Записатись на консультацію"></p-button>
-                </div>
             </div>
+
         </ng-container>
 
-        <!-- 2) SMI specialized test branch -->
-        <ng-template #nextBranch>
-            <ng-container *ngIf="data?.specialTest === specializedTests.SMI; else afterSMI">
+        <!-- SMI -->
+        <ng-template #SMIblock>
+
+            <ng-container *ngIf="data?.specialTest === specializedTests.SMI; else HADSblock">
+
                 <div class="ysq-container">
-                    <h2 class="text-center text-blue-600 font-bold text-3xl">📊 Результати тесту YSQ-S3</h2>
+
+                    <h2 class="text-center text-blue-600 font-bold text-3xl">
+                        📊 Результати тесту YSQ-S3
+                    </h2>
+
                     <p-divider class="divider-max-width justify-content-center mx-auto"></p-divider>
-                    <div class="schema-results grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 p-4">
+
+                    <div class="schema-results">
                         <div *ngFor="let testName of Object.keys(schemaScores)" class="schema-container">
                             <div class="schema-name">{{ testName }}</div>
+
                             <div class="schema-info">
                                 <span class="schema-sum">Середнє значення:</span>
                                 {{ schemaScores[testName] | number: '1.2-2' }}
                             </div>
                         </div>
                     </div>
+
                 </div>
+
             </ng-container>
 
-            <!-- 3) HADS test branch -->
-            <ng-template #afterSMI>
-                <ng-container *ngIf="data?.specialTest === specializedTests.HADS; else normalResult">
-                    <div class="result-card">
-                        <h2 class="result-title text-2xl font-bold text-center">Ви завершили тест!</h2>
-
-                        <div class="score-box text-center my-4">
-                            <p class="score-text text-white text-lg">Тривожність:</p>
-                            <p class="score-value text-white text-4xl font-bold">{{ hadsAnxietyScore }}</p>
-                        </div>
-                        <p class="result-message text-center text-lg">Інтерпретація: {{ hadsAnxietyResult }}</p>
-
-                        <div class="score-box text-center my-4">
-                            <p class="score-text text-white text-lg">Депресія:</p>
-                            <p class="score-value text-white text-4xl font-bold">{{ hadsDepressionScore }}</p>
-                        </div>
-                        <p class="result-message text-center text-lg">Інтерпретація: {{ hadsDepressionResult }}</p>
-                        <p class="common-message text-gray-500 text-center">{{ data?.commonMessage }}</p>
-
-                        <div class="button-group flex flex-column justify-content-center mt-5 gap-3">
-                            <div class="flex justify-content-center mt-5 gap-3">
-                                <p-button (click)="restartTest()" label="Пройти знову"></p-button>
-                                <p-button (click)="goToAllTests()" label="До всіх тестів"></p-button>
-                            </div>
-                            <p-button (click)="openContacts()" label="Записатись на консультацію"></p-button>
-                        </div>
-                    </div>
-                </ng-container>
-
-                <!-- 4) General test branch -->
-                <ng-template #normalResult>
-                    <div class="result-card">
-                        <h2 class="result-title text-2xl font-bold text-center">Ви завершили тест!</h2>
-                        <div class="score-box text-center my-4">
-                            <p class="score-text text-white text-lg">Ваша сума балів:</p>
-                            <p class="score-value text-white text-4xl font-bold">{{ totalScore }}</p>
-                        </div>
-                        <p class="result-message text-center text-lg">{{ resultMessage }}</p>
-                        <p class="common-message text-gray-500 text-center">{{ data?.commonMessage }}</p>
-                        <div class="button-group flex flex-column justify-content-center mt-5 gap-3">
-                            <div class="flex justify-content-center mt-5 gap-3">
-                                <p-button (click)="restartTest()" label="Пройти знову"></p-button>
-                                <p-button (click)="goToAllTests()" label="До всіх тестів"></p-button>
-                            </div>
-                            <p-button (click)="openContacts()" label="Записатись на консультацію"></p-button>
-                        </div>
-                    </div>
-                </ng-template>
-            </ng-template>
         </ng-template>
+
+        <!-- HADS -->
+        <ng-template #HADSblock>
+
+            <ng-container *ngIf="data?.specialTest === specializedTests.HADS; else ASRSblock">
+
+                <div class="result-card result-card--narrow">
+
+                    <h2 class="result-title text-2xl font-bold text-center">
+                        Ви завершили тест!
+                    </h2>
+
+                    <div class="score-box text-center my-4">
+                        <p class="score-text text-white text-lg">Тривожність:</p>
+                        <p class="score-value text-white text-4xl font-bold">{{ hadsAnxietyScore }}</p>
+                    </div>
+
+                    <p class="result-message text-center text-lg">
+                        Інтерпретація: {{ hadsAnxietyResult }}
+                    </p>
+
+                    <div class="score-box text-center my-4">
+                        <p class="score-text text-white text-lg">Депресія:</p>
+                        <p class="score-value text-white text-4xl font-bold">{{ hadsDepressionScore }}</p>
+                    </div>
+
+                    <p class="result-message text-center text-lg">
+                        Інтерпретація: {{ hadsDepressionResult }}
+                    </p>
+
+                </div>
+
+            </ng-container>
+
+        </ng-template>
+
+        <!-- ASRS -->
+        <ng-template #ASRSblock>
+
+            <ng-container *ngIf="data?.specialTest === specializedTests.ASRS; else normalResult">
+
+                <div class="result-card">
+
+                    <h2 class="result-title text-2xl font-bold text-center">
+                        📊 Результати ASRS-v1.1
+                    </h2>
+
+                    <p-divider class="divider-max-width justify-content-center mx-auto"></p-divider>
+
+                    <div class="schema-results">
+
+                        <div class="schema-container">
+                            <div class="schema-name">Частина A</div>
+
+                            <div class="schema-info">
+                                <span class="schema-sum">Позитивні симптоми:</span>
+                                {{ asrsPartAPositive }} / 6
+                            </div>
+
+                            <div class="schema-info">
+                                <span class="schema-sum">Негативні симптоми:</span>
+                                {{ asrsPartANegative }} / 6
+                            </div>
+                        </div>
+
+                        <div class="schema-container">
+                            <div class="schema-name">Частина B</div>
+
+                            <div class="schema-info">
+                                <span class="schema-sum">Позитивні симптоми:</span>
+                                {{ asrsPartBPositive }} / 12
+                            </div>
+
+                            <div class="schema-info">
+                                <span class="schema-sum">Негативні симптоми:</span>
+                                {{ asrsPartBNegative }} / 12
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class="result-summary">
+                        <div class="result-summary-grid">
+                            <div class="result-summary-item">
+                                <span class="result-summary-label">Усього позитивних симптомів</span>
+                                <span class="result-summary-value">{{ asrsTotalPositive }} / 18</span>
+                            </div>
+
+                            <div class="result-summary-item">
+                                <span class="result-summary-label">Усього негативних симптомів</span>
+                                <span class="result-summary-value">{{ asrsTotalNegative }} / 18</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <p class="result-message text-center text-lg">
+                        {{ asrsResult }}
+                    </p>
+
+                    <p class="common-message text-gray-500 text-center">
+                        {{ data?.commonMessage }}
+                    </p>
+
+                </div>
+
+            </ng-container>
+
+        </ng-template>
+
+        <!-- GENERAL RESULT -->
+        <ng-template #normalResult>
+
+            <div class="result-card result-card--narrow">
+
+                <h2 class="result-title text-2xl font-bold text-center">
+                    Ви завершили тест!
+                </h2>
+
+                <div class="score-box text-center my-4">
+                    <p class="score-text text-white text-lg">Ваша сума балів:</p>
+                    <p class="score-value text-white text-4xl font-bold">{{ totalScore }}</p>
+                </div>
+
+                <p class="result-message text-center text-lg">
+                    {{ resultMessage }}
+                </p>
+
+                <p class="common-message text-gray-500 text-center">
+                    {{ data?.commonMessage }}
+                </p>
+
+            </div>
+
+        </ng-template>
+
     </div>
+
 </div>

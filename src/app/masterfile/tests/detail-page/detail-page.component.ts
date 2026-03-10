@@ -11,6 +11,7 @@ import { GoogleAnalyticsService } from '../../../ga/service/google-analytics.ser
 import {ClearObservable} from "../../../ shared/unsubscribtion/ClearObservable";
 import {TEST_ROUTES} from "../../../ shared/constants/routes";
 
+;
 
 @Component({
   selector: 'app-detail-page',
@@ -19,25 +20,35 @@ import {TEST_ROUTES} from "../../../ shared/constants/routes";
 })
 export class DetailPageComponent extends ClearObservable implements OnInit {
   data!: Test;
+
   answers: { [key: string]: number } = {};
+
   currentQuestionIndex = 0;
   showError = false;
   isTestCompleted = false;
+
   totalScore = 0;
   resultMessage = '';
+
   schemaScores: { [key: string]: number } = {};
   highestSchema = '';
 
-  // HADS test properties
-  hadsAnxietyScore: number = 0;
-  hadsDepressionScore: number = 0;
-  hadsAnxietyResult: string = '';
-  hadsDepressionResult: string = '';
+  // HADS
+  hadsAnxietyScore = 0;
+  hadsDepressionScore = 0;
+  hadsAnxietyResult = '';
+  hadsDepressionResult = '';
 
-  // RBQ-2A spectra sums (added)
+  // RBQ
   rbqSpectraScores: { [key: string]: number } = {};
-  rbqTotalScore: number = 0;  // Store the general sum for RBQ-2A
+  rbqTotalScore = 0;
 
+  // ASRS
+  asrsPartAPositive = 0;
+  asrsPartANegative = 0;
+  asrsPartBPositive = 0;
+  asrsPartBNegative = 0;
+  asrsResult = '';
 
   protected readonly Object = Object;
   protected readonly specializedTests = specializedTests;
@@ -56,14 +67,17 @@ export class DetailPageComponent extends ClearObservable implements OnInit {
 
   ngOnInit(): void {
     window.scrollTo(0, 0);
-    this.route.params.pipe(
-        switchMap(params => this.testService.getTestById(params['id'])),
-        takeUntil(this.destroy$)
-    ).subscribe(response => {
-      this.data = response;
-      this.updatePageTitle(response.name);
-      this.updateSEO(response.name, response.description);
-    });
+
+    this.route.params
+        .pipe(
+            switchMap(params => this.testService.getTestById(params['id'])),
+            takeUntil(this.destroy$)
+        )
+        .subscribe(response => {
+          this.data = response;
+          this.updatePageTitle(response.name);
+          this.updateSEO(response.name, response.description);
+        });
   }
 
   updatePageTitle(testName: string): void {
@@ -72,23 +86,15 @@ export class DetailPageComponent extends ClearObservable implements OnInit {
 
   nextQuestion(): void {
     const currentQuestion = this.data.questions[this.currentQuestionIndex];
+
     if (this.answers[currentQuestion._id] === undefined) {
       this.showError = true;
       return;
     }
+
     this.showError = false;
 
-    // If this is the last question, track the finish event and submit answers
     if (this.currentQuestionIndex === this.data.questions.length - 1) {
-      this.googleAnalyticsService.trackEvent(
-          'click',
-          'Test Completion',
-          'Finish Test',
-          {
-            test_name: this.data.name,
-            total_score: this.totalScore
-          }
-      );
       this.submitAnswers();
     } else {
       this.currentQuestionIndex++;
@@ -96,18 +102,20 @@ export class DetailPageComponent extends ClearObservable implements OnInit {
   }
 
   submitAnswers(): void {
-    if (!this.data || !this.data.resultInterpretation) return;
+    if (!this.data) return;
 
-    // HADS test: For anxiety, sum answers for questions with indexes 0–7;
-    // for depression, sum answers for the remaining questions.
+    // =============================
+    // HADS
+    // =============================
     if (this.data.specialTest === specializedTests.HADS) {
       this.hadsAnxietyScore = 0;
       this.hadsDepressionScore = 0;
 
       this.data.questions.forEach((question, index) => {
         const questionId = question._id;
+
         if (this.answers[questionId] !== undefined) {
-          if (index >= 0 && index <= 7) {
+          if (index <= 7) {
             this.hadsAnxietyScore += Number(this.answers[questionId]);
           } else {
             this.hadsDepressionScore += Number(this.answers[questionId]);
@@ -115,105 +123,187 @@ export class DetailPageComponent extends ClearObservable implements OnInit {
         }
       });
 
-      const anxietyInterpretations = this.data.resultInterpretation.filter(item => item.type === 'anxiety');
-      const depressionInterpretations = this.data.resultInterpretation.filter(item => item.type === 'depression');
+      const anxietyInterpretation = this.data.resultInterpretation
+          .filter(i => i.type === 'anxiety')
+          .find(i =>
+              this.hadsAnxietyScore >= i.range[0] &&
+              (i.range[1] === null || this.hadsAnxietyScore <= i.range[1])
+          );
 
-      const anxietyInterpretation = anxietyInterpretations.find(item =>
-          this.hadsAnxietyScore >= item.range[0] &&
-          (item.range[1] === null || this.hadsAnxietyScore <= item.range[1])
-      );
-      const depressionInterpretation = depressionInterpretations.find(item =>
-          this.hadsDepressionScore >= item.range[0] &&
-          (item.range[1] === null || this.hadsDepressionScore <= item.range[1])
-      );
+      const depressionInterpretation = this.data.resultInterpretation
+          .filter(i => i.type === 'depression')
+          .find(i =>
+              this.hadsDepressionScore >= i.range[0] &&
+              (i.range[1] === null || this.hadsDepressionScore <= i.range[1])
+          );
 
-      this.hadsAnxietyResult = anxietyInterpretation ? anxietyInterpretation.result : 'Невизначено';
-      this.hadsDepressionResult = depressionInterpretation ? depressionInterpretation.result : 'Невизначено';
-
+      this.hadsAnxietyResult = anxietyInterpretation?.result || 'Невизначено';
+      this.hadsDepressionResult = depressionInterpretation?.result || 'Невизначено';
     }
-    // RBQ-2A: sum according to each spectra’s "questions" array
-    else if (this.data.specialTest === this.specializedTests.RBQ2A) {
+
+        // =============================
+        // RBQ-2A
+    // =============================
+    else if (this.data.specialTest === specializedTests.RBQ2A) {
       this.rbqSpectraScores = {};
-      this.rbqTotalScore = 0;  // Reset the general sum
+      this.rbqTotalScore = 0;
 
-      // Iterate over each factor (spectra) to sum the answers for each factor
       this.data.factor?.forEach(s => {
-        let sumForFactor = 0;
+        let sum = 0;
 
-        // Iterate over questions of the spectra
         s.questions.forEach(qNumber => {
-          const idx = qNumber - 1;  // Convert 1-based to 0-based index
-          const questionObj = this.data.questions[idx];
+          const idx = qNumber - 1;
+          const question = this.data.questions[idx];
 
-          if (questionObj) {
-            const questionId = questionObj._id;
-            const answerVal = this.answers[questionId];
+          if (question) {
+            const value = this.answers[question._id];
 
-            if (answerVal !== undefined) {
-              sumForFactor += Number(answerVal);
+            if (value !== undefined) {
+              sum += Number(value);
             }
           }
         });
 
-        this.rbqSpectraScores[s.name] = sumForFactor;
-        this.rbqTotalScore += sumForFactor;  // Add to the general total score
+        this.rbqSpectraScores[s.name] = sum;
+        this.rbqTotalScore += sum;
       });
 
-      // Find the highest-scoring spectra
       const keys = Object.keys(this.rbqSpectraScores);
+
       if (keys.length) {
         this.highestSchema = keys.reduce((a, b) =>
             this.rbqSpectraScores[a] > this.rbqSpectraScores[b] ? a : b
         );
       }
     }
-    // SMI specialized test branch remains unchanged
-    else if (this.data.specialTest === specializedTests.SMI) {
-      this.schemaScores = {};
-      this.data.resultInterpretation.forEach(({ name, questionIndex }) => {
-        let schemaTotal = 0;
-        let schemaCount = 0;
-        questionIndex.forEach(index => {
-          const questionId = this.data.questions[index - 1]?._id;
-          if (questionId && this.answers[questionId] !== undefined) {
-            schemaTotal += Number(this.answers[questionId]);
-            schemaCount++;
+
+        // =============================
+        // ASRS ADHD
+    // =============================
+    else if (this.data.specialTest === specializedTests.ASRS) {
+      /**
+       * Thresholds for ASRS questions.
+       * Part A = first 6 questions
+       * Part B = remaining 12 questions
+       *
+       * Positive symptom if answer >= threshold.
+       *
+       * Adjust these thresholds if your backend/data model uses different scoring.
+       */
+      const thresholds = [
+        2, 2, 2, 2, 3, 3, // Part A (1-6)
+        1, 2, 2, 2, 2, 3, 3, 3, 3, 4, 4, 4 // Part B (7-18)
+      ];
+
+      this.asrsPartAPositive = 0;
+      this.asrsPartANegative = 0;
+      this.asrsPartBPositive = 0;
+      this.asrsPartBNegative = 0;
+
+      this.data.questions.forEach((question, index) => {
+        const answer = this.answers[question._id];
+
+        if (answer === undefined) {
+          return;
+        }
+
+        const threshold = thresholds[index] ?? Number.MAX_SAFE_INTEGER;
+        const isPositive = Number(answer) >= threshold;
+
+        // Part A: questions 1-6
+        if (index < 6) {
+          if (isPositive) {
+            this.asrsPartAPositive++;
+          } else {
+            this.asrsPartANegative++;
           }
-        });
-        if (schemaCount > 0) {
-          this.schemaScores[name] = schemaTotal / schemaCount;
+        }
+        // Part B: questions 7-18
+        else {
+          if (isPositive) {
+            this.asrsPartBPositive++;
+          } else {
+            this.asrsPartBNegative++;
+          }
         }
       });
+
+      const interpretation = this.data.resultInterpretation.find(
+          ({ range: [min, max] }) =>
+              this.asrsPartAPositive >= min &&
+              (max === null || this.asrsPartAPositive <= max)
+      );
+
+      this.asrsResult = interpretation?.result || 'Невизначено';
+    }
+
+        // =============================
+        // SMI
+    // =============================
+    else if (this.data.specialTest === specializedTests.SMI) {
+      this.schemaScores = {};
+
+      this.data.resultInterpretation.forEach(({ name, questionIndex }) => {
+        let total = 0;
+        let count = 0;
+
+        questionIndex.forEach(index => {
+          const qId = this.data.questions[index - 1]?._id;
+
+          if (qId && this.answers[qId] !== undefined) {
+            total += Number(this.answers[qId]);
+            count++;
+          }
+        });
+
+        if (count > 0) {
+          this.schemaScores[name] = total / count;
+        }
+      });
+
       this.highestSchema = Object.keys(this.schemaScores).reduce((a, b) =>
           this.schemaScores[a] > this.schemaScores[b] ? a : b
       );
     }
-    // For general tests (non-SMI, non-HADS, non-RBQ2A)
+
+        // =============================
+        // GENERAL TEST
+    // =============================
     else {
       this.totalScore = Object.keys(this.answers)
           .map(key => this.answers[key])
-          .reduce((sum, value) => sum + Number(value), 0);
+          .reduce((sum, v) => sum + Number(v), 0);
 
-      const interpretation = this.data.resultInterpretation.find(({ range: [min, max] }) =>
-          this.totalScore >= min && (max === null || this.totalScore <= max)
+      const interpretation = this.data.resultInterpretation.find(
+          ({ range: [min, max] }) =>
+              this.totalScore >= min &&
+              (max === null || this.totalScore <= max)
       );
 
-      this.resultMessage = interpretation ? interpretation.result : 'Не вдалося визначити рівень.';
+      this.resultMessage = interpretation?.result || 'Не вдалося визначити рівень.';
     }
 
     this.isTestCompleted = true;
   }
 
-  openPdf(pdfUrl?: string): void {
-    if (pdfUrl) {
-      this.googleAnalyticsService.trackEvent(
-          'click',
-          'External Resource',
-          'Open PDF',
-          { pdf_url: pdfUrl }
-      );
-      window.open(pdfUrl, '_blank');
+  get asrsTotalPositive(): number {
+    return this.asrsPartAPositive + this.asrsPartBPositive;
+  }
+
+  get asrsTotalNegative(): number {
+    return this.asrsPartANegative + this.asrsPartBNegative;
+  }
+
+  openPdf(pdfLink: string | null | undefined): void {
+    if (!pdfLink || pdfLink === 'null') {
+      return;
     }
+
+    window.open(pdfLink, '_blank');
+  }
+
+  clearError(): void {
+    this.showError = false;
   }
 
   previousQuestion(): void {
@@ -224,56 +314,49 @@ export class DetailPageComponent extends ClearObservable implements OnInit {
 
   selectAnswer(questionId: string, value: number): void {
     this.answers[questionId] = value;
-    this.clearError();
-  }
-
-  clearError(): void {
     this.showError = false;
   }
 
   restartTest(): void {
-    this.googleAnalyticsService.trackEvent(
-        'click',
-        'Test Interaction',
-        'Restart Test',
-        { test_name: this.data.name }
-    );
     this.currentQuestionIndex = 0;
     this.answers = {};
     this.isTestCompleted = false;
+
     this.totalScore = 0;
+    this.resultMessage = '';
+
     this.schemaScores = {};
     this.highestSchema = '';
-    this.rbqSpectraScores = {};      // reset RBQ-2A sums
+
+    this.rbqSpectraScores = {};
+    this.rbqTotalScore = 0;
+
     this.hadsAnxietyScore = 0;
     this.hadsDepressionScore = 0;
     this.hadsAnxietyResult = '';
     this.hadsDepressionResult = '';
+
+    this.asrsPartAPositive = 0;
+    this.asrsPartANegative = 0;
+    this.asrsPartBPositive = 0;
+    this.asrsPartBNegative = 0;
+    this.asrsResult = '';
   }
 
   goToAllTests(): void {
-    this.googleAnalyticsService.trackEvent(
-        'click',
-        'Navigation',
-        'Go to All Tests',
-        { destination: TEST_ROUTES.LIST }
-    );
     this.router.navigate([TEST_ROUTES.LIST]);
   }
 
   openContacts(): void {
-    this.googleAnalyticsService.trackEvent(
-        'click',
-        'Contact Button',
-        'Open Contact Dialog',
-        { label: 'Test Result Page' }
-    );
     this.contactsService.openDialog(clinicContacts);
   }
 
   updateSEO(title: string, description: string): void {
     this.titleService.setTitle(`${title} | Платформа ментального здоров'я`);
-    this.metaService.updateTag({ name: 'description', content: description });
-    this.metaService.updateTag({ name: 'keywords', content: `ментальне здоров'я, ${title}, тест на психічний стан` });
+
+    this.metaService.updateTag({
+      name: 'description',
+      content: description
+    });
   }
 }
