@@ -1,5 +1,6 @@
-export const specializedTests = {
-  SMI: "SMI",
-  HADS:"HADS",
-  RBQ2A:"RBQ-2A"
-};
+export enum specializedTests {
+  SMI = 'SMI',
+  HADS = 'HADS',
+  RBQ2A = 'RBQ-2A',
+  ASRS = 'ASRS-v1.1'
+}
