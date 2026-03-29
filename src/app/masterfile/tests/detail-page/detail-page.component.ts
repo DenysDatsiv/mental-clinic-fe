@@ -8,10 +8,8 @@ import { specializedTests } from '../constants/specialized-tests';
 import { clinicContacts } from '../../shared/constants/contacts.constant';
 import { ClinicContactsService } from '../../shared/components/clinic-contacts-dialog/clinic-contacts.service';
 import { GoogleAnalyticsService } from '../../../ga/service/google-analytics.service';
-import {ClearObservable} from "../../../ shared/unsubscribtion/ClearObservable";
-import {TEST_ROUTES} from "../../../ shared/constants/routes";
-
-;
+import { ClearObservable } from "../../../ shared/unsubscribtion/ClearObservable";
+import { TEST_ROUTES } from "../../../ shared/constants/routes";
 
 @Component({
   selector: 'app-detail-page',
@@ -29,6 +27,7 @@ export class DetailPageComponent extends ClearObservable implements OnInit {
 
   totalScore = 0;
   resultMessage = '';
+  resultDescription = '';
 
   schemaScores: { [key: string]: number } = {};
   highestSchema = '';
@@ -103,6 +102,10 @@ export class DetailPageComponent extends ClearObservable implements OnInit {
 
   submitAnswers(): void {
     if (!this.data) return;
+
+    // reset common result fields
+    this.resultMessage = '';
+    this.resultDescription = '';
 
     // =============================
     // HADS
@@ -187,12 +190,10 @@ export class DetailPageComponent extends ClearObservable implements OnInit {
        * Part B = remaining 12 questions
        *
        * Positive symptom if answer >= threshold.
-       *
-       * Adjust these thresholds if your backend/data model uses different scoring.
        */
       const thresholds = [
-        2, 2, 2, 2, 3, 3, // Part A (1-6)
-        1, 2, 2, 2, 2, 3, 3, 3, 3, 4, 4, 4 // Part B (7-18)
+        2, 2, 2, 2, 3, 3,
+        1, 2, 2, 2, 2, 3, 3, 3, 3, 4, 4, 4
       ];
 
       this.asrsPartAPositive = 0;
@@ -281,6 +282,7 @@ export class DetailPageComponent extends ClearObservable implements OnInit {
       );
 
       this.resultMessage = interpretation?.result || 'Не вдалося визначити рівень.';
+      this.resultDescription = interpretation['description'] || '';
     }
 
     this.isTestCompleted = true;
@@ -324,6 +326,7 @@ export class DetailPageComponent extends ClearObservable implements OnInit {
 
     this.totalScore = 0;
     this.resultMessage = '';
+    this.resultDescription = '';
 
     this.schemaScores = {};
     this.highestSchema = '';

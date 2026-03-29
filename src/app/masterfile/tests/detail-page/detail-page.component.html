@@ -122,10 +122,6 @@
 
     </div>
 
-    <!-- ================= RESULTS ================= -->
-
-    <!-- ================= RESULTS ================= -->
-
     <div *ngIf="isTestCompleted" class="result-container">
 
         <!-- RBQ -->
@@ -313,6 +309,10 @@
 
                 <p class="result-message text-center text-lg">
                     {{ resultMessage }}
+                </p>
+
+                <p *ngIf="resultDescription" class="result-description text-center text-lg">
+                    {{ resultDescription }}
                 </p>
 
                 <p class="common-message text-gray-500 text-center">
