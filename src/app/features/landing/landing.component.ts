@@ -7,7 +7,7 @@ import { ConsultationBlockComponent } from '../shared/components/consultation-bl
 import { FaqBlockComponent } from '../shared/components/faq-block/faq-block.component';
 import { TelegramBannerComponent } from '../shared/components/telegram-banner/telegram-banner.component';
 import {AfterViewInit, Component, ElementRef, OnInit, Renderer2} from '@angular/core';
-import {SECTION} from '../../../shared/constants/section-ids.constants';
+import {SECTION} from '../../shared/constants/section-ids.constants';
 
 @Component({
   standalone: true,
