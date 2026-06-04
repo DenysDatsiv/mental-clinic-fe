@@ -1,7 +1,8 @@
 import { CommonModule, NgOptimizedImage } from '@angular/common';
 import { ImportsModule } from '../../../../shared/primeng-imports.module';
-import {Component} from '@angular/core';
-import {ROUTES, TEST_ROUTES} from '../../../../shared/constants/routes.constants';
+import { Component } from '@angular/core';
+import { RouterLink } from '@angular/router';
+import { ROUTES, TEST_ROUTES } from '../../../../shared/constants/routes.constants';
 import {TEST_CATEGORIES_CONST} from '../../../tests/constants/test-categories.constants';
 import {GoogleAnalyticsService} from "../../../../analytics/google-analytics.service";
 import {EVENT_TRACK} from "../../../../analytics/analytics.constants";
@@ -16,7 +17,7 @@ interface MentalCard {
 
 @Component({
   standalone: true,
-  imports: [CommonModule, ImportsModule, NgOptimizedImage],
+  imports: [CommonModule, ImportsModule, NgOptimizedImage, RouterLink],
   selector: 'app-test-block',
   templateUrl: './test-block.component.html',
   styleUrls: ['./test-block.component.scss']
