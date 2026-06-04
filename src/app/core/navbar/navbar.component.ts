@@ -1,38 +1,41 @@
 import { CommonModule } from '@angular/common';
 import { RouterModule, RouterOutlet } from '@angular/router';
 import { Button } from 'primeng/button';
-import { Component } from '@angular/core';
+import { Component, inject, OnDestroy } from '@angular/core';
 import { Router } from '@angular/router';
-import { ClinicContactsService } from '../clinic-contacts-dialog/clinic-contacts.service';
-import { clinicContacts } from '../../constants/contacts.constants';
-import { GoogleAnalyticsService } from '../../../../analytics/google-analytics.service';
-import {SECTION} from "../../../../shared/constants/section-ids.constants";
-import {TEST_ROUTES,ROUTES} from "../../../../shared/constants/routes.constants";
+import { ClinicContactsService } from '../../features/shared/components/clinic-contacts-dialog/clinic-contacts.service';
+import { clinicContacts } from '../../features/shared/constants/contacts.constants';
+import { GoogleAnalyticsService } from '../../analytics/google-analytics.service';
+import { SECTION } from '../../shared/constants/section-ids.constants';
+import { TEST_ROUTES, ROUTES } from '../../shared/constants/routes.constants';
 
 @Component({
   standalone: true,
   imports: [CommonModule, RouterModule, RouterOutlet, Button],
   selector: 'app-navbar',
   templateUrl: './navbar.component.html',
-  styleUrls: ['./navbar.component.scss']
+  styleUrls: ['./navbar.component.scss'],
 })
-export class NavbarComponent {
+export class NavbarComponent implements OnDestroy {
+  private readonly router = inject(Router);
+  private readonly contactsService = inject(ClinicContactsService);
+  private readonly googleAnalyticsService = inject(GoogleAnalyticsService);
+
   isMenuOpen = false;
   protected readonly SECTION = SECTION;
   protected readonly ROUTES = ROUTES;
   protected readonly TEST_ROUTES = TEST_ROUTES;
 
-  constructor(
-      private router: Router,
-      private contactsService: ClinicContactsService,
-      private googleAnalyticsService: GoogleAnalyticsService
-  ) {}
+  ngOnDestroy(): void {
+    document.body.style.overflow = '';
+  }
 
   /**
    * Toggles the navigation menu state and tracks the event.
    */
   toggleMenu(): void {
     this.isMenuOpen = !this.isMenuOpen;
+    document.body.style.overflow = this.isMenuOpen ? 'hidden' : '';
     this.googleAnalyticsService.trackEvent(
         'click',
         'Navigation',

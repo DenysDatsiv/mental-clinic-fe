@@ -11,6 +11,7 @@ interface MentalCard {
   description: string;
   imageUrl: string;
   link: string;
+  icon: string;
 }
 
 @Component({
@@ -29,35 +30,40 @@ export class TestBlockComponent {
       description:
         'Депресія – розлад із постійним смутком та втратою інтересу. Дізнайтеся про сучасні методи лікування та підтримку.',
       imageUrl: 'assets/depression.svg',
-      link: TEST_CATEGORIES_CONST.DEPRESSION
+      link: TEST_CATEGORIES_CONST.DEPRESSION,
+      icon: 'depression'
     },
     {
       title: 'Тривога',
       description:
         'Тривога супроводжується надмірним занепокоєнням та страхом. Ознайомтеся з ефективними техніками управління тривогою.',
       imageUrl: 'assets/anxiety.svg',
-      link: TEST_CATEGORIES_CONST.ANXIETY
+      link: TEST_CATEGORIES_CONST.ANXIETY,
+      icon: 'anxiety'
     },
     {
       title: 'Особистісні розлади',
       description:
         'Розлади особистості впливають на емоції та стосунки. Дізнайтеся про симптоми та сучасні методи терапії.',
       imageUrl: 'assets/disorder.svg',
-      link: TEST_CATEGORIES_CONST.PERSONALITY_DISORDERS
+      link: TEST_CATEGORIES_CONST.PERSONALITY_DISORDERS,
+      icon: 'personality'
     },
     {
       title: 'Поведінкові розлади',
       description:
         'Поведінкові розлади характеризуються імпульсивністю та порушенням норм. Ознайомтеся з методами лікування.',
       imageUrl: 'assets/behaviour-disorder.svg',
-      link: TEST_CATEGORIES_CONST.BEHAVIORAL_DISORDERS
+      link: TEST_CATEGORIES_CONST.BEHAVIORAL_DISORDERS,
+      icon: 'behavior'
     },
     {
       title: 'Залежності',
       description:
         'Залежності впливають на всі аспекти життя. Дізнайтеся про види залежностей та ефективні стратегії реабілітації.',
       imageUrl: 'assets/addition-tests.svg',
-      link: TEST_CATEGORIES_CONST.ADDICTIONS
+      link: TEST_CATEGORIES_CONST.ADDICTIONS,
+      icon: 'addiction'
     }
 
   ];

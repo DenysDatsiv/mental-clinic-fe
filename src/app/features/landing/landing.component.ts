@@ -6,17 +6,25 @@ import { TestBlockComponent } from './components/test-block/test-block.component
 import { ConsultationBlockComponent } from '../shared/components/consultation-block/consultation-block.component';
 import { FaqBlockComponent } from '../shared/components/faq-block/faq-block.component';
 import { TelegramBannerComponent } from '../shared/components/telegram-banner/telegram-banner.component';
-import {AfterViewInit, Component, ElementRef, OnInit, Renderer2} from '@angular/core';
-import {SECTION} from '../../shared/constants/section-ids.constants';
+import { DoctorInfoStripComponent } from './components/doctor-info-strip/doctor-info-strip.component';
+import { NoFearBlockComponent } from './components/no-fear-block/no-fear-block.component';
+import { AfterViewInit, Component, ElementRef, inject, OnInit, Renderer2 } from '@angular/core';
+import { SECTION } from '../../shared/constants/section-ids.constants';
+import { ROUTES } from '../../shared/constants/routes.constants';
+import { RouterLink } from '@angular/router';
+import { SeoService } from '../../core/seo/seo.service';
 
 @Component({
   standalone: true,
-  imports: [CommonModule, ImportsModule, HeroBannerComponent, TestingBlockComponent, TestBlockComponent, ConsultationBlockComponent, FaqBlockComponent, TelegramBannerComponent],
+  imports: [CommonModule, ImportsModule, RouterLink, HeroBannerComponent, DoctorInfoStripComponent, NoFearBlockComponent, TestingBlockComponent, TestBlockComponent, ConsultationBlockComponent, TelegramBannerComponent],
   selector: 'app-landing',
   templateUrl: './landing.component.html',
-  styleUrls: ['./landing.component.scss']
+  styleUrls: ['./landing.component.scss'],
 })
 export class LandingComponent implements OnInit, AfterViewInit {
+  private readonly renderer = inject(Renderer2);
+  private readonly el = inject(ElementRef);
+  private readonly seo = inject(SeoService);
 
   isHeroBannerVisible = false;
   isTestingBlockVisible = false;
@@ -24,11 +32,45 @@ export class LandingComponent implements OnInit, AfterViewInit {
   isFaqBlockVisible = false;
   isTelegramBannerVisible = false;
   protected readonly SECTION = SECTION;
-
-  constructor(private renderer: Renderer2, private el: ElementRef) {
-  }
+  protected readonly ROUTES = ROUTES;
 
   ngOnInit(): void {
+    this.seo.updatePage({
+      title: "Онлайн центр ментального здоров'я Євгена Скрипника — психіатр онлайн",
+      description: "Психіатр Євген Скрипник — 20+ років досвіду. Лікування депресії, тривоги, ПТСР, ОКР та залежностей онлайн. Доказова медицина. Запис щодня 8:00–22:00.",
+      canonical: '/',
+      schema: [
+        {
+          '@context': 'https://schema.org',
+          '@type': 'WebPage',
+          '@id': 'https://doctor-skripnik.com.ua/#webpage',
+          url: 'https://doctor-skripnik.com.ua/',
+          name: "Онлайн центр ментального здоров'я Євгена Скрипника",
+          description: "Психіатр Євген Скрипник — 20+ років досвіду. Лікування депресії, тривоги, ПТСР та залежностей методами доказової медицини.",
+          inLanguage: 'uk',
+          isPartOf: { '@id': 'https://doctor-skripnik.com.ua/#website' },
+          about: { '@type': 'Physician', name: 'Євген Скрипник' },
+          breadcrumb: {
+            '@type': 'BreadcrumbList',
+            itemListElement: [{ '@type': 'ListItem', position: 1, name: 'Головна', item: 'https://doctor-skripnik.com.ua/' }],
+          },
+        },
+        {
+          '@context': 'https://schema.org',
+          '@type': 'MedicalOrganization',
+          name: "Онлайн центр ментального здоров'я Євгена Скрипника",
+          url: 'https://doctor-skripnik.com.ua',
+          logo: 'https://doctor-skripnik.com.ua/assets/logo.png',
+          contactPoint: {
+            '@type': 'ContactPoint',
+            telephone: '+380665691677',
+            contactType: 'customer service',
+            areaServed: 'UA',
+            availableLanguage: 'Ukrainian',
+          },
+        },
+      ],
+    });
   }
 
   ngAfterViewInit(): void {

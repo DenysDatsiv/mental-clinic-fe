@@ -1,35 +1,32 @@
-<div class="surface-section px-4 py-8 md:px-6 lg:px-8">
-    <div class="text-700 text-center">
-        <div class="tg-powered font-bold mb-3">
-            <i class="pi pi-telegram"></i>&nbsp;POWERED BY TELEGRAM
+<section class="tg-section">
+    <div class="tg-container">
+
+        <div class="tg-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" fill="currentColor">
+                <path d="M32 6C18.7 6 8 16.7 8 30v4a6 6 0 0 0 6 6h2a2 2 0 0 0 2-2V26a2 2 0 0 0-2-2h-1.8C15.4 16.2 23 10 32 10s16.6 6.2 17.8 14H48a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h1v1c0 2.8-2.2 5-5 5h-5.2A3 3 0 0 0 38 44h-4a3 3 0 0 0 0 6h4a3 3 0 0 0 2.8-2H44c5 0 9-4 9-9V30C53 16.7 45.3 6 32 6z"/>
+            </svg>
         </div>
 
-        <div class="text-900 font-bold text-5xl mb-3">
-            Доєднуйся до нашої телеграм спільноти
+        <div class="tg-content">
+            <h2 class="tg-heading">Доєднуйся до нашої телеграм спільноти</h2>
+            <p class="tg-subheading">
+                Ставте питання доказовим психіатрам і психологам — і отримуйте відповіді у зручному форматі
+            </p>
         </div>
 
-        <div class="text-700 text-2xl mb-5">
-            Ви можете ставити питання доказовим психіатрам, психологам і отримувати відповіді на свої запитання
-        </div>
-
-        <div class="telegram-buttons">
+        <div class="tg-actions">
             <button
                     (click)="openTelegram(TELEGRAM_BANNER.PSYCHOLOGIST_CHAT.name, TELEGRAM_BANNER.PSYCHOLOGIST_CHAT.link)"
-                    class="font-bold px-5 py-3 p-button-raised p-button-rounded"
-                    icon="pi pi-telegram"
-                    [label]="TELEGRAM_BANNER.PSYCHOLOGIST_CHAT.name"
-                    pButton
-                    pRipple>
+                    class="tg-btn tg-btn--primary">
+                <span>{{ TELEGRAM_BANNER.PSYCHOLOGIST_CHAT.name }}</span>
             </button>
 
             <button
                     (click)="openTelegram(TELEGRAM_BANNER.PSYCHIATRIST_CHAT.name, TELEGRAM_BANNER.PSYCHIATRIST_CHAT.link)"
-                    class="font-bold px-5 py-3 p-button-raised p-button-rounded"
-                    icon="pi pi-telegram"
-                    [label]="TELEGRAM_BANNER.PSYCHIATRIST_CHAT.name"
-                    pButton
-                    pRipple>
+                    class="tg-btn tg-btn--outline">
+                <span>{{ TELEGRAM_BANNER.PSYCHIATRIST_CHAT.name }}</span>
             </button>
         </div>
+
     </div>
-</div>
+</section>

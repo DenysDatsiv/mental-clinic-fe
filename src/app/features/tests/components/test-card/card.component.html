@@ -1,13 +1,31 @@
-<div class="custom-card">
-  <div class="card-header">
-    <h3>{{ testData?.name }}</h3>
+<div class="tcard" (click)="redirectToTest(testData?._id)">
+  <div class="tcard__top">
+    <div class="tcard__icon">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75"
+           stroke-linecap="round" stroke-linejoin="round" width="20" height="20">
+        <path d="M9 11l3 3L22 4"/>
+        <path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"/>
+      </svg>
+    </div>
+    <span class="tcard__duration">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+           stroke-linecap="round" stroke-linejoin="round" width="13" height="13">
+        <circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/>
+      </svg>
+      {{ testData?.duration }}
+    </span>
   </div>
-  <div class="card-body">
-    <p class="description">{{ testData?.description }}</p>
-    <p class="duration"><i class="pi pi-clock"></i> Тривалість: {{ testData?.duration }}</p>
-  </div>
-  <div class="card-footer">
-    <p-button (click)="redirectToTest(testData?._id)" icon="pi pi-arrow-right" label="Перейти до тесту"
-              size="small"></p-button>
+
+  <h3 class="tcard__title">{{ testData?.name }}</h3>
+  <p class="tcard__desc">{{ testData?.description }}</p>
+
+  <div class="tcard__footer">
+    <span class="tcard__cta">
+      Пройти тест
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+           stroke-linecap="round" stroke-linejoin="round" width="14" height="14">
+        <line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/>
+      </svg>
+    </span>
   </div>
 </div>

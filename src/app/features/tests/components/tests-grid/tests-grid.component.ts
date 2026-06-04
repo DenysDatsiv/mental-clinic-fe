@@ -106,4 +106,18 @@ export class TestsGridComponent implements OnInit {
     const { text, category } = this.searchForm.value;
     this.showButton = !!(text?.trim() || category);
   }
+
+  isActiveCategory(cat: { name: string; value: string }): boolean {
+    const current = this.searchForm.get('category')?.value;
+    const currentVal = typeof current === 'string' ? current : current?.value;
+    return currentVal === cat.value;
+  }
+
+  selectCategory(cat: { name: string; value: string }): void {
+    this.searchForm.patchValue({ category: cat });
+  }
+
+  resetSearch(): void {
+    this.searchForm.patchValue({ text: '', category: { name: 'Всі', value: '' } });
+  }
 }

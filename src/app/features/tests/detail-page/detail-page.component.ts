@@ -1,26 +1,36 @@
 import { CommonModule } from '@angular/common';
 import { ImportsModule } from '../../../shared/primeng-imports.module';
-import { Component, OnInit } from '@angular/core';
-import { ActivatedRoute, Router } from '@angular/router';
+import { Component, DestroyRef, inject, OnInit } from '@angular/core';
+import { takeUntilDestroyed } from '@angular/core/rxjs-interop';
+import jsPDF from 'jspdf';
+import html2canvas from 'html2canvas';
+import { ActivatedRoute, Router, RouterLink } from '@angular/router';
 import { Meta, Title } from '@angular/platform-browser';
-import { switchMap, takeUntil } from 'rxjs/operators';
+import { switchMap } from 'rxjs/operators';
 import { TestService } from '../services/test.service';
 import { Test } from '../models/test.model';
 import { specializedTests } from '../constants/specialized-test-types.enum';
 import { clinicContacts } from '../../shared/constants/contacts.constants';
 import { ClinicContactsService } from '../../shared/components/clinic-contacts-dialog/clinic-contacts.service';
 import { GoogleAnalyticsService } from '../../../analytics/google-analytics.service';
-import { ClearObservable } from "../../../shared/unsubscription/clear-observable";
 import { TEST_ROUTES } from "../../../shared/constants/routes.constants";
 
 @Component({
   standalone: true,
-  imports: [CommonModule, ImportsModule],
+  imports: [CommonModule, ImportsModule, RouterLink],
   selector: 'app-detail-page',
   templateUrl: './detail-page.component.html',
-  styleUrls: ['./detail-page.component.scss']
+  styleUrls: ['./detail-page.component.scss'],
 })
-export class DetailPageComponent extends ClearObservable implements OnInit {
+export class DetailPageComponent implements OnInit {
+  private readonly route = inject(ActivatedRoute);
+  private readonly testService = inject(TestService);
+  private readonly router = inject(Router);
+  private readonly titleService = inject(Title);
+  private readonly metaService = inject(Meta);
+  private readonly contactsService = inject(ClinicContactsService);
+  private readonly googleAnalyticsService = inject(GoogleAnalyticsService);
+  private readonly destroyRef = inject(DestroyRef);
   data!: Test;
 
   answers: { [key: string]: number } = {};
@@ -56,25 +66,13 @@ export class DetailPageComponent extends ClearObservable implements OnInit {
   protected readonly Object = Object;
   protected readonly specializedTests = specializedTests;
 
-  constructor(
-      private route: ActivatedRoute,
-      private testService: TestService,
-      private router: Router,
-      private titleService: Title,
-      private metaService: Meta,
-      private contactsService: ClinicContactsService,
-      private googleAnalyticsService: GoogleAnalyticsService
-  ) {
-    super();
-  }
-
   ngOnInit(): void {
     window.scrollTo(0, 0);
 
     this.route.params
         .pipe(
             switchMap(params => this.testService.getTestById(params['id'])),
-            takeUntil(this.destroy$)
+            takeUntilDestroyed(this.destroyRef),
         )
         .subscribe(response => {
           this.data = response;
@@ -290,6 +288,7 @@ export class DetailPageComponent extends ClearObservable implements OnInit {
     }
 
     this.isTestCompleted = true;
+    setTimeout(() => window.scrollTo({ top: 0, behavior: 'smooth' }), 50);
   }
 
   get asrsTotalPositive(): number {
@@ -298,6 +297,169 @@ export class DetailPageComponent extends ClearObservable implements OnInit {
 
   get asrsTotalNegative(): number {
     return this.asrsPartANegative + this.asrsPartBNegative;
+  }
+
+  async generatePDF(): Promise<void> {
+    const ORG  = 'Онлайн центр ментального здоров\'я Євгена Скрипника';
+    const date = new Date().toLocaleDateString('uk-UA');
+    const filename = `${this.data.name} — Результати.pdf`;
+
+    // Fetch logo as base64 so html2canvas can render it without path issues
+    const logoBase64 = await fetch('/assets/logo.png')
+      .then(r => r.blob())
+      .then(b => new Promise<string>((res) => {
+        const reader = new FileReader();
+        reader.onloadend = () => res(reader.result as string);
+        reader.readAsDataURL(b);
+      }));
+
+    const offscreen = (html: string, width: number) => {
+      const d = document.createElement('div');
+      d.style.cssText = `position:absolute;top:0;left:-9999px;width:${width}px;background:#fff;`;
+      d.innerHTML = html;
+      document.body.appendChild(d);
+      return d;
+    };
+
+    // ── Header element (navy bar with logo + Cyrillic text) ───────────────────
+    const hdrEl = offscreen(`
+      <div style="background:#003168;color:#fff;padding:8px 22px;
+                  display:flex;justify-content:space-between;align-items:center;
+                  font-family:Arial,sans-serif;font-size:11px;font-weight:600;
+                  box-sizing:border-box;width:750px">
+        <div style="display:flex;align-items:center;gap:10px">
+          <img src="${logoBase64}" style="height:30px;width:auto;display:block;border-radius:50%" />
+          <span>${ORG}</span>
+        </div>
+        <span style="opacity:.7">${date}</span>
+      </div>`, 750);
+
+    // ── Content element ───────────────────────────────────────────────────────
+    const cntEl = offscreen(this.buildPrintContent(), 750);
+
+    try {
+      const [hdrCanvas, cntCanvas] = await Promise.all([
+        html2canvas(hdrEl.firstElementChild as HTMLElement, { scale: 2, useCORS: true, logging: false }),
+        html2canvas(cntEl,  { scale: 2, useCORS: true, logging: false }),
+      ]);
+
+      const doc  = new jsPDF({ unit: 'pt', format: 'a4' });
+      const PW   = doc.internal.pageSize.getWidth();
+      const PH   = doc.internal.pageSize.getHeight();
+      const ML   = 30;
+      const MB   = 24;
+      const cntW = PW - ML * 2;
+
+      // Header rendered height in pt
+      const HDR = (hdrCanvas.height / hdrCanvas.width) * cntW + 4;
+
+      const cw         = cntCanvas.width;
+      const ch         = cntCanvas.height;
+      const ratio      = cntW / cw;
+      const pxPerPage  = Math.floor((PH - HDR - MB) / ratio);
+      const pages      = Math.ceil(ch / pxPerPage);
+
+      const hdrData = hdrCanvas.toDataURL('image/jpeg', 0.95);
+
+      for (let p = 0; p < pages; p++) {
+        if (p > 0) doc.addPage();
+
+        // Stamp header image (browser-rendered → correct Cyrillic)
+        doc.addImage(hdrData, 'JPEG', 0, 0, PW, (hdrCanvas.height / hdrCanvas.width) * PW);
+
+        // Content slice
+        const sy    = Math.round(p * pxPerPage);
+        const sh    = Math.round(Math.min(pxPerPage, ch - sy));
+        const slice = document.createElement('canvas');
+        slice.width  = cw;
+        slice.height = sh;
+        slice.getContext('2d')!.drawImage(cntCanvas, 0, sy, cw, sh, 0, 0, cw, sh);
+        doc.addImage(slice.toDataURL('image/jpeg', 0.92), 'JPEG', ML, HDR, cntW, sh * ratio);
+      }
+
+      doc.save(filename);
+    } finally {
+      document.body.removeChild(hdrEl);
+      document.body.removeChild(cntEl);
+    }
+  }
+
+  private getAnswerLabel(question: any): string {
+    const val = this.answers[question._id];
+    if (val === undefined) return '—';
+    const idx = (question.value as number[]).indexOf(Number(val));
+    return idx >= 0 ? question.labelText[idx] : String(val);
+  }
+
+  private buildPrintContent(): string {
+    const date = new Date().toLocaleDateString('uk-UA', { day: '2-digit', month: '2-digit', year: 'numeric' });
+
+    const answersRows = this.data.questions.map((q, i) => `
+      <tr style="background:${i % 2 === 1 ? '#fafafa' : '#fff'}">
+        <td style="width:28px;color:#9aa0b2;font-weight:700;padding:6px 10px;border-bottom:1px solid #f0f0f0">${i + 1}</td>
+        <td style="padding:6px 10px;border-bottom:1px solid #f0f0f0;font-size:10pt;vertical-align:top">${q.question}</td>
+        <td style="width:200px;font-weight:600;color:#3d4663;padding:6px 10px;border-bottom:1px solid #f0f0f0">${this.getAnswerLabel(q)}</td>
+      </tr>`).join('');
+
+    let resultsHtml = '';
+    if (this.data.specialTest === this.specializedTests.RBQ2A) {
+      resultsHtml = `<p style="margin-bottom:8px"><strong>Загальна сума балів: ${this.rbqTotalScore}</strong></p>
+        <table style="width:100%;border-collapse:collapse">
+          ${Object.keys(this.rbqSpectraScores).map(k => `
+          <tr><td style="padding:5px 10px;border-bottom:1px solid #f0f0f0">${k}</td>
+              <td style="width:80px;font-weight:800;color:#5f75d6;text-align:right;padding:5px 10px;border-bottom:1px solid #f0f0f0">${this.rbqSpectraScores[k]}</td></tr>`).join('')}
+        </table>`;
+    } else if (this.data.specialTest === this.specializedTests.SMI) {
+      resultsHtml = `<table style="width:100%;border-collapse:collapse">
+          ${Object.keys(this.schemaScores).map(k => `
+          <tr><td style="padding:5px 10px;border-bottom:1px solid #f0f0f0">${k}</td>
+              <td style="width:80px;font-weight:800;color:#5f75d6;text-align:right;padding:5px 10px;border-bottom:1px solid #f0f0f0">${this.schemaScores[k].toFixed(2)}</td></tr>`).join('')}
+        </table>`;
+    } else if (this.data.specialTest === this.specializedTests.HADS) {
+      resultsHtml = `
+        <p style="margin-bottom:6px"><strong>Тривожність:</strong> ${this.hadsAnxietyScore} — ${this.hadsAnxietyResult}</p>
+        <p><strong>Депресія:</strong> ${this.hadsDepressionScore} — ${this.hadsDepressionResult}</p>`;
+    } else if (this.data.specialTest === this.specializedTests.ASRS) {
+      resultsHtml = `
+        <p style="margin-bottom:5px"><strong>Частина A — позитивні:</strong> ${this.asrsPartAPositive}/6</p>
+        <p style="margin-bottom:5px"><strong>Частина A — негативні:</strong> ${this.asrsPartANegative}/6</p>
+        <p style="margin-bottom:5px"><strong>Частина B — позитивні:</strong> ${this.asrsPartBPositive}/12</p>
+        <p style="margin-bottom:5px"><strong>Частина B — негативні:</strong> ${this.asrsPartBNegative}/12</p>
+        <p><strong>Інтерпретація:</strong> ${this.asrsResult}</p>`;
+    } else {
+      resultsHtml = `
+        <p style="margin-bottom:6px"><strong>Сума балів:</strong> ${this.totalScore}</p>
+        <p style="margin-bottom:6px"><strong>Результат:</strong> ${this.resultMessage}</p>
+        ${this.resultDescription ? `<p style="margin-bottom:6px">${this.resultDescription}</p>` : ''}
+        ${this.data.commonMessage ? `<p style="margin-top:8px;font-size:9.5pt;color:#718096">${this.data.commonMessage}</p>` : ''}`;
+    }
+
+    return `
+<div style="font-family:Arial,sans-serif;font-size:11pt;color:#1a1a2e;padding:20px 24px;background:#fff">
+  <h1 style="font-size:15pt;color:#003168;margin:0 0 4px">${this.data.name}</h1>
+  <p style="font-size:9pt;color:#718096;margin:0 0 20px">Дата: ${date} · ${this.data.duration} · ${this.data.questions.length} питань</p>
+
+  <h2 style="font-size:9.5pt;font-weight:700;text-transform:uppercase;letter-spacing:.06em;color:#5f75d6;border-bottom:1px solid #e2e8f0;padding-bottom:5px;margin:0 0 10px">Відповіді</h2>
+  <table style="width:100%;border-collapse:collapse;margin-bottom:20px">
+    <thead>
+      <tr style="background:#f2f3f3">
+        <th style="font-size:9pt;font-weight:700;text-align:left;padding:7px 10px;color:#003168">#</th>
+        <th style="font-size:9pt;font-weight:700;text-align:left;padding:7px 10px;color:#003168">Питання</th>
+        <th style="font-size:9pt;font-weight:700;text-align:left;padding:7px 10px;color:#003168">Відповідь</th>
+      </tr>
+    </thead>
+    <tbody>${answersRows}</tbody>
+  </table>
+
+  <h2 style="font-size:9.5pt;font-weight:700;text-transform:uppercase;letter-spacing:.06em;color:#5f75d6;border-bottom:1px solid #e2e8f0;padding-bottom:5px;margin:0 0 10px">Результати</h2>
+  <div style="background:#f2f3f3;border-left:4px solid #5f75d6;padding:12px 16px;border-radius:0 8px 8px 0;line-height:1.6">
+    ${resultsHtml}
+  </div>
+
+  <p style="margin-top:24px;padding:9px 14px;background:#fffbeb;border:1px solid #f6ad55;border-radius:6px;font-size:9pt;color:#744210">
+    Результати тесту не є медичним діагнозом. Зверніться до лікаря-психіатра для отримання професійної консультації.
+  </p>
+</div>`;
   }
 
   openPdf(pdfLink: string | null | undefined): void {

@@ -8,13 +8,13 @@
       "schematics": {
         "@schematics/angular:component": {
           "style": "scss",
-          "standalone": false
+          "standalone": true
         },
         "@schematics/angular:directive": {
-          "standalone": false
+          "standalone": true
         },
         "@schematics/angular:pipe": {
-          "standalone": false
+          "standalone": true
         }
       },
       "root": "",
@@ -27,7 +27,9 @@
             "outputPath": "dist/mental-clinic-fe",
             "index": "src/index.html",
             "browser": "src/main.ts",
-            "allowedCommonJsDependencies": ["quill"],
+            "allowedCommonJsDependencies": [
+              "quill"
+            ],
             "polyfills": [
               "zone.js"
             ],
@@ -50,7 +52,6 @@
                 "output": "/"
               }
             ],
-
             "styles": [
               "src/styles.scss",
               "primeng/resources/themes/lara-light-blue/theme.css",

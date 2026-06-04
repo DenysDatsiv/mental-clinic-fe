@@ -9,7 +9,6 @@ import { ButtonGroupModule } from 'primeng/buttongroup';
 import { CalendarModule } from 'primeng/calendar';
 import { CarouselModule } from 'primeng/carousel';
 import { CascadeSelectModule } from 'primeng/cascadeselect';
-import { ChartModule } from 'primeng/chart';
 import { CheckboxModule } from 'primeng/checkbox';
 import { ChipModule } from 'primeng/chip';
 import { ChipsModule } from 'primeng/chips';
@@ -26,7 +25,6 @@ import { DragDropModule } from 'primeng/dragdrop';
 import { DropdownModule } from 'primeng/dropdown';
 import { DynamicDialogModule } from 'primeng/dynamicdialog';
 import { DeferModule } from 'primeng/defer';
-import { EditorModule } from 'primeng/editor';
 import { FieldsetModule } from 'primeng/fieldset';
 import { FileUploadModule } from 'primeng/fileupload';
 import { FocusTrapModule } from 'primeng/focustrap';
@@ -79,7 +77,6 @@ import { TabMenuModule } from 'primeng/tabmenu';
 import { TableModule } from 'primeng/table';
 import { TabViewModule } from 'primeng/tabview';
 import { TagModule } from 'primeng/tag';
-import { TerminalModule } from 'primeng/terminal';
 import { TieredMenuModule } from 'primeng/tieredmenu';
 import { TimelineModule } from 'primeng/timeline';
 import { ToastModule } from 'primeng/toast';
@@ -102,7 +99,6 @@ import { InputIconModule } from 'primeng/inputicon';
 import { StyleClassModule } from 'primeng/styleclass';
 import { AutoFocusModule } from 'primeng/autofocus';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
-import { HttpClientModule } from '@angular/common/http';
 import { NgModule } from '@angular/core';
 
 
@@ -112,7 +108,6 @@ import { NgModule } from '@angular/core';
     AvatarGroupModule,
     AnimateOnScrollModule,
     FormsModule,
-    HttpClientModule,
     ReactiveFormsModule,
     AccordionModule,
     AutoCompleteModule,
@@ -124,7 +119,6 @@ import { NgModule } from '@angular/core';
     CalendarModule,
     CarouselModule,
     CascadeSelectModule,
-    ChartModule,
     CheckboxModule,
     ChipsModule,
     ChipModule,
@@ -141,7 +135,6 @@ import { NgModule } from '@angular/core';
     DropdownModule,
     DynamicDialogModule,
     DeferModule,
-    EditorModule,
     FieldsetModule,
     FileUploadModule,
     FocusTrapModule,
@@ -195,7 +188,6 @@ import { NgModule } from '@angular/core';
     TabMenuModule,
     TabViewModule,
     TagModule,
-    TerminalModule,
     TieredMenuModule,
     TimelineModule,
     ToastModule,
@@ -219,7 +211,6 @@ import { NgModule } from '@angular/core';
     AvatarGroupModule,
     AnimateOnScrollModule,
     FormsModule,
-    HttpClientModule,
     ReactiveFormsModule,
     AccordionModule,
     AutoCompleteModule,
@@ -231,7 +222,6 @@ import { NgModule } from '@angular/core';
     CalendarModule,
     CarouselModule,
     CascadeSelectModule,
-    ChartModule,
     CheckboxModule,
     ChipsModule,
     ChipModule,
@@ -248,7 +238,6 @@ import { NgModule } from '@angular/core';
     DragDropModule,
     DropdownModule,
     DynamicDialogModule,
-    EditorModule,
     FieldsetModule,
     FileUploadModule,
     FocusTrapModule,
@@ -302,7 +291,6 @@ import { NgModule } from '@angular/core';
     TabMenuModule,
     TabViewModule,
     TagModule,
-    TerminalModule,
     TieredMenuModule,
     TimelineModule,
     ToastModule,

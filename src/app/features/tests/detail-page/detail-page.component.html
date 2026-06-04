@@ -1,328 +1,396 @@
-<div *ngIf="!data" class="spinner-wrapper">
-    <p-progressSpinner aria-label="Loading" class="loading-spinner align-content-center"></p-progressSpinner>
+<!-- Loading -->
+<div *ngIf="!data" class="dp-spinner">
+  <p-progressSpinner strokeWidth="3" animationDuration="0.8s"></p-progressSpinner>
 </div>
 
-<div *ngIf="data" class="mx-4 md:mx-1">
+<!-- Page -->
+<div *ngIf="data" class="detail-page">
 
-    <div *ngIf="!isTestCompleted">
-        <h2 class="text-center mb-0">{{ data?.name }}</h2>
-        <p-divider class="divider-max-width justify-content-center mx-auto"></p-divider>
-    </div>
+  <!-- ═══════════════════════════════════════════
+       QUIZ PHASE
+  ══════════════════════════════════════════════ -->
+  <ng-container *ngIf="!isTestCompleted">
 
-    <div *ngIf="!isTestCompleted" class="page-container">
+    <!-- Header -->
+    <header class="dp-header">
+      <div class="container">
+        <nav class="dp-breadcrumb">
+          <a routerLink="/">Головна</a>
+          <span class="dp-breadcrumb__sep">/</span>
+          <a routerLink="/test/list">Тести</a>
+          <span class="dp-breadcrumb__sep">/</span>
+          <span>{{ data?.name }}</span>
+        </nav>
 
-        <div class="instruction-container">
-            <div class="pb-2">
-                <h2 class="section-title">📌 Інструкція</h2>
-                <p [innerHTML]="data?.instructions" class="section-text"></p>
-            </div>
+        <h1 class="dp-header__title">{{ data?.name }}</h1>
 
-            <div class="mb-0">
-                <h3 class="section-subtitle">🔍 Для чого це тестування?</h3>
-                <p class="section-text mb-0">{{ data?.whyTest }}</p>
-            </div>
-
-            <p-divider class="mx-1"></p-divider>
+        <div class="dp-header__meta">
+          <span class="dp-badge dp-badge--time">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                 stroke-linecap="round" stroke-linejoin="round" width="13" height="13">
+              <circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/>
+            </svg>
+            {{ data?.duration }}
+          </span>
+          <span class="dp-badge dp-badge--count">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                 stroke-linecap="round" stroke-linejoin="round" width="13" height="13">
+              <line x1="8" y1="6" x2="21" y2="6"/><line x1="8" y1="12" x2="21" y2="12"/>
+              <line x1="8" y1="18" x2="21" y2="18"/>
+              <line x1="3" y1="6" x2="3.01" y2="6"/><line x1="3" y1="12" x2="3.01" y2="12"/>
+              <line x1="3" y1="18" x2="3.01" y2="18"/>
+            </svg>
+            {{ data?.questions?.length }} питань
+          </span>
+          <button
+            *ngIf="data?.pdfLink !== 'null' && data?.pdfLink"
+            class="dp-badge dp-badge--pdf"
+            type="button"
+            (click)="openPdf(data?.pdfLink)"
+          >
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                 stroke-linecap="round" stroke-linejoin="round" width="13" height="13">
+              <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/>
+              <polyline points="14 2 14 8 20 8"/>
+            </svg>
+            Офіційний PDF
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                 stroke-linecap="round" stroke-linejoin="round" width="11" height="11">
+              <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/>
+              <polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/>
+            </svg>
+          </button>
         </div>
+      </div>
+    </header>
 
-        <div class="sm:w-full ld:mt-1 flex lg:align-items-center lg:justify-content-between flex-column lg:flex-row">
+    <!-- Info cards -->
+    <section class="dp-info">
+      <div class="container">
+        <div class="dp-info__grid">
 
-            <div class="d-flex">
-                <div class="w-full flex align-items-center sm:justify-content-center">
-                    <button
-                            (click)="openPdf(data?.pdfLink)"
-                            *ngIf="data?.pdfLink !== 'null'"
-                            class="p-button-danger p-button w-full lg:w-auto"
-                            icon="pi pi-file-pdf"
-                            label="Переглянути офіційний PDF файл"
-                            pButton
-                            type="button">
-                    </button>
-                </div>
+          <div class="dp-info__card">
+            <div class="dp-info__card-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75"
+                   stroke-linecap="round" stroke-linejoin="round" width="20" height="20">
+                <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/>
+                <polyline points="14 2 14 8 20 8"/>
+                <line x1="16" y1="13" x2="8" y2="13"/>
+                <line x1="16" y1="17" x2="8" y2="17"/>
+                <polyline points="10 9 9 9 8 9"/>
+              </svg>
             </div>
+            <h2 class="dp-info__card-title">Інструкція</h2>
+            <p class="dp-info__card-body" [innerHTML]="data?.instructions"></p>
+          </div>
 
-            <div>
-                <div class="flex flex-column lg:flex-row lg:align-items-center mt-1 lg:mt-0 text-center">
-                    <p>Оптимальний час для проходження:</p>
-                    <p-chip class="lg:ml-2" [label]="data?.duration" icon="pi pi-clock"></p-chip>
-                </div>
+          <div class="dp-info__card">
+            <div class="dp-info__card-icon dp-info__card-icon--purple">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75"
+                   stroke-linecap="round" stroke-linejoin="round" width="20" height="20">
+                <circle cx="12" cy="12" r="10"/>
+                <line x1="12" y1="8" x2="12" y2="12"/>
+                <line x1="12" y1="16" x2="12.01" y2="16"/>
+              </svg>
             </div>
-
-        </div>
-
-        <div class="quiz-container pt-3">
-
-            <form>
-                <p class="quiz-question">
-                    {{ currentQuestionIndex + 1 }}.
-                    {{ data.questions[currentQuestionIndex]?.question }}
-                </p>
-
-                <div *ngIf="data.questions[currentQuestionIndex]?.example" class="pb-2">
-                    <span>{{ data.questions[currentQuestionIndex]?.example }}</span>
-                </div>
-
-                <div [ngClass]="{ 'quiz-options': true, 'error-border': showError }">
-
-                    <div
-                            *ngFor="let label of data.questions[currentQuestionIndex]?.labelText; let i = index"
-                            class="quiz-option"
-                            (click)="selectAnswer(data.questions[currentQuestionIndex]?._id, data.questions[currentQuestionIndex]?.value[i])">
-
-                        <p-radioButton
-                                [(ngModel)]="answers[data.questions[currentQuestionIndex]?._id]"
-                                [name]="'question_' + data.questions[currentQuestionIndex]?._id"
-                                [value]="data.questions[currentQuestionIndex]?.value[i]"
-                                [ngModelOptions]="{ standalone: true }"
-                                (onChange)="clearError()"
-                                class="mr-3">
-                        </p-radioButton>
-
-                        <span>{{ label }}</span>
-                    </div>
-
-                </div>
-
-                <div class="mt-2">
-                    <p-message
-                            *ngIf="showError"
-                            severity="error"
-                            text="Будь ласка, оберіть варіант відповіді перед тим, як перейти далі.">
-                    </p-message>
-                </div>
-            </form>
-
-        </div>
-
-        <div
-                class="flex my-5"
-                [ngClass]="{
-                'justify-content-end': currentQuestionIndex === 0,
-                'justify-content-between': currentQuestionIndex > 0
-            }">
-
-            <button
-                    *ngIf="currentQuestionIndex > 0"
-                    (click)="previousQuestion()"
-                    class="p-button-secondary"
-                    pButton
-                    type="button">
-                Назад
-            </button>
-
-            <button
-                    (click)="nextQuestion()"
-                    class="p-button-primary"
-                    pButton
-                    type="button">
-                {{ currentQuestionIndex < data.questions.length - 1 ? 'Далі' : 'Завершити' }}
-            </button>
+            <h2 class="dp-info__card-title">Для чого це тестування?</h2>
+            <p class="dp-info__card-body">{{ data?.whyTest }}</p>
+          </div>
 
         </div>
 
-    </div>
+      </div>
+    </section>
 
-    <div *ngIf="isTestCompleted" class="result-container">
+    <!-- Quiz -->
+    <section class="dp-quiz">
+      <div class="container">
 
-        <!-- RBQ -->
+        <!-- Progress bar -->
+        <div class="dp-progress">
+          <div class="dp-progress__header">
+            <span class="dp-progress__label">Питання</span>
+            <span class="dp-progress__count">
+              {{ currentQuestionIndex + 1 }}<em>/{{ data?.questions?.length }}</em>
+            </span>
+          </div>
+          <div class="dp-progress__track">
+            <div class="dp-progress__fill"
+                 [style.width.%]="((currentQuestionIndex + 1) / data.questions.length) * 100">
+            </div>
+          </div>
+        </div>
+
+        <!-- Question card -->
+        <div class="dp-question">
+
+          <p class="dp-question__text">
+            {{ data.questions[currentQuestionIndex]?.question }}
+          </p>
+
+          <p *ngIf="data.questions[currentQuestionIndex]?.example" class="dp-question__example">
+            {{ data.questions[currentQuestionIndex]?.example }}
+          </p>
+
+          <div class="dp-options" [class.dp-options--error]="showError">
+            <div
+              *ngFor="let label of data.questions[currentQuestionIndex]?.labelText; let i = index"
+              class="dp-option"
+              [class.dp-option--selected]="
+                answers[data.questions[currentQuestionIndex]?._id] ===
+                data.questions[currentQuestionIndex]?.value[i]
+              "
+              (click)="selectAnswer(
+                data.questions[currentQuestionIndex]?._id,
+                data.questions[currentQuestionIndex]?.value[i]
+              )"
+            >
+              <span class="dp-option__dot"></span>
+              <span class="dp-option__label">{{ label }}</span>
+            </div>
+          </div>
+
+          <div class="dp-error" *ngIf="showError">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                 stroke-linecap="round" stroke-linejoin="round" width="15" height="15">
+              <circle cx="12" cy="12" r="10"/>
+              <line x1="12" y1="8" x2="12" y2="12"/>
+              <line x1="12" y1="16" x2="12.01" y2="16"/>
+            </svg>
+            Будь ласка, оберіть варіант відповіді перед тим, як перейти далі.
+          </div>
+
+        </div>
+
+        <!-- Navigation -->
+        <div class="dp-nav" [class.dp-nav--start]="currentQuestionIndex === 0">
+          <button
+            *ngIf="currentQuestionIndex > 0"
+            class="dp-btn dp-btn--ghost"
+            type="button"
+            (click)="previousQuestion()"
+          >
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"
+                 stroke-linecap="round" stroke-linejoin="round" width="16" height="16">
+              <line x1="19" y1="12" x2="5" y2="12"/>
+              <polyline points="12 19 5 12 12 5"/>
+            </svg>
+            Назад
+          </button>
+
+          <button
+            class="dp-btn dp-btn--primary"
+            type="button"
+            (click)="nextQuestion()"
+          >
+            {{ currentQuestionIndex < data.questions.length - 1 ? 'Далі' : 'Завершити тест' }}
+            <svg *ngIf="currentQuestionIndex < data.questions.length - 1"
+                 viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"
+                 stroke-linecap="round" stroke-linejoin="round" width="16" height="16">
+              <line x1="5" y1="12" x2="19" y2="12"/>
+              <polyline points="12 5 19 12 12 19"/>
+            </svg>
+            <svg *ngIf="currentQuestionIndex >= data.questions.length - 1"
+                 viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"
+                 stroke-linecap="round" stroke-linejoin="round" width="16" height="16">
+              <polyline points="20 6 9 17 4 12"/>
+            </svg>
+          </button>
+        </div>
+
+      </div>
+    </section>
+
+  </ng-container>
+
+
+  <!-- ═══════════════════════════════════════════
+       RESULT PHASE
+  ══════════════════════════════════════════════ -->
+  <ng-container *ngIf="isTestCompleted">
+
+    <!-- Result header -->
+    <header class="dp-result-header">
+      <div class="container">
+        <div class="dp-result-header__icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75"
+               stroke-linecap="round" stroke-linejoin="round" width="28" height="28">
+            <polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/>
+          </svg>
+        </div>
+        <h1 class="dp-result-header__title">Результати тесту</h1>
+        <p class="dp-result-header__sub">{{ data?.name }}</p>
+      </div>
+    </header>
+
+    <section class="dp-result-body">
+      <div class="container">
+
+        <!-- RBQ-2A -->
         <ng-container *ngIf="data?.specialTest === specializedTests.RBQ2A; else SMIblock">
-
-            <div class="ysq-container">
-
-                <h2 class="text-center text-blue-600 font-bold text-3xl">
-                    📊 Результати RBQ-2A
-                </h2>
-
-                <p-divider class="divider-max-width justify-content-center mx-auto"></p-divider>
-
-                <div class="score-box text-center my-4">
-                    <p class="score-text text-white text-lg">Загальна сума балів:</p>
-                    <p class="score-value text-white text-4xl font-bold">{{ rbqTotalScore }}</p>
-                </div>
-
-                <div class="schema-results">
-                    <div *ngFor="let key of Object.keys(rbqSpectraScores)" class="schema-container">
-                        <div class="schema-name">{{ key }}</div>
-
-                        <div class="schema-info">
-                            <span class="schema-sum">Сума балів:</span>
-                            {{ rbqSpectraScores[key] }}
-                        </div>
-                    </div>
-                </div>
-
+          <div class="dp-result-card dp-result-card--wide">
+            <div class="dp-result-score">
+              <span class="dp-result-score__label">Загальна сума балів</span>
+              <span class="dp-result-score__value">{{ rbqTotalScore }}</span>
             </div>
-
+            <ul class="dp-schema-list">
+              <li *ngFor="let key of Object.keys(rbqSpectraScores)" class="dp-schema-list__item">
+                <span class="dp-schema-list__name">{{ key }}</span>
+                <span class="dp-schema-list__bar-wrap">
+                  <span class="dp-schema-list__bar"
+                    [style.width.%]="rbqTotalScore ? (rbqSpectraScores[key] / rbqTotalScore) * 100 : 0">
+                  </span>
+                </span>
+                <span class="dp-schema-list__score">{{ rbqSpectraScores[key] }}</span>
+              </li>
+            </ul>
+          </div>
         </ng-container>
 
-        <!-- SMI -->
+        <!-- SMI / YSQ-S3 -->
         <ng-template #SMIblock>
-
-            <ng-container *ngIf="data?.specialTest === specializedTests.SMI; else HADSblock">
-
-                <div class="ysq-container">
-
-                    <h2 class="text-center text-blue-600 font-bold text-3xl">
-                        📊 Результати тесту YSQ-S3
-                    </h2>
-
-                    <p-divider class="divider-max-width justify-content-center mx-auto"></p-divider>
-
-                    <div class="schema-results">
-                        <div *ngFor="let testName of Object.keys(schemaScores)" class="schema-container">
-                            <div class="schema-name">{{ testName }}</div>
-
-                            <div class="schema-info">
-                                <span class="schema-sum">Середнє значення:</span>
-                                {{ schemaScores[testName] | number: '1.2-2' }}
-                            </div>
-                        </div>
-                    </div>
-
-                </div>
-
-            </ng-container>
-
+          <ng-container *ngIf="data?.specialTest === specializedTests.SMI; else HADSblock">
+            <div class="dp-result-card dp-result-card--wide">
+              <p class="dp-result-card__title">YSQ-S3 — Схемні результати</p>
+              <ul class="dp-schema-list">
+                <li *ngFor="let testName of Object.keys(schemaScores)" class="dp-schema-list__item">
+                  <span class="dp-schema-list__name">{{ testName }}</span>
+                  <span class="dp-schema-list__bar-wrap">
+                    <span class="dp-schema-list__bar"
+                      [style.width.%]="(schemaScores[testName] / 6) * 100">
+                    </span>
+                  </span>
+                  <span class="dp-schema-list__score">{{ schemaScores[testName] | number: '1.2-2' }}</span>
+                </li>
+              </ul>
+            </div>
+          </ng-container>
         </ng-template>
 
         <!-- HADS -->
         <ng-template #HADSblock>
-
-            <ng-container *ngIf="data?.specialTest === specializedTests.HADS; else ASRSblock">
-
-                <div class="result-card result-card--narrow">
-
-                    <h2 class="result-title text-2xl font-bold text-center">
-                        Ви завершили тест!
-                    </h2>
-
-                    <div class="score-box text-center my-4">
-                        <p class="score-text text-white text-lg">Тривожність:</p>
-                        <p class="score-value text-white text-4xl font-bold">{{ hadsAnxietyScore }}</p>
-                    </div>
-
-                    <p class="result-message text-center text-lg">
-                        Інтерпретація: {{ hadsAnxietyResult }}
-                    </p>
-
-                    <div class="score-box text-center my-4">
-                        <p class="score-text text-white text-lg">Депресія:</p>
-                        <p class="score-value text-white text-4xl font-bold">{{ hadsDepressionScore }}</p>
-                    </div>
-
-                    <p class="result-message text-center text-lg">
-                        Інтерпретація: {{ hadsDepressionResult }}
-                    </p>
-
+          <ng-container *ngIf="data?.specialTest === specializedTests.HADS; else ASRSblock">
+            <div class="dp-result-card">
+              <p class="dp-result-card__title">Ви завершили тест!</p>
+              <div class="dp-hads-grid">
+                <div class="dp-hads-item dp-hads-item--anxiety">
+                  <span class="dp-hads-item__label">Тривожність</span>
+                  <span class="dp-hads-item__value">{{ hadsAnxietyScore }}</span>
+                  <span class="dp-hads-item__result">{{ hadsAnxietyResult }}</span>
                 </div>
-
-            </ng-container>
-
+                <div class="dp-hads-item dp-hads-item--depression">
+                  <span class="dp-hads-item__label">Депресія</span>
+                  <span class="dp-hads-item__value">{{ hadsDepressionScore }}</span>
+                  <span class="dp-hads-item__result">{{ hadsDepressionResult }}</span>
+                </div>
+              </div>
+            </div>
+          </ng-container>
         </ng-template>
 
         <!-- ASRS -->
         <ng-template #ASRSblock>
-
-            <ng-container *ngIf="data?.specialTest === specializedTests.ASRS; else normalResult">
-
-                <div class="result-card">
-
-                    <h2 class="result-title text-2xl font-bold text-center">
-                        📊 Результати ASRS-v1.1
-                    </h2>
-
-                    <p-divider class="divider-max-width justify-content-center mx-auto"></p-divider>
-
-                    <div class="schema-results">
-
-                        <div class="schema-container">
-                            <div class="schema-name">Частина A</div>
-
-                            <div class="schema-info">
-                                <span class="schema-sum">Позитивні симптоми:</span>
-                                {{ asrsPartAPositive }} / 6
-                            </div>
-
-                            <div class="schema-info">
-                                <span class="schema-sum">Негативні симптоми:</span>
-                                {{ asrsPartANegative }} / 6
-                            </div>
-                        </div>
-
-                        <div class="schema-container">
-                            <div class="schema-name">Частина B</div>
-
-                            <div class="schema-info">
-                                <span class="schema-sum">Позитивні симптоми:</span>
-                                {{ asrsPartBPositive }} / 12
-                            </div>
-
-                            <div class="schema-info">
-                                <span class="schema-sum">Негативні симптоми:</span>
-                                {{ asrsPartBNegative }} / 12
-                            </div>
-                        </div>
-
+          <ng-container *ngIf="data?.specialTest === specializedTests.ASRS; else normalResult">
+            <div class="dp-result-card dp-result-card--wide">
+              <p class="dp-result-card__title">ASRS-v1.1 — Результати</p>
+              <div class="dp-asrs-grid">
+                <div class="dp-asrs-part">
+                  <span class="dp-asrs-part__label">Частина A</span>
+                  <div class="dp-asrs-part__row">
+                    <div class="dp-asrs-stat dp-asrs-stat--pos">
+                      <span>Позитивні</span>
+                      <strong>{{ asrsPartAPositive }}<em>/6</em></strong>
                     </div>
-
-                    <div class="result-summary">
-                        <div class="result-summary-grid">
-                            <div class="result-summary-item">
-                                <span class="result-summary-label">Усього позитивних симптомів</span>
-                                <span class="result-summary-value">{{ asrsTotalPositive }} / 18</span>
-                            </div>
-
-                            <div class="result-summary-item">
-                                <span class="result-summary-label">Усього негативних симптомів</span>
-                                <span class="result-summary-value">{{ asrsTotalNegative }} / 18</span>
-                            </div>
-                        </div>
+                    <div class="dp-asrs-stat dp-asrs-stat--neg">
+                      <span>Негативні</span>
+                      <strong>{{ asrsPartANegative }}<em>/6</em></strong>
                     </div>
-
-                    <p class="result-message text-center text-lg">
-                        {{ asrsResult }}
-                    </p>
-
-                    <p class="common-message text-gray-500 text-center">
-                        {{ data?.commonMessage }}
-                    </p>
-
+                  </div>
                 </div>
-
-            </ng-container>
-
-        </ng-template>
-
-        <!-- GENERAL RESULT -->
-        <ng-template #normalResult>
-
-            <div class="result-card result-card--narrow">
-
-                <h2 class="result-title text-2xl font-bold text-center">
-                    Ви завершили тест!
-                </h2>
-
-                <div class="score-box text-center my-4">
-                    <p class="score-text text-white text-lg">Ваша сума балів:</p>
-                    <p class="score-value text-white text-4xl font-bold">{{ totalScore }}</p>
+                <div class="dp-asrs-part">
+                  <span class="dp-asrs-part__label">Частина B</span>
+                  <div class="dp-asrs-part__row">
+                    <div class="dp-asrs-stat dp-asrs-stat--pos">
+                      <span>Позитивні</span>
+                      <strong>{{ asrsPartBPositive }}<em>/12</em></strong>
+                    </div>
+                    <div class="dp-asrs-stat dp-asrs-stat--neg">
+                      <span>Негативні</span>
+                      <strong>{{ asrsPartBNegative }}<em>/12</em></strong>
+                    </div>
+                  </div>
                 </div>
-
-                <p class="result-message text-center text-lg">
-                    {{ resultMessage }}
-                </p>
-
-                <p *ngIf="resultDescription" class="result-description text-center text-lg">
-                    {{ resultDescription }}
-                </p>
-
-                <p class="common-message text-gray-500 text-center">
-                    {{ data?.commonMessage }}
-                </p>
-
+              </div>
+              <div class="dp-asrs-total">
+                <div class="dp-asrs-total__item">
+                  <span>Усього позитивних</span>
+                  <strong>{{ asrsTotalPositive }}<em>/18</em></strong>
+                </div>
+                <div class="dp-asrs-total__item">
+                  <span>Усього негативних</span>
+                  <strong>{{ asrsTotalNegative }}<em>/18</em></strong>
+                </div>
+              </div>
+              <p class="dp-result-msg">{{ asrsResult }}</p>
+              <p class="dp-result-common">{{ data?.commonMessage }}</p>
             </div>
-
+          </ng-container>
         </ng-template>
 
-    </div>
+        <!-- General -->
+        <ng-template #normalResult>
+          <div class="dp-result-card">
+            <p class="dp-result-card__title">Тест завершено</p>
+            <div class="dp-result-score">
+              <span class="dp-result-score__label">Ваша сума балів</span>
+              <span class="dp-result-score__value">{{ totalScore }}</span>
+            </div>
+            <p class="dp-result-msg">{{ resultMessage }}</p>
+            <p *ngIf="resultDescription" class="dp-result-description">{{ resultDescription }}</p>
+            <p class="dp-result-common">{{ data?.commonMessage }}</p>
+          </div>
+        </ng-template>
+
+        <!-- Actions -->
+        <div class="dp-result-actions">
+          <button class="dp-btn dp-btn--ghost" type="button" (click)="restartTest()">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                 stroke-linecap="round" stroke-linejoin="round" width="16" height="16">
+              <polyline points="1 4 1 10 7 10"/>
+              <path d="M3.51 15a9 9 0 1 0 .49-4.56"/>
+            </svg>
+            Пройти ще раз
+          </button>
+          <button class="dp-btn dp-btn--primary" type="button" (click)="openContacts()">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                 stroke-linecap="round" stroke-linejoin="round" width="16" height="16">
+              <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07
+                       A19.5 19.5 0 0 1 4.69 12a19.79 19.79 0 0 1-3.07-8.67
+                       A2 2 0 0 1 3.6 1.2h3a2 2 0 0 1 2 1.72
+                       c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.91 8.86
+                       a16 16 0 0 0 6 6l.86-.86a2 2 0 0 1 2.11-.45
+                       c.907.339 1.85.573 2.81.7A2 2 0 0 1 21.6 16.92z"/>
+            </svg>
+            Записатися на консультацію
+          </button>
+          <button class="dp-btn dp-btn--pdf-dl" type="button" (click)="generatePDF()">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                 stroke-linecap="round" stroke-linejoin="round" width="16" height="16">
+              <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/>
+              <polyline points="14 2 14 8 20 8"/>
+              <line x1="12" y1="18" x2="12" y2="12"/>
+              <polyline points="9 15 12 18 15 15"/>
+            </svg>
+            Зберегти PDF
+          </button>
+          <button class="dp-btn dp-btn--outline" type="button" (click)="goToAllTests()">
+            Усі тести
+          </button>
+        </div>
+
+      </div>
+    </section>
+
+  </ng-container>
 
 </div>

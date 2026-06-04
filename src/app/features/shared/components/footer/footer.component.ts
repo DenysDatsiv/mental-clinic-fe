@@ -1,7 +1,7 @@
 import { CommonModule } from '@angular/common';
 import { ImportsModule } from '../../../../shared/primeng-imports.module';
 import { ClinicContactsDialogComponent } from '../clinic-contacts-dialog/clinic-contacts-dialog.component';
-import { Component } from '@angular/core';
+import { Component, inject } from '@angular/core';
 import { ClinicContactsService } from '../clinic-contacts-dialog/clinic-contacts.service';
 import { clinicContacts } from '../../constants/contacts.constants';
 import { GoogleAnalyticsService } from '../../../../analytics/google-analytics.service';
@@ -11,13 +11,11 @@ import { GoogleAnalyticsService } from '../../../../analytics/google-analytics.s
   imports: [CommonModule, ImportsModule, ClinicContactsDialogComponent],
   selector: 'app-footer',
   templateUrl: './footer.component.html',
-  styleUrls: ['./footer.component.scss']
+  styleUrls: ['./footer.component.scss'],
 })
 export class FooterComponent {
-  constructor(
-      private contactsService: ClinicContactsService,
-      private googleAnalyticsService: GoogleAnalyticsService
-  ) {}
+  private readonly contactsService = inject(ClinicContactsService);
+  private readonly googleAnalyticsService = inject(GoogleAnalyticsService);
 
   /**
    * Tracks social media link clicks

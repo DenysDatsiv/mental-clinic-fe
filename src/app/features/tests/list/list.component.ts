@@ -1,13 +1,13 @@
 import { CommonModule } from '@angular/common';
+import { RouterLink } from '@angular/router';
 import { ImportsModule } from '../../../shared/primeng-imports.module';
-import { TestingBlockComponent } from '../../shared/components/testing-block/testing-block.component';
 import { TestsGridComponent } from '../components/tests-grid/tests-grid.component';
 import {Component, OnInit} from '@angular/core';
 import {SECTION} from '../../../shared/constants/section-ids.constants';
 
 @Component({
   standalone: true,
-  imports: [CommonModule, ImportsModule, TestingBlockComponent, TestsGridComponent],
+  imports: [CommonModule, ImportsModule, RouterLink, TestsGridComponent],
   selector: 'app-list',
   templateUrl: './list.component.html',
   styleUrl: './list.component.scss'

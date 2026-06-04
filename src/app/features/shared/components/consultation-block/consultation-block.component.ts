@@ -1,52 +1,29 @@
 import { CommonModule } from '@angular/common';
-import { ImportsModule } from '../../../../shared/primeng-imports.module';
 import { Component } from '@angular/core';
 
 @Component({
   standalone: true,
-  imports: [CommonModule, ImportsModule],
+  imports: [CommonModule],
   selector: 'app-consultation-block',
   templateUrl: './consultation-block.component.html',
   styleUrls: ['./consultation-block.component.scss'],
 })
 export class ConsultationBlockComponent {
-  consultationSlides = [
+  steps = [
     {
-      title: 'Крок 1. Зв’яжіться з нашим адміністратором для обговорення деталей',
-      description:
-        'Перший етап – це зв’язок з адміністратором, щоб обговорити ваші потреби, деталі консультації та відповісти на всі ваші запитання.',
-      image: 'assets/support.svg',
+      title: `Зв’яжіться з адміністратором`,
+      description: `Зателефонуйте або напишіть — адміністратор відповість на всі запитання та допоможе підібрати зручний час.`,
+      icon: 'chat',
     },
     {
-      title: 'Крок 2. Вибір консультанта для вашої консультації',
-      description:
-        'На другому етапі ви разом із адміністратором підбираєте консультанта, який найкраще відповідає вашим потребам і має потрібну спеціалізацію.',
-      image: 'assets/doctor.svg',
+      title: `Оберіть фахівця`,
+      description: `Разом із адміністратором ви підберете лікаря з потрібною спеціалізацією, який найкраще відповідає вашому запиту.`,
+      icon: 'person',
     },
     {
-      title: 'Крок 3. Проведення інформаційної консультації у зручний для вас час',
-      description:
-        'На третьому етапі відбувається інформування з вибраним консультантом у зручний для вас час, з урахуванням усіх домовленостей.',
-      image: 'assets/rest-time.svg',
-    },
-  ];
-
-
-  responsiveOptions = [
-    {
-      breakpoint: '1024px',
-      numVisible: 1,
-      numScroll: 1,
-    },
-    {
-      breakpoint: '768px',
-      numVisible: 1,
-      numScroll: 1,
-    },
-    {
-      breakpoint: '560px',
-      numVisible: 1,
-      numScroll: 1,
+      title: `Пройдіть консультацію`,
+      description: `Консультація проходить у зручний для вас час — онлайн або в клініці. Перший крок до вашого ментального здоров’я.`,
+      icon: 'calendar',
     },
   ];
 }
