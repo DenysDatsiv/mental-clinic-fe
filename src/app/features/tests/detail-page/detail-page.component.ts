@@ -313,9 +313,6 @@ export class DetailPageComponent implements OnInit {
     const filename = `${this.data.name} — Результати.pdf`;
     const isIOS = /iPhone|iPad|iPod/i.test(navigator.userAgent);
 
-    // iOS Safari blocks window.open after async work; open the tab now while still in gesture context
-    const iosTab = isIOS ? window.open('', '_blank') : null;
-
     // Fetch logo as base64 so html2canvas can render it without path issues
     const logoBase64 = await fetch('/assets/logo.png')
       .then(r => r.blob())
@@ -390,51 +387,34 @@ export class DetailPageComponent implements OnInit {
       }
 
       const blob = doc.output('blob');
-      const url  = URL.createObjectURL(blob);
 
-      if (isIOS && iosTab) {
-        // Render a download page in the pre-opened tab.
-        // iOS Safari only shows the "Save to Files" sheet when the user taps a real link —
-        // programmatic .click() after async work is blocked by the gesture security policy.
-        iosTab.document.open();
-        iosTab.document.write(`<!DOCTYPE html>
-<html>
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width,initial-scale=1">
-  <title>${filename}</title>
-  <style>
-    *{box-sizing:border-box;margin:0;padding:0}
-    body{display:flex;flex-direction:column;justify-content:center;align-items:center;
-         min-height:100vh;background:#f2f2f7;font-family:-apple-system,sans-serif;padding:32px}
-    h2{font-size:18px;font-weight:600;color:#1c1c1e;margin-bottom:8px;text-align:center}
-    p{font-size:14px;color:#8e8e93;margin-bottom:32px;text-align:center}
-    a{display:block;background:#003168;color:#fff;text-decoration:none;
-      font-size:17px;font-weight:600;padding:16px 40px;border-radius:14px}
-  </style>
-</head>
-<body>
-  <h2>PDF готовий</h2>
-  <p>Натисніть, щоб зберегти у Files</p>
-  <a href="${url}" download="${filename}">⬇&nbsp;&nbsp;Завантажити PDF</a>
-</body>
-</html>`);
-        iosTab.document.close();
-      } else {
-        const isAndroid = /Android/i.test(navigator.userAgent);
-        if (isAndroid) {
-          window.open(url, '_blank');
+      if (isIOS) {
+        // Use the Web Share API — triggers the native iOS share sheet
+        // ("Save to Files", AirDrop, Mail, …). This is the only reliable way
+        // to get a real download prompt on iOS Safari; the `download` attribute
+        // is silently ignored and blob-URL links just open inline.
+        const file = new File([blob], filename, { type: 'application/pdf' });
+        if (navigator.canShare?.({ files: [file] })) {
+          try {
+            await navigator.share({ files: [file], title: filename });
+          } catch (err: any) {
+            if (err?.name !== 'AbortError') throw err;
+            // AbortError = user dismissed the sheet, nothing to do
+          }
         } else {
-          const a = document.createElement('a');
-          a.href = url;
-          a.download = filename;
-          a.click();
-          setTimeout(() => URL.revokeObjectURL(url), 1000);
+          // Fallback for very old iOS (<15): open PDF inline so the user can
+          // long-press → "Download Linked File" or use the share button manually
+          const url = URL.createObjectURL(blob);
+          window.open(url, '_blank');
         }
+      } else {
+        const url = URL.createObjectURL(blob);
+        const a = document.createElement('a');
+        a.href = url;
+        a.download = filename;
+        a.click();
+        setTimeout(() => URL.revokeObjectURL(url), 1000);
       }
-    } catch (e) {
-      iosTab?.close();
-      throw e;
     } finally {
       document.body.removeChild(hdrEl);
       document.body.removeChild(cntEl);
