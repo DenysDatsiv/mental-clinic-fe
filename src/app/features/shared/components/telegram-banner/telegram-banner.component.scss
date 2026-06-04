@@ -1,4 +1,5 @@
-@import "../../../../../assets/css/coloristics";
+@use "sass:color";
+@use "../../../../../assets/css/coloristics" as *;
 
 .tg-section {
   background: $section-bg;
@@ -100,7 +101,7 @@
     box-shadow: 0 4px 16px rgba($primary-color, 0.3);
 
     &:hover {
-      background: darken($primary-color, 8%);
+      background: color.adjust($primary-color, $lightness: -8%);
       box-shadow: 0 8px 24px rgba($primary-color, 0.42);
     }
   }

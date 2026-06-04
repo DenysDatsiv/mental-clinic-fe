@@ -1,5 +1,5 @@
-@import "assets/css/coloristics";
-@import "assets/css/container";
+@use "assets/css/coloristics" as *;
+@use "assets/css/container" as *;
 
 *, *::before, *::after {
   box-sizing: border-box;

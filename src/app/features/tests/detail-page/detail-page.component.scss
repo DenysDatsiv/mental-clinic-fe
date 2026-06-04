@@ -1,4 +1,5 @@
-@import "../../../../assets/css/coloristics";
+@use "sass:color";
+@use "../../../../assets/css/coloristics" as *;
 
 // ── Spinner ───────────────────────────────────────────────────────────────────
 
@@ -454,7 +455,7 @@
     color: #fff;
 
     &:hover {
-      background: darken($primary-color, 8%);
+      background: color.adjust($primary-color, $lightness: -8%);
       box-shadow: 0 8px 24px rgba($primary-color, 0.35);
       transform: translateY(-1px);
     }

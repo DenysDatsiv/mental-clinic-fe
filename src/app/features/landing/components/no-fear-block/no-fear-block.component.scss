@@ -1,4 +1,4 @@
-@import "../../../../../assets/css/coloristics";
+@use "../../../../../assets/css/coloristics" as *;
 
 .no-fear-section {
   background: $section-seconder-bg;

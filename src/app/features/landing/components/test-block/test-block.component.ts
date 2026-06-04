@@ -68,7 +68,9 @@ export class TestBlockComponent {
     }
 
   ];
-  googleAnalyticsTracker(eventName: string, itemText: string): void {
+  // Third arg (`source`) is passed from the template but not forwarded to GA4 —
+  // page context is already captured by the router-level page_view tracking.
+  googleAnalyticsTracker(eventName: string, itemText: string, _source?: string): void {
     this.googleAnalyticsService.trackEvent(eventName, { item_text: itemText });
   }
   protected readonly TEST_ROUTES = TEST_ROUTES;
