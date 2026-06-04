@@ -311,6 +311,10 @@ export class DetailPageComponent implements OnInit {
     const ORG  = 'Онлайн центр ментального здоров\'я Євгена Скрипника';
     const date = new Date().toLocaleDateString('uk-UA');
     const filename = `${this.data.name} — Результати.pdf`;
+    const isIOS = /iPhone|iPad|iPod/i.test(navigator.userAgent);
+
+    // iOS Safari blocks window.open after async work; open the tab now while still in gesture context
+    const iosTab = isIOS ? window.open('', '_blank') : null;
 
     // Fetch logo as base64 so html2canvas can render it without path issues
     const logoBase64 = await fetch('/assets/logo.png')
@@ -385,7 +389,52 @@ export class DetailPageComponent implements OnInit {
         doc.addImage(slice.toDataURL('image/jpeg', 0.92), 'JPEG', ML, HDR, cntW, sh * ratio);
       }
 
-      doc.save(filename);
+      const blob = doc.output('blob');
+      const url  = URL.createObjectURL(blob);
+
+      if (isIOS && iosTab) {
+        // Render a download page in the pre-opened tab.
+        // iOS Safari only shows the "Save to Files" sheet when the user taps a real link —
+        // programmatic .click() after async work is blocked by the gesture security policy.
+        iosTab.document.open();
+        iosTab.document.write(`<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>${filename}</title>
+  <style>
+    *{box-sizing:border-box;margin:0;padding:0}
+    body{display:flex;flex-direction:column;justify-content:center;align-items:center;
+         min-height:100vh;background:#f2f2f7;font-family:-apple-system,sans-serif;padding:32px}
+    h2{font-size:18px;font-weight:600;color:#1c1c1e;margin-bottom:8px;text-align:center}
+    p{font-size:14px;color:#8e8e93;margin-bottom:32px;text-align:center}
+    a{display:block;background:#003168;color:#fff;text-decoration:none;
+      font-size:17px;font-weight:600;padding:16px 40px;border-radius:14px}
+  </style>
+</head>
+<body>
+  <h2>PDF готовий</h2>
+  <p>Натисніть, щоб зберегти у Files</p>
+  <a href="${url}" download="${filename}">⬇&nbsp;&nbsp;Завантажити PDF</a>
+</body>
+</html>`);
+        iosTab.document.close();
+      } else {
+        const isAndroid = /Android/i.test(navigator.userAgent);
+        if (isAndroid) {
+          window.open(url, '_blank');
+        } else {
+          const a = document.createElement('a');
+          a.href = url;
+          a.download = filename;
+          a.click();
+          setTimeout(() => URL.revokeObjectURL(url), 1000);
+        }
+      }
+    } catch (e) {
+      iosTab?.close();
+      throw e;
     } finally {
       document.body.removeChild(hdrEl);
       document.body.removeChild(cntEl);
