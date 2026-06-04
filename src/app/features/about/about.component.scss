@@ -816,11 +816,11 @@
 // PrimeNG carousel overrides — must be at host level to pierce encapsulation
 ::ng-deep .about-reviews__carousel,
 ::ng-deep .about-videos__carousel {
-  .p-carousel-indicators {
+  .p-carousel-indicator-list {
     padding: 1.25rem 0 0;
     gap: 0.4rem;
 
-    .p-carousel-indicator button {
+    .p-carousel-indicator-button {
       width: 8px;
       height: 8px;
       border-radius: 999px;
@@ -830,7 +830,7 @@
       padding: 0;
     }
 
-    .p-carousel-indicator.p-highlight button {
+    .p-carousel-indicator-active .p-carousel-indicator-button {
       width: 24px;
       background: #5f75d6;
     }

@@ -9,6 +9,30 @@
   min-height: 60vh;
 }
 
+// ── Error state ───────────────────────────────────────────────────────────────
+
+.dp-error {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  min-height: 60vh;
+  color: #9aa0b2;
+  text-align: center;
+  padding: 2rem;
+
+  p { font-size: 1rem; margin: 0; }
+
+  &__back {
+    font-size: 0.88rem;
+    font-weight: 600;
+    color: $primary-color;
+    text-decoration: none;
+    &:hover { text-decoration: underline; }
+  }
+}
+
 // ── Page shell ────────────────────────────────────────────────────────────────
 
 .detail-page {
@@ -386,9 +410,9 @@
   }
 }
 
-// ── Error ─────────────────────────────────────────────────────────────────────
+// ── Inline validation error ───────────────────────────────────────────────────
 
-.dp-error {
+.dp-validation-error {
   display: flex;
   align-items: center;
   gap: 0.45rem;

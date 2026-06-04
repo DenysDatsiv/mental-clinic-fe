@@ -2,6 +2,13 @@ import { Routes } from '@angular/router';
 import { LayoutComponent } from './core/layout/layout.component';
 import { LandingComponent } from './features/landing/landing.component';
 import { ROUTES } from './shared/constants/routes.constants';
+import {AboutComponent} from "./features/about/about.component";
+import {DrugsComponent} from "./features/drugs/drugs.component";
+import {VisitPageComponent} from "./features/visit/visit-page.component";
+import {ContractComponent} from "./features/contract/contract.component";
+import {TestsComponent} from "./features/tests/tests.component";
+import {DetailPageComponent} from "./features/tests/detail-page/detail-page.component";
+import {ListComponent} from "./features/tests/list/list.component";
 
 export const APP_ROUTES: Routes = [
   {
@@ -11,23 +18,36 @@ export const APP_ROUTES: Routes = [
       { path: '', component: LandingComponent },
       {
         path: ROUTES.ABOUT,
-        loadComponent: () => import('./features/about/about.component').then(m => m.AboutComponent),
+        component: AboutComponent
       },
       {
         path: ROUTES.DRUGS,
-        loadComponent: () => import('./features/drugs/drugs.component').then(m => m.DrugsComponent),
+        component:DrugsComponent
       },
       {
         path: 'test',
-        loadChildren: () => import('./features/tests/tests.routes').then(m => m.TESTS_ROUTES),
-      },
+        component: TestsComponent,
+        children: [
+          {
+            path: 'detail/:id',
+            component:DetailPageComponent
+          },
+          {
+            path: 'list/:type',
+            component:ListComponent
+          },
+          {
+            path: 'list',
+            component:ListComponent
+          },
+        ],      },
       {
         path: ROUTES.CONTRACT,
-        loadComponent: () => import('./features/contract/contract.component').then(m => m.ContractComponent),
+        component:ContractComponent
       },
       {
         path: ROUTES.VISIT,
-        loadComponent: () => import('./features/visit/visit-page.component').then(m => m.VisitPageComponent),
+        component:VisitPageComponent
       },
       { path: '**', redirectTo: '', pathMatch: 'full' },
     ],

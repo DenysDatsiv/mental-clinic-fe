@@ -1,110 +1,81 @@
-import { CommonModule } from '@angular/common';
+import { CommonModule, Location } from '@angular/common';
 import { ImportsModule } from '../../../../shared/primeng-imports.module';
-import { DragDropModule } from 'primeng/dragdrop';
-import { ReactiveFormsModule } from '@angular/forms';
 import { CardComponent } from '../test-card/card.component';
-import { ChangeDetectionStrategy, Component, OnInit } from '@angular/core';
-import { FormControl, FormGroup } from '@angular/forms';
+import {
+  ChangeDetectionStrategy,
+  Component,
+  inject,
+  OnInit,
+  signal,
+} from '@angular/core';
+import { FormControl, FormGroup, ReactiveFormsModule } from '@angular/forms';
 import { ActivatedRoute } from '@angular/router';
 import { debounceTime, startWith, switchMap, tap, distinctUntilChanged } from 'rxjs/operators';
-import { BehaviorSubject, Observable } from 'rxjs';
+import { Observable } from 'rxjs';
 import { testsCategories } from '../../constants/test-categories.constants';
 import { TestService } from '../../services/test.service';
 import { Test } from '../../models/test.model';
-import { Location } from '@angular/common';
 import { GoogleAnalyticsService } from '../../../../analytics/google-analytics.service';
 import { shareReplay } from 'rxjs/operators';
 
 @Component({
   standalone: true,
-  imports: [CommonModule, ImportsModule, DragDropModule, CardComponent, ReactiveFormsModule],
+  imports: [CommonModule, ImportsModule, CardComponent, ReactiveFormsModule],
   selector: 'app-tests-grid',
   templateUrl: './tests-grid.component.html',
   styleUrls: ['./tests-grid.component.scss'],
-  changeDetection: ChangeDetectionStrategy.OnPush
+  changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export class TestsGridComponent implements OnInit {
+  private readonly testService = inject(TestService);
+  private readonly route = inject(ActivatedRoute);
+  private readonly location = inject(Location);
+  private readonly analytics = inject(GoogleAnalyticsService);
+
   categories = testsCategories;
+  skeletonItems = Array(6);
+
   searchForm = new FormGroup({
     text: new FormControl(''),
-    category: new FormControl({ name: 'Всі', value: '' })
+    category: new FormControl<{ name: string; value: string }>({ name: 'Всі', value: '' }),
   });
 
-  tests$: Observable<Test[]>;
-  allTests: any[] = [];
-  loading$ = new BehaviorSubject<boolean>(false);
-  showButton = false;
-  initLoad = true;
-
-  constructor(
-      private testService: TestService,
-      private route: ActivatedRoute,
-      private location: Location,
-      private googleAnalyticsService: GoogleAnalyticsService
-  ) {}
+  loading = signal(false);
+  tests$!: Observable<Test[]>;
 
   ngOnInit() {
-    const typeFromUrl = this.route.snapshot.paramMap.get('type') || '';
-    const categoryObj = this.categories.find(cat => cat.value === typeFromUrl) || { name: 'Всі', value: '' };
+    const typeFromUrl = this.route.snapshot.paramMap.get('type') ?? '';
+    const categoryObj = this.categories.find(c => c.value === typeFromUrl) ?? { name: 'Всі', value: '' };
     this.searchForm.patchValue({ category: categoryObj });
 
-    // Listen for category changes to update URL and track event
     this.searchForm.get('category')?.valueChanges.subscribe(selected => {
       const categoryValue = typeof selected === 'string' ? selected : selected?.value;
-      const categoryName = typeof selected === 'string' ? selected : selected?.name;
-      const newUrl = categoryValue ? `/tests/${categoryValue}` : `/tests/list`;
-      this.location.replaceState(newUrl);
-
-      this.googleAnalyticsService.trackEvent(
-          'category_select',
-          'Dropdown',
-          'Category Selected',
-          { selected_category: categoryName }
-      );
+      const categoryName  = typeof selected === 'string' ? selected : selected?.name;
+      this.location.replaceState(categoryValue ? `/tests/${categoryValue}` : `/tests/list`);
+      this.analytics.trackEvent('category_select', 'Dropdown', 'Category Selected', { selected_category: categoryName });
     });
 
-    // Listen for search text changes to track events
     this.searchForm.get('text')?.valueChanges.pipe(
-        debounceTime(1500),
-        distinctUntilChanged()
-    ).subscribe(searchText => {
-      if (searchText.trim()) {
-        this.googleAnalyticsService.trackEvent(
-            'search',
-            'User Input',
-            'Search Performed',
-            { search_query: searchText.trim() }
-        );
+      debounceTime(1500),
+      distinctUntilChanged(),
+    ).subscribe(q => {
+      if (q?.trim()) {
+        this.analytics.trackEvent('search', 'User Input', 'Search Performed', { search_query: q.trim() });
       }
     });
 
-    // Build tests observable with shared subscription
     this.tests$ = this.searchForm.valueChanges.pipe(
-        debounceTime(1000),
-        startWith(this.searchForm.value),
-        tap(() => this.loading$.next(true)), // Always show the spinner until data is loaded
-        switchMap(({ text, category }) => {
-          const searchQuery = text?.trim() || '';
-          const categoryValue = typeof category === 'string' ? category : category?.value;
-          return this.testService.getTests(searchQuery, categoryValue);
-        }),
-        tap(data => {
-          this.allTests = data;
-          this.loading$.next(false);
-          if (this.initLoad) {
-            this.initLoad = false;
-          }
-        }),
-        shareReplay(1)
+      debounceTime(300),
+      startWith(this.searchForm.value),
+      tap(() => this.loading.set(true)),
+      switchMap(({ text, category }) => {
+        const query = text?.trim() ?? '';
+        const type  = typeof category === 'string' ? category : category?.value ?? '';
+        return this.testService.getTests(query, type);
+      }),
+      tap(() => this.loading.set(false)),
+      shareReplay(1),
     );
-
-    this.searchForm.valueChanges.subscribe(() => this.toggleButtonVisibility());
-    this.toggleButtonVisibility();
-  }
-
-  toggleButtonVisibility() {
-    const { text, category } = this.searchForm.value;
-    this.showButton = !!(text?.trim() || category);
   }
 
   isActiveCategory(cat: { name: string; value: string }): boolean {

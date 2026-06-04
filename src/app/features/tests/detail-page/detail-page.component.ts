@@ -1,6 +1,6 @@
-import { CommonModule } from '@angular/common';
+import {CommonModule, NgFor, NgIf} from '@angular/common';
 import { ImportsModule } from '../../../shared/primeng-imports.module';
-import { Component, DestroyRef, inject, OnInit } from '@angular/core';
+import { ChangeDetectorRef, Component, DestroyRef, inject, OnInit } from '@angular/core';
 import { takeUntilDestroyed } from '@angular/core/rxjs-interop';
 import jsPDF from 'jspdf';
 import html2canvas from 'html2canvas';
@@ -17,7 +17,7 @@ import { TEST_ROUTES } from "../../../shared/constants/routes.constants";
 
 @Component({
   standalone: true,
-  imports: [CommonModule, ImportsModule, RouterLink],
+  imports: [CommonModule,NgIf,NgFor, ImportsModule, RouterLink],
   selector: 'app-detail-page',
   templateUrl: './detail-page.component.html',
   styleUrls: ['./detail-page.component.scss'],
@@ -29,9 +29,10 @@ export class DetailPageComponent implements OnInit {
   private readonly titleService = inject(Title);
   private readonly metaService = inject(Meta);
   private readonly contactsService = inject(ClinicContactsService);
-  private readonly googleAnalyticsService = inject(GoogleAnalyticsService);
   private readonly destroyRef = inject(DestroyRef);
+  private readonly cdr = inject(ChangeDetectorRef);
   data!: Test;
+  loadError = false;
 
   answers: { [key: string]: number } = {};
 
@@ -74,10 +75,17 @@ export class DetailPageComponent implements OnInit {
             switchMap(params => this.testService.getTestById(params['id'])),
             takeUntilDestroyed(this.destroyRef),
         )
-        .subscribe(response => {
-          this.data = response;
-          this.updatePageTitle(response.name);
-          this.updateSEO(response.name, response.description);
+        .subscribe({
+          next: response => {
+            this.data = response;
+            this.updatePageTitle(response.name);
+            this.updateSEO(response.name, response.description);
+            this.cdr.detectChanges();
+          },
+          error: () => {
+            this.loadError = true;
+            this.cdr.detectChanges();
+          },
         });
   }
 

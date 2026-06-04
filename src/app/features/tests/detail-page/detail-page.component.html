@@ -1,15 +1,26 @@
-<!-- Loading -->
-<div *ngIf="!data" class="dp-spinner">
-  <p-progressSpinner strokeWidth="3" animationDuration="0.8s"></p-progressSpinner>
+<!-- Error -->
+<div *ngIf="loadError" class="dp-error">
+  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"
+       stroke-linecap="round" stroke-linejoin="round" width="40" height="40">
+    <circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/>
+  </svg>
+  <p>Не вдалося завантажити тест. Спробуйте пізніше.</p>
+  <a routerLink="/test/list" class="dp-error__back">← Повернутися до списку тестів</a>
 </div>
 
-<!-- Page -->
-<div *ngIf="data" class="detail-page">
+<div *ngIf="!loadError" class="detail-page">
 
   <!-- ═══════════════════════════════════════════
        QUIZ PHASE
   ══════════════════════════════════════════════ -->
   <ng-container *ngIf="!isTestCompleted">
+
+    <!-- Loading -->
+    <div *ngIf="!data" class="dp-spinner">
+      <p-progressSpinner strokeWidth="3" animationDuration="0.8s"></p-progressSpinner>
+    </div>
+
+    <ng-container *ngIf="data">
 
     <!-- Header -->
     <header class="dp-header">
@@ -116,7 +127,7 @@
           </div>
           <div class="dp-progress__track">
             <div class="dp-progress__fill"
-                 [style.width.%]="((currentQuestionIndex + 1) / data.questions.length) * 100">
+                 [style.width.%]="((currentQuestionIndex + 1) / (data?.questions?.length || 1)) * 100">
             </div>
           </div>
         </div>
@@ -125,24 +136,24 @@
         <div class="dp-question">
 
           <p class="dp-question__text">
-            {{ data.questions[currentQuestionIndex]?.question }}
+            {{ data?.questions?.[currentQuestionIndex]?.question }}
           </p>
 
-          <p *ngIf="data.questions[currentQuestionIndex]?.example" class="dp-question__example">
-            {{ data.questions[currentQuestionIndex]?.example }}
+          <p *ngIf="data?.questions?.[currentQuestionIndex]?.example" class="dp-question__example">
+            {{ data?.questions?.[currentQuestionIndex]?.example }}
           </p>
 
           <div class="dp-options" [class.dp-options--error]="showError">
             <div
-              *ngFor="let label of data.questions[currentQuestionIndex]?.labelText; let i = index"
+              *ngFor="let label of data?.questions?.[currentQuestionIndex]?.labelText; let i = index"
               class="dp-option"
               [class.dp-option--selected]="
-                answers[data.questions[currentQuestionIndex]?._id] ===
-                data.questions[currentQuestionIndex]?.value[i]
+                answers[data?.questions?.[currentQuestionIndex]?._id] ===
+                data?.questions?.[currentQuestionIndex]?.value?.[i]
               "
               (click)="selectAnswer(
-                data.questions[currentQuestionIndex]?._id,
-                data.questions[currentQuestionIndex]?.value[i]
+                data?.questions?.[currentQuestionIndex]?._id,
+                data?.questions?.[currentQuestionIndex]?.value?.[i]
               )"
             >
               <span class="dp-option__dot"></span>
@@ -150,7 +161,7 @@
             </div>
           </div>
 
-          <div class="dp-error" *ngIf="showError">
+          <div class="dp-validation-error" *ngIf="showError">
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
                  stroke-linecap="round" stroke-linejoin="round" width="15" height="15">
               <circle cx="12" cy="12" r="10"/>
@@ -183,14 +194,14 @@
             type="button"
             (click)="nextQuestion()"
           >
-            {{ currentQuestionIndex < data.questions.length - 1 ? 'Далі' : 'Завершити тест' }}
-            <svg *ngIf="currentQuestionIndex < data.questions.length - 1"
+            {{ currentQuestionIndex < (data?.questions?.length ?? 0) - 1 ? 'Далі' : 'Завершити тест' }}
+            <svg *ngIf="currentQuestionIndex < (data?.questions?.length ?? 0) - 1"
                  viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"
                  stroke-linecap="round" stroke-linejoin="round" width="16" height="16">
               <line x1="5" y1="12" x2="19" y2="12"/>
               <polyline points="12 5 19 12 12 19"/>
             </svg>
-            <svg *ngIf="currentQuestionIndex >= data.questions.length - 1"
+            <svg *ngIf="currentQuestionIndex >= (data?.questions?.length ?? 0) - 1"
                  viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"
                  stroke-linecap="round" stroke-linejoin="round" width="16" height="16">
               <polyline points="20 6 9 17 4 12"/>
@@ -200,6 +211,8 @@
 
       </div>
     </section>
+
+    </ng-container><!-- /data -->
 
   </ng-container>
 

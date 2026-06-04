@@ -9,48 +9,67 @@
       </svg>
       <input class="tgrid__search-input" formControlName="text"
              placeholder="Пошук тестування..." type="text" autocomplete="off"/>
-      <button *ngIf="searchForm.get('text')?.value"
-              class="tgrid__search-clear"
-              (click)="searchForm.patchValue({ text: '' })" type="button">
-        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
-             stroke-linecap="round" stroke-linejoin="round" width="14" height="14">
-          <line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/>
-        </svg>
-      </button>
+      @if (searchForm.get('text')?.value) {
+        <button class="tgrid__search-clear" (click)="searchForm.patchValue({ text: '' })" type="button">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+               stroke-linecap="round" stroke-linejoin="round" width="14" height="14">
+            <line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/>
+          </svg>
+        </button>
+      }
     </div>
 
     <div class="tgrid__chips">
-      <button *ngFor="let cat of categories"
-              class="tgrid__chip"
-              [class.tgrid__chip--active]="isActiveCategory(cat)"
-              (click)="selectCategory(cat)"
-              type="button">
-        {{ cat.name }}
-      </button>
+      @for (cat of categories; track cat.value) {
+        <button
+          class="tgrid__chip"
+          [class.tgrid__chip--active]="isActiveCategory(cat)"
+          (click)="selectCategory(cat)"
+          type="button">
+          {{ cat.name }}
+        </button>
+      }
     </div>
   </div>
 
-  <!-- Loading -->
-  <div *ngIf="loading$ | async" class="tgrid__loading">
-    <p-progressSpinner strokeWidth="3" animationDuration="0.8s"></p-progressSpinner>
-  </div>
-
-  <!-- Cards grid -->
-  <ng-container *ngIf="!(loading$ | async)">
-    <div *ngIf="(tests$ | async)?.length > 0; else noTests" class="tgrid__grid">
-      <app-card *ngFor="let test of tests$ | async" [testData]="test"/>
+  <!-- Skeleton loading -->
+  @if (loading()) {
+    <div class="tgrid__grid">
+      @for (item of skeletonItems; track $index) {
+        <div class="tcard-skeleton">
+          <div class="tcard-skeleton__top">
+            <p-skeleton width="42px" height="42px" borderRadius="12px"/>
+            <p-skeleton width="72px" height="24px" borderRadius="999px"/>
+          </div>
+          <p-skeleton width="75%" height="18px" borderRadius="6px"/>
+          <div class="tcard-skeleton__desc">
+            <p-skeleton width="100%" height="13px" borderRadius="4px"/>
+            <p-skeleton width="100%" height="13px" borderRadius="4px"/>
+            <p-skeleton width="60%"  height="13px" borderRadius="4px"/>
+          </div>
+          <div class="tcard-skeleton__footer">
+            <p-skeleton width="90px" height="14px" borderRadius="4px"/>
+          </div>
+        </div>
+      }
     </div>
-  </ng-container>
-
-  <ng-template #noTests>
-    <div class="tgrid__empty">
-      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"
-           stroke-linecap="round" stroke-linejoin="round" width="40" height="40">
-        <circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/>
-      </svg>
-      <p>За вашим запитом нічого не знайдено</p>
-      <button class="tgrid__reset" (click)="resetSearch()" type="button">Скинути пошук</button>
-    </div>
-  </ng-template>
+  } @else {
+    @if ((tests$ | async)?.length) {
+      <div class="tgrid__grid">
+        @for (test of tests$ | async; track test._id) {
+          <app-card [testData]="test"/>
+        }
+      </div>
+    } @else {
+      <div class="tgrid__empty">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"
+             stroke-linecap="round" stroke-linejoin="round" width="40" height="40">
+          <circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/>
+        </svg>
+        <p>За вашим запитом нічого не знайдено</p>
+        <button class="tgrid__reset" (click)="resetSearch()" type="button">Скинути пошук</button>
+      </div>
+    }
+  }
 
 </div>

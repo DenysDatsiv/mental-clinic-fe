@@ -90,7 +90,8 @@
               "buildTarget": "mental-clinic-fe:build:production"
             },
             "development": {
-              "buildTarget": "mental-clinic-fe:build:development"
+              "buildTarget": "mental-clinic-fe:build:development",
+              "hmr": false
             }
           },
           "defaultConfiguration": "development"
