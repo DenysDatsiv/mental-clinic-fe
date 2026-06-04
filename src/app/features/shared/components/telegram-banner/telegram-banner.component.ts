@@ -17,7 +17,7 @@ export class TelegramBannerComponent {
   constructor(private googleAnalyticsService: GoogleAnalyticsService) {}
 
   openTelegram(name:string,link: string) {
-    this.googleAnalyticsService.trackEvent(EVENT_TRACK.BUTTON_CLICK,name,ROUTES.MAIN_PAGE)
+    this.googleAnalyticsService.trackEvent(EVENT_TRACK.TELEGRAM_OPEN, { button_name: name })
     window.open(link, '_blank');
 
   }

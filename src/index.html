@@ -133,14 +133,9 @@
         window.dataLayer = window.dataLayer || [];
         function gtag(){dataLayer.push(arguments);}
         gtag('js', new Date());
-
-        gtag('config', 'G-QL51QSPEPK', {
-            page_path: window.location.pathname
-        });
-
-        document.addEventListener('DOMContentLoaded', function() {
-            gtag('event', 'page_view', { page_path: window.location.pathname });
-        });
+        // send_page_view: false — the Angular router sends a page_view event on
+        // every NavigationEnd, so we must not fire one here too (would double-count).
+        gtag('config', 'G-QL51QSPEPK', { send_page_view: false });
     </script>
 </head>
 <body>

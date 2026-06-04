@@ -52,7 +52,7 @@ export class TestsGridComponent implements OnInit {
       const categoryValue = typeof selected === 'string' ? selected : selected?.value;
       const categoryName  = typeof selected === 'string' ? selected : selected?.name;
       this.location.replaceState(categoryValue ? `/tests/${categoryValue}` : `/tests/list`);
-      this.analytics.trackEvent('category_select', 'Dropdown', 'Category Selected', { selected_category: categoryName });
+      this.analytics.trackEvent('category_select', { category: categoryName ?? '' });
     });
 
     this.searchForm.get('text')?.valueChanges.pipe(
@@ -60,7 +60,7 @@ export class TestsGridComponent implements OnInit {
       distinctUntilChanged(),
     ).subscribe(q => {
       if (q?.trim()) {
-        this.analytics.trackEvent('search', 'User Input', 'Search Performed', { search_query: q.trim() });
+        this.analytics.trackEvent('search', { search_term: q.trim() });
       }
     });
 

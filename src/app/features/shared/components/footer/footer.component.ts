@@ -5,6 +5,7 @@ import { Component, inject } from '@angular/core';
 import { ClinicContactsService } from '../clinic-contacts-dialog/clinic-contacts.service';
 import { clinicContacts } from '../../constants/contacts.constants';
 import { GoogleAnalyticsService } from '../../../../analytics/google-analytics.service';
+import { EVENT_TRACK } from '../../../../analytics/analytics.constants';
 
 @Component({
   standalone: true,
@@ -23,12 +24,10 @@ export class FooterComponent {
    * @param url - The destination URL
    */
   trackSocialClick(platform: string, url: string) {
-    this.googleAnalyticsService.trackEvent(
-        'click',
-        'Social Media',
-        platform,
-        { destination_url: url }
-    );
+    this.googleAnalyticsService.trackEvent(EVENT_TRACK.SOCIAL_CLICK, {
+      platform,
+      destination_url: url,
+    });
   }
 
   /**
@@ -37,12 +36,10 @@ export class FooterComponent {
    * @param url - The destination URL
    */
   trackLinkClick(linkName: string, url: string) {
-    this.googleAnalyticsService.trackEvent(
-        'click',
-        'Footer Link',
-        linkName,
-        { destination_url: url }
-    );
+    this.googleAnalyticsService.trackEvent(EVENT_TRACK.FOOTER_LINK, {
+      link_text: linkName,
+      destination_url: url,
+    });
   }
 
   /**
@@ -50,11 +47,6 @@ export class FooterComponent {
    */
   openContacts() {
     this.contactsService.openDialog(clinicContacts);
-    this.googleAnalyticsService.trackEvent(
-        'click',
-        'Button',
-        'Contact Button',
-        { label: 'Phone Icon' }
-    );
+    this.googleAnalyticsService.trackEvent(EVENT_TRACK.CONTACTS_OPEN, { source: 'footer' });
   }
 }

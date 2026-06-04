@@ -68,9 +68,8 @@ export class TestBlockComponent {
     }
 
   ];
-  googleAnalyticsTracker(eventName:string, itemText:string, previousPage:string)
-  {
-    this.googleAnalyticsService.trackEvent(eventName,itemText,previousPage)
+  googleAnalyticsTracker(eventName: string, itemText: string): void {
+    this.googleAnalyticsService.trackEvent(eventName, { item_text: itemText });
   }
   protected readonly TEST_ROUTES = TEST_ROUTES;
   protected readonly EVENT_TRACK = EVENT_TRACK;

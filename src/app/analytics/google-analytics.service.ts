@@ -1,78 +1,67 @@
-import { Injectable } from '@angular/core';
+import { DestroyRef, Injectable, inject } from '@angular/core';
+import { takeUntilDestroyed } from '@angular/core/rxjs-interop';
 import { NavigationEnd, Router } from '@angular/router';
+import { filter } from 'rxjs/operators';
 
-declare let gtag: Function; // Reference global gtag function
+// GA4 measurement ID — single source of truth
+export const GA_MEASUREMENT_ID = 'G-QL51QSPEPK';
 
-@Injectable({
-  providedIn: 'root'
-})
+// Proper typing: gtag is a global injected by the gtag.js snippet
+declare function gtag(command: 'config', targetId: string, config?: Record<string, unknown>): void;
+declare function gtag(command: 'event', eventName: string, params?: Record<string, unknown>): void;
+declare function gtag(command: 'js', date: Date): void;
+
+@Injectable({ providedIn: 'root' })
 export class GoogleAnalyticsService {
-  private previousUrl: string = '';
+  private readonly router   = inject(Router);
+  private readonly destroyRef = inject(DestroyRef);
 
-  constructor(private router: Router) {}
+  /** Angular SPA path of the previous page — used as page_referrer. */
+  private previousUrl = '';
 
-  initializeTracking() {
-    this.router.events.subscribe(event => {
-      if (event instanceof NavigationEnd) {
-        const currentUrl = event.urlAfterRedirects;
+  /**
+   * Subscribe to Angular router events and send a GA4 page_view on every
+   * completed navigation.  Must be called once from AppComponent.ngOnInit().
+   *
+   * index.html initialises gtag with `send_page_view: false` so the SDK
+   * never fires an automatic page_view — this method owns all page_view hits.
+   */
+  initializeTracking(): void {
+    this.router.events
+      .pipe(
+        filter((e): e is NavigationEnd => e instanceof NavigationEnd),
+        takeUntilDestroyed(this.destroyRef),
+      )
+      .subscribe(event => {
+        const url = event.urlAfterRedirects;
 
-        // Send event with previous URL as a parameter
-        gtag('config', 'G-QL51QSPEPK', {
-          'page_path': currentUrl,
-          'page_referrer': this.previousUrl || 'direct' // Capture previous URL
+        gtag('event', 'page_view', {
+          // GA4 expects the full URL, not just the path
+          page_location: `${window.location.origin}${url}`,
+          page_title:    document.title,
+          // For the first navigation use the browser's actual referrer;
+          // for subsequent SPA navigations use the previous Angular route.
+          page_referrer: this.previousUrl
+            ? `${window.location.origin}${this.previousUrl}`
+            : document.referrer,
         });
 
-        // Update previous URL for next navigation
-        this.previousUrl = currentUrl;
-      }
-    });
-  }
-
-  trackEvent(eventName: string, eventCategory: string, eventLabel: string, additionalParams: Record<string, any> = {}) {
-    if (typeof gtag !== 'function') {
-      console.warn('Google Analytics is not initialized.');
-      return;
-    }
-
-    const deviceInfo = this.getDeviceInfo();
-
-    const eventData = {
-      event_category: eventCategory || null,
-      event_label: eventLabel || null ,
-      browser: deviceInfo.browser || null,
-      os: deviceInfo.os || null ,
-      device_type: deviceInfo.deviceType || null ,
-      ...additionalParams || null
-    };
-
-    gtag('event', eventName, eventData);
+        this.previousUrl = url;
+      });
   }
 
   /**
-   * Gets the user's browser, OS, and device type.
+   * Send a custom GA4 event.
+   *
+   * Use flat, snake_case GA4-style params — do NOT pass `event_category` or
+   * `event_label` (those are Universal Analytics concepts and are ignored in GA4).
+   *
+   * @example
+   *   trackEvent('select_content', { content_type: 'test', item_id: id });
+   *   trackEvent('search', { search_term: query });
    */
-  getDeviceInfo(): { browser: string; os: string; deviceType: string } {
-    const userAgent = navigator.userAgent;
-    let browser = 'Unknown';
-    let os = 'Unknown';
-    let deviceType = 'Desktop';
-
-    if (/mobile/i.test(userAgent)) deviceType = 'Mobile';
-    if (/tablet/i.test(userAgent)) deviceType = 'Tablet';
-
-    if (userAgent.includes('Firefox')) browser = 'Firefox';
-    else if (userAgent.includes('Edg')) browser = 'Edge';
-    else if (userAgent.includes('Chrome')) browser = 'Chrome';
-    else if (userAgent.includes('Safari')) browser = 'Safari';
-    else if (userAgent.includes('Opera') || userAgent.includes('OPR')) browser = 'Opera';
-
-    if (/Win/i.test(userAgent)) os = 'Windows';
-    else if (/Mac/i.test(userAgent)) os = 'MacOS';
-    else if (/Linux/i.test(userAgent)) os = 'Linux';
-    else if (/Android/i.test(userAgent)) os = 'Android';
-    else if (/iOS|iPad|iPhone/i.test(userAgent)) os = 'iOS';
-
-    return { browser, os, deviceType };
+  trackEvent(eventName: string, params: Record<string, string | number | boolean> = {}): void {
+    if (typeof gtag !== 'function') return;
+    gtag('event', eventName, params);
   }
-
 }

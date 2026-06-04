@@ -6,6 +6,7 @@ import { Router } from '@angular/router';
 import { ClinicContactsService } from '../../features/shared/components/clinic-contacts-dialog/clinic-contacts.service';
 import { clinicContacts } from '../../features/shared/constants/contacts.constants';
 import { GoogleAnalyticsService } from '../../analytics/google-analytics.service';
+import { EVENT_TRACK } from '../../analytics/analytics.constants';
 import { SECTION } from '../../shared/constants/section-ids.constants';
 import { TEST_ROUTES, ROUTES } from '../../shared/constants/routes.constants';
 
@@ -36,24 +37,16 @@ export class NavbarComponent implements OnDestroy {
   toggleMenu(): void {
     this.isMenuOpen = !this.isMenuOpen;
     document.body.style.overflow = this.isMenuOpen ? 'hidden' : '';
-    this.googleAnalyticsService.trackEvent(
-        'click',
-        'Navigation',
-        'Menu Toggle',
-        { menu_state: this.isMenuOpen ? 'Opened' : 'Closed' }
-    );
+    this.googleAnalyticsService.trackEvent(EVENT_TRACK.MENU_TOGGLE, {
+      menu_state: this.isMenuOpen ? 'open' : 'closed',
+    });
   }
 
   /**
    * Redirects to the main page and tracks the logo click event.
    */
   redirectToMainPage(): void {
-    this.googleAnalyticsService.trackEvent(
-        'click',
-        'Navigation',
-        'Navbar Logo Clicked',
-        { destination: '/' }
-    );
+    this.googleAnalyticsService.trackEvent(EVENT_TRACK.LOGO_CLICK, { source: 'navbar' });
     this.router.navigate(['/']);
   }
 
@@ -63,12 +56,10 @@ export class NavbarComponent implements OnDestroy {
    * @param label - The label for tracking (e.g., 'Тести', 'Перевірка ліків')
    */
   navigateTo(route: string, label: string): void {
-    this.googleAnalyticsService.trackEvent(
-        'click',
-        'Navigation',
-        `Navbar Link - ${label}`,
-        { destination: route }
-    );
+    this.googleAnalyticsService.trackEvent(EVENT_TRACK.NAV_CLICK, {
+      link_text: label,
+      destination: route,
+    });
     this.router.navigate([route]);
     this.toggleMenu(); // Close menu after navigation
   }
@@ -77,12 +68,7 @@ export class NavbarComponent implements OnDestroy {
    * Opens the contact dialog and tracks the click event.
    */
   openContacts(): void {
-    this.googleAnalyticsService.trackEvent(
-        'click',
-        'Navigation',
-        'Navbar Contact Button',
-        { destination: '/contact' }
-    );
+    this.googleAnalyticsService.trackEvent(EVENT_TRACK.CONTACTS_OPEN, { source: 'navbar' });
     this.contactsService.openDialog(clinicContacts);
     this.toggleMenu(); // Close menu after opening the dialog
   }
