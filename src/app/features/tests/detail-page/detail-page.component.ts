@@ -5,8 +5,8 @@ import { takeUntilDestroyed } from '@angular/core/rxjs-interop';
 import jsPDF from 'jspdf';
 import html2canvas from 'html2canvas';
 import { ActivatedRoute, Router, RouterLink } from '@angular/router';
-import { Meta, Title } from '@angular/platform-browser';
 import { switchMap } from 'rxjs/operators';
+import { SeoService } from '../../../core/seo/seo.service';
 import { TestService } from '../services/test.service';
 import { Test } from '../models/test.model';
 import { specializedTests } from '../constants/specialized-test-types.enum';
@@ -26,8 +26,7 @@ export class DetailPageComponent implements OnInit {
   private readonly route = inject(ActivatedRoute);
   private readonly testService = inject(TestService);
   private readonly router = inject(Router);
-  private readonly titleService = inject(Title);
-  private readonly metaService = inject(Meta);
+  private readonly seo = inject(SeoService);
   private readonly contactsService = inject(ClinicContactsService);
   private readonly destroyRef = inject(DestroyRef);
   private readonly cdr = inject(ChangeDetectorRef);
@@ -78,7 +77,6 @@ export class DetailPageComponent implements OnInit {
         .subscribe({
           next: response => {
             this.data = response;
-            this.updatePageTitle(response.name);
             this.updateSEO(response.name, response.description);
             this.cdr.detectChanges();
           },
@@ -87,10 +85,6 @@ export class DetailPageComponent implements OnInit {
             this.cdr.detectChanges();
           },
         });
-  }
-
-  updatePageTitle(testName: string): void {
-    this.titleService.setTitle(`${testName} | центр ментального здоров'я Євгена`);
   }
 
   nextQuestion(): void {
@@ -557,12 +551,32 @@ export class DetailPageComponent implements OnInit {
     this.contactsService.openDialog(clinicContacts);
   }
 
-  updateSEO(title: string, description: string): void {
-    this.titleService.setTitle(`${title} | центр ментального здоров'я`);
+  updateSEO(name: string, description: string): void {
+    const id = this.route.snapshot.paramMap.get('id') ?? '';
+    const canonical = `/test/detail/${id}`;
+    const BASE_URL = 'https://doctor-skripnik.com.ua';
 
-    this.metaService.updateTag({
-      name: 'description',
-      content: description
+    this.seo.updatePage({
+      title: `${name} | Центр ментального здоров'я Євгена Скрипника`,
+      description,
+      canonical,
+      schema: {
+        '@context': 'https://schema.org',
+        '@type': 'WebPage',
+        name,
+        url: `${BASE_URL}${canonical}`,
+        description,
+        inLanguage: 'uk',
+        isPartOf: { '@id': `${BASE_URL}/#website` },
+        breadcrumb: {
+          '@type': 'BreadcrumbList',
+          itemListElement: [
+            { '@type': 'ListItem', position: 1, name: 'Головна', item: `${BASE_URL}/` },
+            { '@type': 'ListItem', position: 2, name: 'Психологічні тести', item: `${BASE_URL}/test` },
+            { '@type': 'ListItem', position: 3, name: name, item: `${BASE_URL}${canonical}` },
+          ],
+        },
+      },
     });
   }
 }
