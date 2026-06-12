@@ -1,17 +1,35 @@
 import { CommonModule } from '@angular/common';
-import { ImportsModule } from '../../shared/primeng-imports.module';
-import { Component, inject, OnInit } from '@angular/core';
+import { Component, inject, OnInit, signal } from '@angular/core';
+import { DomSanitizer, SafeHtml } from '@angular/platform-browser';
 import { SeoService } from '../../core/seo/seo.service';
+import { ContractApiService } from './contract.service';
 
 @Component({
   standalone: true,
-  imports: [CommonModule, ImportsModule],
+  imports: [CommonModule],
   selector: 'app-contract',
   templateUrl: './contract.component.html',
   styleUrl: './contract.component.scss',
 })
 export class ContractComponent implements OnInit {
-  private readonly seo = inject(SeoService);
+  private readonly seo       = inject(SeoService);
+  private readonly api       = inject(ContractApiService);
+  private readonly sanitizer = inject(DomSanitizer);
+
+  safeContent = signal<SafeHtml>('');
+  loading     = signal(true);
+  error       = signal(false);
+
+  private processContent(html: string): string {
+    return html
+      // Quill inserts &nbsp; between words — replace with regular spaces so text wraps normally
+      .replace(/&nbsp;/gi, ' ')
+      .replace(/&#160;/g, ' ')
+      .replace(/&#xA0;/gi, ' ')
+      .replace(/ /g, ' ')
+      // Strip inline color/font-size styles from spans so our CSS controls the appearance
+      .replace(/<span([^>]*)\bstyle="[^"]*"([^>]*)>/gi, '<span$1$2>');
+  }
 
   ngOnInit(): void {
     this.seo.updatePage({
@@ -32,6 +50,17 @@ export class ContractComponent implements OnInit {
             { '@type': 'ListItem', position: 2, name: 'Публічний договір', item: 'https://doctor-skripnik.com.ua/contract' },
           ],
         },
+      },
+    });
+
+    this.api.get().subscribe({
+      next: (doc) => {
+        this.safeContent.set(this.sanitizer.bypassSecurityTrustHtml(this.processContent(doc.content)));
+        this.loading.set(false);
+      },
+      error: () => {
+        this.error.set(true);
+        this.loading.set(false);
       },
     });
   }

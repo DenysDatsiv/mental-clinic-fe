@@ -15,7 +15,7 @@ import { EVENT_TRACK } from '../../../../analytics/analytics.constants';
 })
 export class CardComponent implements OnInit {
 
-  @Input() testData: Test;
+  @Input() testData: any;
   protected readonly JSON = JSON;
 
   constructor(private router: Router, private googleAnalyticsService: GoogleAnalyticsService) {}

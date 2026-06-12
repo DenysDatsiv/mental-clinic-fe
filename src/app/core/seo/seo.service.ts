@@ -9,12 +9,12 @@ export interface PageSeoConfig {
   schema?: object | object[];
   ogTitle?: string;
   ogDescription?: string;
-  ogImage?: string;
   ogType?: string;
 }
 
-const BASE_URL = 'https://doctor-skripnik.com.ua';
-const DEFAULT_IMAGE = `${BASE_URL}/assets/owner.webp`;
+const BASE_URL      = 'https://doctor-skripnik.com.ua';
+const OG_IMAGE      = `${BASE_URL}/assets/logo.png`;
+const OG_IMAGE_ALT  = 'Центр ментального здоров\'я Євгена Скрипника';
 const PAGE_SCRIPT_ID = 'json-ld-page';
 
 @Injectable({ providedIn: 'root' })
@@ -26,22 +26,26 @@ export class SeoService {
   ) {}
 
   updatePage(config: PageSeoConfig): void {
-    const ogTitle = config.ogTitle ?? config.title;
+    const ogTitle = config.ogTitle       ?? config.title;
     const ogDesc  = config.ogDescription ?? config.description;
-    const ogImage = config.ogImage ?? DEFAULT_IMAGE;
-    const ogType  = config.ogType ?? 'website';
+    const ogType  = config.ogType        ?? 'website';
 
     this.title.setTitle(config.title);
 
     this.meta.updateTag({ name: 'description', content: config.description });
     this.meta.updateTag({ property: 'og:title',       content: ogTitle });
     this.meta.updateTag({ property: 'og:description', content: ogDesc });
-    this.meta.updateTag({ property: 'og:image',       content: ogImage });
+    this.meta.updateTag({ property: 'og:image',       content: OG_IMAGE });
+    this.meta.updateTag({ property: 'og:image:alt',   content: OG_IMAGE_ALT });
+    this.meta.updateTag({ property: 'og:image:width',  content: '500' });
+    this.meta.updateTag({ property: 'og:image:height', content: '500' });
     this.meta.updateTag({ property: 'og:type',        content: ogType });
     this.meta.updateTag({ property: 'og:url',         content: config.canonical ? this.fullUrl(config.canonical) : BASE_URL });
+
     this.meta.updateTag({ name: 'twitter:title',       content: ogTitle });
     this.meta.updateTag({ name: 'twitter:description', content: ogDesc });
-    this.meta.updateTag({ name: 'twitter:image',       content: ogImage });
+    this.meta.updateTag({ name: 'twitter:image',       content: OG_IMAGE });
+    this.meta.updateTag({ name: 'twitter:image:alt',   content: OG_IMAGE_ALT });
 
     if (config.canonical) {
       this.setCanonical(config.canonical);

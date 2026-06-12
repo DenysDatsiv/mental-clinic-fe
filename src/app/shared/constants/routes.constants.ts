@@ -4,7 +4,9 @@ export const ROUTES = {
   DRUGS: 'drugs',
   ABOUT: 'about',
   CONTRACT: 'contract',
-  VISIT: 'visit'
+  VISIT: 'visit',
+  ARTICLES: 'articles',
+  REVIEWS: 'reviews',
 } as const;
 
 export const TEST_ROUTES = {

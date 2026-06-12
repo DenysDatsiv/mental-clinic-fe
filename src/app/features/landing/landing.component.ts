@@ -13,10 +13,11 @@ import { SECTION } from '../../shared/constants/section-ids.constants';
 import { ROUTES } from '../../shared/constants/routes.constants';
 import { RouterLink } from '@angular/router';
 import { SeoService } from '../../core/seo/seo.service';
+import { LatestArticlesComponent } from '../articles/components/latest-articles/latest-articles.component';
 
 @Component({
   standalone: true,
-  imports: [CommonModule, ImportsModule, RouterLink, HeroBannerComponent, DoctorInfoStripComponent, NoFearBlockComponent, TestingBlockComponent, TestBlockComponent, ConsultationBlockComponent, TelegramBannerComponent],
+  imports: [CommonModule, ImportsModule, RouterLink, HeroBannerComponent, DoctorInfoStripComponent, NoFearBlockComponent, TestingBlockComponent, TestBlockComponent, ConsultationBlockComponent, TelegramBannerComponent, LatestArticlesComponent],
   selector: 'app-landing',
   templateUrl: './landing.component.html',
   styleUrls: ['./landing.component.scss'],
