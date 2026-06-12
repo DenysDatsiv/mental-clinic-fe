@@ -8,12 +8,13 @@ import { FaqBlockComponent } from '../shared/components/faq-block/faq-block.comp
 import { TelegramBannerComponent } from '../shared/components/telegram-banner/telegram-banner.component';
 import { DoctorInfoStripComponent } from './components/doctor-info-strip/doctor-info-strip.component';
 import { NoFearBlockComponent } from './components/no-fear-block/no-fear-block.component';
-import { AfterViewInit, Component, ElementRef, inject, OnInit, Renderer2 } from '@angular/core';
+import { AfterViewInit, Component, ElementRef, inject, OnInit, Renderer2, signal } from '@angular/core';
 import { SECTION } from '../../shared/constants/section-ids.constants';
 import { ROUTES } from '../../shared/constants/routes.constants';
 import { RouterLink } from '@angular/router';
 import { SeoService } from '../../core/seo/seo.service';
 import { LatestArticlesComponent } from '../articles/components/latest-articles/latest-articles.component';
+import { ContractApiService } from '../contract/contract.service';
 
 @Component({
   standalone: true,
