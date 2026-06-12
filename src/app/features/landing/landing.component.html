@@ -15,6 +15,7 @@
 
     <app-latest-articles></app-latest-articles>
 
+    @if (contractVisible()) {
     <div class="contract-section">
       <div class="contract-inner">
 
@@ -68,6 +69,7 @@
         <span class="contract-divider__line"></span>
       </div>
     </div>
+    }
 
     <app-telegram-banner></app-telegram-banner>
 

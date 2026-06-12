@@ -24,19 +24,25 @@ import { ContractApiService } from '../contract/contract.service';
   styleUrls: ['./landing.component.scss'],
 })
 export class LandingComponent implements OnInit, AfterViewInit {
-  private readonly renderer = inject(Renderer2);
-  private readonly el = inject(ElementRef);
-  private readonly seo = inject(SeoService);
+  private readonly renderer    = inject(Renderer2);
+  private readonly el          = inject(ElementRef);
+  private readonly seo         = inject(SeoService);
+  private readonly contractApi = inject(ContractApiService);
 
   isHeroBannerVisible = false;
   isTestingBlockVisible = false;
   isConsultationBlockVisible = false;
   isFaqBlockVisible = false;
   isTelegramBannerVisible = false;
+  contractVisible = signal(true);
   protected readonly SECTION = SECTION;
   protected readonly ROUTES = ROUTES;
 
   ngOnInit(): void {
+    this.contractApi.get().subscribe({
+      next: (doc) => this.contractVisible.set(doc.visible !== false),
+      error: ()    => this.contractVisible.set(false),
+    });
     this.seo.updatePage({
       title: "Онлайн центр ментального здоров'я Євгена Скрипника — психіатр онлайн",
       description: "Психіатр Євген Скрипник — 20+ років досвіду. Лікування депресії, тривоги, ПТСР, ОКР та залежностей онлайн. Доказова медицина. Запис щодня 8:00–22:00.",
