@@ -1,5 +1,6 @@
 import { CommonModule } from '@angular/common';
 import { Component, inject, OnInit, signal } from '@angular/core';
+import { Router } from '@angular/router';
 import { DomSanitizer, SafeHtml } from '@angular/platform-browser';
 import { SeoService } from '../../core/seo/seo.service';
 import { ContractApiService } from './contract.service';
@@ -15,6 +16,7 @@ export class ContractComponent implements OnInit {
   private readonly seo       = inject(SeoService);
   private readonly api       = inject(ContractApiService);
   private readonly sanitizer = inject(DomSanitizer);
+  private readonly router    = inject(Router);
 
   safeContent = signal<SafeHtml>('');
   loading     = signal(true);
@@ -55,6 +57,10 @@ export class ContractComponent implements OnInit {
 
     this.api.get().subscribe({
       next: (doc) => {
+        if (doc.visible === false) {
+          this.router.navigate(['/'], { replaceUrl: true });
+          return;
+        }
         this.safeContent.set(this.sanitizer.bypassSecurityTrustHtml(this.processContent(doc.content)));
         this.loading.set(false);
       },
