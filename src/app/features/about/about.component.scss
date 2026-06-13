@@ -838,11 +838,13 @@
 
   .p-carousel-container {
     overflow: hidden;
+    touch-action: pan-y;
   }
 
   .p-carousel-items-content {
     align-items: stretch;
     overflow: hidden;
+    touch-action: pan-y;
   }
 
   .p-carousel-item {

@@ -36,11 +36,17 @@
 
 // ── Page shell ────────────────────────────────────────────────────────────────
 
+:host {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+}
+
 .detail-page {
   display: flex;
   flex-direction: column;
+  flex: 1;
   background: $section-bg;
-  min-height: 100vh;
 }
 
 // ── Page header ───────────────────────────────────────────────────────────────

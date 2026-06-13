@@ -32,17 +32,12 @@
 
   <!-- Error state -->
   @if (error()) {
-    <div class="adetail-error">
-      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"
-           stroke-linecap="round" stroke-linejoin="round" width="44" height="44">
-        <circle cx="12" cy="12" r="10"/>
-        <line x1="12" y1="8" x2="12" y2="12"/>
-        <line x1="12" y1="16" x2="12.01" y2="16"/>
-      </svg>
-      <h2>Не вдалося завантажити статтю</h2>
-      <p>Можливо, її було видалено або посилання застаріле.</p>
-      <a routerLink="/articles" class="adetail-error__back">← Повернутися до статей</a>
-    </div>
+    <app-not-found
+      title="Статтю не знайдено"
+      description="Можливо, її було видалено або посилання застаріле."
+      ctaLink="/articles"
+      ctaLabel="← До всіх статей"
+    />
   }
 
   <!-- Article content -->

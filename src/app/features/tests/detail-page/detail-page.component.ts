@@ -14,10 +14,11 @@ import { clinicContacts } from '../../shared/constants/contacts.constants';
 import { ClinicContactsService } from '../../shared/components/clinic-contacts-dialog/clinic-contacts.service';
 import { GoogleAnalyticsService } from '../../../analytics/google-analytics.service';
 import { TEST_ROUTES } from "../../../shared/constants/routes.constants";
+import { NotFoundComponent } from '../../not-found/not-found.component';
 
 @Component({
   standalone: true,
-  imports: [CommonModule,NgIf,NgFor, ImportsModule, RouterLink],
+  imports: [CommonModule, NgIf, NgFor, ImportsModule, RouterLink, NotFoundComponent],
   selector: 'app-detail-page',
   templateUrl: './detail-page.component.html',
   styleUrls: ['./detail-page.component.scss'],

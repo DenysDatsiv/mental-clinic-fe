@@ -12,6 +12,7 @@ import {ListComponent} from "./features/tests/list/list.component";
 import {ArticlesListComponent} from "./features/articles/list/articles-list.component";
 import {ArticleDetailComponent} from "./features/articles/detail/article-detail.component";
 import {ReviewsComponent} from "./features/reviews/reviews.component";
+import {NotFoundComponent} from "./features/not-found/not-found.component";
 
 export const APP_ROUTES: Routes = [
   {
@@ -69,7 +70,7 @@ export const APP_ROUTES: Routes = [
         path: ROUTES.REVIEWS,
         component: ReviewsComponent
       },
-      { path: '**', redirectTo: '', pathMatch: 'full' },
+      { path: '**', component: NotFoundComponent },
     ],
   },
 ];

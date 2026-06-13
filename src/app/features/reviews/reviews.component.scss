@@ -531,9 +531,28 @@
 }
 
 // ── Infinite scroll ───────────────────────────────────────────────────────────
-.reviews-sentinel {
-  height: 1px;
-  width: 100%;
+.reviews-load-more-btn-row {
+  display: flex;
+  justify-content: center;
+  padding: 8px 0 2rem;
+}
+
+.reviews-load-more-btn {
+  padding: 12px 32px;
+  background: #fff;
+  border: 1.5px solid $primary-color;
+  border-radius: 10px;
+  color: $primary-color;
+  font-size: 15px;
+  font-weight: 600;
+  font-family: 'Inter', sans-serif;
+  cursor: pointer;
+  transition: background 0.18s, color 0.18s;
+
+  &:hover {
+    background: $primary-color;
+    color: #fff;
+  }
 }
 
 .reviews-load-more {

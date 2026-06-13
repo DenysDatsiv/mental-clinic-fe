@@ -1,13 +1,4 @@
-import {
-  AfterViewInit,
-  Component,
-  ElementRef,
-  inject,
-  OnDestroy,
-  OnInit,
-  signal,
-  ViewChild,
-} from '@angular/core';
+import { Component, inject, OnInit, signal } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
 import { RouterLink } from '@angular/router';
@@ -24,13 +15,10 @@ import { clinicContacts } from '../shared/constants/contacts.constants';
   templateUrl: './reviews.component.html',
   styleUrls: ['./reviews.component.scss'],
 })
-export class ReviewsComponent implements OnInit, AfterViewInit, OnDestroy {
+export class ReviewsComponent implements OnInit {
   private readonly seo      = inject(SeoService);
   private readonly service  = inject(ReviewService);
   private readonly contacts = inject(ClinicContactsService);
-
-  @ViewChild('sentinel') sentinelRef!: ElementRef<HTMLElement>;
-  private observer!: IntersectionObserver;
 
   reviews       = signal<Review[]>([]);
   loading       = signal(true);
@@ -82,20 +70,8 @@ export class ReviewsComponent implements OnInit, AfterViewInit, OnDestroy {
     this.loadPage(1);
   }
 
-  ngAfterViewInit(): void {
-    this.observer = new IntersectionObserver(
-      (entries) => {
-        if (entries[0].isIntersecting && this.hasMore() && !this.loadingMore() && !this.loading()) {
-          this.loadPage(this.page + 1);
-        }
-      },
-      { rootMargin: '300px' },
-    );
-    this.observer.observe(this.sentinelRef.nativeElement);
-  }
-
-  ngOnDestroy(): void {
-    this.observer?.disconnect();
+  loadMore(): void {
+    if (this.hasMore() && !this.loadingMore()) this.loadPage(this.page + 1);
   }
 
   private loadPage(page: number): void {

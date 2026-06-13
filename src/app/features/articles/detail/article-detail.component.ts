@@ -18,6 +18,7 @@ import { Article } from '../models/article.model';
 import { SeoService } from '../../../core/seo/seo.service';
 import { ClinicContactsService } from '../../shared/components/clinic-contacts-dialog/clinic-contacts.service';
 import { clinicContacts } from '../../shared/constants/contacts.constants';
+import { NotFoundComponent } from '../../not-found/not-found.component';
 
 const BASE_URL = 'https://doctor-skripnik.com.ua';
 
@@ -25,7 +26,7 @@ interface TocItem { id: string; text: string; level: 2 | 3; }
 
 @Component({
   standalone: true,
-  imports: [CommonModule, RouterLink, ImportsModule, ArticleCardComponent],
+  imports: [CommonModule, RouterLink, ImportsModule, ArticleCardComponent, NotFoundComponent],
   selector: 'app-article-detail',
   templateUrl: './article-detail.component.html',
   styleUrls: ['./article-detail.component.scss'],
