@@ -309,7 +309,7 @@ export class DetailPageComponent implements OnInit {
     const isIOS = /iPhone|iPad|iPod/i.test(navigator.userAgent);
 
     // Fetch logo as base64 so html2canvas can render it without path issues
-    const logoBase64 = await fetch('/assets/logo.png')
+    const logoBase64 = await fetch('/assets/logo.avif')
       .then(r => r.blob())
       .then(b => new Promise<string>((res) => {
         const reader = new FileReader();

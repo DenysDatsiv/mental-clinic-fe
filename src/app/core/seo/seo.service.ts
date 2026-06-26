@@ -13,7 +13,7 @@ export interface PageSeoConfig {
 }
 
 const BASE_URL      = 'https://doctor-skripnik.com.ua';
-const OG_IMAGE      = `${BASE_URL}/assets/logo.png`;
+const OG_IMAGE      = `${BASE_URL}/assets/logo.avif`;
 const OG_IMAGE_ALT  = 'Центр ментального здоров\'я Євгена Скрипника';
 const PAGE_SCRIPT_ID = 'json-ld-page';
 

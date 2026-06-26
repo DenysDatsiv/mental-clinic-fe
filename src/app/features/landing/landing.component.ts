@@ -68,7 +68,7 @@ export class LandingComponent implements OnInit, AfterViewInit {
           '@type': 'MedicalOrganization',
           name: "Онлайн центр ментального здоров'я Євгена Скрипника",
           url: 'https://doctor-skripnik.com.ua',
-          logo: 'https://doctor-skripnik.com.ua/assets/logo.png',
+          logo: 'https://doctor-skripnik.com.ua/assets/logo.avif',
           contactPoint: {
             '@type': 'ContactPoint',
             telephone: '+380665691677',

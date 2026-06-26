@@ -351,7 +351,7 @@ export class ArticleDetailComponent implements OnInit, OnDestroy {
         '@type': 'Article',
         headline: a.title,
         description: a.excerpt ?? '',
-        image: `${BASE_URL}/assets/logo.png`,
+        image: `${BASE_URL}/assets/logo.avif`,
         author: { '@type': 'Person', name: 'Євген Скрипник' },
         datePublished: a.publishedAt ?? a.createdAt,
         publisher: {
