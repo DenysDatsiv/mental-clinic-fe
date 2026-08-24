@@ -1,5 +1,6 @@
-import { Component, Input } from '@angular/core';
+import { Component, inject, Input, OnInit } from '@angular/core';
 import { RouterLink } from '@angular/router';
+import { SeoService } from '../../core/seo/seo.service';
 
 @Component({
   standalone: true,
@@ -66,9 +67,19 @@ import { RouterLink } from '@angular/router';
     }
   `],
 })
-export class NotFoundComponent {
+export class NotFoundComponent implements OnInit {
+  private readonly seo = inject(SeoService);
+
   @Input() title       = 'Сторінку не знайдено';
   @Input() description = 'Можливо, посилання застаріле або сторінки ніколи не існувало.';
   @Input() ctaLink     = '/';
   @Input() ctaLabel    = '← На головну';
+
+  ngOnInit(): void {
+    this.seo.updatePage({
+      title: 'Сторінку не знайдено — 404',
+      description: 'Можливо, посилання застаріле або сторінки ніколи не існувало.',
+      robots: 'noindex, follow',
+    });
+  }
 }

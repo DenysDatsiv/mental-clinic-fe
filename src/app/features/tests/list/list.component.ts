@@ -1,8 +1,8 @@
-import { CommonModule } from '@angular/common';
+import { CommonModule, isPlatformBrowser } from '@angular/common';
 import { RouterLink, ActivatedRoute } from '@angular/router';
 import { ImportsModule } from '../../../shared/primeng-imports.module';
 import { TestsGridComponent } from '../components/tests-grid/tests-grid.component';
-import { Component, inject, OnInit } from '@angular/core';
+import { Component, inject, OnInit, PLATFORM_ID } from '@angular/core';
 import { SECTION } from '../../../shared/constants/section-ids.constants';
 import { SeoService } from '../../../core/seo/seo.service';
 
@@ -51,18 +51,14 @@ const CATEGORY_SEO: Record<string, { title: string; description: string; label: 
 export class ListComponent implements OnInit {
   private readonly seo = inject(SeoService);
   private readonly route = inject(ActivatedRoute);
+  private readonly platformId = inject(PLATFORM_ID);
 
-  items = [
-    {name: 'Item 1', description: 'Description 1', category: 'Category 1'},
-    {name: 'Item 2', description: 'Description 2', category: 'Category 2'},
-    {name: 'Item 3', description: 'Description 3', category: 'Category 3'}
-  ];
-
-  filteredItems = [...this.items];
   protected readonly SECTION = SECTION;
 
   ngOnInit(): void {
-    window.scrollTo(0, 0);
+    if (isPlatformBrowser(this.platformId)) {
+      window.scrollTo(0, 0);
+    }
 
     const type = this.route.snapshot.paramMap.get('type') ?? '';
     const cat = CATEGORY_SEO[type];

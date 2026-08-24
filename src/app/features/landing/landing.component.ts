@@ -8,7 +8,8 @@ import { FaqBlockComponent } from '../shared/components/faq-block/faq-block.comp
 import { TelegramBannerComponent } from '../shared/components/telegram-banner/telegram-banner.component';
 import { DoctorInfoStripComponent } from './components/doctor-info-strip/doctor-info-strip.component';
 import { NoFearBlockComponent } from './components/no-fear-block/no-fear-block.component';
-import { AfterViewInit, Component, ElementRef, inject, OnInit, Renderer2, signal } from '@angular/core';
+import { AfterViewInit, Component, ElementRef, inject, OnInit, PLATFORM_ID, Renderer2, signal } from '@angular/core';
+import { isPlatformBrowser } from '@angular/common';
 import { SECTION } from '../../shared/constants/section-ids.constants';
 import { ROUTES } from '../../shared/constants/routes.constants';
 import { RouterLink } from '@angular/router';
@@ -28,6 +29,7 @@ export class LandingComponent implements OnInit, AfterViewInit {
   private readonly el          = inject(ElementRef);
   private readonly seo         = inject(SeoService);
   private readonly contractApi = inject(ContractApiService);
+  private readonly platformId  = inject(PLATFORM_ID);
 
   isHeroBannerVisible = false;
   isTestingBlockVisible = false;
@@ -44,7 +46,7 @@ export class LandingComponent implements OnInit, AfterViewInit {
       error: ()    => this.contractVisible.set(false),
     });
     this.seo.updatePage({
-      title: "Онлайн центр ментального здоров'я Євгена Скрипника — психіатр онлайн",
+      title: "Ментальне здоров'я Євгена Скрипника — психіатр онлайн",
       description: "Психіатр Євген Скрипник — 20+ років досвіду. Лікування депресії, тривоги, ПТСР, ОКР та залежностей онлайн. Доказова медицина. Запис щодня 8:00–22:00.",
       canonical: '/',
       schema: [
@@ -57,24 +59,10 @@ export class LandingComponent implements OnInit, AfterViewInit {
           description: "Психіатр Євген Скрипник — 20+ років досвіду. Лікування депресії, тривоги, ПТСР та залежностей методами доказової медицини.",
           inLanguage: 'uk',
           isPartOf: { '@id': 'https://doctor-skripnik.com.ua/#website' },
-          about: { '@type': 'Physician', name: 'Євген Скрипник' },
+          about: { '@id': 'https://doctor-skripnik.com.ua/#organization' },
           breadcrumb: {
             '@type': 'BreadcrumbList',
             itemListElement: [{ '@type': 'ListItem', position: 1, name: 'Головна', item: 'https://doctor-skripnik.com.ua/' }],
-          },
-        },
-        {
-          '@context': 'https://schema.org',
-          '@type': 'MedicalOrganization',
-          name: "Онлайн центр ментального здоров'я Євгена Скрипника",
-          url: 'https://doctor-skripnik.com.ua',
-          logo: 'https://doctor-skripnik.com.ua/assets/logo.avif',
-          contactPoint: {
-            '@type': 'ContactPoint',
-            telephone: '+380665691677',
-            contactType: 'customer service',
-            areaServed: 'UA',
-            availableLanguage: 'Ukrainian',
           },
         },
       ],
@@ -82,6 +70,8 @@ export class LandingComponent implements OnInit, AfterViewInit {
   }
 
   ngAfterViewInit(): void {
+    if (!isPlatformBrowser(this.platformId)) return;
+
     this.observeElement('#hero-banner', 'isHeroBannerVisible');
     this.observeElement('#testing-block', 'isTestingBlockVisible');
     this.observeElement('#consultation-block', 'isConsultationBlockVisible');

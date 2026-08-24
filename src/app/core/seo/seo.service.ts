@@ -10,6 +10,7 @@ export interface PageSeoConfig {
   ogTitle?: string;
   ogDescription?: string;
   ogType?: string;
+  robots?: string;
 }
 
 const BASE_URL      = 'https://doctor-skripnik.com.ua';
@@ -37,8 +38,8 @@ export class SeoService {
     this.meta.updateTag({ property: 'og:description', content: ogDesc });
     this.meta.updateTag({ property: 'og:image',       content: OG_IMAGE });
     this.meta.updateTag({ property: 'og:image:alt',   content: OG_IMAGE_ALT });
-    this.meta.updateTag({ property: 'og:image:width',  content: '500' });
-    this.meta.updateTag({ property: 'og:image:height', content: '500' });
+    this.meta.updateTag({ property: 'og:image:width',  content: '512' });
+    this.meta.updateTag({ property: 'og:image:height', content: '512' });
     this.meta.updateTag({ property: 'og:type',        content: ogType });
     this.meta.updateTag({ property: 'og:url',         content: config.canonical ? this.fullUrl(config.canonical) : BASE_URL });
 
@@ -47,12 +48,18 @@ export class SeoService {
     this.meta.updateTag({ name: 'twitter:image',       content: OG_IMAGE });
     this.meta.updateTag({ name: 'twitter:image:alt',   content: OG_IMAGE_ALT });
 
+    this.meta.updateTag({ name: 'robots', content: config.robots ?? 'index, follow' });
+
     if (config.canonical) {
       this.setCanonical(config.canonical);
+    } else {
+      this.document.querySelector<HTMLLinkElement>('link[rel="canonical"]')?.remove();
     }
 
     if (config.schema) {
       this.setJsonLd(Array.isArray(config.schema) ? config.schema : [config.schema]);
+    } else {
+      this.document.getElementById(PAGE_SCRIPT_ID)?.remove();
     }
   }
 

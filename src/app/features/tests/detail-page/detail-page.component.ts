@@ -1,9 +1,7 @@
-import {CommonModule, NgFor, NgIf} from '@angular/common';
+import {CommonModule, isPlatformBrowser, NgFor, NgIf} from '@angular/common';
 import { ImportsModule } from '../../../shared/primeng-imports.module';
-import { ChangeDetectorRef, Component, DestroyRef, inject, OnInit } from '@angular/core';
+import { ChangeDetectorRef, Component, DestroyRef, inject, OnInit, PLATFORM_ID } from '@angular/core';
 import { takeUntilDestroyed } from '@angular/core/rxjs-interop';
-import jsPDF from 'jspdf';
-import html2canvas from 'html2canvas';
 import { ActivatedRoute, Router, RouterLink } from '@angular/router';
 import { switchMap } from 'rxjs/operators';
 import { SeoService } from '../../../core/seo/seo.service';
@@ -31,6 +29,7 @@ export class DetailPageComponent implements OnInit {
   private readonly contactsService = inject(ClinicContactsService);
   private readonly destroyRef = inject(DestroyRef);
   private readonly cdr = inject(ChangeDetectorRef);
+  private readonly platformId = inject(PLATFORM_ID);
   data!: Test;
   loadError = false;
 
@@ -68,7 +67,9 @@ export class DetailPageComponent implements OnInit {
   protected readonly specializedTests = specializedTests;
 
   ngOnInit(): void {
-    window.scrollTo(0, 0);
+    if (isPlatformBrowser(this.platformId)) {
+      window.scrollTo(0, 0);
+    }
 
     this.route.params
         .pipe(
@@ -303,6 +304,13 @@ export class DetailPageComponent implements OnInit {
   }
 
   async generatePDF(): Promise<void> {
+    // Loaded on demand — jsPDF + html2canvas are only needed for this export,
+    // not for the initial page render, so keep them out of the main bundle.
+    const [{ default: jsPDF }, { default: html2canvas }] = await Promise.all([
+      import('jspdf'),
+      import('html2canvas'),
+    ]);
+
     const ORG  = 'Онлайн центр ментального здоров\'я Євгена Скрипника';
     const date = new Date().toLocaleDateString('uk-UA');
     const filename = `${this.data.name} — Результати.pdf`;

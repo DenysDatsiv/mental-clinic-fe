@@ -1,4 +1,5 @@
-import { DestroyRef, Injectable, inject } from '@angular/core';
+import { DestroyRef, Injectable, PLATFORM_ID, inject } from '@angular/core';
+import { isPlatformBrowser } from '@angular/common';
 import { takeUntilDestroyed } from '@angular/core/rxjs-interop';
 import { NavigationEnd, Router } from '@angular/router';
 import { filter } from 'rxjs/operators';
@@ -15,6 +16,7 @@ declare function gtag(command: 'js', date: Date): void;
 export class GoogleAnalyticsService {
   private readonly router   = inject(Router);
   private readonly destroyRef = inject(DestroyRef);
+  private readonly platformId = inject(PLATFORM_ID);
 
   /** Angular SPA path of the previous page — used as page_referrer. */
   private previousUrl = '';
@@ -25,8 +27,12 @@ export class GoogleAnalyticsService {
    *
    * index.html initialises gtag with `send_page_view: false` so the SDK
    * never fires an automatic page_view — this method owns all page_view hits.
+   *
+   * No-op on the server — gtag isn't loaded there and window/document aren't available.
    */
   initializeTracking(): void {
+    if (!isPlatformBrowser(this.platformId)) return;
+
     this.router.events
       .pipe(
         filter((e): e is NavigationEnd => e instanceof NavigationEnd),

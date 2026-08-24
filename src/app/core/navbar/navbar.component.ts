@@ -1,7 +1,7 @@
-import { CommonModule } from '@angular/common';
+import { CommonModule, isPlatformBrowser } from '@angular/common';
 import { RouterModule, RouterOutlet } from '@angular/router';
 import { Button } from 'primeng/button';
-import { Component, inject, OnDestroy } from '@angular/core';
+import { Component, inject, OnDestroy, PLATFORM_ID } from '@angular/core';
 import { Router } from '@angular/router';
 import { ClinicContactsService } from '../../features/shared/components/clinic-contacts-dialog/clinic-contacts.service';
 import { clinicContacts } from '../../features/shared/constants/contacts.constants';
@@ -21,6 +21,7 @@ export class NavbarComponent implements OnDestroy {
   private readonly router = inject(Router);
   private readonly contactsService = inject(ClinicContactsService);
   private readonly googleAnalyticsService = inject(GoogleAnalyticsService);
+  private readonly platformId = inject(PLATFORM_ID);
 
   isMenuOpen = false;
   protected readonly SECTION = SECTION;
@@ -28,7 +29,9 @@ export class NavbarComponent implements OnDestroy {
   protected readonly TEST_ROUTES = TEST_ROUTES;
 
   ngOnDestroy(): void {
-    document.body.style.overflow = '';
+    if (isPlatformBrowser(this.platformId)) {
+      document.body.style.overflow = '';
+    }
   }
 
   /**
@@ -36,7 +39,9 @@ export class NavbarComponent implements OnDestroy {
    */
   toggleMenu(): void {
     this.isMenuOpen = !this.isMenuOpen;
-    document.body.style.overflow = this.isMenuOpen ? 'hidden' : '';
+    if (isPlatformBrowser(this.platformId)) {
+      document.body.style.overflow = this.isMenuOpen ? 'hidden' : '';
+    }
     this.googleAnalyticsService.trackEvent(EVENT_TRACK.MENU_TOGGLE, {
       menu_state: this.isMenuOpen ? 'open' : 'closed',
     });

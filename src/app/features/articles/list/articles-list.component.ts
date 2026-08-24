@@ -1,5 +1,5 @@
-import { Component, inject, OnInit, signal } from '@angular/core';
-import { CommonModule } from '@angular/common';
+import { Component, inject, OnInit, PLATFORM_ID, signal } from '@angular/core';
+import { CommonModule, isPlatformBrowser } from '@angular/common';
 import { ActivatedRoute, RouterLink } from '@angular/router';
 import { FormControl, FormGroup, ReactiveFormsModule } from '@angular/forms';
 import { BehaviorSubject } from 'rxjs';
@@ -61,6 +61,7 @@ export class ArticlesListComponent implements OnInit {
   private readonly articleService = inject(ArticleService);
   private readonly seo            = inject(SeoService);
   private readonly route          = inject(ActivatedRoute);
+  private readonly platformId     = inject(PLATFORM_ID);
 
   categories    = ARTICLE_CATEGORIES;
   skeletonItems = Array(6);
@@ -79,7 +80,9 @@ export class ArticlesListComponent implements OnInit {
   });
 
   ngOnInit(): void {
-    window.scrollTo(0, 0);
+    if (isPlatformBrowser(this.platformId)) {
+      window.scrollTo(0, 0);
+    }
 
     // Pre-filter from category route param (/articles/category/:cat)
     const routeCat = this.route.snapshot.paramMap.get('cat') ?? '';

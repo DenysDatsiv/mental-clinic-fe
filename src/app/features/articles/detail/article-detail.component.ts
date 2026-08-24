@@ -5,9 +5,10 @@ import {
   inject,
   OnDestroy,
   OnInit,
+  PLATFORM_ID,
   signal,
 } from '@angular/core';
-import { CommonModule } from '@angular/common';
+import { CommonModule, DOCUMENT, isPlatformBrowser } from '@angular/common';
 import { ActivatedRoute, RouterLink } from '@angular/router';
 import { DomSanitizer, SafeHtml } from '@angular/platform-browser';
 import { switchMap } from 'rxjs/operators';
@@ -38,6 +39,8 @@ export class ArticleDetailComponent implements OnInit, OnDestroy {
   private readonly sanitizer = inject(DomSanitizer);
   private readonly el        = inject(ElementRef);
   private readonly contacts  = inject(ClinicContactsService);
+  private readonly document  = inject(DOCUMENT);
+  private readonly platformId = inject(PLATFORM_ID);
 
   openContacts(): void {
     this.contacts.openDialog(clinicContacts);
@@ -66,7 +69,9 @@ export class ArticleDetailComponent implements OnInit, OnDestroy {
   }
 
   ngOnInit(): void {
-    window.scrollTo(0, 0);
+    if (isPlatformBrowser(this.platformId)) {
+      window.scrollTo(0, 0);
+    }
 
     this.route.params
       .pipe(switchMap(p => this.service.getById(p['id'])))
@@ -79,9 +84,12 @@ export class ArticleDetailComponent implements OnInit, OnDestroy {
           this.loading.set(false);
           // Bootstrap custom YouTube players after Angular renders [innerHTML].
           // Double-rAF ensures the browser has actually painted the new nodes.
-          requestAnimationFrame(() =>
-            requestAnimationFrame(() => this.initYtPlayers())
-          );
+          // Browser-only: rAF and the YouTube IFrame API don't exist on the server.
+          if (isPlatformBrowser(this.platformId)) {
+            requestAnimationFrame(() =>
+              requestAnimationFrame(() => this.initYtPlayers())
+            );
+          }
           this.updateSeo(data);
           // Load related articles (non-blocking)
           this.service.getRelated(data._id).subscribe({
@@ -146,8 +154,8 @@ export class ArticleDetailComponent implements OnInit, OnDestroy {
    * Decode HTML entities (e.g. &nbsp; → ' ') by letting the browser parse
    * a temporary element.  Used to clean up ToC heading text from Quill output.
    */
-  private static plainText(htmlFragment: string): string {
-    const div = document.createElement('div');
+  private plainText(htmlFragment: string): string {
+    const div = this.document.createElement('div');
     div.innerHTML = htmlFragment;
     return (div.textContent ?? '')
       .replace(/ /g, ' ')   // non-breaking space → regular space
@@ -173,7 +181,7 @@ export class ArticleDetailComponent implements OnInit, OnDestroy {
       (_, tag: string, attrs: string | undefined, inner: string) => {
         const id   = `sec-${idx++}`;
         // Use DOM to strip tags AND decode entities (&nbsp;, &amp; …)
-        const text = ArticleDetailComponent.plainText(inner);
+        const text = this.plainText(inner);
         toc.push({ id, text, level: tag.toLowerCase() === 'h2' ? 2 : 3 });
         return `<${tag}${attrs ?? ''} id="${id}">${inner}</${tag}>`;
       },

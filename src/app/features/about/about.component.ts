@@ -23,6 +23,12 @@ interface Specialization {
   icon: string;
 }
 
+interface Credential {
+  src: string;
+  title: string;
+  subtitle: string;
+}
+
 @Component({
   standalone: true,
   imports: [CommonModule, ImportsModule, RouterLink, TelegramBannerComponent],
@@ -86,6 +92,34 @@ export class AboutComponent implements OnInit {
         },
       },
     });
+  }
+
+  selectedCredential: Credential | null = null;
+
+  credentials: Credential[] = [
+    {
+      src: '/assets/posvidchenia.jpg',
+      title: 'Посвідчення',
+      subtitle: 'Сумський державний університет, спеціальність «Лікувальна справа»',
+    },
+    {
+      src: '/assets/posvidchecnia_1.jpg',
+      title: 'Диплом',
+      subtitle: 'Присвоєна кваліфікація лікаря-психіатра, атестаційна комісія Сумської облдержадміністрації.',
+    },
+    {
+      src: '/assets/sertyficat.jpg',
+      title: 'Сертифікат лікаря-спеціаліста',
+      subtitle: 'Харківська медична академія післядипломної освіти, спеціальність «Психіатрія».',
+    },
+  ];
+
+  openCredential(doc: Credential): void {
+    this.selectedCredential = doc;
+  }
+
+  closeCredential(): void {
+    this.selectedCredential = null;
   }
 
   carouselResponsiveOptions = [

@@ -1,6 +1,4 @@
 User-agent: *
-Disallow: /admin/
-Disallow: /cgi-bin/
-Disallow: /private/
+Allow: /
 
 Sitemap: https://doctor-skripnik.com.ua/sitemap.xml
