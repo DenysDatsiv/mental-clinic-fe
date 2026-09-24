@@ -42,6 +42,7 @@ export interface Test {
   commonMessage?: string;
   resultInterpretation?: ResultInterpretation[];
   domains?: TestDomain[];
+  questionCount?: number; // list endpoint only
   _id?: string;
   __v?: number;
 }

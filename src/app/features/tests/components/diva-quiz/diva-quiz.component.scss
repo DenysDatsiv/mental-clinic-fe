@@ -32,6 +32,8 @@
 }
 
 .dv-col {
+  display: flex;
+  flex-direction: column;
   background: $section-bg;
   border: 1px solid rgba($primary-color, 0.08);
   border-radius: 14px;
@@ -109,6 +111,9 @@
     .dv-check__label { color: $heading-color; font-weight: 600; }
   }
 }
+
+// Pinned to the bottom so Так / Ні line up across both columns
+.dv-answer { margin-top: auto; }
 
 .dv-ask {
   font-size: 0.88rem;

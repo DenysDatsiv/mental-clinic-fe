@@ -58,14 +58,18 @@
             <div class="dv-col">
               <h3 class="dv-col__title">Зрілість</h3>
               <ng-container *ngTemplateOutlet="examplesTpl; context: { $implicit: q.adultExamples, prefix: q._id + ':adult' }" />
-              <p class="dv-ask">Симптоми присутні?</p>
-              <ng-container *ngTemplateOutlet="yesNoTpl; context: { $implicit: q._id + ':adult' }" />
+              <div class="dv-answer">
+                <p class="dv-ask">Симптоми присутні?</p>
+                <ng-container *ngTemplateOutlet="yesNoTpl; context: { $implicit: q._id + ':adult' }" />
+              </div>
             </div>
             <div class="dv-col">
               <h3 class="dv-col__title">Дитинство (5–12 р.)</h3>
               <ng-container *ngTemplateOutlet="examplesTpl; context: { $implicit: q.childExamples, prefix: q._id + ':child' }" />
-              <p class="dv-ask">Симптоми присутні?</p>
-              <ng-container *ngTemplateOutlet="yesNoTpl; context: { $implicit: q._id + ':child' }" />
+              <div class="dv-answer">
+                <p class="dv-ask">Симптоми присутні?</p>
+                <ng-container *ngTemplateOutlet="yesNoTpl; context: { $implicit: q._id + ':child' }" />
+              </div>
             </div>
           </div>
         }

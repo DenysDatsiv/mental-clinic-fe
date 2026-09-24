@@ -1,4 +1,8 @@
+@use "sass:color";
 @use "../../../../../assets/css/coloristics" as *;
+
+$ink: #1f2a3c;
+$muted: #5b6475;
 
 :host {
   display: flex;
@@ -9,104 +13,73 @@
   flex: 1;
   display: flex;
   flex-direction: column;
-  gap: 0.85rem;
   background: #fff;
-  border: 1px solid rgba($primary-color, 0.08);
-  border-radius: 20px;
-  padding: 1.5rem;
-  cursor: pointer;
-  position: relative;
-  overflow: hidden;
-  transition: box-shadow 0.25s ease, transform 0.25s ease, border-color 0.25s ease;
-
-  &::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    height: 3px;
-    background: linear-gradient(90deg, $primary-color, $logo-subtext-color);
-    opacity: 0;
-    transition: opacity 0.25s;
-  }
-
-  &:hover {
-    box-shadow: 0 14px 40px rgba($primary-color, 0.13);
-    transform: translateY(-4px);
-    border-color: rgba($primary-color, 0.2);
-
-    &::before { opacity: 1; }
-
-    .tcard__cta {
-      color: $primary-color;
-      gap: 0.55rem;
-    }
-  }
-
-  &__top {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-  }
-
-  &__icon {
-    width: 42px;
-    height: 42px;
-    border-radius: 12px;
-    background: rgba($primary-color, 0.09);
-    color: $primary-color;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-shrink: 0;
-  }
-
-  &__duration {
-    display: inline-flex;
-    align-items: center;
-    gap: 0.3rem;
-    font-size: 0.72rem;
-    font-weight: 600;
-    color: #9aa0b2;
-    background: $section-bg;
-    border-radius: 999px;
-    padding: 0.25rem 0.7rem;
-  }
+  border-radius: 12px;
+  padding: 1.1rem 1rem 0.85rem;
+  box-shadow: 0 2px 12px rgba(16, 24, 40, 0.06);
 
   &__title {
-    font-size: 0.98rem;
-    font-weight: 800;
-    color: $heading-color;
-    margin: 0;
-    letter-spacing: -0.01em;
-    line-height: 1.3;
+    font-size: 0.9rem;
+    font-weight: 700;
+    color: $ink;
+    line-height: 1.35;
+    margin: 0 0 0.75rem;
   }
 
   &__desc {
-    font-size: 0.83rem;
-    line-height: 1.65;
-    color: #5a6072;
-    margin: 0;
-    flex: 1;
+    font-size: 0.8rem;
+    color: $muted;
+    line-height: 1.6;
+    margin: 0 0 1.25rem;
     display: -webkit-box;
-    -webkit-line-clamp: 3;
+    -webkit-line-clamp: 5;
     -webkit-box-orient: vertical;
     overflow: hidden;
   }
 
-  &__footer {
-    padding-top: 0.75rem;
-    border-top: 1px solid rgba($primary-color, 0.07);
+  // Pushed to the bottom so buttons line up across a row
+  &__actions {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-top: auto;
   }
 
   &__cta {
+    border: none;
+    border-radius: 999px;
+    background: $primary-color;
+    color: #fff;
+    font-size: 0.8rem;
+    font-weight: 700;
+    padding: 0.6rem 1.1rem;
+    white-space: nowrap;
+    cursor: pointer;
+    transition: background 0.2s;
+
+    &:hover { background: color.adjust($primary-color, $lightness: -8%); }
+  }
+
+  &__share {
     display: inline-flex;
     align-items: center;
-    gap: 0.35rem;
-    font-size: 0.82rem;
-    font-weight: 700;
-    color: rgba($primary-color, 0.55);
-    transition: color 0.2s, gap 0.2s;
+    gap: 0.4rem;
+    border: none;
+    background: none;
+    color: $muted;
+    font-size: 0.8rem;
+    font-weight: 600;
+    padding: 0.4rem 0.25rem;
+    white-space: nowrap;
+    cursor: pointer;
+
+    &:hover { color: $primary-color; }
+  }
+
+  &__count {
+    align-self: flex-end;
+    font-size: 0.72rem;
+    color: $muted;
+    margin-top: 0.75rem;
   }
 }
