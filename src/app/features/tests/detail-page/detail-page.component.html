@@ -111,8 +111,15 @@
       </div>
     </section>
 
+    <!-- DIVA-5 has its own multi-column interview flow -->
+    <app-diva-quiz
+      *ngIf="data?.specialTest === specializedTests.DIVA"
+      [test]="data"
+      (completed)="onDivaCompleted($event)"
+    />
+
     <!-- Quiz -->
-    <section class="dp-quiz">
+    <section class="dp-quiz" *ngIf="data?.specialTest !== specializedTests.DIVA">
       <div class="container">
 
         <!-- Progress bar -->
@@ -237,7 +244,65 @@
     <section class="dp-result-body">
       <div class="container">
 
+        <!-- DIVA-5 -->
+        <ng-container *ngIf="data?.specialTest === specializedTests.DIVA && divaResult as r; else RBQblock">
+          <div class="dp-result-card dp-result-card--wide">
+            <p class="dp-result-card__title">Формуляр підрахунку</p>
+            <div class="dp-diva-table">
+              <div class="dp-diva-table__row dp-diva-table__row--head">
+                <span>Область</span><span>Зрілість</span><span>Дитинство</span>
+              </div>
+              <div class="dp-diva-table__row">
+                <span>Дефіцит уваги (A1)</span>
+                <strong>{{ r.a1Adult }}<em>/9</em></strong>
+                <strong>{{ r.a1Child }}<em>/9</em></strong>
+              </div>
+              <div class="dp-diva-table__row">
+                <span>Гіперактивність / імпульсивність (A2)</span>
+                <strong>{{ r.a2Adult }}<em>/9</em></strong>
+                <strong>{{ r.a2Child }}<em>/9</em></strong>
+              </div>
+            </div>
+            <ul class="dp-diva-criteria">
+              <li [class.is-yes]="r.suppA1Adult && r.suppA2Adult">
+                Доповнення A — більше, ніж в однолітків (зрілість)
+                <b>A1: {{ yesNo(r.suppA1Adult) }} · A2: {{ yesNo(r.suppA2Adult) }}</b>
+              </li>
+              <li [class.is-yes]="r.suppA1Child && r.suppA2Child">
+                Доповнення A — більше, ніж в однолітків (дитинство)
+                <b>A1: {{ yesNo(r.suppA1Child) }} · A2: {{ yesNo(r.suppA2Child) }}</b>
+              </li>
+              <li [class.is-yes]="r.adultThreshold">Критерій A, зрілість: ≥5 в одній області <b>{{ yesNo(r.adultThreshold) }}</b></li>
+              <li [class.is-yes]="r.childThreshold">Критерій A, дитинство: ≥6 в одній області <b>{{ yesNo(r.childThreshold) }}</b></li>
+              <li [class.is-yes]="r.onset">
+                Критерій B — симптоми до 12 років{{ r.onsetAge ? ' (з ' + r.onsetAge + ' р.)' : '' }}
+                <b>{{ yesNo(r.onset) }}</b>
+              </li>
+              <li [class.is-yes]="r.impairAdult">Критерій C/D — порушення ≥2 сфер (зрілість) <b>{{ yesNo(r.impairAdult) }}</b></li>
+              <li [class.is-yes]="r.impairChild">Критерій C/D — порушення ≥2 сфер (дитинство) <b>{{ yesNo(r.impairChild) }}</b></li>
+              <li [class.is-yes]="r.notOther">
+                Критерій E — не пояснюється іншим розладом{{ r.otherDisorder ? ' (' + r.otherDisorder + ')' : '' }}
+                <b>{{ yesNo(r.notOther) }}</b>
+              </li>
+            </ul>
+            @if (r.collateral.length) {
+              <ul class="dp-diva-criteria dp-diva-criteria--info">
+                <li *ngFor="let c of r.collateral">
+                  Додаткова інформація: {{ c.label }} <b>{{ collateralLabel(c.value) }}</b>
+                </li>
+              </ul>
+            }
+            <p class="dp-result-msg">
+              Діагноз СДУГ (клінічна орієнтація, не автодіагноз):
+              {{ r.met ? 'критерії зібрані' : 'критерії не зібрані повністю' }}.<br />
+              Форма прояву: {{ r.form }}
+            </p>
+            <p class="dp-result-common">{{ data?.commonMessage }}</p>
+          </div>
+        </ng-container>
+
         <!-- RBQ-2A -->
+        <ng-template #RBQblock>
         <ng-container *ngIf="data?.specialTest === specializedTests.RBQ2A; else SMIblock">
           <div class="dp-result-card dp-result-card--wide">
             <div class="dp-result-score">
@@ -257,6 +322,7 @@
             </ul>
           </div>
         </ng-container>
+        </ng-template>
 
         <!-- SMI / YSQ-S3 -->
         <ng-template #SMIblock>

@@ -13,10 +13,11 @@ import { ClinicContactsService } from '../../shared/components/clinic-contacts-d
 import { GoogleAnalyticsService } from '../../../analytics/google-analytics.service';
 import { TEST_ROUTES } from "../../../shared/constants/routes.constants";
 import { NotFoundComponent } from '../../not-found/not-found.component';
+import { DivaQuizComponent, DivaResult } from '../components/diva-quiz/diva-quiz.component';
 
 @Component({
   standalone: true,
-  imports: [CommonModule, NgIf, NgFor, ImportsModule, RouterLink, NotFoundComponent],
+  imports: [CommonModule, NgIf, NgFor, ImportsModule, RouterLink, NotFoundComponent, DivaQuizComponent],
   selector: 'app-detail-page',
   templateUrl: './detail-page.component.html',
   styleUrls: ['./detail-page.component.scss'],
@@ -62,6 +63,9 @@ export class DetailPageComponent implements OnInit {
   asrsPartBPositive = 0;
   asrsPartBNegative = 0;
   asrsResult = '';
+
+  // DIVA-5
+  divaResult: DivaResult | null = null;
 
   protected readonly Object = Object;
   protected readonly specializedTests = specializedTests;
@@ -295,6 +299,20 @@ export class DetailPageComponent implements OnInit {
     setTimeout(() => window.scrollTo({ top: 0, behavior: 'smooth' }), 50);
   }
 
+  onDivaCompleted(result: DivaResult): void {
+    this.divaResult = result;
+    this.isTestCompleted = true;
+    setTimeout(() => window.scrollTo({ top: 0, behavior: 'smooth' }), 50);
+  }
+
+  yesNo(value: boolean): string {
+    return value ? 'Так' : 'Ні';
+  }
+
+  collateralLabel(value: number | undefined): string {
+    return value === 1 ? 'Так' : value === 0 ? 'Ні' : 'Н/д';
+  }
+
   get asrsTotalPositive(): number {
     return this.asrsPartAPositive + this.asrsPartBPositive;
   }
@@ -434,6 +452,10 @@ export class DetailPageComponent implements OnInit {
   private buildPrintContent(): string {
     const date = new Date().toLocaleDateString('uk-UA', { day: '2-digit', month: '2-digit', year: 'numeric' });
 
+    if (this.data.specialTest === this.specializedTests.DIVA && this.divaResult) {
+      return this.buildDivaPrintContent(date, this.divaResult);
+    }
+
     const answersRows = this.data.questions.map((q, i) => `
       <tr style="background:${i % 2 === 1 ? '#fafafa' : '#fff'}">
         <td style="width:28px;color:#9aa0b2;font-weight:700;padding:6px 10px;border-bottom:1px solid #f0f0f0">${i + 1}</td>
@@ -502,6 +524,46 @@ export class DetailPageComponent implements OnInit {
 </div>`;
   }
 
+  private buildDivaPrintContent(date: string, r: DivaResult): string {
+    const cell = 'padding:7px 10px;border-bottom:1px solid #f0f0f0';
+    const head = 'font-size:9pt;font-weight:700;text-align:left;padding:7px 10px;color:#003168';
+    const row = (label: string, value: boolean) =>
+      `<p style="margin:0 0 5px">${label}: <strong>${this.yesNo(value)}</strong></p>`;
+
+    return `
+<div style="font-family:Arial,sans-serif;font-size:11pt;color:#1a1a2e;padding:20px 24px;background:#fff">
+  <h1 style="font-size:15pt;color:#003168;margin:0 0 4px">${this.data.name}</h1>
+  <p style="font-size:9pt;color:#718096;margin:0 0 20px">Дата: ${date}</p>
+
+  <h2 style="font-size:9.5pt;font-weight:700;text-transform:uppercase;letter-spacing:.06em;color:#5f75d6;border-bottom:1px solid #e2e8f0;padding-bottom:5px;margin:0 0 10px">Формуляр підрахунку</h2>
+  <table style="width:100%;border-collapse:collapse;margin-bottom:16px">
+    <thead><tr style="background:#f2f3f3"><th style="${head}">Область</th><th style="${head}">Зрілість</th><th style="${head}">Дитинство</th></tr></thead>
+    <tbody>
+      <tr><td style="${cell}">Дефіцит уваги (A1)</td><td style="${cell}">${r.a1Adult} / 9</td><td style="${cell}">${r.a1Child} / 9</td></tr>
+      <tr><td style="${cell}">Гіперактивність / імпульсивність (A2)</td><td style="${cell}">${r.a2Adult} / 9</td><td style="${cell}">${r.a2Child} / 9</td></tr>
+    </tbody>
+  </table>
+
+  <div style="background:#f2f3f3;border-left:4px solid #5f75d6;padding:12px 16px;border-radius:0 8px 8px 0;line-height:1.6">
+    <p style="margin:0 0 5px">Доповнення A — більше, ніж в однолітків (зрілість): <strong>A1 ${this.yesNo(r.suppA1Adult)} · A2 ${this.yesNo(r.suppA2Adult)}</strong></p>
+    <p style="margin:0 0 5px">Доповнення A — більше, ніж в однолітків (дитинство): <strong>A1 ${this.yesNo(r.suppA1Child)} · A2 ${this.yesNo(r.suppA2Child)}</strong></p>
+    ${row('Критерій A, зрілість: ≥5 в одній області', r.adultThreshold)}
+    ${row('Критерій A, дитинство: ≥6 в одній області', r.childThreshold)}
+    ${row(`Критерій B — симптоми до 12 років${r.onsetAge ? ` (з ${r.onsetAge} р.)` : ''}`, r.onset)}
+    ${row('Критерій C/D — порушення ≥2 сфер (зрілість)', r.impairAdult)}
+    ${row('Критерій C/D — порушення ≥2 сфер (дитинство)', r.impairChild)}
+    ${row(`Критерій E — не пояснюється іншим розладом${r.otherDisorder ? ` (${r.otherDisorder})` : ''}`, r.notOther)}
+    ${r.collateral.map(c => `<p style="margin:0 0 5px">Додаткова інформація — ${c.label}: <strong>${this.collateralLabel(c.value)}</strong></p>`).join('')}
+    <p style="margin:10px 0 4px">Діагноз СДУГ (клінічна орієнтація, не автодіагноз): <strong>${r.met ? 'критерії зібрані' : 'критерії не зібрані повністю'}</strong></p>
+    <p style="margin:0">Форма прояву: <strong>${r.form}</strong></p>
+  </div>
+
+  <p style="margin-top:24px;padding:9px 14px;background:#fffbeb;border:1px solid #f6ad55;border-radius:6px;font-size:9pt;color:#744210">
+    Результати не є медичним діагнозом. Остаточний висновок робить лікар-психіатр.
+  </p>
+</div>`;
+  }
+
   openPdf(pdfLink: string | null | undefined): void {
     if (!pdfLink || pdfLink === 'null') {
       return;
@@ -550,6 +612,8 @@ export class DetailPageComponent implements OnInit {
     this.asrsPartBPositive = 0;
     this.asrsPartBNegative = 0;
     this.asrsResult = '';
+
+    this.divaResult = null;
   }
 
   goToAllTests(): void {
